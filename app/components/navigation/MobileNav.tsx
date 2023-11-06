@@ -1,3 +1,4 @@
+import Socials from "./Socials";
 import clsx from "clsx";
 
 export default function MobileNav(props: any) {
@@ -61,6 +62,7 @@ export default function MobileNav(props: any) {
             </a>
           </li>
         </ul>
+        <Socials darkMode={props.darkMode} />
       </div>
     </div>
   );
