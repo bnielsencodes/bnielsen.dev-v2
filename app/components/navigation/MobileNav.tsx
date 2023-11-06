@@ -5,13 +5,13 @@ import clsx from "clsx";
 export default function MobileNav(props: any) {
   return (
     <div
-      className={clsx("absolute top-0 left-0 z-20 flex w-screen h-screen", {
+      className={clsx("absolute top-0 left-0 z-20 flex flex-col w-screen h-screen", {
         "bg-neutral-100": props.darkMode,
         "bg-neutral-500": !props.darkMode,
       })}
     >
-      {/* left container */}
-      <div className="flex flex-col items-start justify-between w-1/2 h-full pt-52 pb-4 pl-4">
+      {/* top container */}
+      <div className="flex items-center justify-start w-1/2 h-full pt-52 pb-4 pl-4">
         <ul
           className={clsx("flex flex-col justify-between h-60 text-5xl", {
             "text-neutral-500": props.darkMode,
@@ -63,10 +63,10 @@ export default function MobileNav(props: any) {
             </a>
           </li>
         </ul>
-        <Socials darkMode={props.darkMode} />
       </div>
-      {/* right container */}
-      <div className="flex items-end justify-end w-1/2 h-full pr-4 pb-[18px]">
+      {/* bottom container */}
+      <div className="flex items-center justify-between justify-end w-1/2 h-full pr-4 pb-[18px]">
+        <Socials darkMode={props.darkMode} />
         <ToggleTheme
           darkMode={props.darkMode}
           toggleTheme={props.toggleTheme}
