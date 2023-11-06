@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import NavBar from "./components/navigation/NavBar";
+import MobileNav from "./components/navigation/MobileNav";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -23,6 +24,9 @@ export default function Home() {
           showMobileNav={showMobileNav}
           toggleMobileNav={toggleMobileNav}
         />
+        {showMobileNav && (
+          <MobileNav darkMode={darkMode} toggleTheme={toggleTheme} />
+        )}
       </main>
     </>
   );
