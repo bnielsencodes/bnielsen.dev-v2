@@ -2,6 +2,7 @@
 import { useState } from "react";
 import NavBar from "./components/navigation/NavBar";
 import MobileNav from "./components/navigation/MobileNav";
+import Header from "./components/header/Header";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -27,6 +28,7 @@ export default function Home() {
         {showMobileNav && (
           <MobileNav darkMode={darkMode} toggleTheme={toggleTheme} />
         )}
+        <Header />
       </main>
     </>
   );
