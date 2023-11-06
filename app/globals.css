@@ -29,7 +29,7 @@ body {
 .hero-img {
   -webkit-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
-/*   background-image: url(/static/media/pfp_webp.f334283….webp); */
+  background-image: url(/assets/avatar.jpeg);
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
