@@ -1,6 +1,7 @@
 import Image from "next/image";
 import darkLogo from "/public/assets/Main-Logo-800x600.png";
 import lightLogo from "/public/assets/Inverted-Color-800x600.png";
+import HamburgerMenu from "./HamburgerMenu";
 
 export default function NavBar(props: any) {
   return (
@@ -17,6 +18,11 @@ export default function NavBar(props: any) {
         />
         <p className="mt-1 text-neutral-500 font-bold">Brandon Nielsen</p>
       </div>
+      <HamburgerMenu
+        showMobileNav={props.showMobileNav}
+        toggleMobileNav={props.toggleMobileNav}
+        darkMode={props.darkMode}
+      />
     </nav>
   );
 }
