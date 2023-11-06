@@ -17,7 +17,7 @@ export default function NavBar(props: any) {
           height="600"
           sizes="100vw"
         />
-        <p className={clsx("mt-[1px] text-lg font-bold leading-[0.3px]", { "text-neutral-500": props.darkMode, "text-neutral-100": !props.darkMode })}>Brandon Nielsen</p>
+        <p className={clsx("mt-4 text-lg font-bold leading-[0.3px]", { "text-neutral-500": props.darkMode, "text-neutral-100": !props.darkMode })}>Brandon Nielsen</p>
       </div>
       <HamburgerMenu
         showMobileNav={props.showMobileNav}
