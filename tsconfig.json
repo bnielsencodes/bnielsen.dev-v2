@@ -22,6 +22,16 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts"],
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts",
+    "app/page.tsxx",
+    "app/layout.js",
+    "app/lib/Providers.tsx",
+    "app/projects-page/page.tsx",
+    "app/components/navigation/ToggleTheme.tsx"
+  ],
   "exclude": ["node_modules"]
 }
