@@ -8,8 +8,8 @@ export default function Header(props: any) {
       <h1 className={clsx("mt-3 mb-[6px] font-mono text-3xl", { "text-neutral-500": props.darkMode, "text-neutral-100": !props.darkMode })}>Brandon Nielsen</h1>
       <h2 className={clsx("text-lg", { "text-neutral-400": props.darkMode, "text-neutral-200": !props.darkMode })}>Web Developer</h2>
       <div className="flex gap-4 mt-[15px]">
-        <button className="py-[10px] px-[20px] border border-color-neutral-500 bg-neutral-500 text-neutral-100">View work</button>
-        <button className="py-[10px] px-[20px] border border-color-neutral-200">Contact</button>
+        <button className="py-[10px] px-[20px] border border-color-neutral-500 rounded-md bg-neutral-500 text-neutral-100">View work</button>
+        <button className="py-[10px] px-[20px] border border-color-neutral-200 rounded-md">Contact</button>
       </div>
     </header>
   );
