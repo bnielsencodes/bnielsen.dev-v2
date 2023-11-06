@@ -7,21 +7,20 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
-    extend: {
-      colors: {
-        neutral: {
-          100: "#333333",
-          200: "#737373",
-          300: "#D9D9D9",
-          400: "#FAFAFA",
-          500: "#FFFFFF",
-        },
-        primary: {
-          100: "#633CFF",
-          200: "#BEADFF",
-          300: "#EFEBFF",
-        },
+    colors: {
+      neutral: {
+        100: "#1a1a1a",
+        200: "#555",
+        300: "#666",
+        400: "#888",
+        500: "#FAFAFA",
       },
+      accent: {
+        100: "#0072BB",
+        200: "#00C8F5",
+      },
+    },
+    extend: {
       fontFamily: {
         sans: ["var(--font-roboto)"],
         mono: ["var(--font-roboto-mono)"],
