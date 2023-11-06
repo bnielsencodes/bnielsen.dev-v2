@@ -21,8 +21,6 @@ export default function HamburgerMenu(props: any) {
             "bg-neutral-200": props.showMobileNav && !props.darkMode,
             "bg-neutral-500": !props.showMobileNav && props.darkMode,
             "bg-neutral-100": !props.showMobileNav && !props.darkMode,
-            "group-hover:bg-accent-200": props.darkMode,
-            "group-hover:bg-accent-100": !props.darkMode,
           }
         )}
       ></span>
@@ -35,8 +33,6 @@ export default function HamburgerMenu(props: any) {
             "bg-neutral-200": props.showMobileNav && !props.darkMode,
             "bg-neutral-500": !props.showMobileNav && props.darkMode,
             "bg-neutral-100": !props.showMobileNav && !props.darkMode,
-            "group-hover:bg-accent-200": props.darkMode,
-            "group-hover:bg-accent-100": !props.darkMode,
           }
         )}
       ></span>
