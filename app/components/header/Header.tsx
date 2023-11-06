@@ -9,7 +9,7 @@ export default function Header(props: any) {
       <h2 className={clsx("text-lg", { "text-neutral-400": props.darkMode, "text-neutral-200": !props.darkMode })}>Web Developer</h2>
       <div className="flex gap-4 mt-[15px]">
         <button className="py-[10px] px-[20px] border border-color-neutral-500 rounded-lg bg-neutral-500 text-neutral-100 font-semibold">View Work</button>
-        <button className="py-[10px] px-[20px] border border-color-neutral-200 rounded-lg font-semibold">Contact</button>
+        <button className="py-[10px] px-[20px] border border-color-neutral-300 rounded-lg font-semibold text-neutral-400">Contact</button>
       </div>
     </header>
   );
