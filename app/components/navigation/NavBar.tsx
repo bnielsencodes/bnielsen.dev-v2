@@ -6,7 +6,7 @@ import clsx from "clsx";
 
 export default function NavBar(props: any) {
   return (
-    <nav className={clsx("z-10 flex items-center justify-between h-14 pl-4 pr-2 border-b", { "bg-neutral-100 border-neutral-200": props.darkMode, "bg-neutral-500 border-neutral-400": !props.darkMode })}>
+    <nav className={clsx("fixed z-10 flex items-center justify-between w-full h-14 pl-4 pr-2 border-b bg-opacity-95", { "bg-neutral-100 border-neutral-200": props.darkMode, "bg-neutral-500 border-neutral-400": !props.darkMode })}>
       {/* logo and name */}
       <div className="flex">
         <Image
