@@ -12,7 +12,7 @@ export default function ToggleTheme(props: any) {
       {/* toggle switch */}
       <div
         className={clsx(
-          "relative flex items-center justify-start w-[68px] h-[36px] rounded-[32px] group md:hover:cursor-pointer lg:cursor-pointer",
+          "relative flex items-center justify-end w-[68px] h-[36px] rounded-[32px] group md:hover:cursor-pointer lg:cursor-pointer",
           {
             "bg-neutral-400": props.darkMode,
             "bg-neutral-200": !props.darkMode,
@@ -46,7 +46,7 @@ export default function ToggleTheme(props: any) {
           className={clsx(
             "w-7 h-7 rounded-full mx-1 transition-transform duration-200 ease-linear md:group-hover:bg-accent-light",
             {
-              "bg-neutral-100 translate-x-8": props.darkMode,
+              "bg-neutral-100 -translate-x-8": props.darkMode,
               "bg-neutral-500": !props.darkMode,
             }
           )}
