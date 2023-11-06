@@ -7,6 +7,10 @@ export default function Header(props: any) {
       <div className="hero-img"></div>
       <h1 className={clsx("mt-3 mb-[6px] font-mono text-3xl", { "text-neutral-500": props.darkMode, "text-neutral-100": !props.darkMode })}>Brandon Nielsen</h1>
       <h2 className={clsx("text-lg", { "text-neutral-400": props.darkMode, "text-neutral-200": !props.darkMode })}>Web Developer</h2>
+      <div className="flex gap-4">
+        <button className="py-[10px] px-[20px]">View work</button>
+        <button className="py-[10px] px-[20px]">Contact</button>
+      </div>
     </header>
   );
 }
