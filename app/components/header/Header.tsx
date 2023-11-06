@@ -1,5 +1,3 @@
-import clsx from "clsx";
-
 export default function Header(props: any) {
   return (
     // this is a comment
