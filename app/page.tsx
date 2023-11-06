@@ -28,7 +28,7 @@ export default function Home() {
         {showMobileNav && (
           <MobileNav darkMode={darkMode} toggleTheme={toggleTheme} />
         )}
-        <Header />
+        <Header darkMode={darkMode} />
       </main>
     </>
   );
