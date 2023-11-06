@@ -11,7 +11,7 @@ export default function MobileNav(props: any) {
       })}
     >
       {/* top container */}
-      <div className="flex items-center justify-start w-1/2 h-full pt-52 pb-4 pl-4">
+      <div className="flex items-center justify-start w-full pl-4">
         <ul
           className={clsx("flex flex-col justify-between h-60 text-5xl", {
             "text-neutral-500": props.darkMode,
@@ -65,7 +65,7 @@ export default function MobileNav(props: any) {
         </ul>
       </div>
       {/* bottom container */}
-      <div className="flex items-center justify-between justify-end w-1/2 h-full pr-4 pb-[18px]">
+      <div className="flex items-center justify-between justify-end w-full px-4 pb-[18px]">
         <Socials darkMode={props.darkMode} />
         <ToggleTheme
           darkMode={props.darkMode}
