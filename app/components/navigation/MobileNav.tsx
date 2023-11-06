@@ -1,4 +1,5 @@
 import Socials from "./Socials";
+import ToggleTheme from "./ToggleTheme";
 import clsx from "clsx";
 
 export default function MobileNav(props: any) {
@@ -63,6 +64,13 @@ export default function MobileNav(props: any) {
           </li>
         </ul>
         <Socials darkMode={props.darkMode} />
+      </div>
+      {/* right container */}
+      <div className="flex items-end justify-end w-1/2 h-full pr-4 pb-[18px]">
+        <ToggleTheme
+          darkMode={props.darkMode}
+          toggleTheme={props.toggleTheme}
+        />
       </div>
     </div>
   );
