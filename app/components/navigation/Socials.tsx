@@ -7,6 +7,10 @@ import iconGitHubNeutral200 from "/public/assets/socials/github/github-neutral-2
 import iconGitHubNeutral400 from "/public/assets/socials/github/github-neutral-400.svg";
 import iconGitHubAccent100 from "/public/assets/socials/github/github-accent-100.svg";
 import iconGitHubAccent200 from "/public/assets/socials/github/github-accent-200.svg";
+import iconEmailNeutral200 from "/public/assets/socials/email/email-neutral-200.svg";
+import iconEmailNeutral400 from "/public/assets/socials/email/email-neutral-400.svg";
+import iconEmailAccent100 from "/public/assets/socials/email/email-accent-100.svg";
+import iconEmailAccent200 from "/public/assets/socials/email/email-accent-200.svg";
 import clsx from "clsx";
 
 export default function Socials(props: any) {
@@ -63,7 +67,7 @@ export default function Socials(props: any) {
           <a className="group" href="https://github.com/bnielsencodes">
             {props.darkMode ? (
               <Image
-                className="w-10 h-10 group-hover:hidden"
+                className="w-10 h-10 mr-2 group-hover:hidden"
                 src={iconGitHubNeutral400}
                 alt="GitHub icon"
                 width="0"
@@ -72,8 +76,53 @@ export default function Socials(props: any) {
               />
             ) : (
               <Image
-                className="w-10 h-10 group-hover:hidden"
+                className="w-10 h-10 mr-2 group-hover:hidden"
                 src={iconGitHubNeutral200}
+                alt="GitHub icon"
+                width="0"
+                height="0"
+                sizes="100vw"
+              />
+            )}
+            {/* images shown on hover */}
+            <Image
+              className={clsx("w-10 h-10 mr-2 hidden", {
+                "group-hover:block": props.darkMode,
+              })}
+              src={iconGitHubAccent200}
+              alt="GitHub icon"
+              width="0"
+              height="0"
+              sizes="100vw"
+            />
+            <Image
+              className={clsx("w-10 h-10 mr-2 hidden", {
+                "group-hover:block": !props.darkMode,
+              })}
+              src={iconGitHubAccent100}
+              alt="GitHub icon"
+              width="0"
+              height="0"
+              sizes="100vw"
+            />
+          </a>
+        </li>
+        {/* email */}
+        <li>
+          <a className="group" href="mailto:brandon@bnielsen.dev">
+            {props.darkMode ? (
+              <Image
+                className="w-10 h-10 group-hover:hidden"
+                src={iconEmailNeutral400}
+                alt="GitHub icon"
+                width="0"
+                height="0"
+                sizes="100vw"
+              />
+            ) : (
+              <Image
+                className="w-10 h-10 group-hover:hidden"
+                src={iconEmailNeutral200}
                 alt="GitHub icon"
                 width="0"
                 height="0"
@@ -85,7 +134,7 @@ export default function Socials(props: any) {
               className={clsx("w-10 h-10 hidden", {
                 "group-hover:block": props.darkMode,
               })}
-              src={iconGitHubAccent200}
+              src={iconEmailAccent200}
               alt="GitHub icon"
               width="0"
               height="0"
@@ -95,7 +144,7 @@ export default function Socials(props: any) {
               className={clsx("w-10 h-10 hidden", {
                 "group-hover:block": !props.darkMode,
               })}
-              src={iconGitHubAccent100}
+              src={iconEmailAccent100}
               alt="GitHub icon"
               width="0"
               height="0"
