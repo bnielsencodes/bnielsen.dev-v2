@@ -8,7 +8,7 @@ import clsx from "clsx";
 export default function ToggleTheme(props: any) {
   return (
     // container
-    <div className="flex items-center mt-1 md:mt-[5px]">
+    <div className="flex items-center mt-1 mb-[5px] md:mt-[5px]">
       {/* toggle switch */}
       <div
         className={clsx(
