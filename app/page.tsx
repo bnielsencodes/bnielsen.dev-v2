@@ -8,6 +8,7 @@ import waveLightBottom from "@/public/assets/dividers/wave-light-bottom.svg";
 import NavBar from "./components/navigation/NavBar";
 import Header from "./components/header/Header";
 import Skills from "./components/skills/Skills";
+import clsx from "clsx";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
@@ -19,7 +20,12 @@ export default function Home() {
 
   return (
     <>
-      <main className={`${darkMode ? "bg-neutral-100" : "bg-neutral-400"}`}>
+      <main
+        className={clsx("", {
+          "bg-neutral-100": darkMode,
+          "bg-neutral-600": !darkMode,
+        })}
+      >
         <NavBar darkMode={darkMode} toggleTheme={toggleTheme} />
         <Header darkMode={darkMode} />
         <Skills />
