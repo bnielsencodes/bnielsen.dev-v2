@@ -51,7 +51,7 @@ export default function MobileNav(props: any) {
               href="#top-divider"
               aria-label="projects"
             >
-              Projects
+              Work
             </a>
           </li>
           <li>
