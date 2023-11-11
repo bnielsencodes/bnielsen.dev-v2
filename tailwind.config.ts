@@ -20,11 +20,6 @@ const config: Config = {
         100: "#0072bb",
         200: "#00c8f5",
       },
-    },
-    extend: {
-      fontFamily: {
-        sans: ["var(--font-roboto)"],
-        mono: ["var(--font-roboto-mono)"],
       tech: {
         css: {
           100: "#1572b6",
@@ -65,6 +60,10 @@ const config: Config = {
         },
       },
     },
+    fontFamily: {
+      sans: ["var(--font-roboto)"],
+      mono: ["var(--font-roboto-mono)"],
+    },
     screens: {
       md: "768px",
       // => @media (min-width: 1440px) { ... }
@@ -73,6 +72,7 @@ const config: Config = {
       xl: "1440px",
       // => @media (min-width: 1440px) { ... }
     },
+    extend: {},
   },
   plugins: [],
 };
