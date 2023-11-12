@@ -7,6 +7,23 @@ export default function Skill(props: any) {
         className={clsx(
           "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg hover:cursor-help",
           {
+            "border-neutral-300 bg-neutral-100": props.darkMode,
+            "border-neutral-300 bg-neutral-600": !props.darkMode,
+            "group-hover:border-tech-css-100": props.skill.name === "css",
+            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:border-neutral-100":
+              props.skill.name === "figma" || props.skill.name === "vite",
+            "group-hover:border-tech-git": props.skill.name === "git",
+            "group-hover:border-tech-html-200": props.skill.name === "html",
+            "group-hover:border-tech-javascript-100":
+              props.skill.name === "javascript",
+            "group-hover:border-tech-next": props.skill.name === "next",
+            "group-hover:border-tech-postgresql":
+              props.skill.name === "postgresql",
+            "group-hover:border-tech-react": props.skill.name === "react",
+            "group-hover:border-tech-sass": props.skill.name === "sass",
+            "group-hover:border-tech-tailwind": props.skill.name === "tailwind",
+            "group-hover:border-tech-typescript-200":
+              props.skill.name === "typescript",
           }
         )}
       >
