@@ -74,4 +74,28 @@ body {
 ::-webkit-scrollbar-track {
   background-color: #fff;
   border-radius: 20px;
+.vite-border-animation {
+  animation: viteBgGradientAnimation 3.75s ease 0s infinite normal none;
+}
+
+@keyframes viteBgGradientAnimation {
+  0% {
+    background: hsla(195, 100%, 63%, 1);
+  }
+  20% {
+    background: hsla(281, 99%, 60%, 1);
+  }
+  40% {
+    background: hsla(50, 100%, 76%, 1);
+  }
+  60% {
+    background: hsla(50, 100%, 60%, 1);
+  }
+  80% {
+    background: hsla(40, 100%, 50%, 1);
+  }
+  100% {
+    background: hsla(195, 100%, 63%, 1);
+  }
+}
 }
