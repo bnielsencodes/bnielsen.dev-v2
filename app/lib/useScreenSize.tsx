@@ -13,6 +13,10 @@ const useScreenSize = (): ScreenSize => {
   });
 
   useEffect(() => {
+    if (typeof window === "undefined") {
+      return;
+    }
+
     const handleResize = () => {
       setScreenSize({
         width: window.innerWidth,
