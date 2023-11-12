@@ -1,8 +1,8 @@
 import Image from "next/image";
-import sunIconBlack from "/public/assets/icon-sun-black.svg";
-import moonIconBlack from "/public/assets/icon-moon-black.svg";
-import sunIconWhite from "/public/assets/icon-sun-white.svg";
-import moonIconWhite from "/public/assets/icon-moon-white.svg";
+import sunIconDark from "/public/assets/themeToggle/icon-sun-dark.svg";
+import moonIconDark from "/public/assets/themeToggle/icon-moon-dark.svg";
+import sunIconLight from "/public/assets/themeToggle/icon-sun-light.svg";
+import moonIconLight from "/public/assets/themeToggle/icon-moon-light.svg";
 import clsx from "clsx";
 
 export default function ToggleTheme(props: any) {
@@ -15,7 +15,7 @@ export default function ToggleTheme(props: any) {
           "relative flex items-center justify-end w-[68px] h-[36px] rounded-[32px] group md:hover:cursor-pointer lg:cursor-pointer",
           {
             "bg-neutral-400": props.darkMode,
-            "bg-neutral-200": !props.darkMode,
+            "bg-neutral-300": !props.darkMode,
           }
         )}
         onClick={props.toggleTheme}
@@ -24,7 +24,7 @@ export default function ToggleTheme(props: any) {
         {props.darkMode ? (
           <Image
             className="absolute top-2 left-2"
-            src={sunIconBlack}
+            src={sunIconDark}
             alt="sun icon"
             width="20"
             height="20"
@@ -33,7 +33,7 @@ export default function ToggleTheme(props: any) {
         ) : (
           <Image
             className="absolute top-2 left-2"
-            src={sunIconWhite}
+            src={sunIconLight}
             alt="sun icon"
             width="20"
             height="20"
@@ -47,7 +47,7 @@ export default function ToggleTheme(props: any) {
             "w-7 h-7 rounded-full mx-1 transition-transform duration-200 ease-linear md:group-hover:bg-accent-light",
             {
               "bg-neutral-100 -translate-x-8": props.darkMode,
-              "bg-neutral-500": !props.darkMode,
+              "bg-neutral-600": !props.darkMode,
             }
           )}
         ></div>
@@ -55,7 +55,7 @@ export default function ToggleTheme(props: any) {
         {props.darkMode ? (
           <Image
             className="absolute top-[8.5px] right-[9px]"
-            src={moonIconBlack}
+            src={moonIconDark}
             alt="sun icon"
             width="18"
             height="18"
@@ -64,7 +64,7 @@ export default function ToggleTheme(props: any) {
         ) : (
           <Image
             className="absolute top-[8.5px] right-[9px]"
-            src={moonIconWhite}
+            src={moonIconLight}
             alt="sun icon"
             width="18"
             height="18"
