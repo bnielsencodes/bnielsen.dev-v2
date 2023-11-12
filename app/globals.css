@@ -12,7 +12,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.hero-img {
+.avatar {
   position: relative;
   width: 10rem;
   height: 10rem;
@@ -23,10 +23,12 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   -webkit-animation: morph 8s ease-in-out infinite;
+  -moz-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
 
+/* hero img blob animation */
 @keyframes morph {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
