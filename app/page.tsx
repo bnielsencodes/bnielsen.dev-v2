@@ -7,7 +7,7 @@ import waveDarkBottom from "@/public/assets/dividers/wave-dark-bottom.svg";
 import waveLightBottom from "@/public/assets/dividers/wave-light-bottom.svg";
 import NavBar from "./components/navigation/NavBar";
 import Header from "./components/header/Header";
-import Skills from "./components/skills/Skills";
+import AboutSection from "./components/about/AboutSection";
 import clsx from "clsx";
 
 export default function Home() {
@@ -28,7 +28,6 @@ export default function Home() {
       >
         <NavBar darkMode={darkMode} toggleTheme={toggleTheme} />
         <Header darkMode={darkMode} />
-        <Skills />
         {/* section top divider */}
         <Image
           className="w-full -mb-[1px]"
@@ -38,6 +37,7 @@ export default function Home() {
           height="0"
           sizes="100vw"
         />
+        <AboutSection darkMode={darkMode} />
         {/* section bottom divider */}
         <Image
           className="w-full -mt-[1px]"
