@@ -1,3 +1,4 @@
+import Icon from "./Icon";
 import clsx from "clsx";
 
 export default function Skill(props: any) {
@@ -27,6 +28,9 @@ export default function Skill(props: any) {
           }
         )}
       >
+        <div className={`w-[55px] h-[55px] icon--${props.skill.name}`}>
+          <Icon name={props.skill.name} />
+        </div>
       </div>
     </div>
   );
