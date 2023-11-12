@@ -26,8 +26,6 @@ const config: Config = {
           200: "#33a9dc",
           300: "#fff",
           400: "#ebebeb",
-          500: "#fff",
-          600: "#ebebeb",
         },
         figma: {
           100: "#0acf83",
@@ -45,12 +43,17 @@ const config: Config = {
         },
         javascript: {
           100: "#f0db4f",
-          200: "#272727",
+          200: "#1a1a1a",
         },
         next: "#fff",
+        postgresql: "#336791",
         react: "#62dafb",
         sass: "#c76494",
         tailwind: "#36bdf9",
+        typescript: {
+          100: "#1a1a1a",
+          200: "#007acc",
+        },
         vite: {
           100: "#41d1ff",
           200: "#bd34fe",
