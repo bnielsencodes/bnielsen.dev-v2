@@ -43,11 +43,32 @@ body {
 
 ::-webkit-scrollbar {
   width: 8px;
+.figma-border-animation {
+  animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
 }
 
 ::-webkit-scrollbar-thumb {
   background-color: #8e8e8e;
   border-radius: 20px;
+@keyframes figmaBgGradientAnimation {
+  0% {
+    background: hsla(13, 80%, 51%, 1);
+  }
+  20% {
+    background: hsla(6, 85%, 66%, 1);
+  }
+  40% {
+    background: hsla(267, 85%, 64%, 1);
+  }
+  60% {
+    background: hsla(197, 89%, 52%, 1);
+  }
+  80% {
+    background: hsla(156, 86%, 41%, 1);
+  }
+  100% {
+    background: hsla(13, 80%, 51%, 1);
+  }
 }
 
 ::-webkit-scrollbar-track {
