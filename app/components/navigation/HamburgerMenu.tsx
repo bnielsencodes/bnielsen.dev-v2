@@ -7,7 +7,7 @@ export default function HamburgerMenu(props: any) {
         "fixed top-2 right-2 z-40 flex flex-col justify-around items-center gap-1 w-[40px] h-[40px] py-[13px] px-2 group",
         {
           "border border-neutral-500": props.showMobileNav && props.darkMode,
-          "border border-neutral-100": props.showMobileNav && !props.darkMode,
+          "border border-neutral-200": props.showMobileNav && !props.darkMode,
         }
       )}
       onClick={() => props.toggleMobileNav()}
@@ -18,8 +18,8 @@ export default function HamburgerMenu(props: any) {
           {
             "rotate-45 translate-y-1": props.showMobileNav,
             "bg-neutral-400": props.showMobileNav && props.darkMode,
-            "bg-neutral-200": props.showMobileNav && !props.darkMode,
-            "bg-neutral-500": !props.showMobileNav && props.darkMode,
+            "bg-neutral-300": props.showMobileNav && !props.darkMode,
+            "bg-neutral-600": !props.showMobileNav && props.darkMode,
             "bg-neutral-100": !props.showMobileNav && !props.darkMode,
           }
         )}
@@ -30,8 +30,8 @@ export default function HamburgerMenu(props: any) {
           {
             "-rotate-45 -translate-y-1": props.showMobileNav,
             "bg-neutral-400": props.showMobileNav && props.darkMode,
-            "bg-neutral-200": props.showMobileNav && !props.darkMode,
-            "bg-neutral-500": !props.showMobileNav && props.darkMode,
+            "bg-neutral-300": props.showMobileNav && !props.darkMode,
+            "bg-neutral-600": !props.showMobileNav && props.darkMode,
             "bg-neutral-100": !props.showMobileNav && !props.darkMode,
           }
         )}
