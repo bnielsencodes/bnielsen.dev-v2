@@ -2,15 +2,25 @@ import clsx from "clsx";
 
 export default function Header(props: any) {
   return (
-    // this is a comment
-    <header className={clsx("flex flex-col items-center justify-center h-screen", { "bg-neutral-100": props.darkMode, "bg-neutral-500": !props.darkMode })}>
-      <div className="hero-img"></div>
-      <h1 className={clsx("mt-3 mb-[6px] font-mono text-3xl", { "text-neutral-500": props.darkMode, "text-neutral-100": !props.darkMode })}>Brandon Nielsen</h1>
-      <h2 className={clsx("text-lg", { "text-neutral-400": props.darkMode, "text-neutral-200": !props.darkMode })}>Web Developer</h2>
-      <div className="flex gap-4 mt-[15px]">
-        <button className="py-[10px] px-5 border border-color-neutral-500 rounded-lg bg-neutral-500 text-neutral-100 font-semibold">View Work</button>
-        <button className="py-[10px] px-5 border border-color-neutral-200 rounded-lg font-semibold text-neutral-500">Contact</button>
-      </div>
+    <header className="flex flex-col items-center justify-center h-screen">
+      <h1
+        className={clsx("mt-3 mb-[6px] font-mono text-3xl font-bold", {
+          "text-neutral-600": props.darkMode,
+          "text-neutral-100": !props.darkMode,
+        })}
+      >
+        Brandon Nielsen
+      </h1>
+      <p
+        className={clsx("text-lg", {
+          "text-neutral-400": props.darkMode,
+          "text-neutral-300": !props.darkMode,
+        })}
+      >
+        <span className="pr-[1px]">{`<`}</span>
+        Web Developer
+        <span className="text-lg">{` />`}</span>
+      </p>
     </header>
   );
 }
