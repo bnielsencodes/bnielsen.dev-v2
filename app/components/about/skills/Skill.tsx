@@ -32,6 +32,14 @@ export default function Skill(props: any) {
           <Icon name={props.skill.name} />
         </div>
       </div>
+
+      {props.skill.name === "figma" && (
+        <div className="figma-border-animation content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block "></div>
+      )}
+
+      {props.skill.name === "vite" && (
+        <div className="vite-border-animation content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block "></div>
+      )}
     </div>
   );
 }
