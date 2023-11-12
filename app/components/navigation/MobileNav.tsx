@@ -9,7 +9,7 @@ export default function MobileNav(props: any) {
         "fixed top-0 right-0 left-0 z-30 flex flex-col h-screen",
         {
           "bg-neutral-100": props.darkMode,
-          "bg-neutral-500": !props.darkMode,
+          "bg-neutral-600": !props.darkMode,
         }
       )}
     >
@@ -18,7 +18,7 @@ export default function MobileNav(props: any) {
         <ul
           className={clsx("flex flex-col justify-between h-60 text-5xl", {
             "text-neutral-500": props.darkMode,
-            "text-neutral-100": !props.darkMode,
+            "text-neutral-200": !props.darkMode,
           })}
         >
           <li>
