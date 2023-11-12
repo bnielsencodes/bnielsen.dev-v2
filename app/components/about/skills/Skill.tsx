@@ -1,7 +1,10 @@
+import { useState } from "react";
 import Icon from "./Icon";
 import clsx from "clsx";
 
 export default function Skill(props: any) {
+  const [showViteBg, setShowViteBg] = useState(false);
+
   return (
     <div className="relative group">
       <div
@@ -27,6 +30,12 @@ export default function Skill(props: any) {
               props.skill.name === "typescript",
           }
         )}
+        onMouseEnter={() => {
+          setShowViteBg(true);
+        }}
+        onMouseLeave={() => {
+          setShowViteBg(false);
+        }}
       >
         <div className={`w-[55px] h-[55px] icon--${props.skill.name}`}>
           <Icon name={props.skill.name} />
