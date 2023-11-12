@@ -6,7 +6,7 @@ export default function MobileNav(props: any) {
   return (
     <div
       className={clsx(
-        "fixed top-0 right-0 left-0 z-20 flex flex-col h-screen",
+        "fixed top-0 right-0 left-0 z-30 flex flex-col h-screen",
         {
           "bg-neutral-100": props.darkMode,
           "bg-neutral-500": !props.darkMode,

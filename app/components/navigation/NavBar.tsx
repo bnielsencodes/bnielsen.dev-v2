@@ -16,7 +16,7 @@ export default function NavBar(props: any) {
   return (
     <nav
       className={clsx(
-        "fixed top-0 right-0 left-0 z-10 flex items-center justify-start h-14 pl-4 pr-2 border-b bg-opacity-95",
+        "fixed top-0 right-0 left-0 z-20 flex items-center justify-start h-14 pl-4 pr-2 border-b bg-opacity-80 backdrop-blur-sm",
         {
           "bg-neutral-100 border-neutral-200": props.darkMode,
           "bg-neutral-500 border-neutral-400": !props.darkMode,
