@@ -188,18 +188,81 @@ const skills = [
   },
   {
     id: 3,
-    name: "tailwind",
-    tech: "Tailwind",
+    name: "vite",
+    tech: "Vite",
   },
   {
     id: 4,
-    name: "js",
+    name: "javascript",
     tech: "JavaScript",
   },
   {
     id: 5,
-    name: "vite",
-    tech: "Vite",
+    name: "typescript",
+    tech: "TypeScript",
+  },
+  {
+    id: 6,
+    name: "postgresql",
+    tech: "PostgreSQL",
+  },
+  {
+    id: 7,
+    name: "tailwind",
+    tech: "Tailwind",
+  },
+  {
+    id: 8,
+    name: "sass",
+    tech: "Sass",
+  },
+  {
+    id: 9,
+    name: "git",
+    tech: "Git",
+  },
+  {
+    id: 10,
+    name: "html",
+    tech: "HTML",
+  },
+  {
+    id: 11,
+    name: "css",
+    tech: "CSS",
+  },
+  {
+    id: 12,
+    name: "figma",
+    tech: "Figma",
+  },
+];
+
+const skillsLg = [
+  {
+    id: 1,
+    name: "react",
+    tech: "React",
+  },
+  {
+    id: 2,
+    name: "next",
+    tech: "Next.js",
+  },
+  {
+    id: 3,
+    name: "javascript",
+    tech: "JavaScript",
+  },
+  {
+    id: 4,
+    name: "typescript",
+    tech: "TypeScript",
+  },
+  {
+    id: 5,
+    name: "tailwind",
+    tech: "Tailwind",
   },
   {
     id: 6,
@@ -208,8 +271,8 @@ const skills = [
   },
   {
     id: 7,
-    name: "figma",
-    tech: "Figma",
+    name: "postgresql",
+    tech: "PostgreSQL",
   },
   {
     id: 8,
@@ -223,9 +286,19 @@ const skills = [
   },
   {
     id: 10,
+    name: "vite",
+    tech: "Vite",
+  },
+  {
+    id: 11,
     name: "git",
     tech: "Git",
   },
+  {
+    id: 12,
+    name: "figma",
+    tech: "Figma",
+  },
 ];
 
-export { projects, skills };
+export { projects, skills, skillsLg };
