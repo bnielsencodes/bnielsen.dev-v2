@@ -2,6 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #8e8e8e;
+  border-radius: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #fff;
+  border-radius: 20px;
+} */
+
 body {
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
@@ -41,15 +55,10 @@ body {
   }
 }
 
-::-webkit-scrollbar {
-  width: 8px;
 .figma-border-animation {
   animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
 }
 
-::-webkit-scrollbar-thumb {
-  background-color: #8e8e8e;
-  border-radius: 20px;
 @keyframes figmaBgGradientAnimation {
   0% {
     background: hsla(13, 80%, 51%, 1);
@@ -71,9 +80,6 @@ body {
   }
 }
 
-::-webkit-scrollbar-track {
-  background-color: #fff;
-  border-radius: 20px;
 .vite-border-animation {
   animation: viteBgGradientAnimation 3.75s ease 0s infinite normal none;
 }
