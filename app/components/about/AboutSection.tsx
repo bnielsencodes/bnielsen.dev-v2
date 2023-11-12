@@ -1,3 +1,4 @@
+import Skills from "./skills/Skills";
 import clsx from "clsx";
 
 export default function AboutSection(props: any) {
@@ -20,6 +21,11 @@ export default function AboutSection(props: any) {
       >
         About
       </p>
+      <div
+        className="flex flex-col justify-center pb-[25px] mt-[50px] text-[0.9rem] "
+      >
+        <Skills darkMode={props.darkMode} />
+      </div>
     </section>
   );
 }
