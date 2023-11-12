@@ -1,4 +1,5 @@
 import Avatar from "./Avatar";
+import CTAButtons from "./CTAButtons";
 import clsx from "clsx";
 
 export default function Header(props: any) {
@@ -23,6 +24,7 @@ export default function Header(props: any) {
         Web Developer
         <span className="text-lg">{` />`}</span>
       </p>
+      <CTAButtons darkMode={props.darkMode} />
     </header>
   );
 }
