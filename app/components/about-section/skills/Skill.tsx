@@ -38,11 +38,6 @@ export default function Skill(props: any) {
           setShowViteBg(false);
         }}
       >
-        <Tooltip
-          name={props.skill.name}
-          tech={props.skill.tech}
-          showTooltip={showTooltip}
-        />
         <div className={`w-[55px] h-[55px] icon--${props.skill.name}`}>
           <Icon name={props.skill.name} />
         </div>
