@@ -28,6 +28,7 @@ export default function Skill(props: any) {
             "group-hover:border-tech-tailwind": props.skill.name === "tailwind",
             "group-hover:border-tech-typescript-200":
               props.skill.name === "typescript",
+            // "hover:border-tech-vite": props.skill.name === "vite",
           }
         )}
         onMouseEnter={() => {
@@ -37,6 +38,11 @@ export default function Skill(props: any) {
           setShowViteBg(false);
         }}
       >
+        <Tooltip
+          name={props.skill.name}
+          tech={props.skill.tech}
+          showTooltip={showTooltip}
+        />
         <div className={`w-[55px] h-[55px] icon--${props.skill.name}`}>
           <Icon name={props.skill.name} />
         </div>
