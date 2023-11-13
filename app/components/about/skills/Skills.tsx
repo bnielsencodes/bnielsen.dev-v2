@@ -1,10 +1,10 @@
-import useScreenSize from "../../../lib/useScreenSize";
+import useMediaQuery from "../../../lib/useMediaQuery";
 import { skills, skillsLg } from "../../../data";
 import Skill from "./Skill";
 import clsx from "clsx";
 
 export default function Skills(props: any) {
-  const screenSize = useScreenSize();
+  const isBreakpoint = useMediaQuery(768);
 
   return (
     <section className="w-[293px] mx-auto">
@@ -12,7 +12,7 @@ export default function Skills(props: any) {
         Top Skills
       </p>
       <div className="grid grid-cols-3 gap-x-3 gap-y-4 mt-8">
-        {screenSize.width >= 768
+        {isBreakpoint
           ? skillsLg.map((skill) => {
               return (
                 <Skill key={skill.id} skill={skill} darkMode={props.darkMode} />
