@@ -29,6 +29,7 @@ export default function MobileNav(props: any) {
               className={clsx("hover:text-accent-100", {
                 "hover:text-accent-200": props.darkMode,
               })}
+              onClick={() => props.toggleMobileNav()}
               href="#header"
               aria-label="home"
             >
@@ -40,6 +41,7 @@ export default function MobileNav(props: any) {
               className={clsx("hover:text-accent-100", {
                 "hover:text-accent-200": props.darkMode,
               })}
+              onClick={() => props.toggleMobileNav()}
               href="#about-section"
               aria-label="about"
             >
@@ -51,18 +53,27 @@ export default function MobileNav(props: any) {
               className={clsx("hover:text-accent-100", {
                 "hover:text-accent-200": props.darkMode,
               })}
-              href="#top-divider"
+              onClick={() => props.toggleMobileNav()}
+              href="#projects-section"
               aria-label="projects"
             >
               Portfolio
             </a>
           </li>
-          <li className="h-[87px]">
+          {/* <li>
             <a
               className={clsx("hover:text-accent-100", {
                 "hover:text-accent-200": props.darkMode,
               })}
               href="#bottom-divider"
+              aria-label="contact"
+          <li className="h-[87px]">
+            <a
+              className={clsx("hover:text-accent-100", {
+                "hover:text-accent-200": props.darkMode,
+              })}
+              onClick={() => props.toggleMobileNav()}
+              href="#contact-section"
               aria-label="contact"
             >
               Contact
