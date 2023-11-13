@@ -24,6 +24,7 @@ export default function MobileNav(props: any) {
             }
           )}
         >
+          {/* about link */}
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
@@ -36,6 +37,8 @@ export default function MobileNav(props: any) {
               About
             </a>
           </li>
+
+          {/* portfolio link */}
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
@@ -48,6 +51,8 @@ export default function MobileNav(props: any) {
               Portfolio
             </a>
           </li>
+
+          {/* contact link */}
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
@@ -62,6 +67,7 @@ export default function MobileNav(props: any) {
           </li>
         </ul>
       </div>
+
       {/* bottom container */}
       <div className="flex items-center justify-between w-full pr-[19px] pl-4 pb-[18px]">
         <Socials darkMode={props.darkMode} />
