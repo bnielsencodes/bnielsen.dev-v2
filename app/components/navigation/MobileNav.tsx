@@ -16,12 +16,12 @@ export default function MobileNav(props: any) {
       {/* top container */}
       <div className="flex items-center justify-start w-full h-full pl-4">
         <ul
-          className={clsx("flex flex-col justify-between h-60 text-5xl", {
+          className={clsx("flex flex-col justify-between h-[15rem] text-7xl", {
             "text-neutral-500": props.darkMode,
             "text-neutral-200": !props.darkMode,
           })}
         >
-          <li>
+          {/* <li>
             <a
               className={clsx("hover:text-accent-100", {
                 "hover:text-accent-200": props.darkMode,
@@ -31,7 +31,7 @@ export default function MobileNav(props: any) {
             >
               Home
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               className={clsx("hover:text-accent-100", {
@@ -51,7 +51,7 @@ export default function MobileNav(props: any) {
               href="#top-divider"
               aria-label="projects"
             >
-              Work
+              Portfolio
             </a>
           </li>
           <li>
