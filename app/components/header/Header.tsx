@@ -7,12 +7,15 @@ export default function Header(props: any) {
     <header className="flex flex-col items-center justify-center h-screen">
       <Avatar />
       <h1
-        className={clsx("mt-3 mb-[6px] font-mono text-3xl font-bold", {
-          "text-neutral-600": props.darkMode,
-          "text-neutral-100": !props.darkMode,
-        })}
+        className={clsx(
+          "w-[285px] mt-3 mb-[6px] font-mono text-3xl font-bold text-center",
+          {
+            "text-neutral-600": props.darkMode,
+            "text-neutral-100": !props.darkMode,
+          }
+        )}
       >
-        Brandon Nielsen
+        Hello, I&apos;m Brandon Nielsen
       </h1>
       <p
         className={clsx("text-lg", {
