@@ -1,4 +1,3 @@
-import Bio from "./bio/Bio";
 import Skills from "./skills/Skills";
 import clsx from "clsx";
 
@@ -25,7 +24,6 @@ export default function AboutSection(props: any) {
       <div
         className="flex flex-col justify-center pb-[25px] mt-[50px] text-[0.9rem] "
       >
-        <Bio />
         <Skills darkMode={props.darkMode} />
       </div>
     </section>
