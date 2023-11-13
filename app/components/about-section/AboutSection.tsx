@@ -1,3 +1,5 @@
+import Image from "next/image";
+import illustration from "/public/assets/undraw_progressive_app_m-9-ms.svg";
 import Skills from "./skills/Skills";
 import clsx from "clsx";
 
@@ -33,6 +35,14 @@ export default function AboutSection(props: any) {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
+        <Image
+          className="w-64 h-auto mx-auto"
+          src={illustration}
+          alt="letter N logo"
+          width="1140"
+          height="655"
+          sizes="100vw"
+        />
       </div>
       <div className="flex flex-col justify-center pb-[25px] mt-[50px] text-[0.9rem] ">
         <Skills darkMode={props.darkMode} />
