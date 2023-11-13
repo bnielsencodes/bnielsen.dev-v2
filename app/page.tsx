@@ -9,6 +9,7 @@ import NavBar from "./components/navigation/NavBar";
 import Header from "./components/header/Header";
 import AboutSection from "./components/about-section/AboutSection";
 import ProjectsSection from "./components/projects-section/ProjectsSection";
+import ContactSection from "./components/contact-section/ContactSection";
 import clsx from "clsx";
 
 export default function Home() {
@@ -49,6 +50,15 @@ export default function Home() {
           sizes="100vw"
         />
         <ProjectsSection darkMode={darkMode} />
+        <Image
+          className="w-full -mb-[1px]"
+          src={darkMode ? waveDarkTop : waveLightTop}
+          alt="wave section divider"
+          width="0"
+          height="0"
+          sizes="100vw"
+        />
+        <ContactSection darkMode={darkMode} />
       </main>
     </>
   );
