@@ -48,7 +48,7 @@ export default function MobileNav(props: any) {
               href="#projects-section"
               aria-label="projects"
             >
-              Portfolio
+              Work
             </a>
           </li>
 
