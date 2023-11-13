@@ -25,7 +25,7 @@ export default function AboutSection(props: any) {
         About
       </p>
       {/* bio */}
-      <div className="flex flex-col gap-16 mb-20">
+      <div className="flex flex-col gap-16 mx-auto mb-20">
         <p className="w-[375px] px-[28px] mt-16 text-neutral-500 ">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
