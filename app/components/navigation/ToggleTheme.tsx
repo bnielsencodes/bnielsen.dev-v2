@@ -12,7 +12,7 @@ export default function ToggleTheme(props: any) {
       {/* toggle switch */}
       <div
         className={clsx(
-          "relative flex items-center justify-end w-[68px] h-[36px] rounded-[32px] group md:hover:cursor-pointer lg:cursor-pointer",
+          "relative flex items-center justify-end w-[68px] h-[36px] rounded-[32px] group cursor-pointer",
           {
             "bg-neutral-400": props.darkMode,
             "bg-neutral-300": !props.darkMode,
