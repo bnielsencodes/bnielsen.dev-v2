@@ -32,7 +32,8 @@
     "app/lib/Providers.tsx",
     "app/projects-page/page.tsx",
     "app/components/navigation/ToggleTheme.tsx",
-    "app/lib/useScreenWidth.tsx"
+    "app/lib/useScreenWidth.tsx",
+    "app/lib/useScreenSize.js"
   ],
   "exclude": ["node_modules"]
 }
