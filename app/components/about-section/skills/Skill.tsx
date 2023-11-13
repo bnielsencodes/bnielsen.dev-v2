@@ -38,15 +38,18 @@ export default function Skill(props: any) {
           setShowViteBg(false);
         }}
       >
+        {/* skill icon */}
         <div className={`w-[55px] h-[55px] icon--${props.skill.name}`}>
           <Icon name={props.skill.name} />
         </div>
       </div>
 
+      {/* hover border for figma skill */}
       {props.skill.name === "figma" && (
         <div className="figma-border-animation content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block "></div>
       )}
 
+      {/* hover border for vite skill */}
       {props.skill.name === "vite" && (
         <div className="vite-border-animation content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block "></div>
       )}
