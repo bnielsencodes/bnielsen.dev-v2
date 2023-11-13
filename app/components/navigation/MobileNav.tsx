@@ -24,18 +24,6 @@ export default function MobileNav(props: any) {
             }
           )}
         >
-          {/* <li>
-            <a
-              className={clsx("hover:text-accent-100", {
-                "hover:text-accent-200": props.darkMode,
-              })}
-              onClick={() => props.toggleMobileNav()}
-              href="#header"
-              aria-label="home"
-            >
-              Home
-            </a>
-          </li> */}
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
@@ -60,13 +48,6 @@ export default function MobileNav(props: any) {
               Portfolio
             </a>
           </li>
-          {/* <li>
-            <a
-              className={clsx("hover:text-accent-100", {
-                "hover:text-accent-200": props.darkMode,
-              })}
-              href="#bottom-divider"
-              aria-label="contact"
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
