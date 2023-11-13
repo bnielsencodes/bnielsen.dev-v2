@@ -8,6 +8,7 @@ import waveLightBottom from "@/public/assets/dividers/wave-light-bottom.svg";
 import NavBar from "./components/navigation/NavBar";
 import Header from "./components/header/Header";
 import AboutSection from "./components/about/AboutSection";
+import ProjectsSection from "./components/projects/ProjectsSection";
 import clsx from "clsx";
 
 export default function Home() {
@@ -47,6 +48,7 @@ export default function Home() {
           height="0"
           sizes="100vw"
         />
+        <ProjectsSection darkMode={darkMode} />
       </main>
     </>
   );
