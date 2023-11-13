@@ -7,8 +7,8 @@ import waveDarkBottom from "@/public/assets/dividers/wave-dark-bottom.svg";
 import waveLightBottom from "@/public/assets/dividers/wave-light-bottom.svg";
 import NavBar from "./components/navigation/NavBar";
 import Header from "./components/header/Header";
-import AboutSection from "./components/about/AboutSection";
-import ProjectsSection from "./components/projects/ProjectsSection";
+import AboutSection from "./components/about-section/AboutSection";
+import ProjectsSection from "./components/projects-section/ProjectsSection";
 import clsx from "clsx";
 
 export default function Home() {
