@@ -8,7 +8,7 @@ export default function Skills({ darkMode }: { darkMode: boolean }) {
 
   return (
     <aside className="flex flex-col justify-center w-[293px] pb-[25px] mt-[50px] mx-auto text-[0.9rem]">
-      <p className="w-[105px] border-b-4 border-b-neutral-300 mx-auto text-neutral-500 text-[1.4rem] font-semibold">
+      <p className="border-b-4 border-b-neutral-300 mx-auto font-bold text-neutral-500 text-[1.4rem]">
         Top Skills
       </p>
       <div className="grid grid-cols-3 gap-x-3 gap-y-4 mt-8">
