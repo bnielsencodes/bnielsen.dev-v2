@@ -56,7 +56,7 @@ body {
 }
 
 .figma-border-animation {
-  animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
+  animation: figmaBgGradientAnimation 3.75s ease 0s infinite normal none;
 }
 
 .vite-border-animation {
