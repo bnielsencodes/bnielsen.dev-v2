@@ -1,5 +1,4 @@
-import Image from "next/image";
-import illustration from "/public/assets/undraw_progressive_app_m-9-ms.svg";
+import Bio from "./bio/Bio";
 import Skills from "./skills/Skills";
 import clsx from "clsx";
 
@@ -24,29 +23,9 @@ export default function AboutSection(props: any) {
       >
         About
       </p>
-      {/* bio */}
-      <div className="flex flex-col gap-16 mx-auto mb-20">
-        <p className="w-[375px] px-[28px] mt-16 text-neutral-500 ">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
-        </p>
-        <Image
-          className="w-64 h-auto mx-auto"
-          src={illustration}
-          alt="letter N logo"
-          width="1140"
-          height="655"
-          sizes="100vw"
-        />
-      </div>
-      <div className="flex flex-col justify-center pb-[25px] mt-[50px] text-[0.9rem] ">
-        <Skills darkMode={props.darkMode} />
-      </div>
+      <Bio />
+      <Skills
+      />
     </section>
   );
 }
