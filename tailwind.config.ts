@@ -66,6 +66,7 @@ const config: Config = {
     fontFamily: {
       sans: ["var(--font-roboto)"],
       mono: ["var(--font-roboto-mono)"],
+      mosk: ["var(--font-mosk)"],
     },
     screens: {
       md: "768px",
