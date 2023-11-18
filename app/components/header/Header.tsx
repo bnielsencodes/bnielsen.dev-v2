@@ -6,14 +6,15 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
     <header className="flex flex-col items-center justify-center h-screen px-7">
       <h1
         className={clsx(
-          "w-[285px] mt-3 mb-[6px] font-mono text-3xl font-bold text-center",
+          "header-text mt-3 mb-[6px] text-[2.535rem] leading-[3rem] font-extrabold text-left",
           {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,
           }
         )}
       >
-        Hello, I&apos;m Brandon Nielsen
+        Hello, I&apos;m Brandon Nielsen, a{" "}
+        <span className="header-text text-neutral-100">Web Developer</span>.
       </h1>
       <p
         className={clsx("text-lg", {
@@ -21,9 +22,9 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           "text-neutral-300": !darkMode,
         })}
       >
-        <span className="pr-[1px]">{`<`}</span>
+        {/* <span className="pr-[1px]">{`<`}</span>
         Web Developer
-        <span className="text-lg">{` />`}</span>
+        <span className="text-lg">{` />`}</span> */}
       </p>
       <CTAButtons {...{ darkMode }} />
     </header>
