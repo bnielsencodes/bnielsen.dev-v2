@@ -37,7 +37,7 @@ export default function MobileNav({
           {/* about link */}
           <li className="h-[87px]">
             <a
-              className={clsx("hover:text-accent-100", {
+              className={clsx("font-bold hover:text-accent-100", {
                 "hover:text-accent-200": darkMode,
               })}
               onClick={() => toggleMobileNav()}
@@ -51,7 +51,7 @@ export default function MobileNav({
           {/* portfolio link */}
           <li className="h-[87px]">
             <a
-              className={clsx("hover:text-accent-100", {
+              className={clsx("font-bold hover:text-accent-100", {
                 "hover:text-accent-200": darkMode,
               })}
               onClick={() => toggleMobileNav()}
@@ -65,7 +65,7 @@ export default function MobileNav({
           {/* contact link */}
           <li className="h-[87px]">
             <a
-              className={clsx("hover:text-accent-100", {
+              className={clsx("font-bold hover:text-accent-100", {
                 "hover:text-accent-200": darkMode,
               })}
               onClick={() => toggleMobileNav()}
