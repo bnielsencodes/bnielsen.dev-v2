@@ -55,6 +55,10 @@ body {
   }
 }
 
+.header-text {
+  -webkit-text-stroke: 1.75px #ededed;
+}
+
 .figma-border-animation {
   animation: figmaBgGradientAnimation 3.75s ease 0s infinite normal none;
 }
