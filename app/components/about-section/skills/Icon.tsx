@@ -122,7 +122,7 @@ export default function CSS({
 
       {/* JAVASCRIPT icon */}
       {skill.name === "javascript" && (
-        <svg width="50px" height="50px" viewBox="0 0 128 128">
+        <svg width="55px" height="55px" viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-javascript-100"
             fill="#ededed"
