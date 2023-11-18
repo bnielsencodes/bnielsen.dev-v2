@@ -26,11 +26,15 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.header-text {
+  -webkit-text-stroke: 1.75px #ededed;
+}
+
 .avatar {
   position: relative;
   width: 10rem;
   height: 10rem;
-  border: 3px solid #1a1a1a;
+  border: 3px solid #555;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   background-image: url(/assets/avatar.jpeg);
   background-position: 50%;
@@ -55,9 +59,6 @@ body {
   }
 }
 
-.header-text {
-  -webkit-text-stroke: 1.75px #ededed;
-}
 
 .figma-border-animation {
   animation: figmaBgGradientAnimation 3.75s ease 0s infinite normal none;
