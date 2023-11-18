@@ -1,8 +1,18 @@
-export default function CSS(props: any) {
+export default function CSS({
+  skill,
+  showViteBg,
+}: {
+  skill: {
+    id: number;
+    name: string;
+    tech: string;
+  };
+  showViteBg: boolean;
+}) {
   return (
     <>
       {/* CSS icon */}
-      {props.name === "css" && (
+      {skill.name === "css" && (
         <svg width="55px" height="55px" viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-css-100"
@@ -38,7 +48,7 @@ export default function CSS(props: any) {
       )}
 
       {/* FIGMA icon */}
-      {props.name === "figma" && (
+      {skill.name === "figma" && (
         <svg viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-figma-100 group-hover:stroke-tech-figma-100"
@@ -74,7 +84,7 @@ export default function CSS(props: any) {
       )}
 
       {/* GIT icon */}
-      {props.name === "git" && (
+      {skill.name === "git" && (
         <svg viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-git"
@@ -85,7 +95,7 @@ export default function CSS(props: any) {
       )}
 
       {/* HTML icon */}
-      {props.name === "html" && (
+      {skill.name === "html" && (
         <svg width="55px" height="55px" viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-html-100"
@@ -111,7 +121,7 @@ export default function CSS(props: any) {
       )}
 
       {/* JAVASCRIPT icon */}
-      {props.name === "javascript" && (
+      {skill.name === "javascript" && (
         <svg width="50px" height="50px" viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-javascript-100"
@@ -127,7 +137,7 @@ export default function CSS(props: any) {
       )}
 
       {/* NEXT icon */}
-      {props.name === "next" && (
+      {skill.name === "next" && (
         <svg
           className="group-hover:fill-tech-next"
           fill="#ededed"
@@ -138,7 +148,7 @@ export default function CSS(props: any) {
       )}
 
       {/* POSTGRESQL icon */}
-      {props.name === "postgresql" && (
+      {skill.name === "postgresql" && (
         <svg viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-postgresql"
@@ -151,7 +161,7 @@ export default function CSS(props: any) {
       )}
 
       {/* REACT icon */}
-      {props.name === "react" && (
+      {skill.name === "react" && (
         <svg viewBox="0 0 128 128">
           <g className="group-hover:fill-tech-react" fill="#ededed">
             <circle cx="64" cy="64" r="11.4"></circle>
@@ -161,7 +171,7 @@ export default function CSS(props: any) {
       )}
 
       {/* SASS icon */}
-      {props.name === "sass" && (
+      {skill.name === "sass" && (
         <svg viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-sass"
@@ -174,7 +184,7 @@ export default function CSS(props: any) {
       )}
 
       {/* TAILWIND icon */}
-      {props.name === "tailwind" && (
+      {skill.name === "tailwind" && (
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 22 22"
@@ -190,7 +200,7 @@ export default function CSS(props: any) {
       )}
 
       {/* TYPESCRIPT icon */}
-      {props.name === "typescript" && (
+      {skill.name === "typescript" && (
         <svg viewBox="0 0 128 128">
           <path
             className="group-hover:fill-tech-typescript-100"
@@ -207,7 +217,7 @@ export default function CSS(props: any) {
       )}
 
       {/* VITE icon */}
-      {props.name === "vite" && (
+      {skill.name === "vite" && (
         <svg
           className="vite-animation"
           width="55px"
@@ -223,7 +233,7 @@ export default function CSS(props: any) {
           <path
             d="M22.2644 2.0069l-9.7253 1.9056a.3571.3571 0 00-.2879.3294l-.5982 10.1038c-.014.238.2045.4227.4367.3691l2.7077-.6248c.2534-.0585.4823.1647.4302.4194l-.8044 3.9393c-.0542.265.1947.4918.4536.4132l1.6724-.5082c.2593-.0787.5084.1487.4536.414l-1.2784 6.1877c-.08.387.4348.598.6495.2662L16.5173 25 24.442 9.1848c.1327-.2648-.096-.5667-.387-.5106l-2.787.5379c-.262.0505-.4848-.1934-.4109-.4497l1.8191-6.306c.074-.2568-.1496-.5009-.4118-.4495z"
             fill="url(#paint1_linear)"
-            stroke={props.showViteBg ? "none" : "#1a1a1a"}
+            stroke={showViteBg ? "none" : "#1a1a1a"}
           />
           <defs id="defs50">
             <linearGradient
@@ -238,13 +248,13 @@ export default function CSS(props: any) {
               <stop
                 // className="group-hover:from-tech-vite-100"
                 offset="0"
-                stopColor={props.showViteBg ? "#41d1ff" : "#ededed"}
+                stopColor={showViteBg ? "#41d1ff" : "#ededed"}
                 id="stop38"
               />
               <stop
                 // className="group-hover:to-tech-vite-200"
                 offset="1"
-                stopColor={props.showViteBg ? "#bd34fe" : "#ededed"}
+                stopColor={showViteBg ? "#bd34fe" : "#ededed"}
                 id="stop40"
               />
             </linearGradient>
@@ -260,19 +270,19 @@ export default function CSS(props: any) {
               <stop
                 // className="group-hover:from-tech-vite-300"
                 offset="0"
-                stopColor={props.showViteBg ? "#ffea83" : "#ededed"}
+                stopColor={showViteBg ? "#ffea83" : "#ededed"}
                 id="stop43"
               />
               <stop
                 // className="group-hover:via-tech-vite-400"
                 offset=".0833"
-                stopColor={props.showViteBg ? "#ffdd35" : "#ededed"}
+                stopColor={showViteBg ? "#ffdd35" : "#ededed"}
                 id="stop45"
               />
               <stop
                 // className="group-hover:to-tech-vite-500"
                 offset="1"
-                stopColor={props.showViteBg ? "#ffa800" : "#ededed"}
+                stopColor={showViteBg ? "#ffa800" : "#ededed"}
                 id="stop47"
               />
             </linearGradient>

@@ -3,7 +3,7 @@ import { skills, skillsLg } from "../../../data";
 import Skill from "./Skill";
 import clsx from "clsx";
 
-export default function Skills(props: any) {
+export default function Skills({ darkMode }: { darkMode: boolean }) {
   const isBreakpoint = useMediaQuery(768);
 
   return (
@@ -15,12 +15,22 @@ export default function Skills(props: any) {
         {isBreakpoint
           ? skillsLg.map((skill) => {
               return (
-                <Skill key={skill.id} skill={skill} darkMode={props.darkMode} />
+                <Skill
+                  key={skill.id}
+                  {...{ skill, darkMode }}
+                  // skill={skill}
+                  // darkMode={darkMode}
+                />
               );
             })
           : skills.map((skill) => {
               return (
-                <Skill key={skill.id} skill={skill} darkMode={props.darkMode} />
+                <Skill
+                  key={skill.id}
+                  {...{ darkMode, skill }}
+                  // skill={skill}
+                  // darkMode={darkMode}
+                />
               );
             })}
       </div>

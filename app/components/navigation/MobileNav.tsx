@@ -2,14 +2,24 @@ import Socials from "./Socials";
 import ToggleTheme from "./ToggleTheme";
 import clsx from "clsx";
 
-export default function MobileNav(props: any) {
+export default function MobileNav({
+  darkMode,
+  toggleTheme,
+  showMobileNav,
+  toggleMobileNav,
+}: {
+  darkMode: boolean;
+  toggleTheme: () => void;
+  showMobileNav: boolean;
+  toggleMobileNav: () => void;
+}) {
   return (
     <div
       className={clsx(
         "fixed top-0 right-0 left-0 z-30 flex flex-col h-screen",
         {
-          "bg-neutral-100": props.darkMode,
-          "bg-neutral-600": !props.darkMode,
+          "bg-neutral-100": darkMode,
+          "bg-neutral-600": !darkMode,
         }
       )}
     >
@@ -19,8 +29,8 @@ export default function MobileNav(props: any) {
           className={clsx(
             "flex flex-col justify-center h-[17rem] text-[4.35rem]",
             {
-              "text-neutral-500": props.darkMode,
-              "text-neutral-200": !props.darkMode,
+              "text-neutral-500": darkMode,
+              "text-neutral-200": !darkMode,
             }
           )}
         >
@@ -28,9 +38,9 @@ export default function MobileNav(props: any) {
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
-                "hover:text-accent-200": props.darkMode,
+                "hover:text-accent-200": darkMode,
               })}
-              onClick={() => props.toggleMobileNav()}
+              onClick={() => toggleMobileNav()}
               href="#about-section"
               aria-label="about"
             >
@@ -42,9 +52,9 @@ export default function MobileNav(props: any) {
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
-                "hover:text-accent-200": props.darkMode,
+                "hover:text-accent-200": darkMode,
               })}
-              onClick={() => props.toggleMobileNav()}
+              onClick={() => toggleMobileNav()}
               href="#projects-section"
               aria-label="projects"
             >
@@ -56,9 +66,9 @@ export default function MobileNav(props: any) {
           <li className="h-[87px]">
             <a
               className={clsx("hover:text-accent-100", {
-                "hover:text-accent-200": props.darkMode,
+                "hover:text-accent-200": darkMode,
               })}
-              onClick={() => props.toggleMobileNav()}
+              onClick={() => toggleMobileNav()}
               href="#contact-section"
               aria-label="contact"
             >
@@ -70,10 +80,14 @@ export default function MobileNav(props: any) {
 
       {/* bottom container */}
       <div className="flex items-center justify-between w-full pr-[19px] pl-4 pb-[18px]">
-        <Socials darkMode={props.darkMode} />
+        <Socials
+          {...{ darkMode }}
+          // darkMode={darkMode}
+        />
         <ToggleTheme
-          darkMode={props.darkMode}
-          toggleTheme={props.toggleTheme}
+          {...{ darkMode, toggleTheme }}
+          // darkMode={darkMode}
+          // toggleTheme={toggleTheme}
         />
       </div>
     </div>

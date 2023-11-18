@@ -5,7 +5,13 @@ import sunIconLight from "/public/assets/themeToggle/icon-sun-light.svg";
 import moonIconLight from "/public/assets/themeToggle/icon-moon-light.svg";
 import clsx from "clsx";
 
-export default function ToggleTheme(props: any) {
+export default function ToggleTheme({
+  darkMode,
+  toggleTheme,
+}: {
+  darkMode: boolean;
+  toggleTheme: () => void;
+}) {
   return (
     // container
     <div className="flex items-center mt-1 mb-[5px] md:mt-[5px]">
@@ -14,14 +20,14 @@ export default function ToggleTheme(props: any) {
         className={clsx(
           "relative flex items-center justify-end w-[68px] h-[36px] rounded-[32px] group cursor-pointer",
           {
-            "bg-neutral-400": props.darkMode,
-            "bg-neutral-300": !props.darkMode,
+            "bg-neutral-400": darkMode,
+            "bg-neutral-300": !darkMode,
           }
         )}
-        onClick={props.toggleTheme}
+        onClick={toggleTheme}
       >
         {/* sun icon */}
-        {props.darkMode ? (
+        {darkMode ? (
           <Image
             className="absolute top-2 left-2"
             src={sunIconDark}
@@ -46,13 +52,13 @@ export default function ToggleTheme(props: any) {
           className={clsx(
             "w-7 h-7 rounded-full mx-1 transition-transform duration-200 ease-linear md:group-hover:bg-accent-light",
             {
-              "bg-neutral-100 -translate-x-8": props.darkMode,
-              "bg-neutral-600": !props.darkMode,
+              "bg-neutral-100 -translate-x-8": darkMode,
+              "bg-neutral-600": !darkMode,
             }
           )}
         ></div>
         {/* moon icon */}
-        {props.darkMode ? (
+        {darkMode ? (
           <Image
             className="absolute top-[8.5px] right-[9px]"
             src={moonIconDark}

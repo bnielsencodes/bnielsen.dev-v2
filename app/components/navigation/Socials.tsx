@@ -13,14 +13,14 @@ import iconEmailAccent100 from "/public/assets/socials/email/email-accent-100.sv
 import iconEmailAccent200 from "/public/assets/socials/email/email-accent-200.svg";
 import clsx from "clsx";
 
-export default function Socials(props: any) {
+export default function Socials({ darkMode }: { darkMode: boolean }) {
   return (
     <div>
       <ul className="flex">
         {/* linkedin */}
         <li>
           <a className="group" href="https://linkedin.com/in/bnielsencodes">
-            {props.darkMode ? (
+            {darkMode ? (
               <Image
                 className="w-10 h-10 mr-2 group-hover:hidden"
                 src={iconLinkedInNeutral400}
@@ -42,7 +42,7 @@ export default function Socials(props: any) {
             {/* images shown on hover */}
             <Image
               className={clsx("w-10 h-10 mr-2 hidden", {
-                "group-hover:block": props.darkMode,
+                "group-hover:block": darkMode,
               })}
               src={iconLinkedInAccent200}
               alt="LinkedIn icon"
@@ -52,7 +52,7 @@ export default function Socials(props: any) {
             />
             <Image
               className={clsx("w-10 h-10 mr-2 hidden", {
-                "group-hover:block": !props.darkMode,
+                "group-hover:block": !darkMode,
               })}
               src={iconLinkedInAccent100}
               alt="LinkedIn icon"
@@ -65,7 +65,7 @@ export default function Socials(props: any) {
         {/* github */}
         <li>
           <a className="group" href="https://github.com/bnielsencodes">
-            {props.darkMode ? (
+            {darkMode ? (
               <Image
                 className="w-10 h-10 mr-2 group-hover:hidden"
                 src={iconGitHubNeutral400}
@@ -87,7 +87,7 @@ export default function Socials(props: any) {
             {/* images shown on hover */}
             <Image
               className={clsx("w-10 h-10 mr-2 hidden", {
-                "group-hover:block": props.darkMode,
+                "group-hover:block": darkMode,
               })}
               src={iconGitHubAccent200}
               alt="GitHub icon"
@@ -97,7 +97,7 @@ export default function Socials(props: any) {
             />
             <Image
               className={clsx("w-10 h-10 mr-2 hidden", {
-                "group-hover:block": !props.darkMode,
+                "group-hover:block": !darkMode,
               })}
               src={iconGitHubAccent100}
               alt="GitHub icon"
@@ -110,7 +110,7 @@ export default function Socials(props: any) {
         {/* email */}
         <li>
           <a className="group" href="mailto:brandon@bnielsen.dev">
-            {props.darkMode ? (
+            {darkMode ? (
               <Image
                 className="w-10 h-10 group-hover:hidden"
                 src={iconEmailNeutral400}
@@ -132,7 +132,7 @@ export default function Socials(props: any) {
             {/* images shown on hover */}
             <Image
               className={clsx("w-10 h-10 hidden", {
-                "group-hover:block": props.darkMode,
+                "group-hover:block": darkMode,
               })}
               src={iconEmailAccent200}
               alt="GitHub icon"
@@ -142,7 +142,7 @@ export default function Socials(props: any) {
             />
             <Image
               className={clsx("w-10 h-10 hidden", {
-                "group-hover:block": !props.darkMode,
+                "group-hover:block": !darkMode,
               })}
               src={iconEmailAccent100}
               alt="GitHub icon"

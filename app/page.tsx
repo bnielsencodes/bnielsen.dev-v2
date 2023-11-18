@@ -28,8 +28,8 @@ export default function Home() {
           "bg-neutral-600": !darkMode,
         })}
       >
-        <NavBar darkMode={darkMode} toggleTheme={toggleTheme} />
-        <Header darkMode={darkMode} />
+        <NavBar {...{ darkMode, toggleTheme }} />
+        <Header {...{ darkMode }} />
         {/* section top divider */}
         <Image
           className="w-full -mb-[1px]"
@@ -39,7 +39,7 @@ export default function Home() {
           height="0"
           sizes="100vw"
         />
-        <AboutSection darkMode={darkMode} />
+        <AboutSection {...{ darkMode }} />
         {/* section bottom divider */}
         <Image
           className="w-full -mt-[1px]"
@@ -49,7 +49,7 @@ export default function Home() {
           height="0"
           sizes="100vw"
         />
-        <ProjectsSection darkMode={darkMode} />
+        <ProjectsSection {...{ darkMode }} />
         <Image
           className="w-full -mb-[1px]"
           src={darkMode ? waveDarkTop : waveLightTop}
@@ -58,7 +58,7 @@ export default function Home() {
           height="0"
           sizes="100vw"
         />
-        <ContactSection darkMode={darkMode} />
+        <ContactSection {...{ darkMode }} />
       </main>
     </>
   );
