@@ -3,7 +3,7 @@ import clsx from "clsx";
 
 export default function Header({ darkMode }: { darkMode: boolean }) {
   return (
-    <header className="flex flex-col items-center justify-center h-screen">
+    <header className="flex flex-col items-center justify-center h-screen px-7">
       <h1
         className={clsx(
           "w-[285px] mt-3 mb-[6px] font-mono text-3xl font-bold text-center",
