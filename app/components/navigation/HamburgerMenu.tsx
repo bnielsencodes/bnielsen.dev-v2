@@ -12,10 +12,10 @@ export default function HamburgerMenu({
   return (
     <button
       className={clsx(
-        "fixed top-2 right-2 z-40 flex flex-col justify-around items-center gap-1 w-[40px] h-[40px] py-[13px] px-2 group",
+        "fixed top-2 right-2 z-40 flex flex-col justify-around items-center gap-1 w-[40px] h-[40px] py-3 px-2 group",
         {
-          "border border-neutral-500": showMobileNav && darkMode,
-          "border border-neutral-200": showMobileNav && !darkMode,
+          "border-2 border-neutral-500": showMobileNav && darkMode,
+          "border-2 border-neutral-200": showMobileNav && !darkMode,
         }
       )}
       onClick={() => toggleMobileNav()}
