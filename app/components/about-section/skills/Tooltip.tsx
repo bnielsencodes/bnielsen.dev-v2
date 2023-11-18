@@ -9,6 +9,8 @@ export default function Tooltip({
 }) {
   return (
     <>
+      {/* show tooltip component on mouseover */}
+      {showTooltip && (
         <div
           className={clsx(
             "absolute -top-[15px] z-10 font-normal text-xs leading-[1.42857143] text-start",
