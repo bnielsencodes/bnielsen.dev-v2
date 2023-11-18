@@ -27,10 +27,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
         Web Developer
         <span className="text-lg">{` />`}</span>
       </p>
-      <CTAButtons
-        {...{ darkMode }}
-        // darkMode={darkMode}
-      />
+      <CTAButtons {...{ darkMode }} />
     </header>
   );
 }

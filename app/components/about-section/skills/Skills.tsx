@@ -14,24 +14,10 @@ export default function Skills({ darkMode }: { darkMode: boolean }) {
       <div className="grid grid-cols-3 gap-x-3 gap-y-4 mt-8">
         {isBreakpoint
           ? skillsLg.map((skill) => {
-              return (
-                <Skill
-                  key={skill.id}
-                  {...{ skill, darkMode }}
-                  // skill={skill}
-                  // darkMode={darkMode}
-                />
-              );
+              return <Skill key={skill.id} {...{ skill, darkMode }} />;
             })
           : skills.map((skill) => {
-              return (
-                <Skill
-                  key={skill.id}
-                  {...{ darkMode, skill }}
-                  // skill={skill}
-                  // darkMode={darkMode}
-                />
-              );
+              return <Skill key={skill.id} {...{ darkMode, skill }} />;
             })}
       </div>
     </aside>

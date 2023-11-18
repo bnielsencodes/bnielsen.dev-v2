@@ -24,10 +24,7 @@ export default function AboutSection({ darkMode }: { darkMode: boolean }) {
         About
       </p>
       <Bio />
-      <Skills
-        {...{ darkMode }}
-        // darkMode={darkMode}
-      />
+      <Skills {...{ darkMode }} />
     </section>
   );
 }

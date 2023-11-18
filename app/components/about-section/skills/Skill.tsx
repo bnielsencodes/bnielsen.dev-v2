@@ -48,12 +48,11 @@ export default function Skill({
           setShowViteBg(false);
         }}
       >
+        <Tooltip {...{ skill, showTooltip }} />
+
         {/* skill icon */}
         <div className={`w-[55px] h-[55px] icon--${skill.name}`}>
-          <Icon
-            {...{ skill, showViteBg }}
-            // name={skill.name}
-          />
+          <Icon {...{ skill, showViteBg }} />
         </div>
       </div>
 
