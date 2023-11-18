@@ -59,6 +59,95 @@ body {
   animation: figmaGradientAnimation 3.75s ease 0s infinite normal none;
 }
 
+.vite-border-animation {
+  animation: viteBgGradientAnimation 3.75s ease 0s infinite normal none;
+}
+
+
+.label--figma {
+  background: hsla(156, 86%, 41%, 1);
+  background: linear-gradient(
+    90deg,
+    hsla(156, 86%, 41%, 1) 0%,
+    hsla(267, 85%, 64%, 1) 50%,
+    hsla(13, 80%, 51%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    90deg,
+    hsla(156, 86%, 41%, 1) 0%,
+    hsla(267, 85%, 64%, 1) 50%,
+    hsla(13, 80%, 51%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    hsla(156, 86%, 41%, 1) 0%,
+    hsla(267, 85%, 64%, 1) 50%,
+    hsla(13, 80%, 51%, 1) 100%
+  );
+}
+
+.label--vite {
+  background: hsla(281, 99%, 60%, 1);
+  background: linear-gradient(
+    135deg,
+    hsla(281, 99%, 60%, 1) 0%,
+    hsla(195, 100%, 63%, 1) 100%
+  );
+  background: -moz-linear-gradient(
+    135deg,
+    hsla(281, 99%, 60%, 1) 0%,
+    hsla(195, 100%, 63%, 1) 100%
+  );
+  background: -webkit-linear-gradient(
+    135deg,
+    hsla(281, 99%, 60%, 1) 0%,
+    hsla(195, 100%, 63%, 1) 100%
+  );
+}
+
+
+@-webkit-keyframes figmaBgGradientAnimation {
+  0% {
+    background: hsla(13, 80%, 51%, 1);
+  }
+  20% {
+    background: hsla(6, 85%, 66%, 1);
+  }
+  40% {
+    background: hsla(267, 85%, 64%, 1);
+  }
+  60% {
+    background: hsla(197, 89%, 52%, 1);
+  }
+  80% {
+    background: hsla(156, 86%, 41%, 1);
+  }
+  100% {
+    background: hsla(13, 80%, 51%, 1);
+  }
+}
+
+@-moz-keyframes figmaBgGradientAnimation {
+  0% {
+    background: hsla(13, 80%, 51%, 1);
+  }
+  20% {
+    background: hsla(6, 85%, 66%, 1);
+  }
+  40% {
+    background: hsla(267, 85%, 64%, 1);
+  }
+  60% {
+    background: hsla(197, 89%, 52%, 1);
+  }
+  80% {
+    background: hsla(156, 86%, 41%, 1);
+  }
+  100% {
+    background: hsla(13, 80%, 51%, 1);
+  }
+}
+
 @keyframes figmaBgGradientAnimation {
   0% {
     background: hsla(13, 80%, 51%, 1);
@@ -80,8 +169,47 @@ body {
   }
 }
 
-.vite-border-animation {
-  animation: viteBgGradientAnimation 3.75s ease 0s infinite normal none;
+
+@-webkit-keyframes viteBgGradientAnimation {
+  0% {
+    background: hsla(195, 100%, 63%, 1);
+  }
+  20% {
+    background: hsla(281, 99%, 60%, 1);
+  }
+  40% {
+    background: hsla(50, 100%, 76%, 1);
+  }
+  60% {
+    background: hsla(50, 100%, 60%, 1);
+  }
+  80% {
+    background: hsla(40, 100%, 50%, 1);
+  }
+  100% {
+    background: hsla(195, 100%, 63%, 1);
+  }
+}
+
+@-moz-keyframes viteBgGradientAnimation {
+  0% {
+    background: hsla(195, 100%, 63%, 1);
+  }
+  20% {
+    background: hsla(281, 99%, 60%, 1);
+  }
+  40% {
+    background: hsla(50, 100%, 76%, 1);
+  }
+  60% {
+    background: hsla(50, 100%, 60%, 1);
+  }
+  80% {
+    background: hsla(40, 100%, 50%, 1);
+  }
+  100% {
+    background: hsla(195, 100%, 63%, 1);
+  }
 }
 
 @keyframes viteBgGradientAnimation {
