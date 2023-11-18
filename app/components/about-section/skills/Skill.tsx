@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Tooltip from "./Tooltip";
 import Icon from "./Icon";
 import clsx from "clsx";
 
@@ -42,10 +43,10 @@ export default function Skill({
           }
         )}
         onMouseEnter={() => {
-          setShowViteBg(true);
+          setShowTooltip(true), setShowViteBg(true);
         }}
         onMouseLeave={() => {
-          setShowViteBg(false);
+          setShowTooltip(false), setShowViteBg(false);
         }}
       >
         <Tooltip {...{ skill, showTooltip }} />
