@@ -31,7 +31,7 @@ export default function Tooltip({
           {/* arrow */}
           <div
             className={clsx(
-              "absolute -z-10 top-auto -bottom-1 left-1/2 w-0 h-0 border-t-[5px] border-x-[5px] -ml-[5px]",
+              "absolute -z-10 top-auto -bottom-1 left-1/2 w-0 h-0 border-t-[5px] border-x-[5px] border-x-neutral-100 -ml-[5px]",
               {
                 "border-t-tech-css-100": skill.name === "css",
                 "border-t-tech-figma-100": skill.name === "figma",
