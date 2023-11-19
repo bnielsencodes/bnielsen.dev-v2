@@ -1,27 +1,27 @@
-import audiophileFeaturedImg from "/public/assets/projects/featuredAudiophile.webp";
-import audiophileImg from "/public/assets/projects/audiophile.webp";
-import securePassFeaturedImg from "/public/assets/projects/featuredSecurepass.webp";
-import securePassImg from "/public/assets/projects/securepass.webp";
-import quizzicalFeaturedImg from "/public/assets/projects/featuredQuizzical.webp";
-import quizzicalImg from "/public/assets/projects/quizzical.webp";
-import dictionaryFeaturedImg from "/public/assets/projects/featuredDictionary.webp";
-import dictionaryImg from "/public/assets/projects/dictionary-web-app.webp";
-import tenziesImg from "/public/assets/projects/tenzies.webp";
-import splitterImg from "/public/assets/projects/splitter.webp";
-import planetFactsImg from "/public/assets/projects/planet-facts.webp";
-import memeGeneratorImg from "/public/assets/projects/meme-generator.webp";
-import notificationsPageImg from "/public/assets/projects/notifications-page.webp";
-import huddleImg from "/public/assets/projects/huddle.webp";
-import fruitOfTheSeaImg from "/public/assets/projects/fruit-of-the-sea.webp";
-import employeeDirectoryImg from "/public/assets/projects/employee-directory.webp";
+// import audiophileFeaturedImg from "/public/assets/projects/featuredAudiophile.webp";
+// import audiophileImg from "/public/assets/projects/audiophile.webp";
+// import securePassFeaturedImg from "/public/assets/projects/featuredSecurepass.webp";
+// import securePassImg from "/public/assets/projects/securepass.webp";
+// import quizzicalFeaturedImg from "/public/assets/projects/featuredQuizzical.webp";
+// import quizzicalImg from "/public/assets/projects/quizzical.webp";
+// import dictionaryFeaturedImg from "/public/assets/projects/featuredDictionary.webp";
+// import dictionaryImg from "/public/assets/projects/dictionary-web-app.webp";
+// import tenziesImg from "/public/assets/projects/tenzies.webp";
+// import splitterImg from "/public/assets/projects/splitter.webp";
+// import planetFactsImg from "/public/assets/projects/planet-facts.webp";
+// import memeGeneratorImg from "/public/assets/projects/meme-generator.webp";
+// import notificationsPageImg from "/public/assets/projects/notifications-page.webp";
+// import huddleImg from "/public/assets/projects/huddle.webp";
+// import fruitOfTheSeaImg from "/public/assets/projects/fruit-of-the-sea.webp";
+// import employeeDirectoryImg from "/public/assets/projects/employee-directory.webp";
 
 // eslint-disable-next-line
 const projects = [
   {
     id: 1,
     name: "Audiophile",
-    img: audiophileImg,
-    featuredImg: audiophileFeaturedImg,
+    // img: audiophileImg,
+    // featuredImg: audiophileFeaturedImg,
     description:
       "A multi-page e-commerce website with cart functionality and a checkout process.",
     classes: ["icon--nextjs", "icon--react", "icon--js"],
@@ -34,8 +34,8 @@ const projects = [
   {
     id: 2,
     name: "SecurePass",
-    img: securePassImg,
-    featuredImg: securePassFeaturedImg,
+    // img: securePassImg,
+    // featuredImg: securePassFeaturedImg,
     description: "A strong random password generator.",
     classes: ["icon--html", "icon--tailwind", "icon--js"],
     skillOne: "HTML",
@@ -47,8 +47,8 @@ const projects = [
   {
     id: 3,
     name: "Quizzical",
-    img: quizzicalImg,
-    featuredImg: quizzicalFeaturedImg,
+    // img: quizzicalImg,
+    // featuredImg: quizzicalFeaturedImg,
     description:
       "A quiz app that fetches data from The Open Trivia Database API.",
     classes: ["icon--react", "icon--js", "icon--css"],
@@ -61,8 +61,8 @@ const projects = [
   {
     id: 4,
     name: "Dictionary Web App",
-    img: dictionaryImg,
-    featuredImg: dictionaryFeaturedImg,
+    // img: dictionaryImg,
+    // featuredImg: dictionaryFeaturedImg,
     description:
       "A dictionary web app that fetches data from the Free Dictionary API.",
     classes: ["icon--react", "icon--js", "icon--css"],
@@ -75,7 +75,7 @@ const projects = [
   {
     id: 5,
     name: "Tenzies",
-    img: tenziesImg,
+    // img: tenziesImg,
     description: "Easy to learn dice game that players of all ages will enjoy.",
     classes: ["icon--react", "icon--js", "icon--css"],
     skillOne: "React",
@@ -87,7 +87,7 @@ const projects = [
   {
     id: 6,
     name: "Splitter",
-    img: splitterImg,
+    // img: splitterImg,
     description: "A web app that allows you to easily split bills/tips.",
     classes: ["icon--html", "icon--tailwind", "icon--js"],
     skillOne: "HTML",
@@ -99,7 +99,7 @@ const projects = [
   {
     id: 7,
     name: "Planet Facts",
-    img: planetFactsImg,
+    // img: planetFactsImg,
     description:
       "A fully responsive website that allows you to explore facts about all of the planets in our solar system.",
     classes: ["icon--html", "icon--css", "icon--js"],
@@ -112,7 +112,7 @@ const projects = [
   {
     id: 8,
     name: "Meme Generator",
-    img: memeGeneratorImg,
+    // img: memeGeneratorImg,
     description:
       "Generates random meme images using the Imgflip API. You can add text to the generated image.",
     classes: ["icon--react", "icon--js", "icon--css"],
@@ -125,7 +125,7 @@ const projects = [
   {
     id: 9,
     name: "Notifications Page",
-    img: notificationsPageImg,
+    // img: notificationsPageImg,
     description: "A notifications page challenge from frontendmentor.io.",
     classes: ["icon--react", "icon--js", "icon--css"],
     skillOne: "React",
@@ -137,7 +137,7 @@ const projects = [
   {
     id: 10,
     name: "Huddle",
-    img: huddleImg,
+    // img: huddleImg,
     description:
       "Huddle re-imagines the way we build communities. Create connections with your users as you engage in genuine discussion.",
     classes: ["icon--html", "icon--tailwind", "icon--js"],
@@ -150,7 +150,7 @@ const projects = [
   {
     id: 11,
     name: "Fruit of the Sea",
-    img: fruitOfTheSeaImg,
+    // img: fruitOfTheSeaImg,
     description:
       "A fully responsive word guessing game set up to mimic the feel of a game show.",
     classes: ["icon--html", "icon--css", "icon--js"],
@@ -163,7 +163,7 @@ const projects = [
   {
     id: 12,
     name: "Employee Directory",
-    img: employeeDirectoryImg,
+    // img: employeeDirectoryImg,
     description:
       "A fully responsive employee directory that allows you to search for specific employees by name. Utilizes Fetch API to access Random User Generator API.",
     classes: ["icon--html", "icon--css", "icon--js"],
