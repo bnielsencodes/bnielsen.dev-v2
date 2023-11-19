@@ -11,7 +11,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
             !darkMode,
         })}
       >
-        View Work
+        <a href="#projects-section">View Work</a>
       </button>
       <button
         className={clsx("py-[10px] px-5 border rounded-lg text-lg font-bold", {
@@ -21,7 +21,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
             !darkMode,
         })}
       >
-        Contact
+        <a href="#contact-section">Contact</a>
       </button>
     </div>
   );
