@@ -15,19 +15,20 @@ export default function Tooltip({
           className={clsx(
             "absolute -top-[15px] z-10 font-normal text-xs leading-[1.42857143] text-start",
             {
-              "left-[24px]": skill.name === "css" || skill.name === "vite",
-              "left-[16px]": skill.name === "figma" || skill.name === "next",
+              "left-[25px]": skill.name === "css",
+              "left-[22px]": skill.name === "vite",
+              "left-[17px]": skill.name === "figma" || skill.name === "next",
               "left-[27px]": skill.name === "git",
-              "left-[18.5px]": skill.name === "html",
-              "left-[7px]":
-                skill.name === "javascript" || skill.name === "typescript",
-              "left-[3px]": skill.name === "postgresql",
-              "left-[20px]": skill.name === "react",
-              "left-[22px]": skill.name === "sass",
+              "left-[20px]": skill.name === "html" || skill.name === "react",
+              "left-[10px]": skill.name === "javascript",
+              "left-[4px]": skill.name === "postgresql",
+              "left-[23px]": skill.name === "sass",
               "left-[13px]": skill.name === "tailwind",
+              "left-[7px]": skill.name === "typescript",
             }
           )}
         >
+          {/* arrow */}
           <div
             className={clsx(
               "absolute -z-10 top-auto -bottom-1 left-1/2 w-0 h-0 border-t-[5px] border-x-[5px] -ml-[5px]",
@@ -47,9 +48,10 @@ export default function Tooltip({
               }
             )}
           />
+          {/* tooltip label */}
           <div
             className={clsx(
-              "max-w-250px py-[3px] px-2 rounded text-neutral-200 text-center",
+              "max-w-250px py-[3px] px-2 rounded text-neutral-200 font-semibold text-center",
               {
                 "bg-tech-css-100": skill.name === "css",
                 "label--figma": skill.name === "figma",

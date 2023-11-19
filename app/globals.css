@@ -26,7 +26,7 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.header-text {
+.header-text-stroke {
   -webkit-text-stroke: 1.75px #ededed;
 }
 

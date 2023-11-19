@@ -6,7 +6,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
     <header className="flex flex-col items-center justify-center h-screen px-7">
       <h1
         className={clsx(
-          "header-text mt-3 mb-[6px] text-[2.535rem] leading-[3rem] font-extrabold text-left",
+          "header-text mt-3 mb-[6px] text-[2.48rem] font-bold leading-[3rem] tracking-wide text-left",
           {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,
@@ -14,7 +14,15 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
         )}
       >
         Hello, I&apos;m Brandon Nielsen, a{" "}
-        <span className="header-text text-neutral-100">Web Developer</span>.
+        <span
+          className={clsx("header-text-stroke text-neutral-100", {
+            "": darkMode,
+            "": !darkMode,
+          })}
+        >
+          Web Developer
+        </span>
+        .
       </h1>
       <p
         className={clsx("text-lg", {
