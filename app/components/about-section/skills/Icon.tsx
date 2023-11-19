@@ -555,7 +555,7 @@ export default function CSS({
       )}
 
       {/* VITE icon */}
-      {skill.name === "vite" && (
+      {skill.name === "vite" && darkMode ? (
         <>
           {/* dark theme */}
           <svg
@@ -631,6 +631,9 @@ export default function CSS({
               </linearGradient>
             </defs>
           </svg>
+        </>
+      ) : skill.name === "vite" && !darkMode ? (
+        <>
           {/* light theme */}
           <svg
             className={clsx("vite-animation", {
@@ -706,7 +709,7 @@ export default function CSS({
             </defs>
           </svg>
         </>
-      )}
+      ) : null}
     </>
   );
 }
