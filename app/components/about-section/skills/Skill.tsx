@@ -35,7 +35,7 @@ export default function Skill({
             "group-hover:border-tech-html-200": skill.name === "html",
             "group-hover:border-tech-javascript-100":
               skill.name === "javascript",
-            "group-hover:border-tech-next": skill.name === "next",
+            "group-hover:border-tech-next": skill.name === "next" && darkMode,
             "group-hover:border-[#000]": skill.name === "next" && !darkMode,
             "group-hover:border-tech-postgresql": skill.name === "postgresql",
             "group-hover:border-tech-react": skill.name === "react",

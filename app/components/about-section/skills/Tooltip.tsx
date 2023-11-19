@@ -37,19 +37,20 @@ export default function Tooltip({
               {
                 "border-x-neutral-100": darkMode,
                 "border-x-neutral-600": !darkMode,
+                "border-t-tech-next": skill.name === "next" && darkMode,
+                "border-t-[#000]": skill.name === "next" && !darkMode,
                 "border-t-tech-css-100": skill.name === "css",
                 "border-t-tech-figma-100": skill.name === "figma",
                 "border-t-tech-git": skill.name === "git",
                 "border-t-tech-html-200": skill.name === "html",
                 "border-t-tech-javascript-100": skill.name === "javascript",
-                "border-t-tech-next": skill.name === "next",
-                "border-t-[#000]": skill.name === "next" && !darkMode,
                 "border-t-tech-postgresql": skill.name === "postgresql",
                 "border-t-tech-react": skill.name === "react",
                 "border-t-tech-sass": skill.name === "sass",
                 "border-t-tech-tailwind": skill.name === "tailwind",
                 "border-t-tech-typescript-200": skill.name === "typescript",
-                "border-t-tech-vite-400": skill.name === "vite",
+                "border-t-tech-vite-400": skill.name === "vite" && darkMode,
+                "border-t-tech-vite-500": skill.name === "vite" && !darkMode,
               }
             )}
           />
@@ -59,6 +60,7 @@ export default function Tooltip({
               "max-w-250px py-[3px] px-2 rounded font-semibold text-center",
               {
                 "text-neutral-200": darkMode,
+                "bg-tech-next": skill.name === "next" && darkMode,
                 "bg-[#000] text-neutral-500":
                   skill.name === "next" && !darkMode,
                 "text-neutral-600": skill.name === "vite" && !darkMode,
@@ -73,7 +75,6 @@ export default function Tooltip({
                 "bg-tech-git": skill.name === "git",
                 "bg-tech-html-200": skill.name === "html",
                 "bg-tech-javascript-100": skill.name === "javascript",
-                "bg-tech-next": skill.name === "next",
                 "bg-tech-postgresql": skill.name === "postgresql",
                 "bg-tech-react": skill.name === "react",
                 "bg-tech-sass": skill.name === "sass",
