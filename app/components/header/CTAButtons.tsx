@@ -7,7 +7,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         className={clsx("py-[10px] px-5 rounded-lg text-lg font-bold", {
           "bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
             darkMode,
-          "bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
+          "shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
             !darkMode,
         })}
       >
@@ -17,7 +17,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         className={clsx("py-[10px] px-5 border rounded-lg text-lg font-bold", {
           "border-neutral-300 bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-500":
             darkMode,
-          "border-neutral-300 bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-200":
+          "shadow-custom border-neutral-300 bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-200":
             !darkMode,
         })}
       >
