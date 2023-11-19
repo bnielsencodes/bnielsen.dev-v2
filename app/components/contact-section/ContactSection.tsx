@@ -1,10 +1,11 @@
+import ContactForm from "./ContactForm";
 import clsx from "clsx";
 
 export default function ContactSection({ darkMode }: { darkMode: boolean }) {
   return (
     <section
       id="contact-section"
-      className={clsx("pt-20 pb-8 overflow-x-clip", {
+      className={clsx("pt-20 px-7 pb-8 overflow-x-clip", {
         "bg-neutral-200": darkMode,
         "bg-neutral-500": !darkMode,
       })}
@@ -21,7 +22,7 @@ export default function ContactSection({ darkMode }: { darkMode: boolean }) {
       >
         Contact
       </p>
-      <div className="flex flex-col justify-center pb-[25px] mt-[50px] text-[0.9rem] "></div>
+      <ContactForm {...{darkMode}} />
     </section>
   );
 }
