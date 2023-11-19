@@ -46,6 +46,16 @@ export default function ContactForm({ darkMode }) {
           rows="7"
         />
       </fieldset>
+
+      <div className={`w-full h-[45px] text-end ${styles.submit}`}>
+        <button
+          className={`py-[10px] px-5 border-[1px] border-neutral-300 rounded-lg bg-neutral-100 text-neutral-600 }`}
+          type="submit"
+          disabled={state.submitting}
+        >
+          Submit
+        </button>
+      </div>
     </form>
   );
 }
