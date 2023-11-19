@@ -26,8 +26,12 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-.header-text-stroke {
+.header-text-stroke--dark {
   -webkit-text-stroke: 1.75px #ededed;
+}
+
+.header-text-stroke {
+  -webkit-text-stroke: 1.75px #272727;
 }
 
 .avatar {
