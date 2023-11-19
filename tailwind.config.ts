@@ -80,6 +80,10 @@ const config: Config = {
       boxShadow: {
         navbar: "0 2px 4px rgb(0 0 0 / 15%)",
         custom: "4px 4px 10px 0px rgb(0 0 0 / 0.35)",
+        skillHover: "4px 4px 10px 2px rgb(0 0 0 / 0.35)",
+      },
+      dropShadow: {
+        custom: "4px 4px 10px rgb(0 0 0 / 0.35)",
       },
     },
   },
