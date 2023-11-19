@@ -23,8 +23,9 @@ export default function Skill({
         className={clsx(
           "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 hover:cursor-help",
           {
-            "bg-neutral-100": darkMode,
-            "bg-neutral-600 shadow-custom": !darkMode,
+            "bg-gradient-to-b from-neutral-200 to-neutral-100": darkMode,
+            "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-custom":
+              !darkMode,
             "group-hover:border-tech-css-100": skill.name === "css",
             "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:rounded-md group-hover:border-neutral-100":
               skill.name === "figma" || skill.name === "vite",
