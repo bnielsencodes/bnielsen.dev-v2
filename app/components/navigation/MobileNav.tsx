@@ -16,7 +16,7 @@ export default function MobileNav({
   return (
     <div
       className={clsx(
-        "fixed top-0 right-0 left-0 z-30 flex flex-col h-screen",
+        "fixed top-0 right-0 left-0 z-40 flex flex-col h-screen",
         {
           "bg-neutral-100": darkMode,
           "bg-neutral-600": !darkMode,
