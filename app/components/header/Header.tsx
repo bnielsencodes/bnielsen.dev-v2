@@ -15,25 +15,15 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
       >
         Hello, I&apos;m Brandon Nielsen, a{" "}
         <span
-          className={clsx("header-text-stroke text-neutral-100", {
-            "": darkMode,
-            "": !darkMode,
+          className={clsx("", {
+            "header-text-stroke--dark text-neutral-100": darkMode,
+            "header-text-stroke text-neutral-600": !darkMode,
           })}
         >
           Web Developer
         </span>
         .
       </h1>
-      <p
-        className={clsx("text-lg", {
-          "text-neutral-400": darkMode,
-          "text-neutral-300": !darkMode,
-        })}
-      >
-        {/* <span className="pr-[1px]">{`<`}</span>
-        Web Developer
-        <span className="text-lg">{` />`}</span> */}
-      </p>
       <CTAButtons {...{ darkMode }} />
     </header>
   );

@@ -1,9 +1,11 @@
 import clsx from "clsx";
 
 export default function Tooltip({
+  darkMode,
   skill,
   showTooltip,
 }: {
+  darkMode: boolean;
   skill: { id: number; name: string; tech: string };
   showTooltip: boolean;
 }) {
@@ -31,14 +33,17 @@ export default function Tooltip({
           {/* arrow */}
           <div
             className={clsx(
-              "absolute -z-10 top-auto -bottom-1 left-1/2 w-0 h-0 border-t-[5px] border-x-[5px] border-x-neutral-100 -ml-[5px]",
+              "absolute -z-10 top-auto -bottom-1 left-1/2 w-0 h-0 border-t-[5px] border-x-[5px] -ml-[5px]",
               {
+                "border-x-neutral-100": darkMode,
+                "border-x-neutral-600": !darkMode,
                 "border-t-tech-css-100": skill.name === "css",
                 "border-t-tech-figma-100": skill.name === "figma",
                 "border-t-tech-git": skill.name === "git",
                 "border-t-tech-html-200": skill.name === "html",
                 "border-t-tech-javascript-100": skill.name === "javascript",
                 "border-t-tech-next": skill.name === "next",
+                "border-t-[#000]": skill.name === "next" && !darkMode,
                 "border-t-tech-postgresql": skill.name === "postgresql",
                 "border-t-tech-react": skill.name === "react",
                 "border-t-tech-sass": skill.name === "sass",
@@ -51,8 +56,18 @@ export default function Tooltip({
           {/* tooltip label */}
           <div
             className={clsx(
-              "max-w-250px py-[3px] px-2 rounded text-neutral-200 font-semibold text-center",
+              "max-w-250px py-[3px] px-2 rounded font-semibold text-center",
               {
+                "text-neutral-200": darkMode,
+                "bg-[#000] text-neutral-500":
+                  skill.name === "next" && !darkMode,
+                "text-neutral-600": skill.name === "vite" && !darkMode,
+                "text-neutral-500":
+                  (skill.name === "css" && !darkMode) ||
+                  (skill.name === "git" && !darkMode) ||
+                  (skill.name === "postgresql" && !darkMode) ||
+                  (skill.name === "sass" && !darkMode) ||
+                  (skill.name === "typescript" && !darkMode),
                 "bg-tech-css-100": skill.name === "css",
                 "label--figma": skill.name === "figma",
                 "bg-tech-git": skill.name === "git",

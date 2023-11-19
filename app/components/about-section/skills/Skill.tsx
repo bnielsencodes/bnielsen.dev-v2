@@ -21,18 +21,22 @@ export default function Skill({
     <div className="relative group">
       <div
         className={clsx(
-          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg hover:cursor-help",
+          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 hover:cursor-help",
           {
-            "border-neutral-300 bg-neutral-100": darkMode,
-            "border-neutral-300 bg-neutral-600": !darkMode,
+            "bg-neutral-100": darkMode,
+            "bg-neutral-600 shadow-custom": !darkMode,
             "group-hover:border-tech-css-100": skill.name === "css",
-            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:border-neutral-100":
+            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:rounded-md group-hover:border-neutral-100":
               skill.name === "figma" || skill.name === "vite",
+            "group-hover:border-neutral-600":
+              (skill.name === "figma" && !darkMode) ||
+              (skill.name === "vite" && !darkMode),
             "group-hover:border-tech-git": skill.name === "git",
             "group-hover:border-tech-html-200": skill.name === "html",
             "group-hover:border-tech-javascript-100":
               skill.name === "javascript",
             "group-hover:border-tech-next": skill.name === "next",
+            "group-hover:border-[#000]": skill.name === "next" && !darkMode,
             "group-hover:border-tech-postgresql": skill.name === "postgresql",
             "group-hover:border-tech-react": skill.name === "react",
             "group-hover:border-tech-sass": skill.name === "sass",
@@ -49,11 +53,11 @@ export default function Skill({
           setShowTooltip(false), setShowViteBg(false);
         }}
       >
-        <Tooltip {...{ skill, showTooltip }} />
+        <Tooltip {...{ darkMode, skill, showTooltip }} />
 
         {/* skill icon */}
         <div className={`w-[55px] h-[55px] icon--${skill.name}`}>
-          <Icon {...{ skill, showViteBg }} />
+          <Icon {...{ darkMode, skill, showViteBg }} />
         </div>
       </div>
 
