@@ -76,7 +76,12 @@ const config: Config = {
       xl: "1440px",
       // => @media (min-width: 1440px) { ... }
     },
-    extend: {},
+    extend: {
+      boxShadow: {
+        navbar: "0 2px 4px rgb(0 0 0 / 15%)",
+        custom: "4px 4px 10px 0px rgb(0 0 0 / 0.35)",
+      },
+    },
   },
   plugins: [],
 };
