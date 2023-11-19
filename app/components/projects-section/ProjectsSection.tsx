@@ -5,6 +5,7 @@ import quizzicalStartMockup from "@/public/assets/mockups/Tablets/quizzical-star
 import quizzicalQuizMockup from "@/public/assets/mockups/Tablets/quizzical-quiz.png";
 import dictionaryDarkMockup from "@/public/assets/mockups/Tablets/dictionary-dark.png";
 import dictionaryLightMockup from "@/public/assets/mockups/Tablets/dictionary-light.png";
+import ProjectButtons from "./ProjectButtons";
 import clsx from "clsx";
 
 export default function ProjectsSection({ darkMode }: { darkMode: boolean }) {
@@ -59,6 +60,7 @@ export default function ProjectsSection({ darkMode }: { darkMode: boolean }) {
             A multi-page e-commerce website with cart functionality and a
             checkout process
           </p>
+          <ProjectButtons {...{ darkMode }} />
         </div>
 
         {/* SecurePass project */}
@@ -90,6 +92,7 @@ export default function ProjectsSection({ darkMode }: { darkMode: boolean }) {
           >
             A strong random password generator
           </p>
+          <ProjectButtons {...{ darkMode }} />
         </div>
 
         {/* Quizzical Project */}
@@ -140,6 +143,7 @@ export default function ProjectsSection({ darkMode }: { darkMode: boolean }) {
           >
             A quiz app that fetches data from The Open Trivia Database API
           </p>
+          <ProjectButtons {...{ darkMode }} />
         </div>
 
         {/* Dictionary Web App Project */}
@@ -190,6 +194,7 @@ export default function ProjectsSection({ darkMode }: { darkMode: boolean }) {
           >
             A dictionary web app that fetches data from the Free Dictionary API
           </p>
+          <ProjectButtons {...{ darkMode }} />
         </div>
       </div>
     </section>
