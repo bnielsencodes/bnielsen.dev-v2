@@ -1,19 +1,9 @@
-// import audiophileFeaturedImg from "/public/assets/projects/featuredAudiophile.webp";
-// import audiophileImg from "/public/assets/projects/audiophile.webp";
-// import securePassFeaturedImg from "/public/assets/projects/featuredSecurepass.webp";
-// import securePassImg from "/public/assets/projects/securepass.webp";
-// import quizzicalFeaturedImg from "/public/assets/projects/featuredQuizzical.webp";
-// import quizzicalImg from "/public/assets/projects/quizzical.webp";
-// import dictionaryFeaturedImg from "/public/assets/projects/featuredDictionary.webp";
-// import dictionaryImg from "/public/assets/projects/dictionary-web-app.webp";
-// import tenziesImg from "/public/assets/projects/tenzies.webp";
-// import splitterImg from "/public/assets/projects/splitter.webp";
-// import planetFactsImg from "/public/assets/projects/planet-facts.webp";
-// import memeGeneratorImg from "/public/assets/projects/meme-generator.webp";
-// import notificationsPageImg from "/public/assets/projects/notifications-page.webp";
-// import huddleImg from "/public/assets/projects/huddle.webp";
-// import fruitOfTheSeaImg from "/public/assets/projects/fruit-of-the-sea.webp";
-// import employeeDirectoryImg from "/public/assets/projects/employee-directory.webp";
+import audiophileMockup from "@/public/assets/mockups/Laptops/audiophile.png";
+import securepassMockup from "@/public/assets/mockups/Mobile/securepass.png";
+import quizzicalStartMockup from "@/public/assets/mockups/Tablets/quizzical-start.png";
+import quizzicalQuizMockup from "@/public/assets/mockups/Tablets/quizzical-quiz.png";
+import dictionaryDarkMockup from "@/public/assets/mockups/Tablets/dictionary-dark.png";
+import dictionaryLightMockup from "@/public/assets/mockups/Tablets/dictionary-light.png";
 
 // eslint-disable-next-line
 const projects = [
