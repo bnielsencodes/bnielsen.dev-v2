@@ -50,7 +50,7 @@ export default function ToggleTheme({
         {/* toggle circle */}
         <div
           className={clsx(
-            "w-7 h-7 rounded-full mx-1 transition-transform duration-200 ease-linear md:group-hover:bg-accent-light",
+            "w-7 h-7 rounded-full mx-1 transition-transform duration-200 ease-linear md:group-hover:bg-accent",
             {
               "bg-neutral-100 -translate-x-8": darkMode,
               "bg-neutral-600": !darkMode,
