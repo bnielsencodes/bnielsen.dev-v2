@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 const roboto = Roboto({
   subsets: ["latin"],
-  weight: ["400", "500", "700"],
+  weight: ["300", "400", "500", "700"],
   variable: "--font-roboto",
   display: "swap",
 });
