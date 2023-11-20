@@ -10,7 +10,8 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
           "absolute -top-[20px] w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm hvr-bob hover:bg-accent hover:scale-[1.1]",
           {
             "bg-gradient-to-b from-neutral-200 to-neutral-100": darkMode,
-            "bg-gradient-to-b from-neutral-500 to-neutral-600": !darkMode,
+            "shadow-custom bg-gradient-to-b from-neutral-500 to-neutral-600":
+              !darkMode,
           }
         )}
       >
