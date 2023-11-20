@@ -10,6 +10,7 @@ import Header from "./components/header/Header";
 import AboutSection from "./components/about-section/AboutSection";
 import ProjectsSection from "./components/projects-section/ProjectsSection";
 import ContactSection from "./components/contact-section/ContactSection";
+import Footer from "./components/footer/Footer";
 import clsx from "clsx";
 
 export default function Home() {
@@ -59,6 +60,7 @@ export default function Home() {
           sizes="100vw"
         />
         <ContactSection {...{ darkMode }} />
+        <Footer {...{ darkMode }} />
       </main>
     </>
   );
