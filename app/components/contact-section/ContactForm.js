@@ -61,6 +61,7 @@ export default function ContactForm({ darkMode }) {
         or send me a quick message here:
       </div>
 
+        {/* name input */}
         <input
           className={
             ("w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] font-sans caret-accent-100 focus:outline-2 focus:outline-accent-100",
@@ -75,6 +76,7 @@ export default function ContactForm({ darkMode }) {
           aria-label="Enter your name"
           required
         />
+        {/* email input */}
         <input
           className={
             ("w-full h-[45px] pl-[10px] border-[1px] border-neutral-300 rounded-lg mb-[6px] bg-neutral-100 font-sans text-neutral-500 caret-accent-100 focus:outline-2 focus:outline-accent-100",
@@ -86,6 +88,7 @@ export default function ContactForm({ darkMode }) {
           aria-label="Enter your email address"
           required
         />
+        {/* message input */}
         <textarea
           className={
             ("w-full pt-[10px] pl-[10px] border-[1px] border-neutral-300 rounded-lg mb-[6px] bg-neutral-100 font-sans text-neutral-500 caret-accent-100 focus:outline-2 focus:outline-accent-100 resize-none",
@@ -99,6 +102,7 @@ export default function ContactForm({ darkMode }) {
         />
       </fieldset>
 
+      {/* submit button */}
       <div className="w-full h-[45px] text-end">
         <button
           className={`py-[10px] px-5 border-[1px] border-neutral-300 rounded-lg bg-neutral-100 text-neutral-600 }`}
