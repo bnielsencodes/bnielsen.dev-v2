@@ -68,7 +68,8 @@ export default function ContactForm({ darkMode }) {
             "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
-              "bg-neutral-600 text-neutral-200 shadow-custom": !darkMode,
+              "shadow-custom bg-neutral-600 text-neutral-200 shadow-custom":
+                !darkMode,
             }
           )}
           type="text"
@@ -83,7 +84,8 @@ export default function ContactForm({ darkMode }) {
             "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
-              "bg-neutral-600 text-neutral-200 shadow-custom": !darkMode,
+              "shadow-custom bg-neutral-600 text-neutral-200 shadow-custom":
+                !darkMode,
             }
           )}
           type="email"
@@ -98,7 +100,8 @@ export default function ContactForm({ darkMode }) {
             "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
-              "bg-neutral-600 text-neutral-200 shadow-custom": !darkMode,
+              "shadow-custom bg-neutral-600 text-neutral-200 shadow-custom":
+                !darkMode,
             }
           )}
           name="message"
@@ -113,11 +116,12 @@ export default function ContactForm({ darkMode }) {
       <div className="w-full h-[45px] text-end">
         <button
           className={clsx(
-            `py-[10px] px-5 border-[1px] border-neutral-300 rounded-lg shadow-custom font-medium hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
+            `py-[10px] px-5 border-[1px] border-neutral-300 rounded-lg font-medium hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
             {
               "bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
                 darkMode,
-              "bg-gradient-to-b from-neutral-500 to-neutral-600": !darkMode,
+              "shadow-custom bg-gradient-to-b from-neutral-500 to-neutral-600":
+                !darkMode,
             }
           )}
           type="submit"
