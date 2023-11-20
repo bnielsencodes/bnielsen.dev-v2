@@ -68,8 +68,7 @@ export default function ContactForm({ darkMode }) {
             "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom bg-neutral-600 text-neutral-200 shadow-custom":
-                !darkMode,
+              "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
             }
           )}
           type="text"
@@ -84,8 +83,7 @@ export default function ContactForm({ darkMode }) {
             "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom bg-neutral-600 text-neutral-200 shadow-custom":
-                !darkMode,
+              "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
             }
           )}
           type="email"
@@ -100,8 +98,7 @@ export default function ContactForm({ darkMode }) {
             "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom bg-neutral-600 text-neutral-200 shadow-custom":
-                !darkMode,
+              "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
             }
           )}
           name="message"
