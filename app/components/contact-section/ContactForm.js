@@ -61,15 +61,16 @@ export default function ContactForm({ darkMode }) {
         or send me a quick message here:
       </div>
 
+      <fieldset className="flex flex-col justify-center pt-[0.35rem] pb-[10px] border-none">
         {/* name input */}
         <input
-          className={
-            ("w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] font-sans caret-accent-100 focus:outline-2 focus:outline-accent-100",
+          className={clsx(
+            "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
-              "border-neutral-300 bg-neutral-100 text-neutral-500": darkMode,
-              "border-neutral-400 bg-neutral-600 text-neutral-200": !darkMode,
-            })
-          }
+              "bg-neutral-100 text-neutral-500": darkMode,
+              "bg-neutral-600 text-neutral-200 shadow-custom": !darkMode,
+            }
+          )}
           type="text"
           name="name"
           placeholder="Name"
@@ -78,10 +79,13 @@ export default function ContactForm({ darkMode }) {
         />
         {/* email input */}
         <input
-          className={
-            ("w-full h-[45px] pl-[10px] border-[1px] border-neutral-300 rounded-lg mb-[6px] bg-neutral-100 font-sans text-neutral-500 caret-accent-100 focus:outline-2 focus:outline-accent-100",
-            { "": darkMode, "": !darkMode })
-          }
+          className={clsx(
+            "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
+            {
+              "bg-neutral-100 text-neutral-500": darkMode,
+              "bg-neutral-600 text-neutral-200 shadow-custom": !darkMode,
+            }
+          )}
           type="email"
           name="email"
           placeholder="Email"
@@ -90,10 +94,13 @@ export default function ContactForm({ darkMode }) {
         />
         {/* message input */}
         <textarea
-          className={
-            ("w-full pt-[10px] pl-[10px] border-[1px] border-neutral-300 rounded-lg mb-[6px] bg-neutral-100 font-sans text-neutral-500 caret-accent-100 focus:outline-2 focus:outline-accent-100 resize-none",
-            { "": darkMode, "": !darkMode })
-          }
+          className={clsx(
+            "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
+            {
+              "bg-neutral-100 text-neutral-500": darkMode,
+              "bg-neutral-600 text-neutral-200 shadow-custom": !darkMode,
+            }
+          )}
           name="message"
           placeholder="Message"
           aria-label="Enter a message"
@@ -105,7 +112,14 @@ export default function ContactForm({ darkMode }) {
       {/* submit button */}
       <div className="w-full h-[45px] text-end">
         <button
-          className={`py-[10px] px-5 border-[1px] border-neutral-300 rounded-lg bg-neutral-100 text-neutral-600 }`}
+          className={clsx(
+            `py-[10px] px-5 border-[1px] border-neutral-300 rounded-lg shadow-custom font-medium hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
+            {
+              "bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
+                darkMode,
+              "bg-gradient-to-b from-neutral-500 to-neutral-600": !darkMode,
+            }
+          )}
           type="submit"
           disabled={state.submitting}
         >
