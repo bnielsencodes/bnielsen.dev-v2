@@ -10,7 +10,7 @@ export default function ProjectsSection({ darkMode }: { darkMode: boolean }) {
   return (
     <section
       id="projects-section"
-      className={clsx("pt-20 pb-8 overflow-x-clip", {
+      className={clsx("pt-20 overflow-x-clip", {
         "bg-neutral-100": darkMode,
         "bg-neutral-600": !darkMode,
       })}
