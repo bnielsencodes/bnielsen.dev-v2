@@ -1,6 +1,15 @@
+import { StaticImageData } from "next/image";
 import clsx from "clsx";
 
-export default function ProjectButtons({ darkMode }: { darkMode: boolean }) {
+export default function ProjectButtons({
+  darkMode,
+  liveSite,
+  sourceCode,
+}: {
+  darkMode: boolean;
+  liveSite: string;
+  sourceCode: string;
+}) {
   return (
     <div className="flex gap-4 pt-4 pb-8">
       <button
@@ -11,7 +20,9 @@ export default function ProjectButtons({ darkMode }: { darkMode: boolean }) {
             !darkMode,
         })}
       >
-        Live Site
+        <a href={liveSite} target="_blank">
+          Live Site
+        </a>
       </button>
       <button
         className={clsx("py-[10px] px-5 border rounded-lg text-lg font-bold", {
@@ -21,7 +32,9 @@ export default function ProjectButtons({ darkMode }: { darkMode: boolean }) {
             !darkMode,
         })}
       >
-        Source Code
+        <a href={sourceCode} target="_blank">
+          Source Code
+        </a>
       </button>
     </div>
   );

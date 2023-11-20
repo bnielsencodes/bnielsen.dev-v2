@@ -21,6 +21,9 @@ export default function ProjectsSection({
     sourceCode: string;
   };
 }) {
+  const liveSite = project.liveSite;
+  const sourceCode = project.sourceCode;
+
   return (
     <>
       <div className="px-7 mb-32">
@@ -89,7 +92,7 @@ export default function ProjectsSection({
           {project.description}
         </p>
 
-        <ProjectButtons {...{ darkMode }} />
+        <ProjectButtons {...{ darkMode, liveSite, sourceCode }} />
       </div>
     </>
   );
