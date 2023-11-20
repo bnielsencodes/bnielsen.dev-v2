@@ -20,6 +20,7 @@ const config: Config = {
         100: "#0072bb",
         200: "#00c8f5",
       },
+      warning: "#cd2c2c",
       tech: {
         css: {
           100: "#1572b6",
