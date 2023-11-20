@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 export default function ProjectButtons({ darkMode }: { darkMode: boolean }) {
   return (
-    <div className="flex gap-4 mt-4 mb-8">
+    <div className="flex gap-4 pt-4 pb-8">
       <button
         className={clsx("py-[10px] px-5 rounded-lg text-lg font-bold", {
           "bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
