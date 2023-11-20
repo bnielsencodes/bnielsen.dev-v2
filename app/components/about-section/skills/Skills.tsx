@@ -16,7 +16,7 @@ export default function Skills({ darkMode }: { darkMode: boolean }) {
       >
         Top Skills
       </p>
-      <div className="grid grid-cols-3 gap-x-3 gap-y-4 mt-8">
+      <div className="grid grid-cols-3 gap-x-3 gap-y-4 mt-10">
         {isBreakpoint
           ? skillsLg.map((skill) => {
               return <Skill key={skill.id} {...{ skill, darkMode }} />;
