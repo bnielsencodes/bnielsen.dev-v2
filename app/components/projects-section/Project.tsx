@@ -81,7 +81,7 @@ export default function ProjectsSection({
           {project.name}
         </p>
         <p
-          className={clsx("text-lg", {
+          className={clsx("font-sans text-[1.05rem] font-light", {
             "text-neutral-400": darkMode,
             "text-neutral-300": !darkMode,
           })}
