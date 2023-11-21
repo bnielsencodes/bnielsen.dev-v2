@@ -1,10 +1,10 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import waveDarkTop from "@/public/assets/dividers/wave-dark-top.svg";
-import waveLightTop from "@/public/assets/dividers/wave-light-top.svg";
-import waveDarkBottom from "@/public/assets/dividers/wave-dark-bottom.svg";
-import waveLightBottom from "@/public/assets/dividers/wave-light-bottom.svg";
+import waveDarkTop from "@/public/assets/images/section-dividers/wave-dark-top.svg";
+import waveLightTop from "@/public/assets/images/section-dividers/wave-light-top.svg";
+import waveDarkBottom from "@/public/assets/images/section-dividers/wave-dark-bottom.svg";
+import waveLightBottom from "@/public/assets/images/section-dividers/wave-light-bottom.svg";
 import NavBar from "./components/navigation/NavBar";
 import Header from "./components/header/Header";
 import AboutSection from "./components/about-section/AboutSection";
