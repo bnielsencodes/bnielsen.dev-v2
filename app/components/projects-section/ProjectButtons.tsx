@@ -16,6 +16,7 @@ export default function ProjectButtons({
           "btn-light": darkMode,
           "btn-dark shadow-custom": !darkMode,
         })}
+        type="button"
         title="View website"
       >
         <a href={liveSite} target="_blank">
@@ -27,6 +28,7 @@ export default function ProjectButtons({
           "btn-dark": darkMode,
           "btn-light shadow-custom": !darkMode,
         })}
+        type="button"
         title="View on GitHub"
       >
         <a href={sourceCode} target="_blank">
