@@ -67,12 +67,12 @@ const config: Config = {
       mosk: ["var(--font-mosk)"],
     },
     screens: {
+      // => @media (min-width: 768px) { ... }
       md: "768px",
-      // => @media (min-width: 1440px) { ... }
+      // => @media (min-width: 1024px) { ... }
       lg: "1024px",
       // => @media (min-width: 1440px) { ... }
       xl: "1440px",
-      // => @media (min-width: 1440px) { ... }
     },
     extend: {
       boxShadow: {
