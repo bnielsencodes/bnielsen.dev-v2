@@ -15,6 +15,7 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
               !darkMode,
           }
         )}
+        type="button"
         title="Return to top of page"
       >
         <a
