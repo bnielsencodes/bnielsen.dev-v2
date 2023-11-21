@@ -18,6 +18,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
             "btn-light": darkMode,
             "btn-dark shadow-custom": !darkMode,
           })}
+          type="button"
         >
           <a href="#projects-section">View Work</a>
         </button>
@@ -36,6 +37,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
             "btn-dark": darkMode,
             "btn-light shadow-custom": !darkMode,
           })}
+          type="button"
         >
           <a href="#contact-section">Contact</a>
         </button>
