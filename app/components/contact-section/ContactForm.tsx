@@ -82,7 +82,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         {/* name input */}
         <input
           className={clsx(
-            "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
+            "accent-outline w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
               "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
@@ -99,7 +99,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         {/* email input */}
         <input
           className={clsx(
-            "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
+            "accent-outline w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
               "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
@@ -116,7 +116,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         {/* message input */}
         <textarea
           className={clsx(
-            "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
+            "accent-outline w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
               "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
@@ -138,11 +138,11 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
       {/* submit button */}
       <div className="w-full h-auto text-end">
         <ValidationError
-          className="absolute top-[6px] left-[14px] text-warning "
+          className="absolute top-[6px] left-[14px] text-warning"
           errors={state.errors}
         />
         <button
-          className={clsx(`btn font-semibold`, {
+          className={clsx("btn font-semibold", {
             "btn-light": darkMode,
             "btn-dark shadow-custom": !darkMode,
           })}
