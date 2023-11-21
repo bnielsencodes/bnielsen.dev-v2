@@ -19,7 +19,7 @@ export default function ProjectButtons({
           "shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
             !darkMode,
         })}
-        title="View demo"
+        title="View website"
       >
         <a href={liveSite} target="_blank">
           Live Site
