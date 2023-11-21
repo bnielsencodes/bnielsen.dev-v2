@@ -113,12 +113,10 @@ export default function ContactForm({ darkMode }) {
       <div className="w-full h-auto text-end">
         <button
           className={clsx(
-            `py-[9px] px-5 border-0 rounded-lg text-lg font-semibold hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
+            `btn font-semibold focus:outline-2 focus:opacity-[0.7]`,
             {
-              "bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
-                darkMode,
-              "shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
-                !darkMode,
+              "btn-light": darkMode,
+              "btn-dark shadow-custom": !darkMode,
             }
           )}
           type="submit"

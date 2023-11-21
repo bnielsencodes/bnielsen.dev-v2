@@ -4,25 +4,18 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
   return (
     <div className="flex gap-4 mt-[21px]">
       <button
-        className={clsx("py-[9px] px-5 rounded-lg text-lg font-bold", {
-          "bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
-            darkMode,
-          "shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
-            !darkMode,
+        className={clsx("btn", {
+          "btn-light": darkMode,
+          "btn-dark shadow-custom": !darkMode,
         })}
       >
         <a href="#projects-section">View Work</a>
       </button>
       <button
-        className={clsx(
-          "py-[9px] px-5 border border-neutral-300 rounded-lg text-lg font-bold",
-          {
-            "bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-500":
-              darkMode,
-            "shadow-custom bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-200":
-              !darkMode,
-          }
-        )}
+        className={clsx("btn border-[1px] border-neutral-300", {
+          "btn-dark": darkMode,
+          "btn-light shadow-custom": !darkMode,
+        })}
       >
         <a href="#contact-section">Contact</a>
       </button>
