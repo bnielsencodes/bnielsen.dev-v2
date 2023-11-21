@@ -17,16 +17,17 @@ export default function Tooltip({
           className={clsx(
             "absolute -top-[15px] z-10 font-normal text-xs leading-[1.42857143] text-start",
             {
-              "left-[25px]": skill.name === "css",
-              "left-[22px]": skill.name === "vite",
+              "-top-[17px]": skill.name === "figma" || skill.name === "vite",
               "left-[17px]": skill.name === "figma" || skill.name === "next",
-              "left-[27px]": skill.name === "git",
               "left-[20px]": skill.name === "html" || skill.name === "react",
+              "left-[25px]": skill.name === "css",
+              "left-[27px]": skill.name === "git",
               "left-[10px]": skill.name === "javascript",
               "left-[4px]": skill.name === "postgresql",
               "left-[23px]": skill.name === "sass",
               "left-[13px]": skill.name === "tailwind",
               "left-[7px]": skill.name === "typescript",
+              "left-[22px]": skill.name === "vite",
             }
           )}
         >
@@ -39,6 +40,8 @@ export default function Tooltip({
                 "border-x-neutral-600": !darkMode,
                 "border-t-tech-next": skill.name === "next" && darkMode,
                 "border-t-[#000]": skill.name === "next" && !darkMode,
+                "border-t-tech-vite-400": skill.name === "vite" && darkMode,
+                "border-t-tech-vite-500": skill.name === "vite" && !darkMode,
                 "border-t-tech-css-100": skill.name === "css",
                 "border-t-tech-figma-100": skill.name === "figma",
                 "border-t-tech-git": skill.name === "git",
@@ -49,8 +52,6 @@ export default function Tooltip({
                 "border-t-tech-sass": skill.name === "sass",
                 "border-t-tech-tailwind": skill.name === "tailwind",
                 "border-t-tech-typescript-200": skill.name === "typescript",
-                "border-t-tech-vite-400": skill.name === "vite" && darkMode,
-                "border-t-tech-vite-500": skill.name === "vite" && !darkMode,
               }
             )}
           />
