@@ -79,7 +79,7 @@ export default function MobileNav({
       </div>
 
       {/* bottom container */}
-      <div className="flex items-center justify-between w-full pr-[19px] pl-4 pb-[18px]">
+      <div className="flex items-center justify-between w-full pr-[19px] pl-4 pb-7">
         <Socials {...{ darkMode }} />
         <ToggleTheme {...{ darkMode, toggleTheme }} />
       </div>
