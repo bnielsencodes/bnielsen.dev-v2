@@ -20,7 +20,7 @@ export default function ProjectButtons({
             !darkMode,
         })}
       >
-        <a href={liveSite} target="_blank">
+        <a href={liveSite} title="View demo" target="_blank">
           Live Site
         </a>
       </button>
@@ -32,7 +32,7 @@ export default function ProjectButtons({
             !darkMode,
         })}
       >
-        <a href={sourceCode} target="_blank">
+        <a href={sourceCode} title="View on GitHub" target="_blank">
           Source Code
         </a>
       </button>
