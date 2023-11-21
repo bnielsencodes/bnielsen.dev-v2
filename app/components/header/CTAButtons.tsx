@@ -8,7 +8,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         initial={{ opacity: 0, translateX: "-10rem" }}
         whileInView={{ opacity: 1, translateX: "0" }}
         transition={{
-          duration: 1.4,
+          duration: 1,
           ease: [0.21, 1.11, 0.81, 0.99],
         }}
         viewport={{ once: true }}
@@ -26,7 +26,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         initial={{ opacity: 0, translateX: "10rem" }}
         whileInView={{ opacity: 1, translateX: "0" }}
         transition={{
-          duration: 1.4,
+          duration: 1,
           ease: [0.21, 1.11, 0.81, 0.99],
         }}
         viewport={{ once: true }}
