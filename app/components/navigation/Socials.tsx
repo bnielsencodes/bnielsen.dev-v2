@@ -1,10 +1,10 @@
 import Image from "next/image";
-import iconLinkedInNeutral200 from "/public/assets/socials/linkedin/mobile/linkedin-neutral-200.svg";
-import iconLinkedInNeutral400 from "/public/assets/socials/linkedin/mobile/linkedin-neutral-400.svg";
-import iconGitHubNeutral200 from "/public/assets/socials/github/mobile/github-neutral-200.svg";
-import iconGitHubNeutral400 from "/public/assets/socials/github/mobile/github-neutral-400.svg";
-import iconEmailNeutral200 from "/public/assets/socials/email/mobile/email-neutral-200.svg";
-import iconEmailNeutral400 from "/public/assets/socials/email/mobile/email-neutral-400.svg";
+import iconLinkedInDark from "/public/assets/socials/linkedin/mobile/linkedin-dark.svg";
+import iconLinkedInLight from "/public/assets/socials/linkedin/mobile/linkedin-light.svg";
+import iconGitHubDark from "/public/assets/socials/github/mobile/github-dark.svg";
+import iconGitHubLight from "/public/assets/socials/github/mobile/github-light.svg";
+import iconEmailDark from "/public/assets/socials/email/mobile/email-dark.svg";
+import iconEmailLight from "/public/assets/socials/email/mobile/email-light.svg";
 
 export default function Socials({ darkMode }: { darkMode: boolean }) {
   return (
@@ -15,7 +15,8 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
           <a className="group" href="https://linkedin.com/in/bnielsencodes">
             {darkMode ? (
               <Image
-                src={iconLinkedInNeutral400}
+                className="w-10 h-10 mr-2"
+                src={iconLinkedInLight}
                 alt="LinkedIn icon"
                 width="0"
                 height="0"
@@ -23,7 +24,8 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
               />
             ) : (
               <Image
-                src={iconLinkedInNeutral200}
+                className="w-10 h-10 mr-2"
+                src={iconLinkedInDark}
                 alt="LinkedIn icon"
                 width="0"
                 height="0"
@@ -38,7 +40,8 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
           <a className="group" href="https://github.com/bnielsencodes">
             {darkMode ? (
               <Image
-                src={iconGitHubNeutral400}
+                className="w-10 h-10 mr-2"
+                src={iconGitHubLight}
                 alt="GitHub icon"
                 width="0"
                 height="0"
@@ -46,7 +49,8 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
               />
             ) : (
               <Image
-                src={iconGitHubNeutral200}
+                className="w-10 h-10 mr-2"
+                src={iconGitHubDark}
                 alt="GitHub icon"
                 width="0"
                 height="0"
@@ -61,16 +65,18 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
           <a className="group" href="mailto:brandon@bnielsen.dev">
             {darkMode ? (
               <Image
-                src={iconEmailNeutral400}
-                alt="GitHub icon"
+                className="w-10 h-10"
+                src={iconEmailLight}
+                alt="email icon"
                 width="0"
                 height="0"
                 sizes="100vw"
               />
             ) : (
               <Image
-                src={iconEmailNeutral200}
-                alt="GitHub icon"
+                className="w-10 h-10"
+                src={iconEmailDark}
+                alt="email icon"
                 width="0"
                 height="0"
                 sizes="100vw"
