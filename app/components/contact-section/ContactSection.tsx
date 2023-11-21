@@ -13,7 +13,7 @@ export default function ContactSection({ darkMode }: { darkMode: boolean }) {
       {/* section heading */}
       <p
         className={clsx(
-          "relative z-0 w-full mx-auto mb-[10px] text-[1.8rem] font-bold text-center after:absolute after:content-[''] after:-z-10 after:right-0 after:bottom-[5px] after:w-[281px] after:h-[10px]",
+          "relative z-0 w-[319px] mx-auto mb-[10px] text-[1.8rem] font-bold text-center after:absolute after:content-[''] after:-z-10 after:right-0 after:bottom-[5px] after:w-[281px] after:h-[10px]",
           {
             "text-neutral-500 after:bg-neutral-300": darkMode,
             "text-neutral-200 after:bg-neutral-400": !darkMode,
