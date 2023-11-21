@@ -42,7 +42,8 @@ textarea:focus,
   color: #ededed;
 }
 
-.btn-dark:hover {
+.btn-dark:hover,
+.btn-dark:focus {
   background: rgb(39, 39, 39);
   background: linear-gradient(
     180deg,
@@ -61,7 +62,8 @@ textarea:focus,
   color: #272727;
 }
 
-.btn-light:hover {
+.btn-light:hover,
+.btn-light:focus {
   background: rgb(228, 228, 228);
   background: linear-gradient(
     180deg,
