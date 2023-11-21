@@ -15,7 +15,7 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
           <a className="group" href="https://linkedin.com/in/bnielsencodes">
             {darkMode ? (
               <Image
-                className="w-10 h-10 mr-2"
+                className="w-12 h-12 mr-3"
                 src={iconLinkedInLight}
                 alt="LinkedIn icon"
                 width="0"
@@ -24,7 +24,7 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
               />
             ) : (
               <Image
-                className="w-10 h-10 mr-2"
+                className="w-12 h-12 mr-3"
                 src={iconLinkedInDark}
                 alt="LinkedIn icon"
                 width="0"
@@ -40,7 +40,7 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
           <a className="group" href="https://github.com/bnielsencodes">
             {darkMode ? (
               <Image
-                className="w-10 h-10 mr-2"
+                className="w-12 h-12 mr-3"
                 src={iconGitHubLight}
                 alt="GitHub icon"
                 width="0"
@@ -49,7 +49,7 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
               />
             ) : (
               <Image
-                className="w-10 h-10 mr-2"
+                className="w-12 h-12 mr-3"
                 src={iconGitHubDark}
                 alt="GitHub icon"
                 width="0"
@@ -65,7 +65,7 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
           <a className="group" href="mailto:brandon@bnielsen.dev">
             {darkMode ? (
               <Image
-                className="w-10 h-10"
+                className="w-12 h-12"
                 src={iconEmailLight}
                 alt="email icon"
                 width="0"
@@ -74,7 +74,7 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
               />
             ) : (
               <Image
-                className="w-10 h-10"
+                className="w-12 h-12"
                 src={iconEmailDark}
                 alt="email icon"
                 width="0"
