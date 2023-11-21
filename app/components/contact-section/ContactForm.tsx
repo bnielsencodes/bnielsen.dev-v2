@@ -1,11 +1,25 @@
+import React, { FC } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import arrowIconDark from "@/public/assets/arrow/arrow-right-dark.svg";
 import arrowIconLight from "@/public/assets/arrow/arrow-right-light.svg";
+import ClipboardCopy from "./ClipboardCopy";
 import clsx from "clsx";
 
-export default function ContactForm({ darkMode }) {
+interface ContactFormProps {
+  darkMode: boolean;
+}
+
+const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
   const [state, handleSubmit] = useForm("mknewaqj");
+
+  if (state.succeeded) {
+    return (
+      <p className="w-[260px] mt-[60px] mx-auto mb-6 text-lg">
+        Thanks for your email!
+      </p>
+    );
+  }
 
   return (
     <form className="w-full max-w-[475px] mt-4 mx-auto" onSubmit={handleSubmit}>
@@ -43,7 +57,10 @@ export default function ContactForm({ darkMode }) {
             sizes="100vw"
           />
         ) : null}
-        <strong>
+        <div className="relative hidden">
+          <ClipboardCopy />
+        </div>
+        <strong className="lg:hidden">
           <a
             className={clsx(
               "inline p-0 border-0 text-accent hover:opacity-90",
@@ -77,6 +94,8 @@ export default function ContactForm({ darkMode }) {
           aria-label="Enter your name"
           required
         />
+        <ValidationError prefix="Name" field="name" errors={state.errors} />
+
         {/* email input */}
         <input
           className={clsx(
@@ -92,6 +111,8 @@ export default function ContactForm({ darkMode }) {
           aria-label="Enter your email address"
           required
         />
+        <ValidationError prefix="Email" field="email" errors={state.errors} />
+
         {/* message input */}
         <textarea
           className={clsx(
@@ -105,12 +126,21 @@ export default function ContactForm({ darkMode }) {
           placeholder="Message"
           aria-label="Enter a message"
           required
-          rows="7"
+          rows={7}
+        />
+        <ValidationError
+          prefix="Message"
+          field="message"
+          errors={state.errors}
         />
       </fieldset>
 
       {/* submit button */}
       <div className="w-full h-auto text-end">
+        <ValidationError
+          className="absolute top-[6px] left-[14px] text-warning "
+          errors={state.errors}
+        />
         <button
           className={clsx(`btn font-semibold`, {
             "btn-light": darkMode,
@@ -124,4 +154,6 @@ export default function ContactForm({ darkMode }) {
       </div>
     </form>
   );
-}
+};
+
+export default ContactForm;
