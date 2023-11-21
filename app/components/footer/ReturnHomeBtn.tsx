@@ -5,7 +5,7 @@ import clsx from "clsx";
 export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
   return (
     <>
-      <div
+      <button
         className={clsx(
           "absolute -top-[20px] w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm hvr-bob hover:bg-accent hover:scale-[1.1]",
           {
@@ -14,6 +14,7 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
               !darkMode,
           }
         )}
+        title="Return to top of page"
       >
         <a
           className="flex items-center justify-center w-full h-full focus:outline-2 focus:text-warning"
@@ -29,7 +30,7 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
             sizes="100vw"
           />
         </a>
-      </div>
+      </button>
     </>
   );
 }
