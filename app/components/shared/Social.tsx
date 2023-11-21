@@ -7,9 +7,10 @@ export default function Socials({
   social,
 }: {
   darkMode: boolean;
-  isFooter?: boolean;
+  isFooter: boolean;
   social: {
     id: number;
+    name: string;
     link: string;
     iconDark: StaticImageData;
     iconLight: StaticImageData;
@@ -22,21 +23,10 @@ export default function Socials({
       <a className="group" href={social.link}>
         {darkMode ? (
           <Image
-            className={clsx("w-12 h-12 mr-3", {
+            className={clsx("w-12 h-12", {
               "group-hover:hidden": isFooter,
-              null: !isFooter,
-            })}
-            src={social.iconDark}
-            alt={social.alt}
-            width="0"
-            height="0"
-            sizes="100vw"
-          />
-        ) : (
-          <Image
-            className={clsx("w-12 h-12 mr-3", {
-              "group-hover:hidden": isFooter,
-              null: !isFooter,
+              "mr-3": social.name === "linkedIn" || social.name === "github",
+              "mr-0": social.name === "email",
             })}
             src={social.iconLight}
             alt={social.alt}
@@ -44,13 +34,29 @@ export default function Socials({
             height="0"
             sizes="100vw"
           />
+        ) : (
+          <Image
+            className={clsx("w-12 h-12", {
+              "group-hover:hidden": isFooter,
+              "mr-3": social.name === "linkedIn" || social.name === "github",
+              "mr-0": social.name === "email",
+            })}
+            src={social.iconDark}
+            alt={social.alt}
+            width="0"
+            height="0"
+            sizes="100vw"
+          />
         )}
+        {/* if footer is parent, show image w/ accent color on hover */}
         {isFooter && (
           <>
-            {/* image shown on hover */}
             <Image
-              className="w-12 h-12 mr-3 hidden group-hover:block"
-              src={social.iconDark}
+              className={clsx("w-12 h-12 hidden group-hover:block", {
+                "mr-3": social.name === "linkedIn" || social.name === "github",
+                "mr-0": social.name === "email",
+              })}
+              src={social.iconAccent}
               alt={social.alt}
               width="0"
               height="0"

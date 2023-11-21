@@ -204,6 +204,7 @@ const skillsLg = [
 const socials = [
   {
     id: 1,
+    name: "linkedIn",
     link: "https://linkedin.com/in/bnielsencodes",
     iconDark: iconLinkedInDark,
     iconLight: iconLinkedInLight,
@@ -212,6 +213,7 @@ const socials = [
   },
   {
     id: 2,
+    name: "github",
     link: "https://github.com/bnielsencodes",
     iconDark: iconGithubDark,
     iconLight: iconGithubLight,
@@ -220,6 +222,7 @@ const socials = [
   },
   {
     id: 3,
+    name: "email",
     link: "mailto:brandon@bnielsen.dev",
     iconDark: iconEmailDark,
     iconLight: iconEmailLight,

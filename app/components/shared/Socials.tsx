@@ -6,7 +6,7 @@ export default function Socials({
   isFooter,
 }: {
   darkMode: boolean;
-  isFooter?: boolean;
+  isFooter: boolean;
 }) {
   const socialElements = socials.map((social) => {
     return <Social key={social.id} {...{ darkMode, social, isFooter }} />;

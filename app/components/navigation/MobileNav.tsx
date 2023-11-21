@@ -8,6 +8,8 @@ const variants = {
   closed: { opacity: 0, x: "-100%" },
 };
 
+const isFooter = false;
+
 export default function MobileNav({
   darkMode,
   toggleTheme,
@@ -94,7 +96,7 @@ export default function MobileNav({
 
       {/* bottom container */}
       <div className="flex items-end justify-between w-full pr-[19px] pl-4 pb-7">
-        <Socials {...{ darkMode }} />
+        <Socials {...{ darkMode, isFooter }} />
         <ToggleTheme {...{ darkMode, toggleTheme }} />
       </div>
     </motion.div>
