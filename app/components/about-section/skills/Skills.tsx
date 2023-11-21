@@ -9,7 +9,7 @@ export default function Skills({ darkMode }: { darkMode: boolean }) {
   return (
     <aside className="flex flex-col justify-center w-[293px] pb-[25px] mt-[50px] mx-auto text-[0.9rem]">
       <p
-        className={clsx("border-b-4  mx-auto font-bold text-[1.4rem]", {
+        className={clsx("border-b-4  mx-auto font-bold text-[1.625rem]", {
           "text-neutral-500 border-b-neutral-300": darkMode,
           "text-neutral-200 border-b-neutral-400": !darkMode,
         })}
