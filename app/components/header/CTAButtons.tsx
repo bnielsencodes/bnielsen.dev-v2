@@ -13,15 +13,17 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         }}
         viewport={{ once: true }}
       >
-        <button
-          className={clsx("btn", {
-            "btn-light": darkMode,
-            "btn-dark shadow-custom": !darkMode,
-          })}
-          type="button"
-        >
-          <a href="#projects-section">View Work</a>
-        </button>
+        <a href="#projects-section">
+          <button
+            className={clsx("btn", {
+              "btn-light": darkMode,
+              "btn-dark shadow-custom": !darkMode,
+            })}
+            type="button"
+          >
+              View Work
+          </button>
+        </a>
       </motion.div>
       <motion.div
         initial={{ opacity: 0, translateX: "10rem" }}
@@ -32,15 +34,17 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         }}
         viewport={{ once: true }}
       >
-        <button
-          className={clsx("btn border-[1px] border-neutral-300", {
-            "btn-dark": darkMode,
-            "btn-light shadow-custom": !darkMode,
-          })}
-          type="button"
-        >
-          <a href="#contact-section">Contact</a>
-        </button>
+        <a href="#contact-section">
+          <button
+            className={clsx("btn border-[1px] border-neutral-300", {
+              "btn-dark": darkMode,
+              "btn-light shadow-custom": !darkMode,
+            })}
+            type="button"
+          >
+              Contact
+          </button>
+        </a>
       </motion.div>
     </div>
   );
