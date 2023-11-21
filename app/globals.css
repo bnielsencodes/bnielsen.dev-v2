@@ -36,8 +36,8 @@ body {
 
 .avatar {
   position: relative;
-  width: 10rem;
-  height: 10rem;
+  width: 15rem;
+  height: 15rem;
   border: 3px solid #555;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
   background-image: url(/assets/avatar.jpeg);
