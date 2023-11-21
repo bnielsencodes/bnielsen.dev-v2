@@ -94,7 +94,9 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           aria-label="Enter your name"
           required
         />
+        {/*
         <ValidationError prefix="Name" field="name" errors={state.errors} />
+        */}
 
         {/* email input */}
         <input
@@ -111,7 +113,9 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           aria-label="Enter your email address"
           required
         />
+        {/*
         <ValidationError prefix="Email" field="email" errors={state.errors} />
+        */}
 
         {/* message input */}
         <textarea
@@ -128,19 +132,23 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           required
           rows={7}
         />
+        {/*
         <ValidationError
           prefix="Message"
           field="message"
           errors={state.errors}
         />
+        */}
       </fieldset>
 
       {/* submit button */}
       <div className="w-full h-auto text-end">
+        {/*
         <ValidationError
           className="absolute top-[6px] left-[14px] text-warning"
           errors={state.errors}
         />
+        */}
         <button
           className={clsx("btn font-semibold", {
             "btn-light": darkMode,
