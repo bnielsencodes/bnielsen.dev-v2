@@ -19,8 +19,9 @@ export default function ProjectButtons({
           "shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
             !darkMode,
         })}
+        title="View demo"
       >
-        <a href={liveSite} title="View demo" target="_blank">
+        <a href={liveSite} target="_blank">
           Live Site
         </a>
       </button>
@@ -31,8 +32,9 @@ export default function ProjectButtons({
           "shadow-custom border-neutral-300 bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-200":
             !darkMode,
         })}
+        title="View on GitHub"
       >
-        <a href={sourceCode} title="View on GitHub" target="_blank">
+        <a href={sourceCode} target="_blank">
           Source Code
         </a>
       </button>
