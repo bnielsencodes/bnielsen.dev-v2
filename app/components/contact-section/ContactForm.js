@@ -112,13 +112,10 @@ export default function ContactForm({ darkMode }) {
       {/* submit button */}
       <div className="w-full h-auto text-end">
         <button
-          className={clsx(
-            `btn font-semibold focus:outline-2 focus:opacity-[0.7]`,
-            {
-              "btn-light": darkMode,
-              "btn-dark shadow-custom": !darkMode,
-            }
-          )}
+          className={clsx(`btn font-semibold`, {
+            "btn-light": darkMode,
+            "btn-dark shadow-custom": !darkMode,
+          })}
           type="submit"
           disabled={state.submitting}
         >
