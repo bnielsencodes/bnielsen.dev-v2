@@ -21,6 +21,7 @@ export default function HamburgerMenu({
       )}
       onClick={() => toggleMobileNav()}
       type="button"
+      aria-label="mobile nav menu toggle"
     >
       <span
         className={clsx(
