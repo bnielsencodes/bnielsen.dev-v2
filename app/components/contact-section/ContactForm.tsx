@@ -1,5 +1,8 @@
 import React, { FC } from "react";
+import { useForm } from "@formspree/react";
+{/*
 import { useForm, ValidationError } from "@formspree/react";
+*/}
 import Image from "next/image";
 import arrowIconDark from "@/public/assets/icons/arrow/arrow-right-dark.svg";
 import arrowIconLight from "@/public/assets/icons/arrow/arrow-right-light.svg";
@@ -13,6 +16,7 @@ interface ContactFormProps {
 const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
   const [state, handleSubmit] = useForm("mknewaqj");
 
+  {/*
   if (state.succeeded) {
     return (
       <p className="w-[260px] mt-[60px] mx-auto mb-6 text-lg">
@@ -20,6 +24,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
       </p>
     );
   }
+  */}
 
   return (
     <form className="w-full max-w-[475px] mt-4 mx-auto" onSubmit={handleSubmit}>
