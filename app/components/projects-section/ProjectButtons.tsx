@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import clsx from "clsx";
 
 export default function ProjectButtons({
