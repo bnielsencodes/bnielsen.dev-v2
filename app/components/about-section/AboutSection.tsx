@@ -6,7 +6,7 @@ export default function AboutSection({ darkMode }: { darkMode: boolean }) {
   return (
     <section
       id="about-section"
-      className={clsx("pt-20 px-7 pb-14 overflow-x-clip", {
+      className={clsx("pt-20 px-7 pb-20 overflow-x-clip", {
         "bg-neutral-200": darkMode,
         "bg-neutral-500": !darkMode,
       })}
