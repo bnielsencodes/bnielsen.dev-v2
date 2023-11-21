@@ -72,6 +72,29 @@ textarea:focus,
   );
 }
 
+.header-text {
+  animation-name: moveInTop;
+  animation-duration: 1.4s;
+  animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+  transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.header-cta--left {
+  animation-name: moveInRight;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+}
+
+.header-cta--right {
+  animation-name: moveInLeft;
+  animation-duration: 1.4s;
+  animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
+}
+
 /* Gives "web developer" in header intro stroke effect */
 
 .header-text-stroke--dark {
@@ -96,24 +119,6 @@ textarea:focus,
   -moz-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
   transition: all 1s ease-in-out;
-}
-
-/* 
--
-avatar img blob animation 
--
-*/
-
-@keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
 }
 
 /* 
@@ -175,6 +180,211 @@ skill tooltip label bg gradients (figma and vite)
     hsla(281, 99%, 60%, 1) 0%,
     hsla(195, 100%, 63%, 1) 100%
   );
+}
+
+/* return home button hover bob animation */
+
+/* BOB EFFECT FROM HOVER.CSS */
+.hvr-bob {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  -moz-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+}
+
+.hvr-bob,
+.hvr-bob:focus,
+.hvr-bob:active {
+  -webkit-animation-name: hvr-bob-float, hvr-bob;
+  -moz-animation-name: hvr-bob-float, hvr-bob;
+  animation-name: hvr-bob-float, hvr-bob;
+  -webkit-animation-duration: 0.3s, 1.5s;
+  -moz-animation-duration: 0.3s, 1.5s;
+  animation-duration: 0.3s, 1.5s;
+  -webkit-animation-delay: 0s, 0.3s;
+  -moz-animation-delay: 0s, 0.3s;
+  animation-delay: 0s, 0.3s;
+  -webkit-animation-timing-function: ease-out, ease-in-out;
+  -moz-animation-timing-function: ease-out, ease-in-out;
+  animation-timing-function: ease-out, ease-in-out;
+  -webkit-animation-iteration-count: 1, infinite;
+  -moz-animation-iteration-count: 1, infinite;
+  animation-iteration-count: 1, infinite;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-direction: normal, alternate;
+  -moz-animation-direction: normal, alternate;
+  animation-direction: normal, alternate;
+}
+
+/* 
+-
+header text animation keyframes
+-
+*/
+
+@-webkit-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@-moz-keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 
+-
+header cta button move in right animation keyframes
+-
+*/
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 
+-
+header cta button move in left animation keyframes
+-
+*/
+
+@-webkit-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 
+-
+avatar img blob animation 
+-
+*/
+
+@-webkit-keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@-moz-keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+}
+
+@keyframes morph {
+  0% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
 }
 
 /* 
@@ -315,44 +525,11 @@ vite skill keyframes
   }
 }
 
-/* return home button hover bob animation */
-
-/* BOB EFFECT FROM HOVER.CSS */
-.hvr-bob {
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  -moz-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-}
-
-.hvr-bob,
-.hvr-bob:focus,
-.hvr-bob:active {
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  -moz-animation-name: hvr-bob-float, hvr-bob;
-  animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: 0.3s, 1.5s;
-  -moz-animation-duration: 0.3s, 1.5s;
-  animation-duration: 0.3s, 1.5s;
-  -webkit-animation-delay: 0s, 0.3s;
-  -moz-animation-delay: 0s, 0.3s;
-  animation-delay: 0s, 0.3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  -moz-animation-timing-function: ease-out, ease-in-out;
-  animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  -moz-animation-iteration-count: 1, infinite;
-  animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  -moz-animation-direction: normal, alternate;
-  animation-direction: normal, alternate;
-}
-
-/* return home hover bob animation keyframes */
+/* 
+-
+return home hover bob animation keyframes
+-
+*/
 
 @-webkit-keyframes hvr-bob {
   0% {
