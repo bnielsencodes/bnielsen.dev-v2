@@ -31,7 +31,7 @@
     "app/layout.js",
     "app/lib/Providers.tsx",
     "app/projects-page/page.tsx",
-    "app/components/navigation/ToggleTheme.tsx",
+    "app/components/navigation/ThemeToggle.tsx",
     "app/lib/useScreenWidth.tsx",
     "app/lib/useScreenSize.js",
     "app/components/contact-section/ContactForm.tsx"

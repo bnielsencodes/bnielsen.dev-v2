@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Socials from "@/app/components/shared/Socials";
-import ToggleTheme from "./ToggleTheme";
+import ThemeToggle from "./ThemeToggle";
 import clsx from "clsx";
 
 const variants = {
@@ -97,7 +97,7 @@ export default function MobileNav({
       {/* bottom container */}
       <div className="flex items-end justify-between w-full pr-[19px] pl-4 pb-7">
         <Socials {...{ darkMode, isFooter }} />
-        <ToggleTheme {...{ darkMode, toggleTheme }} />
+        <ThemeToggle {...{ darkMode, toggleTheme }} />
       </div>
     </motion.div>
   );

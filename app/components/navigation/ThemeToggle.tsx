@@ -1,11 +1,11 @@
 import Image from "next/image";
-import sunIconDark from "/public/assets/themeToggle/icon-sun-dark.svg";
-import moonIconDark from "/public/assets/themeToggle/icon-moon-dark.svg";
-import sunIconLight from "/public/assets/themeToggle/icon-sun-light.svg";
-import moonIconLight from "/public/assets/themeToggle/icon-moon-light.svg";
+import sunIconDark from "/public/assets/icons/themeToggle/icon-sun-dark.svg";
+import moonIconDark from "/public/assets/icons/themeToggle/icon-moon-dark.svg";
+import sunIconLight from "/public/assets/icons/themeToggle/icon-sun-light.svg";
+import moonIconLight from "/public/assets/icons/themeToggle/icon-moon-light.svg";
 import clsx from "clsx";
 
-export default function ToggleTheme({
+export default function ThemeToggle({
   darkMode,
   toggleTheme,
 }: {
