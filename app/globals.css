@@ -72,26 +72,39 @@ textarea:focus,
   );
 }
 
+/* header text and cta buttons animations */
+
 .header-text {
+  -webkit-animation-name: moveInTop;
   animation-name: moveInTop;
+  -webkit-animation-duration: 1.4s;
   animation-duration: 1.4s;
-  animation-delay: 0.5s;
-  -webkit-animation-delay: 0.5s;
-  animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+  -webkit-animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
   transition: all 1250ms cubic-bezier(0.19, 1, 0.22, 1);
 }
 
 .header-cta--left {
-  animation-name: moveInRight;
+  -webkit-animation-name: moveInLeft;
+  animation-name: moveInLeft;
+  -webkit-animation-duration: 1.4s;
   animation-duration: 1.4s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+  -webkit-animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
 .header-cta--right {
-  animation-name: moveInLeft;
+  -webkit-animation-name: moveInRight;
+  animation-name: moveInRight;
+  -webkit-animation-duration: 1.4s;
   animation-duration: 1.4s;
+  -webkit-animation-delay: 0.05s;
+  animation-delay: 0.05s;
+  -webkit-animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
   animation-timing-function: cubic-bezier(0.21, 1.11, 0.81, 0.99);
 }
 
@@ -263,48 +276,6 @@ header text animation keyframes
 
 /* 
 -
-header cta button move in right animation keyframes
--
-*/
-
-@-webkit-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@-moz-keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-@keyframes moveInRight {
-  0% {
-    opacity: 0;
-    transform: translateX(10rem);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-/* 
--
 header cta button move in left animation keyframes
 -
 */
@@ -337,6 +308,48 @@ header cta button move in left animation keyframes
   0% {
     opacity: 0;
     transform: translateX(-10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* 
+-
+header cta button move in right animation keyframes
+-
+*/
+
+@-webkit-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@-moz-keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(10rem);
   }
 
   100% {
