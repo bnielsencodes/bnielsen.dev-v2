@@ -24,6 +24,8 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Gives "web developer" in header intro stroke effect */
+
 .header-text-stroke--dark {
   -webkit-text-stroke: 1.75px #ededed;
 }
