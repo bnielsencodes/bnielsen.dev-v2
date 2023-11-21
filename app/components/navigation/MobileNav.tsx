@@ -50,47 +50,83 @@ export default function MobileNav({
             }
           )}
         >
-          {/* about link */}
-          <li className="h-[87px]">
-            <a
-              className={clsx("font-bold hover:text-accent", {
-                "hover:text-accent": darkMode,
-              })}
-              onClick={() => toggleMobileNav()}
-              href="#about-section"
-              aria-label="about"
-            >
-              About
-            </a>
-          </li>
+          <motion.div
+            animate={showMobileNav ? "open" : "closed"}
+            variants={variants}
+            initial={{ opacity: 0, translateX: "-5rem" }}
+            whileInView={{ opacity: 1, translateX: "0" }}
+            transition={{
+              duration: 0.35,
+              delay: 0.15,
+              ease: [0.21, 1.11, 0.81, 0.99],
+            }}
+          >
+            {/* about link */}
+            <li className="h-[87px]">
+              <a
+                className={clsx("font-bold hover:text-accent", {
+                  "hover:text-accent": darkMode,
+                })}
+                onClick={() => toggleMobileNav()}
+                href="#about-section"
+                aria-label="about"
+              >
+                About
+              </a>
+            </li>
+          </motion.div>
 
-          {/* portfolio link */}
-          <li className="h-[87px]">
-            <a
-              className={clsx("font-bold hover:text-accent", {
-                "hover:text-accent": darkMode,
-              })}
-              onClick={() => toggleMobileNav()}
-              href="#projects-section"
-              aria-label="projects"
-            >
-              Work
-            </a>
-          </li>
+          <motion.div
+            animate={showMobileNav ? "open" : "closed"}
+            variants={variants}
+            initial={{ opacity: 0, translateX: "-5rem" }}
+            whileInView={{ opacity: 1, translateX: "0" }}
+            transition={{
+              duration: 0.35,
+              delay: 0.25,
+              ease: [0.21, 1.11, 0.81, 0.99],
+            }}
+          >
+            {/* portfolio link */}
+            <li className="h-[87px]">
+              <a
+                className={clsx("font-bold hover:text-accent", {
+                  "hover:text-accent": darkMode,
+                })}
+                onClick={() => toggleMobileNav()}
+                href="#projects-section"
+                aria-label="projects"
+              >
+                Work
+              </a>
+            </li>
+          </motion.div>
 
-          {/* contact link */}
-          <li className="h-[87px]">
-            <a
-              className={clsx("font-bold hover:text-accent", {
-                "hover:text-accent": darkMode,
-              })}
-              onClick={() => toggleMobileNav()}
-              href="#contact-section"
-              aria-label="contact"
-            >
-              Contact
-            </a>
-          </li>
+          <motion.div
+            animate={showMobileNav ? "open" : "closed"}
+            variants={variants}
+            initial={{ opacity: 0, translateX: "-5rem" }}
+            whileInView={{ opacity: 1, translateX: "0" }}
+            transition={{
+              duration: 0.35,
+              delay: 0.35,
+              ease: [0.21, 1.11, 0.81, 0.99],
+            }}
+          >
+            {/* contact link */}
+            <li className="h-[87px]">
+              <a
+                className={clsx("font-bold hover:text-accent", {
+                  "hover:text-accent": darkMode,
+                })}
+                onClick={() => toggleMobileNav()}
+                href="#contact-section"
+                aria-label="contact"
+              >
+                Contact
+              </a>
+            </li>
+          </motion.div>
         </ul>
       </div>
 
