@@ -110,14 +110,14 @@ export default function ContactForm({ darkMode }) {
       </fieldset>
 
       {/* submit button */}
-      <div className="w-full h-[45px] text-end">
+      <div className="w-full h-auto text-end">
         <button
           className={clsx(
-            `py-[9px] px-5 rounded-lg text-lg font-semibold hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
+            `py-[9px] px-5 border-0 rounded-lg text-lg font-semibold hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
             {
-              "border-[1px] border-neutral-300 bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
+              "bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
                 darkMode,
-              "border-0 shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
+              "shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
                 !darkMode,
             }
           )}
