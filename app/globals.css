@@ -55,11 +55,11 @@ body::-webkit-scrollbar {
 }
 
 .btn-light:hover {
-  background: rgb(229, 229, 229);
+  background: rgb(228, 228, 228);
   background: linear-gradient(
     180deg,
-    rgba(229, 229, 229, 1) 0%,
-    rgba(229, 229, 229, 1) 100%
+    rgba(228, 228, 228, 1) 0%,
+    rgba(228, 228, 228, 1) 100%
   );
 }
 
