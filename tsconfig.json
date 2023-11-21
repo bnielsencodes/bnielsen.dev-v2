@@ -34,7 +34,7 @@
     "app/components/navigation/ToggleTheme.tsx",
     "app/lib/useScreenWidth.tsx",
     "app/lib/useScreenSize.js",
-    "app/components/contact-section/ContactForm.js"
+    "app/components/contact-section/ContactForm.tsx"
   ],
   "exclude": ["node_modules"]
 }
