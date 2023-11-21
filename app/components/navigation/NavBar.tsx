@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import logoDark from "/public/assets/logo/Main-Logo-800x600.png";
-import logoLight from "/public/assets/logo/Inverted-Color-800x600.png";
+import logoDark from "/public/assets/images/logo/Main-Logo-800x600.png";
+import logoLight from "/public/assets/images/logo/Inverted-Color-800x600.png";
 import HamburgerMenu from "./HamburgerMenu";
 import MobileNav from "./MobileNav";
 import clsx from "clsx";

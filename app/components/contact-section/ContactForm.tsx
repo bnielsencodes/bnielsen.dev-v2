@@ -1,8 +1,8 @@
 import React, { FC } from "react";
 import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
-import arrowIconDark from "@/public/assets/arrow/arrow-right-dark.svg";
-import arrowIconLight from "@/public/assets/arrow/arrow-right-light.svg";
+import arrowIconDark from "@/public/assets/icons/arrow/arrow-right-dark.svg";
+import arrowIconLight from "@/public/assets/icons/arrow/arrow-right-light.svg";
 import ClipboardCopy from "./ClipboardCopy";
 import clsx from "clsx";
 

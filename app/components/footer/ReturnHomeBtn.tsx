@@ -1,5 +1,5 @@
 import Image from "next/image";
-import chevronIcon from "@/public/assets/chevrons-up-duotone.svg";
+import chevronIcon from "@/public/assets/icons/chevrons-up-duotone.svg";
 import clsx from "clsx";
 
 export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {

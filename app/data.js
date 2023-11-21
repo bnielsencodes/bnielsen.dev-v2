@@ -1,20 +1,20 @@
 // Project mockups
-import audiophileMockup from "@/public/assets/mockups/Laptops/audiophile.png";
-import securepassMockup from "@/public/assets/mockups/Mobile/securepass.png";
-import quizzicalStartMockup from "@/public/assets/mockups/Tablets/quizzical-start.png";
-import quizzicalQuizMockup from "@/public/assets/mockups/Tablets/quizzical-quiz.png";
-import dictionaryDarkMockup from "@/public/assets/mockups/Tablets/dictionary-dark.png";
-import dictionaryLightMockup from "@/public/assets/mockups/Tablets/dictionary-light.png";
+import audiophileMockup from "/public/assets/images/mockups/Laptops/audiophile.png";
+import securepassMockup from "/public/assets/images/mockups/Mobile/securepass.png";
+import quizzicalStartMockup from "/public/assets/images/mockups/Tablets/quizzical-start.png";
+import quizzicalQuizMockup from "/public/assets/images/mockups/Tablets/quizzical-quiz.png";
+import dictionaryDarkMockup from "/public/assets/images/mockups/Tablets/dictionary-dark.png";
+import dictionaryLightMockup from "/public/assets/images/mockups/Tablets/dictionary-light.png";
 // Social icons
-import iconLinkedInDark from "/public/assets/socials/linkedin/linkedin-dark.svg";
-import iconLinkedInLight from "/public/assets/socials/linkedin/linkedin-light.svg";
-import iconLinkedInAccent from "/public/assets/socials/linkedin/linkedin-accent.svg";
-import iconGithubDark from "/public/assets/socials/github/github-dark.svg";
-import iconGithubLight from "/public/assets/socials/github/github-light.svg";
-import iconGithubAccent from "/public/assets/socials/github/github-accent.svg";
-import iconEmailDark from "/public/assets/socials/email/email-dark.svg";
-import iconEmailLight from "/public/assets/socials/email/email-light.svg";
-import iconEmailAccent from "/public/assets/socials/email/email-accent.svg";
+import iconLinkedInDark from "/public/assets/icons/socials/linkedin/linkedin-dark.svg";
+import iconLinkedInLight from "/public/assets/icons/socials/linkedin/linkedin-light.svg";
+import iconLinkedInAccent from "/public/assets/icons/socials/linkedin/linkedin-accent.svg";
+import iconGithubDark from "/public/assets/icons/socials/github/github-dark.svg";
+import iconGithubLight from "/public/assets/icons/socials/github/github-light.svg";
+import iconGithubAccent from "/public/assets/icons/socials/github/github-accent.svg";
+import iconEmailDark from "/public/assets/icons/socials/email/email-dark.svg";
+import iconEmailLight from "/public/assets/icons/socials/email/email-light.svg";
+import iconEmailAccent from "/public/assets/icons/socials/email/email-accent.svg";
 
 // eslint-disable-next-line
 const projects = [
