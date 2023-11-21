@@ -20,6 +20,7 @@ export default function HamburgerMenu({
         }
       )}
       onClick={() => toggleMobileNav()}
+      type="button"
     >
       <span
         className={clsx(
