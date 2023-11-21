@@ -4,10 +4,13 @@ import clsx from "clsx";
 
 export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
   return (
-    <>
+    <a
+      href="#header"
+      aria-label="return to top of page"
+    >
       <button
         className={clsx(
-          "hvr-bob accent-outline absolute -top-[20px] w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm",
+          "hvr-bob accent-outline absolute -top-[20px] flex items-center justify-center w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm",
           {
             "bg-gradient-to-b from-neutral-200 to-neutral-100 lg:hover:to-neutral-200":
               darkMode,
@@ -18,21 +21,15 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
         type="button"
         title="Return to top of page"
       >
-        <a
-          className="flex items-center justify-center w-full h-full"
-          href="#header"
-          aria-label="return to top of page"
-        >
-          <Image
-            className="w-7 h-7"
-            src={chevronIcon}
-            alt="chevron pointing up"
-            width="0"
-            height="0"
-            sizes="100vw"
-          />
-        </a>
+        <Image
+          className="w-7 h-7"
+          src={chevronIcon}
+          alt="chevron pointing up"
+          width="0"
+          height="0"
+          sizes="100vw"
+        />
       </button>
-    </>
+    </a>
   );
 }
