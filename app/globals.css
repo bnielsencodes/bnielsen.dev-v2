@@ -92,8 +92,6 @@ textarea:focus,
   background-position: 50%;
   background-repeat: no-repeat;
   background-size: cover;
-  -webkit-animation: morph 8s ease-in-out infinite;
-  -moz-animation: morph 8s ease-in-out infinite;
   animation: morph 8s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
@@ -126,33 +124,11 @@ skill tooltip label bg gradients (figma and vite)
     hsla(267, 85%, 64%, 1) 50%,
     hsla(13, 80%, 51%, 1) 100%
   );
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(156, 86%, 41%, 1) 0%,
-    hsla(267, 85%, 64%, 1) 50%,
-    hsla(13, 80%, 51%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(156, 86%, 41%, 1) 0%,
-    hsla(267, 85%, 64%, 1) 50%,
-    hsla(13, 80%, 51%, 1) 100%
-  );
 }
 
 .label--vite {
   background: hsla(281, 99%, 60%, 1);
   background: linear-gradient(
-    135deg,
-    hsla(281, 99%, 60%, 1) 0%,
-    hsla(195, 100%, 63%, 1) 100%
-  );
-  background: -moz-linear-gradient(
-    135deg,
-    hsla(281, 99%, 60%, 1) 0%,
-    hsla(195, 100%, 63%, 1) 100%
-  );
-  background: -webkit-linear-gradient(
     135deg,
     hsla(281, 99%, 60%, 1) 0%,
     hsla(195, 100%, 63%, 1) 100%
@@ -165,34 +141,18 @@ skill tooltip label bg gradients (figma and vite)
 .hvr-bob {
   display: inline-block;
   vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  -moz-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
 }
 
 .hvr-bob,
 .hvr-bob:focus,
 .hvr-bob:active {
-  -webkit-animation-name: hvr-bob-float, hvr-bob;
-  -moz-animation-name: hvr-bob-float, hvr-bob;
   animation-name: hvr-bob-float, hvr-bob;
-  -webkit-animation-duration: 0.3s, 1.5s;
-  -moz-animation-duration: 0.3s, 1.5s;
   animation-duration: 0.3s, 1.5s;
-  -webkit-animation-delay: 0s, 0.3s;
-  -moz-animation-delay: 0s, 0.3s;
   animation-delay: 0s, 0.3s;
-  -webkit-animation-timing-function: ease-out, ease-in-out;
-  -moz-animation-timing-function: ease-out, ease-in-out;
   animation-timing-function: ease-out, ease-in-out;
-  -webkit-animation-iteration-count: 1, infinite;
-  -moz-animation-iteration-count: 1, infinite;
   animation-iteration-count: 1, infinite;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
-  -webkit-animation-direction: normal, alternate;
-  -moz-animation-direction: normal, alternate;
   animation-direction: normal, alternate;
 }
 
@@ -201,30 +161,6 @@ skill tooltip label bg gradients (figma and vite)
 avatar img blob animation 
 -
 */
-
-@-webkit-keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-}
-
-@-moz-keyframes morph {
-  0% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-  50% {
-    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
-  }
-  100% {
-    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  }
-}
 
 @keyframes morph {
   0% {
@@ -243,48 +179,6 @@ avatar img blob animation
 figma skill keyframes 
 -
 */
-
-@-webkit-keyframes figmaBgGradientAnimation {
-  0% {
-    background: hsla(13, 80%, 51%, 1);
-  }
-  20% {
-    background: hsla(6, 85%, 66%, 1);
-  }
-  40% {
-    background: hsla(267, 85%, 64%, 1);
-  }
-  60% {
-    background: hsla(197, 89%, 52%, 1);
-  }
-  80% {
-    background: hsla(156, 86%, 41%, 1);
-  }
-  100% {
-    background: hsla(13, 80%, 51%, 1);
-  }
-}
-
-@-moz-keyframes figmaBgGradientAnimation {
-  0% {
-    background: hsla(13, 80%, 51%, 1);
-  }
-  20% {
-    background: hsla(6, 85%, 66%, 1);
-  }
-  40% {
-    background: hsla(267, 85%, 64%, 1);
-  }
-  60% {
-    background: hsla(197, 89%, 52%, 1);
-  }
-  80% {
-    background: hsla(156, 86%, 41%, 1);
-  }
-  100% {
-    background: hsla(13, 80%, 51%, 1);
-  }
-}
 
 @keyframes figmaBgGradientAnimation {
   0% {
@@ -313,48 +207,6 @@ vite skill keyframes
 -
 */
 
-@-webkit-keyframes viteBgGradientAnimation {
-  0% {
-    background: hsla(195, 100%, 63%, 1);
-  }
-  20% {
-    background: hsla(281, 99%, 60%, 1);
-  }
-  40% {
-    background: hsla(50, 100%, 76%, 1);
-  }
-  60% {
-    background: hsla(50, 100%, 60%, 1);
-  }
-  80% {
-    background: hsla(40, 100%, 50%, 1);
-  }
-  100% {
-    background: hsla(195, 100%, 63%, 1);
-  }
-}
-
-@-moz-keyframes viteBgGradientAnimation {
-  0% {
-    background: hsla(195, 100%, 63%, 1);
-  }
-  20% {
-    background: hsla(281, 99%, 60%, 1);
-  }
-  40% {
-    background: hsla(50, 100%, 76%, 1);
-  }
-  60% {
-    background: hsla(50, 100%, 60%, 1);
-  }
-  80% {
-    background: hsla(40, 100%, 50%, 1);
-  }
-  100% {
-    background: hsla(195, 100%, 63%, 1);
-  }
-}
-
 @keyframes viteBgGradientAnimation {
   0% {
     background: hsla(195, 100%, 63%, 1);
@@ -382,74 +234,22 @@ return home hover bob animation keyframes
 -
 */
 
-@-webkit-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@-moz-keyframes hvr-bob {
-  0% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-
-  50% {
-    -webkit-transform: translateY(-4px);
-    transform: translateY(-4px);
-  }
-
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
 @keyframes hvr-bob {
   0% {
-    -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 
   50% {
-    -webkit-transform: translateY(-4px);
     transform: translateY(-4px);
   }
 
   100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@-webkit-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
-    transform: translateY(-8px);
-  }
-}
-
-@-moz-keyframes hvr-bob-float {
-  100% {
-    -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
 
 @keyframes hvr-bob-float {
   100% {
-    -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
   }
 }
