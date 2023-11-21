@@ -25,7 +25,7 @@ export default function Socials({
         "mr-0": social.name === "email",
       })}
     >
-      <button className="accent-outline">
+      <button className="accent-outline" type="button">
         <a className="group" href={social.link}>
           {darkMode ? (
             <Image
