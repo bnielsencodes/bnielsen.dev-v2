@@ -32,7 +32,7 @@ export default function MobileNav({
       )}
       animate={showMobileNav ? "open" : "closed"}
       variants={variants}
-      initial={{ opacity: 0, translateX: "-19rem" }}
+      initial={{ opacity: 0, translateX: "-20rem" }}
       whileInView={{ opacity: 1, translateX: "0" }}
       transition={{
         duration: 0.35,
