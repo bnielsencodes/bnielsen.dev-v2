@@ -9,8 +9,9 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
         className={clsx(
           "absolute -top-[20px] w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm hvr-bob hover:bg-accent hover:scale-[1.1]",
           {
-            "bg-gradient-to-b from-neutral-200 to-neutral-100": darkMode,
-            "shadow-custom bg-gradient-to-b from-neutral-500 to-neutral-600":
+            "bg-gradient-to-b from-neutral-200 to-neutral-100 hover:bg-gradient-to-b hover:from-neutral-200 hover:to-neutral-200":
+              darkMode,
+            "shadow-custom bg-gradient-to-b from-neutral-500 to-neutral-600  hover:bg-gradient-to-b hover:from-neutral-500 hover:to-neutral-500":
               !darkMode,
           }
         )}
