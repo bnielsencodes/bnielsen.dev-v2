@@ -1,6 +1,13 @@
+import { useState } from "react";
+import { motion } from "framer-motion";
 import Socials from "./Socials";
 import ToggleTheme from "./ToggleTheme";
 import clsx from "clsx";
+
+const variants = {
+  open: { opacity: 1, x: 0 },
+  closed: { opacity: 0, x: "-100%" },
+};
 
 export default function MobileNav({
   darkMode,
@@ -14,7 +21,7 @@ export default function MobileNav({
   toggleMobileNav: () => void;
 }) {
   return (
-    <div
+    <motion.div
       className={clsx(
         "fixed top-0 right-0 left-0 z-40 flex flex-col h-screen",
         {
@@ -22,6 +29,14 @@ export default function MobileNav({
           "bg-neutral-600": !darkMode,
         }
       )}
+      animate={showMobileNav ? "open" : "closed"}
+      variants={variants}
+      initial={{ opacity: 0, translateX: "-19rem" }}
+      whileInView={{ opacity: 1, translateX: "0" }}
+      transition={{
+        duration: 0.35,
+        ease: [0.21, 1.11, 0.81, 0.99],
+      }}
     >
       {/* top container */}
       <div className="flex items-center justify-start w-full h-full pl-4">
@@ -83,6 +98,6 @@ export default function MobileNav({
         <Socials {...{ darkMode }} />
         <ToggleTheme {...{ darkMode, toggleTheme }} />
       </div>
-    </div>
+    </motion.div>
   );
 }
