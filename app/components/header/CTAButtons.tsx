@@ -4,7 +4,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
   return (
     <div className="flex gap-4 mt-[21px]">
       <button
-        className={clsx("py-[10px] px-5 rounded-lg text-lg font-bold", {
+        className={clsx("py-[9px] px-5 rounded-lg text-lg font-bold", {
           "bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
             darkMode,
           "shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
@@ -15,7 +15,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
       </button>
       <button
         className={clsx(
-          "py-[10px] px-5 border border-neutral-300 rounded-lg text-lg font-bold",
+          "py-[9px] px-5 border border-neutral-300 rounded-lg text-lg font-bold",
           {
             "bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-500":
               darkMode,

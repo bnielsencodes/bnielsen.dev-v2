@@ -65,7 +65,7 @@ export default function ContactForm({ darkMode }) {
         {/* name input */}
         <input
           className={clsx(
-            "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
+            "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
               "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
@@ -80,7 +80,7 @@ export default function ContactForm({ darkMode }) {
         {/* email input */}
         <input
           className={clsx(
-            "w-full h-[45px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
+            "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent focus:outline-2 focus:outline-accent placeholder:text-neutral-400",
             {
               "bg-neutral-100 text-neutral-500": darkMode,
               "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
@@ -113,11 +113,11 @@ export default function ContactForm({ darkMode }) {
       <div className="w-full h-[45px] text-end">
         <button
           className={clsx(
-            `py-[10px] px-5 border-[1px] border-neutral-300 rounded-lg font-medium hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
+            `py-[9px] px-5 rounded-lg text-lg font-semibold hover:text-neutral-100 focus:outline-2 focus:opacity-[0.7]`,
             {
-              "bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
+              "border-[1px] border-neutral-300 bg-gradient-to-b from-neutral-500 to-neutral-600 text-neutral-100":
                 darkMode,
-              "shadow-custom bg-gradient-to-b from-neutral-500 to-neutral-600":
+              "border-0 shadow-custom bg-gradient-to-b from-neutral-200 to-neutral-100 text-neutral-600":
                 !darkMode,
             }
           )}
