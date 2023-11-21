@@ -1,9 +1,20 @@
+// Project mockups
 import audiophileMockup from "@/public/assets/mockups/Laptops/audiophile.png";
 import securepassMockup from "@/public/assets/mockups/Mobile/securepass.png";
 import quizzicalStartMockup from "@/public/assets/mockups/Tablets/quizzical-start.png";
 import quizzicalQuizMockup from "@/public/assets/mockups/Tablets/quizzical-quiz.png";
 import dictionaryDarkMockup from "@/public/assets/mockups/Tablets/dictionary-dark.png";
 import dictionaryLightMockup from "@/public/assets/mockups/Tablets/dictionary-light.png";
+// Social icons
+import iconLinkedInDark from "/public/assets/socials/linkedin/linkedin-dark.svg";
+import iconLinkedInLight from "/public/assets/socials/linkedin/linkedin-light.svg";
+import iconLinkedInAccent from "/public/assets/socials/linkedin/linkedin-accent.svg";
+import iconGithubDark from "/public/assets/socials/github/github-dark.svg";
+import iconGithubLight from "/public/assets/socials/github/github-light.svg";
+import iconGithubAccent from "/public/assets/socials/github/github-accent.svg";
+import iconEmailDark from "/public/assets/socials/email/email-dark.svg";
+import iconEmailLight from "/public/assets/socials/email/email-light.svg";
+import iconEmailAccent from "/public/assets/socials/email/email-accent.svg";
 
 // eslint-disable-next-line
 const projects = [
@@ -190,4 +201,31 @@ const skillsLg = [
   },
 ];
 
-export { projects, skills, skillsLg };
+const socials = [
+  {
+    id: 1,
+    link: "https://linkedin.com/in/bnielsencodes",
+    iconDark: iconLinkedInDark,
+    iconLight: iconLinkedInLight,
+    iconAccent: iconLinkedInAccent,
+    alt: "LinkedIn icon",
+  },
+  {
+    id: 2,
+    link: "https://github.com/bnielsencodes",
+    iconDark: iconGithubDark,
+    iconLight: iconGithubLight,
+    iconAccent: iconGithubAccent,
+    alt: "GitHub icon",
+  },
+  {
+    id: 3,
+    link: "mailto:brandon@bnielsen.dev",
+    iconDark: iconEmailDark,
+    iconLight: iconEmailLight,
+    iconAccent: iconEmailAccent,
+    alt: "Email icon",
+  },
+];
+
+export { projects, skills, skillsLg, socials };
