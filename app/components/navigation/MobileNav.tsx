@@ -1,6 +1,5 @@
-import { useState } from "react";
 import { motion } from "framer-motion";
-import Socials from "./Socials";
+import Socials from "@/app/components/shared/Socials";
 import ToggleTheme from "./ToggleTheme";
 import clsx from "clsx";
 
