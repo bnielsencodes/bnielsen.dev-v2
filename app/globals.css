@@ -14,8 +14,6 @@ body::-webkit-scrollbar {
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
 /* buttons */
 
 .btn {
