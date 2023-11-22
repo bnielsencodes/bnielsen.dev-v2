@@ -13,7 +13,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         }}
         viewport={{ once: true }}
       >
-        <a href="#projects-section">
+        <a className="accent-outline" href="#projects-section">
           <button
             className={clsx("btn", {
               "btn-light": darkMode,
@@ -34,7 +34,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
         }}
         viewport={{ once: true }}
       >
-        <a href="#contact-section">
+        <a className="accent-outline" href="#contact-section">
           <button
             className={clsx("btn border-[1px] border-neutral-300", {
               "btn-dark": darkMode,
