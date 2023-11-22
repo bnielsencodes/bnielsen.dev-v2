@@ -11,7 +11,7 @@ export default function ProjectButtons({
 }) {
   return (
     <div className="flex gap-4 pt-4 pb-8">
-      <a href={liveSite} target="_blank">
+      <a className="accent-outline" href={liveSite} target="_blank">
         <button
           className={clsx("btn", {
             "btn-light": darkMode,
@@ -23,7 +23,7 @@ export default function ProjectButtons({
             Live Site
         </button>
       </a>
-      <a href={sourceCode} target="_blank">
+      <a className="accent-outline" href={sourceCode} target="_blank">
         <button
           className={clsx("btn border-[1px] border-neutral-300", {
             "btn-dark": darkMode,
