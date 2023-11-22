@@ -75,14 +75,14 @@ export default function ProjectsSection({
           </div>
         ) : null}
 
-        <p
+        <h3
           className={clsx("mt-8 mb-3 text-4xl font-bold", {
             "text-neutral-500 ": darkMode,
             "text-neutral-200 ": !darkMode,
           })}
         >
           {project.name}
-        </p>
+        </h3>
         <p
           className={clsx("font-sans text-[1.05rem] font-light", {
             "text-neutral-400": darkMode,
