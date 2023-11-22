@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Roboto, Roboto_Mono } from "next/font/google";
+import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -12,13 +12,6 @@ const roboto = Roboto({
   subsets: ["latin"],
   weight: ["300", "400", "500", "700"],
   variable: "--font-roboto",
-  display: "swap",
-});
-
-const roboto_mono = Roboto_Mono({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-  variable: "--font-roboto-mono",
   display: "swap",
 });
 
@@ -80,7 +73,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${roboto.variable} ${roboto_mono.variable} ${mosk.variable} font-mosk antialiased`}
+        className={`${roboto.variable} ${mosk.variable} font-mosk antialiased`}
       >
         {children}
       </body>
