@@ -16,8 +16,7 @@ body::-webkit-scrollbar {
 
 input:focus,
 textarea:focus,
-.accent-outline:focus,
-.btn:focus {
+.accent-outline:focus {
   outline: 2px solid #0072bb;
 }
 
