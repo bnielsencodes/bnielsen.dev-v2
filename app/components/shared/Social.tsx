@@ -25,8 +25,8 @@ export default function Socials({
         "mr-0": social.name === "email",
       })}
     >
-      <button className="accent-outline" type="button">
-        <a className="group" href={social.link}>
+      <a className="group" href={social.link}>
+        <button className="accent-outline" type="button">
           {darkMode ? (
             <Image
               className={clsx("w-12 h-12", {
@@ -63,8 +63,8 @@ export default function Socials({
               />
             </>
           )}
-        </a>
-      </button>
+        </button>
+      </a>
     </li>
   );
 }
