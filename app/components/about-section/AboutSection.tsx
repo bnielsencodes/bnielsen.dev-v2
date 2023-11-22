@@ -12,7 +12,7 @@ export default function AboutSection({ darkMode }: { darkMode: boolean }) {
       })}
     >
       {/* section heading */}
-      <p
+      <h2
         className={clsx(
           "relative z-0 w-[145px] mx-auto mb-[120px] text-[2.5rem] font-bold text-center after:absolute after:content-[''] after:-z-10 after:right-0 after:bottom-[5px] after:w-[102px] after:h-[14px]",
           {
@@ -22,7 +22,7 @@ export default function AboutSection({ darkMode }: { darkMode: boolean }) {
         )}
       >
         About
-      </p>
+      </h2>
       <Bio {...{ darkMode }} />
       <Skills {...{ darkMode }} />
     </section>
