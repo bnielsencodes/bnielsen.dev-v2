@@ -23,12 +23,20 @@ textarea:focus,
 /* buttons */
 
 .btn {
-  padding-block: 9px;
-  padding-inline: 20px;
   border-radius: 8px;
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
   font-weight: 700; /* bold */
+}
+
+.btn-primary {
+  padding-block: 10px;
+  padding-inline: 20px;
+}
+
+.btn-secondary {
+  padding-block: 9px;
+  padding-inline: 19px;
 }
 
 .btn-dark {
