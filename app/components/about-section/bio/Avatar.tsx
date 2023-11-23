@@ -4,7 +4,7 @@ import AvatarImg from "/public/assets/images/avatar.jpeg";
 export default function Avatar() {
   return (
     <div className="relative">
-      <div className="avatar-border></div>
+      <div className="avatar-border"></div>
       <Image
         className="avatar-img"
         src={AvatarImg}
