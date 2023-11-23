@@ -3,9 +3,10 @@ import AvatarImg from "/public/assets/images/avatar.jpeg";
 
 export default function Avatar() {
   return (
-    <div className="avatar relative z-20">
+    <div className="relative">
+      <div className="avatar-border></div>
       <Image
-        className="absolute z-[10] w-[240px] h-[240px]"
+        className="avatar-img"
         src={AvatarImg}
         alt="Close up black and white portrait of Brandon Nielsen."
         width="0"
