@@ -95,8 +95,7 @@ textarea:focus,
   top: 50%;
   left: 50%;
   z-index: 20px;
-  transform: translateX(-50%);
-  transform: translateY(-50%);
+  transform: translate(-50%, -50%);
   width: 15rem;
   height: 15rem;
   border: 3px solid #555;
@@ -110,8 +109,7 @@ textarea:focus,
   top: 50%;
   left: 50%;
   z-index: 10px;
-  transform: translateX(-50%);
-  transform: translatey(-50%);
+  transform: translate(-50%, -50%);
   width: 15rem;
   height: 15rem;
 }
