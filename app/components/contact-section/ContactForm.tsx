@@ -155,7 +155,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         />
         */}
         <button
-          className={clsx("btn font-semibold", {
+          className={clsx("btn btn-primary font-semibold", {
             "btn-light": darkMode,
             "btn-dark shadow-custom": !darkMode,
           })}
