@@ -91,15 +91,10 @@ textarea:focus,
 }
 
 .avatar {
-  position: relative;
   width: 15rem;
   height: 15rem;
   border: 3px solid #555;
   border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  background-image: url(/assets/images/avatar.jpeg);
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-size: cover;
   animation: morph 8s ease-in-out infinite;
   transition: all 1s ease-in-out;
 }
