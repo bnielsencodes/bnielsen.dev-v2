@@ -94,7 +94,7 @@ textarea:focus,
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 20px;
+  z-index: 20;
   transform: translate(-50%, -50%);
   width: 15rem;
   height: 15rem;
@@ -108,7 +108,7 @@ textarea:focus,
   position: absolute;
   top: 50%;
   left: 50%;
-  z-index: 10px;
+  z-index: 10;
   transform: translate(-50%, -50%);
   width: 15rem;
   height: 15rem;
