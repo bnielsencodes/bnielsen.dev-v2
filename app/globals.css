@@ -37,6 +37,7 @@ textarea:focus,
 .btn-secondary {
   padding-block: 9px;
   padding-inline: 19px;
+  border: 1px solid #555;
 }
 
 .btn-dark {
