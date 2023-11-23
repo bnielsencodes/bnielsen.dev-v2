@@ -9,8 +9,8 @@ export default function Avatar() {
         className="avatar-img"
         src={AvatarImg}
         alt="Close up black and white portrait of Brandon Nielsen."
-        width="0"
-        height="0"
+        width="750"
+        height="750"
         sizes="100vw"
       />
     </div>
