@@ -5,7 +5,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
     <div className="flex gap-4 mt-[21px]">
       <a className="accent-outline" href="#projects-section">
         <button
-          className={clsx("btn", {
+          className={clsx("btn btn-primary", {
             "btn-light": darkMode,
             "btn-dark shadow-custom": !darkMode,
           })}
@@ -17,7 +17,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
 
       <a className="accent-outline" href="#contact-section">
         <button
-          className={clsx("btn border-[1px] border-neutral-300", {
+          className={clsx("btn btn-secondary border-[1px] border-neutral-300", {
             "btn-dark": darkMode,
             "btn-light shadow-custom": !darkMode,
           })}
