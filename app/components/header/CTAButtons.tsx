@@ -17,7 +17,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
 
       <a className="accent-outline" href="#contact-section">
         <button
-          className={clsx("btn btn-secondary border-[1px] border-neutral-300", {
+          className={clsx("btn btn-secondary", {
             "btn-dark": darkMode,
             "btn-light shadow-custom": !darkMode,
           })}
