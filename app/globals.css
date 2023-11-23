@@ -90,7 +90,7 @@ textarea:focus,
   -webkit-text-stroke: 1.75px #272727;
 }
 
-.avatar--border {
+.avatar-border {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -105,7 +105,7 @@ textarea:focus,
   transition: all 1s ease-in-out;
 }
 
-.avatar--img {
+.avatar-img {
   position: absolute;
   top: 50%;
   left: 50%;
