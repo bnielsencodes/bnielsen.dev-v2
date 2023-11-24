@@ -90,30 +90,6 @@ textarea:focus,
   -webkit-text-stroke: 1.75px #272727;
 }
 
-.avatar-border {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 20;
-  transform: translate(-50%, -50%);
-  width: 15rem;
-  height: 15rem;
-  border: 3px solid #555;
-  border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
-  animation: morph 8s ease-in-out infinite;
-  transition: all 1s ease-in-out;
-}
-
-.avatar-img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  z-index: 10;
-  transform: translate(-50%, -50%);
-  width: 15rem;
-  height: 15rem;
-}
-
 /* 
 -
 skill component border hover animations 
