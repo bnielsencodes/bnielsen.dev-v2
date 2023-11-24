@@ -17,8 +17,8 @@ const config: Config = {
         600: "#fafafa",
       },
       accent: {
-        100: "#0072bb",
-        200: "#22A9FF",
+        100: "#005e98",
+        200: "#0092ED",
       },
       warning: "#cd2c2c",
       tech: {

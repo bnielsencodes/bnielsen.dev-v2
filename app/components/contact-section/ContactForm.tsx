@@ -67,13 +67,10 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         </div> */}
         <strong className="lg:hidden">
           <a
-            className={clsx(
-              "inline p-0 border-0 text-accent hover:opacity-90",
-              {
-                "bg-neutral-200": darkMode,
-                "bg-neutral-500": !darkMode,
-              }
-            )}
+            className={clsx("inline p-0 border-0 hover:opacity-90", {
+              "bg-neutral-200 text-accent-200": darkMode,
+              "bg-neutral-500 text-accent-100": !darkMode,
+            })}
             href="mailto:bnielsencodes@gmail.com"
           >
             brandon@bnielsen.dev
