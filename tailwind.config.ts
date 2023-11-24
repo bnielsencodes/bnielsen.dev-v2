@@ -93,6 +93,10 @@ const config: Config = {
       },
       animation: {
         morph: "morph 8s ease-in-out infinite",
+        figmaBorder:
+          "figmaBgGradientAnimation 3.75s ease 0s infinite normal none",
+        viteBorder:
+          "viteBgGradientAnimation 3.75s ease 0s infinite normal none",
       },
     },
   },

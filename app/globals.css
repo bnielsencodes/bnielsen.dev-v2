@@ -92,20 +92,6 @@ textarea:focus,
 
 /* 
 -
-skill component border hover animations 
--
-*/
-
-.figma-border-animation {
-  animation: figmaBgGradientAnimation 3.75s ease 0s infinite normal none;
-}
-
-.vite-border-animation {
-  animation: viteBgGradientAnimation 3.75s ease 0s infinite normal none;
-}
-
-/* 
--
 skill tooltip label bg gradients (figma and vite) 
 -
 */
