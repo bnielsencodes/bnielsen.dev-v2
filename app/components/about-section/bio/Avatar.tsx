@@ -1,18 +1,5 @@
-import Image from "next/image";
-import AvatarImg from "/public/assets/images/avatar.jpeg";
-
 export default function Avatar() {
   return (
-    <div className="relative">
-      <div className="avatar-border"></div>
-      <Image
-        className="avatar-img"
-        src={AvatarImg}
-        alt="Close up black and white portrait of Brandon Nielsen."
-        width="750"
-        height="750"
-        sizes="100vw"
-      />
-    </div>
+    <div className="relative w-[15rem] h-[15rem] border-[3px] border-neutral-300 rounded-morph bg-avatar bg-[50%] bg-no-repeat bg-cover animate-morph transition-all duration-1000 ease-in-out"></div>
   );
 }

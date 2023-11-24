@@ -85,6 +85,15 @@ const config: Config = {
       dropShadow: {
         custom: "4px 4px 10px rgb(0 0 0 / 0.35)",
       },
+      backgroundImage: {
+        avatar: "url('/assets/images/avatar.jpeg')",
+      },
+      borderRadius: {
+        morph: "60% 40% 30% 70%/60% 30% 70% 40%",
+      },
+      animation: {
+        morph: "morph 8s ease-in-out infinite",
+      },
     },
   },
   plugins: [],
