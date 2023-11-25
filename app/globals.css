@@ -26,7 +26,7 @@ textarea:focus,
   border-radius: 8px;
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
-  font-weight: 700; /* bold */
+  font-weight: 700;
 }
 
 .btn-primary {
