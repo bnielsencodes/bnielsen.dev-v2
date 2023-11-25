@@ -57,19 +57,17 @@ export default function Skill({
         <Tooltip {...{ darkMode, skill, showTooltip }} />
 
         {/* skill icon */}
-        <div className={`w-[55px] h-[55px] icon--${skill.name}`}>
-          <Icon {...{ darkMode, skill, showViteBg }} />
-        </div>
+        <Icon {...{ darkMode, skill, showViteBg }} />
       </div>
 
       {/* hover border for figma skill */}
       {skill.name === "figma" && (
-        <div className="figma-border-animation content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-figmaBorder"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-figmaBorder"></div>
       )}
 
       {/* hover border for vite skill */}
       {skill.name === "vite" && (
-        <div className="vite-border-animation content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-viteBorder"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-viteBorder"></div>
       )}
     </div>
   );

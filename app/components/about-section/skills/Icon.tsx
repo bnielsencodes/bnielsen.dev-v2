@@ -14,7 +14,7 @@ export default function CSS({
   showViteBg: boolean;
 }) {
   return (
-    <>
+    <div className={`w-[55px] h-[55px] icon--${skill.name}`}>
       {/* CSS icon */}
       {skill.name === "css" && (
         <>
@@ -710,6 +710,6 @@ export default function CSS({
           </svg>
         </>
       ) : null}
-    </>
+    </div>
   );
 }
