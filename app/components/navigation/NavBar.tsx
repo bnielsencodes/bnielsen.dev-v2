@@ -5,6 +5,8 @@ import logoLight from "/public/assets/images/logo/Inverted-Color-800x600.png";
 import HamburgerMenu from "./HamburgerMenu";
 import MobileNav from "./MobileNav";
 import clsx from "clsx";
+import NavList from "./NavList";
+import ThemeToggle from "./ThemeToggle";
 
 export default function NavBar({
   darkMode,
@@ -30,22 +32,31 @@ export default function NavBar({
       )}
     >
       {/* logo and name */}
-      <Image
-        className="w-8 h-8 mr-2"
-        src={darkMode ? logoDark : logoLight}
-        alt="letter N logo"
-        width="800"
-        height="600"
-        sizes="100vw"
-      />
-      <p
-        className={clsx("text-xl font-bold leading-[0.3px]", {
-          "text-neutral-600": darkMode,
-          "text-neutral-100": !darkMode,
-        })}
-      >
-        Brandon Nielsen
-      </p>
+      <div className="flex items-center">
+        <Image
+          className="w-8 h-8 mr-2"
+          src={darkMode ? logoDark : logoLight}
+          alt="letter N logo"
+          width="800"
+          height="600"
+          sizes="100vw"
+        />
+        <p
+          className={clsx("text-xl font-bold leading-[0.3px]", {
+            "text-neutral-600": darkMode,
+            "text-neutral-100": !darkMode,
+          })}
+        >
+          Brandon Nielsen
+        </p>
+      </div>
+
+      <div className="hidden lg:flex lg:items-center lg:gap-5">
+        <NavList {...{ darkMode }} />
+        <ThemeToggle {...{ darkMode, toggleTheme }} />
+      </div>
+
+      {/* hamburger nav (hidden at lg breakpoint) */}
       <HamburgerMenu {...{ darkMode, showMobileNav, toggleMobileNav }} />
       {showMobileNav && (
         <MobileNav
