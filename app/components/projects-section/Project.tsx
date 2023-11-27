@@ -25,75 +25,113 @@ export default function ProjectsSection({
   const sourceCode = project.sourceCode;
 
   return (
-    <>
-      <div className="px-7 mb-32">
-        {project.name === "Audiophile" || project.name === "SecurePass" ? (
-          <Image
-            className={clsx("relative h-auto", {
-              "drop-shadow-none": darkMode,
-              "drop-shadow-custom": !darkMode,
-              "w-full": project.name === "Audiophile",
-              "w-[calc(100%-150px)] mx-auto": project.name === "SecurePass",
-            })}
-            src={project.img}
-            alt={project.alt}
-            width={project.imgWidth}
-            height={project.imgHeight}
-            sizes="100vw"
-          />
-        ) : project.name === "Quizzical" ||
-          project.name === "Dictionary Web App" ? (
-          <div className="relative w-[319px] h-[400px] mx-auto">
+    <div className="relative px-7 mb-40 md:px-9 md:mb-60 lg:mb-72">
+      {/* project container */}
+      <div
+        className={clsx(
+          "md:flex md:items-center md:justify-center md:gap-7 md:mx-auto lg:gap-12",
+          {
+            "md:flex-row-reverse":
+              project.name === "SecurePass" ||
+              project.name === "Dictionary Web App",
+            // "lg:gap-12": project.name === "SecurePass",
+          }
+        )}
+      >
+        {/* image container */}
+        <div
+          className={clsx(" md:flex md:flex-1 md:h-full", {
+            "lg:justify-end": project.name === "Audiophile",
+            "md:justify-end": project.name === "Quizzical",
+          })}
+        >
+          {project.name === "Audiophile" || project.name === "SecurePass" ? (
             <Image
-              className={clsx(
-                "absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[179.75px] h-auto mx-auto",
-                {
-                  "drop-shadow-none": darkMode,
-                  "drop-shadow-custom": !darkMode,
-                }
-              )}
+              className={clsx("relative h-auto", {
+                "drop-shadow-none": darkMode,
+                "drop-shadow-custom": !darkMode,
+                "w-full lg:max-w-[594px]": project.name === "Audiophile",
+                "w-[calc(100%-150px)] mx-auto md:w-[169px] md:mx-0 lg:w-[185px] xl:w-[210px]":
+                  project.name === "SecurePass",
+              })}
               src={project.img}
               alt={project.alt}
               width={project.imgWidth}
               height={project.imgHeight}
               sizes="100vw"
             />
-            <Image
-              className={clsx(
-                "absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[179.75px] h-auto mx-auto",
-                {
-                  "drop-shadow-none": darkMode,
-                  "drop-shadow-custom": !darkMode,
-                }
-              )}
-              src={project.img2}
-              alt={project.alt2}
-              width={project.imgWidth}
-              height={project.imgHeight}
-              sizes="100vw"
-            />
-          </div>
-        ) : null}
+          ) : project.name === "Quizzical" ||
+            project.name === "Dictionary Web App" ? (
+            <div className="relative w-[319px] h-[400px] mx-auto md:mx-0 lg:w-[400px]">
+              <Image
+                className={clsx(
+                  "absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[179.75px] h-auto mx-auto xl:w-[230px]",
+                  {
+                    "drop-shadow-none": darkMode,
+                    "drop-shadow-custom": !darkMode,
+                  }
+                )}
+                src={project.img}
+                alt={project.alt}
+                width={project.imgWidth}
+                height={project.imgHeight}
+                sizes="100vw"
+              />
+              <Image
+                className={clsx(
+                  "absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[179.75px] h-auto mx-auto xl:w-[230px]",
+                  {
+                    "drop-shadow-none": darkMode,
+                    "drop-shadow-custom": !darkMode,
+                  }
+                )}
+                src={project.img2}
+                alt={project.alt2}
+                width={project.imgWidth}
+                height={project.imgHeight}
+                sizes="100vw"
+              />
+            </div>
+          ) : null}
+        </div>
 
-        <h3
-          className={clsx("mt-8 mb-3 text-4xl font-bold", {
-            "text-neutral-500 ": darkMode,
-            "text-neutral-200 ": !darkMode,
+        {/* project details container */}
+        <div
+          className={clsx("mt-8 md:flex-1 md:mt-0", {
+            "md:flex md:flex-col md:items-end":
+              project.name === "SecurePass" ||
+              project.name === "Dictionary Web App",
           })}
         >
-          {project.name}
-        </h3>
-        <p
-          className={clsx("font-sans text-[1.05rem] font-light", {
-            "text-neutral-400": darkMode,
-            "text-neutral-300": !darkMode,
-          })}
-        >
-          {project.description}
-        </p>
+          <h3
+            className={clsx(
+              "text-4xl font-bold md:text-[2.39rem] lg:text-5xl",
+              {
+                "text-neutral-500 ": darkMode,
+                "text-neutral-200 ": !darkMode,
+              }
+            )}
+          >
+            {project.name}
+          </h3>
+          <p
+            className={clsx(
+              "mt-3 mb-4 font-sans text-[1.05rem] font-light md:mb-5 md:text-[1.05rem] lg:w-[432px]",
+              {
+                "text-neutral-400": darkMode,
+                "text-neutral-300": !darkMode,
+                "md:text-right":
+                  project.name === "SecurePass" ||
+                  project.name === "Dictionary Web App",
+              }
+            )}
+          >
+            {project.description}
+          </p>
 
-        <ProjectButtons {...{ darkMode, liveSite, sourceCode }} />
+          <ProjectButtons {...{ darkMode, liveSite, sourceCode }} />
+        </div>
       </div>
-    </>
+    </div>
   );
 }
