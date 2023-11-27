@@ -22,7 +22,7 @@ export default function NavBar({
   return (
     <nav
       className={clsx(
-        "fixed top-0 right-0 left-0 z-30 flex items-center justify-start h-14 pl-4 pr-2 border-b bg-opacity-80 backdrop-blur-sm",
+        "fixed top-0 right-0 left-0 z-30 flex items-center justify-start h-14 pl-4 pr-2 border-b bg-opacity-80 backdrop-blur-sm lg:justify-between lg:pr-4",
         {
           "bg-neutral-100 border-neutral-300": darkMode,
           "bg-neutral-600 border-neutral-400 shadow-navbar": !darkMode,
