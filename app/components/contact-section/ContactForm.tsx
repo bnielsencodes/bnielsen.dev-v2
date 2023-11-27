@@ -7,7 +7,7 @@ import { useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import arrowIconDark from "@/public/assets/icons/arrow/arrow-right-dark.svg";
 import arrowIconLight from "@/public/assets/icons/arrow/arrow-right-light.svg";
-// import ClipboardCopy from "./ClipboardCopy";
+import ClipboardCopy from "./ClipboardCopy";
 import clsx from "clsx";
 
 interface ContactFormProps {
@@ -69,9 +69,11 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
             sizes="100vw"
           />
         ) : null}
-        {/* <div className="relative hidden">
-          <ClipboardCopy />
-        </div> */}
+        {/* large screens */}
+        <div className="relative hidden lg:inline-block">
+          <ClipboardCopy {...{ darkMode }} />
+        </div>
+        {/* mobile/tablets */}
         <strong className="lg:hidden">
           <a
             className={clsx("inline p-0 border-0 hover:opacity-90", {
