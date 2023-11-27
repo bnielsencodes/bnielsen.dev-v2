@@ -24,7 +24,7 @@
 
 #### Mobile Nav - Dark Theme / Light Theme
 
-<img src="public/screenshots/mobile/mobile-nav-dark.png" alt="screenshot of SecurePass mobile website" width="25%" height="auto"><img src="public/screenshots/mobile/mobile-nav-light.png" alt="screenshot of SecurePass mobile website" width="25%" height="auto">
+<img src="public/screenshots/mobile/mobile-nav-dark.png" alt="screenshot of SecurePass mobile website" width="35%" height="auto"><img src="public/screenshots/mobile/mobile-nav-light.png" alt="screenshot of SecurePass mobile website" width="35%" height="auto">
 
 ### Link
 
