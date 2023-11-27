@@ -26,6 +26,22 @@ export default function ProjectsSection({
 
   return (
     <div className="relative px-7 mb-40 md:px-9 md:mb-60 lg:mb-72">
+      {/* background color container */}
+      <div
+        className={clsx(
+          "hidden md:absolute md:-top-[120px] md:block md:h-[calc(100%+240px)] lg:-top-36 lg:h-[calc(100%+288px)]",
+          {
+            "md:left-0 md:w-1/4 lg:w-1/3 md:bg-projects-audiophile":
+              project.name === "Audiophile",
+            "md:right-0 md:w-1/3 xl:w-2/5 md:bg-projects-securepass":
+              project.name === "SecurePass",
+            "md:left-0 md:w-1/5 lg:w-1/4 xl:w-1/3 md:bg-projects-quizzical":
+              project.name === "Quizzical",
+            "md:right-0 md:w-1/5 lg:w-1/4 xl:w-1/3 md:bg-projects-dictionary":
+              project.name === "Dictionary Web App",
+          }
+        )}
+      ></div>
       {/* project container */}
       <div
         className={clsx(
