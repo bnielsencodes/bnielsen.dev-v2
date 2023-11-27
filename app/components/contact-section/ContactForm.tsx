@@ -93,10 +93,10 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         {/* name input */}
         <input
           className={clsx(
-            "accent-outline w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
+            "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
             {
-              "bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
+              "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
+              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200": !darkMode,
             }
           )}
           type="text"
@@ -112,10 +112,10 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         {/* email input */}
         <input
           className={clsx(
-            "accent-outline w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
+            "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
             {
-              "bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
+              "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
+              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200": !darkMode,
             }
           )}
           type="email"
@@ -131,10 +131,10 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         {/* message input */}
         <textarea
           className={clsx(
-            "accent-outline w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none placeholder:text-neutral-400",
+            "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none placeholder:text-neutral-400",
             {
-              "bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom bg-neutral-600 text-neutral-200": !darkMode,
+              "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
+              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200": !darkMode,
             }
           )}
           name="message"
@@ -161,9 +161,9 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         />
         */}
         <button
-          className={clsx("btn btn-primary font-semibold focus:outline-2", {
-            "btn-light focus:outline-accent-200": darkMode,
-            "btn-dark shadow-custom focus:outline-accent-100": !darkMode,
+          className={clsx("btn btn-primary font-semibold", {
+            "btn-light outline-dark-theme": darkMode,
+            "btn-dark shadow-custom outline-light-theme": !darkMode,
           })}
           type="submit"
           disabled={state.submitting}
