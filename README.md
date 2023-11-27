@@ -66,6 +66,7 @@
 - [Implementing Copy-to-Clipboard in React with Clipboard API](https://blog.logrocket.com/implementing-copy-clipboard-react-clipboard-api/)
 - [How to add favicon in Next.js 13](https://stackoverflow.com/questions/75674866/adding-favicon-to-nextjs-13-beta-no-pages-folder)
 - [Allow some HTML elements in markdown](https://stackoverflow.com/questions/72368493/allow-some-html-elements-in-markdown-lint-rule-md033-in-visual-studio-code)
+- [Display images side-by-side in GitHub readme.md](https://stackoverflow.com/questions/24319505/how-can-one-display-images-side-by-side-in-a-github-readme-md)
 
 ## Author
 
