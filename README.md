@@ -18,11 +18,9 @@
 
 #### Desktop - Dark Theme
 
-<img src="public/screenshots/desktop/desktop-dark.png" alt="screenshot of SecurePass mobile website" width="900">
+<img src="public/screenshots/desktop/desktop-dark.png" alt="screenshot of SecurePass mobile website" width="" height="auto"><img src="public/screenshots/desktop/desktop-light.png" alt="screenshot of SecurePass mobile website" width="" height="auto">
 
 #### Desktop - Light Theme
-
-<img src="public/screenshots/desktop/desktop-light.png" alt="screenshot of SecurePass mobile website" width="900">
 
 </div>
 
