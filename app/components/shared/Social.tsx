@@ -26,44 +26,42 @@ export default function Socials({
       })}
     >
       <a className="accent-outline group" href={social.link}>
-        <button type="button">
-          {darkMode ? (
+        {darkMode ? (
+          <Image
+            className={clsx("w-12 h-12", {
+              "group-hover:hidden": isFooter,
+            })}
+            src={social.iconLight}
+            alt={social.alt}
+            width="0"
+            height="0"
+            sizes="100vw"
+          />
+        ) : (
+          <Image
+            className={clsx("w-12 h-12", {
+              "group-hover:hidden": isFooter,
+            })}
+            src={social.iconDark}
+            alt={social.alt}
+            width="0"
+            height="0"
+            sizes="100vw"
+          />
+        )}
+        {/* if footer is parent, show image w/ accent color on hover */}
+        {isFooter && (
+          <>
             <Image
-              className={clsx("w-12 h-12", {
-                "group-hover:hidden": isFooter,
-              })}
-              src={social.iconLight}
+              className="w-12 h-12 hidden group-hover:block"
+              src={social.iconAccent}
               alt={social.alt}
               width="0"
               height="0"
               sizes="100vw"
             />
-          ) : (
-            <Image
-              className={clsx("w-12 h-12", {
-                "group-hover:hidden": isFooter,
-              })}
-              src={social.iconDark}
-              alt={social.alt}
-              width="0"
-              height="0"
-              sizes="100vw"
-            />
-          )}
-          {/* if footer is parent, show image w/ accent color on hover */}
-          {isFooter && (
-            <>
-              <Image
-                className="w-12 h-12 hidden group-hover:block"
-                src={social.iconAccent}
-                alt={social.alt}
-                width="0"
-                height="0"
-                sizes="100vw"
-              />
-            </>
-          )}
-        </button>
+          </>
+        )}
       </a>
     </li>
   );

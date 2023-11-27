@@ -11,29 +11,27 @@ export default function ProjectButtons({
 }) {
   return (
     <div className="flex gap-4">
-      <a className="accent-outline" href={liveSite} target="_blank">
-        <button
-          className={clsx("btn btn-primary", {
-            "btn-light": darkMode,
-            "btn-dark shadow-custom": !darkMode,
-          })}
-          type="button"
-          title="View website"
-        >
-          Live Site
-        </button>
+      <a
+        className={clsx("btn btn-primary accent-outline ", {
+          "btn-light": darkMode,
+          "btn-dark shadow-custom": !darkMode,
+        })}
+        href={liveSite}
+        target="_blank"
+        title="View website"
+      >
+        Live Site
       </a>
-      <a className="accent-outline" href={sourceCode} target="_blank">
-        <button
-          className={clsx("btn btn-secondary", {
-            "btn-dark": darkMode,
-            "btn-light shadow-custom": !darkMode,
-          })}
-          type="button"
-          title="View on GitHub"
-        >
-          Source Code
-        </button>
+      <a
+        className={clsx("btn btn-secondary accent-outline", {
+          "btn-dark": darkMode,
+          "btn-light shadow-custom": !darkMode,
+        })}
+        href={sourceCode}
+        target="_blank"
+        title="View on GitHub"
+      >
+        Source Code
       </a>
     </div>
   );
