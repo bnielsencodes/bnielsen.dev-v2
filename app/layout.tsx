@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { Analytics } from "@vercel/analytics/react";
 import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -76,6 +77,7 @@ export default function RootLayout({
         className={`${roboto.variable} ${mosk.variable} font-mosk antialiased`}
       >
         {children}
+        <Analytics />
       </body>
     </html>
   );
