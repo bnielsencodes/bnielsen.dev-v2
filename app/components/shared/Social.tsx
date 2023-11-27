@@ -23,8 +23,8 @@ export default function Socials({
         {social.name === "linkedIn" && (
           <svg
             className={clsx("w-12 h-12", {
-              "fill-neutral-400 hover:fill-accent-200": darkMode,
-              "fill-neutral-300 hover:fill-accent-100": !darkMode,
+              "fill-neutral-400 lg:hover:fill-accent-200": darkMode,
+              "fill-neutral-300 lg:hover:fill-accent-100": !darkMode,
             })}
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
@@ -38,8 +38,8 @@ export default function Socials({
         {social.name === "github" && (
           <svg
             className={clsx("w-12 h-12", {
-              "fill-neutral-400 hover:fill-accent-200": darkMode,
-              "fill-neutral-300 hover:fill-accent-100": !darkMode,
+              "fill-neutral-400 lg:hover:fill-accent-200": darkMode,
+              "fill-neutral-300 lg:hover:fill-accent-100": !darkMode,
             })}
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
@@ -53,8 +53,8 @@ export default function Socials({
         {social.name === "email" && (
           <svg
             className={clsx("w-12 h-12", {
-              "fill-neutral-400 hover:fill-accent-200": darkMode,
-              "fill-neutral-300 hover:fill-accent-100": !darkMode,
+              "fill-neutral-400 lg:hover:fill-accent-200": darkMode,
+              "fill-neutral-300 lg:hover:fill-accent-100": !darkMode,
             })}
             xmlns="http://www.w3.org/2000/svg"
             height="1em"
