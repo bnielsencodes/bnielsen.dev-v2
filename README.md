@@ -7,19 +7,24 @@
   - [Link](#link)
 - [My process](#my-process)
   - [Built with](#built-with)
+  - [Useful resources](#useful-resources)
 - [Author](#author)
 
 ## Overview
 
 ### Screenshots
 
+<div style="flex">
+
 #### Desktop - Dark Theme
 
-<img src="public/screenshots/desktop/desktop-dark.png" alt="screenshot of SecurePass mobile website" width="300">
+<img src="public/screenshots/desktop/desktop-dark.png" alt="screenshot of SecurePass mobile website" width="900">
 
 #### Desktop - Light Theme
 
-<img src="public/screenshots/desktop/desktop-light.png" alt="screenshot of SecurePass mobile website" width="300">
+<img src="public/screenshots/desktop/desktop-light.png" alt="screenshot of SecurePass mobile website" width="900">
+
+</div>
 
 #### Mobile - Dark Theme
 
