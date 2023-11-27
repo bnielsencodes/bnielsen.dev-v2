@@ -18,7 +18,13 @@ export default function Socials({
         "mr-0": social.name === "email",
       })}
     >
-      <a className="accent-outline group" href={social.link}>
+      <a 
+        className={clsx("group", {
+          "outline-dark-theme": darkMode,
+          "outline-light-theme": !darkMode,
+        })}
+        href={social.link}
+      >
         {/* linkedin icon */}
         {social.name === "linkedIn" && (
           <svg
