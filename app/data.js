@@ -206,28 +206,16 @@ const socials = [
     id: 1,
     name: "linkedIn",
     link: "https://linkedin.com/in/bnielsencodes",
-    iconDark: iconLinkedInDark,
-    iconLight: iconLinkedInLight,
-    iconAccent: iconLinkedInAccent,
-    alt: "LinkedIn icon",
   },
   {
     id: 2,
     name: "github",
     link: "https://github.com/bnielsencodes",
-    iconDark: iconGithubDark,
-    iconLight: iconGithubLight,
-    iconAccent: iconGithubAccent,
-    alt: "GitHub icon",
   },
   {
     id: 3,
     name: "email",
     link: "mailto:brandon@bnielsen.dev",
-    iconDark: iconEmailDark,
-    iconLight: iconEmailLight,
-    iconAccent: iconEmailAccent,
-    alt: "Email icon",
   },
 ];
 

@@ -1,15 +1,9 @@
 import Social from "./Social";
 import { socials } from "@/app/data";
 
-export default function Socials({
-  darkMode,
-  isFooter,
-}: {
-  darkMode: boolean;
-  isFooter: boolean;
-}) {
+export default function Socials({ darkMode }: { darkMode: boolean }) {
   const socialElements = socials.map((social) => {
-    return <Social key={social.id} {...{ darkMode, social, isFooter }} />;
+    return <Social key={social.id} {...{ darkMode, social }} />;
   });
 
   return (
