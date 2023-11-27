@@ -13,16 +13,15 @@ export default function Socials({
 }) {
   return (
     <li
-      className={clsx("w-12 h-12", {
+      className={clsx("w-12 h-12 focus:opacity-80", {
+        "outline-dark-theme": darkMode,
+        "outline-light-theme": !darkMode,
         "mr-3": social.name === "linkedIn" || social.name === "github",
         "mr-0": social.name === "email",
       })}
     >
       <a 
-        className={clsx("group", {
-          "outline-dark-theme": darkMode,
-          "outline-light-theme": !darkMode,
-        })}
+        className="group"
         href={social.link}
       >
         {/* linkedin icon */}
