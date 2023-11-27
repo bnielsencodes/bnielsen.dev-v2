@@ -14,11 +14,11 @@ export default function ThemeToggle({
 }) {
   return (
     // container
-    <div className="flex items-center mt-1 mb-[3px] md:mt-[5px]">
+    <div className="flex items-center mt-1 mb-[3px] lg:mt-0 lg:mb-0">
       {/* toggle switch */}
       <div
         className={clsx(
-          "relative flex items-center justify-end w-[84px] h-[42px] rounded-[32px] group cursor-pointer",
+          "relative flex items-center justify-end w-[84px] h-[42px] rounded-[32px] group cursor-pointer lg:w-[60px] lg:h-[30px]",
           {
             "bg-neutral-400": darkMode,
             "bg-neutral-300": !darkMode,
@@ -29,20 +29,20 @@ export default function ThemeToggle({
         {/* sun icon */}
         {darkMode ? (
           <Image
-            className="absolute top-[10px] left-[9px]"
+            className="absolute top-[10px] left-[9px] w-[23px] lg:top-[6px] lg:left-[6px] lg:w-[1.2rem]"
             src={sunIconDark}
             alt="sun icon"
-            width="23"
-            height="23"
+            width="0"
+            height="0"
             sizes="100vw"
           />
         ) : (
           <Image
-            className="absolute top-[10px] left-[9px]"
+            className="absolute top-[10px] left-[9px] w-[23px] lg:top-[6px] lg:left-[6px] lg:w-[1.2rem]"
             src={sunIconLight}
             alt="sun icon"
-            width="23"
-            height="23"
+            width="0"
+            height="0"
             sizes="100vw"
           />
         )}
@@ -50,9 +50,10 @@ export default function ThemeToggle({
         {/* toggle circle */}
         <div
           className={clsx(
-            "z-50 w-9 h-9 rounded-full mx-[3px] transition-transform duration-200 ease-linear",
+            "z-50 w-9 h-9 mx-[3px] rounded-full transition-transform duration-200 ease-linear lg:w-[26px] lg:h-[26px] lg:mx-[2px]",
             {
-              "bg-neutral-100 -translate-x-[42px]": darkMode,
+              "bg-neutral-100 -translate-x-[42px] lg:-translate-x-[30px]":
+                darkMode,
               "bg-neutral-600": !darkMode,
             }
           )}
@@ -61,20 +62,20 @@ export default function ThemeToggle({
         {/* moon icon */}
         {darkMode ? (
           <Image
-            className="absolute top-[10px] right-[9px]"
+            className="absolute top-[10px] right-[9px] w-[21px] lg:w-[18px] lg:top-[6.4px] lg:right-[6.5px]"
             src={moonIconDark}
             alt="sun icon"
-            width="21"
-            height="21"
+            width="0"
+            height="0"
             sizes="100vw"
           />
         ) : (
           <Image
-            className="absolute top-[10px] right-[9px]"
+            className="absolute top-[10px] right-[9px] w-[21px] lg:w-[18px] lg:top-[6.4px] lg:right-[6.5px]"
             src={moonIconLight}
             alt="sun icon"
-            width="21"
-            height="21"
+            width="0"
+            height="0"
             sizes="100vw"
           />
         )}
