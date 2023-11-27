@@ -162,8 +162,8 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         */}
         <button
           className={clsx("btn btn-primary font-semibold focus:outline-2", {
-            "btn-light focus:outline-accent-100": darkMode,
-            "btn-dark shadow-custom focus:outline-accent-200": !darkMode,
+            "btn-light focus:outline-accent-200": darkMode,
+            "btn-dark shadow-custom focus:outline-accent-100": !darkMode,
           })}
           type="submit"
           disabled={state.submitting}
