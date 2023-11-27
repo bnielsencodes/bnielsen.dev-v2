@@ -25,7 +25,7 @@ export default function ProjectsSection({
   const sourceCode = project.sourceCode;
 
   return (
-    <div className="relative px-7 mb-40 md:px-9 md:mb-60 lg:mb-72">
+    <div className="relative mb-40 md:px-9 md:mb-60 lg:mb-72">
       {/* background color container */}
       <div
         className={clsx(
@@ -56,17 +56,32 @@ export default function ProjectsSection({
       >
         {/* image container */}
         <div
-          className={clsx(" md:flex md:flex-1 md:h-full", {
+          className={clsx("relative md:flex md:flex-1 md:h-full", {
             "lg:justify-end": project.name === "Audiophile",
             "md:justify-end": project.name === "Quizzical",
           })}
         >
+          {/* background color mobile container */}
+          <div
+            className={clsx(
+              "absolute -top-[40px] left-0 w-full h-32 md:hidden",
+              {
+                "h-32 bg-projects-audiophile": project.name === "Audiophile",
+                "h-[13rem] bg-projects-securepass":
+                  project.name === "SecurePass",
+                "h-[13rem] bg-projects-quizzical": project.name === "Quizzical",
+                "h-[13rem] bg-projects-dictionary":
+                  project.name === "Dictionary Web App",
+              }
+            )}
+          ></div>
           {project.name === "Audiophile" || project.name === "SecurePass" ? (
             <Image
               className={clsx("relative h-auto", {
                 "drop-shadow-none": darkMode,
                 "drop-shadow-custom": !darkMode,
-                "w-full lg:max-w-[594px]": project.name === "Audiophile",
+                "w-[calc(100%-56px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
+                  project.name === "Audiophile",
                 "w-[calc(100%-150px)] mx-auto md:w-[169px] md:mx-0 lg:w-[185px] xl:w-[210px]":
                   project.name === "SecurePass",
               })}
@@ -78,7 +93,7 @@ export default function ProjectsSection({
             />
           ) : project.name === "Quizzical" ||
             project.name === "Dictionary Web App" ? (
-            <div className="relative w-[319px] h-[400px] mx-auto md:mx-0 lg:w-[400px]">
+            <div className="relative w-[319px] h-[400px] mx-auto md:mx-0 xl:w-[400px]">
               <Image
                 className={clsx(
                   "absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[179.75px] h-auto mx-auto xl:w-[230px]",
@@ -113,7 +128,7 @@ export default function ProjectsSection({
 
         {/* project details container */}
         <div
-          className={clsx("mt-8 md:flex-1 md:mt-0", {
+          className={clsx("mt-8 mx-7 md:flex-1 md:mt-0 md:mx-0", {
             "md:flex md:flex-col md:items-end":
               project.name === "SecurePass" ||
               project.name === "Dictionary Web App",
