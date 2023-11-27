@@ -65,3 +65,9 @@
 - [Implementing Copy-to-Clipboard in React with Clipboard API](https://blog.logrocket.com/implementing-copy-clipboard-react-clipboard-api/)
 - [How to add favicon in Next.js 13](https://stackoverflow.com/questions/75674866/adding-favicon-to-nextjs-13-beta-no-pages-folder)
 - [Allow some HTML elements in markdown](https://stackoverflow.com/questions/72368493/allow-some-html-elements-in-markdown-lint-rule-md033-in-visual-studio-code)
+
+## Author
+
+- Portfolio Website - [bnielsen.dev](https://bnielsen.dev)
+- LinkedIn - [/in/bnielsencodes](https://linkedin.com/in/bnielsencodes)
+- Twitter - [@bnielsencodes](https://twitter.com/bnielsencodes)
