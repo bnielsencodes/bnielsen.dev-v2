@@ -14,21 +14,17 @@
 
 ### Screenshots
 
-<div style="flex">
+#### Desktop - Dark Theme / Light Theme
 
-#### Desktop - Dark Theme
+<img src="public/screenshots/desktop/desktop-dark.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto"><img src="public/screenshots/desktop/desktop-light.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto">
 
-<img src="public/screenshots/desktop/desktop-dark.png" alt="screenshot of SecurePass mobile website" width="" height="auto"><img src="public/screenshots/desktop/desktop-light.png" alt="screenshot of SecurePass mobile website" width="" height="auto">
+#### Mobile - Dark Theme / Light Theme
 
-#### Desktop - Light Theme
+<img src="public/screenshots/mobile/mobile-dark.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto"><img src="public/screenshots/mobile/mobile-light.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto">
 
-</div>
+#### Mobile Nav - Dark Theme / Light Theme
 
-#### Mobile - Dark Theme
-
-
-#### Mobile - Light Theme
-
+<img src="public/screenshots/mobile/mobile-nav-dark.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto"><img src="public/screenshots/mobile/mobile-nav-light.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto">
 
 ### Link
 
