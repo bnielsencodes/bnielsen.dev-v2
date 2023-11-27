@@ -21,6 +21,12 @@ const config: Config = {
         200: "#0092ED",
       },
       warning: "#cd2c2c",
+      projects: {
+        audiophile: "#d87d4a",
+        securepass: "#a4ffaf",
+        quizzical: "#4d5b9e",
+        dictionary: "#a445ed",
+      },
       tech: {
         css: {
           100: "#1572b6",
