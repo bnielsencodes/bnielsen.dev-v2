@@ -16,8 +16,12 @@ body::-webkit-scrollbar {
 
 input:focus,
 textarea:focus,
-.accent-outline:focus {
+.outline-dark-theme:focus {
   outline: 2px solid #0072bb;
+}
+
+.outline-light-theme:focus {
+  outline: 2px solid #005e98;
 }
 
 /* buttons */
