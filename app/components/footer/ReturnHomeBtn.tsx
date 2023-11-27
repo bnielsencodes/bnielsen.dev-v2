@@ -6,11 +6,11 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
   return (
     <a
       className={clsx(
-        "hvr-bob accent-outline absolute -top-[20px] w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm",
+        "hvr-bob absolute -top-[20px] w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm",
         {
-          "bg-gradient-to-b from-neutral-200 to-neutral-100 lg:hover:to-neutral-200":
+          "outline-dark-theme bg-gradient-to-b from-neutral-200 to-neutral-100 lg:hover:to-neutral-200":
             darkMode,
-          "shadow-custom bg-gradient-to-b from-neutral-500 to-neutral-600 lg:hover:to-neutral-500":
+          "shadow-custom outline-light-theme bg-gradient-to-b from-neutral-500 to-neutral-600 lg:hover:to-neutral-500":
             !darkMode,
         }
       )}
