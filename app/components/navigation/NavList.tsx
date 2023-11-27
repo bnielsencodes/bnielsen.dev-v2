@@ -7,10 +7,10 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         <li className="nav-item">
           <a
             className={clsx(
-              "nav-link underlineAnimation focus:outline-2 focus:opacity-70",
+              "nav-link underlineAnimation focus:opacity-80",
               {
-                "text-neutral-500 focus:outline-accent-200": darkMode,
-                "text-neutral-200 focus:outline-accent-100": !darkMode,
+                "outline-dark-theme text-neutral-500": darkMode,
+                "outline-light-theme text-neutral-200": !darkMode,
               }
             )}
             href="#about-section"
@@ -22,10 +22,10 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         <li className="nav-item">
           <a
             className={clsx(
-              "nav-link underlineAnimation focus:outline-2 focus:opacity-70",
+              "nav-link underlineAnimation focus:opacity-80",
               {
-                "text-neutral-500 focus:outline-accent-200": darkMode,
-                "text-neutral-200 focus:outline-accent-100": !darkMode,
+                "outline-dark-theme text-neutral-500": darkMode,
+                "outline-light-theme text-neutral-200": !darkMode,
               }
             )}
             href="#projects-section"
@@ -37,10 +37,10 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         <li className="nav-item">
           <a
             className={clsx(
-              "nav-link underlineAnimation focus:outline-2 focus:opacity-70",
+              "nav-link underlineAnimation focus:opacity-80",
               {
-                "text-neutral-500 focus:outline-accent-200": darkMode,
-                "text-neutral-200 focus:outline-accent-100": !darkMode,
+                "outline-dark-theme text-neutral-500": darkMode,
+                "outline-light-theme text-neutral-200": !darkMode,
               }
             )}
             href="#contact-section"
