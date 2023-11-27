@@ -3,16 +3,13 @@ import clsx from "clsx";
 
 export default function Bio({ darkMode }: { darkMode: boolean }) {
   return (
-    <article className="flex flex-col items-center gap-8 mx-auto mb-24">
+    <article className="flex flex-col items-center gap-8 mx-auto mb-24 md:gap-12 lg:flex-row-reverse lg:gap-10 lg:w-[735px] lg:mx-auto lg:mb-32 xl:flex-col xl:w-[430px] xl:mx-0 xl:mb-0">
       <Avatar />
       <p
-        className={clsx(
-          "font-sans font-light md:w-[420px] md:text-[17px] lg:w-[595px]",
-          {
-            "text-neutral-500": darkMode,
-            "text-neutral-200": !darkMode,
-          }
-        )}
+        className={clsx("font-sans font-light md:w-[420px] md:text-[17px]", {
+          "text-neutral-500": darkMode,
+          "text-neutral-200": !darkMode,
+        })}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

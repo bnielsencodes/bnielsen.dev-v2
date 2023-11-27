@@ -27,7 +27,7 @@ export default function ProjectsSection({ darkMode }: { darkMode: boolean }) {
       >
         Work
       </h2>
-      <div className="flex flex-col justify-center pb-[25px] mt-[220px] text-[0.9rem] lg:mt-[260px]">
+      <div className="flex flex-col justify-center pb-[25px] mt-[165px] text-[0.9rem] lg:mt-[260px]">
         {projectElements}
       </div>
     </section>

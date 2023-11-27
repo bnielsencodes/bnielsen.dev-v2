@@ -57,6 +57,7 @@ export default function Home() {
           sizes="100vw"
         />
         <ProjectsSection {...{ darkMode }} />
+        {/* section top divider */}
         <Image
           className="w-full -mb-[1px]"
           src={darkMode ? waveDarkTop : waveLightTop}
