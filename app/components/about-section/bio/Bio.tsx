@@ -6,10 +6,13 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
     <article className="flex flex-col items-center gap-8 mx-auto mb-24">
       <Avatar />
       <p
-        className={clsx("font-sans font-light", {
-          "text-neutral-500": darkMode,
-          "text-neutral-200": !darkMode,
-        })}
+        className={clsx(
+          "font-sans font-light md:w-[420px] md:text-[17px] lg:w-[595px]",
+          {
+            "text-neutral-500": darkMode,
+            "text-neutral-200": !darkMode,
+          }
+        )}
       >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

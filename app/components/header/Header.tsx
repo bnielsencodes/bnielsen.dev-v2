@@ -9,7 +9,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
     >
       <h1
         className={clsx(
-          "text-[2.48rem] font-bold leading-[3rem] tracking-wide text-left",
+          "text-[2.48rem] font-bold leading-[3rem] tracking-wide text-left md:w-[622px] md:text-[52px]",
           {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,

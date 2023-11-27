@@ -30,18 +30,24 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
   return (
     <form className="w-full max-w-[475px] mt-4 mx-auto" onSubmit={handleSubmit}>
       <h2
-        className={clsx("m-0 text-2xl font-bold text-center", {
-          "text-neutral-500": darkMode,
-          "text-neutral-200": !darkMode,
-        })}
+        className={clsx(
+          "m-0 text-2xl font-bold text-center md:text-[1.65rem]",
+          {
+            "text-neutral-500": darkMode,
+            "text-neutral-200": !darkMode,
+          }
+        )}
       >
         Let<span>&apos;</span>s connect!
       </h2>
       <div
-        className={clsx("pt-[6px] mb-2 font-sans text-[0.92rem] text-center", {
-          "text-neutral-500 opacity-70": darkMode,
-          "text-neutral-300": !darkMode,
-        })}
+        className={clsx(
+          "pt-[6px] mb-2 font-sans text-[0.92rem] text-center md:text-[0.95rem]",
+          {
+            "text-neutral-500 opacity-70": darkMode,
+            "text-neutral-300": !darkMode,
+          }
+        )}
       >
         Email me at{" "}
         {darkMode ? (

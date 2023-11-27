@@ -10,7 +10,7 @@ export default function ProjectButtons({
   sourceCode: string;
 }) {
   return (
-    <div className="flex gap-4 pt-4 pb-8">
+    <div className="flex gap-4">
       <a className="accent-outline" href={liveSite} target="_blank">
         <button
           className={clsx("btn btn-primary", {
@@ -20,7 +20,7 @@ export default function ProjectButtons({
           type="button"
           title="View website"
         >
-            Live Site
+          Live Site
         </button>
       </a>
       <a className="accent-outline" href={sourceCode} target="_blank">
@@ -32,7 +32,7 @@ export default function ProjectButtons({
           type="button"
           title="View on GitHub"
         >
-            Source Code
+          Source Code
         </button>
       </a>
     </div>
