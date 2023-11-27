@@ -24,8 +24,8 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
             className={clsx(
               "nav-link underlineAnimation focus:outline-2 focus:opacity-70",
               {
-                "text-neutral-500 outline-2 outline-accent-200": darkMode,
-                "text-neutral-200 outline-accent-100": !darkMode,
+                "text-neutral-500 focus:outline-accent-200": darkMode,
+                "text-neutral-200 focus:outline-accent-100": !darkMode,
               }
             )}
             href="#projects-section"
@@ -39,8 +39,8 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
             className={clsx(
               "nav-link underlineAnimation focus:outline-2 focus:opacity-70",
               {
-                "text-neutral-500 outline-2 outline-accent-200": darkMode,
-                "text-neutral-200 outline-accent-100": !darkMode,
+                "text-neutral-500 focus:outline-accent-200": darkMode,
+                "text-neutral-200 focus:outline-accent-100": !darkMode,
               }
             )}
             href="#contact-section"
