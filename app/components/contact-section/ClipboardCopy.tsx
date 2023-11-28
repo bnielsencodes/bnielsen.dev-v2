@@ -33,7 +33,7 @@ export default function ClipboardCopy({ darkMode }: { darkMode: boolean }) {
   return (
     <>
       <button
-        className={clsx("p-0 border-0 hover:cursor-pointer hover:opacity-80 focus:opacity-80", { 
+        className={clsx("p-0 border-0 hover:cursor-pointer", { 
             "outline-dark-theme text-accent-200": darkMode,
             "outline-light-theme text-accent-100": !darkMode
         })}
