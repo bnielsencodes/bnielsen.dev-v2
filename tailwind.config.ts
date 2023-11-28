@@ -18,7 +18,7 @@ const config: Config = {
       },
       accent: {
         100: "#005e98",
-        200: "#1AA7FF",
+        200: "#4DBBFF",
       },
       warning: "#cd2c2c",
       projects: {
