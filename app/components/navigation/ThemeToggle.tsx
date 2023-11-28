@@ -62,7 +62,7 @@ export default function ThemeToggle({
         {/* moon icon */}
         {darkMode ? (
           <Image
-            className="absolute top-[10px] right-[9px] w-[21px] lg:w-[18px] lg:top-[6.4px] lg:right-[6.5px]"
+            className="absolute top-[10px] right-[9px] w-[21px] lg:w-[18px] lg:top-[5.5px] lg:right-[6.5px]"
             src={moonIconDark}
             alt="sun icon"
             width="0"
@@ -71,7 +71,7 @@ export default function ThemeToggle({
           />
         ) : (
           <Image
-            className="absolute top-[10px] right-[9px] w-[21px] lg:w-[18px] lg:top-[6.4px] lg:right-[6.5px]"
+            className="absolute top-[10px] right-[9px] w-[21px] lg:w-[18px] lg:top-[5.5px] lg:right-[6.5px]"
             src={moonIconLight}
             alt="sun icon"
             width="0"
