@@ -23,6 +23,7 @@ export default function Socials({
       <a 
         className="group"
         href={social.link}
+        aria-label={`Link to Brandon's ${social.name}`}
       >
         {/* linkedin icon */}
         {social.name === "linkedIn" && (
