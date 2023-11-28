@@ -12,7 +12,7 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           "text-neutral-200": !darkMode,
         })}
       >
-        <p>My journey in the world of web development has equipped me with a unique set of skills, enabling me to combine analytical thinking with a keen eye for aesthetics. Whether it's designing an intuitive user interface, optimizing website performance, or tackling complex coding challenges, I always strive for excellence.</p>
+        <p>My journey in the world of web development has equipped me with a unique set of skills, enabling me to combine analytical thinking with a keen eye for aesthetics. Whether it&apos;s designing an intuitive user interface, optimizing website performance, or tackling complex coding challenges, I always strive for excellence.</p>
 
         <p>With a firm belief in the power of innovation and continuous improvement, I take on every project as an opportunity to push boundaries and exceed expectations. By keeping myself updated with the latest industry trends and emerging technologies, I ensure that my work remains at the forefront of the ever-evolving web development landscape.</p>
 
