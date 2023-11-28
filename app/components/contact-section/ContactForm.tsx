@@ -76,7 +76,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         {/* mobile/tablets */}
         <strong className="lg:hidden">
           <a
-            className={clsx("inline p-0 border-0 hover:opacity-90", {
+            className={clsx("inline p-0 border-0", {
               "bg-neutral-200 text-accent-200": darkMode,
               "bg-neutral-500 text-accent-100": !darkMode,
             })}
