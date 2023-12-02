@@ -22,6 +22,7 @@ export default function Socials({
       })}
     >
       <a
+        className="hover:opacity-90"
         href={social.link}
         aria-label={`Link to Brandon's ${social.name}`}
         title={`Link to Brandon's ${social.name}`}
