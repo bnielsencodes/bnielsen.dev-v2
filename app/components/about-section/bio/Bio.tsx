@@ -7,20 +7,49 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
       <Avatar parent="bio" />
 
       <div
-        className={clsx("font-sans font-light md:w-[420px] md:text-[17px]", {
-          "text-neutral-500": darkMode,
-          "text-neutral-200": !darkMode,
-        })}
+        className={clsx(
+          "mt-4 font-sans font-light md:w-[420px] md:text-[17px]",
+          {
+            "text-neutral-500": darkMode,
+            "text-neutral-200": !darkMode,
+          }
+        )}
       >
-        <p className="mb-4">My journey in the world of web development has equipped me with a unique set of skills, enabling me to combine analytical thinking with a keen eye for aesthetics. Whether it&apos;s designing an intuitive user interface, optimizing website performance, or tackling complex coding challenges, I always strive for excellence.</p>
+        <p className="mb-8 font-mosk text-5xl font-extrabold leading-[53px]">
+          I like to create visually stunning and user-friendly websites for
+          businesses of all sizes.
+        </p>
 
-        <p className="mb-4">With a firm belief in the power of innovation and continuous improvement, I take on every project as an opportunity to push boundaries and exceed expectations. By keeping myself updated with the latest industry trends and emerging technologies, I ensure that my work remains at the forefront of the ever-evolving web development landscape.</p>
-
-        <p className="mb-4">From conceptualization to implementation, I invest myself wholeheartedly in each project, driven by the desire to provide the best user experience. By combining my technical expertise with an artistic touch, I aim to leave a lasting impression on every website I create.</p>
-        
-        <p>In a constantly changing digital world, I am excited to embrace new challenges, learn from experiences, and continue growing as a web developer. Through my work, I hope to inspire and elevate online experiences for users across the globe.</p>
+        <p className="mb-4 text-[18px]">
+          With a background in behavioral health, I take a user-centered
+          approach to building websites, putting an emphasis on accessibility
+          and creating a smooth seamless user experience. If you have an idea
+          you think I could help bring to life,{" "}
+          <a
+            className={clsx("", {
+              "text-accent-200": darkMode,
+              "text-accent-100": !darkMode,
+            })}
+            href="#contact-section"
+          >
+            feel free to reach out and let&apos;s talk
+          </a>
+          . When not in front of a computer, I can be found watching films,
+          playing video games, spending time with family, enjoying the outdoors,
+          or lurking on the{" "}
+          <a
+            className={clsx("", {
+              "text-accent-200": darkMode,
+              "text-accent-100": !darkMode,
+            })}
+            href="https://reddit.com"
+            target="_blank"
+          >
+            front page of the internet
+          </a>
+          .
+        </p>
       </div>
-      
     </div>
   );
 }
