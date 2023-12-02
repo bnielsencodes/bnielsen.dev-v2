@@ -1,5 +1,6 @@
 import ReturnHomeBtn from "./ReturnHomeBtn";
 import Location from "./Location";
+import ResumeBtn from "./ResumeBtn";
 import clsx from "clsx";
 
 export default function Footer({ darkMode }: { darkMode: boolean }) {
@@ -18,7 +19,11 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
       </div>
 
       <div className="flex flex-col justify-between h-full pb-4">
+        <div className="flex flex-col justify-between gap-[10px]">
           <Location {...{ darkMode }} />
+          <ResumeBtn {...{ darkMode }} />
+        </div>
+
         <small
           className={clsx("pl-[7px] font-sans text-[0.725rem] uppercase", {
             "text-neutral-400": darkMode,
