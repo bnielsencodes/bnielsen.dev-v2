@@ -1,10 +1,10 @@
-import Avatar from "./Avatar";
 import clsx from "clsx";
+import Avatar from "../../shared/Avatar";
 
 export default function Bio({ darkMode }: { darkMode: boolean }) {
   return (
     <div className="flex flex-col items-center gap-8 mx-auto mb-24 md:gap-12 lg:flex-row-reverse lg:gap-10 lg:w-[735px] lg:mx-auto lg:mb-32 xl:flex-col xl:w-[430px] xl:mx-0 xl:mb-0">
-      <Avatar />
+      <Avatar parent="bio" />
 
       <div
         className={clsx("font-sans font-light md:w-[420px] md:text-[17px]", {
