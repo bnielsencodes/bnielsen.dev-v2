@@ -1,6 +1,7 @@
 import ReturnHomeBtn from "./ReturnHomeBtn";
 import Location from "./Location";
 import ResumeBtn from "./ResumeBtn";
+import Socials from "../socials/Socials";
 import clsx from "clsx";
 
 export default function Footer({ darkMode }: { darkMode: boolean }) {
@@ -32,6 +33,10 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         >
           Brandon Nielsen - 2023
         </small>
+      </div>
+
+      <div className="hidden md:block">
+        <Socials parent="footer" direction="row" {...{ darkMode }} />
       </div>
     </footer>
   );
