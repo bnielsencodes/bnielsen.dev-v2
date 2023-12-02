@@ -1,5 +1,5 @@
 import CTAButtons from "./CTAButtons";
-import Socials from "@/app/components/shared/Socials";
+import Socials from "@/app/components/socials/Socials";
 import clsx from "clsx";
 
 export default function Header({ darkMode }: { darkMode: boolean }) {
