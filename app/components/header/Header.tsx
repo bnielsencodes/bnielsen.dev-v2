@@ -36,8 +36,9 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
 
       <CTAButtons {...{ darkMode }} />
 
-      <div className="hidden lg:absolute lg:bottom-4 lg:right-4 lg:block">
-        <Socials {...{ darkMode }} />
+      {/* large screen socials */}
+      <div className="hidden lg:absolute lg:bottom-4 lg:right-6 lg:block">
+        <Socials parent="header" direction="column" {...{ darkMode }} />
       </div>
     </header>
   );
