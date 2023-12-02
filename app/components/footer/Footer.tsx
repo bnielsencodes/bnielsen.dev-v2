@@ -15,7 +15,7 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         }
       )}
     >
-      <div className="absolute -top-5 flex justify-center w-full">
+      <div className="absolute -top-5 left-1/2 -translate-x-1/2">
         <ReturnHomeBtn {...{ darkMode }} />
       </div>
 
