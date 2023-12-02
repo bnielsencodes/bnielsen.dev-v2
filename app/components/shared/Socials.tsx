@@ -7,8 +7,8 @@ export default function Socials({ darkMode }: { darkMode: boolean }) {
   });
 
   return (
-    <div>
-      <ul className="flex">{socialElements}</ul>
-    </div>
+    <>
+      <ul className="flex gap-4 lg:flex-col">{socialElements}</ul>
+    </>
   );
 }

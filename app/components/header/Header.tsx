@@ -1,11 +1,12 @@
 import CTAButtons from "./CTAButtons";
+import Socials from "@/app/components/shared/Socials";
 import clsx from "clsx";
 
 export default function Header({ darkMode }: { darkMode: boolean }) {
   return (
     <header
       id="header"
-      className="flex flex-col items-center justify-center h-screen px-7 mb-[6px]"
+      className="relative flex flex-col items-center justify-center h-screen pt-[56px] px-7 mb-[6px]"
     >
       <h1
         className={clsx(
@@ -29,6 +30,10 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
       </h1>
 
       <CTAButtons {...{ darkMode }} />
+
+      <div className="hidden lg:absolute lg:bottom-4 lg:right-4 lg:block">
+        <Socials {...{ darkMode }} />
+      </div>
     </header>
   );
 }
