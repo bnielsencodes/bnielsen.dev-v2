@@ -1,10 +1,21 @@
 import clsx from "clsx";
 
-export default function LinkedIn({ darkMode }: { darkMode: boolean }) {
+export default function LinkedIn({
+  darkMode,
+  parent,
+}: {
+  darkMode: boolean;
+  parent: string;
+}) {
   return (
     <>
       <svg
-        className="w-[56px] h-[56px] md:w-[60px] md:h-[60px] lg:w-12 lg:h-12"
+        className={clsx("", {
+          "w-[56px] h-[56px] md:w-[60px] md:h-[60px] lg:w-12 lg:h-12":
+            parent === "mobile nav" || parent === "header",
+          "md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px]":
+            parent === "footer",
+        })}
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 36 36"
       >
