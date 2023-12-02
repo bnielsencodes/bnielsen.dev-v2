@@ -8,8 +8,6 @@ const variants = {
   closed: { opacity: 0, x: "-100%" },
 };
 
-const isFooter = false;
-
 export default function MobileNav({
   darkMode,
   toggleTheme,
@@ -43,7 +41,7 @@ export default function MobileNav({
       <div className="flex items-center justify-start w-full h-full pl-4">
         <ul
           className={clsx(
-            "flex flex-col justify-center h-[17rem] text-[4.35rem]",
+            "flex flex-col justify-between h-[17rem] pb-[25px] text-[4.35rem] md:h-[19rem] md:text-[5.5rem]",
             {
               "text-neutral-500": darkMode,
               "text-neutral-200": !darkMode,
@@ -51,6 +49,7 @@ export default function MobileNav({
           )}
         >
           <motion.div
+            className="flex items-center h-[83px]"
             animate={showMobileNav ? "open" : "closed"}
             variants={variants}
             initial={{ opacity: 0, translateX: "-5rem" }}
@@ -62,7 +61,7 @@ export default function MobileNav({
             }}
           >
             {/* about link */}
-            <li className="h-[87px]">
+            <li className="flex items-center h-[83px]">
               <a
                 className={clsx("font-bold hover:text-accent", {
                   "hover:text-accent": darkMode,
@@ -77,6 +76,7 @@ export default function MobileNav({
           </motion.div>
 
           <motion.div
+            className="flex items-center h-[83px]"
             animate={showMobileNav ? "open" : "closed"}
             variants={variants}
             initial={{ opacity: 0, translateX: "-5rem" }}
@@ -88,7 +88,7 @@ export default function MobileNav({
             }}
           >
             {/* portfolio link */}
-            <li className="h-[87px]">
+            <li className="flex items-center h-[83px]">
               <a
                 className={clsx("font-bold hover:text-accent", {
                   "hover:text-accent": darkMode,
@@ -103,6 +103,7 @@ export default function MobileNav({
           </motion.div>
 
           <motion.div
+            className="flex items-center h-[83px]"
             animate={showMobileNav ? "open" : "closed"}
             variants={variants}
             initial={{ opacity: 0, translateX: "-5rem" }}
@@ -114,7 +115,7 @@ export default function MobileNav({
             }}
           >
             {/* contact link */}
-            <li className="h-[87px]">
+            <li className="flex items-center h-[83px]">
               <a
                 className={clsx("font-bold hover:text-accent", {
                   "hover:text-accent": darkMode,
@@ -131,8 +132,8 @@ export default function MobileNav({
       </div>
 
       {/* bottom container */}
-      <div className="flex items-end justify-between w-full pr-[19px] pl-4 pb-7">
-        <Socials {...{ darkMode, isFooter }} />
+      <div className="flex items-center justify-between w-full h-[75px] pr-[11px] pl-4 pb-4">
+        <Socials {...{ darkMode }} />
         <ThemeToggle {...{ darkMode, toggleTheme }} />
       </div>
     </motion.div>
