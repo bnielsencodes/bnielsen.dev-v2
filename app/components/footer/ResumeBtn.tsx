@@ -4,7 +4,7 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
   return (
     <>
       <a
-        className="flex items-center gap-[6px] h-[25px] pl-[5px] group"
+        className="flex items-center gap-[6px] h-[25px] pl-[15px] group md:pl-[5px]"
         href="https://drive.google.com/file/d/1pJRoHl7UbfoqWO87wGbVoFV1ib-B3G5C/view?usp=sharing"
         aria-label="View resume"
         target="_blank"
