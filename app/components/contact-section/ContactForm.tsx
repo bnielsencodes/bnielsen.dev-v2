@@ -96,7 +96,8 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
             "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
             {
               "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200": !darkMode,
+              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200":
+                !darkMode,
             }
           )}
           type="text"
@@ -115,7 +116,8 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
             "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent placeholder:text-neutral-400",
             {
               "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200": !darkMode,
+              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200":
+                !darkMode,
             }
           )}
           type="email"
@@ -134,7 +136,8 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
             "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none placeholder:text-neutral-400",
             {
               "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
-              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200": !darkMode,
+              "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200":
+                !darkMode,
             }
           )}
           name="message"
