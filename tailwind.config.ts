@@ -18,9 +18,11 @@ const config: Config = {
       },
       accent: {
         100: "#005e98",
-        200: "#1AA7FF",
+        200: "#1aa7ff",
       },
       warning: "#cd2c2c",
+      customHoverDark: "rgb(237 237 237 / 0.87)",
+      customHoverLight: "rgb(39 39 39 / 0.87)",
       projects: {
         audiophile: "#d87d4a",
         securepass: "#a4ffaf",
@@ -103,6 +105,10 @@ const config: Config = {
           "figmaBgGradientAnimation 3.75s ease 0s infinite normal none",
         viteBorder:
           "viteBgGradientAnimation 3.75s ease 0s infinite normal none",
+      },
+      fill: {
+        darkThemeHover: "rgb(237 237 237 / 0.87)",
+        lightThemeHover: "rgb(39 39 39 / 0.8)",
       },
     },
   },
