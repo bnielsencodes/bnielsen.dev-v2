@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
   return (
-    <div className="flex gap-4 mt-[21px]">
+    <div className="flex gap-4">
       <a
         className={clsx("btn btn-primary", {
           "btn-light outline-dark-theme": darkMode,
