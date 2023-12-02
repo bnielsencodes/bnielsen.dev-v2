@@ -82,7 +82,7 @@ export default function ProjectsSection({
                 "drop-shadow-custom": !darkMode,
                 "w-[calc(100%-56px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
                   project.name === "Audiophile",
-                "w-[calc(100%-150px)] mx-auto md:w-[169px] md:mx-0 lg:w-[185px] xl:w-[210px]":
+                "w-[calc(100%-150px)] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[210px]":
                   project.name === "SecurePass",
               })}
               src={project.img}
@@ -147,7 +147,7 @@ export default function ProjectsSection({
           </h3>
           <p
             className={clsx(
-              "mt-3 mb-4 font-sans text-[1.05rem] font-light md:mb-5 md:text-[1.05rem] lg:w-[432px]",
+              "mt-3 mb-4 font-sans text-[1.05rem] font-light md:w-[336px] md:mb-5 md:text-[1.05rem] lg:w-[432px]",
               {
                 "text-neutral-600 opacity-60": darkMode,
                 "text-neutral-200": !darkMode,
