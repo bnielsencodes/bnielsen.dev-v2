@@ -133,7 +133,7 @@ export default function MobileNav({
 
       {/* bottom container */}
       <div className="flex items-center justify-between w-full h-[75px] pr-[11px] pl-4 pb-4">
-        <Socials {...{ darkMode }} />
+        <Socials parent="mobile nav" direction="row" {...{ darkMode }} />
         <ThemeToggle {...{ darkMode, toggleTheme }} />
       </div>
     </motion.div>
