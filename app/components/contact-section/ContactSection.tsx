@@ -5,7 +5,7 @@ export default function ContactSection({ darkMode }: { darkMode: boolean }) {
   return (
     <section
       id="contact-section"
-      className={clsx("pt-20 px-7 pb-28 overflow-x-clip", {
+      className={clsx("pt-20 px-[29px] pb-28 overflow-x-clip", {
         "bg-neutral-200": darkMode,
         "bg-neutral-500": !darkMode,
       })}
