@@ -7,13 +7,15 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
   return (
     <header
       id="header"
-      className="relative flex flex-col items-center justify-center h-screen pt-[56px] px-7 mb-[6px]"
+      className="relative flex flex-col items-center justify-center h-screen pt-[56px] px-[26px] mb-[6px] lg:items-start lg:pt-0 lg:pl-[31px] xl:items-center"
     >
+      {/* Avatar image on larger screens */}
       <Avatar parent="header" />
 
+      {/* header intro */}
       <h1
         className={clsx(
-          "mt-5 mb-6 text-[2.414rem] font-extrabold leading-[2.8rem] tracking-wide text-left md:w-[622px] md:text-[52px] md:text-center lg:leading-[3.25rem] xl:w-[813px] xl:text-[66px] xl:font-extrabold xl:leading-[4.25rem]",
+          "w-[323px] mt-5 mb-6 text-[2.414rem] font-extrabold leading-[2.8rem] tracking-wide text-left md:w-[704px] md:text-[57px] md:leading-[3.85rem] lg:w-[830px] lg:text-[66px] lg:leading-[4.35rem] xl:w-[985px] xl:mt-[1.2rem] xl:text-[76px] xl:font-extrabold xl:leading-[5.35rem] xl:text-center",
           {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,
