@@ -31,17 +31,17 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         <path
           fill="none"
           stroke="#272727"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3"
           d="M65.5,28	c0-8.56-6.94-15.5-15.5-15.5S34.5,19.44,34.5,28c0,6.995,4.635,12.902,11,14.831V82.5l4.5,6l4.5-6V42.831	C60.865,40.902,65.5,34.995,65.5,28z"
         />
         <path
           fill="none"
           stroke="#272727"
-          stroke-linecap="round"
-          stroke-linejoin="round"
-          stroke-width="3"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          strokeWidth="3"
           d="M50,18.5	c-5.137,0-9.307,4.017-9.493,9.144"
         />
       </svg>
