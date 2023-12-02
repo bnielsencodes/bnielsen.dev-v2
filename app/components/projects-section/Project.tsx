@@ -149,8 +149,8 @@ export default function ProjectsSection({
             className={clsx(
               "mt-3 mb-4 font-sans text-[1.05rem] font-light md:mb-5 md:text-[1.05rem] lg:w-[432px]",
               {
-                "text-neutral-400": darkMode,
-                "text-neutral-300": !darkMode,
+                "text-neutral-600 opacity-60": darkMode,
+                "text-neutral-200": !darkMode,
                 "md:text-right":
                   project.name === "SecurePass" ||
                   project.name === "Dictionary Web App",
