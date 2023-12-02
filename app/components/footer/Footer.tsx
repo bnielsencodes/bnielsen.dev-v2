@@ -1,5 +1,4 @@
 import ReturnHomeBtn from "./ReturnHomeBtn";
-import Socials from "@/app/components/shared/Socials";
 import clsx from "clsx";
 
 export default function Footer({ darkMode }: { darkMode: boolean }) {
@@ -11,7 +10,6 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
       )}
     >
       <ReturnHomeBtn {...{ darkMode }} />
-      {/* <Socials {...{ darkMode }} /> */}
       <p
         className={clsx("mt-[18px] font-sans text-[0.725rem] uppercase", {
           "text-neutral-400": darkMode,
