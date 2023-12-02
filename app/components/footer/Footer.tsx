@@ -1,4 +1,5 @@
 import ReturnHomeBtn from "./ReturnHomeBtn";
+import Location from "./Location";
 import clsx from "clsx";
 
 export default function Footer({ darkMode }: { darkMode: boolean }) {
@@ -16,6 +17,8 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         <ReturnHomeBtn {...{ darkMode }} />
       </div>
 
+      <div className="flex flex-col justify-between h-full pb-4">
+          <Location {...{ darkMode }} />
         <small
           className={clsx("pl-[7px] font-sans text-[0.725rem] uppercase", {
             "text-neutral-400": darkMode,
@@ -24,6 +27,7 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         >
           Brandon Nielsen - 2023
         </small>
+      </div>
     </footer>
   );
 }
