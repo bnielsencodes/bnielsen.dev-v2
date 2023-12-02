@@ -42,7 +42,7 @@ export default function NavBar({
           sizes="100vw"
         />
         <p
-          className={clsx("text-xl font-bold leading-[0.3px]", {
+          className={clsx("text-xl font-extrabold leading-[0.3px]", {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,
           })}
