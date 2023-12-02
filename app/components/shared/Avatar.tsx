@@ -1,0 +1,15 @@
+import clsx from "clsx";
+
+export default function Avatar({ parent }: { parent: string }) {
+  return (
+    <div
+      className={clsx(
+        "relative w-[18rem] h-[18rem] border-[3px] border-neutral-300 rounded-morph bg-avatar bg-[50%] bg-no-repeat bg-cover animate-morph transition-all duration-1000 ease-in-out lg:w-[17rem] lg:h-[17rem]",
+        {
+          "hidden lg:block": parent === "header",
+          "block lg:hidden": parent === "bio",
+        }
+      )}
+    ></div>
+  );
+}
