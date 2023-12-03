@@ -7,7 +7,7 @@ export default function Skills({ darkMode }: { darkMode: boolean }) {
   const isBreakpoint = useMediaQuery(768);
 
   return (
-    <div className="flex flex-col justify-center gap-8 w-[317px] pb-[25px] mt-[50px] mx-auto text-[0.9rem] md:w-[420px] lg:w-[595px] xl:w-[293px] xl:mt-0 xl:mx-0">
+    <div className="flex flex-col justify-center gap-8 w-[293px] pb-[25px] mt-[50px] mx-auto text-[0.9rem] md:w-[420px] lg:w-[595px] xl:w-[293px] xl:mt-0 xl:mx-0">
       <p
         className={clsx("border-b-4  mx-auto font-bold text-[1.625rem]", {
           "text-neutral-500 border-b-neutral-300": darkMode,
