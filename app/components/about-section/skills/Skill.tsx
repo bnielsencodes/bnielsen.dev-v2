@@ -44,7 +44,6 @@ export default function Skill({
             "group-hover:border-tech-tailwind": skill.name === "tailwind",
             "group-hover:border-tech-typescript-200":
               skill.name === "typescript",
-            // "hover:border-tech-vite": props.skill.name === "vite",
           }
         )}
         onMouseEnter={() => {
