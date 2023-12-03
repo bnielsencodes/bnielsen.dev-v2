@@ -3,23 +3,28 @@ import Avatar from "../../shared/Avatar";
 
 export default function Bio({ darkMode }: { darkMode: boolean }) {
   return (
-    <div className="flex flex-col items-center gap-8 mx-auto mb-24 md:gap-12 md:w-[696px] md:mb-16 lg:flex-row-reverse lg:gap-10 lg:w-[735px] lg:mx-auto lg:mb-32 xl:flex-col xl:w-[564px] xl:mx-0 xl:mb-0">
+    <div className="flex flex-col items-center gap-8 mx-auto mb-24 md:gap-12 md:w-[696px] md:mb-16 lg:flex-row-reverse lg:gap-10 lg:w-[735px] lg:mx-auto lg:mb-32 xl:flex-col xl:w-[605px] xl:mx-0 xl:mb-0">
       <Avatar parent="bio" />
 
-      <div
-        className={clsx("mt-4 font-sans font-light md:text-[17px]", {
-          "text-neutral-500": darkMode,
-          "text-neutral-200": !darkMode,
-        })}
-      >
+      <div className="mt-4 font-sans font-light md:text-[17px]">
         {/* statement copy */}
-        <p className="mb-8 font-mosk text-5xl font-extrabold leading-[53px] xl:text-[3.5rem] xl:leading-[62px]">
+        <p
+          className={clsx(
+            "font-mosk text-5xl font-extrabold leading-[1.1em] xl:text-[3.5rem] xl:leading-[62px]",
+            { "text-neutral-500": darkMode, "text-neutral-200": !darkMode }
+          )}
+        >
           I like to create visually stunning and user-friendly websites for
           businesses of all sizes.
         </p>
 
         {/* about me copy */}
-        <p className="mb-4 text-[18px]">
+        <p
+          className={clsx("mb-4 text-[18px]", {
+            "text-neutral-500": darkMode,
+            "text-neutral-200": !darkMode,
+          })}
+        >
           With a background in behavioral health, I take a user-centered
           approach to building websites, putting an emphasis on accessibility
           and creating a smooth seamless user experience. If you have an idea
