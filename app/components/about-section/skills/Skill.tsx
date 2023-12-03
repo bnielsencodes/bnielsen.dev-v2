@@ -27,7 +27,7 @@ export default function Skill({
             "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-custom":
               !darkMode,
             "group-hover:border-tech-css-100": skill.name === "css",
-            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:rounded-md group-hover:border-neutral-100":
+            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:rounded-md group-hover:border-neutral-100 md:group-hover:w-[92px]":
               skill.name === "figma" || skill.name === "vite",
             "group-hover:border-neutral-600":
               (skill.name === "figma" && !darkMode) ||
@@ -62,12 +62,12 @@ export default function Skill({
 
       {/* hover border for figma skill */}
       {skill.name === "figma" && (
-        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-figmaBorder"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-figmaBorder md:w-[96px] md:h-[95px]"></div>
       )}
 
       {/* hover border for vite skill */}
       {skill.name === "vite" && (
-        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-viteBorder"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-viteBorder md:w-[96px] md:h-[95px]"></div>
       )}
     </div>
   );
