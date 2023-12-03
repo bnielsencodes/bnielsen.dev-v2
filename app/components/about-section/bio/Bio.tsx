@@ -18,6 +18,16 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           businesses of all sizes.
         </p>
 
+        {/* currently open for work */}
+        <p
+          className={clsx("mt-8 mb-5 text-2xl font-light tracking-wide", {
+            "text-neutral-600": darkMode,
+            "text-neutral-100": !darkMode,
+          })}
+        >
+          Currently open to freelance and full-time opportunities.
+        </p>
+
         {/* about me copy */}
         <p
           className={clsx("mb-4 text-[18px]", {
