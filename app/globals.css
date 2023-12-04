@@ -190,6 +190,16 @@ skill tooltip label bg gradients (figma and vite)
   animation-direction: normal, alternate;
 }
 
+@media (min-width: 1024px) {
+  .header-text-stroke--dark:hover {
+    -webkit-text-stroke: 0px #ededed;
+  }
+
+  .header-text-stroke:hover {
+    -webkit-text-stroke: 0px #272727;
+  }
+}
+
 /* 
 -
 avatar img blob animation 
