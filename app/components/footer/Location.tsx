@@ -4,7 +4,7 @@ import clsx from "clsx";
 
 export default function Footer({ darkMode }: { darkMode: boolean }) {
   return (
-    <div className="flex items-center pl-[2px]">
+    <div className="flex items-center">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
