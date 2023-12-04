@@ -40,7 +40,7 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           and creating a smooth seamless user experience. If you have an idea
           you think I could help bring to life,{" "}
           <a
-            className={clsx("", {
+            className={clsx("hover:opacity-90", {
               "text-accent-200": darkMode,
               "text-accent-100": !darkMode,
             })}
@@ -52,7 +52,7 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           playing video games, spending time with family, enjoying the outdoors,
           or lurking on the{" "}
           <a
-            className={clsx("", {
+            className={clsx("hover:opacity-90", {
               "text-accent-200": darkMode,
               "text-accent-100": !darkMode,
             })}
