@@ -18,10 +18,6 @@
 
 <img src="public/screenshots/desktop/desktop-dark.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto"><img src="public/screenshots/desktop/desktop-light.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto">
 
-<!-- #### Desktop Medium - Dark Theme / Light Theme
-
-<img src="public/screenshots/desktop/desktop-md-dark.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto"><img src="public/screenshots/desktop/desktop-md-light.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto"> -->
-
 #### Mobile - Dark Theme / Light Theme
 
 <img src="public/screenshots/mobile/mobile-dark.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto"><img src="public/screenshots/mobile/mobile-light.png" alt="screenshot of SecurePass mobile website" width="50%" height="auto">
@@ -41,13 +37,13 @@
 - [Next.js App Router](https://nextjs.org/) - React framework
 - [React](https://reactjs.org/) - JS library
 - [TypeScript](https://typescriptlang.org/)
-- [Framer Motion](https://www.framer.com/motion/)
 - [Tailwind CSS](https://tailwindcss.com/)
+- [Framer Motion](https://www.framer.com/motion/)
 - [CSS Animations](https://www.w3schools.com/css/css3_animations.asp)
 - [FormSpree React](https://help.formspree.io/hc/en-us/articles/360055613373-The-Formspree-React-library)
-- [Font Awesome SVG Icons](https://fontawesome.com/icons)
+- [Custom Premium SVG Icons](https://icons8.com/icons)
 - [Mosk Typeface - Iulian Maftei via Behance](<https://www.behance.net/gallery/33966928/Mosk-Typeface-(Free)>)
-- [Google Fonts - Roboto Typeface](https://fonts.google.com/?query=roboto)
+- [Roboto Typeface - Google Fonts](https://fonts.google.com/?query=roboto)
 - [VS Code](https://code.visualstudio.com/) - Integrated development environment
 
 ### Useful Resources
