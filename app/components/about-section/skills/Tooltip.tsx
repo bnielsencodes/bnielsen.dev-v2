@@ -19,15 +19,18 @@ export default function Tooltip({
             {
               "-top-[17px]": skill.name === "figma" || skill.name === "vite",
               "left-[20px] md:left-[23px] lg:left-[20px]":
-                skill.name === "figma" || skill.name === "html" || skill.name === "react",
-              "left-[25px] md:left-[28px] lg:left-[25px]": skill.name === "css" || skill.name === "vite",
-              "left-[27px] md:left-[32px] lg:left-[28px]": skill.name === "git",
-              "left-[10px] md:left-[13px] lg:left-[10px]": skill.name === "javascript",
-              "left-[17px] md:left-[20px] lg:left-[17px]": skill.name === "next",
-              "left-[4px] md:left-[7px] lg:left-[4px]": skill.name === "postgresql",
-              "left-[23px] md:left-[26px] lg:left-[23px]": skill.name === "sass",
-              "left-[13px] md:left-[16px] lg:left-[13px]": skill.name === "tailwind",
-              "left-[7px] md:left-[10px] lg:left-[7px]": skill.name === "typescript",
+                skill.name === "figma" || skill.name === "react",
+              "left-[24px] md:left-[28px] lg:left-[24px]": skill.name === "css",
+              "left-[18px] md:left-[22px] lg:left-[18px]":
+                skill.name === "figma",
+              "left-[28px] md:left-[31px] lg:left-[27px]": skill.name === "git",
+              "left-[7px] md:left-[10px] lg:left-[7px]": skill.name === "javascript",
+              "left-[16px] md:left-[19px] lg:left-[16px]": skill.name === "next",
+              "left-[2.5px] md:left-[5.5px] lg:left-[2.5px]": skill.name === "postgresql",
+              "left-[22px] md:left-[25px] lg:left-[22px]": skill.name === "sass",
+              "left-[12.5px] md:left-[15.5px] lg:left-[12.5px]": skill.name === "tailwind",
+              "left-[6px] md:left-[9px] lg:left-[6px]": skill.name === "typescript",
+              "left-[24.5px] md:left-[27.5px] lg:left-[24.5px]": skill.name === "vite",
             }
           )}
         >
