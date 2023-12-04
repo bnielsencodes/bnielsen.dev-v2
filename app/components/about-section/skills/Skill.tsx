@@ -27,7 +27,7 @@ export default function Skill({
             "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-custom":
               !darkMode,
             "group-hover:border-tech-css-100": skill.name === "css",
-            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:rounded-md group-hover:border-neutral-100 md:group-hover:w-[92px] lg:group-hover:w-[86px]":
+            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:rounded-md group-hover:border-0 md:group-hover:w-[92px] lg:group-hover:w-[86px]":
               skill.name === "figma" || skill.name === "vite",
             "group-hover:border-neutral-600":
               (skill.name === "figma" && !darkMode) ||
