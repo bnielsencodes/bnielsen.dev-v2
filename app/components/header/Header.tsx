@@ -7,7 +7,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
   return (
     <header
       id="header"
-      className="relative flex flex-col items-start justify-center h-screen pt-[56px] px-[17px] mb-[6px] md:px-[19px] lg:items-start lg:pl-[22px] xl:items-center"
+      className="relative flex flex-col items-start justify-center h-[100svh] pt-[56px] px-[17px] mb-[6px] md:px-[19px] lg:items-start lg:pl-[22px] xl:items-center"
     >
       {/* Avatar image on larger screens */}
       <Avatar parent="header" />
