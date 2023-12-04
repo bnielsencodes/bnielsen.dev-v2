@@ -6,7 +6,7 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
       <a
         className="flex items-center justify-start gap-[6px] h-[25px] pl-[6px] group md:pl-[6px]"
         href="https://drive.google.com/file/d/1pJRoHl7UbfoqWO87wGbVoFV1ib-B3G5C/view?usp=sharing"
-        aria-label="View resume"
+        aria-label="View my resume"
         target="_blank"
       >
         <svg
