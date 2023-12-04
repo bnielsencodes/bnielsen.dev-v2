@@ -8,7 +8,7 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
   return (
     <footer
       className={clsx(
-        "relative flex items-start justify-between h-40 pt-8 pl-3 md:pr-[22px] md:pl-4",
+        "relative flex items-start justify-between h-40 pt-8 pl-3 md:pr-[22px] md:pl-4 xl:pl-[17px]",
         {
           "bg-neutral-100": darkMode,
           "bg-neutral-600": !darkMode,
@@ -26,10 +26,13 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         </div>
 
         <small
-          className={clsx("pl-[7px] font-sans text-[0.725rem] uppercase", {
-            "text-neutral-400": darkMode,
-            "text-neutral-300": !darkMode,
-          })}
+          className={clsx(
+            "pl-[7px] font-sans text-[0.725rem] uppercase xl:pl-2",
+            {
+              "text-neutral-400": darkMode,
+              "text-neutral-300": !darkMode,
+            }
+          )}
         >
           Brandon Nielsen - 2023
         </small>
