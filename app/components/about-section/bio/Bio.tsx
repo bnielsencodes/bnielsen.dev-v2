@@ -3,7 +3,7 @@ import Avatar from "../../shared/Avatar";
 
 export default function Bio({ darkMode }: { darkMode: boolean }) {
   return (
-    <div className="flex flex-col items-center gap-8 mx-auto mb-24 md:gap-12 md:w-[696px] md:mb-16 lg:flex-row-reverse lg:gap-10 lg:w-[735px] lg:mx-auto lg:mb-32 xl:flex-col xl:w-[605px] xl:mx-0 xl:mb-0">
+    <div className="flex flex-col items-center gap-8 mx-auto mb-24 md:gap-12 md:w-[728px] md:mb-16 lg:flex-row-reverse lg:gap-10 lg:w-[735px] lg:mx-auto lg:mb-32 xl:flex-col xl:w-[605px] xl:mx-0 xl:mb-0">
       <Avatar parent="bio" />
 
       <div className="mt-4 font-sans font-light md:text-[17px]">
