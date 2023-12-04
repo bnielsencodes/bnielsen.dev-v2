@@ -56,7 +56,7 @@ export default function Tooltip({
           {/* tooltip label */}
           <div
             className={clsx(
-              "max-w-250px py-[3px] px-2 rounded font-semibold text-center",
+              "max-w-250px py-[3px] px-2 rounded font-sans font-semibold text-center",
               {
                 "text-neutral-200": darkMode,
                 "bg-tech-next": skill.name === "next" && darkMode,
