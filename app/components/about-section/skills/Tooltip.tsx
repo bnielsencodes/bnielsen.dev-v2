@@ -26,7 +26,7 @@ export default function Tooltip({
               "left-[28px] md:left-[31px] lg:left-[27px]": skill.name === "git",
               "left-[7px] md:left-[10px] lg:left-[7px] xl:left-[6px]": skill.name === "javascript",
               "left-[16px] md:left-[19px] lg:left-[16px]": skill.name === "next",
-              "left-[2.5px] md:left-[5.5px] lg:left-[3px]": skill.name === "postgresql",
+              "left-[2.75px] md:left-[5.5px] lg:left-[3px]": skill.name === "postgresql",
               "left-[22px] md:left-[25px] lg:left-[22px]": skill.name === "sass",
               "left-[12.5px] md:left-[15.5px] lg:left-[12.5px]": skill.name === "tailwind",
               "left-[6px] md:left-[9px] lg:left-[6px]": skill.name === "typescript",
