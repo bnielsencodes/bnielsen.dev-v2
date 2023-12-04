@@ -7,9 +7,9 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         <li className="nav-item">
           <a
             className={clsx("nav-link underlineAnimation focus:opacity-80", {
-              "nav-link-underline-color-dark outline-dark-theme text-neutral-500":
+              "underline-dark outline-dark-theme text-neutral-500":
                 darkMode,
-              "nav-link-underline-color-light outline-light-theme text-neutral-200":
+              "underline-light outline-light-theme text-neutral-200":
                 !darkMode,
             })}
             href="#about-section"
