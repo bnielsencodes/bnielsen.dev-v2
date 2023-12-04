@@ -140,7 +140,7 @@ export default function ProjectsSection({
         >
           <h3
             className={clsx(
-              "text-4xl font-bold md:text-[2.39rem] lg:text-5xl",
+              "text-[2.3rem] leading-[2.5rem] font-bold md:text-[2.39rem] lg:text-5xl",
               {
                 "text-neutral-500 ": darkMode,
                 "text-neutral-200 ": !darkMode,
