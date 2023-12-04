@@ -42,7 +42,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
       </h2>
       <div
         className={clsx(
-          "pt-[6px] mb-2 font-sans text-[0.92rem] text-center md:text-[0.95rem]",
+          "pt-[6px] mb-2 font-sans text-center md:text-[0.95rem]",
           {
             "text-neutral-500 opacity-70": darkMode,
             "text-neutral-300": !darkMode,
