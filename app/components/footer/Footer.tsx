@@ -8,7 +8,7 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
   return (
     <footer
       className={clsx(
-        "relative flex items-start justify-between h-40 pt-8 pl-2 md:pr-[22px] md:pl-4",
+        "relative flex items-start justify-between h-40 pt-8 pl-3 md:pr-[22px] md:pl-4",
         {
           "bg-neutral-100": darkMode,
           "bg-neutral-600": !darkMode,

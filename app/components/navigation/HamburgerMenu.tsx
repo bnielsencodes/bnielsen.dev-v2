@@ -12,9 +12,9 @@ export default function HamburgerMenu({
   return (
     <button
       className={clsx(
-        "fixed top-2 right-2 z-50 flex flex-col justify-around items-end gap-1 w-[40px] h-[40px] py-3 px-2 md:right-0 md:-translate-x-4 group lg:hidden",
+        "fixed top-2 right-0 z-50 flex flex-col justify-around items-end gap-1 w-[40px] h-[40px] py-3 px-2 -translate-x-3 md:-translate-x-4 group lg:hidden",
         {
-          "items-center md:-translate-x-[8px] md:transition-transform md:duration-500":
+          "items-center -translate-x-[7px] transition-transform duration-500 md:-translate-x-[8px]":
             showMobileNav,
           "outline-dark-theme border-2 border-neutral-500":
             showMobileNav && darkMode,

@@ -38,10 +38,10 @@ export default function MobileNav({
       }}
     >
       {/* top container */}
-      <div className="flex items-center justify-start w-full h-full pl-4">
+      <div className="flex items-center justify-start w-full h-full pl-4 md:pl-5">
         <ul
           className={clsx(
-            "flex flex-col justify-between h-[17rem] pb-[25px] text-[4.35rem] md:h-[19rem] md:text-[5.5rem]",
+            "flex flex-col justify-between h-[17.5rem] pb-[25px] text-[4.85rem] md:h-[19rem] md:text-[5.5rem]",
             {
               "text-neutral-500": darkMode,
               "text-neutral-200": !darkMode,
@@ -132,7 +132,7 @@ export default function MobileNav({
       </div>
 
       {/* bottom container */}
-      <div className="flex items-center justify-between w-full h-[75px] pr-[11px] pl-4 pb-4">
+      <div className="flex items-center justify-between w-full h-[75px] pl-4 pr-2 pb-4 md:pl-5 md:pr-3">
         <Socials parent="mobile nav" direction="row" {...{ darkMode }} />
         <ThemeToggle {...{ darkMode, toggleTheme }} />
       </div>
