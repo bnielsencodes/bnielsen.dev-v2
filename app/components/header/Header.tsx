@@ -15,7 +15,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
       {/* header intro */}
       <h1
         className={clsx(
-          "w-full mt-5 mb-5 text-[2.579rem] font-extrabold leading-[1.15em] tracking-wide text-left md:w-[731px] md:text-[59px] lg:w-[850px] lg:mt-[1.6rem] lg:text-[66px] lg:leading-[1.1em] xl:w-[985px] xl:text-[76px] xl:font-extrabold xl:leading-[5.35rem] xl:text-center",
+          "w-full mt-5 mb-5 text-[11vw] font-extrabold leading-[1.15em] tracking-wide text-left md:text-[7.6vw] lg:w-[850px] lg:mt-[1.6rem] lg:text-[66px] lg:leading-[1.1em] xl:w-[985px] xl:text-[76px] xl:font-extrabold xl:leading-[5.35rem] xl:text-center",
           {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,
