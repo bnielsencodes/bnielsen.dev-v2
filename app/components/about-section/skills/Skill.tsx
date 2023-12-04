@@ -61,12 +61,12 @@ export default function Skill({
 
       {/* hover border for figma skill */}
       {skill.name === "figma" && (
-        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-figmaBorder md:w-[96px] md:h-[95px]"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-figmaBorder md:w-[96px] lg:w-[90px]"></div>
       )}
 
       {/* hover border for vite skill */}
       {skill.name === "vite" && (
-        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-viteBorder md:w-[96px] md:h-[95px]"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-viteBorder md:w-[96px] lg:w-[90px]"></div>
       )}
     </div>
   );
