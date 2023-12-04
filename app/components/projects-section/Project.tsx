@@ -86,7 +86,7 @@ export default function ProjectsSection({
                 "drop-shadow-custom": !darkMode,
                 "w-[calc(100%-40px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
                   project.name === "Audiophile",
-                "w-[calc(100%-150px)] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[210px]":
+                "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[210px]":
                   project.name === "SecurePass",
               })}
               src={project.img}
@@ -97,10 +97,10 @@ export default function ProjectsSection({
             />
           ) : project.name === "Quizzical" ||
             project.name === "Dictionary Web App" ? (
-            <div className="relative w-[335px] h-[400px] mx-auto md:w-[346px] md:mx-0 xl:w-[400px]">
+            <div className="relative w-[calc(100%-40px)] max-w-[440px] h-[calc(100vw+25px)] mx-auto md:w-[346px] md:h-[400px] md:mx-0 xl:w-[400px]">
               <Image
                 className={clsx(
-                  "absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[179.75px] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
+                  "absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[55%] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
                   {
                     "drop-shadow-none": darkMode,
                     "drop-shadow-custom": !darkMode,
@@ -114,7 +114,7 @@ export default function ProjectsSection({
               />
               <Image
                 className={clsx(
-                  "absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[179.75px] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
+                  "absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[55%] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
                   {
                     "drop-shadow-none": darkMode,
                     "drop-shadow-custom": !darkMode,
