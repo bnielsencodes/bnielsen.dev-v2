@@ -59,8 +59,8 @@ textarea:focus,
   background: rgb(39, 39, 39);
   background: linear-gradient(
     180deg,
-    rgba(39, 39, 39, 1) 0%,
-    rgba(39, 39, 39, 1) 100%
+    rgba(39, 39, 39, 0.95) 0%,
+    rgba(39, 39, 39, 0.95) 100%
   );
 }
 
