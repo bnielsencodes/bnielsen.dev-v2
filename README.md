@@ -61,6 +61,7 @@
 - [How to add favicon in Next.js 13](https://stackoverflow.com/questions/75674866/adding-favicon-to-nextjs-13-beta-no-pages-folder)
 - [Allow some HTML elements in markdown](https://stackoverflow.com/questions/72368493/allow-some-html-elements-in-markdown-lint-rule-md033-in-visual-studio-code)
 - [Display images side-by-side in GitHub readme.md](https://stackoverflow.com/questions/24319505/how-can-one-display-images-side-by-side-in-a-github-readme-md)
+- [How to use :not() selector in Tailwind CSS](https://stackoverflow.com/questions/61455473/how-to-use-not-in-tailwind-css)
 
 ## Author
 
