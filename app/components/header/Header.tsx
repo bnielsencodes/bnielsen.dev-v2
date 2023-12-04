@@ -7,7 +7,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
   return (
     <header
       id="header"
-      className="relative flex flex-col items-start justify-center h-screen pt-[56px] px-[13px] mb-[6px] lg:items-start lg:pl-[31px] xl:items-center"
+      className="relative flex flex-col items-start justify-center h-screen pt-[56px] px-[13px] mb-[6px] md:px-5 lg:items-start lg:pl-[19px] xl:items-center"
     >
       {/* Avatar image on larger screens */}
       <Avatar parent="header" />
@@ -15,7 +15,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
       {/* header intro */}
       <h1
         className={clsx(
-          "w-[349px] mt-5 mb-5 text-[2.64rem] font-extrabold leading-[1.1em] tracking-wide text-left md:w-[704px] md:text-[57px] md:leading-[3.85rem] lg:w-[850px] lg:mt-[1.6rem] lg:text-[66px] lg:leading-[1.1em] xl:w-[985px] xl:text-[76px] xl:font-extrabold xl:leading-[5.35rem] xl:text-center",
+          "w-[349px] mt-5 mb-5 text-[2.64rem] font-extrabold leading-[1.1em] tracking-wide text-left md:w-[731px] md:text-[59px] lg:w-[850px] lg:mt-[1.6rem] lg:text-[66px] lg:leading-[1.1em] xl:w-[985px] xl:text-[76px] xl:font-extrabold xl:leading-[5.35rem] xl:text-center",
           {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,
