@@ -20,7 +20,7 @@ export default function Tooltip({
               "-top-[17px]": skill.name === "figma" || skill.name === "vite",
               "left-[20px] md:left-[23px] lg:left-[20px]":
                 skill.name === "html" || skill.name === "react",
-              "left-[25px] md:left-[28px] lg:left-[25px]": skill.name === "css",
+              "left-[25px] md:left-[28px] lg:left-[25px]": skill.name === "css" || skill.name === "vite",
               "left-[20px] md:left-[23px]": skill.name === "figma",
               "left-[27px] md:left-[32px] lg:left-[29px]": skill.name === "git",
               "left-[10px] md:left-[13px] lg:left-[10px]": skill.name === "javascript",
@@ -29,7 +29,6 @@ export default function Tooltip({
               "left-[23px] md:left-[26px] lg:left-[23px]": skill.name === "sass",
               "left-[13px] md:left-[16px] lg:left-[13px]": skill.name === "tailwind",
               "left-[7px] md:left-[10px] lg:left-[7px]": skill.name === "typescript",
-              "left-[25px] md:left-[28px] lg:left-[25px]": skill.name === "vite",
             }
           )}
         >
