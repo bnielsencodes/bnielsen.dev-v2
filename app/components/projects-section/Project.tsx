@@ -86,7 +86,7 @@ export default function ProjectsSection({
                 "drop-shadow-custom": !darkMode,
                 "w-[calc(100%-40px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
                   project.name === "Audiophile",
-                "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[210px]":
+                "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[235px]":
                   project.name === "SecurePass",
               })}
               src={project.img}
