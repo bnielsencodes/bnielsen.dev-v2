@@ -153,7 +153,7 @@ skill tooltip label bg gradients (figma and vite)
 .label--figma {
   background: hsla(156, 86%, 41%, 1);
   background: linear-gradient(
-    90deg,
+    0deg,
     hsla(156, 86%, 41%, 1) 0%,
     hsla(267, 85%, 64%, 1) 50%,
     hsla(13, 80%, 51%, 1) 100%
@@ -163,7 +163,7 @@ skill tooltip label bg gradients (figma and vite)
 .label--vite {
   background: hsla(281, 99%, 60%, 1);
   background: linear-gradient(
-    135deg,
+    315deg,
     hsla(281, 99%, 60%, 1) 0%,
     hsla(195, 100%, 63%, 1) 100%
   );
