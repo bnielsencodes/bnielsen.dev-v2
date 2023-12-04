@@ -19,9 +19,8 @@ export default function Tooltip({
             {
               "-top-[17px]": skill.name === "figma" || skill.name === "vite",
               "left-[20px] md:left-[23px] lg:left-[20px]":
-                skill.name === "html" || skill.name === "react",
+                skill.name === "figma" || skill.name === "html" || skill.name === "react",
               "left-[25px] md:left-[28px] lg:left-[25px]": skill.name === "css" || skill.name === "vite",
-              "left-[20px] md:left-[23px] lg:left-[20px]": skill.name === "figma",
               "left-[27px] md:left-[32px] lg:left-[28px]": skill.name === "git",
               "left-[10px] md:left-[13px] lg:left-[10px]": skill.name === "javascript",
               "left-[17px] md:left-[20px] lg:left-[17px]": skill.name === "next",
