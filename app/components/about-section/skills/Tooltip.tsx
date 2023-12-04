@@ -35,10 +35,8 @@ export default function Tooltip({
           {/* arrow */}
           <div
             className={clsx(
-              "absolute -z-10 top-auto -bottom-1 left-1/2 w-0 h-0 border-t-[5px] border-x-[5px] -ml-[5px]",
+              "absolute -z-10 top-auto -bottom-1 left-1/2 w-0 h-0 border-t-[5px] border-x-[5px] border-x-[transparent] -ml-[5px]",
               {
-                "border-x-neutral-200": darkMode,
-                "border-x-neutral-500": !darkMode,
                 "border-t-tech-next": skill.name === "next" && darkMode,
                 "border-t-[#000]": skill.name === "next" && !darkMode,
                 "border-t-tech-vite-400": skill.name === "vite" && darkMode,
