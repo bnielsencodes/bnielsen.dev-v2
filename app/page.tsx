@@ -14,7 +14,7 @@ import Footer from "./components/footer/Footer";
 import clsx from "clsx";
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(false);
 
   //
   //
