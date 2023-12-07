@@ -49,7 +49,7 @@ const projects = [
     id: 3,
     name: "Quizzical",
     description:
-      "A quiz app that fetches data from The Open Trivia Database API.",
+      "A quiz app that fetches data from The Open Trivia Database API. Multiple game options like difficulty and category are available for the user to choose from.",
     img: quizzicalStartMockup,
     alt: "Quizzical web app start page displayed on an Apple iPad.",
     img2: quizzicalQuizMockup,
@@ -63,7 +63,7 @@ const projects = [
     id: 4,
     name: "Dictionary Web App",
     description:
-      "A dictionary web app that fetches data from the Free Dictionary API.",
+      "A dictionary web app that fetches data from the Free Dictionary API.,
     img: dictionaryDarkMockup,
     alt: "Dictionary web app displayed in dark theme mode on an Apple iPad.",
     img2: dictionaryLightMockup,
