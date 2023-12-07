@@ -48,7 +48,7 @@ export default function ProjectsSection({
         )}
       ></div>
       {/* project container */}
-      <div
+      <article
         className={clsx(
           "md:flex md:items-center md:justify-center md:gap-7 md:mx-auto lg:gap-12",
           {
@@ -166,7 +166,7 @@ export default function ProjectsSection({
 
           <ProjectButtons {...{ darkMode, liveSite, sourceCode }} />
         </div>
-      </div>
+      </article>
     </div>
   );
 }
