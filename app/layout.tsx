@@ -19,16 +19,6 @@ const roboto = Roboto({
 const mosk = localFont({
   src: [
     {
-      path: "../public/assets/fonts/Mosk_Thin-100.ttf",
-      weight: "100",
-      style: "thin",
-    },
-    {
-      path: "../public/assets/fonts/Mosk_Extra-Light-200.ttf",
-      weight: "200",
-      style: "extra-light",
-    },
-    {
       path: "../public/assets/fonts/Mosk_Light-300.ttf",
       weight: "300",
       style: "light",
