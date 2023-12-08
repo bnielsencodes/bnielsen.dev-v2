@@ -24,13 +24,20 @@ export default function Tooltip({
               "left-[18px] md:left-[22px] lg:left-[17.5px] xl:left-[19px]":
                 skill.name === "figma",
               "left-[28px] md:left-[31px] lg:left-[27px]": skill.name === "git",
-              "left-[7px] md:left-[10px] lg:left-[7px] xl:left-[6px]": skill.name === "javascript",
-              "left-[16px] md:left-[19px] lg:left-[16px]": skill.name === "next",
-              "left-[2.75px] md:left-[5.5px] lg:left-[3px]": skill.name === "postgresql",
-              "left-[22px] md:left-[25px] lg:left-[22px]": skill.name === "sass",
-              "left-[12.5px] md:left-[15.5px] lg:left-[12.5px]": skill.name === "tailwind",
-              "left-[6px] md:left-[9px] lg:left-[6px]": skill.name === "typescript",
-              "left-[24.5px] md:left-[27.5px] lg:left-[24.5px]": skill.name === "vite",
+              "left-[7px] md:left-[10px] lg:left-[7px] xl:left-[6px]":
+                skill.name === "javascript",
+              "left-[16px] md:left-[19px] lg:left-[16px]":
+                skill.name === "next",
+              "left-[2.75px] md:left-[5.5px] lg:left-[3px]":
+                skill.name === "postgresql",
+              "left-[22px] md:left-[25px] lg:left-[22px]":
+                skill.name === "sass",
+              "left-[12.5px] md:left-[15.5px] lg:left-[12.5px]":
+                skill.name === "tailwind",
+              "left-[6px] md:left-[9px] lg:left-[6px]":
+                skill.name === "typescript",
+              "left-[24.5px] md:left-[27.5px] lg:left-[24.5px]":
+                skill.name === "vite",
             }
           )}
         >
@@ -68,7 +75,9 @@ export default function Tooltip({
                 "text-neutral-600": skill.name === "vite" && !darkMode,
                 "text-neutral-500":
                   (skill.name === "css" && !darkMode) ||
+                  (skill.name === "figma" && !darkMode) ||
                   (skill.name === "git" && !darkMode) ||
+                  (skill.name === "html" && !darkMode) ||
                   (skill.name === "postgresql" && !darkMode) ||
                   (skill.name === "sass" && !darkMode) ||
                   (skill.name === "typescript" && !darkMode),
