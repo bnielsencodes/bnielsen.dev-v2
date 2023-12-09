@@ -1,5 +1,5 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import waveDarkTop from "@/public/assets/images/section-dividers/wave-dark-top.svg";
 import waveLightTop from "@/public/assets/images/section-dividers/wave-light-top.svg";
@@ -15,6 +15,19 @@ import clsx from "clsx";
 
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
+
+  //
+  //
+
+  // prefers dark mode
+  useEffect(() => {
+    const prefersDark = window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+    if (prefersDark) {
+      setDarkMode(true);
+    }
+  }, []);
 
   //
   //
