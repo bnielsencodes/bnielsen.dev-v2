@@ -28,47 +28,45 @@ export default function Home() {
   //
 
   return (
-    <>
-      <main
-        className={clsx("", {
-          "bg-neutral-100": darkMode,
-          "bg-neutral-600": !darkMode,
-        })}
-      >
-        <NavBar {...{ darkMode, toggleTheme }} />
-        <Header {...{ darkMode }} />
-        {/* section top divider */}
-        <Image
-          className="w-full -mb-[1px]"
-          src={darkMode ? waveDarkTop : waveLightTop}
-          alt="wave section divider"
-          width="0"
-          height="0"
-          sizes="100vw"
-        />
-        <AboutSection {...{ darkMode }} />
-        {/* section bottom divider */}
-        <Image
-          className="w-full -mt-[1px]"
-          src={darkMode ? waveDarkBottom : waveLightBottom}
-          alt="wave section divider"
-          width="0"
-          height="0"
-          sizes="100vw"
-        />
-        <ProjectsSection {...{ darkMode }} />
-        {/* section top divider */}
-        <Image
-          className="w-full -mb-[1px]"
-          src={darkMode ? waveDarkTop : waveLightTop}
-          alt="wave section divider"
-          width="0"
-          height="0"
-          sizes="100vw"
-        />
-        <ContactSection {...{ darkMode }} />
-        <Footer {...{ darkMode }} />
-      </main>
-    </>
+    <main
+      className={clsx("", {
+        "bg-neutral-100": darkMode,
+        "bg-neutral-600": !darkMode,
+      })}
+    >
+      <NavBar {...{ darkMode, toggleTheme }} />
+      <Header {...{ darkMode }} />
+      {/* section top divider */}
+      <Image
+        className="w-full -mb-[1px]"
+        src={darkMode ? waveDarkTop : waveLightTop}
+        alt="wave section divider"
+        width="0"
+        height="0"
+        sizes="100vw"
+      />
+      <AboutSection {...{ darkMode }} />
+      {/* section bottom divider */}
+      <Image
+        className="w-full -mt-[1px]"
+        src={darkMode ? waveDarkBottom : waveLightBottom}
+        alt="wave section divider"
+        width="0"
+        height="0"
+        sizes="100vw"
+      />
+      <ProjectsSection {...{ darkMode }} />
+      {/* section top divider */}
+      <Image
+        className="w-full -mb-[1px]"
+        src={darkMode ? waveDarkTop : waveLightTop}
+        alt="wave section divider"
+        width="0"
+        height="0"
+        sizes="100vw"
+      />
+      <ContactSection {...{ darkMode }} />
+      <Footer {...{ darkMode }} />
+    </main>
   );
 }
