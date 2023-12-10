@@ -7,14 +7,14 @@ export default function NotFound() {
   const [darkMode, setDarkMode] = useState(false);
 
   // prefers dark mode
-  useEffect(() => {
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    if (prefersDark) {
-      setDarkMode(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const prefersDark = window.matchMedia(
+  //     "(prefers-color-scheme: dark)"
+  //   ).matches;
+  //   if (prefersDark) {
+  //     setDarkMode(true);
+  //   }
+  // }, []);
 
   return (
     <div

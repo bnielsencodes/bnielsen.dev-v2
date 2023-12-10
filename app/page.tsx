@@ -20,14 +20,14 @@ export default function Home() {
   //
 
   // prefers dark mode
-  useEffect(() => {
-    const prefersDark = window.matchMedia(
-      "(prefers-color-scheme: dark)"
-    ).matches;
-    if (prefersDark) {
-      setDarkMode(true);
-    }
-  }, []);
+  // useEffect(() => {
+  //   const prefersDark = window.matchMedia(
+  //     "(prefers-color-scheme: dark)"
+  //   ).matches;
+  //   if (prefersDark) {
+  //     setDarkMode(true);
+  //   }
+  // }, []);
 
   //
   //
