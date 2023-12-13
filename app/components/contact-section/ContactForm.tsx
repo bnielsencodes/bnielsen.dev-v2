@@ -101,7 +101,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           {/* name input */}
           <input
             className={clsx(
-              "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent select-text placeholder:text-neutral-400",
+              "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent select-text appearance-none placeholder:text-neutral-400",
               {
                 "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
                 "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200":
@@ -119,7 +119,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           {/* email input */}
           <input
             className={clsx(
-              "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent select-text placeholder:text-neutral-400",
+              "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent select-text appearance-none placeholder:text-neutral-400",
               {
                 "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
                 "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200":
@@ -137,7 +137,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           {/* message input */}
           <textarea
             className={clsx(
-              "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none select-text placeholder:text-neutral-400",
+              "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none select-text appearance-none placeholder:text-neutral-400",
               {
                 "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
                 "shadow-custom outline-light-theme bg-neutral-600 text-neutral-200":
