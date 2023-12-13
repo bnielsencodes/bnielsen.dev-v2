@@ -21,6 +21,10 @@ export default function Socials({
       className="h-auto hover:opacity-90 focus:opacity-80"
     >
       <a
+        className={clsx("", {
+          "outline-dark-theme": darkMode,
+          "outline-light-theme": !darkMode,
+        })}
         href={social.link}
         aria-label={`Link to Brandon's ${social.name}`}
         title={`Link to Brandon's ${social.name}`}
