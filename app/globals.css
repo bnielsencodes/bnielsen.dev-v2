@@ -14,8 +14,6 @@ body::-webkit-scrollbar {
   }
 }
 
-input:focus,
-textarea:focus,
 .outline-dark-theme:focus {
   outline: 2px solid #1aa7ff;
 }
