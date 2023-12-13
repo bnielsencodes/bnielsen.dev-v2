@@ -41,8 +41,8 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           you think I could help bring to life,{" "}
           <a
             className={clsx("", {
-              "text-accent-200 hover:opacity-90": darkMode,
-              "text-accent-100 hover:opacity-[0.85]": !darkMode,
+              "outline-dark-theme text-accent-200 hover:opacity-90": darkMode,
+              "outline-light-theme text-accent-100 hover:opacity-[0.85]": !darkMode,
             })}
             href="#contact-section"
           >
@@ -53,8 +53,8 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           or lurking on the{" "}
           <a
             className={clsx("", {
-              "text-accent-200 hover:opacity-90": darkMode,
-              "text-accent-100 hover:opacity-[0.85]": !darkMode,
+              "outline-dark-theme text-accent-200 hover:opacity-90": darkMode,
+              "outline-light-theme text-accent-100 hover:opacity-[0.85]": !darkMode,
             })}
             href="https://reddit.com"
             target="_blank"
