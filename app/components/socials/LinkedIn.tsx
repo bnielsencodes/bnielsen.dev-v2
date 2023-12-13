@@ -11,8 +11,6 @@ export default function LinkedIn({
     <>
       <svg
         className={clsx("", {
-          "outline-dark-theme": darkMode,
-          "outline-light-theme": !darkMode,
           "w-[56px] h-[56px] md:w-[60px] md:h-[60px] lg:w-12 lg:h-12":
             parent === "mobile nav" || parent === "header",
           "md:w-[48px] md:h-[48px] lg:w-[52px] lg:h-[52px]":
