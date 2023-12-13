@@ -6,7 +6,7 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
       <ul className="lg:flex lg:justify-between">
         <li className="nav-item">
           <a
-            className={clsx("nav-link underlineAnimation focus:opacity-80", {
+            className={clsx("nav-link underlineAnimation rounded-lg focus:opacity-80", {
               "underline-dark outline-dark-theme text-neutral-500":
                 darkMode,
               "underline-light outline-light-theme text-neutral-200":
@@ -20,7 +20,7 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         </li>
         <li className="nav-item">
           <a
-            className={clsx("nav-link underlineAnimation focus:opacity-80", {
+            className={clsx("nav-link underlineAnimation rounded-lg focus:opacity-80", {
               "underline-dark outline-dark-theme text-neutral-500": darkMode,
               "underline-light outline-light-theme text-neutral-200": !darkMode,
             })}
@@ -32,7 +32,7 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         </li>
         <li className="nav-item">
           <a
-            className={clsx("nav-link underlineAnimation focus:opacity-80", {
+            className={clsx("nav-link underlineAnimation rounded-lg focus:opacity-80", {
               "underline-dark outline-dark-theme text-neutral-500": darkMode,
               "underline-light outline-light-theme text-neutral-200": !darkMode,
             })}
