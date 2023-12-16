@@ -24,12 +24,15 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
       >
         Hello, I&apos;m Brandon Nielsen, a{" "}
         <span
-          className={clsx("", {
-            "header-text-stroke--dark text-neutral-100 lg:hover:text-neutral-600":
-              darkMode,
-            "header-text-stroke text-neutral-600 lg:hover:text-neutral-100":
-              !darkMode,
-          })}
+          className={clsx(
+            "motion-reduce:transition-none motion-reduce:hover:transform-none",
+            {
+              "header-text-stroke--dark text-neutral-100 lg:hover:text-neutral-600":
+                darkMode,
+              "header-text-stroke text-neutral-600 lg:hover:text-neutral-100":
+                !darkMode,
+            }
+          )}
         >
           Web Developer
         </span>

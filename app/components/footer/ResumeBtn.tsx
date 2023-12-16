@@ -3,10 +3,13 @@ import clsx from "clsx";
 export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
   return (
     <a
-      className={clsx("flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-lg group md:pl-[6px]", {
-        "outline-dark-theme": darkMode,
-        "outline-light-theme": !darkMode,
-      })}
+      className={clsx(
+        "flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-lg group md:pl-[6px]",
+        {
+          "outline-dark-theme": darkMode,
+          "outline-light-theme": !darkMode,
+        }
+      )}
       href="https://drive.google.com/file/d/1w_IJIBJAFWBYLJnMi7mtPcMgNvjRvxDR/view?usp=sharing"
       aria-label="View my resume"
       target="_blank"
@@ -48,10 +51,13 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
       </svg>
 
       <p
-        className={clsx("font-sans text-[18px] tracking-wide", {
-          "text-neutral-500 group-hover:text-customHoverDark": darkMode,
-          "text-neutral-200 group-hover:text-customHoverLight": !darkMode,
-        })}
+        className={clsx(
+          "font-sans text-[18px] tracking-wide motion-reduce:transition-none motion-reduce:hover:transform-none",
+          {
+            "text-neutral-500 group-hover:text-customHoverDark": darkMode,
+            "text-neutral-200 group-hover:text-customHoverLight": !darkMode,
+          }
+        )}
       >
         view my resume
       </p>

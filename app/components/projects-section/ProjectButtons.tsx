@@ -12,10 +12,13 @@ export default function ProjectButtons({
   return (
     <div className="flex gap-4">
       <a
-        className={clsx("btn btn-primary", {
-          "btn-light outline-dark-theme": darkMode,
-          "btn-dark shadow-custom outline-light-theme": !darkMode,
-        })}
+        className={clsx(
+          "btn btn-primary motion-reduce:transition-none motion-reduce:hover:transform-none",
+          {
+            "btn-light outline-dark-theme": darkMode,
+            "btn-dark shadow-custom outline-light-theme": !darkMode,
+          }
+        )}
         href={liveSite}
         target="_blank"
         title="View website"
@@ -23,10 +26,13 @@ export default function ProjectButtons({
         Live Site
       </a>
       <a
-        className={clsx("btn btn-secondary", {
-          "btn-dark outline-dark-theme": darkMode,
-          "btn-light shadow-custom outline-light-theme": !darkMode,
-        })}
+        className={clsx(
+          "btn btn-secondary motion-reduce:transition-none motion-reduce:hover:transform-none",
+          {
+            "btn-dark outline-dark-theme": darkMode,
+            "btn-light shadow-custom outline-light-theme": !darkMode,
+          }
+        )}
         href={sourceCode}
         target="_blank"
         title="View on GitHub"

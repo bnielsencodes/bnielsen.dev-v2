@@ -17,7 +17,7 @@ export default function ThemeToggle({
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 50 50"
         className={clsx(
-          "absolute top-1/2 left-1/2 w-[68px] h-[68px] fill-neutral-500 -translate-x-1/2 -translate-y-1/2 duration-300 transition-all lg:w-[32px] lg:h-[32px] lg:group-hover:fill-darkThemeHover",
+          "absolute top-1/2 left-1/2 w-[68px] h-[68px] fill-neutral-500 -translate-x-1/2 -translate-y-1/2 duration-300 transition-all lg:w-[32px] lg:h-[32px] lg:group-hover:fill-darkThemeHover lg:motion-reduce:transition-none lg:motion-reduce:hover:transform-none",
           {
             "opacity-100 scale-100 rotate-0": darkMode,
             "opacity-0 scale-95 -rotate-[15deg]": !darkMode,
@@ -32,7 +32,7 @@ export default function ThemeToggle({
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 50 50"
         className={clsx(
-          "absolute top-1/2 left-1/2 w-[72px] h-[72px] fill-neutral-200 -translate-x-1/2 -translate-y-1/2 duration-300 transition-all lg:w-[32px] lg:h-[32px] lg:group-hover:fill-lightThemeHover",
+          "absolute top-1/2 left-1/2 w-[72px] h-[72px] fill-neutral-200 -translate-x-1/2 -translate-y-1/2 duration-300 transition-all lg:w-[32px] lg:h-[32px] lg:group-hover:fill-lightThemeHover lg:motion-reduce:transition-none lg:motion-reduce:hover:transform-none",
           {
             "opacity-0 scale-95 -rotate-[15deg]": darkMode,
             "opacity-100 scale-100 rotate-0": !darkMode,
