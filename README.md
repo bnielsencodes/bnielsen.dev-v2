@@ -62,6 +62,7 @@
 - [Allow some HTML elements in markdown](https://stackoverflow.com/questions/72368493/allow-some-html-elements-in-markdown-lint-rule-md033-in-visual-studio-code)
 - [Display images side-by-side in GitHub readme.md](https://stackoverflow.com/questions/24319505/how-can-one-display-images-side-by-side-in-a-github-readme-md)
 - [How to use :not() selector in Tailwind CSS](https://stackoverflow.com/questions/61455473/how-to-use-not-in-tailwind-css)
+- [How to transition gradients](https://css-tricks.com/transitioning-gradients/)
 
 ## Author
 
