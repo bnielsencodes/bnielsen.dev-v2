@@ -158,16 +158,36 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         </fieldset>
 
         {/* submit button */}
-        <div className="w-full h-auto text-end">
+        <div className="relative w-full h-auto text-end">
           <ValidationError
             className="absolute top-[6px] left-[14px] text-warning"
             errors={state.errors}
           />
           <button
             className={clsx("btn btn-primary font-semibold", {
-              "btn-light outline-dark-theme": darkMode,
-              "btn-dark shadow-custom outline-light-theme": !darkMode,
+              "btn-light outline-dark-theme text-neutral-200": darkMode,
+              "btn-dark shadow-custom outline-light-theme text-neutral-500":
+                !darkMode,
             })}
+            type="submit"
+            disabled={state.submitting}
+            onClick={() => {
+              console.log(state);
+              console.log(state.errors);
+            }}
+          >
+            Submit
+          </button>
+
+          {/* hover transition button */}
+          <button
+            className={clsx(
+              "btn btn-primary absolute top-0 right-0 font-semibold",
+              {
+                "btn-light-alt outline-dark-theme text-neutral-200": darkMode,
+                "btn-dark-alt outline-light-theme text-neutral-500": !darkMode,
+              }
+            )}
             type="submit"
             disabled={state.submitting}
             onClick={() => {
