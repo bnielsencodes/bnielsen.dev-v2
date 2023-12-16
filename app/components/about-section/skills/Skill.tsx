@@ -21,17 +21,15 @@ export default function Skill({
     <div className="relative group">
       <div
         className={clsx(
-          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 hover:cursor-help",
+          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 group hover:cursor-help",
           {
             "bg-gradient-to-b from-neutral-200 to-neutral-100": darkMode,
             "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-custom":
               !darkMode,
             "group-hover:border-tech-css-100": skill.name === "css",
-            "group-hover:w-[86px] group-hover:h-[91px] group-hover:mt-[2px] group-hover:ml-[2px] group-hover:rounded-md group-hover:border-0 md:group-hover:w-[92px] lg:group-hover:w-[86px]":
+            "w-[85.5px] h-[91px] border-none rounded-md mt-[2px] ml-[2px] md:w-[92px] lg:w-[85px] xl:w-[85.5px]":
               skill.name === "figma" || skill.name === "vite",
-            "group-hover:border-neutral-600":
-              (skill.name === "figma" && !darkMode) ||
-              (skill.name === "vite" && !darkMode),
+            "all-transition": skill.name !== "figma" && skill.name !== "vite",
             "group-hover:border-tech-git": skill.name === "git",
             "group-hover:border-tech-html-200": skill.name === "html",
             "group-hover:border-tech-javascript-100":
@@ -61,12 +59,20 @@ export default function Skill({
 
       {/* hover border for figma skill */}
       {skill.name === "figma" && (
-        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-figmaBorder md:w-[96px] lg:w-[90px]"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] rounded-lg bg-neutral-300 opacity-100 all-transition group-hover:opacity-0 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
+      )}
+      {/* hover transition border for figma skill */}
+      {skill.name === "figma" && (
+        <div className="content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] rounded-lg opacity-0 group-hover:opacity-100 all-transition animate-figmaBorder md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
       )}
 
       {/* hover border for vite skill */}
       {skill.name === "vite" && (
-        <div className="content-[''] absolute top-0 left-0 z-0 hidden w-[90px] h-[95px] rounded-lg group-hover:block animate-viteBorder md:w-[96px] lg:w-[90px]"></div>
+        <div className="content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] rounded-lg bg-neutral-300 opacity-100 all-transition group-hover:opacity-0 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
+      )}
+      {/* hover transition border for vite skill */}
+      {skill.name === "vite" && (
+        <div className="content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] rounded-lg opacity-0 group-hover:opacity-100 all-transition animate-viteBorder md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
       )}
     </div>
   );
