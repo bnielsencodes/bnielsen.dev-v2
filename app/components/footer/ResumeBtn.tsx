@@ -51,13 +51,10 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
       </svg>
 
       <p
-        className={clsx(
-          "font-sans text-[18px] tracking-wide motion-reduce:transition-none motion-reduce:hover:transform-none",
-          {
-            "text-neutral-500 group-hover:text-customHoverDark": darkMode,
-            "text-neutral-200 group-hover:text-customHoverLight": !darkMode,
-          }
-        )}
+        className={clsx("font-sans text-[18px] tracking-wide", {
+          "text-neutral-500 group-hover:text-customHoverDark": darkMode,
+          "text-neutral-200 group-hover:text-customHoverLight": !darkMode,
+        })}
       >
         view my resume
       </p>

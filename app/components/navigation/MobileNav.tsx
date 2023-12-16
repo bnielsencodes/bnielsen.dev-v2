@@ -63,13 +63,10 @@ export default function MobileNav({
             {/* about link */}
             <li className="flex items-center h-[83px]">
               <a
-                className={clsx(
-                  "font-extrabold motion-reduce:transition-none motion-reduce:active:transform-none",
-                  {
-                    "active:text-accent-200": darkMode,
-                    "active:text-accent-100": !darkMode,
-                  }
-                )}
+                className={clsx("font-extrabold", {
+                  "active:text-accent-200": darkMode,
+                  "active:text-accent-100": !darkMode,
+                })}
                 onClick={() => toggleMobileNav()}
                 href="#about-section"
                 aria-label="about"
@@ -94,13 +91,10 @@ export default function MobileNav({
             {/* portfolio link */}
             <li className="flex items-center h-[83px]">
               <a
-                className={clsx(
-                  "font-extrabold motion-reduce:transition-none motion-reduce:active:transform-none",
-                  {
-                    "active:text-accent-200": darkMode,
-                    "active:text-accent-100": !darkMode,
-                  }
-                )}
+                className={clsx("font-extrabold", {
+                  "active:text-accent-200": darkMode,
+                  "active:text-accent-100": !darkMode,
+                })}
                 onClick={() => toggleMobileNav()}
                 href="#projects-section"
                 aria-label="projects"
@@ -125,13 +119,10 @@ export default function MobileNav({
             {/* contact link */}
             <li className="flex items-center h-[83px]">
               <a
-                className={clsx(
-                  "font-extrabold motion-reduce:transition-none motion-reduce:active:transform-none",
-                  {
-                    "active:text-accent-200": darkMode,
-                    "active:text-accent-100": !darkMode,
-                  }
-                )}
+                className={clsx("font-extrabold", {
+                  "active:text-accent-200": darkMode,
+                  "active:text-accent-100": !darkMode,
+                })}
                 onClick={() => toggleMobileNav()}
                 href="#contact-section"
                 aria-label="contact"
