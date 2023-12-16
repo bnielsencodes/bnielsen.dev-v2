@@ -85,13 +85,12 @@ const config: Config = {
       xl: "1440px",
     },
     extend: {
-      boxShadow: {
-        navbar: "0 2px 4px rgb(0 0 0 / 15%)",
-        custom: "4px 4px 10px 0px rgb(0 0 0 / 0.35)",
-        skillHover: "4px 4px 10px 2px rgb(0 0 0 / 0.35)",
-      },
-      dropShadow: {
-        custom: "4px 4px 10px rgb(0 0 0 / 0.35)",
+      animation: {
+        morph: "morph 8s ease-in-out infinite",
+        figmaBorder:
+          "figmaBgGradientAnimation 3.75s ease 0s infinite normal none",
+        viteBorder:
+          "viteBgGradientAnimation 3.75s ease 0s infinite normal none",
       },
       backgroundImage: {
         avatar: "url('/assets/images/avatar.jpeg')",
@@ -99,12 +98,13 @@ const config: Config = {
       borderRadius: {
         morph: "60% 40% 30% 70%/60% 30% 70% 40%",
       },
-      animation: {
-        morph: "morph 8s ease-in-out infinite",
-        figmaBorder:
-          "figmaBgGradientAnimation 3.75s ease 0s infinite normal none",
-        viteBorder:
-          "viteBgGradientAnimation 3.75s ease 0s infinite normal none",
+      boxShadow: {
+        navbar: "0 2px 4px rgb(0 0 0 / 15%)",
+        custom: "4px 4px 10px 0px rgb(0 0 0 / 0.35)",
+        skillHover: "4px 4px 10px 2px rgb(0 0 0 / 0.35)",
+      },
+      dropShadow: {
+        custom: "4px 4px 10px rgb(0 0 0 / 0.35)",
       },
       fill: {
         darkThemeHover: "rgb(237 237 237 / 0.87)",
