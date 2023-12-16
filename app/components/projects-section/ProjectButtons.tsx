@@ -10,32 +10,51 @@ export default function ProjectButtons({
   sourceCode: string;
 }) {
   return (
-    <div className="flex gap-4">
+    <div className="relative flex gap-4">
+      {/* live site button */}
       <a
-        className={clsx(
-          "btn btn-primary motion-reduce:transition-none motion-reduce:hover:transform-none",
-          {
-            "btn-light outline-dark-theme": darkMode,
-            "btn-dark shadow-custom outline-light-theme": !darkMode,
-          }
-        )}
+        className={clsx("btn btn-primary", {
+          "btn-light outline-dark-theme text-neutral-200": darkMode,
+          "btn-dark shadow-custom outline-light-theme text-neutral-500":
+            !darkMode,
+        })}
         href={liveSite}
         target="_blank"
-        title="View website"
       >
         Live Site
       </a>
+      {/* live site HOVER button */}
       <a
-        className={clsx(
-          "btn btn-secondary motion-reduce:transition-none motion-reduce:hover:transform-none",
-          {
-            "btn-dark outline-dark-theme": darkMode,
-            "btn-light shadow-custom outline-light-theme": !darkMode,
-          }
-        )}
+        className={clsx("btn btn-primary absolute top-0 left-0", {
+          "btn-light-alt outline-dark-theme text-neutral-200": darkMode,
+          "btn-dark-alt outline-light-theme text-neutral-500": !darkMode,
+        })}
+        href={liveSite}
+        target="_blank"
+      >
+        Live Site
+      </a>
+
+      {/* source code button */}
+      <a
+        className={clsx("btn btn-secondary", {
+          "btn-dark outline-dark-theme text-neutral-500": darkMode,
+          "btn-light shadow-custom outline-light-theme text-neutral-200":
+            !darkMode,
+        })}
         href={sourceCode}
         target="_blank"
-        title="View on GitHub"
+      >
+        Source Code
+      </a>
+      {/* source code HOVER button */}
+      <a
+        className={clsx("btn btn-secondary absolute top-0 right-0", {
+          "btn-dark-alt outline-dark-theme text-neutral-500": darkMode,
+          "btn-light-alt outline-light-theme text-neutral-200": !darkMode,
+        })}
+        href={sourceCode}
+        target="_blank"
       >
         Source Code
       </a>

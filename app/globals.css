@@ -22,6 +22,19 @@ body::-webkit-scrollbar {
   outline: 2px solid #005e98;
 }
 
+/* custom transitions */
+.all-transition {
+  transition: all 0.2s linear;
+}
+
+.fill-transition {
+  transition: fill 0.2s linear;
+}
+
+.opacity-transition {
+  transition: opacity 0.2s linear;
+}
+
 /* buttons */
 
 .btn {
@@ -29,6 +42,7 @@ body::-webkit-scrollbar {
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
   font-weight: 700;
+  transition: all 0.2s linear;
 }
 
 .btn-primary {
@@ -49,17 +63,12 @@ body::-webkit-scrollbar {
     rgba(39, 39, 39, 1) 0%,
     rgba(26, 26, 26, 1) 100%
   );
-  color: #ededed;
+  opacity: 1;
 }
 
 .btn-dark:hover,
 .btn-dark:focus {
-  background: rgb(39, 39, 39);
-  background: linear-gradient(
-    180deg,
-    rgba(39, 39, 39, 0.95) 0%,
-    rgba(39, 39, 39, 0.95) 100%
-  );
+  opacity: 0;
 }
 
 .btn-light {
@@ -69,17 +78,42 @@ body::-webkit-scrollbar {
     rgba(237, 237, 237, 1) 0%,
     rgba(250, 250, 250, 1) 100%
   );
-  color: #272727;
+  opacity: 1;
 }
 
 .btn-light:hover,
 .btn-light:focus {
+  opacity: 0;
+}
+
+.btn-dark-alt {
+  background: rgb(39, 39, 39);
+  background: linear-gradient(
+    180deg,
+    rgba(39, 39, 39, 0.95) 0%,
+    rgba(39, 39, 39, 0.95) 100%
+  );
+  opacity: 0;
+}
+
+.btn-dark-alt:hover,
+.btn-dark-alt:focus {
+  opacity: 1;
+}
+
+.btn-light-alt {
   background: rgb(228, 228, 228);
   background: linear-gradient(
     180deg,
-    rgba(228, 228, 228, 1) 0%,
-    rgba(228, 228, 228, 1) 100%
+    rgba(228, 228, 228, 0.95) 0%,
+    rgba(228, 228, 228, 0.95) 100%
   );
+  opacity: 0;
+}
+
+.btn-light-alt:hover,
+.btn-light-alt:focus {
+  opacity: 1;
 }
 
 /* nav-list styling */

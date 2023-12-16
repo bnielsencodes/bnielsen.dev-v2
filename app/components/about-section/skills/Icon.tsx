@@ -29,32 +29,32 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-css-100"
+              className="fill-transition group-hover:fill-tech-css-100"
               fill="#ededed"
               d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-200"
+              className="fill-transition group-hover:fill-tech-css-200"
               fill="#ededed"
               d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-300"
+              className="fill-transition group-hover:fill-tech-css-300"
               fill="#1a1a1a"
               d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-400"
+              className="fill-transition group-hover:fill-tech-css-400"
               fill="#1a1a1a"
               d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-300"
+              className="fill-transition group-hover:fill-tech-css-300"
               fill="#1a1a1a"
               d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-400"
+              className="fill-transition group-hover:fill-tech-css-400"
               fill="#1a1a1a"
               d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
             ></path>
@@ -70,32 +70,32 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-css-100"
+              className="fill-transition group-hover:fill-tech-css-100"
               fill="#272727"
               d="M18.814 114.123L8.76 1.352h110.48l-10.064 112.754-45.243 12.543-45.119-12.526z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-200"
+              className="fill-transition group-hover:fill-tech-css-200"
               fill="#272727"
               d="M64.001 117.062l36.559-10.136 8.601-96.354h-45.16v106.49z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-300"
+              className="fill-transition group-hover:fill-tech-css-300"
               fill="#fafafa"
               d="M64.001 51.429h18.302l1.264-14.163H64.001V23.435h34.682l-.332 3.711-3.4 38.114h-30.95V51.429z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-400"
+              className="fill-transition group-hover:fill-tech-css-400"
               fill="#fafafa"
               d="M64.083 87.349l-.061.018-15.403-4.159-.985-11.031H33.752l1.937 21.717 28.331 7.863.063-.018v-14.39z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-300"
+              className="fill-transition group-hover:fill-tech-css-300"
               fill="#fafafa"
               d="M81.127 64.675l-1.666 18.522-15.426 4.164v14.39l28.354-7.858.208-2.337 2.406-26.881H81.127z"
             ></path>
             <path
-              className="group-hover:fill-tech-css-400"
+              className="fill-transition group-hover:fill-tech-css-400"
               fill="#fafafa"
               d="M64.048 23.435v13.831H30.64l-.277-3.108-.63-7.012-.331-3.711h34.646zm-.047 27.996v13.831H48.792l-.277-3.108-.631-7.012-.33-3.711h16.447z"
             ></path>
@@ -115,31 +115,31 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-figma-100 group-hover:stroke-tech-figma-100"
+              className="fill-transition group-hover:fill-tech-figma-100 group-hover:stroke-tech-figma-100"
               fill="#ededed"
               stroke="#1a1a1a"
               d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-200 group-hover:stroke-tech-figma-200"
+              className="fill-transition group-hover:fill-tech-figma-200 group-hover:stroke-tech-figma-200"
               fill="#ededed"
               stroke="#1a1a1a"
               d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-300 group-hover:stroke-tech-figma-300"
+              className="fill-transition group-hover:fill-tech-figma-300 group-hover:stroke-tech-figma-300"
               fill="#ededed"
               stroke="#1a1a1a"
               d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-400 group-hover:stroke-tech-figma-400"
+              className="fill-transition group-hover:fill-tech-figma-400 group-hover:stroke-tech-figma-400"
               fill="#ededed"
               stroke="#1a1a1a"
               d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-500 group-hover:stroke-tech-figma-500"
+              className="fill-transition group-hover:fill-tech-figma-500 group-hover:stroke-tech-figma-500"
               fill="#fafafa"
               stroke="#1a1a1a"
               d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"
@@ -154,31 +154,31 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-figma-100 group-hover:stroke-tech-figma-100"
+              className="fill-transition group-hover:fill-tech-figma-100 group-hover:stroke-tech-figma-100"
               fill="#272727"
               stroke="#fafafa"
               d="M45.5 129c11.9 0 21.5-9.6 21.5-21.5V86H45.5C33.6 86 24 95.6 24 107.5S33.6 129 45.5 129zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-200 group-hover:stroke-tech-figma-200"
+              className="fill-transition group-hover:fill-tech-figma-200 group-hover:stroke-tech-figma-200"
               fill="#272727"
               stroke="#fafafa"
               d="M24 64.5C24 52.6 33.6 43 45.5 43H67v43H45.5C33.6 86 24 76.4 24 64.5zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-300 group-hover:stroke-tech-figma-300"
+              className="fill-transition group-hover:fill-tech-figma-300 group-hover:stroke-tech-figma-300"
               fill="#272727"
               stroke="#fafafa"
               d="M24 21.5C24 9.6 33.6 0 45.5 0H67v43H45.5C33.6 43 24 33.4 24 21.5zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-400 group-hover:stroke-tech-figma-400"
+              className="fill-transition group-hover:fill-tech-figma-400 group-hover:stroke-tech-figma-400"
               fill="#272727"
               stroke="#fafafa"
               d="M67 0h21.5C100.4 0 110 9.6 110 21.5S100.4 43 88.5 43H67zm0 0"
             ></path>
             <path
-              className="group-hover:fill-tech-figma-500 group-hover:stroke-tech-figma-500"
+              className="fill-transition group-hover:fill-tech-figma-500 group-hover:stroke-tech-figma-500"
               fill="#272727"
               stroke="#fafafa"
               d="M110 64.5c0 11.9-9.6 21.5-21.5 21.5S67 76.4 67 64.5 76.6 43 88.5 43 110 52.6 110 64.5zm0 0"
@@ -199,7 +199,7 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-git"
+              className="fill-transition group-hover:fill-tech-git"
               fill="#ededed"
               d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
             ></path>
@@ -213,7 +213,7 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-git"
+              className="fill-transition group-hover:fill-tech-git"
               fill="#272727"
               d="M124.737 58.378L69.621 3.264c-3.172-3.174-8.32-3.174-11.497 0L46.68 14.71l14.518 14.518c3.375-1.139 7.243-.375 9.932 2.314 2.703 2.706 3.461 6.607 2.294 9.993l13.992 13.993c3.385-1.167 7.292-.413 9.994 2.295 3.78 3.777 3.78 9.9 0 13.679a9.673 9.673 0 01-13.683 0 9.677 9.677 0 01-2.105-10.521L68.574 47.933l-.002 34.341a9.708 9.708 0 012.559 1.828c3.778 3.777 3.778 9.898 0 13.683-3.779 3.777-9.904 3.777-13.679 0-3.778-3.784-3.778-9.905 0-13.683a9.65 9.65 0 013.167-2.11V47.333a9.581 9.581 0 01-3.167-2.111c-2.862-2.86-3.551-7.06-2.083-10.576L41.056 20.333 3.264 58.123a8.133 8.133 0 000 11.5l55.117 55.114c3.174 3.174 8.32 3.174 11.499 0l54.858-54.858a8.135 8.135 0 00-.001-11.501z"
             ></path>
@@ -235,22 +235,22 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-html-100"
+              className="fill-transition group-hover:fill-tech-html-100"
               fill="#ededed"
               d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
             ></path>
             <path
-              className="group-hover:fill-tech-html-200"
+              className="fill-transition group-hover:fill-tech-html-200"
               fill="#ededed"
               d="M64 116.8l36.378-10.086 8.559-95.878H64z"
             ></path>
             <path
-              className="group-hover:fill-tech-html-300"
+              className="fill-transition group-hover:fill-tech-html-300"
               fill="#1a1a1a"
               d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
             ></path>
             <path
-              className="group-hover:fill-tech-html-400"
+              className="fill-transition group-hover:fill-tech-html-400"
               fill="#1a1a1a"
               d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
             ></path>
@@ -266,22 +266,22 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-html-100"
+              className="fill-transition group-hover:fill-tech-html-100"
               fill="#272727"
               d="M19.037 113.876L9.032 1.661h109.936l-10.016 112.198-45.019 12.48z"
             ></path>
             <path
-              className="group-hover:fill-tech-html-200"
+              className="fill-transition group-hover:fill-tech-html-200"
               fill="#272727"
               d="M64 116.8l36.378-10.086 8.559-95.878H64z"
             ></path>
             <path
-              className="group-hover:fill-tech-html-300"
+              className="fill-transition group-hover:fill-tech-html-300"
               fill="#fafafa"
               d="M64 52.455H45.788L44.53 38.361H64V24.599H29.489l.33 3.692 3.382 37.927H64zm0 35.743l-.061.017-15.327-4.14-.979-10.975H33.816l1.928 21.609 28.193 7.826.063-.017z"
             ></path>
             <path
-              className="group-hover:fill-tech-html-400"
+              className="fill-transition group-hover:fill-tech-html-400"
               fill="#fafafa"
               d="M63.952 52.455v13.763h16.947l-1.597 17.849-15.35 4.143v14.319l28.215-7.82.207-2.325 3.234-36.233.335-3.696h-3.708zm0-27.856v13.762h33.244l.276-3.092.628-6.978.329-3.692z"
             ></path>
@@ -303,12 +303,12 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-javascript-100"
+              className="fill-transition group-hover:fill-tech-javascript-100"
               fill="#ededed"
               d="M1.408 1.408h125.184v125.185H1.408z"
             ></path>
             <path
-              className="group-hover:fill-tech-javascript-200"
+              className="fill-transition group-hover:fill-tech-javascript-200"
               fill="#1a1a1a"
               d="M116.347 96.736c-.917-5.711-4.641-10.508-15.672-14.981-3.832-1.761-8.104-3.022-9.377-5.926-.452-1.69-.512-2.642-.226-3.665.821-3.32 4.784-4.355 7.925-3.403 2.023.678 3.938 2.237 5.093 4.724 5.402-3.498 5.391-3.475 9.163-5.879-1.381-2.141-2.118-3.129-3.022-4.045-3.249-3.629-7.676-5.498-14.756-5.355l-3.688.477c-3.534.893-6.902 2.748-8.877 5.235-5.926 6.724-4.236 18.492 2.975 23.335 7.104 5.332 17.54 6.545 18.873 11.531 1.297 6.104-4.486 8.08-10.234 7.378-4.236-.881-6.592-3.034-9.139-6.949-4.688 2.713-4.688 2.713-9.508 5.485 1.143 2.499 2.344 3.63 4.26 5.795 9.068 9.198 31.76 8.746 35.83-5.176.165-.478 1.261-3.666.38-8.581zM69.462 58.943H57.753l-.048 30.272c0 6.438.333 12.34-.714 14.149-1.713 3.558-6.152 3.117-8.175 2.427-2.059-1.012-3.106-2.451-4.319-4.485-.333-.584-.583-1.036-.667-1.071l-9.52 5.83c1.583 3.249 3.915 6.069 6.902 7.901 4.462 2.678 10.459 3.499 16.731 2.059 4.082-1.189 7.604-3.652 9.448-7.401 2.666-4.915 2.094-10.864 2.07-17.444.06-10.735.001-21.468.001-32.237z"
             ></path>
@@ -324,7 +324,7 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-javascript-100"
+              className="fill-transition group-hover:fill-tech-javascript-100"
               fill="#272727"
               d="M1.408 1.408h125.184v125.185H1.408z"
             ></path>
@@ -341,7 +341,7 @@ export default function CSS({
         <>
           {/* dark theme */}
           <svg
-            className={clsx("group-hover:fill-tech-next", {
+            className={clsx("fill-transition group-hover:fill-tech-next", {
               "inline-block": darkMode,
               hidden: !darkMode,
             })}
@@ -352,7 +352,7 @@ export default function CSS({
           </svg>
           {/* light theme */}
           <svg
-            className={clsx("group-hover:fill-[#000]", {
+            className={clsx("fill-transition group-hover:fill-[#000]", {
               hidden: darkMode,
               "inline-block": !darkMode,
             })}
@@ -376,7 +376,7 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-postgresql"
+              className="fill-transition group-hover:fill-tech-postgresql"
               fill="#ededed"
               fillRule="evenodd"
               clipRule="evenodd"
@@ -392,7 +392,7 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-postgresql"
+              className="fill-transition group-hover:fill-tech-postgresql"
               fill="#272727"
               fillRule="evenodd"
               clipRule="evenodd"
@@ -413,7 +413,10 @@ export default function CSS({
             })}
             viewBox="0 0 128 128"
           >
-            <g className="group-hover:fill-tech-react" fill="#ededed">
+            <g
+              className="fill-transition group-hover:fill-tech-react"
+              fill="#ededed"
+            >
               <circle cx="64" cy="64" r="11.4"></circle>
               <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path>
             </g>
@@ -426,7 +429,10 @@ export default function CSS({
             })}
             viewBox="0 0 128 128"
           >
-            <g className="group-hover:fill-tech-react" fill="#272727">
+            <g
+              className="fill-transition group-hover:fill-tech-react"
+              fill="#272727"
+            >
               <circle cx="64" cy="64" r="11.4"></circle>
               <path d="M107.3 45.2c-2.2-.8-4.5-1.6-6.9-2.3.6-2.4 1.1-4.8 1.5-7.1 2.1-13.2-.2-22.5-6.6-26.1-1.9-1.1-4-1.6-6.4-1.6-7 0-15.9 5.2-24.9 13.9-9-8.7-17.9-13.9-24.9-13.9-2.4 0-4.5.5-6.4 1.6-6.4 3.7-8.7 13-6.6 26.1.4 2.3.9 4.7 1.5 7.1-2.4.7-4.7 1.4-6.9 2.3C8.2 50 1.4 56.6 1.4 64s6.9 14 19.3 18.8c2.2.8 4.5 1.6 6.9 2.3-.6 2.4-1.1 4.8-1.5 7.1-2.1 13.2.2 22.5 6.6 26.1 1.9 1.1 4 1.6 6.4 1.6 7.1 0 16-5.2 24.9-13.9 9 8.7 17.9 13.9 24.9 13.9 2.4 0 4.5-.5 6.4-1.6 6.4-3.7 8.7-13 6.6-26.1-.4-2.3-.9-4.7-1.5-7.1 2.4-.7 4.7-1.4 6.9-2.3 12.5-4.8 19.3-11.4 19.3-18.8s-6.8-14-19.3-18.8zM92.5 14.7c4.1 2.4 5.5 9.8 3.8 20.3-.3 2.1-.8 4.3-1.4 6.6-5.2-1.2-10.7-2-16.5-2.5-3.4-4.8-6.9-9.1-10.4-13 7.4-7.3 14.9-12.3 21-12.3 1.3 0 2.5.3 3.5.9zM81.3 74c-1.8 3.2-3.9 6.4-6.1 9.6-3.7.3-7.4.4-11.2.4-3.9 0-7.6-.1-11.2-.4-2.2-3.2-4.2-6.4-6-9.6-1.9-3.3-3.7-6.7-5.3-10 1.6-3.3 3.4-6.7 5.3-10 1.8-3.2 3.9-6.4 6.1-9.6 3.7-.3 7.4-.4 11.2-.4 3.9 0 7.6.1 11.2.4 2.2 3.2 4.2 6.4 6 9.6 1.9 3.3 3.7 6.7 5.3 10-1.7 3.3-3.4 6.6-5.3 10zm8.3-3.3c1.5 3.5 2.7 6.9 3.8 10.3-3.4.8-7 1.4-10.8 1.9 1.2-1.9 2.5-3.9 3.6-6 1.2-2.1 2.3-4.2 3.4-6.2zM64 97.8c-2.4-2.6-4.7-5.4-6.9-8.3 2.3.1 4.6.2 6.9.2 2.3 0 4.6-.1 6.9-.2-2.2 2.9-4.5 5.7-6.9 8.3zm-18.6-15c-3.8-.5-7.4-1.1-10.8-1.9 1.1-3.3 2.3-6.8 3.8-10.3 1.1 2 2.2 4.1 3.4 6.1 1.2 2.2 2.4 4.1 3.6 6.1zm-7-25.5c-1.5-3.5-2.7-6.9-3.8-10.3 3.4-.8 7-1.4 10.8-1.9-1.2 1.9-2.5 3.9-3.6 6-1.2 2.1-2.3 4.2-3.4 6.2zM64 30.2c2.4 2.6 4.7 5.4 6.9 8.3-2.3-.1-4.6-.2-6.9-.2-2.3 0-4.6.1-6.9.2 2.2-2.9 4.5-5.7 6.9-8.3zm22.2 21l-3.6-6c3.8.5 7.4 1.1 10.8 1.9-1.1 3.3-2.3 6.8-3.8 10.3-1.1-2.1-2.2-4.2-3.4-6.2zM31.7 35c-1.7-10.5-.3-17.9 3.8-20.3 1-.6 2.2-.9 3.5-.9 6 0 13.5 4.9 21 12.3-3.5 3.8-7 8.2-10.4 13-5.8.5-11.3 1.4-16.5 2.5-.6-2.3-1-4.5-1.4-6.6zM7 64c0-4.7 5.7-9.7 15.7-13.4 2-.8 4.2-1.5 6.4-2.1 1.6 5 3.6 10.3 6 15.6-2.4 5.3-4.5 10.5-6 15.5C15.3 75.6 7 69.6 7 64zm28.5 49.3c-4.1-2.4-5.5-9.8-3.8-20.3.3-2.1.8-4.3 1.4-6.6 5.2 1.2 10.7 2 16.5 2.5 3.4 4.8 6.9 9.1 10.4 13-7.4 7.3-14.9 12.3-21 12.3-1.3 0-2.5-.3-3.5-.9zM96.3 93c1.7 10.5.3 17.9-3.8 20.3-1 .6-2.2.9-3.5.9-6 0-13.5-4.9-21-12.3 3.5-3.8 7-8.2 10.4-13 5.8-.5 11.3-1.4 16.5-2.5.6 2.3 1 4.5 1.4 6.6zm9-15.6c-2 .8-4.2 1.5-6.4 2.1-1.6-5-3.6-10.3-6-15.6 2.4-5.3 4.5-10.5 6-15.5 13.8 4 22.1 10 22.1 15.6 0 4.7-5.8 9.7-15.7 13.4z"></path>
             </g>
@@ -446,7 +452,7 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-sass"
+              className="fill-transition group-hover:fill-tech-sass"
               fill="#ededed"
               fillRule="evenodd"
               clipRule="evenodd"
@@ -462,7 +468,7 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-sass"
+              className="fill-transition group-hover:fill-tech-sass"
               fill="#272727"
               fillRule="evenodd"
               clipRule="evenodd"
@@ -487,7 +493,7 @@ export default function CSS({
             height="55"
           >
             <path
-              className="group-hover:fill-tech-tailwind"
+              className="fill-transition group-hover:fill-tech-tailwind"
               fill="#ededed"
               d="m12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15m-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15z"
             />
@@ -504,7 +510,7 @@ export default function CSS({
             height="55"
           >
             <path
-              className="group-hover:fill-tech-tailwind"
+              className="fill-transition group-hover:fill-tech-tailwind"
               fill="#272727"
               d="m12 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.31.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15m-5 6c-2.67 0-4.33 1.33-5 4 1-1.33 2.17-1.83 3.5-1.5.76.19 1.3.74 1.91 1.35.98 1 2.09 2.15 4.59 2.15 2.67 0 4.33-1.33 5-4-1 1.33-2.17 1.83-3.5 1.5-.76-.19-1.3-.74-1.91-1.35-.98-1-2.09-2.15-4.59-2.15z"
             />
@@ -524,12 +530,12 @@ export default function CSS({
             viewBox="0 0 128 128"
           >
             <path
-              className="group-hover:fill-tech-typescript-100"
+              className="fill-transition group-hover:fill-tech-typescript-100"
               fill="#1a1a1a"
               d="M22.67 47h99.67v73.67H22.67z"
             ></path>
             <path
-              className="group-hover:fill-tech-typescript-200"
+              className="fill-transition group-hover:fill-tech-typescript-200"
               fill="#ededed"
               data-name="original"
               d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H56.66v46.23H45.15V69.26H28.88v-5a49.19 49.19 0 01.12-5.17C29.08 59 39 59 51 59h21.83z"
@@ -545,7 +551,7 @@ export default function CSS({
           >
             <path fill="#fafafa" d="M22.67 47h99.67v73.67H22.67z"></path>
             <path
-              className="group-hover:fill-tech-typescript-200"
+              className="fill-transition group-hover:fill-tech-typescript-200"
               fill="#272727"
               data-name="original"
               d="M1.5 63.91v62.5h125v-125H1.5zm100.73-5a15.56 15.56 0 017.82 4.5 20.58 20.58 0 013 4c0 .16-5.4 3.81-8.69 5.85-.12.08-.6-.44-1.13-1.23a7.09 7.09 0 00-5.87-3.53c-3.79-.26-6.23 1.73-6.21 5a4.58 4.58 0 00.54 2.34c.83 1.73 2.38 2.76 7.24 4.86 8.95 3.85 12.78 6.39 15.16 10 2.66 4 3.25 10.46 1.45 15.24-2 5.2-6.9 8.73-13.83 9.9a38.32 38.32 0 01-9.52-.1 23 23 0 01-12.72-6.63c-1.15-1.27-3.39-4.58-3.25-4.82a9.34 9.34 0 011.15-.73L82 101l3.59-2.08.75 1.11a16.78 16.78 0 004.74 4.54c4 2.1 9.46 1.81 12.16-.62a5.43 5.43 0 00.69-6.92c-1-1.39-3-2.56-8.59-5-6.45-2.78-9.23-4.5-11.77-7.24a16.48 16.48 0 01-3.43-6.25 25 25 0 01-.22-8c1.33-6.23 6-10.58 12.82-11.87a31.66 31.66 0 019.49.26zm-29.34 5.24v5.12H56.66v46.23H45.15V69.26H28.88v-5a49.19 49.19 0 01.12-5.17C29.08 59 39 59 51 59h21.83z"
@@ -560,8 +566,8 @@ export default function CSS({
           {/* dark theme */}
           <svg
             className={clsx("vite-animation", {
-              "inline-block": darkMode,
-              hidden: !darkMode,
+              // "inline-block": darkMode,
+              // hidden: !darkMode,
             })}
             width="55px"
             height="55px"
@@ -574,9 +580,10 @@ export default function CSS({
               fill="url(#paint0_linear)"
             />
             <path
+              className="all-transition"
               d="M22.2644 2.0069l-9.7253 1.9056a.3571.3571 0 00-.2879.3294l-.5982 10.1038c-.014.238.2045.4227.4367.3691l2.7077-.6248c.2534-.0585.4823.1647.4302.4194l-.8044 3.9393c-.0542.265.1947.4918.4536.4132l1.6724-.5082c.2593-.0787.5084.1487.4536.414l-1.2784 6.1877c-.08.387.4348.598.6495.2662L16.5173 25 24.442 9.1848c.1327-.2648-.096-.5667-.387-.5106l-2.787.5379c-.262.0505-.4848-.1934-.4109-.4497l1.8191-6.306c.074-.2568-.1496-.5009-.4118-.4495z"
               fill="url(#paint1_linear)"
-              stroke={showViteBg ? "none" : "#1a1a1a"}
+              stroke={showViteBg ? "none" : "#272727"}
             />
             <defs id="defs50">
               <linearGradient
@@ -589,13 +596,13 @@ export default function CSS({
                 gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
               >
                 <stop
-                  // className="group-hover:from-tech-vite-100"
+                  className="all-transition"
                   offset="0"
                   stopColor={showViteBg ? "#41d1ff" : "#ededed"}
                   id="stop38"
                 />
                 <stop
-                  // className="group-hover:to-tech-vite-200"
+                  className="all-transition"
                   offset="1"
                   stopColor={showViteBg ? "#bd34fe" : "#ededed"}
                   id="stop40"
@@ -611,19 +618,19 @@ export default function CSS({
                 gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
               >
                 <stop
-                  // className="group-hover:from-tech-vite-300"
+                  className="all-transition"
                   offset="0"
                   stopColor={showViteBg ? "#ffea83" : "#ededed"}
                   id="stop43"
                 />
                 <stop
-                  // className="group-hover:via-tech-vite-400"
+                  className="all-transition"
                   offset=".0833"
                   stopColor={showViteBg ? "#ffdd35" : "#ededed"}
                   id="stop45"
                 />
                 <stop
-                  // className="group-hover:to-tech-vite-500"
+                  className="all-transition"
                   offset="1"
                   stopColor={showViteBg ? "#ffa800" : "#ededed"}
                   id="stop47"
@@ -636,10 +643,10 @@ export default function CSS({
         <>
           {/* light theme */}
           <svg
-            className={clsx("vite-animation", {
-              hidden: darkMode,
-              "inline-block": !darkMode,
-            })}
+            // className={clsx("", {
+            //   hidden: darkMode,
+            //   "inline-block": !darkMode,
+            // })}
             width="55px"
             height="55px"
             viewBox="0 0 32 32"
@@ -651,6 +658,7 @@ export default function CSS({
               fill="url(#paint0_linear)"
             />
             <path
+              className="all-transition"
               d="M22.2644 2.0069l-9.7253 1.9056a.3571.3571 0 00-.2879.3294l-.5982 10.1038c-.014.238.2045.4227.4367.3691l2.7077-.6248c.2534-.0585.4823.1647.4302.4194l-.8044 3.9393c-.0542.265.1947.4918.4536.4132l1.6724-.5082c.2593-.0787.5084.1487.4536.414l-1.2784 6.1877c-.08.387.4348.598.6495.2662L16.5173 25 24.442 9.1848c.1327-.2648-.096-.5667-.387-.5106l-2.787.5379c-.262.0505-.4848-.1934-.4109-.4497l1.8191-6.306c.074-.2568-.1496-.5009-.4118-.4495z"
               fill="url(#paint1_linear)"
               stroke={showViteBg ? "none" : "#fafafa"}
@@ -666,13 +674,13 @@ export default function CSS({
                 gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
               >
                 <stop
-                  // className="group-hover:from-tech-vite-100"
+                  className="all-transition"
                   offset="0"
                   stopColor={showViteBg ? "#41d1ff" : "#272727"}
                   id="stop38"
                 />
                 <stop
-                  // className="group-hover:to-tech-vite-200"
+                  className="all-transition"
                   offset="1"
                   stopColor={showViteBg ? "#bd34fe" : "#272727"}
                   id="stop40"
@@ -688,19 +696,19 @@ export default function CSS({
                 gradientTransform="matrix(.07142 0 0 .07142 1.3398 1.8944)"
               >
                 <stop
-                  // className="group-hover:from-tech-vite-300"
+                  className="all-transition"
                   offset="0"
                   stopColor={showViteBg ? "#ffea83" : "#272727"}
                   id="stop43"
                 />
                 <stop
-                  // className="group-hover:via-tech-vite-400"
+                  className="all-transition"
                   offset=".0833"
                   stopColor={showViteBg ? "#ffdd35" : "#272727"}
                   id="stop45"
                 />
                 <stop
-                  // className="group-hover:to-tech-vite-500"
+                  className="all-transition"
                   offset="1"
                   stopColor={showViteBg ? "#ffa800" : "#272727"}
                   id="stop47"

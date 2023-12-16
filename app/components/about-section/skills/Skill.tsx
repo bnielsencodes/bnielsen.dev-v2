@@ -53,7 +53,7 @@ export default function Skill({
           setShowTooltip(false), setShowViteBg(false);
         }}
       >
-        <Tooltip {...{ darkMode, skill, showTooltip }} />
+        <Tooltip {...{ darkMode, skill }} />
 
         {/* skill icon */}
         <Icon {...{ darkMode, skill, showViteBg }} />
