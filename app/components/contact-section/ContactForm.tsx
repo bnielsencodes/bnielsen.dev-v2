@@ -176,6 +176,8 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
               }
             )}
             type="submit"
+            tabIndex={-1}
+            aria-hidden={true}
             disabled={state.submitting}
             onClick={() => {
               console.log(state);
