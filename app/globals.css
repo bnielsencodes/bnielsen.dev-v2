@@ -169,12 +169,12 @@ body::-webkit-scrollbar {
 /* Gives "web developer" in header intro stroke effect */
 
 .header-text-stroke--dark {
-  -webkit-text-stroke: 1.75px #ededed;
+  -webkit-text-stroke: 1.75px #fafafa;
   color: #1a1a1a;
 }
 
 .header-text-stroke {
-  -webkit-text-stroke: 1.75px #272727;
+  -webkit-text-stroke: 1.75px #1a1a1a;
   color: #fafafa;
 }
 
@@ -226,11 +226,11 @@ skill tooltip label bg gradients (figma and vite)
 
 @media (min-width: 1024px) {
   .header-text-stroke--dark:hover {
-    color: #ededed;
+    color: #fafafa;
   }
 
   .header-text-stroke:hover {
-    color: #272727;
+    color: #1a1a1a;
   }
 }
 
