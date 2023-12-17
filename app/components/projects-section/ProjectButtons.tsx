@@ -10,7 +10,7 @@ export default function ProjectButtons({
   sourceCode: string;
 }) {
   return (
-    <div className="relative flex gap-4">
+    <div className="relative flex gap-4 w-[261px]">
       {/* live site button */}
       <a
         className={clsx("btn btn-primary", {
@@ -49,7 +49,7 @@ export default function ProjectButtons({
       </a>
       {/* source code HOVER button */}
       <a
-        className={clsx("btn btn-secondary absolute top-0 right-0", {
+        className={clsx("btn btn-secondary absolute top-0 right-[0.5px]", {
           "btn-dark-alt outline-dark-theme text-neutral-500": darkMode,
           "btn-light-alt outline-light-theme text-neutral-200": !darkMode,
         })}
