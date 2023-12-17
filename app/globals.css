@@ -173,17 +173,9 @@ body::-webkit-scrollbar {
   color: #1a1a1a;
 }
 
-.header-text-stroke--dark:hover {
-  color: #fafafa;
-}
-
 .header-text-stroke {
   -webkit-text-stroke: 1.75px #272727;
   color: #fafafa;
-}
-
-.header-text-stroke:hover {
-  color: #1a1a1a;
 }
 
 /* 
@@ -234,11 +226,11 @@ skill tooltip label bg gradients (figma and vite)
 
 @media (min-width: 1024px) {
   .header-text-stroke--dark:hover {
-    -webkit-text-stroke: 0px #ededed;
+    color: #ededed;
   }
 
   .header-text-stroke:hover {
-    -webkit-text-stroke: 0px #272727;
+    color: #272727;
   }
 }
 
