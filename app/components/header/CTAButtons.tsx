@@ -7,7 +7,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
       <a
         className={clsx("btn btn-primary focus:opacity-90", {
           "btn-light text-neutral-200": darkMode,
-          "btn-dark shadow-custom text-neutral-500": !darkMode,
+          "btn-dark text-neutral-500 shadow-xl": !darkMode,
         })}
         href="#projects-section"
       >
@@ -30,8 +30,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
       <a
         className={clsx("btn btn-secondary focus:opacity-90", {
           "btn-dark outline-dark-theme text-neutral-500": darkMode,
-          "btn-light shadow-custom outline-light-theme text-neutral-200":
-            !darkMode,
+          "btn-light outline-light-theme text-neutral-200 shadow-xl": !darkMode,
         })}
         href="#contact-section"
       >

@@ -10,7 +10,7 @@ export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
         {
           "outline-dark-theme bg-gradient-to-b from-neutral-200 to-neutral-100 lg:hover:to-neutral-200":
             darkMode,
-          "shadow-custom outline-light-theme bg-gradient-to-b from-neutral-500 to-neutral-600 lg:hover:to-neutral-500":
+          "shadow-xl outline-light-theme bg-gradient-to-b from-neutral-500 to-neutral-600 lg:hover:to-neutral-500":
             !darkMode,
         }
       )}

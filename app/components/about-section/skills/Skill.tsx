@@ -24,7 +24,7 @@ export default function Skill({
           "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 group group-hover:cursor-help",
           {
             "bg-gradient-to-b from-neutral-200 to-neutral-100": darkMode,
-            "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-custom":
+            "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-xl":
               !darkMode,
             "group-hover:border-tech-css-100": skill.name === "css",
             "w-[85.5px] h-[91px] border-none rounded-md mt-[2px] ml-[2px] md:w-[92px] lg:w-[85px] xl:w-[85.5px]":

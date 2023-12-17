@@ -86,8 +86,7 @@ export default function ProjectsSection({
           {project.name === "Audiophile" || project.name === "SecurePass" ? (
             <Image
               className={clsx("relative h-auto", {
-                "drop-shadow-none": darkMode,
-                "drop-shadow-custom": !darkMode,
+                "drop-shadow-2xl": !darkMode,
                 "w-[calc(100%-40px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
                   project.name === "Audiophile",
                 "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[235px]":
@@ -106,8 +105,7 @@ export default function ProjectsSection({
                 className={clsx(
                   "absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[55%] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
                   {
-                    "drop-shadow-none": darkMode,
-                    "drop-shadow-custom": !darkMode,
+                    "drop-shadow-2xl": !darkMode,
                   }
                 )}
                 src={project.img}
@@ -120,8 +118,7 @@ export default function ProjectsSection({
                 className={clsx(
                   "absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[55%] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
                   {
-                    "drop-shadow-none": darkMode,
-                    "drop-shadow-custom": !darkMode,
+                    "drop-shadow-2xl": !darkMode,
                   }
                 )}
                 src={project.img2}
