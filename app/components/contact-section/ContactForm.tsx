@@ -1,8 +1,7 @@
 import React, { FC } from "react";
 import { FormspreeProvider, useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
-import arrowIconDark from "@/public/assets/icons/arrow-right-dark.svg";
-import arrowIconLight from "@/public/assets/icons/arrow-right-light.svg";
+import arrowRight from "@/public/assets/icons/arrow-right.svg";
 import ClipboardCopy from "./ClipboardCopy";
 import clsx from "clsx";
 
@@ -48,25 +47,14 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           )}
         >
           Email me at{" "}
-          {darkMode ? (
-            <Image
-              className="inline w-[12px] h-[12px] ml-[1px] mr-[3px] mb-[2px]"
-              src={arrowIconDark}
-              alt="arrow pointing right"
-              width="0"
-              height="0"
-              sizes="100vw"
-            />
-          ) : !darkMode ? (
-            <Image
-              className="inline w-[12px] h-[12px] ml-[1px] mr-[3px] mb-[2px]"
-              src={arrowIconLight}
-              alt="arrow pointing right"
-              width="0"
-              height="0"
-              sizes="100vw"
-            />
-          ) : null}
+          <Image
+            className="inline w-[21px] h-[21px] ml-[1px] mr-[3px] mb-[2px]"
+            src={arrowRight}
+            alt="arrow pointing right"
+            width="0"
+            height="0"
+            sizes="100vw"
+          />
           {/* large screens */}
           <div className="relative hidden lg:inline-block">
             <ClipboardCopy {...{ darkMode }} />
