@@ -42,16 +42,23 @@ export default function NavBar({
           sizes="100vw"
         />
         <a
-          className={clsx(
-            "opacity-transition text-xl font-bold leading-[0.3px] lg:hover:opacity-90",
-            {
-              "text-neutral-600": darkMode,
-              "text-neutral-100": !darkMode,
-            }
-          )}
+          className={clsx("", {
+            "outline-dark-theme": darkMode,
+            "outline-light-theme": !darkMode,
+          })}
           href="#header"
         >
-          Brandon Nielsen
+          <p
+            className={clsx(
+              "opacity-transition text-xl font-bold leading-[0.3px] lg:hover:opacity-90",
+              {
+                "text-neutral-600": darkMode,
+                "text-neutral-100": !darkMode,
+              }
+            )}
+          >
+            Brandon Nielsen
+          </p>
         </a>
       </div>
 

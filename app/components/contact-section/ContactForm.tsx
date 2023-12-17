@@ -153,9 +153,8 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           />
           <button
             className={clsx("btn btn-primary font-semibold", {
-              "btn-light outline-dark-theme text-neutral-200": darkMode,
-              "btn-dark shadow-custom outline-light-theme text-neutral-500":
-                !darkMode,
+              "btn-light text-neutral-200": darkMode,
+              "btn-dark shadow-custom text-neutral-500": !darkMode,
             })}
             type="submit"
             disabled={state.submitting}
@@ -172,8 +171,8 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
             className={clsx(
               "btn btn-primary absolute top-0 right-0 font-semibold",
               {
-                "btn-light-alt outline-dark-theme text-neutral-200": darkMode,
-                "btn-dark-alt outline-light-theme text-neutral-500": !darkMode,
+                "btn-light-alt text-neutral-200": darkMode,
+                "btn-dark-alt text-neutral-500": !darkMode,
               }
             )}
             type="submit"
