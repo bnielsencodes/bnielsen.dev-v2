@@ -11,7 +11,6 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
             !darkMode,
         })}
         href="#projects-section"
-        title="View work"
       >
         View Work
       </a>
@@ -22,7 +21,6 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
           "btn-dark-alt outline-light-theme text-neutral-500": !darkMode,
         })}
         href="#projects-section"
-        title="View work"
       >
         View Work
       </a>
@@ -35,7 +33,6 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
             !darkMode,
         })}
         href="#contact-section"
-        title="Contact Brandon"
       >
         Contact
       </a>
@@ -46,7 +43,6 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
           "btn-light-alt outline-light-theme text-neutral-200": !darkMode,
         })}
         href="#contact-section"
-        title="Contact Brandon"
       >
         Contact
       </a>
