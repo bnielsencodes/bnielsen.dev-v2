@@ -19,8 +19,6 @@ export default function ProjectButtons({
         })}
         href={liveSite}
         target="_blank"
-        tabIndex={-1}
-        aria-hidden={true}
       >
         Live Site
       </a>
@@ -47,8 +45,6 @@ export default function ProjectButtons({
         })}
         href={sourceCode}
         target="_blank"
-        tabIndex={-1}
-        aria-hidden={true}
       >
         Source Code
       </a>
