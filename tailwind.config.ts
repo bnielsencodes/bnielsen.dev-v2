@@ -21,8 +21,6 @@ const config: Config = {
         200: "#1aa7ff",
       },
       warning: "#cd2c2c",
-      customHoverDark: "rgb(237 237 237 / 0.87)",
-      customHoverLight: "rgb(39 39 39 / 0.87)",
       projects: {
         audiophile: "#d87d4a",
         securepass: "#a4ffaf",
@@ -100,15 +98,6 @@ const config: Config = {
       },
       boxShadow: {
         navbar: "0 2px 4px rgb(0 0 0 / 15%)",
-        custom: "4px 4px 10px 0px rgb(0 0 0 / 0.35)",
-        skillHover: "4px 4px 10px 2px rgb(0 0 0 / 0.35)",
-      },
-      dropShadow: {
-        custom: "4px 4px 10px rgb(0 0 0 / 0.35)",
-      },
-      fill: {
-        darkThemeHover: "rgb(237 237 237 / 0.87)",
-        lightThemeHover: "rgb(39 39 39 / 0.8)",
       },
     },
   },

@@ -21,7 +21,7 @@ export default function Skill({
     <div className="relative group">
       <div
         className={clsx(
-          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 group hover:cursor-help",
+          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 group group-hover:cursor-help",
           {
             "bg-gradient-to-b from-neutral-200 to-neutral-100": darkMode,
             "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-custom":

@@ -33,18 +33,16 @@ export default function ClipboardCopy({ darkMode }: { darkMode: boolean }) {
   return (
     <>
       <button
-        className={clsx("p-0 border-0 rounded-lg hover:cursor-pointer", { 
-            "outline-dark-theme text-accent-200": darkMode,
-            "outline-light-theme text-accent-100": !darkMode
+        className={clsx("p-0 border-0 rounded-lg lg:hover:cursor-pointer", {
+          "outline-dark-theme text-accent-200": darkMode,
+          "outline-light-theme text-accent-100": !darkMode,
         })}
         onClick={handleCopyClick}
         title="Copy to clipboard"
       >
-        <strong>
-          brandon@bnielsen.dev
-        </strong>
+        <strong>brandon@bnielsen.dev</strong>
       </button>
-      
+
       <span className="absolute -top-[10px] -right-[70px] p-[0.5rem] rounded-[0.2rem] ml-4 bg-none text-[13px] tracking-[0.4px] uppercase">
         {isCopied ? "Copied!" : ""}
       </span>

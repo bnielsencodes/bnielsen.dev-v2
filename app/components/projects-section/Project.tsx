@@ -26,10 +26,14 @@ export default function ProjectsSection({
 
   return (
     <div
-      className={clsx("relative mb-40 md:px-6 md:[&:not(:last-of-type)]:mb-60 lg:[&:not(:last-of-type)]:mb-72", {
-        "md:px-[24px]":
-          project.name === "Quizzical" || project.name === "Dictionary Web App",
-      })}
+      className={clsx(
+        "relative mb-40 md:px-6 md:[&:not(:last-of-type)]:mb-60 lg:[&:not(:last-of-type)]:mb-72",
+        {
+          "md:px-[24px]":
+            project.name === "Quizzical" ||
+            project.name === "Dictionary Web App",
+        }
+      )}
     >
       {/* background color container */}
       <div

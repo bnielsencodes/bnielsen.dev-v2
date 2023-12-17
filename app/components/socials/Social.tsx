@@ -17,11 +17,9 @@ export default function Socials({
   parent: string;
 }) {
   return (
-    <li
-      className="h-auto hover:opacity-90 focus:opacity-80"
-    >
+    <li className="h-auto">
       <a
-        className={clsx("", {
+        className={clsx("focus:opacity-80 lg:hover:opacity-80", {
           "outline-dark-theme": darkMode,
           "outline-light-theme": !darkMode,
         })}

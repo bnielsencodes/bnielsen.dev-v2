@@ -9,7 +9,10 @@ export default function ThemeToggle({
 }) {
   return (
     <div
-      className="relative w-[75px] h-[75px] lg:w-[36px] lg:h-[36px] cursor-pointer group"
+      className={clsx(
+        "relative w-[75px] h-[75px] rounded-md group lg:w-[36px] lg:h-[36px] lg:hover:cursor-pointer",
+        { "outline-dark-theme": darkMode, "outline-light-theme": !darkMode }
+      )}
       onClick={toggleTheme}
     >
       {/* sun icon */}
@@ -17,7 +20,7 @@ export default function ThemeToggle({
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 50 50"
         className={clsx(
-          "absolute top-1/2 left-1/2 w-[68px] h-[68px] fill-neutral-500 -translate-x-1/2 -translate-y-1/2 duration-300 all-transition lg:w-[32px] lg:h-[32px] lg:group-hover:fill-darkThemeHover",
+          "absolute top-1/2 left-1/2 w-[68px] h-[68px] fill-neutral-500 -translate-x-1/2 -translate-y-1/2 duration-300 all-transition focus:opacity-80 lg:w-[32px] lg:h-[32px] lg:group-hover:opacity-80",
           {
             "opacity-100 scale-100 rotate-0": darkMode,
             "opacity-0 scale-95 -rotate-[15deg]": !darkMode,
@@ -32,7 +35,7 @@ export default function ThemeToggle({
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 50 50"
         className={clsx(
-          "absolute top-1/2 left-1/2 w-[72px] h-[72px] fill-neutral-200 -translate-x-1/2 -translate-y-1/2 duration-300 all-transitionlg:w-[32px] lg:h-[32px] lg:group-hover:fill-lightThemeHover",
+          "absolute top-1/2 left-1/2 w-[72px] h-[72px] fill-neutral-200 -translate-x-1/2 -translate-y-1/2 duration-300 all-transitionlg:w-[32px] lg:h-[32px] lg:group-hover:opacity-80",
           {
             "opacity-0 scale-95 -rotate-[15deg]": darkMode,
             "opacity-100 scale-100 rotate-0": !darkMode,

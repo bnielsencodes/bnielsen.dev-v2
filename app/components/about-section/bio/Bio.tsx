@@ -40,11 +40,13 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           and creating a smooth seamless user experience. If you have an idea
           you think I could help bring to life,{" "}
           <a
-            className={clsx("opacity-transition", {
-              "outline-dark-theme text-accent-200 hover:opacity-90": darkMode,
-              "outline-light-theme text-accent-100 hover:opacity-[0.85]":
-                !darkMode,
-            })}
+            className={clsx(
+              "opacity-transition rounded-md focus:opacity-80 lg:hover:opacity-80",
+              {
+                "outline-dark-theme text-accent-200": darkMode,
+                "outline-light-theme text-accent-100": !darkMode,
+              }
+            )}
             href="#contact-section"
           >
             feel free to reach out and let&apos;s talk
@@ -53,11 +55,13 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           playing video games, spending time with family, enjoying the outdoors,
           or lurking on the{" "}
           <a
-            className={clsx("opacity-transition", {
-              "outline-dark-theme text-accent-200 hover:opacity-90": darkMode,
-              "outline-light-theme text-accent-100 hover:opacity-[0.85]":
-                !darkMode,
-            })}
+            className={clsx(
+              "opacity-transition rounded-md focus:opacity-80 lg:hover:opacity-80",
+              {
+                "outline-dark-theme text-accent-200": darkMode,
+                "outline-light-theme text-accent-100": !darkMode,
+              }
+            )}
             href="https://reddit.com"
             target="_blank"
           >

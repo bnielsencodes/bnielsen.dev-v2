@@ -6,12 +6,14 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
       <ul className="lg:flex lg:justify-between">
         <li className="nav-item">
           <a
-            className={clsx("nav-link underlineAnimation rounded-lg focus:opacity-80", {
-              "underline-dark outline-dark-theme text-neutral-500":
-                darkMode,
-              "underline-light outline-light-theme text-neutral-200":
-                !darkMode,
-            })}
+            className={clsx(
+              "nav-link underlineAnimation rounded-md focus:opacity-80",
+              {
+                "underline-dark outline-dark-theme text-neutral-500": darkMode,
+                "underline-light outline-light-theme text-neutral-200":
+                  !darkMode,
+              }
+            )}
             href="#about-section"
             aria-label="about"
           >
@@ -20,10 +22,14 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         </li>
         <li className="nav-item">
           <a
-            className={clsx("nav-link underlineAnimation rounded-lg focus:opacity-80", {
-              "underline-dark outline-dark-theme text-neutral-500": darkMode,
-              "underline-light outline-light-theme text-neutral-200": !darkMode,
-            })}
+            className={clsx(
+              "nav-link underlineAnimation rounded-md focus:opacity-80",
+              {
+                "underline-dark outline-dark-theme text-neutral-500": darkMode,
+                "underline-light outline-light-theme text-neutral-200":
+                  !darkMode,
+              }
+            )}
             href="#projects-section"
             aria-label="work"
           >
@@ -32,10 +38,14 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         </li>
         <li className="nav-item">
           <a
-            className={clsx("nav-link underlineAnimation rounded-lg focus:opacity-80", {
-              "underline-dark outline-dark-theme text-neutral-500": darkMode,
-              "underline-light outline-light-theme text-neutral-200": !darkMode,
-            })}
+            className={clsx(
+              "nav-link underlineAnimation rounded-md focus:opacity-80",
+              {
+                "underline-dark outline-dark-theme text-neutral-500": darkMode,
+                "underline-light outline-light-theme text-neutral-200":
+                  !darkMode,
+              }
+            )}
             href="#contact-section"
             aria-label="contact"
           >

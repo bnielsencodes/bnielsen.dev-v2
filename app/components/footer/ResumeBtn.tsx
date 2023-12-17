@@ -4,7 +4,7 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
   return (
     <a
       className={clsx(
-        "flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-lg group md:pl-[6px]",
+        "flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-md group md:pl-[6px]",
         {
           "outline-dark-theme": darkMode,
           "outline-light-theme": !darkMode,
@@ -52,10 +52,13 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
       </svg>
 
       <p
-        className={clsx("font-sans text-[18px] tracking-wide", {
-          "text-neutral-500 group-hover:text-customHoverDark": darkMode,
-          "text-neutral-200 group-hover:text-customHoverLight": !darkMode,
-        })}
+        className={clsx(
+          "font-sans text-[18px] tracking-wide lg:group-hover:opacity-90",
+          {
+            "text-neutral-500": darkMode,
+            "text-neutral-200": !darkMode,
+          }
+        )}
       >
         view my resume
       </p>
