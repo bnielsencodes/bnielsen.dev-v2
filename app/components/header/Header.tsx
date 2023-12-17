@@ -15,7 +15,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
       {/* header intro */}
       <h1
         className={clsx(
-          "w-full mt-5 mb-5 text-[11vw] font-extrabold leading-[1.15em] tracking-wide text-left md:text-[7.6vw] lg:w-[850px] lg:mt-[1.6rem] lg:text-[66px] lg:leading-[1.1em] lg:text-center xl:w-[985px] xl:text-[76px] xl:font-extrabold xl:leading-[5.35rem]",
+          "all-transition w-full mt-5 mb-5 text-[11vw] font-extrabold leading-[1.15em] tracking-wide text-left md:text-[7.6vw] lg:w-[850px] lg:mt-[1.6rem] lg:text-[66px] lg:leading-[1.1em] lg:text-center xl:w-[985px] xl:text-[76px] xl:font-extrabold xl:leading-[5.35rem]",
           {
             "text-neutral-600": darkMode,
             "text-neutral-100": !darkMode,
@@ -24,7 +24,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
       >
         Hello, I&apos;m Brandon Nielsen, a{" "}
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -32,7 +32,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           W
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -40,7 +40,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           e
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -48,7 +48,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           b
         </span>{" "}
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -56,7 +56,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           D
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -64,7 +64,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           e
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -80,7 +80,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           e
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -88,7 +88,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           l
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -96,7 +96,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           o
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -104,7 +104,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           p
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
@@ -112,7 +112,7 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
           e
         </span>
         <span
-          className={clsx("", {
+          className={clsx("all-transition", {
             "header-text-stroke--dark": darkMode,
             "header-text-stroke": !darkMode,
           })}
