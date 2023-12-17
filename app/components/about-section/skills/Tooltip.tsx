@@ -17,8 +17,6 @@ export default function Tooltip({
             "-top-[17px]": skill.name === "figma" || skill.name === "vite",
             "left-[22.75px] md:left-[26px] lg:left-[23px]":
               skill.name === "css",
-            // "left-[19px] md:left-[21.75px] lg:left-[20px]":
-            //   skill.name === "figma",
             "left-[18.25px] md:left-[22px] lg:left-[17.25px] xl:left-[18.75px]":
               skill.name === "figma",
             "left-[26.75px] md:left-[29.75px] lg:left-[26.25px]":

@@ -14,7 +14,6 @@ export default function Skill({
     tech: string;
   };
 }) {
-  const [showTooltip, setShowTooltip] = useState(false);
   const [showViteBg, setShowViteBg] = useState(false);
 
   return (
@@ -45,10 +44,10 @@ export default function Skill({
           }
         )}
         onMouseEnter={() => {
-          setShowTooltip(true), setShowViteBg(true);
+          setShowViteBg(true);
         }}
         onMouseLeave={() => {
-          setShowTooltip(false), setShowViteBg(false);
+          setShowViteBg(false);
         }}
       >
         <Tooltip {...{ darkMode, skill }} />
