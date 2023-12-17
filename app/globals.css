@@ -170,10 +170,20 @@ body::-webkit-scrollbar {
 
 .header-text-stroke--dark {
   -webkit-text-stroke: 1.75px #ededed;
+  color: #1a1a1a;
+}
+
+.header-text-stroke--dark:hover {
+  color: #fafafa;
 }
 
 .header-text-stroke {
   -webkit-text-stroke: 1.75px #272727;
+  color: #fafafa;
+}
+
+.header-text-stroke:hover {
+  color: #1a1a1a;
 }
 
 /* 

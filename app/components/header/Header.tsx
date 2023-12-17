@@ -25,13 +25,99 @@ export default function Header({ darkMode }: { darkMode: boolean }) {
         Hello, I&apos;m Brandon Nielsen, a{" "}
         <span
           className={clsx("", {
-            "header-text-stroke--dark text-neutral-100 lg:hover:text-neutral-600":
-              darkMode,
-            "header-text-stroke text-neutral-600 lg:hover:text-neutral-100":
-              !darkMode,
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
           })}
         >
-          Web Developer
+          W
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          e
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          b
+        </span>{" "}
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          D
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          e
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          v
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          e
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          l
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          o
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          p
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          e
+        </span>
+        <span
+          className={clsx("", {
+            "header-text-stroke--dark": darkMode,
+            "header-text-stroke": !darkMode,
+          })}
+        >
+          r
         </span>
         .
       </h1>
