@@ -15,23 +15,29 @@ export default function Tooltip({
           "absolute -top-[15px] z-10 font-normal text-xs leading-[1.42857143] text-start opacity-transition opacity-0 group-hover:opacity-100",
           {
             "-top-[17px]": skill.name === "figma" || skill.name === "vite",
-            "left-[20px] md:left-[23px] lg:left-[20px]":
-              skill.name === "figma" || skill.name === "react",
-            "left-[24px] md:left-[28px] lg:left-[24px]": skill.name === "css",
-            "left-[18px] md:left-[22px] lg:left-[17.5px] xl:left-[19px]":
+            "left-[22.75px] md:left-[26px] lg:left-[23px]":
+              skill.name === "css",
+            // "left-[19px] md:left-[21.75px] lg:left-[20px]":
+            //   skill.name === "figma",
+            "left-[18.25px] md:left-[22px] lg:left-[17.25px] xl:left-[18.75px]":
               skill.name === "figma",
-            "left-[28px] md:left-[31px] lg:left-[27px]": skill.name === "git",
-            "left-[7px] md:left-[10px] lg:left-[7px] xl:left-[6px]":
+            "left-[26.75px] md:left-[29.75px] lg:left-[26.25px]":
+              skill.name === "git",
+            "left-[4.25px] md:left-[7.5px] lg:left-[4.5px] xl:left-[4.25px]":
               skill.name === "javascript",
-            "left-[16px] md:left-[19px] lg:left-[16px]": skill.name === "next",
-            "left-[2.75px] md:left-[5.5px] lg:left-[3px]":
+            "left-[14.5px] md:left-[18px] lg:left-[14.5px]":
+              skill.name === "next",
+            "left-[0.75px] md:left-[4px] lg:left-[0.75px]":
               skill.name === "postgresql",
-            "left-[22px] md:left-[25px] lg:left-[22px]": skill.name === "sass",
-            "left-[12.5px] md:left-[15.5px] lg:left-[12.5px]":
+            "left-[18px] md:left-[22px] lg:left-[18.25px]":
+              skill.name === "react",
+            "left-[21px] md:left-[24.25px] lg:left-[20.75px]":
+              skill.name === "sass",
+            "left-[11.25px] md:left-[14.25px] lg:left-[11px]":
               skill.name === "tailwind",
-            "left-[6px] md:left-[9px] lg:left-[6px]":
+            "left-[4px] md:left-[7px] lg:left-[3.75px]":
               skill.name === "typescript",
-            "left-[24.5px] md:left-[27.5px] lg:left-[24.5px]":
+            "left-[23.5px] md:left-[26.5px] lg:left-[23.25px]":
               skill.name === "vite",
           }
         )}
@@ -61,20 +67,21 @@ export default function Tooltip({
         {/* tooltip label */}
         <div
           className={clsx(
-            "max-w-250px py-[3px] px-2 rounded font-sans font-semibold text-center",
+            "max-w-250px py-[3px] px-2 rounded font-sans tracking-[0.35px] font-semibold text-center",
             {
               "text-neutral-200": darkMode,
               "bg-tech-next": skill.name === "next" && darkMode,
               "bg-[#000] text-neutral-500": skill.name === "next" && !darkMode,
-              "text-neutral-600": skill.name === "vite" && !darkMode,
               "text-neutral-500":
                 (skill.name === "css" && !darkMode) ||
+                (skill.name === "figma" && darkMode) ||
                 (skill.name === "figma" && !darkMode) ||
                 (skill.name === "git" && !darkMode) ||
                 (skill.name === "html" && !darkMode) ||
                 (skill.name === "postgresql" && !darkMode) ||
                 (skill.name === "sass" && !darkMode) ||
-                (skill.name === "typescript" && !darkMode),
+                (skill.name === "typescript" && !darkMode) ||
+                (skill.name === "vite" && !darkMode),
               "bg-tech-css-100": skill.name === "css",
               "label--figma": skill.name === "figma",
               "bg-tech-git": skill.name === "git",
