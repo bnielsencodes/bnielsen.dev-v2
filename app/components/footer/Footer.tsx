@@ -8,7 +8,7 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
   return (
     <footer
       className={clsx(
-        "relative flex items-start justify-between h-40 pt-8 pl-3 md:pr-[22px] md:pl-4 xl:pl-[17px]",
+        "relative flex items-start justify-between h-40 pt-8 md:pr-[22px] md:pl-4 xl:pl-[17px]",
         {
           "bg-neutral-100": darkMode,
           "bg-neutral-600": !darkMode,
@@ -19,8 +19,8 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         <ReturnHomeBtn {...{ darkMode }} />
       </div>
 
-      <div className="flex flex-col items-start justify-between h-full pb-4 md:mx-0">
-        <div className="flex flex-col justify-between gap-3">
+      <div className="flex flex-col items-center justify-between h-full pb-4 mx-auto md:items-start md:mx-0">
+        <div className="flex flex-col items-center justify-between gap-3 md:items-start">
           <Location {...{ darkMode }} />
           <ResumeBtn {...{ darkMode }} />
         </div>

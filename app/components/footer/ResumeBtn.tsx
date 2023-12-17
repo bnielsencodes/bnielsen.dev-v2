@@ -17,8 +17,8 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
-        width="25px"
-        height="25px"
+        width="28px"
+        height="28px"
       >
         <path
           d="M21.5,93C15.71,93,11,88.29,11,82.5v-61C11,15.71,15.71,11,21.5,11h61C88.29,11,93,15.71,93,21.5v61 C93,88.29,88.29,93,82.5,93H21.5z"

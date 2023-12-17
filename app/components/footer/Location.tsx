@@ -8,8 +8,8 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
       <svg
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 0 100 100"
-        width="30px"
-        height="30px"
+        width="35px"
+        height="35px"
       >
         <path
           className={clsx("", {
