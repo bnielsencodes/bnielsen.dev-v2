@@ -41,14 +41,18 @@ export default function NavBar({
           height="600"
           sizes="100vw"
         />
-        <p
-          className={clsx("text-xl font-bold leading-[0.3px]", {
-            "text-neutral-600": darkMode,
-            "text-neutral-100": !darkMode,
-          })}
+        <a
+          className={clsx(
+            "opacity-transition text-xl font-bold leading-[0.3px] lg:hover:opacity-90",
+            {
+              "text-neutral-600": darkMode,
+              "text-neutral-100": !darkMode,
+            }
+          )}
+          href="#header"
         >
           Brandon Nielsen
-        </p>
+        </a>
       </div>
 
       <div className="hidden lg:flex lg:items-center lg:gap-3">
