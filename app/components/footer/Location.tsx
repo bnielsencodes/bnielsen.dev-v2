@@ -13,8 +13,8 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
       >
         <path
           className={clsx("", {
-            "fill-neutral-300": darkMode,
-            "fill-neutral-400": !darkMode,
+            "fill-neutral-400": darkMode,
+            "fill-neutral-300": !darkMode,
           })}
           opacity=".35"
           d="M52,97c-2.033,0-3.977-0.971-5.197-2.597L42.3,88.4c-0.84-1.122-1.3-2.506-1.3-3.9V46.894	C34.219,43.026,30,38.047,30,30c0-12.131,9.869-22,22-22s22,9.869,22,22c0,8.047-4.219,15.201-11,19.068V84.5	c0,1.395-0.46,2.778-1.296,3.896L57.2,94.4C55.977,96.029,54.033,97,52,97z"
