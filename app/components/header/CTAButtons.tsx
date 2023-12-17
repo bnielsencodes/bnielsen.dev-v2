@@ -20,6 +20,8 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
           "btn-dark-alt text-neutral-500": !darkMode,
         })}
         href="#projects-section"
+        tabIndex={-1}
+        aria-hidden={true}
       >
         View Work
       </a>
@@ -42,6 +44,8 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
           "btn-light-alt outline-light-theme text-neutral-200": !darkMode,
         })}
         href="#contact-section"
+        tabIndex={-1}
+        aria-hidden={true}
       >
         Contact
       </a>
