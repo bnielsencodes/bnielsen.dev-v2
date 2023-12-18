@@ -19,7 +19,7 @@ export default function Socials({
   return (
     <li className="h-auto">
       <a
-        className={clsx("focus:opacity-80 lg:hover:opacity-80", {
+        className={clsx("focus:opacity-90 lg:hover:opacity-90", {
           "outline-dark-theme": darkMode,
           "outline-light-theme": !darkMode,
         })}

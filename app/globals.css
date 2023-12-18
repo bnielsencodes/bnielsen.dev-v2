@@ -74,8 +74,8 @@ body::-webkit-scrollbar {
   background: rgb(39, 39, 39);
   background: linear-gradient(
     180deg,
-    rgba(39, 39, 39, 0.95) 0%,
-    rgba(39, 39, 39, 0.95) 100%
+    rgba(39, 39, 39, 0.9) 0%,
+    rgba(39, 39, 39, 0.9) 100%
   );
   opacity: 0;
 }
@@ -204,6 +204,10 @@ skill tooltip label bg gradients (figma and vite)
     pointer-events: none;
   }
 
+  .nav-link::before {
+    content: "";
+  }
+
   .underline-dark::before,
   .underline-dark::after {
     background: #1aa7ff;
@@ -212,10 +216,6 @@ skill tooltip label bg gradients (figma and vite)
   .underline-light::before,
   .underline-light::after {
     background: #005e98;
-  }
-
-  .nav-link::before {
-    content: "";
   }
 
   .underlineAnimation:hover::before {
