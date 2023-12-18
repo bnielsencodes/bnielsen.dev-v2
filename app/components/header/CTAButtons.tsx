@@ -28,7 +28,7 @@ export default function CTAButtons({ darkMode }: { darkMode: boolean }) {
 
       {/* contact button */}
       <a
-        className={clsx("btn btn-secondary focus:opacity-90", {
+        className={clsx("btn btn-secondary focus:opacity-80", {
           "btn-dark outline-dark-theme text-neutral-500": darkMode,
           "btn-light outline-light-theme text-neutral-200 shadow-xl": !darkMode,
         })}
