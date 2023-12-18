@@ -46,8 +46,8 @@ const projects = [
     alt2: "Quizzical web app quiz page displayed on an Apple iPad.",
     imgWidth: 700,
     imgHeight: 1019,
-    liveSite: "https://bnielsencodes.github.io/quizzical",
-    sourceCode: "https://github.com/bnielsencodes/quizzical",
+    liveSite: "https://quizzical-v2-bnielsencodes.vercel.app/",
+    sourceCode: "https://github.com/bnielsencodes/quizzical-v2",
   },
   {
     id: 4,
