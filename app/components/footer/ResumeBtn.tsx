@@ -53,7 +53,7 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
 
       <p
         className={clsx(
-          "font-sans text-[18px] tracking-wide lg:group-hover:opacity-90",
+          "font-sans text-[18px] tracking-wide group-focus:opacity-90 lg:group-hover:opacity-90",
           {
             "text-neutral-500": darkMode,
             "text-neutral-200": !darkMode,
