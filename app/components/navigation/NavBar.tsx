@@ -43,7 +43,7 @@ export default function NavBar({
         />
         <a
           className={clsx(
-            "opacity-transition flex items-center h-8 rounded-md text-xl font-bold leading-[0.3px] focus:opacity-80 lg:hover:opacity-80",
+            "opacity-transition flex items-center h-8 rounded-sm text-xl font-bold leading-[0.3px] focus:opacity-80 lg:hover:opacity-80",
             {
               "outline-dark-theme text-neutral-600": darkMode,
               "outline-light-theme text-neutral-100": !darkMode,

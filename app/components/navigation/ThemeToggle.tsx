@@ -10,7 +10,7 @@ export default function ThemeToggle({
   return (
     <button
       className={clsx(
-        "relative w-[75px] h-[75px] rounded-md group lg:w-[36px] lg:h-[36px] lg:hover:cursor-pointer",
+        "relative w-[75px] h-[75px] rounded-sm group lg:w-[36px] lg:h-[36px] lg:hover:cursor-pointer",
         { "outline-dark-theme": darkMode, "outline-light-theme": !darkMode }
       )}
       onClick={toggleTheme}

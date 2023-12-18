@@ -7,7 +7,7 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         <li className="nav-item">
           <a
             className={clsx(
-              "nav-link underlineAnimation rounded-md focus:opacity-80 lg:hover:opacity-80",
+              "nav-link underlineAnimation rounded-sm focus:opacity-80 lg:hover:opacity-80",
               {
                 "underline-dark outline-dark-theme text-neutral-500": darkMode,
                 "underline-light outline-light-theme text-neutral-200":
@@ -23,7 +23,7 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         <li className="nav-item">
           <a
             className={clsx(
-              "nav-link underlineAnimation rounded-md focus:opacity-80 lg:hover:opacity-80",
+              "nav-link underlineAnimation rounded-sm focus:opacity-80 lg:hover:opacity-80",
               {
                 "underline-dark outline-dark-theme text-neutral-500": darkMode,
                 "underline-light outline-light-theme text-neutral-200":
@@ -39,7 +39,7 @@ export default function NavList({ darkMode }: { darkMode: boolean }) {
         <li className="nav-item">
           <a
             className={clsx(
-              "nav-link underlineAnimation rounded-md focus:opacity-80 lg:hover:opacity-80",
+              "nav-link underlineAnimation rounded-sm focus:opacity-80 lg:hover:opacity-80",
               {
                 "underline-dark outline-dark-theme text-neutral-500": darkMode,
                 "underline-light outline-light-theme text-neutral-200":

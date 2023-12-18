@@ -41,7 +41,7 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           you think I could help bring to life,{" "}
           <a
             className={clsx(
-              "opacity-transition rounded-md focus:opacity-80 lg:hover:opacity-80",
+              "opacity-transition rounded-sm focus:opacity-80 lg:hover:opacity-80",
               {
                 "outline-dark-theme text-accent-200": darkMode,
                 "outline-light-theme text-accent-100": !darkMode,
@@ -56,7 +56,7 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
           or lurking on the{" "}
           <a
             className={clsx(
-              "opacity-transition rounded-md focus:opacity-80 lg:hover:opacity-80",
+              "opacity-transition rounded-sm focus:opacity-80 lg:hover:opacity-80",
               {
                 "outline-dark-theme text-accent-200": darkMode,
                 "outline-light-theme text-accent-100": !darkMode,

@@ -19,13 +19,11 @@ export default function Socials({
   return (
     <li className="h-auto">
       <a
-        className={clsx("focus:opacity-90 lg:hover:opacity-90", {
-          "outline-dark-theme": darkMode,
-          "outline-light-theme": !darkMode,
+        className={clsx("focus:outine-2 focus:opacity-90 lg:hover:opacity-90", {
+          "focus:outline-accent-200": darkMode,
+          "focus:outline-accent-100": !darkMode,
         })}
         href={social.link}
-        aria-label={`Link to Brandon's ${social.name}`}
-        title={`Link to Brandon's ${social.name}`}
       >
         {/* linkedin icon */}
         {social.name === "linkedIn" && (

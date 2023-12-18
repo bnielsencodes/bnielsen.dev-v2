@@ -4,7 +4,7 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
   return (
     <a
       className={clsx(
-        "flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-md group md:pl-[6px]",
+        "flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-sm group md:pl-[6px]",
         {
           "outline-dark-theme": darkMode,
           "outline-light-theme": !darkMode,
