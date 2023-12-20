@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: ["web developer", "Next.js", "nextjs", "React", "JavaScript", "Oregon", "small businesses", "frontend", "front-end", "software engineer", "programmer" ],
   twitter: {
     card: "summary_large_image",
-    title: "bnielsen.dev",
+    title: "Brandon Nielsen | Web Developer",
     description: "Brandon Nielsen | Oregon based web developer",
     siteId: "1229246106791362560",
     creator: "@bnielsencodes",
