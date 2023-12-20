@@ -18,7 +18,6 @@ export const metadata: Metadata = {
     creator: "@bnielsencodes",
     creatorId: "1229246106791362560",
     images: ["../public/assets/screenshots/social-light.png"],
-    imageAlt: "Screenshot of bnielsen.dev",
   },
 };
 
