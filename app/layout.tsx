@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     siteId: "1229246106791362560",
     creator: "@bnielsencodes",
     creatorId: "1229246106791362560",
-    images: ["https://imgur.com/gallery/qCNRs4t"],
+    images: ["https://drive.google.com/file/d/10XR0FlHm8Y3jr5gmuNF57uH3mfyJof1y/view?usp=drive_link"],
   },
 };
 
