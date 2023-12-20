@@ -8,7 +8,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Brandon Nielsen | Web Developer",
   description: "Brandon Nielsen, Oregon based web developer.",
-  authors: ["Brandon Nielsen"],
+  authors: [{ name: "Brandon Nielsen" },],
   keywords: ["web developer", "Next.js", "nextjs", "React", "JavaScript", "Oregon", "small businesses", "frontend", "front-end", "software engineer", "programmer" ],
   twitter: {
     card: "summary_large_image",
