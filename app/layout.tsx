@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Brandon Nielsen | Web Developer",
-    description: "Brandon Nielsen | Oregon based web developer",
+    description: "Check out my portfolio!",
     siteId: "1229246106791362560",
     creator: "@bnielsencodes",
     creatorId: "1229246106791362560",
