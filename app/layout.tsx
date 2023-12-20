@@ -7,7 +7,19 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Brandon Nielsen | Web Developer",
-  description: "Brandon Nielsen, web developer.",
+  description: "Brandon Nielsen, Oregon based web developer.",
+  author: "Brandon Nielsen",
+  keywords: ["web developer", "Next.js", "nextjs", "React", "JavaScript", "Oregon", "small businesses", "frontend", "front-end", "software engineer", "programmer" ],
+  twitter: {
+    card: "summary_large_image",
+    title: "bnielsen.dev",
+    description: "Brandon Nielsen | Oregon based web developer",
+    siteId: "1229246106791362560",
+    creator: "@bnielsencodes",
+    creatorId: "1229246106791362560",
+    images: ["../public/assets/screenshots/social-light.png"],
+    imageAlt: "Screenshot of bnielsen.dev",
+  },
 };
 
 const roboto = Roboto({
