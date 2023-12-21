@@ -26,9 +26,9 @@ export default function NotFound() {
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center justify-center w-full text-2xl font-extrabold">
         <h1 className="text-7xl">404</h1>
         <h2 className="mt-4 mb-6 text-4xl">Page Not Found</h2>
-        // button container
+        {/* button container */}
         <div className="relative">
-          // default button
+          {/* default button */}
           <button
             className={clsx("btn btn-primary", {
               "btn-light": darkMode,
@@ -46,7 +46,7 @@ export default function NotFound() {
             </Link>
           </button>
   
-          // hover button
+          {/* hover button */}
           <button
             className={clsx("btn btn-primary absolute top-0 left-0", {
               "btn-light-alt": darkMode,
