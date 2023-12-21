@@ -32,7 +32,12 @@ export default function NotFound() {
             "btn-dark": !darkMode,
           })}
         >
-          <Link href="/">Return Home</Link>
+          <Link
+            className={clsx("", {
+              "text-neutral-500": darkMode,
+              "text-neutral-200": !darkMode,
+            })}
+            href="/">Return Home</Link>
         </button>
       </div>
     </div>
