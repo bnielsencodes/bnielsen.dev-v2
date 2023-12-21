@@ -74,8 +74,8 @@ body::-webkit-scrollbar {
   background: rgb(39, 39, 39);
   background: linear-gradient(
     180deg,
-    rgba(39, 39, 39, 0.85) 0%,
-    rgba(39, 39, 39, 0.85) 100%
+    rgba(40, 40, 40, 1) 0%,
+    rgba(40, 40, 40, 1) 100%
   );
   opacity: 0;
 }
