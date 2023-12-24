@@ -19,7 +19,7 @@ const projects = [
     alt2: "",
     imgWidth: 2110,
     imgHeight: 1286,
-    liveSite: "https://audiophile-bnielsencodes.vercel.app",
+    liveSite: "https://audiophile-woad.vercel.app/",
     sourceCode: "https://github.com/bnielsencodes/audiophile",
   },
   {
@@ -46,7 +46,7 @@ const projects = [
     alt2: "Quizzical web app quiz page displayed on an Apple iPad.",
     imgWidth: 700,
     imgHeight: 1019,
-    liveSite: "https://quizzical-v2-bnielsencodes.vercel.app/",
+    liveSite: "https://quizzical-v2-tau.vercel.app/",
     sourceCode: "https://github.com/bnielsencodes/quizzical-v2",
   },
   {
