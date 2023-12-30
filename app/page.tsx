@@ -5,12 +5,12 @@ import waveDarkTop from "@/public/assets/images/section-dividers/wave-dark-top.s
 import waveLightTop from "@/public/assets/images/section-dividers/wave-light-top.svg";
 import waveDarkBottom from "@/public/assets/images/section-dividers/wave-dark-bottom.svg";
 import waveLightBottom from "@/public/assets/images/section-dividers/wave-light-bottom.svg";
-import NavBar from "./components/navigation/NavBar";
-import Header from "./components/header/Header";
-import AboutSection from "./components/about-section/AboutSection";
-import ProjectsSection from "./components/projects-section/ProjectsSection";
-import ContactSection from "./components/contact-section/ContactSection";
-import Footer from "./components/footer/Footer";
+import NavBar from "./_components/navigation/NavBar";
+import Header from "./_components/header/Header";
+import AboutSection from "./_components/about-section/AboutSection";
+import ProjectsSection from "./_components/projects-section/ProjectsSection";
+import ContactSection from "./_components/contact-section/ContactSection";
+import Footer from "./_components/footer/Footer";
 import clsx from "clsx";
 
 export default function Home() {

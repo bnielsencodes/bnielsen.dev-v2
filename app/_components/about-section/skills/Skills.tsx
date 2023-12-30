@@ -1,4 +1,4 @@
-import useMediaQuery from "../../../lib/useMediaQuery";
+import useMediaQuery from "../../../_lib/useMediaQuery";
 import { skills, skillsLg } from "../../../data";
 import Skill from "./Skill";
 import clsx from "clsx";

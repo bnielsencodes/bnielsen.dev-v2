@@ -6,11 +6,11 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
     <div className="flex flex-col items-center gap-8 mx-auto mb-24 md:gap-12 md:w-[720px] md:mb-16 lg:flex-row-reverse lg:gap-10 lg:w-[735px] lg:mx-auto lg:mb-32 xl:flex-col xl:w-[605px] xl:mx-0 xl:mb-0">
       <Avatar parent="bio" />
 
-      <div className="mt-4 font-sans font-light md:text-[17px]">
+      <div className="mt-4 font-sans font-light md:text-[1.063rem]">
         {/* statement copy */}
         <p
           className={clsx(
-            "font-mosk text-5xl font-extrabold leading-[1.1em] xl:text-[3.5rem] xl:leading-[62px]",
+            "font-mosk text-5xl font-extrabold leading-[1.1em] xl:text-[3.5rem] xl:leading-[3.875rem]",
             { "text-neutral-500": darkMode, "text-neutral-200": !darkMode }
           )}
         >
@@ -30,7 +30,7 @@ export default function Bio({ darkMode }: { darkMode: boolean }) {
 
         {/* about me copy */}
         <p
-          className={clsx("mb-4 text-[18px]", {
+          className={clsx("mb-4 text-[1.125rem]", {
             "text-neutral-500": darkMode,
             "text-neutral-200": !darkMode,
           })}

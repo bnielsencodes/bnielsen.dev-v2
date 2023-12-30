@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Socials from "@/app/components/socials/Socials";
+import Socials from "@/app/_components/socials/Socials";
 import ThemeToggle from "./ThemeToggle";
 import clsx from "clsx";
 

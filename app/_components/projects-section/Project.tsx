@@ -152,7 +152,7 @@ export default function ProjectsSection({
           </h3>
           <p
             className={clsx(
-              "mt-3 mb-4 font-sans text-[18px] font-light md:w-[336px] md:mb-5 lg:w-[432px]",
+              "mt-3 mb-4 font-sans text-[1.125rem] font-light md:w-[336px] md:mb-5 lg:w-[432px]",
               {
                 "text-neutral-600 opacity-60": darkMode,
                 "text-neutral-200": !darkMode,

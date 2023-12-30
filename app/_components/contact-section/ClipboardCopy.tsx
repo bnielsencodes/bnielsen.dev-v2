@@ -46,7 +46,7 @@ export default function ClipboardCopy({ darkMode }: { darkMode: boolean }) {
         <strong>brandon@bnielsen.dev</strong>
       </button>
 
-      <span className="absolute -top-[10px] -right-[70px] p-[0.5rem] rounded-[0.2rem] ml-4 bg-none text-[13px] tracking-[0.4px] uppercase">
+      <span className="absolute -top-[10px] -right-[70px] p-[0.5rem] rounded-[0.2rem] ml-4 bg-none text-[0.813rem] tracking-[0.4px] uppercase">
         {isCopied ? "Copied!" : ""}
       </span>
     </>

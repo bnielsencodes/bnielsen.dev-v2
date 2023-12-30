@@ -19,7 +19,7 @@ const projects = [
     alt2: "",
     imgWidth: 2110,
     imgHeight: 1286,
-    liveSite: "https://audiophile-woad.vercel.app/",
+    liveSite: "https://audiophile-woad.vercel.app",
     sourceCode: "https://github.com/bnielsencodes/audiophile",
   },
   {
