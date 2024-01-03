@@ -9,7 +9,7 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects-section"
-      className="pt-40 pb-10 bg-neutral-600 overflow-x-clip dark:bg-neutral-100 md:pb-[140px] lg:pb-[260px]"
+      className="pt-40 pb-10 bg-neutral-600 overflow-x-clip dark:bg-neutral-100 md:pb-[140px] lg:pb-[210px]"
     >
       {/* section heading */}
       <h2 className="relative z-0 w-[130px] mx-auto text-neutral-200 text-[2.5rem] font-bold text-center lg:w-[143px] lg:text-[2.75rem] after:absolute after:content-[''] after:-z-10 after:right-0 after:bottom-[5px] after:w-[93px] after:h-[14px] after:bg-neutral-400 dark:text-neutral-500 dark:after:bg-neutral-300 lg:after:w-[101px] lg:after:bottom-[7px]">
