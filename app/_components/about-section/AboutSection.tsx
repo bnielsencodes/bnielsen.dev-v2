@@ -8,7 +8,9 @@ export default function AboutSection({ loading }: { loading: boolean }) {
       id="about-section"
       className={clsx(
         "pt-20 px-[19px] pb-[200px] bg-neutral-500 overflow-x-clip dark:bg-neutral-200 md:px-[21px] lg:pb-[200px] xl:pb-[300px]",
-        { "pt-[162px] md:pt-[250px] lg:pt-[306px] xl:pt-[399px]": loading }
+        {
+          "pt-[calc(22.223vw+79px)]": loading,
+        }
       )}
     >
       {/* section heading */}
