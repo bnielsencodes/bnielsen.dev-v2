@@ -8,9 +8,26 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Brandon Nielsen | Web Developer",
-  description: "Brandon Nielsen, Oregon based web developer.",
-  authors: [{ name: "Brandon Nielsen" },],
-  keywords: ["web developer", "Next.js", "nextjs", "React", "JavaScript", "Oregon", "small businesses", "frontend", "front-end", "software engineer", "programmer" ],
+  description:
+    "Brandon Nielsen, web developer specializing in Next.js and React.",
+  authors: [{ name: "Brandon Nielsen" }],
+  creator: "Brandon Nielsen",
+  publisher: "Brandon Nielsen",
+  keywords: [
+    "web developer",
+    "code",
+    "web development",
+    "next.js",
+    "nextjs",
+    "react",
+    "javascript",
+    "oregon",
+    "small businesses",
+    "frontend",
+    "front-end",
+    "software engineer",
+    "programmer",
+  ],
   twitter: {
     card: "summary_large_image",
     title: "Brandon Nielsen | Web Developer",
@@ -18,7 +35,8 @@ export const metadata: Metadata = {
     siteId: "1229246106791362560",
     creator: "@bnielsencodes",
     creatorId: "1229246106791362560",
-    images: ["https://drive.google.com/file/d/10XR0FlHm8Y3jr5gmuNF57uH3mfyJof1y/view?usp=drive_link"],
+    images:
+      "https://drive.google.com/file/d/10XR0FlHm8Y3jr5gmuNF57uH3mfyJof1y/view?usp=drive_link",
   },
 };
 
