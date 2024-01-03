@@ -2,6 +2,7 @@ import { FormspreeProvider, useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import arrowRight from "@/public/assets/icons/arrow-right.svg";
 import ClipboardCopy from "./ClipboardCopy";
+import SubmitButton from "./SubmitButton";
 
 export default function ContactForm() {
   const [state, handleSubmit] = useForm("mknewaqj");
@@ -99,48 +100,7 @@ export default function ContactForm() {
           />
         </fieldset>
 
-        {/* submit button */}
-        <div className="relative w-full h-auto text-end">
-          <ValidationError
-            className="absolute top-[6px] left-[14px] text-warning"
-            errors={state.errors}
-          />
-          <button
-            className={clsx("btn btn-primary font-semibold", {
-              "btn-light text-neutral-200": darkMode,
-              "btn-dark text-neutral-500 shadow-xl": !darkMode,
-            })}
-            type="submit"
-            disabled={state.submitting}
-            onClick={() => {
-              console.log(state);
-              console.log(state.errors);
-            }}
-          >
-            Submit
-          </button>
-
-          {/* hover transition button */}
-          <button
-            className={clsx(
-              "btn btn-primary absolute top-0 right-0 font-semibold",
-              {
-                "btn-light-alt text-neutral-200": darkMode,
-                "btn-dark-alt text-neutral-500": !darkMode,
-              }
-            )}
-            type="submit"
-            tabIndex={-1}
-            aria-hidden={true}
-            disabled={state.submitting}
-            onClick={() => {
-              console.log(state);
-              console.log(state.errors);
-            }}
-          >
-            Submit
-          </button>
-        </div>
+        <SubmitButton state={state} />
       </form>
     </FormspreeProvider>
   );
