@@ -1,51 +1,28 @@
-import clsx from "clsx";
-
-export default function NavList({ darkMode }: { darkMode: boolean }) {
+export default function NavList() {
   return (
     <>
-      <ul className="lg:flex lg:justify-between">
-        <li className="nav-item">
+      <ul className="flex justify-between">
+        <li className="nav-item group">
           <a
-            className={clsx(
-              "nav-link underlineAnimation rounded-sm focus:opacity-80 lg:hover:opacity-80",
-              {
-                "underline-dark outline-dark-theme text-neutral-500": darkMode,
-                "underline-light outline-light-theme text-neutral-200":
-                  !darkMode,
-              }
-            )}
+            className="nav-link underline-light outline-light-theme underlineAnimation all-transition rounded-sm text-neutral-200 focus:opacity-80 group-hover:text-opacity-80 dark:underline-dark dark:outline-dark-theme dark:text-neutral-500"
             href="#about-section"
             aria-label="about"
           >
             About
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item group">
           <a
-            className={clsx(
-              "nav-link underlineAnimation rounded-sm focus:opacity-80 lg:hover:opacity-80",
-              {
-                "underline-dark outline-dark-theme text-neutral-500": darkMode,
-                "underline-light outline-light-theme text-neutral-200":
-                  !darkMode,
-              }
-            )}
+            className="nav-link underline-light outline-light-theme underlineAnimation all-transition rounded-sm text-neutral-200 focus:opacity-80 group-hover:text-opacity-80 dark:underline-dark dark:outline-dark-theme dark:text-neutral-500"
             href="#projects-section"
             aria-label="work"
           >
             Work
           </a>
         </li>
-        <li className="nav-item">
+        <li className="nav-item group">
           <a
-            className={clsx(
-              "nav-link underlineAnimation rounded-sm focus:opacity-80 lg:hover:opacity-80",
-              {
-                "underline-dark outline-dark-theme text-neutral-500": darkMode,
-                "underline-light outline-light-theme text-neutral-200":
-                  !darkMode,
-              }
-            )}
+            className="nav-link underline-light outline-light-theme underlineAnimation all-transition rounded-sm text-neutral-200 focus:opacity-80 group-hover:text-opacity-80 dark:underline-dark dark:outline-dark-theme dark:text-neutral-500"
             href="#contact-section"
             aria-label="contact"
           >
