@@ -4,10 +4,8 @@ import Icon from "./Icon";
 import clsx from "clsx";
 
 export default function Skill({
-  darkMode,
   skill,
 }: {
-  darkMode: boolean;
   skill: {
     id: number;
     name: string;
@@ -15,16 +13,12 @@ export default function Skill({
   };
 }) {
   const [showViteBg, setShowViteBg] = useState(false);
-
   return (
     <div className="relative group">
       <div
         className={clsx(
-          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 group group-hover:cursor-help",
+          "relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 rounded-lg border-neutral-300 bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-xl dark:bg-gradient-to-b dark:from-neutral-200 dark:to-neutral-100 dark:shadow-none group group-hover:cursor-help",
           {
-            "bg-gradient-to-b from-neutral-200 to-neutral-100": darkMode,
-            "bg-gradient-to-b from-neutral-500 to-neutral-600 shadow-xl":
-              !darkMode,
             "group-hover:border-tech-css-100": skill.name === "css",
             "w-[85.5px] h-[91px] border-none rounded-md mt-[2px] ml-[2px] md:w-[92px] lg:w-[85px] xl:w-[85.5px]":
               skill.name === "figma" || skill.name === "vite",
@@ -33,8 +27,8 @@ export default function Skill({
             "group-hover:border-tech-html-200": skill.name === "html",
             "group-hover:border-tech-javascript-100":
               skill.name === "javascript",
-            "group-hover:border-tech-next": skill.name === "next" && darkMode,
-            "group-hover:border-[#000]": skill.name === "next" && !darkMode,
+            "group-hover:border-[#000] dark:group-hover:border-tech-next":
+              skill.name === "next",
             "group-hover:border-tech-postgresql": skill.name === "postgresql",
             "group-hover:border-tech-react": skill.name === "react",
             "group-hover:border-tech-sass": skill.name === "sass",
@@ -50,10 +44,10 @@ export default function Skill({
           setShowViteBg(false);
         }}
       >
-        <Tooltip {...{ darkMode, skill }} />
+        <Tooltip {...{ skill }} />
 
         {/* skill icon */}
-        <Icon {...{ darkMode, skill, showViteBg }} />
+        <Icon {...{ skill, showViteBg }} />
       </div>
 
       {/* hover border for figma skill */}
