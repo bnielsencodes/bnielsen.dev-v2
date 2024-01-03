@@ -1,15 +1,9 @@
-import React, { FC } from "react";
 import { FormspreeProvider, useForm, ValidationError } from "@formspree/react";
 import Image from "next/image";
 import arrowRight from "@/public/assets/icons/arrow-right.svg";
 import ClipboardCopy from "./ClipboardCopy";
-import clsx from "clsx";
 
-interface ContactFormProps {
-  darkMode: boolean;
-}
-
-const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
+export default function ContactForm() {
   const [state, handleSubmit] = useForm("mknewaqj");
 
   if (state.succeeded) {
@@ -26,26 +20,10 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
         className="w-full max-w-[475px] mt-4 mx-auto"
         onSubmit={handleSubmit}
       >
-        <h2
-          className={clsx(
-            "m-0 text-2xl font-bold text-center md:text-[1.65rem]",
-            {
-              "text-neutral-500": darkMode,
-              "text-neutral-200": !darkMode,
-            }
-          )}
-        >
+        <h2 className="m-0 text-neutral-200 text-2xl font-bold text-center dark:text-neutral-500 md:text-[1.65rem]">
           Let<span>&apos;</span>s connect!
         </h2>
-        <div
-          className={clsx(
-            "pt-[6px] mb-2 font-sans text-center md:text-[0.95rem]",
-            {
-              "text-neutral-500 opacity-70": darkMode,
-              "text-neutral-300": !darkMode,
-            }
-          )}
-        >
+        <div className="pt-[6px] mb-2 text-neutral-300 font-sans text-center dark:text-neutral-500 dark:opacity-70 md:text-[0.95rem]">
           Email me at{" "}
           <Image
             className="inline w-[21px] h-[21px] ml-[1px] mr-[3px] mb-[2px]"
@@ -57,15 +35,12 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
           />
           {/* large screens */}
           <div className="relative hidden lg:inline-block">
-            <ClipboardCopy {...{ darkMode }} />
+            <ClipboardCopy />
           </div>
           {/* mobile/tablets */}
           <strong className="lg:hidden">
             <a
-              className={clsx("inline p-0 border-0", {
-                "bg-neutral-200 text-accent-200": darkMode,
-                "bg-neutral-500 text-accent-100": !darkMode,
-              })}
+              className="inline p-0 border-0 bg-neutral-500 text-accent-100 dark:bg-neutral-200 dark:text-accent-200"
               href="mailto:bnielsencodes@gmail.com"
             >
               brandon@bnielsen.dev
@@ -88,14 +63,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
 
           {/* name input */}
           <input
-            className={clsx(
-              "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent select-text appearance-none placeholder:text-neutral-400",
-              {
-                "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
-                "outline-light-theme bg-neutral-600 text-neutral-200 shadow-xl ":
-                  !darkMode,
-              }
-            )}
+            className="outline-light-theme shadow-xl w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 bg-neutral-600 text-neutral-200 font-sans caret-accent select-text appearance-none dark:outline-dark-theme dark:bg-neutral-100 dark:text-neutral-500 dark:shadow-none placeholder:text-neutral-400"
             type="text"
             name="name"
             placeholder="Name"
@@ -106,14 +74,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
 
           {/* email input */}
           <input
-            className={clsx(
-              "w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent select-text appearance-none placeholder:text-neutral-400",
-              {
-                "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
-                "outline-light-theme bg-neutral-600 text-neutral-200 shadow-xl":
-                  !darkMode,
-              }
-            )}
+            className="outline-light-theme shadow-xl w-full h-12 pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 bg-neutral-600 text-neutral-200 font-sans caret-accent select-text appearance-none dark:outline-dark-theme dark:bg-neutral-100 dark:text-neutral-500 dark:shadow-none placeholder:text-neutral-400"
             type="email"
             name="email"
             placeholder="Email"
@@ -124,14 +85,7 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
 
           {/* message input */}
           <textarea
-            className={clsx(
-              "w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 font-sans caret-accent resize-none select-text appearance-none placeholder:text-neutral-400",
-              {
-                "outline-dark-theme bg-neutral-100 text-neutral-500": darkMode,
-                "outline-light-theme bg-neutral-600 text-neutral-200 shadow-xl":
-                  !darkMode,
-              }
-            )}
+            className="outline-light-theme shadow-xl w-full pt-[10px] pl-[10px] border-[1px] rounded-lg mb-[6px] border-neutral-300 bg-neutral-600 text-neutral-200 font-sans caret-accent resize-none select-text appearance-none dark:outline-dark-theme dark:bg-neutral-100 dark:text-neutral-500 dark:shadow-none placeholder:text-neutral-400"
             name="message"
             placeholder="Message"
             aria-label="Enter a message"
@@ -190,6 +144,4 @@ const ContactForm: FC<ContactFormProps> = ({ darkMode }) => {
       </form>
     </FormspreeProvider>
   );
-};
-
-export default ContactForm;
+}
