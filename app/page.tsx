@@ -69,7 +69,7 @@ export default function Home() {
         {/* section top divider */}
         <Image
           className="w-full -mb-[1px]"
-          src={waveDark}
+          src={waveLight}
           alt="wave section divider"
           width="0"
           height="0"
