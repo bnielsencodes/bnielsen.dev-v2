@@ -1,14 +1,11 @@
 import LinkedIn from "./LinkedIn";
 import GitHub from "./GitHub";
 import Email from "./Email";
-import clsx from "clsx";
 
-export default function Socials({
-  darkMode,
+export default function Social({
   social,
   parent,
 }: {
-  darkMode: boolean;
   social: {
     id: number;
     name: string;
@@ -19,24 +16,17 @@ export default function Socials({
   return (
     <li className="h-auto">
       <a
-        className={clsx("focus:outine-2 focus:opacity-90 lg:hover:opacity-90", {
-          "focus:outline-accent-200": darkMode,
-          "focus:outline-accent-100": !darkMode,
-        })}
+        className="opacity-transition focus:outine-2 focus:outline-accent-100 focus:opacity-90 dark:focus:outline-accent-200 lg:hover:opacity-90 dark:lg:hover:opacity-80"
         href={social.link}
       >
         {/* linkedin icon */}
-        {social.name === "linkedIn" && (
-          <LinkedIn parent={parent} {...{ darkMode }} />
-        )}
+        {social.name === "linkedIn" && <LinkedIn parent={parent} />}
 
         {/* github icon */}
-        {social.name === "github" && (
-          <GitHub parent={parent} {...{ darkMode }} />
-        )}
+        {social.name === "github" && <GitHub parent={parent} />}
 
         {/* email icon */}
-        {social.name === "email" && <Email parent={parent} {...{ darkMode }} />}
+        {social.name === "email" && <Email parent={parent} />}
       </a>
     </li>
   );

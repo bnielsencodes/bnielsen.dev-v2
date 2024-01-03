@@ -1,12 +1,6 @@
 import clsx from "clsx";
 
-export default function LinkedIn({
-  darkMode,
-  parent,
-}: {
-  darkMode: boolean;
-  parent: string;
-}) {
+export default function LinkedIn({ parent }: { parent: string }) {
   return (
     <>
       <svg
@@ -21,49 +15,34 @@ export default function LinkedIn({
       >
         {/* blob background */}
         <path
-          className={clsx("", {
-            "fill-neutral-400": darkMode,
-            "fill-neutral-300": !darkMode,
-          })}
+          className="fill-neutral-300 dark:fill-neutral-400"
           d="m34.928 20.591c-3.693-5.848-3.199-11.778-4.979-14.596s-7.138-7.714-20.103.473-9.84 17.35-7.882 20.45c9.166 14.515 39.504 4.031 32.964-6.327z"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m7.033 3.556h2v1h-2z"
           transform="matrix(.7071 -.7071 .7071 .7071 -.515 6.868)"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m2.967 7.621h2v1h-2z"
           transform="matrix(.7071 -.7071 .7071 .7071 -4.5806 5.1837)"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m3.467 2.879h1v2h-1z"
           transform="matrix(.707 -.7072 .7072 .707 -1.5809 3.9422)"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m32.908 12.393c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zm0-2c-.276 0-.5.225-.5.5s.224.5.5.5.5-.225.5-.5-.224-.5-.5-.5z"
         />
 

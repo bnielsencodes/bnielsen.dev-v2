@@ -1,12 +1,6 @@
 import clsx from "clsx";
 
-export default function LinkedIn({
-  darkMode,
-  parent,
-}: {
-  darkMode: boolean;
-  parent: string;
-}) {
+export default function LinkedIn({ parent }: { parent: string }) {
   return (
     <>
       <svg
@@ -22,53 +16,35 @@ export default function LinkedIn({
       >
         {/* blob background */}
         <path
-          className={clsx("", {
-            "fill-neutral-400": darkMode,
-            "fill-neutral-300": !darkMode,
-          })}
+          className=" fill-neutral-300 dark:fill-neutral-400"
           d="M26.982 3.91417C20.066 4.04317 15.25 0.54917 11.917 0.61217C8.58402 0.67517 1.62102 2.72117 1.90802 18.0522C2.19502 33.3832 11.652 35.4562 15.318 35.3882C32.482 35.0672 39.229 3.68517 26.982 3.91417Z"
         />
 
         {/* sparkle circles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className=" fill-neutral-100 dark:fill-neutral-600"
           d="M32.74 23.8901C31.913 23.8901 31.24 23.2171 31.24 22.3901C31.24 21.5631 31.913 20.8901 32.74 20.8901C33.567 20.8901 34.24 21.5631 34.24 22.3901C34.24 23.2171 33.567 23.8901 32.74 23.8901ZM32.74 21.8901C32.465 21.8901 32.24 22.1151 32.24 22.3901C32.24 22.6651 32.465 22.8901 32.74 22.8901C33.015 22.8901 33.24 22.6651 33.24 22.3901C33.24 22.1151 33.016 21.8901 32.74 21.8901Z"
           fill="#FAFAFA"
         />
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className=" fill-neutral-100 dark:fill-neutral-600"
           d="M32.908 12.3931C32.081 12.3931 31.408 11.7201 31.408 10.8931C31.408 10.0661 32.081 9.39307 32.908 9.39307C33.735 9.39307 34.408 10.0661 34.408 10.8931C34.408 11.7201 33.735 12.3931 32.908 12.3931ZM32.908 10.3931C32.633 10.3931 32.408 10.6181 32.408 10.8931C32.408 11.1681 32.633 11.3931 32.908 11.3931C33.183 11.3931 33.408 11.1681 33.408 10.8931C33.408 10.6181 33.184 10.3931 32.908 10.3931Z"
           fill="#FAFAFA"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className=" fill-neutral-100 dark:fill-neutral-600"
           d="M2.90625 8.47461L4.32045 7.06041L5.02755 7.76751L3.61335 9.18171L2.90625 8.47461Z"
           fill="#FAFAFA"
         />
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className=" fill-neutral-100 dark:fill-neutral-600"
           d="M6.97266 4.40967L8.38686 2.99547L9.09396 3.70257L7.67976 5.11677L6.97266 4.40967Z"
           fill="#FAFAFA"
         />
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className=" fill-neutral-100 dark:fill-neutral-600"
           d="M2.90625 3.52539L3.61335 2.81829L5.02755 4.23249L4.32045 4.93959L2.90625 3.52539Z"
           fill="#FAFAFA"
         />

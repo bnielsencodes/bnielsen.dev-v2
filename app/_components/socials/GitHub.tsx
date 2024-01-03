@@ -1,12 +1,6 @@
 import clsx from "clsx";
 
-export default function LinkedIn({
-  darkMode,
-  parent,
-}: {
-  darkMode: boolean;
-  parent: string;
-}) {
+export default function LinkedIn({ parent }: { parent: string }) {
   return (
     <>
       <svg
@@ -21,49 +15,34 @@ export default function LinkedIn({
       >
         {/* blob background */}
         <path
-          className={clsx("", {
-            "fill-neutral-400": darkMode,
-            "fill-neutral-300": !darkMode,
-          })}
+          className="fill-neutral-300 dark:fill-neutral-400"
           d="m13.411 34.999c6.298-2.859 12.105-1.559 15.14-2.936 3.035-1.378 8.617-6.016 2.28-19.978s-15.841-12.12-19.18-10.605c-15.632 7.095-9.395 38.582 1.76 33.519z"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m3.644 27.165h1v2h-1z"
           transform="matrix(.707 -.7072 .7072 .707 -18.7049 11.1834)"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m7.71 31.231h1v2.001h-1z"
           transform="matrix(.7072 -.707 .707 .7072 -20.3832 15.2404)"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m2.967 31.731h2.001v1h-2.001z"
           transform="matrix(.7071 -.7071 .7071 .7071 -21.6288 12.2453)"
         />
 
         {/* sparkles */}
         <path
-          className={clsx("", {
-            "fill-neutral-600": darkMode,
-            "fill-neutral-100": !darkMode,
-          })}
+          className="fill-neutral-100 dark:fill-neutral-600"
           d="m32 6.303c-.827 0-1.5-.673-1.5-1.5s.673-1.5 1.5-1.5 1.5.673 1.5 1.5-.673 1.5-1.5 1.5zm0-2c-.276 0-.5.225-.5.5s.224.5.5.5.5-.225.5-.5-.224-.5-.5-.5z"
         />
 
