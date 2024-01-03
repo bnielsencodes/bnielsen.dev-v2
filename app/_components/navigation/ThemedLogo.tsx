@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import logoDark from "/public/assets/icons/logo/Main-Logo-800x600.png";
-import logoLight from "/public/assets/icons/logo/Inverted-Color-800x600.png";
+import logoWhite from "/public/assets/icons/logo/logo-white-800x600.png";
+import logoBlack from "/public/assets/icons/logo/logo-black-800x600.png";
 
 export default function ThemedLogo() {
   const [mounted, setMounted] = useState(false);
@@ -23,7 +23,7 @@ export default function ThemedLogo() {
     return (
       <Image
         className="w-8 h-8 mr-2"
-        src={logoDark}
+        src={logoWhite}
         alt="white letter N logo"
         width="800"
         height="600"
@@ -36,7 +36,7 @@ export default function ThemedLogo() {
     return (
       <Image
         className="w-8 h-8 mr-2"
-        src={logoLight}
+        src={logoBlack}
         alt="black letter N logo"
         width="800"
         height="600"
