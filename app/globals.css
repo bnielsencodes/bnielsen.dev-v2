@@ -71,7 +71,7 @@ body::-webkit-scrollbar {
 }
 
 .btn-dark-alt {
-  background: rgb(39, 39, 39);
+  background: rgb(40, 40, 40);
   background: linear-gradient(
     180deg,
     rgba(40, 40, 40, 1) 0%,
@@ -95,11 +95,11 @@ body::-webkit-scrollbar {
 }
 
 .btn-light-alt {
-  background: rgb(228, 228, 228);
+  background: rgb(225, 225, 225);
   background: linear-gradient(
     180deg,
-    rgba(228, 228, 228, 0.95) 0%,
-    rgba(228, 228, 228, 0.95) 100%
+    rgba(225, 225, 225, 1) 0%,
+    rgba(225, 225, 225, 1) 100%
   );
   opacity: 0;
 }
