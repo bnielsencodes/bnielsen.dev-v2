@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
+import Providers from "./providers";
 import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
@@ -78,7 +79,7 @@ export default function RootLayout({
       <body
         className={`${roboto.variable} ${mosk.variable} font-mosk antialiased select-none`}
       >
-        {children}
+        <Providers>{children}</Providers>
         <Analytics />
         <SpeedInsights />
       </body>
