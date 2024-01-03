@@ -3,10 +3,8 @@ import ProjectButtons from "./ProjectButtons";
 import clsx from "clsx";
 
 export default function ProjectsSection({
-  darkMode,
   project,
 }: {
-  darkMode: boolean;
   project: {
     id: number;
     name: string;
@@ -85,13 +83,15 @@ export default function ProjectsSection({
           ></div>
           {project.name === "Audiophile" || project.name === "SecurePass" ? (
             <Image
-              className={clsx("relative h-auto", {
-                "drop-shadow-2xl": !darkMode,
-                "w-[calc(100%-40px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
-                  project.name === "Audiophile",
-                "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[235px]":
-                  project.name === "SecurePass",
-              })}
+              className={clsx(
+                "drop-shadow-2xl relative h-auto dark:drop-shadow-none",
+                {
+                  "w-[calc(100%-40px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
+                    project.name === "Audiophile",
+                  "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[235px]":
+                    project.name === "SecurePass",
+                }
+              )}
               src={project.img}
               alt={project.alt}
               width={project.imgWidth}
@@ -102,12 +102,7 @@ export default function ProjectsSection({
             project.name === "Dictionary Web App" ? (
             <div className="relative w-[calc(100%-40px)] max-w-[440px] h-[calc(100vw+25px)] mx-auto md:w-[346px] md:h-[400px] md:mx-0 xl:w-[400px]">
               <Image
-                className={clsx(
-                  "absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[55%] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
-                  {
-                    "drop-shadow-2xl": !darkMode,
-                  }
-                )}
+                className="drop-shadow-2xl absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[55%] h-auto mx-auto dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
                 src={project.img}
                 alt={project.alt}
                 width={project.imgWidth}
@@ -115,12 +110,7 @@ export default function ProjectsSection({
                 sizes="100vw"
               />
               <Image
-                className={clsx(
-                  "absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[55%] h-auto mx-auto md:w-[189.5px] xl:w-[230px]",
-                  {
-                    "drop-shadow-2xl": !darkMode,
-                  }
-                )}
+                className="drop-shadow-2xl absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[55%] h-auto mx-auto dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
                 src={project.img2}
                 alt={project.alt2}
                 width={project.imgWidth}
@@ -139,23 +129,13 @@ export default function ProjectsSection({
               project.name === "Dictionary Web App",
           })}
         >
-          <h3
-            className={clsx(
-              "text-[2.3rem] leading-[2.5rem] font-bold md:text-[2.39rem] lg:text-5xl",
-              {
-                "text-neutral-500 ": darkMode,
-                "text-neutral-200 ": !darkMode,
-              }
-            )}
-          >
+          <h3 className="text-neutral-200 text-[2.3rem] leading-[2.5rem] font-bold dark:text-neutral-500 md:text-[2.39rem] lg:text-5xl">
             {project.name}
           </h3>
           <p
             className={clsx(
-              "mt-3 mb-4 font-sans text-[1.125rem] font-light md:w-[336px] md:mb-5 lg:w-[432px]",
+              "mt-3 mb-4 text-neutral-200 font-sans text-[1.125rem] font-light dark:text-neutral-600 dark:opacity-60 md:w-[336px] md:mb-5 lg:w-[432px]",
               {
-                "text-neutral-600 opacity-60": darkMode,
-                "text-neutral-200": !darkMode,
                 "md:text-right":
                   project.name === "SecurePass" ||
                   project.name === "Dictionary Web App",
@@ -165,7 +145,7 @@ export default function ProjectsSection({
             {project.description}
           </p>
 
-          <ProjectButtons {...{ darkMode, liveSite, sourceCode }} />
+          <ProjectButtons {...{ liveSite, sourceCode }} />
         </div>
       </article>
     </div>
