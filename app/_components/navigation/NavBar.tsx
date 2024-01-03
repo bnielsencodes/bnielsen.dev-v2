@@ -1,20 +1,10 @@
 import { useState } from "react";
-import Image from "next/image";
-import logoDark from "/public/assets/icons/logo/Main-Logo-800x600.png";
-import logoLight from "/public/assets/icons/logo/Inverted-Color-800x600.png";
 import NavList from "./NavList";
 import ThemeToggle from "./ThemeToggle";
 import HamburgerMenu from "./HamburgerMenu";
 import MobileNav from "./MobileNav";
-import clsx from "clsx";
 
-export default function NavBar({
-  darkMode,
-  toggleTheme,
-}: {
-  darkMode: boolean;
-  toggleTheme: () => void;
-}) {
+export default function NavBar() {
   const [showMobileNav, setShowMobileNav] = useState(false);
 
   function toggleMobileNav() {
@@ -22,33 +12,11 @@ export default function NavBar({
   }
 
   return (
-    <nav
-      className={clsx(
-        "fixed top-0 right-0 left-0 z-30 flex items-center justify-start h-14 pl-5 border-b bg-opacity-80 backdrop-blur-sm md:pl-6 lg:justify-between lg:pr-5",
-        {
-          "bg-neutral-100 border-neutral-300": darkMode,
-          "bg-neutral-600 border-neutral-400 shadow-navbar": !darkMode,
-        }
-      )}
-    >
+    <nav className="fixed top-0 right-0 left-0 z-30 flex items-center justify-start h-14 pl-5 border-b border-neutral-400 bg-neutral-600 bg-opacity-80 backdrop-blur-sm shadow-navbar dark:border-neutral-300 dark:bg-neutral-100 dark:bg-opacity-80 dark:shadow-none md:pl-6 lg:justify-between lg:pr-5">
       {/* logo and name */}
       <div className="flex items-center">
-        <Image
-          className="w-8 h-8 mr-2"
-          src={darkMode ? logoDark : logoLight}
-          alt="letter N logo"
-          width="800"
-          height="600"
-          sizes="100vw"
-        />
         <a
-          className={clsx(
-            "opacity-transition flex items-center h-8 rounded-sm text-xl font-bold leading-[0.019rem] focus:opacity-80 lg:hover:opacity-80",
-            {
-              "outline-dark-theme text-neutral-600": darkMode,
-              "outline-light-theme text-neutral-100": !darkMode,
-            }
-          )}
+          className="opacity-transition outline-light-theme flex items-center h-8 rounded-sm text-neutral-100 dark:outline-dark-theme dark:text-neutral-600 text-xl font-bold leading-[0.019rem] focus:opacity-80 lg:hover:opacity-80"
           href="#header"
         >
           Brandon Nielsen
@@ -56,17 +24,13 @@ export default function NavBar({
       </div>
 
       <div className="hidden lg:flex lg:items-center lg:gap-3">
-        <NavList {...{ darkMode }} />
-        <ThemeToggle {...{ darkMode, toggleTheme }} />
+        <NavList />
+        <ThemeToggle />
       </div>
 
       {/* hamburger nav (hidden at lg breakpoint) */}
-      <HamburgerMenu {...{ darkMode, showMobileNav, toggleMobileNav }} />
-      {showMobileNav && (
-        <MobileNav
-          {...{ darkMode, toggleTheme, showMobileNav, toggleMobileNav }}
-        />
-      )}
+      <HamburgerMenu {...{ showMobileNav, toggleMobileNav }} />
+      {showMobileNav && <MobileNav {...{ showMobileNav, toggleMobileNav }} />}
     </nav>
   );
 }
