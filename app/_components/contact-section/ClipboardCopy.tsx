@@ -1,7 +1,6 @@
 import { useState } from "react";
-import clsx from "clsx";
 
-export default function ClipboardCopy({ darkMode }: { darkMode: boolean }) {
+export default function ClipboardCopy() {
   const [isCopied, setIsCopied] = useState(false);
 
   // This is the function we wrote earlier
@@ -33,13 +32,7 @@ export default function ClipboardCopy({ darkMode }: { darkMode: boolean }) {
   return (
     <>
       <button
-        className={clsx(
-          "p-0 border-0 rounded-sm focus:opacity-90 lg:hover:opacity-90 lg:hover:cursor-pointer",
-          {
-            "outline-dark-theme text-accent-200": darkMode,
-            "outline-light-theme text-accent-100": !darkMode,
-          }
-        )}
+        className="opacity-transition outline-light-theme p-0 border-0 rounded-sm text-accent-100 dark:outline-dark-theme dark:text-accent-200 focus:opacity-90 lg:hover:opacity-90 lg:hover:cursor-pointer"
         onClick={handleCopyClick}
         title="Copy to clipboard"
       >
