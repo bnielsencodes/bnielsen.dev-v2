@@ -1,15 +1,7 @@
-import clsx from "clsx";
-
-export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
+export default function ResumeBtn() {
   return (
     <a
-      className={clsx(
-        "flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-sm group md:pl-[6px]",
-        {
-          "outline-dark-theme": darkMode,
-          "outline-light-theme": !darkMode,
-        }
-      )}
+      className="outline-light-theme flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-sm group dark:outline-dark-theme md:pl-[6px]"
       href="https://drive.google.com/file/d/1w_IJIBJAFWBYLJnMi7mtPcMgNvjRvxDR/view?usp=sharing"
       aria-label="View my resume"
       target="_blank"
@@ -30,13 +22,7 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
           d="M19.5,91C13.71,91,9,86.29,9,80.5v-61C9,13.71,13.71,9,19.5,9h61C86.29,9,91,13.71,91,19.5v61 C91,86.29,86.29,91,80.5,91H19.5z"
         />
         <path
-          className={clsx(
-            "relative flex items-start justify-between h-48 pt-8 pr-[27px]",
-            {
-              "fill-[#1aa7ff]": darkMode,
-              "fill-[#005e98]": !darkMode,
-            }
-          )}
+          className="relative flex items-start justify-between h-48 pt-8 pr-[27px] fill-[#005e98] dark:fill-[#1aa7ff]"
           d="M15.5,80.5v-61c0-2.209,1.791-4,4-4h61c2.209,0,4,1.791,4,4v61c0,2.209-1.791,4-4,4h-61 C17.291,84.5,15.5,82.709,15.5,80.5z"
         />
         <path
@@ -51,15 +37,7 @@ export default function ResumeBtn({ darkMode }: { darkMode: boolean }) {
         </g>
       </svg>
 
-      <p
-        className={clsx(
-          "font-sans text-[1.125rem] tracking-wide group-focus:opacity-90 lg:group-hover:opacity-90",
-          {
-            "text-neutral-500": darkMode,
-            "text-neutral-200": !darkMode,
-          }
-        )}
-      >
+      <p className="text-neutral-200 font-sans text-[1.125rem] tracking-wide dark:text-neutral-500 group-focus:opacity-90 lg:group-hover:opacity-90">
         view my resume
       </p>
     </a>
