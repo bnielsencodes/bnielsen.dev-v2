@@ -1,8 +1,4 @@
-import ReturnHomeBtn from "./ReturnHomeBtn";
-import ResumeBtn from "./ResumeBtn";
-import clsx from "clsx";
-
-export default function Footer({ darkMode }: { darkMode: boolean }) {
+export default function Footer() {
   return (
     <div className="flex items-center">
       <svg
@@ -12,10 +8,7 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         height="35px"
       >
         <path
-          className={clsx("", {
-            "fill-neutral-400": darkMode,
-            "fill-neutral-300": !darkMode,
-          })}
+          className="fill-neutral-300 dark:fill-neutral-400"
           opacity=".35"
           d="M52,97c-2.033,0-3.977-0.971-5.197-2.597L42.3,88.4c-0.84-1.122-1.3-2.506-1.3-3.9V46.894	C34.219,43.026,30,38.047,30,30c0-12.131,9.869-22,22-22s22,9.869,22,22c0,8.047-4.219,15.201-11,19.068V84.5	c0,1.395-0.46,2.778-1.296,3.896L57.2,94.4C55.977,96.029,54.033,97,52,97z"
         />
@@ -46,12 +39,7 @@ export default function Footer({ darkMode }: { darkMode: boolean }) {
         />
       </svg>
 
-      <p
-        className={clsx("tracking-wide", {
-          "text-neutral-500": darkMode,
-          "text-neutral-100": !darkMode,
-        })}
-      >
+      <p className="text-neutral-100 tracking-wide dark:text-neutral-500">
         <span className="font-sans font-light">find me in</span> Oregon, US
       </p>
     </div>
