@@ -1,19 +1,10 @@
 import Image from "next/image";
 import chevronIcon from "@/public/assets/icons/chevrons-up-duotone.svg";
-import clsx from "clsx";
 
-export default function ReturnHomeBtn({ darkMode }: { darkMode: boolean }) {
+export default function ReturnHomeBtn() {
   return (
     <a
-      className={clsx(
-        "hvr-bob w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-opacity-80 backdrop-blur-sm",
-        {
-          "outline-dark-theme bg-gradient-to-b from-neutral-200 to-neutral-100 lg:hover:to-neutral-200":
-            darkMode,
-          "shadow-xl outline-light-theme bg-gradient-to-b from-neutral-500 to-neutral-600 lg:hover:to-neutral-500":
-            !darkMode,
-        }
-      )}
+      className="shadow-xl outline-light-theme hvr-bob w-10 h-10 border-[1px] border-neutral-300 rounded-lg mx-auto bg-gradient-to-b from-neutral-500 to-neutral-600 bg-opacity-80 backdrop-blur-sm dark:outline-dark-theme dark:bg-gradient-to-b dark:from-neutral-200 dark:to-neutral-100 lg:hover:to-neutral-500 dark:lg:hover:to-neutral-200"
       href="#header"
       title="Back to top"
       aria-label="Back to top"
