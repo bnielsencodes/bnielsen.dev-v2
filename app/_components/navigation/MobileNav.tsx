@@ -107,7 +107,7 @@ export default function MobileNav({
       </div>
 
       {/* bottom container */}
-      <div className="flex items-center justify-between w-full h-[75px] pl-4 pr-[29px] pb-4 md:pl-5 md:pr-3">
+      <div className="flex items-center justify-between w-full h-[75px] pl-4 pr-[29px] pb-4 md:pl-5">
         <Socials parent="mobile nav" direction="row" />
         <ThemeToggle />
       </div>
