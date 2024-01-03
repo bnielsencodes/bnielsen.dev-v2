@@ -104,19 +104,6 @@ body::-webkit-scrollbar {
   opacity: 0;
 }
 
-/* nav-list styling */
-
-.nav-item:not(:last-of-type) {
-  padding-right: 22px;
-}
-
-.nav-link {
-  position: relative;
-  font-size: 1.35rem;
-  font-weight: 600;
-  letter-spacing: 0.1px;
-}
-
 /* Gives "web developer" in header intro stroke effect */
 
 .header-text-stroke--dark {
@@ -190,6 +177,19 @@ skill tooltip label bg gradients (figma and vite)
 
   .btn-light-alt:hover {
     opacity: 1;
+  }
+
+  /* nav-list styling */
+
+  .nav-item:not(:last-of-type) {
+    padding-right: 22px;
+  }
+
+  .nav-link {
+    position: relative;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: 0.1px;
   }
 
   .nav-link::before,
