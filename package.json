@@ -14,7 +14,7 @@
     "@vercel/speed-insights": "^1.0.1",
     "clsx": "^2.0.0",
     "framer-motion": "^10.16.5",
-    "next": "^14.0.5-canary.31",
+    "next": "^14.0.5-canary.41",
     "next-themes": "^0.2.1",
     "react": "^18",
     "react-dom": "^18"
