@@ -14,6 +14,7 @@ import Footer from "./_components/shared/footer/Footer";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
+  const blog = false;
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -25,12 +26,12 @@ export default function Home() {
 
     return (
       <main className="bg-neutral-600 dark:bg-neutral-100">
-        <NavBar />
+        <NavBar {...{ blog }} />
         <Header />
         <AboutSection {...{ loading }} />
         <ProjectsSection />
         <ContactSection />
-        <Footer />
+        <Footer {...{ blog }} />
       </main>
     );
   }
@@ -40,7 +41,7 @@ export default function Home() {
 
     return (
       <main className="bg-neutral-600 dark:bg-neutral-100">
-        <NavBar />
+        <NavBar {...{ blog }} />
         <Header />
         {/* section top divider */}
         <Image
@@ -54,7 +55,7 @@ export default function Home() {
         <AboutSection {...{ loading }} />
         <ProjectsSection />
         <ContactSection />
-        <Footer />
+        <Footer {...{ blog }} />
       </main>
     );
   }
@@ -64,7 +65,7 @@ export default function Home() {
 
     return (
       <main className="bg-neutral-600 dark:bg-neutral-100">
-        <NavBar />
+        <NavBar {...{ blog }} />
         <Header />
         {/* section top divider */}
         <Image
@@ -78,7 +79,7 @@ export default function Home() {
         <AboutSection {...{ loading }} />
         <ProjectsSection />
         <ContactSection />
-        <Footer />
+        <Footer {...{ blog }} />
       </main>
     );
   }
