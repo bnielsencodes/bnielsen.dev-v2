@@ -104,7 +104,7 @@ export default function MobileNav({
                   className="outline-light-theme relative flex items-center gap-[6px] rounded-sm cursor-pointer group dark:outline-dark-theme"
                   onClick={() => toggleDropdown()}
                 >
-                  <div className="nav-link underline-light underlineAnimation all-transition my-0 text-neutral-200 font-extrabold group-focus:opacity-80 group-hover:text-opacity-80 dark:text-neutral-500">
+                  <div className="nav-link underline-light underlineAnimation all-transition my-0 text-neutral-200 font-extrabold dark:text-neutral-500">
                     Posts
                   </div>
                   <svg
