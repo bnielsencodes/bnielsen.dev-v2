@@ -40,7 +40,7 @@ export default function Home() {
     let loading = false;
 
     return (
-      <main className="bg-neutral-600 dark:bg-neutral-100">
+      <main className="dark:bg-neutral-100">
         <NavBar {...{ blog }} />
         <Header />
         {/* section top divider */}
@@ -64,7 +64,7 @@ export default function Home() {
     let loading = false;
 
     return (
-      <main className="bg-neutral-600 dark:bg-neutral-100">
+      <main className="bg-neutral-600">
         <NavBar {...{ blog }} />
         <Header />
         {/* section top divider */}
