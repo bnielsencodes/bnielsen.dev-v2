@@ -27,7 +27,7 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "app/_components/contact-section/SubmitButton.js"
+    "app/_components/portfolio/contact-section/SubmitButton.js"
   ],
   "exclude": ["node_modules"]
 }
