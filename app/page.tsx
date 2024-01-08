@@ -43,7 +43,6 @@ export default function Home() {
       <main className="dark:bg-neutral-100">
         <NavBar {...{ blog }} />
         <Header />
-        {/* section top divider */}
         <Image
           className="w-full -mb-[1px]"
           src={waveDark}
@@ -67,7 +66,6 @@ export default function Home() {
       <main className="bg-neutral-600">
         <NavBar {...{ blog }} />
         <Header />
-        {/* section top divider */}
         <Image
           className="w-full"
           src={waveLight}
