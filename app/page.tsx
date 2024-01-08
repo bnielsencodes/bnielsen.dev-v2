@@ -4,12 +4,12 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import waveDark from "@/public/assets/images/section-divider/wave-dark.svg";
 import waveLight from "@/public/assets/images/section-divider/wave-light.svg";
-import NavBar from "./_components/navigation/NavBar";
-import Header from "./_components/header/Header";
-import AboutSection from "./_components/about-section/AboutSection";
-import ProjectsSection from "./_components/projects-section/ProjectsSection";
-import ContactSection from "./_components/contact-section/ContactSection";
-import Footer from "./_components/footer/Footer";
+import NavBar from "./_components/shared/navigation/NavBar";
+import Header from "./_components/portfolio/header/Header";
+import AboutSection from "./_components/portfolio/about-section/AboutSection";
+import ProjectsSection from "./_components/portfolio/projects-section/ProjectsSection";
+import ContactSection from "./_components/portfolio/contact-section/ContactSection";
+import Footer from "./_components/shared/footer/Footer";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
