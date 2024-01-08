@@ -1,5 +1,5 @@
-import useMediaQuery from "../../../_lib/useMediaQuery";
-import { skills, skillsLg } from "../../../data";
+import useMediaQuery from "../../../../_lib/useMediaQuery";
+import { skills, skillsLg } from "../../../../data";
 import Skill from "./Skill";
 
 export default function Skills() {

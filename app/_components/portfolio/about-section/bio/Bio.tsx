@@ -1,4 +1,4 @@
-import Avatar from "../../shared/Avatar";
+import Avatar from "../../../shared/Avatar";
 
 export default function Bio() {
   return (
@@ -7,7 +7,7 @@ export default function Bio() {
 
       <div className="mt-4 font-sans font-light md:text-[1.063rem]">
         {/* statement copy */}
-        <p className="text-neutral-200 font-mosk text-5xl font-extrabold leading-[1.1em] dark:text-neutral-500 xl:text-[3.5rem] xl:leading-[3.875rem]">
+        <p className="font-mosk text-5xl font-extrabold leading-[1.1em] xl:text-[3.5rem] xl:leading-[3.875rem]">
           I like to create visually stunning and user-friendly websites for
           businesses of all sizes.
         </p>
@@ -38,6 +38,14 @@ export default function Bio() {
             target="_blank"
           >
             front page of the internet
+          </a>
+          . I also recently started writing my own blog. Check it out{" "}
+          <a
+            className="outline-light-theme opacity-transition rounded-sm text-accent-100 dark:outline-dark-theme dark:text-accent-200 focus:opacity-80 lg:hover:opacity-80"
+            href="/blog"
+            target="_blank"
+          >
+            here
           </a>
           .
         </p>

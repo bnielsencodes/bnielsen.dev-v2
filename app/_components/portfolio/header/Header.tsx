@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
-import Avatar from "../shared/Avatar";
+import Avatar from "../../shared/Avatar";
 import CTAButtons from "./CTAButtons";
-import Socials from "@/app/_components/socials/Socials";
+import Socials from "@/app/_components/shared/socials/Socials";
 
 export default function Header() {
   const [mounted, setMounted] = useState(false);
