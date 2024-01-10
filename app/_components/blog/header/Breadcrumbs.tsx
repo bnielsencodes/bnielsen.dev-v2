@@ -39,14 +39,14 @@ export default function Breadcrumbs() {
         <p className="px-[8px] mb-1 text-[22px]">&#8250;</p>
         <a
           className="all-transition hover:opacity-80 hover:underline"
-          href="/blog/latest"
+          href="/blog/posts"
         >
-          Latest
+          Posts
         </a>
         <p className="px-[8px] mb-1 text-[22px]">&#8250;</p>
         <a
           className="all-transition hover:opacity-80 hover:underline"
-          href="/blog/tutorials/css"
+          href="/blog/posts/web-development"
         >
           Web Development
         </a>
