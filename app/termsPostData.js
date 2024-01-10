@@ -28,7 +28,7 @@ const termsWithoutId = [
     target: "ally",
     definition: "A11y stands for accessibility.",
     seeAlso: [
-      { name: "Accessibility", link: "#accessibility" },
+      { name: "Accessibility,", link: "#accessibility" },
       { name: "WCAG", link: "#wcag" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -38,7 +38,7 @@ const termsWithoutId = [
     target: "abstraction",
     definition:
       "Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency. In the same way that abstraction sometimes works in art, the object that remains is a representation of the original, with unwanted detail omitted.",
-    seeAlso: [""],
+    // seeAlso: [""],
     // tags: ["javascript", "css", "etc."],
   },
   {
@@ -47,7 +47,7 @@ const termsWithoutId = [
     definition:
       "Web accessibility is the practice of making websites usable for all visitors, including those with disabilities, impairments, and limitations.",
     seeAlso: [
-      { name: "A11y", link: "#ally" },
+      { name: "A11y,", link: "#ally" },
       { name: "WCAG", link: "#wcag" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -105,7 +105,7 @@ const termsWithoutId = [
     definition:
       "An application programming interface (API) is a way for two or more computer programs to communicate with each other.",
     seeAlso: [
-      { name: "Fetch API", link: "#fetch-api" },
+      { name: "Fetch API,", link: "#fetch-api" },
       { name: "REST API", link: "#rest-api" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -116,7 +116,7 @@ const termsWithoutId = [
     definition:
       "Accessible Rich Internet Applications (ARIA) is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.",
     seeAlso: [
-      { name: "ARIA Attributes", link: "#aria-attributes" },
+      { name: "ARIA Attributes,", link: "#aria-attributes" },
       { name: "ARIA Roles", link: "#aria-roles" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -127,7 +127,7 @@ const termsWithoutId = [
     definition:
       "ARIA attributes enable modifying an element's states and properties as defined in the accessibility tree.",
     seeAlso: [
-      { name: "ARIA", link: "#aria" },
+      { name: "ARIA,", link: "#aria" },
       { name: "ARIA Roles", link: "#aria-roles" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -138,7 +138,7 @@ const termsWithoutId = [
     definition:
       "ARIA roles provide semantic meaning to content, allowing screen readers and other tools to present and support interaction with an object in a way that is consistent with user expectations of that type of object. ARIA roles can be used to describe elements that don't natively exist in HTML or exist but don't yet have full browser support.",
     seeAlso: [
-      { name: "ARIA", link: "#aria" },
+      { name: "ARIA,", link: "#aria" },
       { name: "ARIA Attributes", link: "#aria-attributes" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -149,7 +149,7 @@ const termsWithoutId = [
     definition:
       "Arrays are used to store and access multiple values of the same type in a single variable, making it easier to manipulate and manage data.",
     seeAlso: [
-      { name: "Object", link: "#object" },
+      { name: "Object,", link: "#object" },
       {
         name: "Primitive Data Types (JavaScript)",
         link: "#primitive-data-types",
@@ -163,7 +163,7 @@ const termsWithoutId = [
     definition:
       "In computer programming, the async/await pattern is a syntactic feature of many programming languages that allows an asynchronous, non-blocking function to be structured in a way similar to an ordinary synchronous function. Async makes a function return a Promise, and await makes a function wait for a Promise.",
     seeAlso: [
-      { name: "Asynchronous", link: "#asynchronous" },
+      { name: "Asynchronous,", link: "#asynchronous" },
       { name: "Synchronous", link: "#synchronous" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -174,7 +174,7 @@ const termsWithoutId = [
     definition:
       "The term asynchronous refers to two or more objects or events that do not exist or happen at the same time, that is, they are not synchronous. When multiple related things happen without any being dependent on the completion of previous happenings, they are asynchronous.",
     seeAlso: [
-      { name: "Async/Await", link: "#async-await" },
+      { name: "Async/Await,", link: "#async-await" },
       { name: "Synchronous", link: "#synchronous" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -201,8 +201,8 @@ const termsWithoutId = [
     definition:
       "Bash is a command-line interface shell program used extensively in Linux and macOS.",
     seeAlso: [
-      { name: "NPM", link: "#npm" },
-      { name: "Terminal", link: "#terminal" },
+      { name: "NPM,", link: "#npm" },
+      { name: "Terminal,", link: "#terminal" },
       { name: "Yarn", link: "#yarn" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -223,7 +223,7 @@ const termsWithoutId = [
     definition:
       "Sometimes it can refer to development related to building code that runs the site, AND to the area that is used to manage data (administrative part of web site). Public-facing part of site is usually referred as frontend, along with code that exists for purpose of handling requests, rendering (x)html code, etc. So everything public-facing could be called frontend, and everything that is not, that is hidden from public and that runs 'behind the curtains' so to say, can be called backend.",
     seeAlso: [
-      { name: "Frontend", link: "#frontend" },
+      { name: "Frontend,", link: "#frontend" },
       { name: "Fullstack", link: "#fullstack" },
     ],
     // tags: ["javascript", "css", "etc."],
@@ -280,7 +280,7 @@ const termsWithoutId = [
       "Bounce rate is an Internet marketing term used in web traffic analysis. It represents the percentage of visitors who enter the site and then leave ('bounce') rather than continuing to view other pages within the same site. Bounce rate is calculated by counting the number of single page visits and dividing that by the total visits. It is then represented as a percentage of total visits.",
     seeAlso: [
       {
-        name: "Conversion Rate",
+        name: "Conversion Rate,",
         link: "#conversion-rate",
       },
       {
@@ -297,7 +297,7 @@ const termsWithoutId = [
       "In CSS, the term 'box model' is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.",
     seeAlso: [
       {
-        name: "Margin",
+        name: "Margin,",
         link: "#margin",
       },
       {
@@ -389,11 +389,11 @@ const termsWithoutId = [
       "Camel case is a way of writing phrases without spaces, where the first letter of each word is capitalized, except for the first letter of the entire compound word, which may be either upper or lower case.",
     seeAlso: [
       {
-        name: "Kebab Case",
+        name: "Kebab Case,",
         link: "#kebab-case",
       },
       {
-        name: "Pascal Case",
+        name: "Pascal Case,",
         link: "#pascal-case",
       },
       {
@@ -462,7 +462,7 @@ const termsWithoutId = [
       "In software engineering, CI/CD or CICD is the combined practices of continuous integration (CI) and continuous delivery (CD) or, less often, continuous deployment. They are sometimes referred to collectively as continuous development or continuous software development.",
     seeAlso: [
       {
-        name: "Continuous Development",
+        name: "Continuous Development,",
         link: "#continuous-development",
       },
       {
@@ -491,7 +491,7 @@ const termsWithoutId = [
     definition: "JavaScript Classes are templates for JavaScript Objects.",
     seeAlso: [
       {
-        name: "Constructor",
+        name: "Constructor,",
         link: "#constructor",
       },
       {
@@ -508,11 +508,11 @@ const termsWithoutId = [
       "A client is a computer or a program that, as part of its operation, relies on sending a request to another program or a computer hardware or software that accesses a service made available by a server (which may or may not be located on another computer). For example, web browsers are clients that connect to web servers and retrieve web pages for display.[2] Email clients retrieve email from mail servers. Online chat uses a variety of clients, which vary on the chat protocol being used. Multiplayer video games or online video games may run as a client on each computer. The term 'client' may also be applied to computers or devices that run the client software or users that use the client software.",
     seeAlso: [
       {
-        name: "Client-Side Rendering",
+        name: "Client-Side Rendering,",
         link: "#client-side-rendering",
       },
       {
-        name: "Client Components",
+        name: "Client Components,",
         link: "#client-components",
       },
       {
@@ -529,7 +529,7 @@ const termsWithoutId = [
       "Client Components allows you to write interactive UI that can be rendered on the client at request time. In Next.js, client rendering is opt-in, meaning you have to explicitly decide what components React should render on the client.",
     seeAlso: [
       {
-        name: "Client",
+        name: "Client,",
         link: "#client",
       },
       {
@@ -546,7 +546,7 @@ const termsWithoutId = [
       "In Client-Side Rendering (CSR) with React, the browser downloads a minimal HTML page and the JavaScript needed for the page. The JavaScript is then used to update the DOM and render the page. When the application is first loaded, the user may notice a slight delay before they can see the full page, this is because the page isn't fully rendered until all the JavaScript is downloaded, parsed, and executed. After the page has been loaded for the first time, navigating to other pages on the same website is typically faster, as only necessary data needs to be fetched, and JavaScript can re-render parts of the page without requiring a full page refresh.",
     seeAlso: [
       {
-        name: "Client",
+        name: "Client,",
         link: "#client",
       },
       {
@@ -615,7 +615,7 @@ const termsWithoutId = [
       "The constructor method is a special method of a class for creating and initializing an object instance of that class. A constructor enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object.",
     seeAlso: [
       {
-        name: "Classes",
+        name: "Classes,",
         link: "#classes-javascript",
       },
       {
@@ -632,7 +632,7 @@ const termsWithoutId = [
       "The constructor method is a special method of a class for creating and initializing an object instance of that class. A constructor enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object.",
     seeAlso: [
       {
-        name: "Classes",
+        name: "Classes,",
         link: "#classes-javascript",
       },
       {
