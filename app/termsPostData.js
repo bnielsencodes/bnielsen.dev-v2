@@ -57,7 +57,7 @@ const termsWithoutId = [
     target: "accordian",
     definition:
       "A type of menu that displays a list of headers stacked on top of one another. When clicked on (or triggered by a keyboard interaction or screen reader), these headers will either reveal or hide associated content. This list of web terms is an accordian. As one header opens, the previous opened header closes.",
-    seeAlso: [""],
+    // seeAlso: [""],
     // tags: ["javascript", "css", "etc."],
   },
   {
