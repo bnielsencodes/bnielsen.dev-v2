@@ -32,7 +32,7 @@ export default function Term({
   const seeAlsoElements = seeAlso.map((term) => {
     return (
       <li
-        className="pr-[10px] text-neutral-300 dark:text-neutral-400 text-opacity-80 text-base leading-[22px] hover:text-opacity-70"
+        className="pr-[8px] text-neutral-300 dark:text-neutral-400 text-opacity-80 text-base leading-[22px] hover:opacity-80"
         key={term.id}
       >
         <a href={term.link}>{term.name}</a>
@@ -42,9 +42,14 @@ export default function Term({
 
   return (
     <li id={term.target} className="pt-16 -mb-7">
-      <p className="text-2xl font-bold">{term.name}</p>
-      <p className="pt-3 pb-2">{term.definition}</p>
-      <ul className="flex">{seeAlsoElements}</ul>
+      <p className="text-3xl font-bold">{term.name}</p>
+      <p className="pt-3 pb-4">{term.definition}</p>
+      <ul className="flex flex-wrap">
+        <span className="pr-[6px] text-neutral-300 dark:text-neutral-500 text-base leading-[22px]">
+          {term.seeAlso ? "See Also:" : null}
+        </span>
+        {seeAlsoElements}
+      </ul>
     </li>
   );
 }
