@@ -20,7 +20,7 @@ export default function Content() {
 
   return (
     <article className="w-full max-w-[686px] text-neutral-200 dark:text-neutral-500 font-sans text-[19px] font-medium">
-      <ul className="pb-24">{termElements}</ul>
+      <ul className="pb-48">{termElements}</ul>
 
       <div>
         <p className="text-neutral-300 dark:text-neutral-400 text-[13.25px] font-extrabold uppercase">
