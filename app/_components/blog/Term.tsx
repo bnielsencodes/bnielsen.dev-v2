@@ -32,7 +32,7 @@ export default function Term({
   const seeAlsoElements = seeAlso.map((term) => {
     return (
       <li
-        className="pr-[8px] text-neutral-300 dark:text-neutral-400 text-opacity-80 text-base leading-[22px] hover:opacity-80"
+        className="pr-[8px] text-neutral-300 dark:text-neutral-400 text-opacity-80 text-base leading-[22px] lg:hover:opacity-80"
         key={term.id}
       >
         <a href={term.link}>{term.name}</a>
