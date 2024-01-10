@@ -37,7 +37,7 @@ export default function PostHeader() {
         <Breadcrumbs />
 
         {/* post title */}
-        <h1 className="mb-1 text-neutral-100 text-[38px] font-bold leading-[2.5rem] text-left dark:text-neutral-600 md:text-[32px] lg:text-[38px] md:leading-[1.35em]">
+        <h1 className="mt-1 mb-2 md:mt-0 md:mb-1 text-neutral-100 text-[38px] font-bold leading-[2.5rem] text-left dark:text-neutral-600 md:text-[32px] lg:text-[38px] md:leading-[1.35em]">
           {post.title}
         </h1>
 
