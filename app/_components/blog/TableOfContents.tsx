@@ -16,7 +16,7 @@ export default function TableOfContents() {
   const termsList = tableOfContents.map((term) => {
     return (
       <li key={term.id}>
-        <a className="hover:opacity-80" href={term.link}>
+        <a className="lg:hover:opacity-80" href={term.link}>
           {term.name}
         </a>
       </li>
