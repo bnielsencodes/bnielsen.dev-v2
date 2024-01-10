@@ -109,7 +109,7 @@ export default function MobileNav({
                   </div>
                   <svg
                     className={clsx(
-                      "all-transition w-10 h-10 mt-1 group-hover:opacity-80",
+                      "all-transition w-10 h-10 mt-[12.8px] lg:group-hover:opacity-80",
                       {
                         "-rotate-180": !dropdownOpen,
                       }
