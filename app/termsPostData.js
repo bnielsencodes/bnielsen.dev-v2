@@ -92,7 +92,7 @@ const termsWithoutId = [
     // tags: ["javascript", "css", "etc."],
   },
   {
-    name: "Alt Attribute (<i>HTML</i>)",
+    name: "Alt Attribute",
     target: "alt",
     definition:
       "The required alt attribute specifies an alternate text for an image, if the image cannot be displayed. The alt attribute provides alternative information for an image if a user for some reason cannot view it (because of slow connection, an error in the src attribute, or if the user uses a screen reader).",
@@ -144,10 +144,10 @@ const termsWithoutId = [
     // tags: ["javascript", "css", "etc."],
   },
   {
-    name: "Array (<i>JavaScript</i>)",
+    name: "Array",
     target: "array",
     definition:
-      "Arrays are used to store and access multiple values of the same type in a single variable, making it easier to manipulate and manage data.",
+      "In JavaScript, arrays are used to store and access multiple values of the same type in a single variable, making it easier to manipulate and manage data.",
     seeAlso: [
       { name: "Object,", link: "#object" },
       {
@@ -473,7 +473,7 @@ const termsWithoutId = [
     // tags: ["javascript", "css", "etc."],
   },
   {
-    name: "Class Selector (<i>CSS</i>)",
+    name: "Class Selector",
     target: "class-selector",
     definition:
       "The CSS class selector matches elements based on the contents of their class attribute.",
@@ -486,7 +486,7 @@ const termsWithoutId = [
     // tags: ["javascript", "css", "etc."],
   },
   {
-    name: "Classes (<i>JavaScript</i>)",
+    name: "Classes",
     target: "classes-javascript",
     definition: "JavaScript Classes are templates for JavaScript Objects.",
     seeAlso: [
@@ -609,24 +609,7 @@ const termsWithoutId = [
     // tags: ["javascript", "css", "etc."],
   },
   {
-    name: "Constructor (<i>JavaScript</i>)",
-    target: "constructor",
-    definition:
-      "The constructor method is a special method of a class for creating and initializing an object instance of that class. A constructor enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object.",
-    seeAlso: [
-      {
-        name: "Classes,",
-        link: "#classes-javascript",
-      },
-      {
-        name: "Object",
-        link: "#object",
-      },
-    ],
-    // tags: ["javascript", "css", "etc."],
-  },
-  {
-    name: "Constructor (<i>JavaScript</i>)",
+    name: "Constructor",
     target: "constructor",
     definition:
       "The constructor method is a special method of a class for creating and initializing an object instance of that class. A constructor enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object.",
