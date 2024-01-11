@@ -44,8 +44,8 @@ export default function Term({
     <li id={term.target} className="pt-16 -mb-7">
       <p className="text-3xl font-bold">{term.name}</p>
       <p className="pt-3">{term.definition}</p>
-      <ul className="flex flex-wrap">
-        <span className="pt-4 pr-[6px] text-neutral-300 dark:text-neutral-500 text-base leading-[22px]">
+      <ul className="flex flex-wrap pt-4">
+        <span className="pr-[6px] text-neutral-300 dark:text-neutral-500 text-base leading-[22px]">
           {term.seeAlso ? "See Also:" : null}
         </span>
         {seeAlsoElements}
