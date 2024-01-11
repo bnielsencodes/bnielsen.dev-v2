@@ -1,7 +1,7 @@
 import ReturnHomeBtn from "./ReturnHomeBtn";
 import Location from "./Location";
 import ResumeBtn from "./ResumeBtn";
-import ViewPortfolio from "./ViewPortfolio";
+import ViewPortfolio from "./ViewPortfolioBtn";
 import Socials from "../socials/Socials";
 import clsx from "clsx";
 
