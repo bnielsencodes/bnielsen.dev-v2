@@ -58,7 +58,7 @@ export default function NavBar({ blog }: { blog?: boolean }) {
             <ThemedLogo />
             <a
               className="opacity-transition outline-light-theme flex items-center h-8 rounded-sm text-neutral-100 dark:outline-dark-theme dark:text-neutral-600 text-xl font-bold leading-[0.019rem] focus:opacity-80 lg:hover:opacity-80"
-              href="#header"
+              href="/blog"
             >
               Brandon Nielsen
             </a>
