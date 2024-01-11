@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ThemedLogo from "./ThemedLogo";
 import NavList from "./NavList";
 import ThemeToggle from "./ThemeToggle";
@@ -11,6 +11,13 @@ export default function NavBar({ blog }: { blog?: boolean }) {
   function toggleMobileNav() {
     setShowMobileNav((prevState) => !prevState);
   }
+
+  useEffect(() => {
+    if (showMobileNav) {
+      document.body.style.overflow = "hidden";
+    } else document.body.style.overflow = "scroll";
+    return () => {};
+  }, [showMobileNav]);
 
   // Portfolio NavBar
   if (!blog) {
