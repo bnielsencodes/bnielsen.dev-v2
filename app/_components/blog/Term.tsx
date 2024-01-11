@@ -41,7 +41,7 @@ export default function Term({
   });
 
   return (
-    <li id={term.target} className="pt-16 -mb-7">
+    <li id={term.target} className="pt-16 mt-[1px] -mb-7">
       <p className="text-3xl font-bold">{term.name}</p>
       <p className="pt-3">{term.definition}</p>
       <ul className="flex flex-wrap pt-4">
