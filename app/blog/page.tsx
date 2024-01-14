@@ -12,7 +12,7 @@ export default function Blog() {
     <main className="bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
       <Header />
-      <div className="flex gap-4 w-full pt-[56px] px-6 pb-4 mx-auto md:max-w-[686px] md:px-0 xl:max-w-[1100px] xl:px-8">
+      <div className="mx-auto flex w-full gap-4 px-6 pb-4 pt-[56px] md:max-w-[686px] md:px-0 xl:max-w-[1100px] xl:px-8">
         <Content />
         <TableOfContents />
       </div>

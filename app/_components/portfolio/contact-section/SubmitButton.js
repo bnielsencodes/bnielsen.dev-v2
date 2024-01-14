@@ -13,21 +13,21 @@ export default function SubmitButton(props) {
 
   if (!mounted) {
     return (
-      <div className="relative flex justify-end w-full h-auto">
-        <div className="w-[96px] h-[48px] bg-neutral-400 animate-pulse rounded-lg dark:bg-neutral-500"></div>
+      <div className="relative flex h-auto w-full justify-end">
+        <div className="h-[48px] w-[96px] animate-pulse rounded-lg bg-neutral-400 dark:bg-neutral-500"></div>
       </div>
     );
   }
 
   if (resolvedTheme === "dark") {
     return (
-      <div className="relative w-full h-auto text-end">
+      <div className="relative h-auto w-full text-end">
         <ValidationError
-          className="absolute top-[6px] left-[14px] text-warning"
+          className="absolute left-[14px] top-[6px] text-warning"
           errors={props.state.errors}
         />
         <button
-          className="btn btn-primary btn-light shadow-xl text-neutral-200 font-semibold"
+          className="btn btn-primary btn-light font-semibold text-neutral-200 shadow-xl"
           type="submit"
           disabled={props.state.submitting}
           onClick={() => {
@@ -40,7 +40,7 @@ export default function SubmitButton(props) {
 
         {/* hover transition button */}
         <button
-          className="btn btn-primary btn-light-alt absolute top-0 right-0 text-neutral-200 font-semibold"
+          className="btn btn-primary btn-light-alt absolute right-0 top-0 font-semibold text-neutral-200"
           type="submit"
           tabIndex={-1}
           aria-hidden={true}
@@ -58,13 +58,13 @@ export default function SubmitButton(props) {
 
   if (resolvedTheme === "light") {
     return (
-      <div className="relative w-full h-auto text-end">
+      <div className="relative h-auto w-full text-end">
         <ValidationError
-          className="absolute top-[6px] left-[14px] text-warning"
+          className="absolute left-[14px] top-[6px] text-warning"
           errors={props.state.errors}
         />
         <button
-          className="btn btn-primary btn-dark shadow-xl text-neutral-500 font-semibold"
+          className="btn btn-primary btn-dark font-semibold text-neutral-500 shadow-xl"
           type="submit"
           disabled={props.state.submitting}
           onClick={() => {
@@ -77,7 +77,7 @@ export default function SubmitButton(props) {
 
         {/* hover transition button */}
         <button
-          className="btn btn-primary btn-dark-alt absolute top-0 right-0 text-neutral-500 font-semibold"
+          className="btn btn-primary btn-dark-alt absolute right-0 top-0 font-semibold text-neutral-500"
           type="submit"
           tabIndex={-1}
           aria-hidden={true}

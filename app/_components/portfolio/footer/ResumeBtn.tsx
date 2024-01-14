@@ -1,7 +1,7 @@
 export default function ResumeBtn() {
   return (
     <a
-      className="outline-light-theme flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-sm group dark:outline-dark-theme md:pl-[6px]"
+      className="outline-light-theme dark:outline-dark-theme group flex h-[25px] items-center justify-start gap-[6px] rounded-sm pl-[6px] md:pl-[6px]"
       href="https://drive.google.com/file/d/1w_IJIBJAFWBYLJnMi7mtPcMgNvjRvxDR/view?usp=sharing"
       aria-label="View my resume"
       target="_blank"
@@ -22,7 +22,7 @@ export default function ResumeBtn() {
           d="M19.5,91C13.71,91,9,86.29,9,80.5v-61C9,13.71,13.71,9,19.5,9h61C86.29,9,91,13.71,91,19.5v61 C91,86.29,86.29,91,80.5,91H19.5z"
         />
         <path
-          className="relative flex items-start justify-between h-48 pt-8 pr-[27px] fill-[#005e98] dark:fill-[#1aa7ff]"
+          className="relative flex h-48 items-start justify-between fill-[#005e98] pr-[27px] pt-8 dark:fill-[#1aa7ff]"
           d="M15.5,80.5v-61c0-2.209,1.791-4,4-4h61c2.209,0,4,1.791,4,4v61c0,2.209-1.791,4-4,4h-61 C17.291,84.5,15.5,82.709,15.5,80.5z"
         />
         <path
@@ -37,7 +37,7 @@ export default function ResumeBtn() {
         </g>
       </svg>
 
-      <p className="text-neutral-200 font-sans text-[1.125rem] tracking-wide dark:text-neutral-500 group-focus:opacity-90 lg:group-hover:opacity-90">
+      <p className="font-sans text-[1.125rem] tracking-wide text-neutral-200 group-focus:opacity-90 dark:text-neutral-500 lg:group-hover:opacity-90">
         view my resume
       </p>
     </a>

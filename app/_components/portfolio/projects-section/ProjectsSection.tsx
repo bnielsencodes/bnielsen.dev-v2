@@ -9,16 +9,16 @@ export default function ProjectsSection() {
   return (
     <section
       id="projects-section"
-      className="pt-20 pb-10 bg-neutral-600 overflow-x-clip dark:bg-neutral-100 md:pb-[140px] lg:pb-[260px]"
+      className="overflow-x-clip bg-neutral-600 pb-10 pt-20 dark:bg-neutral-100 md:pb-[140px] lg:pb-[260px]"
     >
       {/* section heading */}
       <h2
         id="projects-section-heading"
-        className="relative z-0 w-[130px] mx-auto pt-10 text-neutral-200 text-[2.5rem] font-bold text-center lg:w-[143px] lg:text-[2.75rem] after:absolute after:content-[''] after:-z-10 after:right-0 after:bottom-[5px] after:w-[93px] after:h-[14px] after:bg-neutral-400 dark:text-neutral-500 dark:after:bg-neutral-300 lg:after:w-[101px] lg:after:bottom-[7px]"
+        className="relative z-0 mx-auto w-[130px] pt-10 text-center text-[2.5rem] font-bold text-neutral-200 after:absolute after:bottom-[5px] after:right-0 after:-z-10 after:h-[14px] after:w-[93px] after:bg-neutral-400 after:content-[''] dark:text-neutral-500 dark:after:bg-neutral-300 lg:w-[143px] lg:text-[2.75rem] lg:after:bottom-[7px] lg:after:w-[101px]"
       >
         Work
       </h2>
-      <div className="flex flex-col justify-center pb-[25px] mt-[165px] text-[0.9rem] lg:mt-[260px] lg:pb-0">
+      <div className="mt-[165px] flex flex-col justify-center pb-[25px] text-[0.9rem] lg:mt-[260px] lg:pb-0">
         {projectElements}
       </div>
     </section>

@@ -3,10 +3,10 @@ import Socials from "../.././shared/socials/Socials";
 
 export default function Footer() {
   return (
-    <footer className="relative flex flex-col items-center pt-10 pb-9 bg-neutral-500 dark:bg-neutral-200">
+    <footer className="relative flex flex-col items-center bg-neutral-500 pb-9 pt-10 dark:bg-neutral-200">
       <ViewPortfolio />
 
-      <small className="pl-[7px] mt-3 mb-6 text-neutral-300 font-sans text-[0.725rem] uppercase dark:text-neutral-400 xl:pl-2">
+      <small className="mb-6 mt-3 pl-[7px] font-sans text-[0.725rem] uppercase text-neutral-300 dark:text-neutral-400 xl:pl-2">
         Brandon Nielsen - 2023
       </small>
 

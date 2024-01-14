@@ -39,7 +39,7 @@ export default function Footer() {
         />
       </svg>
 
-      <p className="text-neutral-100 tracking-wide dark:text-neutral-500">
+      <p className="tracking-wide text-neutral-100 dark:text-neutral-500">
         <span className="font-sans font-light">find me in</span> Oregon, US
       </p>
     </div>

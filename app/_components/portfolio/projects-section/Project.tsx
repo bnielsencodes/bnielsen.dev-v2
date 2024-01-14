@@ -30,7 +30,7 @@ export default function ProjectsSection({
           "md:px-[24px]":
             project.name === "Quizzical" ||
             project.name === "Dictionary Web App",
-        }
+        },
       )}
     >
       {/* background color container */}
@@ -38,31 +38,31 @@ export default function ProjectsSection({
         className={clsx(
           "hidden md:absolute md:-top-[120px] md:block md:h-[calc(100%+240px)] lg:-top-36 lg:h-[calc(100%+288px)]",
           {
-            "md:left-0 md:w-1/4 lg:w-1/3 md:bg-projects-audiophile":
+            "md:left-0 md:w-1/4 md:bg-projects-audiophile lg:w-1/3":
               project.name === "Audiophile",
-            "md:right-0 md:w-1/3 xl:w-2/5 md:bg-projects-securepass":
+            "md:right-0 md:w-1/3 md:bg-projects-securepass xl:w-2/5":
               project.name === "SecurePass",
-            "md:left-0 md:w-1/5 lg:w-1/4 xl:w-1/3 md:bg-projects-quizzical":
+            "md:left-0 md:w-1/5 md:bg-projects-quizzical lg:w-1/4 xl:w-1/3":
               project.name === "Quizzical",
-            "md:right-0 md:w-1/5 lg:w-1/4 xl:w-1/3 md:bg-projects-dictionary":
+            "md:right-0 md:w-1/5 md:bg-projects-dictionary lg:w-1/4 xl:w-1/3":
               project.name === "Dictionary Web App",
-          }
+          },
         )}
       ></div>
       {/* project container */}
       <article
         className={clsx(
-          "md:flex md:items-center md:justify-center md:gap-7 md:mx-auto lg:gap-12",
+          "md:mx-auto md:flex md:items-center md:justify-center md:gap-7 lg:gap-12",
           {
             "md:flex-row-reverse":
               project.name === "SecurePass" ||
               project.name === "Dictionary Web App",
-          }
+          },
         )}
       >
         {/* image container */}
         <div
-          className={clsx("relative md:flex md:flex-1 md:h-full", {
+          className={clsx("relative md:flex md:h-full md:flex-1", {
             "lg:justify-end": project.name === "Audiophile",
             "md:justify-end": project.name === "Quizzical",
           })}
@@ -70,7 +70,7 @@ export default function ProjectsSection({
           {/* background color mobile container */}
           <div
             className={clsx(
-              "absolute -top-[40px] left-0 w-full h-32 md:hidden",
+              "absolute -top-[40px] left-0 h-32 w-full md:hidden",
               {
                 "h-32 bg-projects-audiophile": project.name === "Audiophile",
                 "h-[13rem] bg-projects-securepass":
@@ -78,19 +78,19 @@ export default function ProjectsSection({
                 "h-[13rem] bg-projects-quizzical": project.name === "Quizzical",
                 "h-[13rem] bg-projects-dictionary":
                   project.name === "Dictionary Web App",
-              }
+              },
             )}
           ></div>
           {project.name === "Audiophile" || project.name === "SecurePass" ? (
             <Image
               className={clsx(
-                "drop-shadow-2xl relative h-auto dark:drop-shadow-none",
+                "relative h-auto drop-shadow-2xl dark:drop-shadow-none",
                 {
-                  "w-[calc(100%-40px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
+                  "mx-auto w-[calc(100%-40px)] md:mx-0 md:w-full lg:max-w-[594px]":
                     project.name === "Audiophile",
-                  "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[235px]":
+                  "mx-auto w-[225px] md:mx-0 md:w-[169px] lg:w-[212px] xl:w-[235px]":
                     project.name === "SecurePass",
-                }
+                },
               )}
               src={project.img}
               alt={project.alt}
@@ -100,9 +100,9 @@ export default function ProjectsSection({
             />
           ) : project.name === "Quizzical" ||
             project.name === "Dictionary Web App" ? (
-            <div className="relative w-[calc(100%-40px)] max-w-[440px] h-[calc(100vw+25px)] mx-auto md:w-[346px] md:h-[400px] md:mx-0 xl:w-[400px]">
+            <div className="relative mx-auto h-[calc(100vw+25px)] w-[calc(100%-40px)] max-w-[440px] md:mx-0 md:h-[400px] md:w-[346px] xl:w-[400px]">
               <Image
-                className="drop-shadow-2xl absolute top-[35%] left-0 z-20 -translate-y-1/2 w-[55%] h-auto mx-auto dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
+                className="absolute left-0 top-[35%] z-20 mx-auto h-auto w-[55%] -translate-y-1/2 drop-shadow-2xl dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
                 src={project.img}
                 alt={project.alt}
                 width={project.imgWidth}
@@ -110,7 +110,7 @@ export default function ProjectsSection({
                 sizes="100vw"
               />
               <Image
-                className="drop-shadow-2xl absolute top-[65%] right-0 z-10 -translate-y-1/2 w-[55%] h-auto mx-auto dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
+                className="absolute right-0 top-[65%] z-10 mx-auto h-auto w-[55%] -translate-y-1/2 drop-shadow-2xl dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
                 src={project.img2}
                 alt={project.alt2}
                 width={project.imgWidth}
@@ -123,23 +123,23 @@ export default function ProjectsSection({
 
         {/* project details container */}
         <div
-          className={clsx("mt-8 mx-5 md:flex-1 md:mt-0 md:mx-0", {
+          className={clsx("mx-5 mt-8 md:mx-0 md:mt-0 md:flex-1", {
             "md:flex md:flex-col md:items-end":
               project.name === "SecurePass" ||
               project.name === "Dictionary Web App",
           })}
         >
-          <h3 className="text-neutral-200 text-[2.3rem] leading-[2.5rem] font-bold dark:text-neutral-500 md:text-[2.39rem] lg:text-5xl">
+          <h3 className="text-[2.3rem] font-bold leading-[2.5rem] text-neutral-200 dark:text-neutral-500 md:text-[2.39rem] lg:text-5xl">
             {project.name}
           </h3>
           <p
             className={clsx(
-              "mt-3 mb-4 text-neutral-200 font-sans text-[1.125rem] font-light dark:text-neutral-600 dark:opacity-60 md:w-[336px] md:mb-5 lg:w-[432px]",
+              "mb-4 mt-3 font-sans text-[1.125rem] font-light text-neutral-200 dark:text-neutral-600 dark:opacity-60 md:mb-5 md:w-[336px] lg:w-[432px]",
               {
                 "md:text-right":
                   project.name === "SecurePass" ||
                   project.name === "Dictionary Web App",
-              }
+              },
             )}
           >
             {project.description}

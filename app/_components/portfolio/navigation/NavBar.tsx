@@ -20,12 +20,12 @@ export default function NavBar() {
   }, [showMobileNav]);
 
   return (
-    <nav className="fixed top-0 right-0 left-0 z-30 flex items-center justify-start h-14 pl-5 border-b border-neutral-400 bg-neutral-600 bg-opacity-80 backdrop-blur-sm shadow-navbar dark:border-neutral-300 dark:bg-neutral-100 dark:bg-opacity-80 dark:shadow-none md:pl-6 lg:justify-between lg:pr-5">
+    <nav className="fixed left-0 right-0 top-0 z-30 flex h-14 items-center justify-start border-b border-neutral-400 bg-neutral-600 bg-opacity-80 pl-5 shadow-navbar backdrop-blur-sm dark:border-neutral-300 dark:bg-neutral-100 dark:bg-opacity-80 dark:shadow-none md:pl-6 lg:justify-between lg:pr-5">
       {/* logo and name */}
       <div className="flex items-center">
         <ThemedLogo />
         <a
-          className="opacity-transition outline-light-theme flex items-center h-8 rounded-sm text-neutral-100 dark:outline-dark-theme dark:text-neutral-600 text-xl font-bold leading-[0.019rem] focus:opacity-80 lg:hover:opacity-80"
+          className="opacity-transition outline-light-theme dark:outline-dark-theme flex h-8 items-center rounded-sm text-xl font-bold leading-[0.019rem] text-neutral-100 focus:opacity-80 dark:text-neutral-600 lg:hover:opacity-80"
           href="#header"
         >
           Brandon Nielsen

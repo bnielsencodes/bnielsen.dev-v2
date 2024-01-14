@@ -5,9 +5,9 @@ export default function LinkedIn({ parent }: { parent: string }) {
     <>
       <svg
         className={clsx("flex items-center justify-center", {
-          "w-[56px] h-[56px] md:w-[60px] md:h-[60px] lg:w-12 lg:h-12":
+          "h-[56px] w-[56px] md:h-[60px] md:w-[60px] lg:h-12 lg:w-12":
             parent === "mobile nav" || parent === "header",
-          "w-[48px] h-[48px] lg:w-[52px] lg:h-[52px]": parent === "footer",
+          "h-[48px] w-[48px] lg:h-[52px] lg:w-[52px]": parent === "footer",
         })}
         viewBox="0 0 36 36"
         fill="none"
