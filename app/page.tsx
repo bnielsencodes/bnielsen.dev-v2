@@ -14,7 +14,6 @@ import Footer from "./_components/portfolio/footer/Footer";
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme } = useTheme();
-  const blog = false;
 
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
@@ -26,7 +25,7 @@ export default function Home() {
 
     return (
       <main className="bg-neutral-600 dark:bg-neutral-100">
-        <NavBar {...{ blog }} />
+        <NavBar />
         <Header />
         <AboutSection {...{ loading }} />
         <ProjectsSection />
@@ -41,7 +40,7 @@ export default function Home() {
 
     return (
       <main className="dark:bg-neutral-100">
-        <NavBar {...{ blog }} />
+        <NavBar />
         <Header />
         <Image
           className="w-full -mb-[1px]"
@@ -64,7 +63,7 @@ export default function Home() {
 
     return (
       <main className="bg-neutral-600">
-        <NavBar {...{ blog }} />
+        <NavBar />
         <Header />
         <Image
           className="w-full"
