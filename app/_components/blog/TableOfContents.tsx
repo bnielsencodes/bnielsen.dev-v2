@@ -15,7 +15,7 @@ export default function TableOfContents() {
 
   const termsList = tableOfContents.map((term) => {
     return (
-      <li key={term.id}>
+      <li className="pb-[3px]" key={term.id}>
         <a className="lg:hover:opacity-80" href={term.link}>
           {term.name}
         </a>
@@ -29,7 +29,7 @@ export default function TableOfContents() {
         Table of Contents
       </p>
 
-      <ul className="flex flex-col gap-[6px] h-[calc(-150px+100vh)] mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] overflow-scroll">
+      <ul className="flex flex-col gap-[6px] h-[calc(-265px+100vh)] mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] overflow-scroll">
         {termsList}
       </ul>
     </aside>
