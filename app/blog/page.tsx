@@ -3,7 +3,7 @@ import NavBar from "../_components/shared/navigation/NavBar";
 import Header from "../_components/blog/header/PostHeader";
 import Content from "../_components/blog/Content";
 import TableOfContents from "../_components/blog/TableOfContents";
-import Footer from "../_components/shared/footer/Footer";
+import Footer from "../_components/portfolio/footer/Footer";
 
 export default function Blog() {
   const blog = true;
@@ -16,7 +16,7 @@ export default function Blog() {
         <Content />
         <TableOfContents />
       </div>
-      <Footer {...{ blog }} />
+      <Footer />
     </main>
   );
 }
