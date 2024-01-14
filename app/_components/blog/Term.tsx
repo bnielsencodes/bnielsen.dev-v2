@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import clsx from "clsx";
 
 export default function Term({
   term,
@@ -32,7 +33,7 @@ export default function Term({
   const seeAlsoElements = seeAlso.map((term) => {
     return (
       <li
-        className="pr-[8px] text-neutral-300 dark:text-neutral-400 text-opacity-80 text-base leading-[22px] lg:hover:opacity-80"
+        className="pr-2 text-neutral-300 dark:text-neutral-400 text-opacity-80 text-base leading-[22px] lg:hover:opacity-80"
         key={term.id}
       >
         <a href={term.link}>{term.name}</a>
@@ -41,10 +42,14 @@ export default function Term({
   });
 
   return (
-    <li id={term.target} className="pt-16 mt-[1px] -mb-7">
+    <li id={term.target} className="pt-16">
       <p className="text-3xl font-bold">{term.name}</p>
       <p className="pt-3">{term.definition}</p>
-      <ul className="flex flex-wrap pt-4">
+      <ul
+        className={clsx("flex flex-wrap pt-6", {
+          hidden: !term.seeAlso,
+        })}
+      >
         <span className="pr-[6px] text-neutral-300 dark:text-neutral-500 text-base leading-[22px]">
           {term.seeAlso ? "See Also:" : null}
         </span>
