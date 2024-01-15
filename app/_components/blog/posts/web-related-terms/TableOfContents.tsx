@@ -24,12 +24,12 @@ export default function TableOfContents() {
   });
 
   return (
-    <aside className="sticky hidden xl:block top-[28px] w-full max-w-[250px] max-h-[calc(-150px+100vh)] pt-[66px] ml-auto text-neutral-200 text-[17px] font-bold tracking-wider">
-      <p className="text-neutral-200 dark:text-neutral-500 uppercase">
+    <aside className="sticky top-[28px] ml-auto hidden max-h-[calc(-150px+100vh)] w-full max-w-[250px] pt-[66px] text-[17px] font-bold tracking-wider text-neutral-200 xl:block">
+      <p className="uppercase text-neutral-200 dark:text-neutral-500">
         Table of Contents
       </p>
 
-      <ul className="flex flex-col gap-[6px] h-[calc(-265px+100vh)] mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] overflow-scroll">
+      <ul className="mt-4 flex h-[calc(-265px+100vh)] flex-col gap-[6px] overflow-scroll font-sans text-[14.5px] text-neutral-300 dark:text-neutral-400">
         {termsList}
       </ul>
     </aside>

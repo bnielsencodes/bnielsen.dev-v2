@@ -13,7 +13,7 @@ export default function Term({
         id: number;
         name: string;
         link: string;
-      }
+      },
     ];
   };
 }) {
@@ -33,7 +33,7 @@ export default function Term({
   const seeAlsoElements = seeAlso.map((term) => {
     return (
       <li
-        className="pr-2 text-neutral-300 dark:text-neutral-400 text-opacity-80 text-base leading-[22px] lg:hover:opacity-80"
+        className="pr-2 text-base leading-[22px] text-neutral-300 text-opacity-80 dark:text-neutral-400 lg:hover:opacity-80"
         key={term.id}
       >
         <a href={term.link}>{term.name}</a>
@@ -50,7 +50,7 @@ export default function Term({
           hidden: !term.seeAlso,
         })}
       >
-        <span className="pr-[6px] text-neutral-300 dark:text-neutral-500 text-base leading-[22px]">
+        <span className="pr-[6px] text-base leading-[22px] text-neutral-300 dark:text-neutral-500">
           {term.seeAlso ? "See Also:" : null}
         </span>
         {seeAlsoElements}
