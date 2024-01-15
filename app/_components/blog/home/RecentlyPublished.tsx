@@ -28,7 +28,7 @@ export default function RecentlyPublished() {
             {post.description}
           </p>
           <div className="flex gap-2">
-            <p className="text-[16px] font-bold text-neutral-200 dark:text-neutral-500">
+            <p className="font-sans text-[16px] font-bold text-neutral-200 dark:text-neutral-500">
               Read more
             </p>
             <Image
