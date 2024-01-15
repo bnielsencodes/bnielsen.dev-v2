@@ -3,7 +3,7 @@ export const post = {
   title: "Web Related Terminology",
   subtitle:
     "A curated list of common web related terminology and their definitions",
-  date: "January 10th, 2023",
+  date: "January 15th, 2023",
 };
 
 export const recentlyPublished = [
@@ -11,7 +11,7 @@ export const recentlyPublished = [
     id: 1,
     title: "Web Related Terminology",
     description:
-      "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+      "A collection of common web related terminology and their definitions. Whether you’re just starting out or a senior developer, this list will help ensure that you sound like an industry pro. Covering CSS, databases, HTML, JavaScript, Next.js, React, Tailwind CSS, the web in general, and more.",
     link: "/blog/posts/web-development/web-related-terms",
     tags: [
       "career",
