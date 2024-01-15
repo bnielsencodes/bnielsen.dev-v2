@@ -2,7 +2,7 @@
 export const post = {
   title: "Web Related Terminology",
   subtitle:
-    "A curated list of common web related terminology and their definitions",
+    "A collection of web related terminology and their definitions",
   date: "January 15th, 2023",
 };
 
