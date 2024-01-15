@@ -2,8 +2,8 @@
 import { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 import Image from "next/image";
-import waveDark from "@/public/assets/images/section-divider/wave-dark.svg";
-import waveLight from "@/public/assets/images/section-divider/wave-light.svg";
+import waveDark from "@/public/assets/images/portfolio-section-divider/wave-dark.svg";
+import waveLight from "@/public/assets/images/portfolio-section-divider/wave-light.svg";
 import NavBar from "./_components/portfolio/navigation/NavBar";
 import Header from "./_components/portfolio/header/Header";
 import AboutSection from "./_components/portfolio/about-section/AboutSection";
