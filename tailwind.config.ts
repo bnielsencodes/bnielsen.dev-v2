@@ -100,6 +100,12 @@ const config: Config = {
       boxShadow: {
         navbar: "0 2px 4px rgb(0 0 0 / 15%)",
       },
+      gridTemplateColumns: {
+        blogHome: "2fr 1fr",
+      },
+      gridTemplateRows: {
+        blogHome: "100% 1fr",
+      },
     },
   },
   plugins: [],
