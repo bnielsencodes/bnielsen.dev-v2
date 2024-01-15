@@ -24,7 +24,7 @@ export default function RecentlyPublished() {
           <p className="text-2xl font-extrabold text-neutral-100 group-hover:text-accent-100 dark:text-neutral-600 dark:group-hover:text-accent-200">
             {post.title}
           </p>
-          <p className="my-4 text-[18px] font-medium text-neutral-200 dark:text-neutral-500">
+          <p className="my-4 text-[18px] font-sans font-medium text-neutral-200 dark:text-neutral-500">
             {post.description}
           </p>
           <div className="flex gap-2">
