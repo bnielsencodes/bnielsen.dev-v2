@@ -1,5 +1,5 @@
 import ViewPortfolio from "./ViewPortfolioBtn";
-import Socials from "../.././shared/socials/Socials";
+import Socials from "../../shared/socials/Socials";
 
 export default function Footer() {
   return (
