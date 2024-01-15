@@ -28,16 +28,20 @@ export const metadata: Metadata = {
     "software engineer",
     "programmer",
   ],
-  twitter: {
-    card: "summary_large_image",
-    title: "Brandon Nielsen | Web Developer",
-    description: "Check out my portfolio!",
-    siteId: "1229246106791362560",
-    creator: "@bnielsencodes",
-    creatorId: "1229246106791362560",
-    images:
-      "https://drive.google.com/file/d/10XR0FlHm8Y3jr5gmuNF57uH3mfyJof1y/view?usp=drive_link",
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Brandon Nielsen | Web Developer",
+  //   description: "Check out my portfolio!",
+  //   siteId: "1229246106791362560",
+  //   creator: "@bnielsencodes",
+  //   creatorId: "1229246106791362560",
+  //   images: {
+  //     url: "https://drive.google.com/file/d/10XR0FlHm8Y3jr5gmuNF57uH3mfyJof1y/view?usp=drive_link",
+  //     alt: "Preview image for bnielsen.dev",
+  //   },
+  //   images:
+  //     "https://drive.google.com/file/d/10XR0FlHm8Y3jr5gmuNF57uH3mfyJof1y/view?usp=drive_link",
+  // },
 };
 
 const roboto = Roboto({
