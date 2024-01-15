@@ -64,7 +64,7 @@ export default function MobileNav({
               <Link
                 className="font-extrabold active:text-accent-100 dark:active:text-accent-200"
                 onClick={() => toggleMobileNav()}
-                href="/blog"
+                href="/blog/latest"
                 aria-label="latest"
               >
                 Latest
