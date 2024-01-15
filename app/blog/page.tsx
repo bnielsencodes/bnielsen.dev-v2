@@ -6,6 +6,9 @@ import waveLight from "@/public/assets/images/blog-wave-divider/wave-light.svg";
 import waveDark from "@/public/assets/images/blog-wave-divider/wave-dark.svg";
 import NavBar from "../_components/blog/navigation/NavBar";
 import Header from "../_components/blog/home/Header";
+import RecentlyPublished from "../_components/blog/home/RecentlyPublished";
+import TopCategories from "../_components/blog/home/TopCategories";
+import PopularContent from "../_components/blog/home/PopularContent";
 import Footer from "../_components/blog/footer/Footer";
 
 export default function Blog() {
@@ -49,6 +52,9 @@ export default function Blog() {
           sizes="100vw"
         />
         <div className="md:grid-cols-blogHome md:grid-rows-blogHome flex w-full flex-col px-5 pb-16 pt-[56px] md:mx-auto md:grid md:max-w-[1100px] md:items-start md:gap-x-[96px] md:gap-y-[64px] md:px-8">
+          <RecentlyPublished />
+          <TopCategories />
+          <PopularContent />
         </div>
         <Footer />
       </main>
@@ -69,6 +75,9 @@ export default function Blog() {
           sizes="100vw"
         />
         <div className="md:grid-cols-blogHome md:grid-rows-blogHome flex w-full flex-col px-5 pb-40 pt-[56px] md:mx-auto md:grid md:max-w-[1100px] md:items-start md:gap-x-[96px] md:gap-y-[64px] md:px-8">
+          <RecentlyPublished />
+          <TopCategories />
+          <PopularContent />
         </div>
         <Footer />
       </main>
