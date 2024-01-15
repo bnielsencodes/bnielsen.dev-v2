@@ -6,6 +6,105 @@ export const post = {
   date: "January 10th, 2023",
 };
 
+export const recentlyPublished = [
+  {
+    id: 1,
+    title: "Web Related Terminology",
+    description:
+      "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+    link: "/blog/posts/web-development/web-related-terms",
+    tags: [
+      "career",
+      "css",
+      "javascript",
+      "next.js",
+      "react",
+      "web-development",
+    ],
+  },
+  {
+    id: 2,
+    title: "Web Related Terms",
+    description:
+      "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+    link: "/blog/posts/web-development/web-related-terms",
+    tags: [
+      "career",
+      "css",
+      "javascript",
+      "next.js",
+      "react",
+      "web-development",
+    ],
+  },
+  {
+    id: 3,
+    title: "Web Related Terms",
+    description:
+      "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+    link: "/blog/posts/web-development/web-related-terms",
+    tags: [
+      "career",
+      "css",
+      "javascript",
+      "next.js",
+      "react",
+      "web-development",
+    ],
+  },
+];
+
+export const categories = [
+  {
+    id: 1,
+    title: "Career",
+    link: "/blog/posts/career",
+  },
+  {
+    id: 2,
+    title: "CSS",
+    link: "/blog/posts/css",
+  },
+  {
+    id: 3,
+    title: "JavaScript",
+    link: "/blog/posts/javascript",
+  },
+  {
+    id: 4,
+    title: "React",
+    link: "/blog/posts/react",
+  },
+  {
+    id: 5,
+    title: "Next.js",
+    link: "/blog/posts/nextjs",
+  },
+  {
+    id: 6,
+    title: "Web Development",
+    link: "/blog/posts/web-development",
+  },
+];
+
+export const popularContent = [
+  {
+    id: 1,
+    title: "Web Related Terminology",
+    link: "/blog/posts/web-development/web-related-terms",
+  },
+  {
+    id: 2,
+    title: "Web Related Terms and More",
+    link: "/blog/posts/web-development/web-related-terms",
+  },
+  {
+    id: 3,
+    title: "An interactive guide to Flexbox",
+    link: "/blog/posts/web-development/web-related-terms",
+  },
+];
+
 // eslint-disable-next-line
 const termsWithoutId = [
   {
