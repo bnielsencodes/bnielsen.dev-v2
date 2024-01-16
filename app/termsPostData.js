@@ -1,8 +1,7 @@
 // eslint-disable-next-line
 export const post = {
   title: "Web Related Terminology",
-  subtitle:
-    "A collection of web related terminology and their definitions",
+  subtitle: "A collection of web related terminology and their definitions",
   date: "January 15th, 2023",
 };
 
@@ -22,36 +21,81 @@ export const recentlyPublished = [
       "web-development",
     ],
   },
-  {
-    id: 2,
-    title: "Web Related Terms",
-    description:
-      "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
-    link: "/blog/posts/web-development/web-related-terms",
-    tags: [
-      "career",
-      "css",
-      "javascript",
-      "next.js",
-      "react",
-      "web-development",
-    ],
-  },
-  {
-    id: 3,
-    title: "Web Related Terms",
-    description:
-      "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
-    link: "/blog/posts/web-development/web-related-terms",
-    tags: [
-      "career",
-      "css",
-      "javascript",
-      "next.js",
-      "react",
-      "web-development",
-    ],
-  },
+  // {
+  //   id: 2,
+  //   title: "Web Related Terms",
+  //   description:
+  //     "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  //   tags: [
+  //     "career",
+  //     "css",
+  //     "javascript",
+  //     "next.js",
+  //     "react",
+  //     "web-development",
+  //   ],
+  // },
+  // {
+  //   id: 3,
+  //   title: "Web Related Terms",
+  //   description:
+  //     "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  //   tags: [
+  //     "career",
+  //     "css",
+  //     "javascript",
+  //     "next.js",
+  //     "react",
+  //     "web-development",
+  //   ],
+  // },
+  // {
+  //   id: 4,
+  //   title: "Web Related Terms",
+  //   description:
+  //     "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  //   tags: [
+  //     "career",
+  //     "css",
+  //     "javascript",
+  //     "next.js",
+  //     "react",
+  //     "web-development",
+  //   ],
+  // },
+  // {
+  //   id: 5,
+  //   title: "Web Related Terms",
+  //   description:
+  //     "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  //   tags: [
+  //     "career",
+  //     "css",
+  //     "javascript",
+  //     "next.js",
+  //     "react",
+  //     "web-development",
+  //   ],
+  // },
+  // {
+  //   id: 6,
+  //   title: "Web Related Terms",
+  //   description:
+  //     "lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing elit. lorem ipsum dolor sit amet, consectet lorem ipsum dolor sit amet, consectetur adipiscing",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  //   tags: [
+  //     "career",
+  //     "css",
+  //     "javascript",
+  //     "next.js",
+  //     "react",
+  //     "web-development",
+  //   ],
+  // },
 ];
 
 export const categories = [
@@ -93,16 +137,26 @@ export const popularContent = [
     title: "Web Related Terminology",
     link: "/blog/posts/web-development/web-related-terms",
   },
-  {
-    id: 2,
-    title: "Web Related Terms and More",
-    link: "/blog/posts/web-development/web-related-terms",
-  },
-  {
-    id: 3,
-    title: "An interactive guide to Flexbox",
-    link: "/blog/posts/web-development/web-related-terms",
-  },
+  // {
+  //   id: 2,
+  //   title: "Web Related Terms and More",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  // },
+  // {
+  //   id: 3,
+  //   title: "An interactive guide to Flexbox",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  // },
+  // {
+  //   id: 4,
+  //   title: "Designing Beautiful Shadows in CSS",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  // },
+  // {
+  //   id: 5,
+  //   title: "Web Related Terms",
+  //   link: "/blog/posts/web-development/web-related-terms",
+  // },
 ];
 
 // eslint-disable-next-line
