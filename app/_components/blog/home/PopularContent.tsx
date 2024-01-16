@@ -18,11 +18,11 @@ export default function PopularContent() {
   const popularContentList = popularContent.map((term) => {
     return (
       <li
-        className="mb-2 flex items-start text-xl font-bold text-neutral-100 dark:text-neutral-600"
+        className="flex items-start mb-2 text-neutral-100 dark:text-neutral-600 text-xl font-bold"
         key={term.id}
       >
         <Image
-          className="mr-[11px] mt-[3.5px] inline h-[21px] w-[21px]"
+          className="inline w-[21px] h-[21px] mt-[3.5px] mr-[11px]"
           src={arrowRight}
           alt="arrow pointing right"
           width="0"
@@ -42,7 +42,7 @@ export default function PopularContent() {
         Popular Content
       </p>
 
-      <ul className="-ml-8 mt-8 flex flex-col gap-[6px] font-sans text-[14.5px] text-neutral-300 dark:text-neutral-400">
+      <ul className="flex flex-col gap-[6px] -ml-8 mt-8 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px]">
         {popularContentList}
       </ul>
     </section>

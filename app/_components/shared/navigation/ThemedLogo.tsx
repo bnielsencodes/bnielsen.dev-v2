@@ -15,14 +15,14 @@ export default function ThemedLogo() {
 
   if (!mounted) {
     return (
-      <div className="mr-2 h-8 w-8 animate-pulse rounded-lg bg-neutral-400"></div>
+      <div className="w-8 h-8 mr-2 rounded-lg bg-neutral-400 animate-pulse"></div>
     );
   }
 
   if (resolvedTheme === "dark") {
     return (
       <Image
-        className="mr-2 h-8 w-8"
+        className="w-8 h-8 mr-2"
         src={logoWhite}
         alt="white letter N logo"
         width="800"
@@ -35,7 +35,7 @@ export default function ThemedLogo() {
   if (resolvedTheme === "light") {
     return (
       <Image
-        className="mr-2 h-8 w-8"
+        className="w-8 h-8 mr-2"
         src={logoBlack}
         alt="black letter N logo"
         width="800"

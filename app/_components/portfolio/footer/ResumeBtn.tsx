@@ -1,7 +1,7 @@
 export default function ResumeBtn() {
   return (
     <a
-      className="outline-light-theme dark:outline-dark-theme group flex h-[25px] items-center justify-start gap-[6px] rounded-sm pl-[6px] md:pl-[6px]"
+      className="outline-light-theme dark:outline-dark-theme group flex items-center justify-start gap-[6px] h-[25px] pl-[6px] rounded-sm md:pl-[6px]"
       href="https://drive.google.com/file/d/1w_IJIBJAFWBYLJnMi7mtPcMgNvjRvxDR/view?usp=sharing"
       aria-label="View my resume"
       target="_blank"

@@ -23,14 +23,14 @@ export default function CSS({
   if (!mounted) {
     return (
       <div
-        className={`icon--${skill.name} my-[1px] h-[53px] w-[53px] animate-pulse rounded-lg bg-neutral-200 dark:bg-neutral-500`}
+        className={`icon--${skill.name} w-[53px] h-[53px] my-[1px] rounded-lg bg-neutral-200 dark:bg-neutral-500 animate-pulse`}
       ></div>
     );
   }
 
   if (resolvedTheme === "dark") {
     return (
-      <div className={`h-[55px] w-[55px] icon--${skill.name}`}>
+      <div className={`icon--${skill.name} w-[55px] h-[55px]`}>
         {/* CSS icon - dark theme */}
         {skill.name === "css" && (
           <svg width="55px" height="55px" viewBox="0 0 128 128">
@@ -360,7 +360,7 @@ export default function CSS({
 
   if (resolvedTheme === "light") {
     return (
-      <div className={`h-[55px] w-[55px] icon--${skill.name}`}>
+      <div className={`icon--${skill.name} w-[55px] h-[55px]`}>
         {/* CSS icon */}
         {skill.name === "css" && (
           <>
@@ -520,7 +520,7 @@ export default function CSS({
           <>
             {/* light theme */}
             <svg
-              className="fill-transition inline-block group-hover:fill-[#000] dark:hidden"
+              className="fill-transition inline-block dark:hidden group-hover:fill-[#000]"
               fill="#272727"
               viewBox="0 0 128 128"
             >

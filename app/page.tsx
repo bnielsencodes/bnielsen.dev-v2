@@ -43,7 +43,7 @@ export default function Home() {
         <NavBar />
         <Header />
         <Image
-          className="-mb-[1px] w-full"
+          className="w-full mb-[-1px]"
           src={waveDark}
           alt="wave section divider"
           width="0"

@@ -30,7 +30,7 @@ export default function ProjectsSection({
           "md:px-[24px]":
             project.name === "Quizzical" ||
             project.name === "Dictionary Web App",
-        },
+        }
       )}
     >
       {/* background color container */}
@@ -46,23 +46,23 @@ export default function ProjectsSection({
               project.name === "Quizzical",
             "md:right-0 md:w-1/5 md:bg-projects-dictionary lg:w-1/4 xl:w-1/3":
               project.name === "Dictionary Web App",
-          },
+          }
         )}
       ></div>
       {/* project container */}
       <article
         className={clsx(
-          "md:mx-auto md:flex md:items-center md:justify-center md:gap-7 lg:gap-12",
+          "md:flex md:items-center md:justify-center md:gap-7 md:mx-auto lg:gap-12",
           {
             "md:flex-row-reverse":
               project.name === "SecurePass" ||
               project.name === "Dictionary Web App",
-          },
+          }
         )}
       >
         {/* image container */}
         <div
-          className={clsx("relative md:flex md:h-full md:flex-1", {
+          className={clsx("relative md:flex md:flex-1 md:h-full", {
             "lg:justify-end": project.name === "Audiophile",
             "md:justify-end": project.name === "Quizzical",
           })}
@@ -70,7 +70,7 @@ export default function ProjectsSection({
           {/* background color mobile container */}
           <div
             className={clsx(
-              "absolute -top-[40px] left-0 h-32 w-full md:hidden",
+              "absolute -top-[40px] left-0 w-full h-32 md:hidden",
               {
                 "h-32 bg-projects-audiophile": project.name === "Audiophile",
                 "h-[13rem] bg-projects-securepass":
@@ -78,7 +78,7 @@ export default function ProjectsSection({
                 "h-[13rem] bg-projects-quizzical": project.name === "Quizzical",
                 "h-[13rem] bg-projects-dictionary":
                   project.name === "Dictionary Web App",
-              },
+              }
             )}
           ></div>
           {project.name === "Audiophile" || project.name === "SecurePass" ? (
@@ -86,11 +86,11 @@ export default function ProjectsSection({
               className={clsx(
                 "relative h-auto drop-shadow-2xl dark:drop-shadow-none",
                 {
-                  "mx-auto w-[calc(100%-40px)] md:mx-0 md:w-full lg:max-w-[594px]":
+                  "w-[calc(100%-40px)] mx-auto md:w-full md:mx-0 lg:max-w-[594px]":
                     project.name === "Audiophile",
-                  "mx-auto w-[225px] md:mx-0 md:w-[169px] lg:w-[212px] xl:w-[235px]":
+                  "w-[225px] mx-auto md:w-[169px] md:mx-0 lg:w-[212px] xl:w-[235px]":
                     project.name === "SecurePass",
-                },
+                }
               )}
               src={project.img}
               alt={project.alt}
@@ -100,9 +100,9 @@ export default function ProjectsSection({
             />
           ) : project.name === "Quizzical" ||
             project.name === "Dictionary Web App" ? (
-            <div className="relative mx-auto h-[calc(100vw+25px)] w-[calc(100%-40px)] max-w-[440px] md:mx-0 md:h-[400px] md:w-[346px] xl:w-[400px]">
+            <div className="relative w-[calc(100%-40px)] max-w-[440px] h-[calc(100vw+25px)] mx-auto md:w-[346px] md:h-[400px] md:mx-0 xl:w-[400px]">
               <Image
-                className="absolute left-0 top-[35%] z-20 mx-auto h-auto w-[55%] -translate-y-1/2 drop-shadow-2xl dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
+                className="absolute top-[35%] left-0 z-20 w-[55%] h-auto mx-auto -translate-y-1/2 drop-shadow-2xl dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
                 src={project.img}
                 alt={project.alt}
                 width={project.imgWidth}
@@ -110,7 +110,7 @@ export default function ProjectsSection({
                 sizes="100vw"
               />
               <Image
-                className="absolute right-0 top-[65%] z-10 mx-auto h-auto w-[55%] -translate-y-1/2 drop-shadow-2xl dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
+                className="absolute top-[65%] right-0 z-10 w-[55%] h-auto mx-auto -translate-y-1/2 drop-shadow-2xl dark:drop-shadow-none md:w-[189.5px] xl:w-[230px]"
                 src={project.img2}
                 alt={project.alt2}
                 width={project.imgWidth}
@@ -123,23 +123,23 @@ export default function ProjectsSection({
 
         {/* project details container */}
         <div
-          className={clsx("mx-5 mt-8 md:mx-0 md:mt-0 md:flex-1", {
+          className={clsx("mt-8 mx-5 md:mt-0 md:mx-0 md:flex-1", {
             "md:flex md:flex-col md:items-end":
               project.name === "SecurePass" ||
               project.name === "Dictionary Web App",
           })}
         >
-          <h3 className="text-[2.3rem] font-bold leading-[2.5rem] text-neutral-200 dark:text-neutral-500 md:text-[2.39rem] lg:text-5xl">
+          <h3 className="text-neutral-200 dark:text-neutral-500 text-[2.3rem] font-bold leading-[2.5rem] md:text-[2.39rem] lg:text-5xl">
             {project.name}
           </h3>
           <p
             className={clsx(
-              "mb-4 mt-3 font-sans text-[1.125rem] font-light text-neutral-200 dark:text-neutral-600 dark:opacity-60 md:mb-5 md:w-[336px] lg:w-[432px]",
+              "mt-3 mb-4 font-sans text-neutral-200 dark:text-neutral-600 text-[1.125rem] font-light dark:opacity-60 md:w-[336px] md:mb-5 lg:w-[432px]",
               {
                 "md:text-right":
                   project.name === "SecurePass" ||
                   project.name === "Dictionary Web App",
-              },
+              }
             )}
           >
             {project.description}

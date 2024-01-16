@@ -8,6 +8,10 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Brandon Nielsen | Web Developer",
+  // title: {
+  //   template: "Brandon Nielsen | %s",
+  //   default: "Brandon Nielsen | Web Developer"
+  // },
   description:
     "Brandon Nielsen, web developer specializing in Next.js and React.",
   authors: [{ name: "Brandon Nielsen" }],
@@ -99,7 +103,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${roboto.variable} ${mosk.variable} select-none font-mosk antialiased`}
+        className={`${roboto.variable} ${mosk.variable} font-mosk select-none antialiased`}
       >
         <Providers>{children}</Providers>
         <Analytics />

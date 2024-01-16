@@ -38,23 +38,23 @@ export default function Latest() {
     // return <Term key={term.id} {...{ term }} />;
     return (
       <li
-        className="group rounded-lg bg-neutral-200 px-4 py-9 md:px-5 lg:px-6"
+        className="group rounded-lg px-4 py-9 bg-neutral-500 dark:bg-neutral-200 md:px-5 lg:px-6"
         key={post.id}
         {...{ post }}
       >
         <Link href="/blog/posts/web-development/web-related-terms">
-          <p className="text-2xl font-extrabold text-neutral-100 group-hover:text-accent-100 dark:text-neutral-600 dark:group-hover:text-accent-200">
+          <p className=" text-neutral-100 dark:text-neutral-600 text-2xl font-extrabold group-hover:text-accent-100 dark:group-hover:text-accent-200">
             {post.title}
           </p>
-          <p className="my-4 text-[18px] font-medium text-neutral-200 dark:text-neutral-500">
+          <p className="my-4 text-neutral-200 dark:text-neutral-500 font-sans text-[18px] font-medium">
             {post.description}
           </p>
           <div className="flex gap-2">
-            <p className="text-[16px] font-extrabold text-neutral-200 dark:text-neutral-500">
+            <p className="text-neutral-200 dark:text-neutral-500 font-sans text-[16px] font-extrabold">
               Read more
             </p>
             <Image
-              className="mr-[11px] mt-[3px] hidden h-[21px] w-[21px] group-hover:block"
+              className="hidden w-[21px] h-[21px] mt-[1.5px] mr-[11px] group-hover:block"
               src={arrowRight}
               alt="arrow pointing right"
               width="0"
@@ -70,17 +70,17 @@ export default function Latest() {
   return (
     <main className="bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
-      <div className="lg:mx-auto lg:max-w-[1100px]">
-        <div className="mt-[186px] flex items-end justify-between px-8 md:px-12 lg:px-14">
-          <h1 className="text-4xl font-bold text-neutral-200 dark:text-neutral-500 md:text-5xl">
+      <div className="lg:max-w-[1100px] lg:mx-auto">
+        <div className="flex items-end justify-between px-8 mt-[186px] md:px-12 lg:px-14">
+          <h1 className="text-neutral-200 dark:text-neutral-500 text-4xl font-bold md:text-5xl">
             Latest Posts
           </h1>
-          <p className="hidden font-sans text-xl text-neutral-200 dark:text-neutral-500 md:block">
+          <p className="hidden text-neutral-200 dark:text-neutral-500 font-sans text-xl md:block">
             {recentlyPublished.length}{" "}
             {recentlyPublished.length > 1 ? "Articles" : "Article"}
           </p>
         </div>
-        <ul className="mb-[128px] mt-5 flex flex-col gap-8 px-5 font-sans text-[14.5px] text-neutral-300 dark:text-neutral-400 lg:grid lg:grid-cols-2 lg:px-8">
+        <ul className="flex flex-col gap-8 px-5 mt-5 mb-[128px] text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] lg:grid lg:grid-cols-2 lg:px-8">
           {recentlyPublishedElements}
         </ul>
       </div>

@@ -19,18 +19,18 @@ export default function ProjectButtons({
   if (!mounted) {
     return (
       <div className="flex">
-        <div className="mr-4 h-[48px] w-[107px] animate-pulse rounded-lg bg-neutral-400 dark:bg-neutral-500"></div>
-        <div className="h-[48px] w-[138px] animate-pulse rounded-lg bg-neutral-400 dark:bg-neutral-500"></div>
+        <div className="w-[107px] h-[48px] mr-4 rounded-lg bg-neutral-400 dark:bg-neutral-500 animate-pulse"></div>
+        <div className="w-[138px] h-[48px] rounded-lg bg-neutral-400 dark:bg-neutral-500 animate-pulse"></div>
       </div>
     );
   }
 
   if (resolvedTheme === "dark") {
     return (
-      <div className="relative flex w-[261px] gap-4">
+      <div className="relative flex gap-4 w-[261px]">
         {/* live site button */}
         <a
-          className="btn btn-primary btn-light text-neutral-200 shadow-xl focus:opacity-90"
+          className="btn btn-primary btn-light shadow-xl text-neutral-200 focus:opacity-90"
           href={liveSite}
           target="_blank"
         >
@@ -38,7 +38,7 @@ export default function ProjectButtons({
         </a>
         {/* live site HOVER button */}
         <a
-          className="btn btn-primary btn-light-alt absolute left-0 top-0 text-neutral-200"
+          className="btn btn-primary btn-light-alt absolute top-0 left-0 text-neutral-200"
           href={liveSite}
           target="_blank"
           tabIndex={-1}
@@ -49,7 +49,7 @@ export default function ProjectButtons({
 
         {/* source code button */}
         <a
-          className="btn btn-secondary btn-dark outline-dark-theme text-neutral-500 shadow-xl focus:opacity-90"
+          className="btn btn-secondary btn-dark outline-dark-theme shadow-xl text-neutral-500 focus:opacity-90"
           href={sourceCode}
           target="_blank"
         >
@@ -57,7 +57,7 @@ export default function ProjectButtons({
         </a>
         {/* source code HOVER button */}
         <a
-          className="btn btn-secondary btn-dark-alt outline-dark-theme absolute right-[0.5px] top-0 text-neutral-500"
+          className="btn btn-secondary btn-dark-alt outline-dark-theme absolute top-0 right-[0.5px] text-neutral-500"
           href={sourceCode}
           target="_blank"
           tabIndex={-1}
@@ -74,7 +74,7 @@ export default function ProjectButtons({
       <div className="relative flex w-[261px] gap-4">
         {/* live site button */}
         <a
-          className="btn btn-primary btn-dark text-neutral-500 shadow-xl focus:opacity-90"
+          className="btn btn-primary btn-dark shadow-xl text-neutral-500 focus:opacity-90"
           href={liveSite}
           target="_blank"
         >
@@ -82,7 +82,7 @@ export default function ProjectButtons({
         </a>
         {/* live site HOVER button */}
         <a
-          className="btn btn-primary btn-dark-alt absolute left-0 top-0 text-neutral-500"
+          className="btn btn-primary btn-dark-alt absolute top-0 left-0 text-neutral-500"
           href={liveSite}
           target="_blank"
           tabIndex={-1}
@@ -93,7 +93,7 @@ export default function ProjectButtons({
 
         {/* source code button */}
         <a
-          className="btn btn-secondary btn-light outline-light-theme text-neutral-200 shadow-xl focus:opacity-90"
+          className="btn btn-secondary btn-light outline-light-theme shadow-xl text-neutral-200 focus:opacity-90"
           href={sourceCode}
           target="_blank"
         >
@@ -101,7 +101,7 @@ export default function ProjectButtons({
         </a>
         {/* source code HOVER button */}
         <a
-          className="btn btn-secondary btn-light-alt outline-light-theme absolute right-[0.5px] top-0 text-neutral-200"
+          className="btn btn-secondary btn-light-alt outline-light-theme absolute top-0 right-[0.5px] text-neutral-200"
           href={sourceCode}
           target="_blank"
           tabIndex={-1}

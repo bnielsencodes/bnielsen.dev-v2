@@ -10,7 +10,7 @@ export default function Tooltip({
       {/* show tooltip component on mouseover */}
       <div
         className={clsx(
-          "opacity-transition absolute -top-[15px] z-10 text-start text-xs font-normal leading-[1.42857143] opacity-0 group-hover:opacity-100",
+          "opacity-transition absolute -top-[15px] z-10 text-xs font-normal leading-[1.42857143] text-start opacity-0 group-hover:opacity-100",
           {
             "-top-[17px]": skill.name === "figma" || skill.name === "vite",
             "left-[22.75px] md:left-[26px] lg:left-[23px]":
@@ -35,13 +35,13 @@ export default function Tooltip({
               skill.name === "typescript",
             "left-[23.5px] md:left-[26.5px] lg:left-[23.25px]":
               skill.name === "vite",
-          },
+          }
         )}
       >
         {/* arrow */}
         <div
           className={clsx(
-            "absolute -bottom-1 left-1/2 top-auto -z-10 -ml-[5px] h-0 w-0 border-x-[5px] border-t-[5px] border-x-[transparent]",
+            "absolute top-auto -bottom-1 left-1/2 -z-10 w-0 h-0 border-t-[5px] border-x-[5px] border-x-[transparent] ml-[-5px]",
             {
               "border-t-tech-css-100": skill.name === "css",
               "border-t-tech-figma-100": skill.name === "figma",
@@ -56,13 +56,13 @@ export default function Tooltip({
               "border-t-tech-typescript-200": skill.name === "typescript",
               "border-t-tech-vite-500 dark:border-t-tech-vite-400":
                 skill.name === "vite",
-            },
+            }
           )}
         />
         {/* tooltip label */}
         <div
           className={clsx(
-            "max-w-250px rounded px-2 py-[3px] text-center font-sans font-semibold tracking-[0.35px] text-neutral-200",
+            "max-w-250px py-[3px] px-2 rounded text-neutral-200 font-sans font-semibold tracking-[0.35px] text-center",
             {
               "text-neutral-500":
                 skill.name === "css" ||
@@ -87,7 +87,7 @@ export default function Tooltip({
               "bg-tech-tailwind": skill.name === "tailwind",
               "bg-tech-typescript-200": skill.name === "typescript",
               "label--vite": skill.name === "vite",
-            },
+            }
           )}
         >
           {skill.tech}

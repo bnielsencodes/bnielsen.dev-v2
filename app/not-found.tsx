@@ -18,10 +18,10 @@ export default function NotFound() {
 
   if (resolvedTheme === "dark") {
     return (
-      <div className="global relative h-screen w-screen bg-neutral-100 text-neutral-500">
-        <div className="absolute left-1/2 top-1/2 flex w-full -translate-x-1/2 -translate-y-1/2 flex-col items-center justify-center text-2xl font-extrabold">
+      <div className="relative w-screen h-screen bg-neutral-100 text-neutral-500 global">
+        <div className="absolute top-1/2 left-1/2 flex flex-col items-center justify-center w-full text-2xl font-extrabold -translate-x-1/2 -translate-y-1/2">
           <h1 className="text-7xl">404</h1>
-          <h2 className="mb-6 mt-4 text-4xl">Page Not Found</h2>
+          <h2 className="mt-4 mb-6 text-4xl">Page Not Found</h2>
           {/* button container */}
           <div className="relative">
             {/* default button */}
@@ -32,7 +32,7 @@ export default function NotFound() {
             </button>
 
             {/* hover button */}
-            <button className="btn btn-primary btn-light-alt absolute left-0 top-0">
+            <button className="btn btn-primary btn-light-alt absolute top-0 left-0">
               <Link
                 className="text-neutral-200"
                 href="/"

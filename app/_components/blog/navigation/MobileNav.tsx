@@ -37,7 +37,7 @@ export default function MobileNav({
       }}
     >
       {/* top container */}
-      <div className="flex h-full w-full items-center justify-start pl-4 md:pl-5">
+      <div className="flex items-center justify-start w-full h-full pl-4 md:pl-5">
         <ul
           // className={clsx(
           //   "all-transition flex flex-col justify-between h-[18rem] text-neutral-200 dark:text-neutral-500 text-[4.25rem] md:h-[20.5rem] md:text-[5.5rem]",
@@ -45,10 +45,10 @@ export default function MobileNav({
           //     "h-[24rem]": dropdownOpen,
           //   }
           // )}
-          className="all-transition flex h-[18rem] flex-col justify-between text-[4.25rem] text-neutral-200 dark:text-neutral-500 md:h-[20.5rem] md:text-[5.5rem]"
+          className="all-transition flex flex-col justify-between h-[18rem] text-neutral-200 dark:text-neutral-500 text-[4.25rem] md:h-[20.5rem] md:text-[5.5rem]"
         >
           <motion.div
-            className="flex h-[65px] items-center"
+            className="flex items-center h-[65px]"
             animate={showMobileNav ? "open" : "closed"}
             variants={variants}
             initial={{ opacity: 0, translateX: "-5rem" }}
@@ -59,7 +59,7 @@ export default function MobileNav({
               ease: [0.21, 1.11, 0.81, 0.99],
             }}
           >
-            <li className="flex h-[65px] items-center">
+            <li className="flex items-center h-[65px]">
               {/* latest link */}
               <Link
                 className="font-extrabold active:text-accent-100 dark:active:text-accent-200"
@@ -76,7 +76,7 @@ export default function MobileNav({
             // className={clsx("transition-[margin] flex items-center h-[65px]", {
             //   "mb-[6.3rem]": dropdownOpen,
             // })}
-            className="flex h-[65px] items-center transition-[margin]"
+            className="flex items-center h-[65px] transition-[margin]"
             animate={showMobileNav ? "open" : "closed"}
             variants={variants}
             initial={{ opacity: 0, translateX: "-5rem" }}
@@ -87,7 +87,7 @@ export default function MobileNav({
               ease: [0.21, 1.11, 0.81, 0.99],
             }}
           >
-            <li className="flex h-[65px] items-center">
+            <li className="flex items-center h-[65px]">
               {/* 
               // <div
               //   className="outline-light-theme relative flex items-center gap-[6px] rounded-sm cursor-pointer group dark:outline-dark-theme"
@@ -146,7 +146,7 @@ export default function MobileNav({
           </motion.div>
 
           <motion.div
-            className="flex h-[65px] items-center"
+            className="flex items-center h-[65px]"
             animate={showMobileNav ? "open" : "closed"}
             variants={variants}
             initial={{ opacity: 0, translateX: "-5rem" }}
@@ -157,7 +157,7 @@ export default function MobileNav({
               ease: [0.21, 1.11, 0.81, 0.99],
             }}
           >
-            <li className="flex h-[65px] items-center">
+            <li className="flex items-center h-[65px]">
               {/* resource link */}
               <Link
                 className="font-extrabold active:text-accent-100 dark:active:text-accent-200"
@@ -171,7 +171,7 @@ export default function MobileNav({
           </motion.div>
 
           <motion.div
-            className="flex h-[65px] items-center"
+            className="flex items-center h-[65px]"
             animate={showMobileNav ? "open" : "closed"}
             variants={variants}
             initial={{ opacity: 0, translateX: "-5rem" }}
@@ -182,7 +182,7 @@ export default function MobileNav({
               ease: [0.21, 1.11, 0.81, 0.99],
             }}
           >
-            <li className="flex h-[65px] items-center">
+            <li className="flex items-center h-[65px]">
               {/* portfolio link */}
               <Link
                 className="font-extrabold active:text-accent-100 dark:active:text-accent-200"
@@ -198,7 +198,7 @@ export default function MobileNav({
       </div>
 
       {/* bottom container */}
-      <div className="flex h-[75px] w-full items-center justify-between pb-4 pl-4 pr-[29px] md:pl-5">
+      <div className="flex items-center justify-between w-full h-[75px] pr-[29px] pb-4 pl-4 md:pl-5">
         <Socials parent="mobile nav" direction="row" />
         <ThemeToggle />
       </div>

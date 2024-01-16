@@ -15,7 +15,7 @@ export default function NavList() {
       <ul className="flex justify-between">
         <li className="nav-item group">
           <Link
-            className="nav-link underline-light outline-light-theme underlineAnimation all-transition dark:underline-dark dark:outline-dark-theme rounded-sm text-neutral-200 focus:opacity-80 group-hover:text-opacity-80 dark:text-neutral-500"
+            className="nav-link underline-light dark:underline-dark outline-light-theme dark:outline-dark-theme underlineAnimation all-transition rounded-sm text-neutral-200 dark:text-neutral-500 focus:opacity-80 group-hover:text-opacity-80"
             href="/blog/latest"
             aria-label="latest"
           >
@@ -68,7 +68,7 @@ export default function NavList() {
           //   </ul>
           // </div> */}
           <Link
-            className="nav-link underline-light outline-light-theme underlineAnimation all-transition dark:underline-dark dark:outline-dark-theme rounded-sm text-neutral-200 focus:opacity-80 group-hover:text-opacity-80 dark:text-neutral-500"
+            className="nav-link underline-light dark:underline-dark outline-light-theme dark:outline-dark-theme underlineAnimation all-transition rounded-sm text-neutral-200 dark:text-neutral-500 focus:opacity-80 group-hover:text-opacity-80"
             href="/blog/posts"
             aria-label="posts"
           >
@@ -78,7 +78,7 @@ export default function NavList() {
 
         <li className="nav-item group">
           <Link
-            className="nav-link underline-light outline-light-theme underlineAnimation all-transition dark:underline-dark dark:outline-dark-theme rounded-sm text-neutral-200 focus:opacity-80 group-hover:text-opacity-80 dark:text-neutral-500"
+            className="nav-link underline-light dark:underline-dark outline-light-theme dark:outline-dark-theme underlineAnimation all-transition rounded-sm text-neutral-200 dark:text-neutral-500 focus:opacity-80 group-hover:text-opacity-80"
             href="/blog/resources"
             aria-label="resources"
           >
@@ -88,7 +88,7 @@ export default function NavList() {
 
         <li className="nav-item group">
           <Link
-            className="nav-link underline-light outline-light-theme underlineAnimation all-transition dark:underline-dark dark:outline-dark-theme rounded-sm text-neutral-200 focus:opacity-80 group-hover:text-opacity-80 dark:text-neutral-500"
+            className="nav-link underline-light dark:underline-dark outline-light-theme dark:outline-dark-theme underlineAnimation all-transition rounded-sm text-neutral-200 dark:text-neutral-500 focus:opacity-80 group-hover:text-opacity-80"
             href="/"
             aria-label="Portfolio"
           >

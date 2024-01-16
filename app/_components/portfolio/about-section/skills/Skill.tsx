@@ -17,7 +17,7 @@ export default function Skill({
     <div className="group relative">
       <div
         className={clsx(
-          "group relative z-10 flex flex-col items-center justify-center gap-[5px] rounded-lg border-2 border-neutral-300 bg-gradient-to-b from-neutral-500 to-neutral-600 py-[18px] shadow-xl group-hover:cursor-help dark:bg-gradient-to-b dark:from-neutral-200 dark:to-neutral-100 dark:shadow-none",
+          "group relative z-10 flex flex-col items-center justify-center gap-[5px] py-[18px] border-2 border-neutral-300 rounded-lg shadow-xl dark:shadow-none bg-gradient-to-b from-neutral-500 to-neutral-600 dark:from-neutral-200 dark:to-neutral-100 group-hover:cursor-help",
           {
             "group-hover:border-tech-css-100": skill.name === "css",
             "ml-[2px] mt-[2px] h-[91px] w-[85.5px] rounded-md border-none md:w-[92px] lg:w-[85px] xl:w-[85.5px]":
@@ -35,7 +35,7 @@ export default function Skill({
             "group-hover:border-tech-tailwind": skill.name === "tailwind",
             "group-hover:border-tech-typescript-200":
               skill.name === "typescript",
-          },
+          }
         )}
         onMouseEnter={() => {
           setShowViteBg(true);
@@ -52,20 +52,20 @@ export default function Skill({
 
       {/* hover border for figma skill */}
       {skill.name === "figma" && (
-        <div className="all-transition absolute left-0 top-0 z-0 h-[95px] w-[89.5px] rounded-lg bg-neutral-300 opacity-100 content-[''] group-hover:opacity-0 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
+        <div className="all-transition content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] rounded-lg bg-neutral-300 opacity-100 group-hover:opacity-0 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
       )}
       {/* hover transition border for figma skill */}
       {skill.name === "figma" && (
-        <div className="all-transition absolute left-0 top-0 z-0 h-[95px] w-[89.5px] animate-figmaBorder rounded-lg opacity-0 content-[''] group-hover:opacity-100 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
+        <div className="all-transition content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] animate-figmaBorder rounded-lg opacity-0 group-hover:opacity-100 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
       )}
 
       {/* hover border for vite skill */}
       {skill.name === "vite" && (
-        <div className="all-transition absolute left-0 top-0 z-0 h-[95px] w-[89.5px] rounded-lg bg-neutral-300 opacity-100 content-[''] group-hover:opacity-0 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
+        <div className="all-transition content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] rounded-lg bg-neutral-300 opacity-100 group-hover:opacity-0 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
       )}
       {/* hover transition border for vite skill */}
       {skill.name === "vite" && (
-        <div className="all-transition absolute left-0 top-0 z-0 h-[95px] w-[89.5px] animate-viteBorder rounded-lg opacity-0 content-[''] group-hover:opacity-100 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
+        <div className="all-transition content-[''] absolute top-0 left-0 z-0 w-[89.5px] h-[95px] animate-viteBorder rounded-lg opacity-0 group-hover:opacity-100 md:w-[96px] lg:w-[89px] xl:w-[89.5px]"></div>
       )}
     </div>
   );
