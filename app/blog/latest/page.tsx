@@ -71,7 +71,7 @@ export default function Latest() {
     <main className="bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
       <div className="pb-[100px] lg:max-w-[1100px] lg:mx-auto">
-        <div className="flex items-end justify-between px-8 pt-[186px] md:px-12 lg:px-14">
+        <div className="flex items-end justify-between px-8 pt-[186px] md:px-12 lg:px-14 xl:px-8">
           <h1 className="text-neutral-200 dark:text-neutral-500 text-4xl font-bold md:text-5xl">
             Latest Posts
           </h1>
@@ -80,7 +80,7 @@ export default function Latest() {
             {recentlyPublished.length > 1 ? "Articles" : "Article"}
           </p>
         </div>
-        <ul className="flex flex-col gap-8 px-5 mt-5 mb-[128px] text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] lg:grid lg:grid-cols-2 lg:px-8">
+        <ul className="flex flex-col gap-8 px-5 mt-5 mb-[128px] text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] lg:grid lg:grid-cols-2 lg:px-8 xl:px-0">
           {recentlyPublishedElements}
         </ul>
       </div>
