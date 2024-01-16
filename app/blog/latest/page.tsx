@@ -71,7 +71,7 @@ export default function Latest() {
     <main className="bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
       <div className="lg:max-w-[1100px] lg:mx-auto">
-        <div className="flex items-end justify-between px-8 mt-[186px] md:px-12 lg:px-14">
+        <div className="flex items-end justify-between px-8 pt-[186px] md:px-12 lg:px-14">
           <h1 className="text-neutral-200 dark:text-neutral-500 text-4xl font-bold md:text-5xl">
             Latest Posts
           </h1>
