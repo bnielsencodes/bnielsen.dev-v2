@@ -52,7 +52,7 @@ export default function Blog() {
           height="0"
           sizes="100vw"
         />
-        <div className="flex flex-col w-full pt-[56px] px-5 pb-16 md:grid md:grid-cols-blogHome md:grid-rows-blogHome md:items-start md:gap-x-[96px] md:gap-y-[64px] md:max-w-[1100px] md:px-8 md:mx-auto">
+        <div className="flex w-full flex-col pt-[56px] px-5 pb-40 md:grid md:grid-cols-blogHome md:grid-rows-blogHome md:items-start md:gap-x-[96px] md:gap-y-[64px] md:max-w-[1100px] md:px-8 md:mx-auto">
           <RecentlyPublished />
           <TopCategories />
           <PopularContent />
