@@ -1,10 +1,10 @@
 // is next line needed?
 "use client";
-import NavBar from "../../../../_components/blog/navigation/NavBar";
-import Header from "../../../../_components/blog/posts/header/Header";
-import Content from "../../../../_components/blog/posts/web-related-terms/Content";
-import TableOfContents from "../../../../_components/blog/posts/web-related-terms/TableOfContents";
-import Footer from "../../../../_components/blog/footer/Footer";
+import NavBar from "@/app/_components/blog/navigation/NavBar";
+import Header from "@/app/_components/blog/posts/header/Header";
+import Content from "./_components/web-related-terms/Content";
+import TableOfContents from "./_components/web-related-terms/TableOfContents";
+import Footer from "@/app/_components/blog/footer/Footer";
 
 export default function WebRelatedTerms() {
   return (
