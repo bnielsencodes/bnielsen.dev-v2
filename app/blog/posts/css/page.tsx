@@ -13,10 +13,6 @@ export default function CSS() {
   return (
     <main className="bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
-      {/* 
-        can remove min-h-screen below once there
-        are posts in this category
-      */}
       <div className="min-h-screen pt-[192px] pb-[100px] lg:max-w-[1100px] lg:mx-auto">
         <CategoryHeading title="CSS" length={categoryData.length} />
         {categoryData.length >= 1 && (
@@ -24,10 +20,6 @@ export default function CSS() {
             {posts}
           </ul>
         )}
-        {/* 
-          can update to remove this code once there are posts
-          in this category
-        */}
         {categoryData.length < 1 && (
           <p className="mt-[200px] font-sans text-2xl text-center">
             There are no posts yet for this category.
