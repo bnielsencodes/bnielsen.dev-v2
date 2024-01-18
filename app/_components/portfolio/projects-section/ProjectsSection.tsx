@@ -1,4 +1,4 @@
-import { projects } from "@/app/portfolioData";
+import { projects } from "@/app/_data/portfolio/portfolioData";
 import Project from "./Project";
 
 export default function ProjectsSection() {

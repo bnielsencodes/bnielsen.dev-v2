@@ -1,4 +1,4 @@
-import { socials } from "@/app/portfolioData";
+import { socials } from "@/app/_data/portfolio/portfolioData";
 import Social from "./Social";
 import clsx from "clsx";
 
