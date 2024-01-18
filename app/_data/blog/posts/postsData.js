@@ -1,7 +1,5 @@
-import { categoriesData } from "./categories/categoriesData";
 import { categoryData as webDevelopmentPostsData } from "@/app/_data/blog/posts/categories/web-development/categoryData";
 
-// eslint-disable-next-line
 export const postsData = {
   categories: [
     {
