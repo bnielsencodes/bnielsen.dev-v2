@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import clsx from "clsx";
 
 export default function Term({
@@ -17,17 +16,6 @@ export default function Term({
     ];
   };
 }) {
-  const [mounted, setMounted] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
   const seeAlso = term.seeAlso ? term.seeAlso : [];
 
   const seeAlsoElements = seeAlso.map((term) => {

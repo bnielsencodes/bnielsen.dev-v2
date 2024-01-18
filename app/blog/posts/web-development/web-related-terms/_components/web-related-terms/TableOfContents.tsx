@@ -1,19 +1,7 @@
-import { useEffect, useState } from "react";
-import { tableOfContents } from "@/app/termsPostData";
+import { tableOfContents as tableOfContentsData } from "@/app/_data/blog/posts/categories/web-development/posts/web-related-terms";
 
 export default function TableOfContents() {
-  const [mounted, setMounted] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  const termsList = tableOfContents.map((term) => {
+  const tableOfContents = tableOfContentsData.map((term) => {
     return (
       <li className="pb-[3px]" key={term.id}>
         <a className="lg:hover:opacity-80" href={term.link}>
@@ -30,7 +18,7 @@ export default function TableOfContents() {
       </p>
 
       <ul className="flex flex-col gap-[6px] h-[calc(-265px+100vh)] mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] overflow-scroll">
-        {termsList}
+        {tableOfContents}
       </ul>
     </aside>
   );

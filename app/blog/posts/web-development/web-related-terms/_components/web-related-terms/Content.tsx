@@ -1,19 +1,10 @@
-import { useEffect, useState } from "react";
 import Term from "./Term";
-import { post, terms } from "@/app/termsPostData";
+import {
+  post,
+  terms,
+} from "@/app/_data/blog/posts/categories/web-development/posts/web-related-terms";
 
 export default function Content() {
-  const [mounted, setMounted] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
   const termElements = terms.map((term) => {
     return <Term key={term.id} {...{ term }} />;
   });
