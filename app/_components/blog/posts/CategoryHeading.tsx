@@ -1,6 +1,6 @@
 export default function CategoryHeading(props: any) {
   return (
-    <div className="flex items-end justify-between px-12 md:px-16 xl:pl-8 xl:pr-16">
+    <div className="flex items-end justify-between pl-4 md:px-16 xl:pl-8 xl:pr-16">
       <h1 className="text-neutral-200 dark:text-neutral-500 text-[40px] leading-[42px] font-extrabold">
         {props.title}
       </h1>
