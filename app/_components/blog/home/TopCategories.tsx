@@ -4,7 +4,7 @@ export default function TopCategories() {
   const categoriesList = postsData.categories.map((category) => {
     return (
       <li
-        className="py-[6px] px-[12px] rounded-lg bg-neutral-400 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-500 text-sm tracking-[-0.0125em] lg:hover:opacity-80"
+        className="py-[6px] px-[12px] rounded-lg bg-neutral-400 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-500 text-sm tracking-[-0.0125em] lg:hover:opacity-80 lg:hover:cursor-pointer lg:hover:scale-[1.025]"
         key={category.id}
       >
         <a href={category.link}>{category.title}</a>
