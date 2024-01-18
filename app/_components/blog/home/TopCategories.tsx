@@ -1,19 +1,7 @@
-import { useEffect, useState } from "react";
-import { categories } from "@/app/termsPostData";
+import { postsData } from "@/app/_data/blog/posts/postsData";
 
-export default function TableOfContents() {
-  const [mounted, setMounted] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  const categoriesList = categories.map((category) => {
+export default function TopCategories() {
+  const categoriesList = postsData.categories.map((category) => {
     return (
       <li
         className="py-[6px] px-[12px] rounded-lg bg-neutral-400 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-500 text-sm tracking-[-0.0125em] lg:hover:opacity-80"

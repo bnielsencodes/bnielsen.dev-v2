@@ -1,49 +1,23 @@
-import { useEffect, useState } from "react";
-import { recentlyPublished } from "@/app/termsPostData";
+import { latestPosts as latestPostsData } from "@/app/_data/blog/posts/latest";
 import Link from "next/link";
-import Image from "next/image";
-import arrowRight from "@/public/assets/icons/arrow-right.svg";
+import ReadMore from "../posts/ReadMore";
 
 export default function RecentlyPublished() {
-  const [mounted, setMounted] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  const recentlyPublishedElements = recentlyPublished.map((post) => {
-    // return <Term key={term.id} {...{ term }} />;
+  const recentlyPublished = latestPostsData.slice(0, 20).map((post) => {
     return (
       <li
-        className="group mb-[52px] lg:hover:cursor"
+        className="group pr-4 mb-[52px] lg:hover:cursor"
         key={post.id}
         {...{ post }}
       >
         <Link href="/blog/posts/web-development/web-related-terms">
-          <p className="text-neutral-100 dark:text-neutral-600 text-2xl font-extrabold lg:group-hover:text-accent-100 lg:dark:group-hover:text-accent-200">
+          <p className="text-neutral-100 dark:text-neutral-600 text-[22px] leading-[30px] font-extrabold lg:group-hover:text-accent-100 lg:dark:group-hover:text-accent-200">
             {post.title}
           </p>
-          <p className="my-4 text-neutral-200 dark:text-neutral-500 font-sans text-[18px] font-medium">
+          <p className="my-4 text-neutral-200 dark:text-neutral-500 font-sans text-[17px] leading-[28px] font-medium">
             {post.description}
           </p>
-          <div className="flex gap-2">
-            <p className="text-neutral-200 dark:text-neutral-500 font-sans text-[16px] font-bold">
-              Read more
-            </p>
-            <Image
-              className="hidden w-[21px] h-[21px] mt-[1.5px] mr-[11px] lg:group-hover:block"
-              src={arrowRight}
-              alt="arrow pointing right"
-              width="0"
-              height="0"
-              sizes="100vw"
-            />
-          </div>
+          <ReadMore />
         </Link>
       </li>
     );
@@ -54,7 +28,7 @@ export default function RecentlyPublished() {
       <h2 className="pb-10 text-accent-100 dark:text-accent-200 text-[17px] font-bold uppercase tracking-widest">
         Recently Published
       </h2>
-      <ul>{recentlyPublishedElements}</ul>
+      <ul>{recentlyPublished}</ul>
     </section>
   );
 }

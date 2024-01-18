@@ -1,21 +1,9 @@
-import { useEffect, useState } from "react";
-import { popularContent } from "@/app/termsPostData";
+import { popularContent as popularContentData } from "@/app/_data/blog/posts/popular-content";
 import Image from "next/image";
 import arrowRight from "@/public/assets/icons/arrow-right.svg";
 
 export default function PopularContent() {
-  const [mounted, setMounted] = useState(false);
-
-  // useEffect only runs on the client, so now we can safely show the UI
-  useEffect(() => {
-    setMounted(true);
-  }, []);
-
-  if (!mounted) {
-    return null;
-  }
-
-  const popularContentList = popularContent.map((term) => {
+  const popularContent = popularContentData.map((term) => {
     return (
       <li
         className="flex items-start mb-2 text-neutral-100 dark:text-neutral-600 text-xl font-bold"
@@ -43,7 +31,7 @@ export default function PopularContent() {
       </p>
 
       <ul className="flex flex-col gap-[6px] -ml-8 mt-8 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px]">
-        {popularContentList}
+        {popularContent}
       </ul>
     </section>
   );
