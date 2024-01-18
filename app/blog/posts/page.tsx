@@ -6,7 +6,9 @@ import PostTile from "@/app/_components/blog/posts/PostTile";
 import Footer from "@/app/_components/blog/footer/Footer";
 
 export default function Posts() {
+  // create category group elements
   const categories = postsData.categories.map((category) => {
+    // if category has posts, then show category group (category heading and posts)
     if (category.posts.length > 0) {
       return (
         <div className="pb-[68px]" key={category.id}>
