@@ -6,7 +6,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="flex items-end h-[412px] pt-[56px] px-6 bg-neutral-500 dark:bg-neutral-200 md:h-[313px] md:px-8 lg:px-0"
+      className="flex items-end h-[412px] pt-[56px] px-4 bg-neutral-500 dark:bg-neutral-200 md:h-[313px] md:px-8 lg:px-0"
     >
       <div className="flex flex-col items-start justify-center w-full max-w-[1100px] pb-[45px] mx-auto lg:px-8">
         <Breadcrumbs />

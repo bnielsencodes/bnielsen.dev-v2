@@ -38,7 +38,7 @@ export default function TermAccordion({
   return (
     <li
       id={term.target}
-      className="py-5 px-4 mt-4 rounded-lg bg-neutral-200"
+      className="py-5 md:py-6 px-4 md:px-5 mt-4 rounded-lg bg-neutral-200"
       onClick={() => setIsActive(!isActive)}
     >
       <div className="flex items-center justify-between gap-2">

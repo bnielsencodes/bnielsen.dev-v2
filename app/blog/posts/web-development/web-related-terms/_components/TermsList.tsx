@@ -15,7 +15,7 @@ export default function TermsList() {
   });
 
   return (
-    <article className="w-full max-w-[686px] pt-12 lg:pt-0 text-neutral-200 dark:text-neutral-500 font-sans text-[19px] font-medium">
+    <article className="w-full max-w-[704px] pt-12 lg:pt-0 text-neutral-200 dark:text-neutral-500 font-sans text-[19px] font-medium">
       <ul className="hidden lg:block pb-48">{termElements}</ul>
       <ul className="lg:hidden pb-48">{termsAccordian}</ul>
 
