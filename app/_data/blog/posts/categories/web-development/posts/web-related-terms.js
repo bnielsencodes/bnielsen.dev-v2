@@ -32,6 +32,7 @@ const termsWithoutId = [
     target: "abstraction",
     definition:
       "Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency. In the same way that abstraction sometimes works in art, the object that remains is a representation of the original, with unwanted details omitted.",
+    seeAlso: [{ name: "Object", link: "#object" }],
   },
   {
     name: "Accessibility",
@@ -40,7 +41,10 @@ const termsWithoutId = [
       "Web accessibility is the practice of making websites usable for all visitors, including those with disabilities, impairments, and limitations.",
     seeAlso: [
       { name: "A11y,", link: "#ally" },
-      { name: "Screen Reader", link: "#screen-reader" },
+      { name: "ARIA,", link: "#aria" },
+      { name: "ARIA Attributes,", link: "#aria-attributes" },
+      { name: "ARIA Roles,", link: "#aria-roles" },
+      { name: "Screen Reader,", link: "#screen-reader" },
       { name: "WCAG", link: "#wcag" },
     ],
   },
@@ -66,6 +70,10 @@ const termsWithoutId = [
       {
         name: "Asynchronous,",
         link: "#asynchronous",
+      },
+      {
+        name: "Async/Await,",
+        link: "#async-await",
       },
       {
         name: "Synchronous,",
@@ -107,6 +115,8 @@ const termsWithoutId = [
     definition:
       "Accessible Rich Internet Applications (ARIA) is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.",
     seeAlso: [
+      { name: "A11y,", link: "#ally" },
+      { name: "Accessibility,", link: "#accessibility" },
       { name: "ARIA Attributes,", link: "#aria-attributes" },
       { name: "ARIA Roles", link: "#aria-roles" },
     ],
@@ -117,6 +127,8 @@ const termsWithoutId = [
     definition:
       "ARIA attributes enable modifying an element's states and properties as defined in the accessibility tree.",
     seeAlso: [
+      { name: "A11y,", link: "#ally" },
+      { name: "Accessibility,", link: "#accessibility" },
       { name: "ARIA,", link: "#aria" },
       { name: "ARIA Roles", link: "#aria-roles" },
     ],
@@ -127,6 +139,8 @@ const termsWithoutId = [
     definition:
       "ARIA roles provide semantic meaning to content, allowing screen readers and other tools to present and support interaction with an object in a way that is consistent with user expectations of that type of object. ARIA roles can be used to describe elements that don't natively exist in HTML or exist but don't yet have full browser support.",
     seeAlso: [
+      { name: "A11y,", link: "#ally" },
+      { name: "Accessibility,", link: "#accessibility" },
       { name: "ARIA,", link: "#aria" },
       { name: "ARIA Attributes", link: "#aria-attributes" },
     ],
@@ -137,10 +151,43 @@ const termsWithoutId = [
     definition:
       "In JavaScript, arrays are used to store and access multiple values of the same type in a single variable, making it easier to manipulate and manage data.",
     seeAlso: [
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
+        name: "Boolean,",
+        link: "#boolean",
+      },
+      {
+        name: "Falsy,",
+        link: "#falsy",
+      },
+      { name: "Null,", link: "#null" },
+      {
+        name: "Number,",
+        link: "#number",
+      },
       { name: "Object,", link: "#object" },
       {
-        name: "Primitive Data Types (JavaScript)",
+        name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
+      },
+      {
+        name: "String,",
+        link: "#string",
+      },
+      {
+        name: "Symbol,",
+        link: "#symbol",
+      },
+      {
+        name: "Truthy,",
+        link: "#truthy",
+      },
+      {
+        name: "Undefined",
+        link: "#undefined",
       },
     ],
   },
@@ -163,8 +210,11 @@ const termsWithoutId = [
     definition:
       "In computer programming, the async/await pattern is a syntactic feature of many programming languages that allows an asynchronous, non-blocking function to be structured in a way similar to an ordinary synchronous function. Async makes a function return a Promise, and await makes a function wait for a Promise.",
     seeAlso: [
+      { name: "AJAX,", link: "#ajax" },
       { name: "Asynchronous,", link: "#asynchronous" },
+      { name: "Function,", link: "#function" },
       { name: "IIFE,", link: "#iife" },
+      { name: "Promise,", link: "#promise" },
       { name: "Synchronous", link: "#synchronous" },
     ],
   },
@@ -174,6 +224,7 @@ const termsWithoutId = [
     definition:
       "The term asynchronous refers to two or more objects or events that do not exist or happen at the same time, that is, they are not synchronous. When multiple related things happen without any being dependent on the completion of previous happenings, they are asynchronous.",
     seeAlso: [
+      { name: "AJAX,", link: "#ajax" },
       { name: "Async/Await,", link: "#async-await" },
       { name: "Synchronous", link: "#synchronous" },
     ],
@@ -183,7 +234,12 @@ const termsWithoutId = [
     target: "attribute",
     definition:
       "In programming, attributes are properties or characteristics that you can assign to different elements, like variables, objects, or classes. They provide additional information or behavior to these elements, helping you define their specific traits.",
-    seeAlso: [{ name: "Property", link: "#property" }],
+    seeAlso: [
+      { name: "Classes,", link: "#classes" },
+      { name: "Object,", link: "#object" },
+      { name: "Property,", link: "#property" },
+      { name: "Variable", link: "#variable" },
+    ],
   },
   {
     name: "B2B SaaS (Business-to-Business Software-as-a-Service)",
@@ -243,6 +299,7 @@ const termsWithoutId = [
     target: "bigint",
     definition:
       "The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary magnitude. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit (Number.MAX_SAFE_INTEGER) for Numbers.",
+    seeAlso: [{ name: "Number", link: "#number" }],
   },
   {
     name: "Boolean",
@@ -294,6 +351,10 @@ const termsWithoutId = [
     definition:
       "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
     seeAlso: [
+      {
+        name: "CSS,",
+        link: "#css",
+      },
       {
         name: "Framework",
         link: "#framework",
@@ -347,8 +408,8 @@ const termsWithoutId = [
       "A breadcrumb (or breadcrumb trail) is a type of secondary navigation scheme that reveals the user's location in a website or web application. The term comes from the Hansel and Gretel fairy tale in which the two title children drop breadcrumbs to form a trail back to their home. Just like in the tale, breadcrumbs in real-world applications offer users a way to trace the path back to their original landing point.",
   },
   {
-    name: "Breakpoints",
-    target: "breakpoints",
+    name: "Breakpoint",
+    target: "breakpoint",
     definition:
       "Breakpoints in web design refer to the predetermined screen sizes where the website's content and layout automatically adjust to ensure readability and usability on different devices.",
     seeAlso: [
@@ -483,8 +544,8 @@ const termsWithoutId = [
       "In software engineering, CI/CD or CICD is the combined practices of continuous integration (CI) and continuous delivery (CD) or, less often, continuous deployment. They are sometimes referred to collectively as continuous development or continuous software development.",
     seeAlso: [
       {
-        name: "Continuous Development,",
-        link: "#continuous-development",
+        name: "Continuous Delivery,",
+        link: "#continuous-delivery",
       },
       {
         name: "Continuous Integration",
@@ -578,8 +639,16 @@ const termsWithoutId = [
         link: "#client",
       },
       {
-        name: "Client Components",
+        name: "Client Components,",
         link: "#client-components",
+      },
+      {
+        name: "JavaScript,",
+        link: "#javascript",
+      },
+      {
+        name: "React",
+        link: "#react",
       },
     ],
   },
@@ -650,8 +719,8 @@ const termsWithoutId = [
         link: "#cicd",
       },
       {
-        name: "Continuous Deployment",
-        link: "#continuous-deployment",
+        name: "Continuous Delivery",
+        link: "#continuous-delivery",
       },
     ],
   },
@@ -738,11 +807,11 @@ const termsWithoutId = [
       "A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web and that is typically operated by search engines for the purpose of Web indexing.",
     seeAlso: [
       {
-        name: "Robots.txt",
+        name: "Robots.txt,",
         link: "#robots",
       },
       {
-        name: "SEO",
+        name: "SEO,",
         link: "#seo",
       },
       {
@@ -870,7 +939,7 @@ const termsWithoutId = [
         link: "#css",
       },
       {
-        name: "Sass",
+        name: "SASS",
         link: "#sass",
       },
     ],
@@ -882,8 +951,12 @@ const termsWithoutId = [
       "Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that represent specific values to be reused throughout a document.",
     seeAlso: [
       {
-        name: "CSS",
+        name: "CSS,",
         link: "#css",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
       },
     ],
   },
@@ -1186,6 +1259,20 @@ const termsWithoutId = [
     target: "dos",
     definition:
       "A DoS attack is a type of cyber attack in which a malicious actor aims to render a computer or other device unavailable to its intended users by interrupting the device's normal functioning. ",
+    seeAlso: [
+      {
+        name: "Cross-Site Scripting,",
+        link: "#xss",
+      },
+      {
+        name: "DDoS,",
+        link: "#ddos",
+      },
+      {
+        name: "SQL Injection",
+        link: "#sql-injection",
+      },
+    ],
   },
   {
     name: "Dynamic Typing",
@@ -1224,6 +1311,12 @@ const termsWithoutId = [
     target: "element",
     definition:
       "An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag. Elements and tags are not the same things.",
+    seeAlso: [
+      {
+        name: "Tag",
+        link: "#tag",
+      },
+    ],
   },
   {
     name: "Em",
@@ -1256,12 +1349,15 @@ const termsWithoutId = [
         link: "#classes-javascript",
       },
       {
-        name: "Function",
+        name: "Function,",
         link: "#function",
+      },
+      {
+        name: "Object",
+        link: "#object",
       },
     ],
   },
-  {
   {
     name: "Encryption",
     target: "encryption",
@@ -1301,8 +1397,12 @@ const termsWithoutId = [
         link: "#event",
       },
       {
-        name: "Event Listener",
+        name: "Event Listener,",
         link: "#event-listener",
+      },
+      {
+        name: "Function",
+        link: "#function",
       },
     ],
   },
@@ -1317,8 +1417,12 @@ const termsWithoutId = [
         link: "#event",
       },
       {
-        name: "Event Handler",
+        name: "Event Handler,",
         link: "#event-handler",
+      },
+      {
+        name: "Function",
+        link: "#function",
       },
     ],
   },
@@ -1329,6 +1433,14 @@ const termsWithoutId = [
       "A falsy (sometimes written falsey) value is a value that is considered false when encountered in a boolean context. JavaScript uses type conversion to coerce any value to a boolean in contexts that require it, such as conditionals and loops.",
     seeAlso: [
       {
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
         name: "Boolean,",
         link: "#boolean",
       },
@@ -1337,8 +1449,21 @@ const termsWithoutId = [
         link: "#null",
       },
       {
+        name: "Number,",
+        link: "#number",
+      },
+      { name: "Object,", link: "#object" },
+      {
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
+      },
+      {
+        name: "String,",
+        link: "#string",
+      },
+      {
+        name: "Symbol,",
+        link: "#symbol",
       },
       {
         name: "Truthy,",
@@ -1356,16 +1481,6 @@ const termsWithoutId = [
     definition:
       "A favicon (short for favorite icon), also known as a shortcut icon, website icon, tab icon, URL icon, or bookmark icon, is a file containing one or more small icons associated with a particular website or web page.",
   },
-    seeAlso: [
-      {
-        name: "Largest Contentful Paint,",
-        link: "#lcp",
-      },
-      {
-        name: "Page Load Time",
-        link: "#page-load-time",
-      },
-    ],
   {
     name: "Fetch API",
     target: "fetchapi",
@@ -1415,6 +1530,20 @@ const termsWithoutId = [
     target: "fcp",
     definition:
       "Your website's First Contentful Paint is when the browser renders the first DOM element on your page. This includes images, canvas elements (non-white), or text. In plain English, FCP is when the user can see some part of your page change.",
+    seeAlso: [
+      {
+        name: "DOM,",
+        link: "#dom",
+      },
+      {
+        name: "Largest Contentful Paint,",
+        link: "#lcp",
+      },
+      {
+        name: "Page Load Time",
+        link: "#page-load-time",
+      },
+    ],
   },
   {
     name: "Fold",
@@ -1461,6 +1590,10 @@ const termsWithoutId = [
       {
         name: "Next.js",
         link: "#nextjs",
+      },
+      {
+        name: "Vue.js",
+        link: "#vue",
       },
     ],
   },
@@ -1529,8 +1662,12 @@ const termsWithoutId = [
       "A free, open-source, React-based framework designed to help developers build performant websites and apps.",
     seeAlso: [
       {
-        name: "Framework",
+        name: "Framework,",
         link: "#classes-javascript",
+      },
+      {
+        name: "React",
+        link: "#react",
       },
     ],
   },
@@ -1639,6 +1776,12 @@ const termsWithoutId = [
     target: "gui",
     definition:
       "A digital interface in which a user interacts with graphical components such as icons, buttons, and menus. In a GUI, the visuals displayed in the user interface convey information relevant to the user, as well as actions that they can take.",
+    seeAlso: [
+      {
+        name: "UI",
+        link: "#ui",
+      },
+    ],
   },
   {
     name: "Gutters",
@@ -1646,6 +1789,14 @@ const termsWithoutId = [
     definition:
       "Gutters refer to the whitespace between content columns on a webpage. They provide visual separation on a website, improving its organization, appearance, and readability. By offering additional breathing room between different elements, gutters increase accessibility and make content easier to digest.",
     seeAlso: [
+      {
+        name: "Accessibility,",
+        link: "#accessibility",
+      },
+      {
+        name: "UI,",
+        link: "#ui",
+      },
       {
         name: "Whitespace",
         link: "#whitespace",
@@ -1899,6 +2050,20 @@ const termsWithoutId = [
     target: "hydration",
     definition:
       "In web development, hydration or rehydration is a technique in which client-side JavaScript converts a static HTML web page, delivered either through static hosting or server-side rendering, into a dynamic web page by attaching event handlers to the HTML elements.",
+    seeAlso: [
+      {
+        name: "Client-Side Rendering,",
+        link: "#client-side-rendering",
+      },
+      {
+        name: "Event Handler,",
+        link: "#event-handler",
+      },
+      {
+        name: "Server-Side",
+        link: "#scope",
+      },
+    ],
   },
   {
     name: "Hyperlink",
@@ -1937,6 +2102,10 @@ const termsWithoutId = [
         link: "#css",
       },
       {
+        name: "HTML,",
+        link: "#html",
+      },
+      {
         name: "Selector",
         link: "#selector",
       },
@@ -1963,8 +2132,12 @@ const termsWithoutId = [
         link: "#function",
       },
       {
-        name: "Method",
+        name: "Method,",
         link: "#method",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
       },
     ],
   },
@@ -1979,6 +2152,20 @@ const termsWithoutId = [
     target: "immutable",
     definition:
       "An immutable value is one whose content cannot be changed without creating an entirely new value. In JavaScript, primitive values are immutable — once a primitive value is created, it cannot be changed, although the variable that holds it may be reassigned another value. By contrast, objects and arrays are mutable by default — their properties and elements can be changed without reassigning a new value.",
+    seeAlso: [
+      {
+        name: "Mutable,",
+        link: "#mutable",
+      },
+      {
+        name: "Primitive Data Types,",
+        link: "#primitive-data-types",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
+      },
+    ],
   },
   {
     name: "Imperative Programming",
@@ -1991,14 +2178,12 @@ const termsWithoutId = [
         link: "#control-flow",
       },
       {
-        name: "Declarative Programming",
+        name: "Declarative Programming,",
         link: "#declarative-programming",
       },
-    ],
-    seeAlso: [
       {
-        name: "Mutable",
-        link: "#mutable",
+        name: "Function",
+        link: "#function",
       },
     ],
   },
@@ -2029,8 +2214,12 @@ const termsWithoutId = [
       "The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
     seeAlso: [
       {
-        name: "API",
+        name: "API,",
         link: "#api",
+      },
+      {
+        name: "Asynchronous",
+        link: "#asynchronous",
       },
     ],
   },
@@ -2068,6 +2257,10 @@ const termsWithoutId = [
     definition:
       "An Iteration in computer science is a function that repeats a block of code in a specified order, often until a specific result occurs. Algorithms use iterations to run a program repeatedly until it meets certain conditions or until the algorithm repeats a set number of times.",
     seeAlso: [
+      {
+        name: "Algorithm,",
+        link: "#algorithm",
+      },
       {
         name: "Loop",
         link: "#loop",
@@ -2124,6 +2317,14 @@ const termsWithoutId = [
     definition:
       "An open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute-value pairs and arrays (or other serializable values). It is a common data format with diverse uses in electric data interchange, including that of web applications with servers.",
     seeAlso: [
+      {
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "Attribute,",
+        link: "#attribute",
+      },
       {
         name: "Object",
         link: "#object",
@@ -2183,6 +2384,16 @@ const termsWithoutId = [
     target: "key",
     definition:
       "A 'key' is a special string attribute you need to include when creating arrays of elements. Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside an array to give the elements a stable identity.",
+    seeAlso: [
+      {
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "React",
+        link: "#react",
+      },
+    ],
   },
   {
     name: "Landing Page",
@@ -2223,8 +2434,12 @@ const termsWithoutId = [
         link: "#fcp",
       },
       {
-        name: "Page Load Time",
+        name: "Page Load Time,",
         link: "#page-load-time",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
       },
     ],
   },
@@ -2273,6 +2488,16 @@ const termsWithoutId = [
     target: "localization",
     definition:
       "Software localization is the process of adapting software to both the culture and language of an end user, from standards of measurement to video and graphic design. It involves not only translation, but also design and UX changes to make software look and feel natural to the target user.",
+    seeAlso: [
+      {
+        name: "End User,",
+        link: "#end-user",
+      },
+      {
+        name: "UX",
+        link: "#ux",
+      },
+    ],
   },
   {
     name: "localStorage",
@@ -2317,6 +2542,10 @@ const termsWithoutId = [
         link: "#box-model",
       },
       {
+        name: "Element,",
+        link: "#element",
+      },
+      {
         name: "Padding",
         link: "#padding",
       },
@@ -2341,8 +2570,12 @@ const termsWithoutId = [
       "MDN Web Docs is an open-source, collaborative project documenting Web platform technologies, including CSS, HTML, JavaScript, and Web APIs. MDN also provides an extensive set of learning resources for beginning developers and students.",
     seeAlso: [
       {
-        name: "Documentation",
+        name: "Documentation,",
         link: "#documentation",
+      },
+      {
+        name: "Open Source",
+        link: "#open-source",
       },
     ],
   },
@@ -2353,8 +2586,12 @@ const termsWithoutId = [
       "Media query is a CSS technique introduced in CSS3. It uses the @media rule to include a block of CSS properties only if a certain condition is true.",
     seeAlso: [
       {
-        name: "Breakpoints",
-        link: "#breakpoints",
+        name: "Breakpoint,",
+        link: "#breakpoint",
+      },
+      {
+        name: "CSS",
+        link: "#css",
       },
     ],
   },
@@ -2365,8 +2602,12 @@ const termsWithoutId = [
       "Meta tags are HTML tags that provide information about a webpage's content to search engines and users.",
     seeAlso: [
       {
-        name: "Meta Tags",
-        link: "#meta-tags",
+        name: "Metadata,",
+        link: "#metadata",
+      },
+      {
+        name: "SEO",
+        link: "#seo",
       },
     ],
   },
@@ -2377,8 +2618,12 @@ const termsWithoutId = [
       "Metadata is data (information) about data. Website metadata includes page titles, descriptions, keywords, and more to help search engines crawl and rank web pages.",
     seeAlso: [
       {
-        name: "Metadata",
-        link: "#metadata",
+        name: "Meta Tags,",
+        link: "#meta-tags",
+      },
+      {
+        name: "SEO",
+        link: "#seo",
       },
     ],
   },
@@ -2393,8 +2638,12 @@ const termsWithoutId = [
         link: "#function",
       },
       {
-        name: "JavaScript",
+        name: "JavaScript,",
         link: "#javascript",
+      },
+      {
+        name: "Object",
+        link: "#object",
       },
     ],
   },
@@ -2417,8 +2666,20 @@ const termsWithoutId = [
       "A “mobile-first” approach involves designing a desktop site starting with the mobile version, which is then adapted to larger screens (contrary to the traditional approach of starting with a desktop site and then adapting it to smaller screens).",
     seeAlso: [
       {
-        name: "Responsive Web Design",
+        name: "Breakpoint,",
+        link: "#breakpoint",
+      },
+      {
+        name: "Media Query,",
+        link: "#media-query",
+      },
+      {
+        name: "Responsive Web Design,",
         link: "#responsive-design",
+      },
+      {
+        name: "Viewport",
+        link: "#viewport",
       },
     ],
   },
@@ -2445,8 +2706,24 @@ const termsWithoutId = [
       "A mutable value is one that can be changed without creating an entirely new value. In JavaScript, objects and arrays are mutable by default, but primitive values are not — once a primitive value is created, it cannot be changed, although the variable that holds it may be reassigned.",
     seeAlso: [
       {
-        name: "Immutable",
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "Immutable,",
         link: "#immutable",
+      },
+      {
+        name: "Object,",
+        link: "#object",
+      },
+      {
+        name: "Primitive Data Types,",
+        link: "#primitive-data-types",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
       },
     ],
   },
@@ -2467,6 +2744,10 @@ const termsWithoutId = [
         link: "#database",
       },
       {
+        name: "Open Source,",
+        link: "#open-source",
+      },
+      {
         name: "Relational Database",
         link: "#relational-database",
       },
@@ -2477,6 +2758,20 @@ const termsWithoutId = [
     target: "namespace",
     definition:
       "In web development, a namespace is a container that holds a set of identifiers, such as functions, classes, or variables, to organize and manage code. Namespaces are used to avoid naming conflicts between different components or libraries within an application.",
+    seeAlso: [
+      {
+        name: "Classes",
+        link: "#classes",
+      },
+      {
+        name: "Function",
+        link: "#function",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
+      },
+    ],
   },
   {
     name: "Navigation",
@@ -2505,6 +2800,10 @@ const termsWithoutId = [
         link: "#framework",
       },
       {
+        name: "Fullstack,",
+        link: "#fullstack",
+      },
+      {
         name: "React",
         link: "#react",
       },
@@ -2531,6 +2830,12 @@ const termsWithoutId = [
     target: "nodejs",
     definition:
       "A JavaScript runtime for building server-side or desktop applications. Node allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser. Node can, therefore, be used to write server-side applications with access to the operating system, file system, and everything else required to build fully-functional applications.",
+    seeAlso: [
+      {
+        name: "JavaScript",
+        link: "#javascript",
+      },
+    ],
   },
   {
     name: "Non-Relational Database",
@@ -2591,8 +2896,45 @@ const termsWithoutId = [
       "The null value represents the intentional absence of any object value. It is one of JavaScript's primitive values and is treated as falsy for boolean operations.",
     seeAlso: [
       {
-        name: "Primitive Data Types",
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
+        name: "Boolean,",
+        link: "#boolean",
+      },
+      {
+        name: "Falsy,",
+        link: "#falsy",
+      },
+      {
+        name: "Number,",
+        link: "#number",
+      },
+      { name: "Object,", link: "#object" },
+      {
+        name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
+      },
+      {
+        name: "String,",
+        link: "#string",
+      },
+      {
+        name: "Symbol,",
+        link: "#symbol",
+      },
+      {
+        name: "Truthy,",
+        link: "#truthy",
+      },
+      {
+        name: "Undefined",
+        link: "#undefined",
       },
     ],
   },
@@ -2603,6 +2945,14 @@ const termsWithoutId = [
       "One of the primitive types of JavaScript. Number values represent floating-point numbers like 37 or -9.25.",
     seeAlso: [
       {
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
         name: "Boolean,",
         link: "#boolean",
       },
@@ -2611,8 +2961,21 @@ const termsWithoutId = [
         link: "#falsy",
       },
       {
+        name: "Null,",
+        link: "#null",
+      },
+      { name: "Object,", link: "#object" },
+      {
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
+      },
+      {
+        name: "String,",
+        link: "#string",
+      },
+      {
+        name: "Symbol,",
+        link: "#symbol",
       },
       {
         name: "Truthy,",
@@ -2631,6 +2994,18 @@ const termsWithoutId = [
       "An object is a collection of related data and/or functionality. These usually consist of several variables and functions (which are called properties and methods when they are inside objects).",
     seeAlso: [
       {
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
+        name: "Boolean,",
+        link: "#boolean",
+      },
+      {
         name: "Classes,",
         link: "#classes",
       },
@@ -2639,12 +3014,41 @@ const termsWithoutId = [
         link: "#constructor",
       },
       {
+        name: "Falsy,",
+        link: "#falsy",
+      },
+      {
         name: "Function,",
         link: "#function",
       },
       {
-        name: "Method",
+        name: "Method,",
         link: "#method",
+      },
+      {
+        name: "Number,",
+        link: "#number",
+      },
+      { name: "Object,", link: "#object" },
+      {
+        name: "Primitive Data Types (JavaScript),",
+        link: "#primitive-data-types",
+      },
+      {
+        name: "String,",
+        link: "#string",
+      },
+      {
+        name: "Symbol,",
+        link: "#symbol",
+      },
+      {
+        name: "Truthy,",
+        link: "#truthy",
+      },
+      {
+        name: "Undefined",
+        link: "#undefined",
       },
     ],
   },
@@ -2771,8 +3175,12 @@ const termsWithoutId = [
       "A parameter is a programming variable or value that transfers data between functions.",
     seeAlso: [
       {
-        name: "Function",
+        name: "Function,",
         link: "#function",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
       },
     ],
   },
@@ -2887,6 +3295,10 @@ const termsWithoutId = [
       "The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types. The seven primitive data types of JavaScript are: string, number, bigint, boolean, symbol, null and undefined.",
     seeAlso: [
       {
+        name: "Array,",
+        link: "#array",
+      },
+      {
         name: "BigInt,",
         link: "#bigint",
       },
@@ -2906,10 +3318,7 @@ const termsWithoutId = [
         name: "Number,",
         link: "#number",
       },
-      {
-        name: "Truthy,",
-        link: "#truthy",
-      },
+      { name: "Object,", link: "#object" },
       {
         name: "String,",
         link: "#string",
@@ -2917,6 +3326,10 @@ const termsWithoutId = [
       {
         name: "Symbol,",
         link: "#symbol",
+      },
+      {
+        name: "Truthy,",
+        link: "#truthy",
       },
       {
         name: "Undefined",
@@ -3044,6 +3457,10 @@ const termsWithoutId = [
     definition:
       "A website that looks and behaves as if it is a mobile app. PWAs are built to take advantage of native mobile device features, without requiring the end user to visit an app store, make a purchase and download software locally.",
     seeAlso: [
+      {
+        name: "End User,",
+        link: "#end-user",
+      },
       {
         name: "SPA,",
         link: "#spa",
@@ -3227,8 +3644,16 @@ const termsWithoutId = [
       "A design approach that addresses the range of devices and device sizes, enabling automatic adaption to the screen, whether the content is viewed on a tablet, phone, television, or watch. Responsive web design isn't a separate technology — it is an approach.",
     seeAlso: [
       {
-        name: "Mobile-First",
+        name: "Media Query,",
+        link: "#media-query",
+      },
+      {
+        name: "Mobile-First,",
         link: "#mobile-first",
+      },
+      {
+        name: "Viewport",
+        link: "#viewport",
       },
     ],
   },
@@ -3243,12 +3668,20 @@ const termsWithoutId = [
         link: "#api",
       },
       {
+        name: "Client,",
+        link: "#client",
+      },
+      {
         name: "Fetch API,",
         link: "#fetch-api",
       },
       {
-        name: "REST API",
+        name: "REST API,",
         link: "#rest-api",
+      },
+      {
+        name: "Server",
+        link: "#server",
       },
     ],
   },
@@ -3323,6 +3756,10 @@ const termsWithoutId = [
         link: "#crawler",
       },
       {
+        name: "Search Engine,",
+        link: "#search-engine",
+      },
+      {
         name: "SEO,",
         link: "#seo",
       },
@@ -3337,6 +3774,24 @@ const termsWithoutId = [
     target: "routers",
     definition:
       "There are three definitions for routers on the web: 1. For the network layer, the router is a networking device that decides data packet directions. They are distributed by retailers allowing user interaction to the internet. 2. For a single-page application in the application layer, a router is a library that decides what web page is presented by a given URL. This middleware module is used for all URL functions, as these are given a path to a file that is rendered to open the next page. 3. In the implementation of an API in a service layer, a router is a software component that parses a request and directs or routes the request to various handlers within a program. The router code usually accepts a response from the handler and facilitates its return to the requester.",
+    seeAlso: [
+      {
+        name: "API,",
+        link: "#api",
+      },
+      {
+        name: "Middleware,",
+        link: "#middleware",
+      },
+      {
+        name: "SPA,",
+        link: "#spa",
+      },
+      {
+        name: "URL",
+        link: "#url",
+      },
+    ],
   },
   {
     name: "RSS (RDF Site Summary, aka Really Simple Syndication)",
@@ -3377,8 +3832,20 @@ const termsWithoutId = [
         link: "#global-scope",
       },
       {
-        name: "Local Scope",
+        name: "Local Scope,",
         link: "#local-scope",
+      },
+      {
+        name: "Function,",
+        link: "#function",
+      },
+      {
+        name: "Object,",
+        link: "#object",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
       },
     ],
   },
@@ -3453,6 +3920,10 @@ const termsWithoutId = [
         link: "#css",
       },
       {
+        name: "HTML,",
+        link: "#html",
+      },
+      {
         name: "ID Selector",
         link: "#id-selector",
       },
@@ -3497,8 +3968,28 @@ const termsWithoutId = [
       "The term web server can refer to hardware or software, or both of them working together. 1. On the hardware side, a web server is a computer that stores web server software and a website's component files (for example, HTML documents, images, CSS stylesheets, and JavaScript files). A web server connects to the Internet and supports physical data interchange with other devices connected to the web. 2. On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an HTTP server. An HTTP server is software that understands URLS (web addresses) and HTTP (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.",
     seeAlso: [
       {
-        name: "Proxy Server",
+        name: "HTTP,",
+        link: "#http",
+      },
+      {
+        name: "Domain Name,",
+        link: "#domain-name",
+      },
+      {
+        name: "End User,",
+        link: "#end-user",
+      },
+      {
+        name: "Proxy Server,",
         link: "#proxy-server",
+      },
+      {
+        name: "Server,",
+        link: "#server",
+      },
+      {
+        name: "URL",
+        link: "#url",
       },
     ],
   },
@@ -3577,6 +4068,10 @@ const termsWithoutId = [
         link: "#robots",
       },
       {
+        name: "Search Engine,",
+        link: "#search-engine",
+      },
+      {
         name: "SEO",
         link: "#seo",
       },
@@ -3593,6 +4088,16 @@ const termsWithoutId = [
     target: "slug",
     definition:
       "A slug, also known as a URL slug, is descriptive text after the website name at the end of a URL that identifies a web page on the domain.",
+    seeAlso: [
+      {
+        name: "Domain,",
+        link: "#domain",
+      },
+      {
+        name: "URL",
+        link: "#url",
+      },
+    ],
   },
   {
     name: "SMTP (Simple Mail Transfer Protocol)",
@@ -3739,9 +4244,30 @@ const termsWithoutId = [
       "In any computer programming language, a string is a sequence of characters used to represent text.",
     seeAlso: [
       {
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
+        name: "Boolean,",
+        link: "#boolean",
+      },
+      {
+        name: "Falsy,",
+        link: "#falsy",
+      },
+      {
         name: "Interpolation,",
         link: "#interpolation",
       },
+      {
+        name: "Number,",
+        link: "#number",
+      },
+      { name: "Object,", link: "#object" },
       {
         name: "Primitive Data Types,",
         link: "#primitive-data-types",
@@ -3751,8 +4277,20 @@ const termsWithoutId = [
         link: "#string-interpolation",
       },
       {
-        name: "Template Literal",
+        name: "Symbol,",
+        link: "#symbol",
+      },
+      {
+        name: "Template Literal,",
         link: "#template-literal",
+      },
+      {
+        name: "Truthy,",
+        link: "#truthy",
+      },
+      {
+        name: "Undefined",
+        link: "#undefined",
       },
     ],
   },
@@ -3811,8 +4349,12 @@ const termsWithoutId = [
         link: "#pdf",
       },
       {
-        name: "PNG",
+        name: "PNG,",
         link: "#png",
+      },
+      {
+        name: "XML",
+        link: "#xml",
       },
     ],
   },
@@ -3823,8 +4365,45 @@ const termsWithoutId = [
       "A symbol is a data type that represents unique, unforgeable identifiers. They are sometimes called atoms. Because a symbol is unique and unforgeable, you can only read a property value associated with a symbol if you have a reference to the original identifier.",
     seeAlso: [
       {
-        name: "Primitive Data Types",
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
+        name: "Boolean,",
+        link: "#boolean",
+      },
+      {
+        name: "Falsy,",
+        link: "#falsy",
+      },
+      {
+        name: "Null,",
+        link: "#null",
+      },
+      {
+        name: "Number,",
+        link: "#number",
+      },
+      { name: "Object,", link: "#object" },
+      {
+        name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
+      },
+      {
+        name: "String,",
+        link: "#string",
+      },
+      {
+        name: "Truthy,",
+        link: "#truthy",
+      },
+      {
+        name: "Undefined",
+        link: "#undefined",
       },
     ],
   },
@@ -3849,6 +4428,13 @@ const termsWithoutId = [
     target: "syntactic-sugar",
     definition:
       "Syntactic sugar refers to certain language features in programming that make the code easier to read or write. It's like adding a bit of sweetness to your code syntax to make it more pleasant to work with.",
+    seeAlso: [
+      {
+        name: "Syntax",
+        link: "#syntax",
+      },
+    ],
+  },
   {
     name: "Syntax",
     target: "syntax",
@@ -3877,12 +4463,6 @@ const termsWithoutId = [
       },
     ],
   },
-    seeAlso: [
-      {
-        name: "Syntax",
-        link: "#syntax",
-      },
-    ],
   {
     name: "Tag",
     target: "tag",
@@ -3954,6 +4534,14 @@ const termsWithoutId = [
       "In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. That is, all values are truthy except false, 0, -0, 0n, '', null, undefined, NaN, and document.",
     seeAlso: [
       {
+        name: "Array,",
+        link: "#array",
+      },
+      {
+        name: "BigInt,",
+        link: "#bigint",
+      },
+      {
         name: "Boolean,",
         link: "#boolean",
       },
@@ -3966,8 +4554,21 @@ const termsWithoutId = [
         link: "#null",
       },
       {
+        name: "Number,",
+        link: "#number",
+      },
+      { name: "Object,", link: "#object" },
+      {
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
+      },
+      {
+        name: "String,",
+        link: "#string",
+      },
+      {
+        name: "Symbol,",
+        link: "#symbol",
       },
       {
         name: "Undefined",
@@ -3986,8 +4587,12 @@ const termsWithoutId = [
         link: "#dynamic-typing",
       },
       {
-        name: "TypeScript",
+        name: "TypeScript,",
         link: "#typescript",
+      },
+      {
+        name: "Variable",
+        link: "#variable",
       },
     ],
   },
@@ -4000,6 +4605,10 @@ const termsWithoutId = [
       {
         name: "JavaScript,",
         link: "#javascript",
+      },
+      {
+        name: "Syntax,",
+        link: "#syntax",
       },
       {
         name: "Type Inference",
@@ -4030,7 +4639,7 @@ const termsWithoutId = [
         link: "#bigint",
       },
       {
-        name: "Boolean",
+        name: "Boolean,",
         link: "#boolean",
       },
       {
@@ -4058,7 +4667,7 @@ const termsWithoutId = [
         link: "#symbol",
       },
       {
-        name: "Truthy,",
+        name: "Truthy",
         link: "#truthy",
       },
     ],
@@ -4136,8 +4745,8 @@ const termsWithoutId = [
       "A viewport is the user's visible area of a webpage. It's a key ingredient of responsive web design and ensures your content is easy to view.",
     seeAlso: [
       {
-        name: "Breakpoints",
-        link: "#breakpoints",
+        name: "Breakpoint",
+        link: "#breakpoint",
       },
     ],
   },
@@ -4152,8 +4761,16 @@ const termsWithoutId = [
         link: "#dom",
       },
       {
-        name: "Node",
+        name: "Node,",
         link: "#node",
+      },
+      {
+        name: "React,",
+        link: "#react",
+      },
+      {
+        name: "UI",
+        link: "#ui",
       },
     ],
   },
@@ -4168,8 +4785,12 @@ const termsWithoutId = [
         link: "#javascript",
       },
       {
-        name: "React",
+        name: "React,",
         link: "#react",
+      },
+      {
+        name: "Vue.js",
+        link: "#vue",
       },
     ],
   },
@@ -4178,6 +4799,28 @@ const termsWithoutId = [
     target: "vue",
     definition:
       "Vue.js (commonly referred to as Vue; pronounced 'view') is an open-source model-view-viewmodel front end JavaScript library for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members.",
+    seeAlso: [
+      {
+        name: "Framework,",
+        link: "#framework",
+      },
+      {
+        name: "JavaScript,",
+        link: "#javascript",
+      },
+      {
+        name: "Open Source,",
+        link: "#open-source",
+      },
+      {
+        name: "SPA,",
+        link: "#spa",
+      },
+      {
+        name: "UI",
+        link: "#ui",
+      },
+    ],
   },
   {
     name: "WCAG (Web Content Accessibility Guidelines)",
@@ -4218,8 +4861,12 @@ const termsWithoutId = [
         link: "#cta",
       },
       {
-        name: "CTR",
+        name: "CTR,",
         link: "#ctr",
+      },
+      {
+        name: "UX",
+        link: "#ux",
       },
     ],
   },
@@ -4258,8 +4905,12 @@ const termsWithoutId = [
       "A free and open-source module bundler for JavaScript. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.",
     seeAlso: [
       {
-        name: "Code Splitting",
+        name: "Code Splitting,",
         link: "#code-splitting",
+      },
+      {
+        name: "Open Source",
+        link: "#open-source",
       },
     ],
   },
@@ -4270,8 +4921,12 @@ const termsWithoutId = [
       "The empty space around the content and elements on a web page. It's used to balance the page's design, organize the content and elements, and improve the visual experience for the user.",
     seeAlso: [
       {
-        name: "Gutters",
+        name: "Gutters,",
         link: "#gutters",
+      },
+      {
+        name: "UI",
+        link: "#ui",
       },
     ],
   },
