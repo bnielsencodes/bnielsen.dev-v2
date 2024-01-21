@@ -2,8 +2,8 @@
 "use client";
 import NavBar from "@/app/_components/blog/navigation/NavBar";
 import Header from "@/app/_components/blog/posts/header/Header";
-import TermsList from "./_components/web-related-terms/TermsList";
-import TableOfContents from "./_components/web-related-terms/TableOfContents";
+import TermsList from "./_components/TermsList";
+import TableOfContents from "./_components/TableOfContents";
 import Footer from "@/app/_components/blog/footer/Footer";
 
 export default function WebRelatedTerms() {
