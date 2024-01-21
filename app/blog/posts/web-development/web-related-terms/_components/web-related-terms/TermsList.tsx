@@ -1,17 +1,23 @@
-import Term from "./Term";
 import {
   post,
   terms,
 } from "@/app/_data/blog/posts/categories/web-development/posts/web-related-terms";
+import Term from "./Term";
+import Accordion from "./Accordion";
 
-export default function Content() {
+export default function TermsList() {
   const termElements = terms.map((term) => {
     return <Term key={term.id} {...{ term }} />;
   });
 
+  const termsAccordian = terms.map((term) => {
+    return <Accordion key={term.id} {...{ term }} />;
+  });
+
   return (
-    <article className="w-full max-w-[686px] text-neutral-200 dark:text-neutral-500 font-sans text-[19px] font-medium">
-      <ul className="pb-48">{termElements}</ul>
+    <article className="w-full max-w-[686px] pt-12 lg:pt-0 text-neutral-200 dark:text-neutral-500 font-sans text-[19px] font-medium">
+      <ul className="hidden lg:block pb-48">{termElements}</ul>
+      <ul className="lg:hidden pb-48">{termsAccordian}</ul>
 
       <div>
         <p className="text-neutral-300 dark:text-neutral-400 text-[13.25px] font-extrabold uppercase">
