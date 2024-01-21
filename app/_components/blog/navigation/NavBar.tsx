@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import ThemedLogo from "../../shared/navigation/ThemedLogo";
 import NavList from "./NavList";
 import ThemeToggle from "../../shared/navigation/ThemeToggle";
-import HamburgerMenu from "../../shared/navigation/HamburgerMenu";
+import HamburgerMenu from "./HamburgerMenu";
 import MobileNav from "./MobileNav";
 
 export default function NavBar() {
