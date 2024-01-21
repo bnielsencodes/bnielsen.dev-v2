@@ -3,7 +3,7 @@ import {
   terms,
 } from "@/app/_data/blog/posts/categories/web-development/posts/web-related-terms";
 import Term from "./Term";
-import Accordion from "./Accordion";
+import TermAccordion from "./TermAccordion";
 
 export default function TermsList() {
   const termElements = terms.map((term) => {
@@ -11,7 +11,7 @@ export default function TermsList() {
   });
 
   const termsAccordian = terms.map((term) => {
-    return <Accordion key={term.id} {...{ term }} />;
+    return <TermAccordion key={term.id} {...{ term }} />;
   });
 
   return (
