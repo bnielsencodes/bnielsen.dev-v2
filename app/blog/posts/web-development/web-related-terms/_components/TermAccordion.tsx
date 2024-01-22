@@ -2,6 +2,7 @@ import { useState } from "react";
 import Image from "next/image";
 import plusIcon from "@/public/assets/images/plusIcon.svg";
 import minusIcon from "@/public/assets/images/minusIcon.svg";
+import clsx from "clsx";
 
 export default function TermAccordion({
   term,
@@ -23,31 +24,36 @@ export default function TermAccordion({
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <li className="py-5 md:py-7 px-4 md:px-7 mt-4 rounded-lg bg-neutral-200">
-      <div
-        className="flex items-center justify-between gap-2"
-        onClick={() => setIsActive(!isActive)}
-      >
+    <li className="py-5 md:py-7 px-4 md:px-7 mt-4 rounded-lg bg-neutral-200 transition-all duration-1000">
+      <div className="relative" onClick={() => setIsActive(!isActive)}>
         <p className="text-2xl font-bold lg:text-3xl">{term.name}</p>
-        {isActive ? (
-          <Image
-            className="w-6 h-6"
-            src={minusIcon}
-            alt="minus icon"
-            width="100"
-            height="100"
-            sizes="100vw"
-          />
-        ) : (
-          <Image
-            className="w-6 h-6"
-            src={plusIcon}
-            alt="plus icon"
-            width="100"
-            height="100"
-            sizes="100vw"
-          />
-        )}
+
+        <Image
+          className={clsx(
+            "absolute top-[3.5px] right-0 w-6 h-6 opacity-0 opacity-transition",
+            {
+              "opacity-100": isActive,
+            }
+          )}
+          src={minusIcon}
+          alt="minus icon"
+          width="100"
+          height="100"
+          sizes="100vw"
+        />
+        <Image
+          className={clsx(
+            "absolute top-[3.5px] right-0 w-6 h-6 opacity-0 opacity-transition",
+            {
+              "opacity-100": !isActive,
+            }
+          )}
+          src={plusIcon}
+          alt="plus icon"
+          width="100"
+          height="100"
+          sizes="100vw"
+        />
       </div>
       {isActive && (
         <>
