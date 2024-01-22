@@ -22,9 +22,9 @@ const termsWithoutId = [
     target: "ally",
     definition: "A11y stands for accessibility.",
     seeAlso: [
-      { name: "Accessibility,", link: "#accessibility" },
-      { name: "Screen Reader", link: "#screen-reader" },
-      { name: "WCAG", link: "#wcag" },
+      { id: 1, name: "Accessibility,", link: "#accessibility" },
+      { id: 2, name: "Screen Reader,", link: "#screen-reader" },
+      { id: 3, name: "WCAG", link: "#wcag" },
     ],
   },
   {
@@ -32,7 +32,7 @@ const termsWithoutId = [
     target: "abstraction",
     definition:
       "Through the process of abstraction, a programmer hides all but the relevant data about an object in order to reduce complexity and increase efficiency. In the same way that abstraction sometimes works in art, the object that remains is a representation of the original, with unwanted details omitted.",
-    seeAlso: [{ name: "Object", link: "#object" }],
+    seeAlso: [{ id: 1, name: "Object", link: "#object" }],
   },
   {
     name: "Accessibility",
@@ -40,12 +40,12 @@ const termsWithoutId = [
     definition:
       "Web accessibility is the practice of making websites usable for all visitors, including those with disabilities, impairments, and limitations.",
     seeAlso: [
-      { name: "A11y,", link: "#ally" },
-      { name: "ARIA,", link: "#aria" },
-      { name: "ARIA Attributes,", link: "#aria-attributes" },
-      { name: "ARIA Roles,", link: "#aria-roles" },
-      { name: "Screen Reader,", link: "#screen-reader" },
-      { name: "WCAG", link: "#wcag" },
+      { id: 1, name: "A11y,", link: "#ally" },
+      { id: 2, name: "ARIA,", link: "#aria" },
+      { id: 3, name: "ARIA Attributes,", link: "#aria-attributes" },
+      { id: 4, name: "ARIA Roles,", link: "#aria-roles" },
+      { id: 5, name: "Screen Reader,", link: "#screen-reader" },
+      { id: 6, name: "WCAG", link: "#wcag" },
     ],
   },
   {
@@ -59,7 +59,7 @@ const termsWithoutId = [
     target: "agile",
     definition:
       "The Agile methodology is a project management approach that involves breaking the project into phases and emphasizes continuous collaboration and improvement. Teams follow a cycle of planning, executing, and evaluating.",
-    seeAlso: [{ name: "Scrum", link: "#scrum" }],
+    seeAlso: [{ id: 1, name: "Scrum", link: "#scrum" }],
   },
   {
     name: "AJAX (Asynchronous JavaScript and XML)",
@@ -68,18 +68,22 @@ const termsWithoutId = [
       "Ajax enables a web application user to interact with a web page without the interruption of constant web page reloading. Website interaction happens quickly with only portions of the page reloading and refreshing.",
     seeAlso: [
       {
+        id: 1,
         name: "Asynchronous,",
         link: "#asynchronous",
       },
       {
+        id: 2,
         name: "Async/Await,",
         link: "#async-await",
       },
       {
+        id: 3,
         name: "Synchronous,",
         link: "#synchronous",
       },
       {
+        id: 4,
         name: "XML",
         link: "#xml",
       },
@@ -90,7 +94,7 @@ const termsWithoutId = [
     target: "algorithm",
     definition:
       "An algorithm is a single, specific way of performing a complex task efficiently and repeatedly. The algorithm works by performing all of the smaller steps you need to do to perform the complex task. Examples include: sort algorithms, search algorithms, hashing, dynamic programming, and more.",
-    seeAlso: [{ name: "Data Structure", link: "#data-structure" }],
+    seeAlso: [{ id: 1, name: "Data Structure", link: "#data-structure" }],
   },
   {
     name: "Alt Attribute",
@@ -104,9 +108,9 @@ const termsWithoutId = [
     definition:
       "An application programming interface (API) is a way for two or more computer programs to communicate with each other.",
     seeAlso: [
-      { name: "Fetch API,", link: "#fetch-api" },
-      { name: "REST,", link: "#rest" },
-      { name: "REST API", link: "#rest-api" },
+      { id: 1, name: "Fetch API,", link: "#fetch-api" },
+      { id: 2, name: "REST,", link: "#rest" },
+      { id: 3, name: "REST API", link: "#rest-api" },
     ],
   },
   {
@@ -115,10 +119,10 @@ const termsWithoutId = [
     definition:
       "Accessible Rich Internet Applications (ARIA) is a set of roles and attributes that define ways to make web content and web applications (especially those developed with JavaScript) more accessible to people with disabilities.",
     seeAlso: [
-      { name: "A11y,", link: "#ally" },
-      { name: "Accessibility,", link: "#accessibility" },
-      { name: "ARIA Attributes,", link: "#aria-attributes" },
-      { name: "ARIA Roles", link: "#aria-roles" },
+      { id: 1, name: "A11y,", link: "#ally" },
+      { id: 2, name: "Accessibility,", link: "#accessibility" },
+      { id: 3, name: "ARIA Attributes,", link: "#aria-attributes" },
+      { id: 4, name: "ARIA Roles", link: "#aria-roles" },
     ],
   },
   {
@@ -127,10 +131,10 @@ const termsWithoutId = [
     definition:
       "ARIA attributes enable modifying an element's states and properties as defined in the accessibility tree.",
     seeAlso: [
-      { name: "A11y,", link: "#ally" },
-      { name: "Accessibility,", link: "#accessibility" },
-      { name: "ARIA,", link: "#aria" },
-      { name: "ARIA Roles", link: "#aria-roles" },
+      { id: 1, name: "A11y,", link: "#ally" },
+      { id: 2, name: "Accessibility,", link: "#accessibility" },
+      { id: 3, name: "ARIA,", link: "#aria" },
+      { id: 4, name: "ARIA Roles", link: "#aria-roles" },
     ],
   },
   {
@@ -139,10 +143,10 @@ const termsWithoutId = [
     definition:
       "ARIA roles provide semantic meaning to content, allowing screen readers and other tools to present and support interaction with an object in a way that is consistent with user expectations of that type of object. ARIA roles can be used to describe elements that don't natively exist in HTML or exist but don't yet have full browser support.",
     seeAlso: [
-      { name: "A11y,", link: "#ally" },
-      { name: "Accessibility,", link: "#accessibility" },
-      { name: "ARIA,", link: "#aria" },
-      { name: "ARIA Attributes", link: "#aria-attributes" },
+      { id: 1, name: "A11y,", link: "#ally" },
+      { id: 2, name: "Accessibility,", link: "#accessibility" },
+      { id: 3, name: "ARIA,", link: "#aria" },
+      { id: 4, name: "ARIA Attributes", link: "#aria-attributes" },
     ],
   },
   {
@@ -152,40 +156,49 @@ const termsWithoutId = [
       "In JavaScript, arrays are used to store and access multiple values of the same type in a single variable, making it easier to manipulate and manage data.",
     seeAlso: [
       {
+        id: 1,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 2,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 3,
         name: "Falsy,",
         link: "#falsy",
       },
-      { name: "Null,", link: "#null" },
+      { id: 4, name: "Null,", link: "#null" },
       {
+        id: 5,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 6, name: "Object,", link: "#object" },
       {
+        id: 7,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 8,
         name: "String,",
         link: "#string",
       },
       {
+        id: 9,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 10,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 11,
         name: "Undefined",
         link: "#undefined",
       },
@@ -197,8 +210,9 @@ const termsWithoutId = [
     definition:
       "A character encoding standard of 128 7-bit used by computers for converting letters, numbers, punctuation, and control codes into digital form.",
     seeAlso: [
-      { name: "Base 64,", link: "#base64" },
+      { id: 1, name: "Base 64,", link: "#base64" },
       {
+        id: 2,
         name: "Character Encoding",
         link: "#character-encoding",
       },
@@ -210,12 +224,12 @@ const termsWithoutId = [
     definition:
       "In computer programming, the async/await pattern is a syntactic feature of many programming languages that allows an asynchronous, non-blocking function to be structured in a way similar to an ordinary synchronous function. Async makes a function return a Promise, and await makes a function wait for a Promise.",
     seeAlso: [
-      { name: "AJAX,", link: "#ajax" },
-      { name: "Asynchronous,", link: "#asynchronous" },
-      { name: "Function,", link: "#function" },
-      { name: "IIFE,", link: "#iife" },
-      { name: "Promise,", link: "#promise" },
-      { name: "Synchronous", link: "#synchronous" },
+      { id: 1, name: "AJAX,", link: "#ajax" },
+      { id: 2, name: "Asynchronous,", link: "#asynchronous" },
+      { id: 3, name: "Function,", link: "#function" },
+      { id: 4, name: "IIFE,", link: "#iife" },
+      { id: 5, name: "Promise,", link: "#promise" },
+      { id: 6, name: "Synchronous", link: "#synchronous" },
     ],
   },
   {
@@ -224,9 +238,9 @@ const termsWithoutId = [
     definition:
       "The term asynchronous refers to two or more objects or events that do not exist or happen at the same time, that is, they are not synchronous. When multiple related things happen without any being dependent on the completion of previous happenings, they are asynchronous.",
     seeAlso: [
-      { name: "AJAX,", link: "#ajax" },
-      { name: "Async/Await,", link: "#async-await" },
-      { name: "Synchronous", link: "#synchronous" },
+      { id: 1, name: "AJAX,", link: "#ajax" },
+      { id: 2, name: "Async/Await,", link: "#async-await" },
+      { id: 3, name: "Synchronous", link: "#synchronous" },
     ],
   },
   {
@@ -235,10 +249,10 @@ const termsWithoutId = [
     definition:
       "In programming, attributes are properties or characteristics that you can assign to different elements, like variables, objects, or classes. They provide additional information or behavior to these elements, helping you define their specific traits.",
     seeAlso: [
-      { name: "Classes,", link: "#classes" },
-      { name: "Object,", link: "#object" },
-      { name: "Property,", link: "#property" },
-      { name: "Variable", link: "#variable" },
+      { id: 1, name: "Classes,", link: "#classes" },
+      { id: 2, name: "Object,", link: "#object" },
+      { id: 3, name: "Property,", link: "#property" },
+      { id: 4, name: "Variable", link: "#variable" },
     ],
   },
   {
@@ -246,7 +260,7 @@ const termsWithoutId = [
     target: "b2bsaas",
     definition:
       "Encompasses cloud-based software used by businesses for various tasks, such as accounting, office productivity, customer relationship management (CRM), and other work-related activities. Companies often subscribe to B2B SaaS solutions and pay on a recurring basis, usually monthly or yearly.",
-    seeAlso: [{ name: "SaaS", link: "#saas" }],
+    seeAlso: [{ id: 1, name: "SaaS", link: "#saas" }],
   },
   {
     name: "Backend",
@@ -254,8 +268,8 @@ const termsWithoutId = [
     definition:
       "Sometimes it can refer to development related to building code that runs the website, AND to the area that is used to manage data (administrative part of website). The public-facing part of the website is usually referred as frontend, along with code that exists for the purpose of handling requests, rendering (x)html code, etc. So everything public-facing could be called frontend, and everything that is not, that is hidden from public and that runs 'behind the curtain' so to say, can be called backend.",
     seeAlso: [
-      { name: "Frontend,", link: "#frontend" },
-      { name: "Fullstack", link: "#fullstack" },
+      { id: 1, name: "Frontend,", link: "#frontend" },
+      { id: 2, name: "Fullstack", link: "#fullstack" },
     ],
   },
   {
@@ -263,7 +277,7 @@ const termsWithoutId = [
     target: "backlinks",
     definition:
       "Backlinks (aka inbound links, incoming links) are links from a page on one website to another. Search engines like Google use backlinks as votes of confidence in ranking pages.",
-    seeAlso: [{ name: "Frontend", link: "#frontend" }],
+    seeAlso: [{ id: 1, name: "Frontend", link: "#frontend" }],
   },
   {
     name: "Bandwidth",
@@ -276,8 +290,9 @@ const termsWithoutId = [
     definition:
       "In computer programming, Base64 is a group of tetrasexagesimal binary-to-text encoding schemes that represent binary data (more specifically, a sequence of 8-bit bytes) in sequences of 24 bits that can be represented by four 6-bit Base64 digits.",
     seeAlso: [
-      { name: "ASCII,", link: "#ascii" },
+      { id: 1, name: "ASCII,", link: "#ascii" },
       {
+        id: 2,
         name: "Character Encoding",
         link: "#character-encoding",
       },
@@ -289,9 +304,9 @@ const termsWithoutId = [
     definition:
       "Bash is a command-line interface shell program used extensively in Linux and macOS.",
     seeAlso: [
-      { name: "NPM,", link: "#npm" },
-      { name: "Terminal,", link: "#terminal" },
-      { name: "Yarn", link: "#yarn" },
+      { id: 1, name: "NPM,", link: "#npm" },
+      { id: 2, name: "Terminal,", link: "#terminal" },
+      { id: 3, name: "Yarn", link: "#yarn" },
     ],
   },
   {
@@ -299,7 +314,7 @@ const termsWithoutId = [
     target: "bigint",
     definition:
       "The BigInt type is a numeric primitive in JavaScript that can represent integers with arbitrary magnitude. With BigInts, you can safely store and operate on large integers even beyond the safe integer limit (Number.MAX_SAFE_INTEGER) for Numbers.",
-    seeAlso: [{ name: "Number", link: "#number" }],
+    seeAlso: [{ id: 1, name: "Number", link: "#number" }],
   },
   {
     name: "Boolean",
@@ -308,38 +323,47 @@ const termsWithoutId = [
       "A logical data type that can have only the values true or false.",
     seeAlso: [
       {
+        id: 1,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 2,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 3,
         name: "Null,",
         link: "#null",
       },
       {
+        id: 4,
         name: "Number,",
         link: "#number",
       },
       {
+        id: 5,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 6,
         name: "String,",
         link: "#string",
       },
       {
+        id: 7,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 8,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 9,
         name: "Undefined",
         link: "#undefined",
       },
@@ -352,10 +376,12 @@ const termsWithoutId = [
       "Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "Framework",
         link: "#framework",
       },
@@ -368,18 +394,22 @@ const termsWithoutId = [
       "Bounce rate is an internet marketing term used in web traffic analysis. It represents the percentage of visitors who enter the site and then leave ('bounce') rather than continuing to view other pages within the same site. Bounce rate is calculated by counting the number of single page visits and dividing that by the total visits. It is then represented as a percentage of total visits.",
     seeAlso: [
       {
+        id: 1,
         name: "Conversion Rate,",
         link: "#conversion-rate",
       },
       {
+        id: 2,
         name: "CTA,",
         link: "#cta",
       },
       {
+        id: 3,
         name: "CTR,",
         link: "#ctr",
       },
       {
+        id: 4,
         name: "Web Analytics",
         link: "#web-analytics",
       },
@@ -392,10 +422,12 @@ const termsWithoutId = [
       "In CSS, the term 'box model' is used when talking about design and layout. The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.",
     seeAlso: [
       {
+        id: 1,
         name: "Margin,",
         link: "#margin",
       },
       {
+        id: 2,
         name: "Padding",
         link: "#padding",
       },
@@ -414,10 +446,12 @@ const termsWithoutId = [
       "Breakpoints in web design refer to the predetermined screen sizes where the website's content and layout automatically adjust to ensure readability and usability on different devices.",
     seeAlso: [
       {
+        id: 1,
         name: "Media Query,",
         link: "#media-query",
       },
       {
+        id: 2,
         name: "Viewport",
         link: "#viewport",
       },
@@ -430,10 +464,12 @@ const termsWithoutId = [
       "A web browser is an application for accessing websites and the Internet. When a user requests a web page from a particular website, the browser retrieves its files from a web server and then displays the page on the user's screen. Browsers are used on a range of devices, including desktops, laptops, tablets, and smartphones. Examples include: Brave, Google Chrome, Microsoft Edge, Mozilla Firefox, Opera, Safari, and Internet Explorer.",
     seeAlso: [
       {
+        id: 1,
         name: "Plugin,",
         link: "#plugin",
       },
       {
+        id: 2,
         name: "Search Engine",
         link: "#search-engine",
       },
@@ -446,6 +482,7 @@ const termsWithoutId = [
       "A software bug is an error, flaw or fault in the design, development, or operation of computer software that causes it to produce an incorrect or unexpected result, or to behave in unintended ways.",
     seeAlso: [
       {
+        id: 1,
         name: "Debugging",
         link: "#debugging",
       },
@@ -458,14 +495,17 @@ const termsWithoutId = [
       "In computing, a cache (pronounced 'cash') is a hardware or software component that stores data so that future requests for that data can be served faster; the data stored in a cache might be the result of an earlier computation or a copy of data stored elsewhere.",
     seeAlso: [
       {
+        id: 1,
         name: "Cookie,",
         link: "#cookie",
       },
       {
+        id: 2,
         name: "localStorage,",
         link: "#localStorage",
       },
       {
+        id: 3,
         name: "sessionStorage",
         link: "#sessionStorage",
       },
@@ -478,14 +518,17 @@ const termsWithoutId = [
       "Camel case is a way of writing phrases without spaces, where the first letter of each word is capitalized, except for the first letter of the entire compound word, which may be either upper or lower case.",
     seeAlso: [
       {
+        id: 1,
         name: "Kebab Case,",
         link: "#kebab-case",
       },
       {
+        id: 2,
         name: "Pascal Case,",
         link: "#pascal-case",
       },
       {
+        id: 4,
         name: "Snake Case",
         link: "#snake-case",
       },
@@ -498,6 +541,7 @@ const termsWithoutId = [
       "<canvas> is an HTML element which can be used to draw graphics via scripting (usually JavaScript). This can, for instance, be used to draw graphs, combine photos, or create simple animations.",
     seeAlso: [
       {
+        id: 1,
         name: "SVG",
         link: "#svg",
       },
@@ -516,10 +560,12 @@ const termsWithoutId = [
       "A content delivery network, or content distribution network (CDN), is a geographically distributed network of proxy servers and their data centers. The goal is to provide high availability and performance by distributing the service spatially relative to end users. CDNs came into existence in the late 1990s as a means for alleviating the performance bottlenecks of the Internet as the Internet was starting to become a mission-critical medium for people and enterprises. Since then, CDNs have grown to serve a large portion of the Internet content today, including web objects (text, graphics and scripts), downloadable objects (media files, software, documents), applications (e-commerce, portals), live streaming media, on-demand streaming media, and social media sites.",
     seeAlso: [
       {
+        id: 1,
         name: "Proxy Server,",
         link: "#proxy-server",
       },
       {
+        id: 2,
         name: "Server",
         link: "#server",
       },
@@ -532,6 +578,7 @@ const termsWithoutId = [
       "Character encoding is the process of assigning numbers to graphical characters, especially the written characters of human language, allowing them to be stored, transmitted, and transformed using digital computers.",
     seeAlso: [
       {
+        id: 1,
         name: "Base 64",
         link: "#base64",
       },
@@ -544,10 +591,12 @@ const termsWithoutId = [
       "In software engineering, CI/CD or CICD is the combined practices of continuous integration (CI) and continuous delivery (CD) or, less often, continuous deployment. They are sometimes referred to collectively as continuous development or continuous software development.",
     seeAlso: [
       {
+        id: 1,
         name: "Continuous Delivery,",
         link: "#continuous-delivery",
       },
       {
+        id: 2,
         name: "Continuous Integration",
         link: "#continuous-integration",
       },
@@ -560,14 +609,17 @@ const termsWithoutId = [
       "The CSS class selector matches elements based on the contents of their class attribute.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "ID Selector,",
         link: "#id-selector",
       },
       {
+        id: 3,
         name: "Selector",
         link: "#selector",
       },
@@ -579,10 +631,12 @@ const termsWithoutId = [
     definition: "JavaScript Classes are templates for JavaScript Objects.",
     seeAlso: [
       {
+        id: 1,
         name: "Constructor,",
         link: "#constructor",
       },
       {
+        id: 2,
         name: "Object",
         link: "#object",
       },
@@ -595,14 +649,17 @@ const termsWithoutId = [
       "A client is a computer or a program that, as part of its operation, relies on sending a request to another program or a computer hardware or software that accesses a service made available by a server (which may or may not be located on another computer). For example, web browsers are clients that connect to web servers and retrieve web pages for display. Email clients retrieve email from mail servers. Online chat uses a variety of clients, which vary on the chat protocol being used. Multiplayer video games or online video games may run as a client on each computer. The term 'client' may also be applied to computers or devices that run the client software or users that use the client software.",
     seeAlso: [
       {
+        id: 1,
         name: "Client Components,",
         link: "#client-components",
       },
       {
+        id: 2,
         name: "Client-Side Rendering,",
         link: "#client-side-rendering",
       },
       {
+        id: 3,
         name: "Server",
         link: "#server",
       },
@@ -615,14 +672,17 @@ const termsWithoutId = [
       "Client Components allows you to write interactive UI that can be rendered on the client at request time. In Next.js, client rendering is opt-in, meaning you have to explicitly decide what components React should render on the client.",
     seeAlso: [
       {
+        id: 1,
         name: "Client,",
         link: "#client",
       },
       {
+        id: 2,
         name: "Client-Side Rendering,",
         link: "#client-side-rendering",
       },
       {
+        id: 3,
         name: "React Server Components",
         link: "#server-components",
       },
@@ -635,18 +695,22 @@ const termsWithoutId = [
       "In Client-Side Rendering (CSR) with React, the browser downloads a minimal HTML page and the JavaScript needed for the page. The JavaScript is then used to update the DOM and render the page. When the application is first loaded, the user may notice a slight delay before they can see the full page, this is because the page isn't fully rendered until all the JavaScript is downloaded, parsed, and executed. After the page has been loaded for the first time, navigating to other pages on the same website is typically faster, as only necessary data needs to be fetched, and JavaScript can re-render parts of the page without requiring a full page refresh.",
     seeAlso: [
       {
+        id: 1,
         name: "Client,",
         link: "#client",
       },
       {
+        id: 2,
         name: "Client Components,",
         link: "#client-components",
       },
       {
+        id: 3,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 4,
         name: "React",
         link: "#react",
       },
@@ -665,6 +729,7 @@ const termsWithoutId = [
       "Code splitting is the practice of splitting the code a web application depends on — including its own code and any third-party dependencies — into separate bundles that can be loaded independently of each other. This allows an application to load only the code it actually needs at a given point in time, and load other bundles on demand. This approach is used to improve application performance, especially on initial load. Code splitting is a feature supported by bundlers like Webpack and Browserify which can create multiple bundles that can be dynamically loaded at runtime.",
     seeAlso: [
       {
+        id: 1,
         name: "Webpack",
         link: "#webpack",
       },
@@ -683,10 +748,12 @@ const termsWithoutId = [
       "The constructor method is a special method of a class for creating and initializing an object instance of that class. A constructor enables you to provide any custom initialization that must be done before any other methods can be called on an instantiated object.",
     seeAlso: [
       {
+        id: 1,
         name: "Classes,",
         link: "#classes-javascript",
       },
       {
+        id: 2,
         name: "Object",
         link: "#object",
       },
@@ -699,10 +766,12 @@ const termsWithoutId = [
       "Continuous delivery is a strategy in software development where code changes to an application are released automatically into the production environment.",
     seeAlso: [
       {
+        id: 1,
         name: "CI/CD,",
         link: "#cicd",
       },
       {
+        id: 2,
         name: "Continuous Integration",
         link: "#continuous-integration",
       },
@@ -715,10 +784,12 @@ const termsWithoutId = [
       "In software engineering, continuous integration is the practice of merging all developers' working copies to a shared mainline several times a day. Nowadays it is typically implemented in such a way that it triggers an automated build with testing.",
     seeAlso: [
       {
+        id: 1,
         name: "CI/CD,",
         link: "#cicd",
       },
       {
+        id: 2,
         name: "Continuous Delivery",
         link: "#continuous-delivery",
       },
@@ -731,10 +802,12 @@ const termsWithoutId = [
       "In computer science, control flow is the order in which individual statements, instructions or function calls of an imperative program are executed or evaluated. The emphasis on explicit control flow distinguishes an imperative programming language from a declarative programming language.",
     seeAlso: [
       {
+        id: 1,
         name: "Declarative Programming,",
         link: "#declarative-programming",
       },
       {
+        id: 2,
         name: "Imperative Programming",
         link: "#imperative-programming",
       },
@@ -747,18 +820,22 @@ const termsWithoutId = [
       "Conversion rate is the percentage of people who take an action that achieves your company's acquisition goals out of the total amount of traffic or interactions.",
     seeAlso: [
       {
+        id: 1,
         name: "Bounce Rate,",
         link: "#bounce-rate",
       },
       {
+        id: 2,
         name: "CTA,",
         link: "#cta",
       },
       {
+        id: 3,
         name: "CTR,",
         link: "#ctr",
       },
       {
+        id: 4,
         name: "Web Analytics",
         link: "#web-analytics",
       },
@@ -771,18 +848,22 @@ const termsWithoutId = [
       "HTTP cookies (also called web cookies, Internet cookies, browser cookies, or simply cookies) are small blocks of data created by a web server while a user is browsing a website and placed on the user's computer or other device by the user's web browser. Cookies serve useful and sometimes essential functions on the web. They enable web servers to store stateful information (such as items added in the shopping cart in an online store) on the user's device or to track the user's browsing activity (including clicking particular buttons, logging in, or recording which pages were visited in the past). They can also be used to save information that the user previously entered into form fields, such as names, addresses, passwords, and payment card numbers for subsequent use.",
     seeAlso: [
       {
+        id: 1,
         name: "Cache,",
         link: "#cache",
       },
       {
+        id: 2,
         name: "HTTP,",
         link: "#http",
       },
       {
+        id: 3,
         name: "localStorage,",
         link: "#localStorage",
       },
       {
+        id: 4,
         name: "sessionStorage",
         link: "#sessionStorage",
       },
@@ -795,6 +876,7 @@ const termsWithoutId = [
       "Cross-origin resource sharing is a mechanism that allows restricted resources on a web page to be accessed from another domain outside the domain from which the first resource was served. A web page may freely embed cross-origin images, stylesheets, scripts, iframes, and videos.",
     seeAlso: [
       {
+        id: 1,
         name: "Domain",
         link: "#domain",
       },
@@ -807,14 +889,17 @@ const termsWithoutId = [
       "A Web crawler, sometimes called a spider or spiderbot and often shortened to crawler, is an Internet bot that systematically browses the World Wide Web and that is typically operated by search engines for the purpose of Web indexing.",
     seeAlso: [
       {
+        id: 1,
         name: "Robots.txt,",
         link: "#robots",
       },
       {
+        id: 2,
         name: "SEO,",
         link: "#seo",
       },
       {
+        id: 3,
         name: "Sitemap",
         link: "#sitemap",
       },
@@ -827,14 +912,17 @@ const termsWithoutId = [
       "Cross-site scripting is a type of security vulnerability that can be found in some web applications. XSS attacks enable attackers to inject client-side scripts into web pages viewed by other users. A cross-site scripting vulnerability may be used by attackers to bypass access controls such as the same-origin policy.",
     seeAlso: [
       {
+        id: 1,
         name: "DDoS,",
         link: "#ddos",
       },
       {
+        id: 2,
         name: "DoS,",
         link: "#dos",
       },
       {
+        id: 3,
         name: "SQL Injection",
         link: "#sql-injection",
       },
@@ -847,38 +935,47 @@ const termsWithoutId = [
       "Cascading Style Sheets is a style sheet language used for specifying the presentation and styling of a document written in a markup language such as HTML or XML. CSS is a cornerstone technology of the World Wide Web, alongside HTML and JavaScript.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS Flexbox,",
         link: "#object",
       },
       {
+        id: 2,
         name: "CSS Grid,",
         link: "#object",
       },
       {
+        id: 3,
         name: "CSS Modules,",
         link: "#preprocessor",
       },
       {
+        id: 4,
         name: "CSS Preprocessor,",
         link: "#preprocessor",
       },
       {
+        id: 5,
         name: "CSS Variables,",
         link: "#object",
       },
       {
+        id: 6,
         name: "CSS-in-JS,",
         link: "#object",
       },
       {
+        id: 7,
         name: "HTML,",
         link: "#html",
       },
       {
+        id: 8,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 9,
         name: "XML",
         link: "#xml",
       },
@@ -891,10 +988,12 @@ const termsWithoutId = [
       "Flexbox is a one-dimensional layout method for arranging items in rows or columns. Items flex (expand) to fill additional space or shrink to fit into smaller spaces.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "CSS Grid",
         link: "#object",
       },
@@ -907,10 +1006,12 @@ const termsWithoutId = [
       "CSS grid layout is a two-dimensional layout system for the web. It lets you organize content into rows and columns and offers many features to simplify the creation of complex layouts.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "CSS Flexbox",
         link: "#flexbox",
       },
@@ -923,6 +1024,7 @@ const termsWithoutId = [
       "A CSS Module is a CSS file where all class names and animation names are scoped locally by default.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS",
         link: "#css",
       },
@@ -935,10 +1037,12 @@ const termsWithoutId = [
       "A CSS preprocessor is a program that lets you generate CSS from the preprocessor's own unique syntax. There are many CSS preprocessors to choose from, however most CSS preprocessors will add some features that don't exist in pure CSS, such as mixin, nesting selector, inheritance selector, and so on.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "SASS",
         link: "#sass",
       },
@@ -951,10 +1055,12 @@ const termsWithoutId = [
       "Custom properties (sometimes referred to as CSS variables or cascading variables) are entities defined by CSS authors that represent specific values to be reused throughout a document.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "Variable",
         link: "#variable",
       },
@@ -967,10 +1073,12 @@ const termsWithoutId = [
       "As the name suggests, CSS-in-JS allows programmers to style their components by writing CSS directly in their JavaScript or TypeScript code. CSS-in-JS is based on the idea of parsing all style definitions from JavaScript into vanilla CSS and then injecting the styles into the DOM using style blocks.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "React",
         link: "#react",
       },
@@ -983,22 +1091,27 @@ const termsWithoutId = [
       "A call to action is a button (or simply a text link) that tells site users to do something—explore the site further, fill out a contact form, browse a portfolio etc. CTAs are important for two reasons: first, they can be used to drive people into a page where they become a conversion—whether that means contacting you, buying something, requesting an estimate, or something else. Second, CTAs help increase your click-through rate, which is the number of pages an average visitor views when they visit your site. Website visitors should be exploring your site, clicking around and viewing many pages, not just visiting a home page or contact page and then leaving. This is important to your SEO because a high click through rate makes your site look reputable to search engines.",
     seeAlso: [
       {
+        id: 1,
         name: "Bounce Rate,",
         link: "#bounce-rate",
       },
       {
+        id: 2,
         name: "Conversion Rate,",
         link: "#conversion-rate",
       },
       {
+        id: 3,
         name: "CTR,",
         link: "#ctr",
       },
       {
+        id: 4,
         name: "Landing Page,",
         link: "#landing-page",
       },
       {
+        id: 5,
         name: "Web Analytics",
         link: "#web-analytics",
       },
@@ -1011,18 +1124,22 @@ const termsWithoutId = [
       "Click-through rate is the ratio of clicks on a specific link to the number of times a page, email, or advertisement is shown. It is commonly used to measure the success of an online advertising campaign for a particular website, as well as the effectiveness of email campaigns.",
     seeAlso: [
       {
+        id: 1,
         name: "Bounce Rate,",
         link: "#bounce-rate",
       },
       {
+        id: 2,
         name: "Conversion Rate,",
         link: "#conversion-rate",
       },
       {
+        id: 3,
         name: "CTA,",
         link: "#cta",
       },
       {
+        id: 4,
         name: "Web Analytics",
         link: "#web-analytics",
       },
@@ -1035,6 +1152,7 @@ const termsWithoutId = [
       "A data structure is a specialized format for organizing, processing, retrieving and storing data. There are several basic and advanced types of data structures, all designed to arrange data to suit a specific purpose. Data structures make it easy for users to access and work with the data they need in appropriate ways.",
     seeAlso: [
       {
+        id: 1,
         name: "Algorithm",
         link: "#algorithm",
       },
@@ -1047,26 +1165,32 @@ const termsWithoutId = [
       "A structured set of data held in a computer, especially one that is accessible in various ways. Database types include: hierarchical databases, relational databases, non-relational databases, and object-oriented databases.",
     seeAlso: [
       {
+        id: 1,
         name: "MongoDB,",
         link: "#mongo",
       },
       {
+        id: 2,
         name: "MySQL,",
         link: "#mySql",
       },
       {
+        id: 3,
         name: "Non-Relational Database,",
         link: "#non-relational-database",
       },
       {
+        id: 4,
         name: "NoSQL Database,",
         link: "#noSql-database",
       },
       {
+        id: 5,
         name: "Relational Database,",
         link: "#relational-database",
       },
       {
+        id: 6,
         name: "SQL",
         link: "#sql",
       },
@@ -1079,10 +1203,12 @@ const termsWithoutId = [
       "In computer programming and software development, debugging is the process of finding and resolving bugs within computer programs, software, or systems.",
     seeAlso: [
       {
+        id: 1,
         name: "Bug,",
         link: "#bug",
       },
       {
+        id: 2,
         name: "Developer Tools",
         link: "#developer-tools",
       },
@@ -1095,10 +1221,12 @@ const termsWithoutId = [
       "Declarative programming is a method to abstract away the control flow for logic required for software to perform an action, and instead involves stating what the task or desired outcome is. Declarative programming is a high-level programming concept, which is the opposite of imperative programming.",
     seeAlso: [
       {
+        id: 1,
         name: "Control Flow,",
         link: "#control-flow",
       },
       {
+        id: 2,
         name: "Imperative Programming",
         link: "#imperative-programming",
       },
@@ -1117,6 +1245,7 @@ const termsWithoutId = [
       "Programs that allow a developer to create, test and debug software. Every modern web browser includes a powerful suite of developer tools. These tools do a range of things, from inspecting currently-loaded HTML, CSS and JavaScript to showing which assets the page has requested and how long they took to load.",
     seeAlso: [
       {
+        id: 1,
         name: "Debugging",
         link: "#debugging",
       },
@@ -1135,14 +1264,17 @@ const termsWithoutId = [
       "A DDoS is an attack in which many compromised systems are made to attack a single target, in order to swamp server resources and block legitimate users.",
     seeAlso: [
       {
+        id: 1,
         name: "Cross-Site Scripting,",
         link: "#xss",
       },
       {
+        id: 2,
         name: "DoS,",
         link: "#dos",
       },
       {
+        id: 3,
         name: "SQL Injection",
         link: "#sql-injection",
       },
@@ -1155,22 +1287,27 @@ const termsWithoutId = [
       "The Domain Name System (DNS) is the phonebook of the Internet. Humans access information online through domain names, like nytimes.com or espn.com. Web browsers interact through Internet Protocol (IP) addresses. DNS translates domain names to IP addresses so browsers can load internet resources.",
     seeAlso: [
       {
+        id: 1,
         name: "Domain,",
         link: "#domain",
       },
       {
+        id: 2,
         name: "Domain Name,",
         link: "#domain-name",
       },
       {
+        id: 3,
         name: "ICANN,",
         link: "#icann",
       },
       {
+        id: 4,
         name: "IP Address,",
         link: "#ip-address",
       },
       {
+        id: 5,
         name: "Registrar",
         link: "#registrar",
       },
@@ -1183,6 +1320,7 @@ const termsWithoutId = [
       "The HTML document type declaration, also known as DOCTYPE , is the first line of code required in every HTML or XHTML document. The DOCTYPE declaration is an instruction to the web browser about what version of HTML the page is written in. This ensures that the web page is parsed the same way by different web browsers.",
     seeAlso: [
       {
+        id: 1,
         name: "HTML",
         link: "#html",
       },
@@ -1201,6 +1339,7 @@ const termsWithoutId = [
       "An application programming interface (API) for HTML and XML documents. It defines the logical structure of documents and the way a document is accessed and manipulated. HTML is used to structure the web pages and Javascript is used to add behavior to our web pages. When an HTML file is loaded into the browser, the javascript can not understand the HTML document directly. So it interprets and interacts with the Document Object Model (DOM), which is created by the browser based on the HTML document. DOM is basically the representation of the same HTML document but in a tree-like structure composed of objects.",
     seeAlso: [
       {
+        id: 1,
         name: "Virtual DOM",
         link: "#virtual-dom",
       },
@@ -1213,18 +1352,22 @@ const termsWithoutId = [
       "A domain name is a website's address on the Internet. Domain names are used in URLs to identify which server a specific webpage belongs to.",
     seeAlso: [
       {
+        id: 1,
         name: "DNS,",
         link: "#dns",
       },
       {
+        id: 2,
         name: "Domain Name,",
         link: "#domain-name",
       },
       {
+        id: 3,
         name: "IP Address,",
         link: "#ip-address",
       },
       {
+        id: 4,
         name: "Registrar",
         link: "#registrar",
       },
@@ -1237,18 +1380,22 @@ const termsWithoutId = [
       "A domain name is a string of text that maps to an alphanumeric IP address, used to access a website from client software. In plain English, a domain name is the text that a user types into a browser window to reach a particular website. For instance, the domain name for Google is 'google.com'.",
     seeAlso: [
       {
+        id: 1,
         name: "DNS,",
         link: "#dns",
       },
       {
+        id: 2,
         name: "Domain,",
         link: "#domain",
       },
       {
+        id: 3,
         name: "IP Address,",
         link: "#ip-address",
       },
       {
+        id: 4,
         name: "Registrar",
         link: "#registrar",
       },
@@ -1261,14 +1408,17 @@ const termsWithoutId = [
       "A DoS attack is a type of cyber attack in which a malicious actor aims to render a computer or other device unavailable to its intended users by interrupting the device's normal functioning. ",
     seeAlso: [
       {
+        id: 1,
         name: "Cross-Site Scripting,",
         link: "#xss",
       },
       {
+        id: 2,
         name: "DDoS,",
         link: "#ddos",
       },
       {
+        id: 3,
         name: "SQL Injection",
         link: "#sql-injection",
       },
@@ -1281,14 +1431,17 @@ const termsWithoutId = [
       "Dynamically-typed languages are those (like JavaScript) where the interpreter assigns variables a type at runtime based on the variable's value at the time.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 2,
         name: "Type Inference,",
         link: "#type-inference",
       },
       {
+        id: 3,
         name: "TypeScript",
         link: "#typescript",
       },
@@ -1313,6 +1466,7 @@ const termsWithoutId = [
       "An element is a part of a webpage. In XML and HTML, an element may contain a data item or a chunk of text or an image, or perhaps nothing. A typical element includes an opening tag with some attributes, enclosed text content, and a closing tag. Elements and tags are not the same things.",
     seeAlso: [
       {
+        id: 1,
         name: "Tag",
         link: "#tag",
       },
@@ -1325,14 +1479,17 @@ const termsWithoutId = [
       "An em in CSS is a scalable unit of measurement that defines the size of an element relative to its parent's font size. Unlike absolute units such as pixels (px) or points (pt), an em dynamically adapts its size based on the context.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "Pixel,",
         link: "#pixel",
       },
       {
+        id: 3,
         name: "Rem",
         link: "#rem",
       },
@@ -1345,14 +1502,17 @@ const termsWithoutId = [
       "Encapsulation is the packing of data and functions into one component (for example, a class) and then controlling access to that component to make a 'blackbox' out of the object.",
     seeAlso: [
       {
+        id: 1,
         name: "Classes,",
         link: "#classes-javascript",
       },
       {
+        id: 2,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 3,
         name: "Object",
         link: "#object",
       },
@@ -1377,10 +1537,12 @@ const termsWithoutId = [
       "An event is something that happens in the browser, such as a user clicking a button, a page finishing loading, or an element being updated.",
     seeAlso: [
       {
+        id: 1,
         name: "Event Handler,",
         link: "#event-handler",
       },
       {
+        id: 2,
         name: "Event Listener",
         link: "#event-listener",
       },
@@ -1393,14 +1555,17 @@ const termsWithoutId = [
       "Event handlers are simply functions that are called in response to a specific event. These handlers give life to our web pages, making them interactive and responsive to user actions.",
     seeAlso: [
       {
+        id: 1,
         name: "Event,",
         link: "#event",
       },
       {
+        id: 2,
         name: "Event Listener,",
         link: "#event-listener",
       },
       {
+        id: 3,
         name: "Function",
         link: "#function",
       },
@@ -1413,14 +1578,17 @@ const termsWithoutId = [
       "JavaScript's event listener function allows you to create custom responses to events like mouse clicks, keyboard clicks, and window resizing. The programming paradigm of waiting and responding to real-time events is called event handling.",
     seeAlso: [
       {
+        id: 1,
         name: "Event,",
         link: "#event",
       },
       {
+        id: 2,
         name: "Event Handler,",
         link: "#event-handler",
       },
       {
+        id: 3,
         name: "Function",
         link: "#function",
       },
@@ -1433,43 +1601,53 @@ const termsWithoutId = [
       "A falsy (sometimes written falsey) value is a value that is considered false when encountered in a boolean context. JavaScript uses type conversion to coerce any value to a boolean in contexts that require it, such as conditionals and loops.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Null,",
         link: "#null",
       },
       {
+        id: 5,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 6, name: "Object,", link: "#object" },
       {
+        id: 7,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 8,
         name: "String,",
         link: "#string",
       },
       {
+        id: 9,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 10,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 11,
         name: "Undefined",
         link: "#undefined",
       },
@@ -1488,14 +1666,17 @@ const termsWithoutId = [
       "The Fetch API provides an interface for fetching resources (including across the network). It is a more powerful and flexible replacement for XMLHttpRequest.",
     seeAlso: [
       {
+        id: 1,
         name: "API,",
         link: "#api",
       },
       {
+        id: 2,
         name: "REST,",
         link: "#rest",
       },
       {
+        id: 3,
         name: "REST API",
         link: "#rest-api",
       },
@@ -1508,6 +1689,7 @@ const termsWithoutId = [
       "Figma is a browser-based, collaborative user interface design tool that lets users work together to create vibrant and interactive prototypes.",
     seeAlso: [
       {
+        id: 1,
         name: "Prototype",
         link: "#prototype",
       },
@@ -1520,6 +1702,7 @@ const termsWithoutId = [
       "A WAF or web application firewall helps protect web applications by filtering and monitoring HTTP traffic between a web application and the Internet.",
     seeAlso: [
       {
+        id: 1,
         name: "HTTP",
         link: "#http",
       },
@@ -1532,14 +1715,17 @@ const termsWithoutId = [
       "Your website's First Contentful Paint is when the browser renders the first DOM element on your page. This includes images, canvas elements (non-white), or text. In plain English, FCP is when the user can see some part of your page change.",
     seeAlso: [
       {
+        id: 1,
         name: "DOM,",
         link: "#dom",
       },
       {
+        id: 2,
         name: "Largest Contentful Paint,",
         link: "#lcp",
       },
       {
+        id: 3,
         name: "Page Load Time",
         link: "#page-load-time",
       },
@@ -1552,6 +1738,7 @@ const termsWithoutId = [
       "Above the fold content is the part of a web page shown before scrolling. Any content you'd need to scroll down to see, would be considered 'below the fold'. The 'fold' is where the browser window ends, but the content continues underneath.",
     seeAlso: [
       {
+        id: 1,
         name: "Browser",
         link: "#browser",
       },
@@ -1564,10 +1751,12 @@ const termsWithoutId = [
       "The <footer> element is the section of content at the very bottom of a web page. A footer typically contains information about the author of the section, copyright data or links to related documents.",
     seeAlso: [
       {
+        id: 1,
         name: "Header,",
         link: "#classes-javascript",
       },
       {
+        id: 2,
         name: "Navigation",
         link: "#navigation",
       },
@@ -1580,18 +1769,22 @@ const termsWithoutId = [
       "A web development framework is a set of resources and tools for software developers to build and manage web applications, web services and websites, as well as to develop application programming interfaces (APIs). Web development frameworks are also referred to as web application frameworks or simply web frameworks.",
     seeAlso: [
       {
+        id: 1,
         name: "Bootstrap,",
         link: "#bootstrap",
       },
       {
+        id: 2,
         name: "Gatsby,",
         link: "#gatsby",
       },
       {
+        id: 3,
         name: "Next.js",
         link: "#nextjs",
       },
       {
+        id: 4,
         name: "Vue.js",
         link: "#vue",
       },
@@ -1604,10 +1797,12 @@ const termsWithoutId = [
       "A front-end developer builds the frontend portion of websites and web applications—the part users see and interact with.",
     seeAlso: [
       {
+        id: 1,
         name: "Backend,",
         link: "#backend",
       },
       {
+        id: 2,
         name: "Fullstack",
         link: "#fullstack",
       },
@@ -1626,10 +1821,12 @@ const termsWithoutId = [
       "Full stack development is the process of designing, creating, testing, and deploying a complete web application from start to finish. It involves working with various technologies and tools, including front-end web development, back-end web development, and database development.",
     seeAlso: [
       {
+        id: 1,
         name: "Backend,",
         link: "#backend",
       },
       {
+        id: 2,
         name: "Frontend",
         link: "#frontend",
       },
@@ -1642,14 +1839,17 @@ const termsWithoutId = [
       "Allows you to store a piece of code that does a single task inside a defined block, and then call that code whenever you need it using a single short command — rather than having to type out the same code multiple times.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 2,
         name: "Method,",
         link: "#method",
       },
       {
+        id: 3,
         name: "Parameter",
         link: "#parameter",
       },
@@ -1662,10 +1862,12 @@ const termsWithoutId = [
       "A free, open-source, React-based framework designed to help developers build performant websites and apps.",
     seeAlso: [
       {
+        id: 1,
         name: "Framework,",
         link: "#classes-javascript",
       },
       {
+        id: 2,
         name: "React",
         link: "#react",
       },
@@ -1678,18 +1880,22 @@ const termsWithoutId = [
       "An image format that uses lossless compression and can be used for animations.",
     seeAlso: [
       {
+        id: 1,
         name: "Alt Attribute,",
         link: "#alt",
       },
       {
+        id: 2,
         name: "JPEG,",
         link: "#jpeg",
       },
       {
+        id: 3,
         name: "PDF,",
         link: "#pdf",
       },
       {
+        id: 4,
         name: "PNG",
         link: "#png",
       },
@@ -1702,14 +1908,17 @@ const termsWithoutId = [
       "A free and open source distributed version control system designed to handle everything from small to very large projects with speed and efficiency.",
     seeAlso: [
       {
+        id: 1,
         name: "GitHub,",
         link: "#github",
       },
       {
+        id: 2,
         name: "GitHub Desktop,",
         link: "#github-desktop",
       },
       {
+        id: 3,
         name: "Version Control",
         link: "#version-control",
       },
@@ -1722,14 +1931,17 @@ const termsWithoutId = [
       "A code hosting platform for version control and collaboration. It lets you and others work together on projects from anywhere.",
     seeAlso: [
       {
+        id: 1,
         name: "Git,",
         link: "#git",
       },
       {
+        id: 2,
         name: "GitHub Desktop,",
         link: "#github-desktop",
       },
       {
+        id: 3,
         name: "Version Control",
         link: "#version-control",
       },
@@ -1742,14 +1954,17 @@ const termsWithoutId = [
       "A free, open source application that helps you to work with files hosted on GitHub or other Git hosting services.",
     seeAlso: [
       {
+        id: 1,
         name: "Git,",
         link: "#git",
       },
       {
+        id: 2,
         name: "GitHub,",
         link: "#github",
       },
       {
+        id: 3,
         name: "Version Control",
         link: "#version-control",
       },
@@ -1762,10 +1977,12 @@ const termsWithoutId = [
       "The Javascript global scope is the default context for everything in a Javascript program, and programmers routinely create customized scopes for variables and other Javascript statements. ",
     seeAlso: [
       {
+        id: 1,
         name: "Local Scope,",
         link: "#local-scope",
       },
       {
+        id: 2,
         name: "Scope",
         link: "#scope",
       },
@@ -1778,6 +1995,7 @@ const termsWithoutId = [
       "A digital interface in which a user interacts with graphical components such as icons, buttons, and menus. In a GUI, the visuals displayed in the user interface convey information relevant to the user, as well as actions that they can take.",
     seeAlso: [
       {
+        id: 1,
         name: "UI",
         link: "#ui",
       },
@@ -1790,14 +2008,17 @@ const termsWithoutId = [
       "Gutters refer to the whitespace between content columns on a webpage. They provide visual separation on a website, improving its organization, appearance, and readability. By offering additional breathing room between different elements, gutters increase accessibility and make content easier to digest.",
     seeAlso: [
       {
+        id: 1,
         name: "Accessibility,",
         link: "#accessibility",
       },
       {
+        id: 2,
         name: "UI,",
         link: "#ui",
       },
       {
+        id: 3,
         name: "Whitespace",
         link: "#whitespace",
       },
@@ -1810,10 +2031,12 @@ const termsWithoutId = [
       "In the web page layout, the header is the upper (top) part of the webpage. The <header> HTML element represents introductory content, typically a group of introductory or navigational aids.",
     seeAlso: [
       {
+        id: 1,
         name: "Footer,",
         link: "#footer",
       },
       {
+        id: 2,
         name: "Navigation",
         link: "#navigation",
       },
@@ -1826,14 +2049,17 @@ const termsWithoutId = [
       "The <hex-color> CSS data type is a notation for describing the hexadecimal color syntax of an sRGB color using its primary color components (red, green, blue) written as hexadecimal numbers, as well as its transparency. A <hex-color> value can be used everywhere where a <color> can be used.",
     seeAlso: [
       {
+        id: 1,
         name: "HSL,",
         link: "#hsl",
       },
       {
+        id: 2,
         name: "RGB,",
         link: "#rgb",
       },
       {
+        id: 3,
         name: "RGBa",
         link: "#rgba",
       },
@@ -1846,14 +2072,17 @@ const termsWithoutId = [
       "In JavaScript, hoisting is the default behavior of moving all the declarations at the top of the scope before code execution. Basically, it gives us an advantage that no matter where functions and variables are declared, they are moved to the top of their scope regardless of whether their scope is global or local.",
     seeAlso: [
       {
+        id: 1,
         name: "Global Scope,",
         link: "#global-scope",
       },
       {
+        id: 2,
         name: "Local Scope,",
         link: "#local-scope",
       },
       {
+        id: 3,
         name: "Scope",
         link: "#scope",
       },
@@ -1872,14 +2101,17 @@ const termsWithoutId = [
       "The hsl() functional notation expresses an sRGB color according to its hue, saturation, and lightness components. An optional alpha component represents the color's transparency.",
     seeAlso: [
       {
+        id: 1,
         name: "Hex Color,",
         link: "#hex-color",
       },
       {
+        id: 2,
         name: "RGB,",
         link: "#rgb",
       },
       {
+        id: 3,
         name: "RGBa",
         link: "#rgba",
       },
@@ -1892,10 +2124,12 @@ const termsWithoutId = [
       "A text-based approach to describing how content contained within an HTML file is structured. This markup tells a web browser how to display text, images and other forms of multimedia on a webpage.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "JavaScript",
         link: "#javascript",
       },
@@ -1908,6 +2142,7 @@ const termsWithoutId = [
       "An entity is a representation of a special character that causes syntax conflicts in HTML (Hypertext Markup Language). An HTML entity is a piece of text ('string') that begins with an ampersand ( & ) and ends with a semicolon ( ; ).",
     seeAlso: [
       {
+        id: 1,
         name: "HTML",
         link: "#html",
       },
@@ -2052,14 +2287,17 @@ const termsWithoutId = [
       "In web development, hydration or rehydration is a technique in which client-side JavaScript converts a static HTML web page, delivered either through static hosting or server-side rendering, into a dynamic web page by attaching event handlers to the HTML elements.",
     seeAlso: [
       {
+        id: 1,
         name: "Client-Side Rendering,",
         link: "#client-side-rendering",
       },
       {
+        id: 2,
         name: "Event Handler,",
         link: "#event-handler",
       },
       {
+        id: 3,
         name: "Server-Side",
         link: "#scope",
       },
@@ -2078,10 +2316,12 @@ const termsWithoutId = [
       "ICANN (Internet Corporation for Assigned Names and Numbers) is the private, non-government, nonprofit corporation with responsibility for Internet Protocol (IP) address space allocation, protocol parameter assignment, domain name system (DNS) management and root server system management functions.",
     seeAlso: [
       {
+        id: 1,
         name: "DNS,",
         link: "#dns",
       },
       {
+        id: 2,
         name: "IP Address",
         link: "#ip-address",
       },
@@ -2094,18 +2334,22 @@ const termsWithoutId = [
       "The HTML id attribute is used to specify a unique id for an HTML element. You cannot have more than one element with the same id in an HTML document.",
     seeAlso: [
       {
+        id: 1,
         name: "Class Selector,",
         link: "#class-selector",
       },
       {
+        id: 2,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 3,
         name: "HTML,",
         link: "#html",
       },
       {
+        id: 4,
         name: "Selector",
         link: "#selector",
       },
@@ -2124,18 +2368,22 @@ const termsWithoutId = [
       "An immediately invoked function expression, or IIFE (pronounced iffy), is a function that is called immediately after it is defined. IIFE is used to create private and public variables and methods. It is used to execute the async and await function.",
     seeAlso: [
       {
+        id: 1,
         name: "Async/Await,",
         link: "#async-await",
       },
       {
+        id: 2,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 3,
         name: "Method,",
         link: "#method",
       },
       {
+        id: 4,
         name: "Variable",
         link: "#variable",
       },
@@ -2154,14 +2402,17 @@ const termsWithoutId = [
       "An immutable value is one whose content cannot be changed without creating an entirely new value. In JavaScript, primitive values are immutable — once a primitive value is created, it cannot be changed, although the variable that holds it may be reassigned another value. By contrast, objects and arrays are mutable by default — their properties and elements can be changed without reassigning a new value.",
     seeAlso: [
       {
+        id: 1,
         name: "Mutable,",
         link: "#mutable",
       },
       {
+        id: 2,
         name: "Primitive Data Types,",
         link: "#primitive-data-types",
       },
       {
+        id: 3,
         name: "Variable",
         link: "#variable",
       },
@@ -2174,14 +2425,17 @@ const termsWithoutId = [
       "Imperative programming is a software development paradigm where functions are implicitly coded in every step required to solve a problem.",
     seeAlso: [
       {
+        id: 1,
         name: "Control Flow,",
         link: "#control-flow",
       },
       {
+        id: 2,
         name: "Declarative Programming,",
         link: "#declarative-programming",
       },
       {
+        id: 3,
         name: "Function",
         link: "#function",
       },
@@ -2194,14 +2448,17 @@ const termsWithoutId = [
       "Interpolation is a process of calculating values based on known values. The interpolation is used to obtain intermediate values of properties, such as height, width, etc., during the process of their animation. In gradients, interpolation is used to define intermediate values of colors based on a provided list of colors. Also, the term 'interpolation' is used as a description of the substitution of strings in the template literals.",
     seeAlso: [
       {
+        id: 1,
         name: "String,",
         link: "#string",
       },
       {
+        id: 2,
         name: "String Interpolation,",
         link: "#string-interpolation",
       },
       {
+        id: 3,
         name: "Template Literal",
         link: "#template-literal",
       },
@@ -2214,10 +2471,12 @@ const termsWithoutId = [
       "The Intersection Observer API provides a way to asynchronously observe changes in the intersection of a target element with an ancestor element or with a top-level document's viewport.",
     seeAlso: [
       {
+        id: 1,
         name: "API,",
         link: "#api",
       },
       {
+        id: 2,
         name: "Asynchronous",
         link: "#asynchronous",
       },
@@ -2230,22 +2489,27 @@ const termsWithoutId = [
       "IP address stands for “Internet Protocol address.” The Internet Protocol is a set of rules for communication over the Internet, such as sending mail, streaming video, or connecting to a website. An IP address identifies a network or device on the Internet.",
     seeAlso: [
       {
+        id: 1,
         name: "DNS,",
         link: "#dns",
       },
       {
+        id: 2,
         name: "Domain Name,",
         link: "#domain-name",
       },
       {
+        id: 3,
         name: "ICANN,",
         link: "#icann",
       },
       {
+        id: 4,
         name: "IP Address,",
         link: "#ip-address",
       },
       {
+        id: 5,
         name: "Registrar",
         link: "#registrar",
       },
@@ -2258,10 +2522,12 @@ const termsWithoutId = [
       "An Iteration in computer science is a function that repeats a block of code in a specified order, often until a specific result occurs. Algorithms use iterations to run a program repeatedly until it meets certain conditions or until the algorithm repeats a set number of times.",
     seeAlso: [
       {
+        id: 1,
         name: "Algorithm,",
         link: "#algorithm",
       },
       {
+        id: 2,
         name: "Loop",
         link: "#loop",
       },
@@ -2274,14 +2540,17 @@ const termsWithoutId = [
       "JavaScript is a lightweight programming language commonly used by web developers to add dynamic interactions to web pages, applications, servers, and even games. It works seamlessly alongside HTML and CSS, complementing CSS in formatting HTML elements while providing user interaction, a capability that CSS alone lacks. JavaScript's widespread applications in web, mobile app, and game development make it a valuable language to learn. 98.7% of websites on the internet use JavaScript.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "HTML,",
         link: "#html",
       },
       {
+        id: 3,
         name: "TypeScript",
         link: "#typescript",
       },
@@ -2294,18 +2563,22 @@ const termsWithoutId = [
       "A commonly used method of lossy compression for digital images, particularly for those images produced by digital photography. The degree of compression can be adjusted, allowing a selectable tradeoff between storage size and image quality.",
     seeAlso: [
       {
+        id: 1,
         name: "Alt Attribute,",
         link: "#alt",
       },
       {
+        id: 2,
         name: "GIF,",
         link: "#gif",
       },
       {
+        id: 3,
         name: "PDF,",
         link: "#pdf",
       },
       {
+        id: 4,
         name: "PNG",
         link: "#png",
       },
@@ -2318,14 +2591,17 @@ const termsWithoutId = [
       "An open standard file format and data interchange format that uses human-readable text to store and transmit data objects consisting of attribute-value pairs and arrays (or other serializable values). It is a common data format with diverse uses in electric data interchange, including that of web applications with servers.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "Attribute,",
         link: "#attribute",
       },
       {
+        id: 3,
         name: "Object",
         link: "#object",
       },
@@ -2338,22 +2614,27 @@ const termsWithoutId = [
       "When writing React, JSX allows us to write HTML elements in JavaScript and place them in the DOM without any createElement() and/or appendChild() methods. JSX converts HTML tags into react elements",
     seeAlso: [
       {
+        id: 1,
         name: "DOM,",
         link: "#dom",
       },
       {
+        id: 2,
         name: "HTML,",
         link: "#html",
       },
       {
+        id: 3,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 4,
         name: "React,",
         link: "#react",
       },
       {
+        id: 5,
         name: "XML",
         link: "#xml",
       },
@@ -2366,14 +2647,17 @@ const termsWithoutId = [
       "Kebab case is a way of writing phrases without spaces, where spaces are replaced with hyphens, and the words are typically all lower case.",
     seeAlso: [
       {
+        id: 1,
         name: "Camel Case,",
         link: "#camel-case",
       },
       {
+        id: 2,
         name: "Pascal Case,",
         link: "#pascal-case",
       },
       {
+        id: 3,
         name: "Snake Case",
         link: "#snake-case",
       },
@@ -2386,10 +2670,12 @@ const termsWithoutId = [
       "A 'key' is a special string attribute you need to include when creating arrays of elements. Keys help React identify which items have changed, are added, or are removed. Keys should be given to the elements inside an array to give the elements a stable identity.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "React",
         link: "#react",
       },
@@ -2402,22 +2688,27 @@ const termsWithoutId = [
       "In digital marketing, a landing page is a standalone web page, created specifically for a marketing or advertising campaign. It's where a visitor “lands” after they click on a link in an email, or ads from Google, Bing, YouTube, Facebook, Instagram, Twitter, or similar places on the web. Unlike web pages, which typically have many goals and encourage exploration, landing pages are designed with a single focus or goal, known as a call to action (or CTA, for short). It's this focus that makes landing pages the best option for increasing the conversion rates of your marketing campaigns and lowering your cost of acquiring a lead or sale.",
     seeAlso: [
       {
+        id: 1,
         name: "Bounce Rate,",
         link: "#bounce-rate",
       },
       {
+        id: 2,
         name: "Conversion Rate,",
         link: "#conversion-rate",
       },
       {
+        id: 3,
         name: "CTA,",
         link: "#cta",
       },
       {
+        id: 4,
         name: "CTR,",
         link: "#ctr",
       },
       {
+        id: 5,
         name: "Web Analytics",
         link: "#web-analytics",
       },
@@ -2430,14 +2721,17 @@ const termsWithoutId = [
       "LCP is one of the three Core Web Vitals metrics, and it represents how quickly the main content of a web page is loaded. Specifically, LCP measures the time from when the user initiates loading the page until the largest image or text block is rendered within the viewport.",
     seeAlso: [
       {
+        id: 1,
         name: "First Contentful Paint,",
         link: "#fcp",
       },
       {
+        id: 2,
         name: "Page Load Time,",
         link: "#page-load-time",
       },
       {
+        id: 3,
         name: "Variable",
         link: "#variable",
       },
@@ -2450,6 +2744,7 @@ const termsWithoutId = [
       "Latency is the time it takes for a packet of data to travel from source to a destination. In terms of performance optimization, it's important to optimize to reduce causes of latency and to test site performance emulating high latency to optimize for users with lousy connections.",
     seeAlso: [
       {
+        id: 1,
         name: "Web Analytics",
         link: "#web-analytics",
       },
@@ -2468,10 +2763,12 @@ const termsWithoutId = [
       "Local scope is a characteristic of variables that makes them local (i.e., the variable name is only bound to its value within a scope which is not the global scope).",
     seeAlso: [
       {
+        id: 1,
         name: "Global Scope,",
         link: "#global-scope",
       },
       {
+        id: 2,
         name: "Scope",
         link: "#scope",
       },
@@ -2490,10 +2787,12 @@ const termsWithoutId = [
       "Software localization is the process of adapting software to both the culture and language of an end user, from standards of measurement to video and graphic design. It involves not only translation, but also design and UX changes to make software look and feel natural to the target user.",
     seeAlso: [
       {
+        id: 1,
         name: "End User,",
         link: "#end-user",
       },
       {
+        id: 2,
         name: "UX",
         link: "#ux",
       },
@@ -2506,14 +2805,17 @@ const termsWithoutId = [
       "The localStorage read-only property of the window interface allows you to access a storage object for the document's origin; the stored data is saved across browser sessions. localStorage is similar to sessionStorage, except that while localStorage data has no expiration time, sessionStorage data gets cleared when the page session ends — that is, when the page is closed. (localStorage data for a document loaded in a 'private browsing' or 'incognito' session is cleared when the last 'private' tab is closed.)",
     seeAlso: [
       {
+        id: 1,
         name: "Cache,",
         link: "#cache",
       },
       {
+        id: 2,
         name: "Cookie,",
         link: "#cookie",
       },
       {
+        id: 3,
         name: "sessionStorage",
         link: "#sessionStorage",
       },
@@ -2526,6 +2828,7 @@ const termsWithoutId = [
       "A loop is a sequence of instructions that is repeated until a certain condition is met. An example would be the process of getting an item of data and changing it, and then making sure some condition is checked — such as if a counter has reached a prescribed number.",
     seeAlso: [
       {
+        id: 1,
         name: "Iterate",
         link: "#iterate",
       },
@@ -2538,14 +2841,17 @@ const termsWithoutId = [
       "Margin is the space around the border of an element. The margin surrounding an element will inform the web browser being used of how much space should be left between independent elements and the external margin of the website's page. Margins can also be used to keep different elements an equal distance apart.",
     seeAlso: [
       {
+        id: 1,
         name: "Box Model,",
         link: "#box-model",
       },
       {
+        id: 2,
         name: "Element,",
         link: "#element",
       },
       {
+        id: 3,
         name: "Padding",
         link: "#padding",
       },
@@ -2558,6 +2864,7 @@ const termsWithoutId = [
       "A markup language is one that is designed for defining and presenting text. HTML (HyperText Markup Language), is an example of a markup language.",
     seeAlso: [
       {
+        id: 1,
         name: "HTML",
         link: "#html",
       },
@@ -2570,10 +2877,12 @@ const termsWithoutId = [
       "MDN Web Docs is an open-source, collaborative project documenting Web platform technologies, including CSS, HTML, JavaScript, and Web APIs. MDN also provides an extensive set of learning resources for beginning developers and students.",
     seeAlso: [
       {
+        id: 1,
         name: "Documentation,",
         link: "#documentation",
       },
       {
+        id: 2,
         name: "Open Source",
         link: "#open-source",
       },
@@ -2586,10 +2895,12 @@ const termsWithoutId = [
       "Media query is a CSS technique introduced in CSS3. It uses the @media rule to include a block of CSS properties only if a certain condition is true.",
     seeAlso: [
       {
+        id: 1,
         name: "Breakpoint,",
         link: "#breakpoint",
       },
       {
+        id: 2,
         name: "CSS",
         link: "#css",
       },
@@ -2602,10 +2913,12 @@ const termsWithoutId = [
       "Meta tags are HTML tags that provide information about a webpage's content to search engines and users.",
     seeAlso: [
       {
+        id: 1,
         name: "Metadata,",
         link: "#metadata",
       },
       {
+        id: 2,
         name: "SEO",
         link: "#seo",
       },
@@ -2618,10 +2931,12 @@ const termsWithoutId = [
       "Metadata is data (information) about data. Website metadata includes page titles, descriptions, keywords, and more to help search engines crawl and rank web pages.",
     seeAlso: [
       {
+        id: 1,
         name: "Meta Tags,",
         link: "#meta-tags",
       },
       {
+        id: 2,
         name: "SEO",
         link: "#seo",
       },
@@ -2634,14 +2949,17 @@ const termsWithoutId = [
       "A method, like a function, is a set of instructions that perform a task. The difference is that a method is associated with an object, while a function is not.",
     seeAlso: [
       {
+        id: 1,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 2,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 3,
         name: "Object",
         link: "#object",
       },
@@ -2666,18 +2984,22 @@ const termsWithoutId = [
       "A “mobile-first” approach involves designing a desktop site starting with the mobile version, which is then adapted to larger screens (contrary to the traditional approach of starting with a desktop site and then adapting it to smaller screens).",
     seeAlso: [
       {
+        id: 1,
         name: "Breakpoint,",
         link: "#breakpoint",
       },
       {
+        id: 2,
         name: "Media Query,",
         link: "#media-query",
       },
       {
+        id: 3,
         name: "Responsive Web Design,",
         link: "#responsive-design",
       },
       {
+        id: 4,
         name: "Viewport",
         link: "#viewport",
       },
@@ -2690,10 +3012,12 @@ const termsWithoutId = [
       "MongoDB is an open source NoSQL database management program. NoSQL (Not only SQL) is used as an alternative to traditional relational databases.",
     seeAlso: [
       {
+        id: 1,
         name: "Database,",
         link: "#database",
       },
       {
+        id: 2,
         name: "Relational Database",
         link: "#relational-database",
       },
@@ -2706,22 +3030,27 @@ const termsWithoutId = [
       "A mutable value is one that can be changed without creating an entirely new value. In JavaScript, objects and arrays are mutable by default, but primitive values are not — once a primitive value is created, it cannot be changed, although the variable that holds it may be reassigned.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "Immutable,",
         link: "#immutable",
       },
       {
+        id: 3,
         name: "Object,",
         link: "#object",
       },
       {
+        id: 4,
         name: "Primitive Data Types,",
         link: "#primitive-data-types",
       },
       {
+        id: 5,
         name: "Variable",
         link: "#variable",
       },
@@ -2740,14 +3069,17 @@ const termsWithoutId = [
       "MySQL is an open-source relational database management system (RDBMS) developed by Oracle.",
     seeAlso: [
       {
+        id: 1,
         name: "Database,",
         link: "#database",
       },
       {
+        id: 2,
         name: "Open Source,",
         link: "#open-source",
       },
       {
+        id: 3,
         name: "Relational Database",
         link: "#relational-database",
       },
@@ -2760,14 +3092,17 @@ const termsWithoutId = [
       "In web development, a namespace is a container that holds a set of identifiers, such as functions, classes, or variables, to organize and manage code. Namespaces are used to avoid naming conflicts between different components or libraries within an application.",
     seeAlso: [
       {
+        id: 1,
         name: "Classes",
         link: "#classes",
       },
       {
+        id: 2,
         name: "Function",
         link: "#function",
       },
       {
+        id: 3,
         name: "Variable",
         link: "#variable",
       },
@@ -2780,10 +3115,12 @@ const termsWithoutId = [
       "Website navigation is a collection of user interface components that allows visitors to find content and features on a site. These components can be in the form of copy, link text and buttons, and menus. The <nav> HTML element represents a section of a page whose purpose is to provide navigation links, either within the current document or to other documents. Common examples of navigation sections are menus, tables of contents, and indexes.",
     seeAlso: [
       {
+        id: 1,
         name: "Footer,",
         link: "#footer",
       },
       {
+        id: 2,
         name: "Header",
         link: "#header",
       },
@@ -2796,14 +3133,17 @@ const termsWithoutId = [
       "The React Framework for the Web. Used by some of the world's largest companies, Next.js enables you to create full-stack Web applications by extending the latest React features, and integrating powerful Rust-based JavaScript tooling for the fastest builds.",
     seeAlso: [
       {
+        id: 1,
         name: "Framework,",
         link: "#framework",
       },
       {
+        id: 2,
         name: "Fullstack,",
         link: "#fullstack",
       },
       {
+        id: 3,
         name: "React",
         link: "#react",
       },
@@ -2816,10 +3156,12 @@ const termsWithoutId = [
       "An individual part of a larger data structure. Nodes are a basic data structure which contain data and one or more links to other nodes. Nodes can be used to represent a tree structure or a linked list.",
     seeAlso: [
       {
+        id: 1,
         name: "Data Structure,",
         link: "#data-structure",
       },
       {
+        id: 2,
         name: "DOM",
         link: "#dom",
       },
@@ -2832,6 +3174,7 @@ const termsWithoutId = [
       "A JavaScript runtime for building server-side or desktop applications. Node allows developers to write JavaScript code that runs directly in a computer process itself instead of in a browser. Node can, therefore, be used to write server-side applications with access to the operating system, file system, and everything else required to build fully-functional applications.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript",
         link: "#javascript",
       },
@@ -2844,10 +3187,12 @@ const termsWithoutId = [
       "A non-relational database is a database that does not use the tabular schema of rows and columns found in most traditional database systems.",
     seeAlso: [
       {
+        id: 1,
         name: "Database,",
         link: "#database",
       },
       {
+        id: 2,
         name: "NoSQL Database",
         link: "#noSql-database",
       },
@@ -2860,10 +3205,12 @@ const termsWithoutId = [
       "The term 'NoSQL' refers to non-relational types of databases, and these databases store data in a format that's different from relational tables.",
     seeAlso: [
       {
+        id: 1,
         name: "Database,",
         link: "#database",
       },
       {
+        id: 2,
         name: "Non-Relational Database",
         link: "#non-relational-database",
       },
@@ -2876,14 +3223,17 @@ const termsWithoutId = [
       "A library and registry for JavaScript software packages. npm also has command-line tools to help you install the different packages and manage their dependencies.",
     seeAlso: [
       {
+        id: 1,
         name: "Bash,",
         link: "#bash",
       },
       {
+        id: 2,
         name: "Terminal,",
         link: "#terminal",
       },
       {
+        id: 3,
         name: "Yarn",
         link: "#yarn",
       },
@@ -2896,43 +3246,53 @@ const termsWithoutId = [
       "The null value represents the intentional absence of any object value. It is one of JavaScript's primitive values and is treated as falsy for boolean operations.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 5,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 7, name: "Object,", link: "#object" },
       {
+        id: 8,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 9,
         name: "String,",
         link: "#string",
       },
       {
+        id: 10,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 11,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 12,
         name: "Undefined",
         link: "#undefined",
       },
@@ -2945,43 +3305,53 @@ const termsWithoutId = [
       "One of the primitive types of JavaScript. Number values represent floating-point numbers like 37 or -9.25.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 5,
         name: "Null,",
         link: "#null",
       },
-      { name: "Object,", link: "#object" },
+      { id: 6, name: "Object,", link: "#object" },
       {
+        id: 7,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 8,
         name: "String,",
         link: "#string",
       },
       {
+        id: 9,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 10,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 11,
         name: "Undefined",
         link: "#undefined",
       },
@@ -2994,59 +3364,73 @@ const termsWithoutId = [
       "An object is a collection of related data and/or functionality. These usually consist of several variables and functions (which are called properties and methods when they are inside objects).",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Classes,",
         link: "#classes",
       },
       {
+        id: 5,
         name: "Constructor,",
         link: "#constructor",
       },
       {
+        id: 6,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 7,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 8,
         name: "Method,",
         link: "#method",
       },
       {
+        id: 9,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 10, name: "Object,", link: "#object" },
       {
+        id: 11,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 12,
         name: "String,",
         link: "#string",
       },
       {
+        id: 13,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 14,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 15,
         name: "Undefined",
         link: "#undefined",
       },
@@ -3059,6 +3443,7 @@ const termsWithoutId = [
       "An object literal is a way to declare an object. You would write var myObject = {}; with or without members instead of var myObject = new Object();",
     seeAlso: [
       {
+        id: 1,
         name: "Object",
         link: "#object",
       },
@@ -3071,6 +3456,7 @@ const termsWithoutId = [
       "The CSS Object Model is a set of APIs allowing the manipulation of CSS from JavaScript. It is much like the DOM, but for the CSS rather than the HTML. It allows users to read and modify CSS style dynamically. The values of CSS are represented untyped, that is using String objects",
     seeAlso: [
       {
+        id: 1,
         name: "CSS",
         link: "#css",
       },
@@ -3083,18 +3469,22 @@ const termsWithoutId = [
       "Object-oriented programming is about modeling a system as a collection of objects, where each object represents some particular aspect of the system. Objects contain both functions (or methods) and data.",
     seeAlso: [
       {
+        id: 1,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 2,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 3,
         name: "Method,",
         link: "#method",
       },
       {
+        id: 4,
         name: "Object",
         link: "#object",
       },
@@ -3125,6 +3515,7 @@ const termsWithoutId = [
       "In mathematics and computer programming, an operator is a character that represents a specific mathematical or logical action or process. For instance, 'x' is an arithmetic operator that indicates multiplication, while '&&' is a logical operator representing the logical AND function in programming.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript",
         link: "#javascript",
       },
@@ -3137,10 +3528,12 @@ const termsWithoutId = [
       "Padding is the space between the content and the border of an element. Padding is valuable in making additional space inside an element, keeping it at a set distance from other aspects of a website.",
     seeAlso: [
       {
+        id: 1,
         name: "Box Model,",
         link: "#box-model",
       },
       {
+        id: 2,
         name: "Margin",
         link: "#margin",
       },
@@ -3153,10 +3546,12 @@ const termsWithoutId = [
       "In its simplest terms, page load time is the average amount of time it takes for a page to show up on your screen. It's calculated from initiation (when you click on a page link or type in a Web address) to completion (when the page is fully loaded in the browser).",
     seeAlso: [
       {
+        id: 1,
         name: "First Contentful Paint,",
         link: "#fcp",
       },
       {
+        id: 2,
         name: "Largest Contentful Paint",
         link: "#lcp",
       },
@@ -3175,10 +3570,12 @@ const termsWithoutId = [
       "A parameter is a programming variable or value that transfers data between functions.",
     seeAlso: [
       {
+        id: 1,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 2,
         name: "Variable",
         link: "#variable",
       },
@@ -3191,14 +3588,17 @@ const termsWithoutId = [
       "A programming naming convention where the first letter of each compound word in a variable is capitalized. The use of descriptive variable names is a software development best practice. However, modern programming languages do not allow variables names to include blank spaces.",
     seeAlso: [
       {
+        id: 1,
         name: "Camel Case,",
         link: "#camel-case",
       },
       {
+        id: 2,
         name: "Kebab Case,",
         link: "#kebab-case",
       },
       {
+        id: 3,
         name: "Snake Case",
         link: "#snake-case",
       },
@@ -3211,18 +3611,22 @@ const termsWithoutId = [
       "PDF (Portable Document Format) is a file format used to share documentation without depending on any particular software implementation, hardware platform, or operating system. PDF provides a digital image of a printed document, and keeps the same appearance when printed.",
     seeAlso: [
       {
+        id: 1,
         name: "Alt Attribute,",
         link: "#alt",
       },
       {
+        id: 2,
         name: "GIF,",
         link: "#gif",
       },
       {
+        id: 3,
         name: "JPEG,",
         link: "#jpeg",
       },
       {
+        id: 4,
         name: "PNG",
         link: "#png",
       },
@@ -3235,6 +3639,7 @@ const termsWithoutId = [
       "A subjective measure of website performance, responsiveness, and reliability. In other words, how fast a website seems to the user. It is harder to quantify and measure than the actual speed of operation, but perhaps even more important.",
     seeAlso: [
       {
+        id: 1,
         name: "Page Load Time",
         link: "#page-load-time",
       },
@@ -3247,6 +3652,7 @@ const termsWithoutId = [
       "A Pixel, in the context of websites and digital media, refers to a tiny, single point in a grid of thousands or millions of points that make up an image or the display on a computer or mobile screen. It is the smallest unit of measurement for digital images and screens. Pixels are often used to measure the resolution and dimensions of images and screens.",
     seeAlso: [
       {
+        id: 1,
         name: "Resolution",
         link: "#resolution",
       },
@@ -3259,6 +3665,7 @@ const termsWithoutId = [
       "Plugins are software extensions that allow users to customise software applications, web browsers, and web content. While plugins are still used as add-ons to customize applications, their use in web browsers has waned. In turn, browser extensions have taken their place.",
     seeAlso: [
       {
+        id: 1,
         name: "Browser",
         link: "#browser",
       },
@@ -3271,18 +3678,22 @@ const termsWithoutId = [
       "A type of raster image file that is commonly used on the internet. PNG files are 'lossless.' This means they have a fixed number of pixels, and do not lose any quality when they are compressed. This makes them ideal for storing images that need to be high quality, such as logos, photos, and screenshots. PNG images also support transparency, which can be useful for creating web graphics with transparent backgrounds.",
     seeAlso: [
       {
+        id: 1,
         name: "Alt Attribute,",
         link: "#alt",
       },
       {
+        id: 2,
         name: "GIF,",
         link: "#gif",
       },
       {
+        id: 3,
         name: "JPEG,",
         link: "#jpeg",
       },
       {
+        id: 4,
         name: "PDF",
         link: "#pdf",
       },
@@ -3295,43 +3706,53 @@ const termsWithoutId = [
       "The predefined data types provided by JavaScript language are known as primitive data types. Primitive data types are also known as in-built data types. The seven primitive data types of JavaScript are: string, number, bigint, boolean, symbol, null and undefined.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 5,
         name: "Null,",
         link: "#null",
       },
       {
+        id: 6,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 7, name: "Object,", link: "#object" },
       {
+        id: 8,
         name: "String,",
         link: "#string",
       },
       {
+        id: 9,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 10,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 11,
         name: "Undefined",
         link: "#undefined",
       },
@@ -3344,22 +3765,27 @@ const termsWithoutId = [
       "A promise is an object returned by an asynchronous function, which represents the current state of the operation. At the time the promise is returned to the caller, the operation often isn't finished, but the promise object provides methods to handle the eventual success or failure of the operation.",
     seeAlso: [
       {
+        id: 1,
         name: "Async/Await,",
         link: "#async-await",
       },
       {
+        id: 2,
         name: "Asynchronous,",
         link: "#asynchronous",
       },
       {
+        id: 3,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 4,
         name: "Method,",
         link: "#method",
       },
       {
+        id: 5,
         name: "Object",
         link: "#object",
       },
@@ -3372,6 +3798,7 @@ const termsWithoutId = [
       "A CSS property is a characteristic (like color) whose associated value defines one aspect of how the browser should display the element.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS",
         link: "#css",
       },
@@ -3384,10 +3811,12 @@ const termsWithoutId = [
       "A JavaScript property is a member of an object that associates a key with a value. A JavaScript object is a data structure that stores a collection of properties.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 2,
         name: "Object",
         link: "#object",
       },
@@ -3400,6 +3829,7 @@ const termsWithoutId = [
       "Essentially, a website prototype allows the project stakeholders to see what the final product will look like early in the project lifecycle.",
     seeAlso: [
       {
+        id: 1,
         name: "Figma",
         link: "#figma",
       },
@@ -3412,10 +3842,12 @@ const termsWithoutId = [
       "A prototype is an existing inbuilt functionality in JavaScript. Whenever we create a JavaScript function, JavaScript adds a prototype property to that function.",
     seeAlso: [
       {
+        id: 1,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 2,
         name: "JavaScript",
         link: "#javascript",
       },
@@ -3428,6 +3860,7 @@ const termsWithoutId = [
       "Proxy servers use a different IP address on behalf of the user, concealing the user's real address from web servers.",
     seeAlso: [
       {
+        id: 1,
         name: "Server",
         link: "#server",
       },
@@ -3440,6 +3873,7 @@ const termsWithoutId = [
       "A CSS pseudo-element is used to style specified parts of an element. For example, it can be used to: Style the first letter, or line, of an element.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS",
         link: "#css",
       },
@@ -3458,14 +3892,17 @@ const termsWithoutId = [
       "A website that looks and behaves as if it is a mobile app. PWAs are built to take advantage of native mobile device features, without requiring the end user to visit an app store, make a purchase and download software locally.",
     seeAlso: [
       {
+        id: 1,
         name: "End User,",
         link: "#end-user",
       },
       {
+        id: 2,
         name: "SPA,",
         link: "#spa",
       },
       {
+        id: 3,
         name: "Static Site",
         link: "#static-site",
       },
@@ -3484,14 +3921,17 @@ const termsWithoutId = [
       "React is a JavaScript-based UI development library. Although React is a library rather than a language, it is widely used in web development. The library first appeared in May 2013 and is now one of the most commonly used frontend libraries for web development.",
     seeAlso: [
       {
+        id: 1,
         name: "JSX,",
         link: "#jsx",
       },
       {
+        id: 2,
         name: "Next.js,",
         link: "#nextjs",
       },
       {
+        id: 3,
         name: "React Server Components",
         link: "#server-components",
       },
@@ -3504,18 +3944,22 @@ const termsWithoutId = [
       "React Server Components (RSCs, or simply Server Components) represent the latest advancement in pre-rendering content on the web. They introduce a new mental model to the framework, allowing us to craft components that span both server and client realms.",
     seeAlso: [
       {
+        id: 1,
         name: "Client Components,",
         link: "#client-components",
       },
       {
+        id: 2,
         name: "React,",
         link: "#react",
       },
       {
+        id: 3,
         name: "Server,",
         link: "#server",
       },
       {
+        id: 4,
         name: "Server-Side Rendering",
         link: "#server-side-rendering",
       },
@@ -3528,6 +3972,7 @@ const termsWithoutId = [
       "The process in which a function calls itself directly or indirectly is called recursion and the corresponding function is called a recursive function. A recursive function solves a particular problem by calling a copy of itself and solving smaller subproblems of the original problems.",
     seeAlso: [
       {
+        id: 1,
         name: "Function",
         link: "#function",
       },
@@ -3540,6 +3985,7 @@ const termsWithoutId = [
       "URL redirection, also called URL forwarding, is a World Wide Web technique for making a web page available under more than one URL address. When a web browser attempts to open a URL that has been redirected, a page with a different URL is opened.",
     seeAlso: [
       {
+        id: 1,
         name: "URL",
         link: "#url",
       },
@@ -3552,6 +3998,7 @@ const termsWithoutId = [
       "A regular expression (regex for short) allows developers to match strings against a pattern, extract submatch information, or simply test if the string conforms to that pattern.",
     seeAlso: [
       {
+        id: 1,
         name: "String",
         link: "#string",
       },
@@ -3564,18 +4011,22 @@ const termsWithoutId = [
       "A registrar, or domain name server (DNS) registrar, manages the sale of domain names and the assignment of IP addresses, ensuring each domain's uniqueness. They serve as middlemen between the end user and the domain name system.",
     seeAlso: [
       {
+        id: 1,
         name: "DNS,",
         link: "#dns",
       },
       {
+        id: 2,
         name: "Domain,",
         link: "#domain",
       },
       {
+        id: 3,
         name: "Domain Name,",
         link: "#domain-name",
       },
       {
+        id: 4,
         name: "IP Address",
         link: "#ip-address",
       },
@@ -3588,10 +4039,12 @@ const termsWithoutId = [
       "A relational database organizes data into rows and columns, which collectively form a table. Data is typically structured across multiple tables, which can be joined together via a primary key or a foreign key. These unique identifiers demonstrate the different relationships which exist between tables, and these relationships are usually illustrated through different types of data models.",
     seeAlso: [
       {
+        id: 1,
         name: "Database,",
         link: "#database",
       },
       {
+        id: 2,
         name: "SQL",
         link: "#sql",
       },
@@ -3604,10 +4057,12 @@ const termsWithoutId = [
       "Rem stands for root em, which is a measurement unit that refers to the font-size of the root element of a document.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "Em",
         link: "#em",
       },
@@ -3632,6 +4087,7 @@ const termsWithoutId = [
       "Resolution is a metric measuring clarity and detail through the number of pixels displayed on a screen or used to render an image.",
     seeAlso: [
       {
+        id: 1,
         name: "Pixel",
         link: "#pixel",
       },
@@ -3644,14 +4100,17 @@ const termsWithoutId = [
       "A design approach that addresses the range of devices and device sizes, enabling automatic adaption to the screen, whether the content is viewed on a tablet, phone, television, or watch. Responsive web design isn't a separate technology — it is an approach.",
     seeAlso: [
       {
+        id: 1,
         name: "Media Query,",
         link: "#media-query",
       },
       {
+        id: 2,
         name: "Mobile-First,",
         link: "#mobile-first",
       },
       {
+        id: 3,
         name: "Viewport",
         link: "#viewport",
       },
@@ -3664,22 +4123,27 @@ const termsWithoutId = [
       "An architectural style for providing standards between computer systems on the web, making it easier for systems to communicate with each other. REST-compliant systems, often called RESTful systems, are characterized by how they are stateless and separate the concerns of client and server.",
     seeAlso: [
       {
+        id: 1,
         name: "API,",
         link: "#api",
       },
       {
+        id: 2,
         name: "Client,",
         link: "#client",
       },
       {
+        id: 3,
         name: "Fetch API,",
         link: "#fetch-api",
       },
       {
+        id: 4,
         name: "REST API,",
         link: "#rest-api",
       },
       {
+        id: 5,
         name: "Server",
         link: "#server",
       },
@@ -3692,14 +4156,17 @@ const termsWithoutId = [
       "A REST API is an API that conforms to the design principles of the REST, or representational state transfer architectural style.",
     seeAlso: [
       {
+        id: 1,
         name: "API,",
         link: "#api",
       },
       {
+        id: 2,
         name: "Fetch API,",
         link: "#fetch-api",
       },
       {
+        id: 3,
         name: "REST",
         link: "#rest",
       },
@@ -3712,14 +4179,17 @@ const termsWithoutId = [
       "RGB is a color model that represents colors as mixtures of three underlying components (or channels), namely: red, green, and blue. This model describes a color with a sequence of three numbers (typically between 0.0 and 1.0, or between 0 and 255).",
     seeAlso: [
       {
+        id: 1,
         name: "Hex Color,",
         link: "#hex-color",
       },
       {
+        id: 2,
         name: "HSL,",
         link: "#hsl",
       },
       {
+        id: 3,
         name: "RGBa",
         link: "#rgba",
       },
@@ -3732,14 +4202,17 @@ const termsWithoutId = [
       "RGBa is a CSS property that allows you to specify colors using the RGB color model with an additional alpha channel. The alpha channel represents the opacity or transparency of the color. We use RGBa to create colors that have transparency.",
     seeAlso: [
       {
+        id: 1,
         name: "Hex Color,",
         link: "#hex-color",
       },
       {
+        id: 2,
         name: "HSL,",
         link: "#hsl",
       },
       {
+        id: 3,
         name: "RGB",
         link: "#rgb",
       },
@@ -3752,18 +4225,22 @@ const termsWithoutId = [
       "A robots.txt file contains instructions for bots that tell them which webpages they can and cannot access. Robots.txt files are most relevant for web crawlers from search engines like Google.",
     seeAlso: [
       {
+        id: 1,
         name: "Crawler,",
         link: "#crawler",
       },
       {
+        id: 2,
         name: "Search Engine,",
         link: "#search-engine",
       },
       {
+        id: 3,
         name: "SEO,",
         link: "#seo",
       },
       {
+        id: 4,
         name: "Sitemap",
         link: "#sitemap",
       },
@@ -3776,18 +4253,22 @@ const termsWithoutId = [
       "There are three definitions for routers on the web: 1. For the network layer, the router is a networking device that decides data packet directions. They are distributed by retailers allowing user interaction to the internet. 2. For a single-page application in the application layer, a router is a library that decides what web page is presented by a given URL. This middleware module is used for all URL functions, as these are given a path to a file that is rendered to open the next page. 3. In the implementation of an API in a service layer, a router is a software component that parses a request and directs or routes the request to various handlers within a program. The router code usually accepts a response from the handler and facilitates its return to the requester.",
     seeAlso: [
       {
+        id: 1,
         name: "API,",
         link: "#api",
       },
       {
+        id: 2,
         name: "Middleware,",
         link: "#middleware",
       },
       {
+        id: 3,
         name: "SPA,",
         link: "#spa",
       },
       {
+        id: 4,
         name: "URL",
         link: "#url",
       },
@@ -3812,10 +4293,12 @@ const termsWithoutId = [
       "A preprocessor scripting language that is interpreted or compiled into CSS. SassScript is the scripting language itself.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 2,
         name: "CSS Preprocessor",
         link: "#css-preprocessor",
       },
@@ -3828,22 +4311,27 @@ const termsWithoutId = [
       "In JavaScript, objects and functions are also variables. Scope determines the accessibility of variables, objects, and functions from different parts of the code.",
     seeAlso: [
       {
+        id: 1,
         name: "Global Scope,",
         link: "#global-scope",
       },
       {
+        id: 2,
         name: "Local Scope,",
         link: "#local-scope",
       },
       {
+        id: 3,
         name: "Function,",
         link: "#function",
       },
       {
+        id: 4,
         name: "Object,",
         link: "#object",
       },
       {
+        id: 5,
         name: "Variable",
         link: "#variable",
       },
@@ -3856,14 +4344,17 @@ const termsWithoutId = [
       "Screen readers are software applications that attempt to convey what is seen on a screen display in a non-visual way, usually as text to speech, but also into braille or sound icons. Screen readers are essential to people who are visually impaired, illiterate, or have a learning disability.",
     seeAlso: [
       {
+        id: 1,
         name: "A11y,",
         link: "#ally",
       },
       {
+        id: 2,
         name: "Accessibility,",
         link: "#accessibility",
       },
       {
+        id: 3,
         name: "WCAG",
         link: "#wcag",
       },
@@ -3882,6 +4373,7 @@ const termsWithoutId = [
       "Scrum is an agile team collaboration framework commonly used in software development and other industries. Scrum prescribes for teams to break work into goals to be completed within time-boxed iterations, called sprints. Each sprint is no longer than one month and commonly lasts two weeks.",
     seeAlso: [
       {
+        id: 1,
         name: "Agile",
         link: "#agile",
       },
@@ -3900,6 +4392,7 @@ const termsWithoutId = [
       "A software program that helps people find the information they are looking for online using keywords or phrases. Search engines are able to return results quickly, even with millions of websites online, by scanning the Internet continuously and indexing every page they find.",
     seeAlso: [
       {
+        id: 1,
         name: "Browser",
         link: "#browser",
       },
@@ -3912,18 +4405,22 @@ const termsWithoutId = [
       "In CSS, selectors are used to target the HTML elements on our web pages that we want to style. There are a wide variety of CSS selectors available, allowing for fine-grained precision when selecting elements to style.",
     seeAlso: [
       {
+        id: 1,
         name: "Class Selector,",
         link: "#class-selector",
       },
       {
+        id: 2,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 3,
         name: "HTML,",
         link: "#html",
       },
       {
+        id: 4,
         name: "ID Selector",
         link: "#id-selector",
       },
@@ -3936,6 +4433,7 @@ const termsWithoutId = [
       "The HTML semantics refers to the tags that provide meaning to an HTML page rather than just presentation. It makes HTML more comprehensible by better defining the different sections and layout of web pages.",
     seeAlso: [
       {
+        id: 1,
         name: "HTML",
         link: "#html",
       },
@@ -3948,14 +4446,17 @@ const termsWithoutId = [
       "Search engine optimization is the science of improving a website to increase its visibility when people search for products or services.",
     seeAlso: [
       {
+        id: 1,
         name: "Crawler,",
         link: "#crawler",
       },
       {
+        id: 2,
         name: "Robots.txt,",
         link: "#robots",
       },
       {
+        id: 3,
         name: "Sitemap",
         link: "#sitemap",
       },
@@ -3968,26 +4469,32 @@ const termsWithoutId = [
       "The term web server can refer to hardware or software, or both of them working together. 1. On the hardware side, a web server is a computer that stores web server software and a website's component files (for example, HTML documents, images, CSS stylesheets, and JavaScript files). A web server connects to the Internet and supports physical data interchange with other devices connected to the web. 2. On the software side, a web server includes several parts that control how web users access hosted files. At a minimum, this is an HTTP server. An HTTP server is software that understands URLS (web addresses) and HTTP (the protocol your browser uses to view webpages). An HTTP server can be accessed through the domain names of the websites it stores, and it delivers the content of these hosted websites to the end user's device.",
     seeAlso: [
       {
+        id: 1,
         name: "HTTP,",
         link: "#http",
       },
       {
+        id: 2,
         name: "Domain Name,",
         link: "#domain-name",
       },
       {
+        id: 3,
         name: "End User,",
         link: "#end-user",
       },
       {
+        id: 4,
         name: "Proxy Server,",
         link: "#proxy-server",
       },
       {
+        id: 5,
         name: "Server,",
         link: "#server",
       },
       {
+        id: 6,
         name: "URL",
         link: "#url",
       },
@@ -4000,14 +4507,17 @@ const termsWithoutId = [
       "Everything that happens on the server, instead of on the client. In the past, nearly all business logic ran on the server side, and this included rendering dynamic webpages, interacting with databases, identity authentication, and push notifications.",
     seeAlso: [
       {
+        id: 1,
         name: "React Server Components,",
         link: "#react-server-components",
       },
       {
+        id: 2,
         name: "Server,",
         link: "#server",
       },
       {
+        id: 3,
         name: "Server-Side Rendering",
         link: "#server-side-rendering",
       },
@@ -4020,14 +4530,17 @@ const termsWithoutId = [
       "Server-side rendering (SSR) is an application's ability to convert HTML files on the server into a fully rendered HTML page for the client.",
     seeAlso: [
       {
+        id: 1,
         name: "React Server Components,",
         link: "#react-server-components",
       },
       {
+        id: 2,
         name: "Server,",
         link: "#server",
       },
       {
+        id: 3,
         name: "Server-Side",
         link: "#server-side",
       },
@@ -4040,14 +4553,17 @@ const termsWithoutId = [
       "The read-only sessionStorage property accesses a session Storage object for the current origin. sessionStorage is similar to localStorage; the difference is that while data in localStorage doesn't expire, data in sessionStorage is cleared when the page session ends. ",
     seeAlso: [
       {
+        id: 1,
         name: "Cache,",
         link: "#cache",
       },
       {
+        id: 2,
         name: "Cookie,",
         link: "#cookie",
       },
       {
+        id: 3,
         name: "localStorage",
         link: "#localStorage",
       },
@@ -4060,18 +4576,22 @@ const termsWithoutId = [
       "A sitemap is a file where you provide information about the pages, videos, and other files on your site, and the relationships between them. Search engines like Google read this file to crawl your site more efficiently.",
     seeAlso: [
       {
+        id: 1,
         name: "Crawler,",
         link: "#crawler",
       },
       {
+        id: 2,
         name: "Robots.txt,",
         link: "#robots",
       },
       {
+        id: 3,
         name: "Search Engine,",
         link: "#search-engine",
       },
       {
+        id: 4,
         name: "SEO",
         link: "#seo",
       },
@@ -4090,10 +4610,12 @@ const termsWithoutId = [
       "A slug, also known as a URL slug, is descriptive text after the website name at the end of a URL that identifies a web page on the domain.",
     seeAlso: [
       {
+        id: 1,
         name: "Domain,",
         link: "#domain",
       },
       {
+        id: 2,
         name: "URL",
         link: "#url",
       },
@@ -4112,14 +4634,17 @@ const termsWithoutId = [
       "Snake case is a way of writing phrases without spaces, where spaces are replaced with underscores _ , and the words are typically all lower case.",
     seeAlso: [
       {
+        id: 1,
         name: "Camel Case,",
         link: "#camel-case",
       },
       {
+        id: 2,
         name: "Kebab Case,",
         link: "#kebab-case",
       },
       {
+        id: 3,
         name: "Pascal Case",
         link: "#pascal-case",
       },
@@ -4132,10 +4657,12 @@ const termsWithoutId = [
       "A web app that is presented to the user through a single HTML page to be more responsive and to more closely replicate a desktop application or a native app. An SPA is sometimes referred to as a single-page interface (SPI).",
     seeAlso: [
       {
+        id: 1,
         name: "PWA,",
         link: "#pwa",
       },
       {
+        id: 2,
         name: "Static Site",
         link: "#static-site",
       },
@@ -4148,10 +4675,12 @@ const termsWithoutId = [
       "Structured query language (SQL) is a programming language for storing and processing information in a relational database.",
     seeAlso: [
       {
+        id: 1,
         name: "Database,",
         link: "#database",
       },
       {
+        id: 2,
         name: "Relational Database",
         link: "#relational-database",
       },
@@ -4164,22 +4693,27 @@ const termsWithoutId = [
       "SQL injection, also known as SQLI, is a common attack vector that uses malicious SQL code for backend database manipulation to access information that was not intended to be displayed. This information may include any number of items, including sensitive company data, user lists or private customer details.",
     seeAlso: [
       {
+        id: 1,
         name: "Database,",
         link: "#database",
       },
       {
+        id: 2,
         name: "DDoS,",
         link: "#ddos",
       },
       {
+        id: 3,
         name: "DoS,",
         link: "#dos",
       },
       {
+        id: 4,
         name: "SQL,",
         link: "#sql",
       },
       {
+        id: 5,
         name: "XSS",
         link: "#xss",
       },
@@ -4192,6 +4726,7 @@ const termsWithoutId = [
       "SSL stands for Secure Sockets Layer, a security protocol that creates an encrypted link between a web server and a web browser. Companies and organizations need to add SSL certificates to their websites to secure online transactions and keep customer information private and secure.",
     seeAlso: [
       {
+        id: 1,
         name: "SSL Certificate",
         link: "#ssl-certificate",
       },
@@ -4204,6 +4739,7 @@ const termsWithoutId = [
       "A digital certificate that is issued by a certificate authority. It is used to confirm the identity of a website (which is usually a company or a server) and the validity of the data sent (usually data being passed by an end user) to the website. Digital certificates are used to secure communications in the internet. They offer a means for a web server to authenticate its identity to the web browser, ensuring that the information being communicated is secure. This certificate is used to verify the identity of the website so that the computer user can be sure that the site is who they think it is.",
     seeAlso: [
       {
+        id: 1,
         name: "SSL",
         link: "#ssl",
       },
@@ -4216,10 +4752,12 @@ const termsWithoutId = [
       "Static web pages are made of “fixed code,” and unless the site developer makes changes, nothing will change on the page. Think of it like a brochure for a business. Static sites give a lot of the same type of information that you could get from a brochure, but it can't just change itself.",
     seeAlso: [
       {
+        id: 1,
         name: "PWA,",
         link: "#pwa",
       },
       {
+        id: 2,
         name: "SPA",
         link: "#spa",
       },
@@ -4232,6 +4770,7 @@ const termsWithoutId = [
       "JavaScript's strict mode is a way to opt in to a restricted variant of JavaScript, thereby implicitly opting-out of 'sloppy mode'. Strict mode makes several changes to normal JavaScript semantics: 1. Eliminates some JavaScript silent errors by changing them to throw errors. 2. Fixes mistakes that make it difficult for JavaScript engines to perform optimizations: strict mode code can sometimes be made to run faster than identical code that's not strict mode. 3. Prohibits some syntax likely to be defined in future versions of ECMAScript",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript",
         link: "#javascript",
       },
@@ -4244,51 +4783,63 @@ const termsWithoutId = [
       "In any computer programming language, a string is a sequence of characters used to represent text.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 5,
         name: "Interpolation,",
         link: "#interpolation",
       },
       {
+        id: 6,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 7, name: "Object,", link: "#object" },
       {
+        id: 8,
         name: "Primitive Data Types,",
         link: "#primitive-data-types",
       },
       {
+        id: 9,
         name: "String Interpolation,",
         link: "#string-interpolation",
       },
       {
+        id: 10,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 11,
         name: "Template Literal,",
         link: "#template-literal",
       },
       {
+        id: 12,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 13,
         name: "Undefined",
         link: "#undefined",
       },
@@ -4301,14 +4852,17 @@ const termsWithoutId = [
       "String interpolation (or variable interpolation, variable substitution, or variable expansion) is the process of evaluating a string literal containing one or more placeholders, yielding a result in which the placeholders are replaced with their corresponding values.",
     seeAlso: [
       {
+        id: 1,
         name: "Interpolation,",
         link: "#interpolation",
       },
       {
+        id: 2,
         name: "String,",
         link: "#string",
       },
       {
+        id: 3,
         name: "Template Literal",
         link: "#template-literal",
       },
@@ -4321,6 +4875,7 @@ const termsWithoutId = [
       "A stylesheet is a set of CSS rules used to control the layout and design of a webpage or document.",
     seeAlso: [
       {
+        id: 1,
         name: "CSS",
         link: "#css",
       },
@@ -4333,26 +4888,32 @@ const termsWithoutId = [
       "SVG is used to define vector-based graphics for the Web. SVG defines the graphics in XML format. Every element and every attribute in SVG files can be animated. SVG is a W3C recommendation.",
     seeAlso: [
       {
+        id: 1,
         name: "Alt Attribute,",
         link: "#alt",
       },
       {
+        id: 2,
         name: "Canvas,",
         link: "#canvas",
       },
       {
+        id: 3,
         name: "JPEG,",
         link: "#jpeg",
       },
       {
+        id: 4,
         name: "PDF,",
         link: "#pdf",
       },
       {
+        id: 5,
         name: "PNG,",
         link: "#png",
       },
       {
+        id: 6,
         name: "XML",
         link: "#xml",
       },
@@ -4365,43 +4926,53 @@ const termsWithoutId = [
       "A symbol is a data type that represents unique, unforgeable identifiers. They are sometimes called atoms. Because a symbol is unique and unforgeable, you can only read a property value associated with a symbol if you have a reference to the original identifier.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 5,
         name: "Null,",
         link: "#null",
       },
       {
+        id: 6,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 7, name: "Object,", link: "#object" },
       {
+        id: 8,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 9,
         name: "String,",
         link: "#string",
       },
       {
+        id: 10,
         name: "Truthy,",
         link: "#truthy",
       },
       {
+        id: 11,
         name: "Undefined",
         link: "#undefined",
       },
@@ -4414,10 +4985,12 @@ const termsWithoutId = [
       "Synchronous programming model follows a linear execution pattern where tasks are completed one after the other in a sequence.",
     seeAlso: [
       {
+        id: 1,
         name: "Aysnc/Await,",
         link: "#async-await",
       },
       {
+        id: 2,
         name: "Asynchronous",
         link: "#asynchronous",
       },
@@ -4430,6 +5003,7 @@ const termsWithoutId = [
       "Syntactic sugar refers to certain language features in programming that make the code easier to read or write. It's like adding a bit of sweetness to your code syntax to make it more pleasant to work with.",
     seeAlso: [
       {
+        id: 1,
         name: "Syntax",
         link: "#syntax",
       },
@@ -4442,10 +5016,12 @@ const termsWithoutId = [
       "Syntax specifies the required combination and sequence of characters making up correctly structured code. Syntax generally includes grammar and the rules that apply to writing it, such as indentation requirements in some programming languages. ",
     seeAlso: [
       {
+        id: 1,
         name: "Syntactic Sugar,",
         link: "#syntactic-sugar",
       },
       {
+        id: 2,
         name: "Syntax Error",
         link: "#syntax-error",
       },
@@ -4458,6 +5034,7 @@ const termsWithoutId = [
       "Syntax error refers to a mistake in code that violates the programming language's rules and prevents it from executing correctly. These common mistakes in programming occur when programmers miswrite code by breaking the language's syntax rules, such as using punctuation incorrectly or misspelling commands.",
     seeAlso: [
       {
+        id: 1,
         name: "Syntax",
         link: "#syntax",
       },
@@ -4470,6 +5047,7 @@ const termsWithoutId = [
       "HTML tags are the keywords on a web page that define how your web browser must format and display your web page. Almost all tags contain two parts, an opening, and a closing tag. For example, <html> is the opening tag and </html> is the closing tag.",
     seeAlso: [
       {
+        id: 1,
         name: "HTML",
         link: "#html",
       },
@@ -4482,14 +5060,17 @@ const termsWithoutId = [
       "Template literals are literals delimited with backtick (`) characters, allowing for multi-line strings, string interpolation with embedded expressions, and special constructs called tagged templates. Template literals are sometimes informally called template strings, because they are used most commonly for string interpolation (to create strings by doing substitution of placeholders).",
     seeAlso: [
       {
+        id: 1,
         name: "Interpolation,",
         link: "#interpolation",
       },
       {
+        id: 2,
         name: "String,",
         link: "#string",
       },
       {
+        id: 3,
         name: "String Interpolation",
         link: "#string-interpolation",
       },
@@ -4502,14 +5083,17 @@ const termsWithoutId = [
       "The terminal is a text interface for executing text-based programs.",
     seeAlso: [
       {
+        id: 1,
         name: "Bash,",
         link: "#bash",
       },
       {
+        id: 2,
         name: "NPM,",
         link: "#npm",
       },
       {
+        id: 3,
         name: "Yarn",
         link: "#yarn",
       },
@@ -4522,6 +5106,7 @@ const termsWithoutId = [
       "The ternary operator is the only JavaScript operator that takes three operands: a condition followed by a question mark (?), then an expression to execute if the condition is truthy followed by a colon (:), and finally the expression to execute if the condition is falsy. This operator is frequently used as an alternative to an if...else statement.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript",
         link: "#javascript",
       },
@@ -4534,43 +5119,53 @@ const termsWithoutId = [
       "In JavaScript, a truthy value is a value that is considered true when encountered in a Boolean context. All values are truthy unless they are defined as falsy. That is, all values are truthy except false, 0, -0, 0n, '', null, undefined, NaN, and document.",
     seeAlso: [
       {
+        id: 1,
         name: "Array,",
         link: "#array",
       },
       {
+        id: 2,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 3,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 4,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 5,
         name: "Null,",
         link: "#null",
       },
       {
+        id: 6,
         name: "Number,",
         link: "#number",
       },
-      { name: "Object,", link: "#object" },
+      { id: 7, name: "Object,", link: "#object" },
       {
+        id: 8,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 9,
         name: "String,",
         link: "#string",
       },
       {
+        id: 10,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 11,
         name: "Undefined",
         link: "#undefined",
       },
@@ -4583,14 +5178,17 @@ const termsWithoutId = [
       "The process of automatically determining the data type of a variable or expression based on its value. In other words, when you assign a value to a variable, TypeScript will automatically detect the data type of that value and assign it to the variable.",
     seeAlso: [
       {
+        id: 1,
         name: "Dynamic Typing,",
         link: "#dynamic-typing",
       },
       {
+        id: 2,
         name: "TypeScript,",
         link: "#typescript",
       },
       {
+        id: 3,
         name: "Variable",
         link: "#variable",
       },
@@ -4603,14 +5201,17 @@ const termsWithoutId = [
       "TypeScript adds additional syntax to JavaScript to support a tighter integration with your editor. Catch errors early in your editor. TypeScript code converts to JavaScript, which runs anywhere JavaScript runs: In a browser, on Node.js or Deno and in your apps. TypeScript understands JavaScript and uses type inference to give you great tooling without additional code.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 2,
         name: "Syntax,",
         link: "#syntax",
       },
       {
+        id: 3,
         name: "Type Inference",
         link: "#type-inference",
       },
@@ -4623,6 +5224,7 @@ const termsWithoutId = [
       "The user interface is the point at which human users interact with a computer, website or application. The goal of effective UI is to make the user's experience easy and intuitive, requiring minimum effort on the user's part to receive the maximum desired outcome.",
     seeAlso: [
       {
+        id: 1,
         name: "UX",
         link: "#ux",
       },
@@ -4635,38 +5237,47 @@ const termsWithoutId = [
       "Undefined is a primitive value automatically assigned to variables that have just been declared, or to formal arguments for which there are no actual arguments.",
     seeAlso: [
       {
+        id: 1,
         name: "BigInt,",
         link: "#bigint",
       },
       {
+        id: 2,
         name: "Boolean,",
         link: "#boolean",
       },
       {
+        id: 3,
         name: "Falsy,",
         link: "#falsy",
       },
       {
+        id: 4,
         name: "Null,",
         link: "#null",
       },
       {
+        id: 5,
         name: "Number,",
         link: "#number",
       },
       {
+        id: 6,
         name: "Primitive Data Types (JavaScript),",
         link: "#primitive-data-types",
       },
       {
+        id: 7,
         name: "String,",
         link: "#string",
       },
       {
+        id: 8,
         name: "Symbol,",
         link: "#symbol",
       },
       {
+        id: 9,
         name: "Truthy",
         link: "#truthy",
       },
@@ -4679,10 +5290,12 @@ const termsWithoutId = [
       "A URL is nothing more than the address of a given unique resource on the Web. In theory, each valid URL points to a unique resource. Such resources can be an HTML page, a CSS document, an image, etc.",
     seeAlso: [
       {
+        id: 1,
         name: "Redirection,",
         link: "#redirection",
       },
       {
+        id: 2,
         name: "Slug",
         link: "#slug",
       },
@@ -4701,6 +5314,7 @@ const termsWithoutId = [
       "Refers to the user's journey when interacting with a product or service. UX design is the process of creating products or services that provide meaningful experiences for users, involving many different areas of product development including branding, usability, function, and design.",
     seeAlso: [
       {
+        id: 1,
         name: "UI",
         link: "#ui",
       },
@@ -4713,6 +5327,7 @@ const termsWithoutId = [
       "Variables are used to store information to be referenced and manipulated in a computer program. They also provide a way of labeling data with a descriptive name, so our programs can be understood more clearly by the reader and ourselves. It is helpful to think of variables as containers that hold information. Their sole purpose is to label and store data in memory. This data can then be used throughout your program.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript",
         link: "#javascript",
       },
@@ -4725,14 +5340,17 @@ const termsWithoutId = [
       "Version control, also known as source control, is the practice of tracking and managing changes to software code. Version control systems are software tools that help software teams manage changes to source code over time.",
     seeAlso: [
       {
+        id: 1,
         name: "Git,",
         link: "#git",
       },
       {
+        id: 2,
         name: "GitHub,",
         link: "#github",
       },
       {
+        id: 3,
         name: "GitHub Desktop",
         link: "#github-desktop",
       },
@@ -4745,6 +5363,7 @@ const termsWithoutId = [
       "A viewport is the user's visible area of a webpage. It's a key ingredient of responsive web design and ensures your content is easy to view.",
     seeAlso: [
       {
+        id: 1,
         name: "Breakpoint",
         link: "#breakpoint",
       },
@@ -4757,18 +5376,22 @@ const termsWithoutId = [
       "A programming concept where an ideal, or “virtual”, representation of a UI is kept in memory and synced with the “real” DOM by a library such as React.",
     seeAlso: [
       {
+        id: 1,
         name: "DOM,",
         link: "#dom",
       },
       {
+        id: 2,
         name: "Node,",
         link: "#node",
       },
       {
+        id: 3,
         name: "React,",
         link: "#react",
       },
       {
+        id: 4,
         name: "UI",
         link: "#ui",
       },
@@ -4781,14 +5404,17 @@ const termsWithoutId = [
       "A build tool that significantly improves the front-end development experience. You can use Vite to set up a development environment for frameworks like Vue and React, and even for a vanilla JavaScript app with a dev server and hot reloading in just three commands.",
     seeAlso: [
       {
+        id: 1,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 2,
         name: "React,",
         link: "#react",
       },
       {
+        id: 3,
         name: "Vue.js",
         link: "#vue",
       },
@@ -4801,22 +5427,27 @@ const termsWithoutId = [
       "Vue.js (commonly referred to as Vue; pronounced 'view') is an open-source model-view-viewmodel front end JavaScript library for building user interfaces and single-page applications. It was created by Evan You, and is maintained by him and the rest of the active core team members.",
     seeAlso: [
       {
+        id: 1,
         name: "Framework,",
         link: "#framework",
       },
       {
+        id: 2,
         name: "JavaScript,",
         link: "#javascript",
       },
       {
+        id: 3,
         name: "Open Source,",
         link: "#open-source",
       },
       {
+        id: 4,
         name: "SPA,",
         link: "#spa",
       },
       {
+        id: 5,
         name: "UI",
         link: "#ui",
       },
@@ -4829,14 +5460,17 @@ const termsWithoutId = [
       "WCAG are a recommendation published by the Web Accessibility Initiative group at the W3C. They outline a set of guidelines for making content accessible primarily for people with disabilities but also for limited-resource devices such as mobile phones.",
     seeAlso: [
       {
+        id: 1,
         name: "A11y,",
         link: "#ally",
       },
       {
+        id: 2,
         name: "Accessibility,",
         link: "#accessibility",
       },
       {
+        id: 3,
         name: "Screen Reader",
         link: "#screen-reader",
       },
@@ -4849,22 +5483,27 @@ const termsWithoutId = [
       "Web analytics is the collection, reporting, and analysis of website data. The focus is on identifying measures based on your organizational and user goals and using the website data to determine the success or failure of those goals and to drive strategy and improve the user's experience.",
     seeAlso: [
       {
+        id: 1,
         name: "Bounce Rate,",
         link: "#bounce-rate",
       },
       {
+        id: 2,
         name: "Conversion Rate,",
         link: "#conversion-rate",
       },
       {
+        id: 3,
         name: "CTA,",
         link: "#cta",
       },
       {
+        id: 4,
         name: "CTR,",
         link: "#ctr",
       },
       {
+        id: 5,
         name: "UX",
         link: "#ux",
       },
@@ -4877,22 +5516,27 @@ const termsWithoutId = [
       "Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience.",
     seeAlso: [
       {
+        id: 1,
         name: "Figma,",
         link: "#figma",
       },
       {
+        id: 2,
         name: "Prototype,",
         link: "#prototype",
       },
       {
+        id: 3,
         name: "UI,",
         link: "#ui",
       },
       {
+        id: 4,
         name: "UX,",
         link: "#ux",
       },
       {
+        id: 5,
         name: "Wireframe",
         link: "#wireframe",
       },
@@ -4905,10 +5549,12 @@ const termsWithoutId = [
       "A free and open-source module bundler for JavaScript. It is made primarily for JavaScript, but it can transform front-end assets such as HTML, CSS, and images if the corresponding loaders are included.",
     seeAlso: [
       {
+        id: 1,
         name: "Code Splitting,",
         link: "#code-splitting",
       },
       {
+        id: 2,
         name: "Open Source",
         link: "#open-source",
       },
@@ -4921,10 +5567,12 @@ const termsWithoutId = [
       "The empty space around the content and elements on a web page. It's used to balance the page's design, organize the content and elements, and improve the visual experience for the user.",
     seeAlso: [
       {
+        id: 1,
         name: "Gutters,",
         link: "#gutters",
       },
       {
+        id: 2,
         name: "UI",
         link: "#ui",
       },
@@ -4937,22 +5585,27 @@ const termsWithoutId = [
       "A wireframe is a two-dimensional illustration of a page's interface that specifically focuses on space allocation and prioritization of content, functionalities available, and intended behaviors. For these reasons, wireframes typically do not include any styling, color, or graphics.",
     seeAlso: [
       {
+        id: 1,
         name: "Figma,",
         link: "#figma",
       },
       {
+        id: 2,
         name: "Prototype,",
         link: "#prototype",
       },
       {
+        id: 3,
         name: "UI,",
         link: "#ui",
       },
       {
+        id: 4,
         name: "UX,",
         link: "#ux",
       },
       {
+        id: 5,
         name: "Web Design",
         link: "#web-design",
       },
@@ -4971,26 +5624,32 @@ const termsWithoutId = [
       "A markup language that provides rules to define any data. Unlike other programming languages, XML cannot perform computing operations by itself. Instead, any programming language or software can be implemented for structured data management.",
     seeAlso: [
       {
+        id: 1,
         name: "AJAX,",
         link: "#ajax",
       },
       {
+        id: 2,
         name: "CSS,",
         link: "#css",
       },
       {
+        id: 3,
         name: "DOM,",
         link: "#dom",
       },
       {
+        id: 4,
         name: "Element,",
         link: "#element",
       },
       {
+        id: 5,
         name: "JSX,",
         link: "#jsx",
       },
       {
+        id: 6,
         name: "SVG",
         link: "#svg",
       },
@@ -5003,14 +5662,17 @@ const termsWithoutId = [
       "Yarn is a package manager for your code. It allows you to use and share (e.g. JavaScript) code with other developers from around the world.",
     seeAlso: [
       {
+        id: 1,
         name: "Bash,",
         link: "#bash",
       },
       {
+        id: 2,
         name: "NPM,",
         link: "#npm",
       },
       {
+        id: 3,
         name: "Terminal",
         link: "#terminal",
       },
@@ -5018,7 +5680,7 @@ const termsWithoutId = [
   },
 ];
 
-export const terms = [];
+export let terms = [];
 
 for (const key in termsWithoutId) {
   const obj = {
@@ -5028,6 +5690,9 @@ for (const key in termsWithoutId) {
 
   terms.push(obj);
 }
+
+export let termsArr = terms;
+// console.log(termsArr);
 
 // TABLE OF CONTENTS
 // ADD NEW TERMS TO THIS ARRAY IN ALPHABETICAL ORDER FOR
@@ -6191,7 +6856,7 @@ const tableOfContentsWithoutId = [
   },
 ];
 
-export const tableOfContents = [];
+export let tableOfContents = [];
 
 for (const key in tableOfContentsWithoutId) {
   const obj = {
