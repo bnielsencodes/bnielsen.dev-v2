@@ -76,29 +76,43 @@ export default function Dropdown() {
         <li className="flex gap-12 pb-6">
           <ul className="flex flex-col gap-6">
             <li>
-              <a href="/blog/posts/career">Career</a>
+              <a className="hover:opacity-80" href="/blog/posts/career">
+                Career
+              </a>
             </li>
             <li>
-              <a href="/blog/posts/css">CSS</a>
+              <a className="hover:opacity-80" href="/blog/posts/css">
+                CSS
+              </a>
             </li>
             <li>
-              <a href="/blog/posts/javascript">JavaScript</a>
+              <a className="hover:opacity-80" href="/blog/posts/javascript">
+                JavaScript
+              </a>
             </li>
           </ul>
           <ul className="flex flex-col gap-6">
             <li>
-              <a href="/blog/posts/react">React</a>
+              <a className="hover:opacity-80" href="/blog/posts/react">
+                React
+              </a>
             </li>
             <li>
-              <a href="/blog/posts/tailwind">Tailwind</a>
+              <a className="hover:opacity-80" href="/blog/posts/tailwind">
+                Tailwind
+              </a>
             </li>
             <li>
-              <a href="/blog/posts/nextjs">Next.js</a>
+              <a className="hover:opacity-80" href="/blog/posts/nextjs">
+                Next.js
+              </a>
             </li>
           </ul>
         </li>
         <li>
-          <a href="/blog/posts/web-development">Web Development</a>
+          <a className="hover:opacity-80" href="/blog/posts/web-development">
+            Web Development
+          </a>
         </li>
       </ul>
     </>
