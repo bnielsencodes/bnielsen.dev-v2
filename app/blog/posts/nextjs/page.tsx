@@ -29,7 +29,7 @@ export default function NextJS() {
           in this category
         */}
         {categoryData.length < 1 && (
-          <p className="mt-[200px] font-sans text-2xl text-center">
+          <p className="px-4 mt-[200px] font-sans text-2xl text-center">
             There are no posts yet for this category.
           </p>
         )}
