@@ -1,4 +1,12 @@
-export default function Breadcrumbs() {
+export default function Breadcrumbs({
+  name,
+  slug,
+}: {
+  name: string;
+  slug: string;
+}) {
+  const url = `/blog/posts/${slug}`;
+
   return (
     <div className="flex items-center text-neutral-300 dark:text-neutral-400 font-sans text-[15px] font-medium text-opacity-80">
       <a
@@ -15,11 +23,8 @@ export default function Breadcrumbs() {
         Posts
       </a>
       <p className="px-[8px] mb-1 text-[22px]">&#8250;</p>
-      <a
-        className="all-transition hover:underline hover:opacity-80"
-        href="/blog/posts/web-development"
-      >
-        Web Development
+      <a className="all-transition hover:underline hover:opacity-80" href={url}>
+        {name}
       </a>
     </div>
   );
