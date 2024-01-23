@@ -32,7 +32,7 @@ export default function ClipboardCopy() {
   return (
     <>
       <button
-        className="opacity-transition outline-light-theme dark:outline-dark-theme p-0 border-0 rounded-sm text-accent-100 dark:text-accent-200 text-bold focus:opacity-90 lg:hover:cursor-pointer lg:hover:opacity-90"
+        className="opacity-transition outline-light-theme dark:outline-dark-theme p-0 border-0 rounded-sm text-accent-100 dark:text-accent-200 font-bold focus:opacity-90 lg:hover:cursor-pointer lg:hover:opacity-90"
         onClick={handleCopyClick}
         title="Copy to clipboard"
       >
