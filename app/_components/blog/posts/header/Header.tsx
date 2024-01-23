@@ -1,4 +1,3 @@
-import { useEffect, useState } from "react";
 import { post } from "@/app/_data/blog/posts/categories/web-development/posts/web-related-terms";
 import Breadcrumbs from "./Breadcrumbs";
 
@@ -12,7 +11,7 @@ export default function Header({ name, slug }: { name: string; slug: string }) {
         <Breadcrumbs {...{ name, slug }} />
 
         {/* post title */}
-        <h1 className="mt-1 mb-2 text-neutral-100 dark:text-neutral-600 text-[38px] font-bold leading-[2.5rem] text-left md:mt-0 md:mb-1 md:text-[32px] md:leading-[1.35em] lg:text-[38px]">
+        <h1 className="mt-1 mb-2 text-neutral-100 dark:text-neutral-600 text-[38px] font-bold leading-[2.5rem] text-left md:mt-0 md:mb-1 md:text-[32px] md:leading-[1.35em] lg:text-[38px] lg:leading-[1.7rem]">
           {post.title}
         </h1>
 
