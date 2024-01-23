@@ -12,7 +12,7 @@ export default function Header() {
         {/* <Avatar {...{ parent }} /> */}
 
         {/* post title */}
-        <h1 className="mt-7 mb-5 text-neutral-100 dark:text-neutral-600 text-[58px] leading-[4.25rem] font-extrabold text-left md:text-7xl lg:text-8xl lg:text-center">
+        <h1 className="mt-7 mb-5 text-neutral-100 dark:text-neutral-600 text-[58px] leading-[4.25rem] font-extrabold text-left md:text-7xl lg:text-8xl lg:leading-[1.15] lg:text-center">
           A blog for web developers,
         </h1>
         <p className="mb-6 text-neutral-200 dark:text-neutral-500 font-sans text-[24px] font-medium leading-[2rem] tracking-wide text-left md:text-[32px] md:leading-[1.35em] lg:text-3xl lg:text-center">
