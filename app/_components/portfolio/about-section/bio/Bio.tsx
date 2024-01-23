@@ -39,13 +39,13 @@ export default function Bio() {
           >
             front page of the internet
           </a>
-          . I also recently started writing my own blog. Check it out{" "}
+          . I also recently started writing my own blog.{" "}
           <a
             className="outline-light-theme dark:outline-dark-theme opacity-transition rounded-sm text-accent-100 dark:text-accent-200 focus:opacity-80 lg:hover:opacity-80"
             href="/blog"
             target="_blank"
           >
-            here
+            Check it out here
           </a>
           .
         </p>
