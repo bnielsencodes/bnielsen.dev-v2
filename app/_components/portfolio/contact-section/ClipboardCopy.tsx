@@ -32,11 +32,11 @@ export default function ClipboardCopy() {
   return (
     <>
       <button
-        className="opacity-transition outline-light-theme dark:outline-dark-theme p-0 border-0 rounded-sm text-accent-100 dark:text-accent-200 focus:opacity-90 lg:hover:cursor-pointer lg:hover:opacity-90"
+        className="opacity-transition outline-light-theme dark:outline-dark-theme p-0 border-0 rounded-sm text-accent-100 dark:text-accent-200 text-bold focus:opacity-90 lg:hover:cursor-pointer lg:hover:opacity-90"
         onClick={handleCopyClick}
         title="Copy to clipboard"
       >
-        <strong>brandon@bnielsen.dev</strong>
+        brandon@bnielsen.dev
       </button>
 
       <span className="absolute -top-[10px] -right-[70px] p-[0.5rem] rounded-[0.2rem] ml-4 bg-none text-[0.813rem] tracking-[0.4px] uppercase">
