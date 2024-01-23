@@ -24,6 +24,7 @@ export default function ThemeToggle() {
       <button
         className="group outline-dark-theme relative h-9 w-9 rounded-sm hover:cursor-pointer"
         onClick={() => setTheme("light")}
+        aria-label="Theme toggle"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
@@ -44,6 +45,7 @@ export default function ThemeToggle() {
       <button
         className="group outline-light-theme relative w-9 h-9 rounded-sm hover:cursor-pointer"
         onClick={() => setTheme("dark")}
+        aria-label="Theme toggle"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
