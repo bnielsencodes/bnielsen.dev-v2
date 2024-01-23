@@ -13,11 +13,14 @@ export default function Social({
   };
   parent: string;
 }) {
+  const label = `Link to Brandon's ${social.name}`
+  
   return (
     <li className="h-auto">
       <a
         className="opacity-transition focus:outine-2 focus:outline-accent-100 dark:focus:outline-accent-200 focus:opacity-90 lg:hover:opacity-90 dark:lg:hover:opacity-80"
         href={social.link}
+        aria-label={label}
       >
         {/* linkedin icon */}
         {social.name === "linkedIn" && <LinkedIn parent={parent} />}
