@@ -24,15 +24,15 @@ body::-webkit-scrollbar {
 
 /* custom transitions */
 .all-transition {
-  transition: all 0.2s linear;
+  transition: all 0.15s linear;
 }
 
 .fill-transition {
-  transition: fill 0.2s linear;
+  transition: fill 0.15s linear;
 }
 
 .opacity-transition {
-  transition: opacity 0.2s linear;
+  transition: opacity 0.15s linear;
 }
 
 /* buttons */
@@ -42,7 +42,7 @@ body::-webkit-scrollbar {
   font-size: 1.125rem; /* 18px */
   line-height: 1.75rem; /* 28px */
   font-weight: 700;
-  transition: all 0.2s linear;
+  transition: all 0.15s linear;
 }
 
 .btn-primary {
