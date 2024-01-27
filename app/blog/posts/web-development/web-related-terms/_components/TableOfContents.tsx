@@ -17,7 +17,7 @@ export default function TableOfContents() {
         Table of Contents
       </p>
 
-      <ul className="flex flex-col gap-[6px] h-[calc(-265px+100vh)] mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] overflow-y-scroll">
+      <ul className="flex flex-col gap-[6px] h-[calc(-265px+100vh)] mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] overflow-y-scroll overscroll-contain">
         {tableOfContents}
       </ul>
     </aside>
