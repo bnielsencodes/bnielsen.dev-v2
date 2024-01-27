@@ -14,7 +14,7 @@ export default function ProjectsSection() {
       {/* section heading */}
       <h2
         id="projects-section-heading"
-        className="relative z-0 w-[130px] pt-10 mx-auto text-neutral-200 dark:text-neutral-500 text-[2.5rem] font-bold text-center after:content-[''] after:absolute after:bottom-[5px] after:right-0 after:-z-10 after:w-[93px] after:h-[14px] after:bg-neutral-400 dark:after:bg-neutral-300 lg:w-[143px] lg:text-[2.75rem] lg:after:bottom-[7px] lg:after:w-[101px]"
+        className="relative z-0 w-[130px] pt-20 mx-auto text-neutral-200 dark:text-neutral-500 text-[2.5rem] font-bold text-center after:content-[''] after:absolute after:bottom-[5px] after:right-0 after:-z-10 after:w-[93px] after:h-[14px] after:bg-neutral-400 dark:after:bg-neutral-300 lg:w-[143px] lg:text-[2.75rem] lg:after:bottom-[7px] lg:after:w-[101px]"
       >
         Work
       </h2>
