@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function ViewPortfolio() {
   return (
     <Link
-      className="flex gap-2 text-neutral-200 dark:text-neutral-500 font-sans text-2xl font-semibold transition-opacity duration-300 lg:hover:opacity-90"
+      className="flex gap-2 text-neutral-200 dark:text-neutral-500 font-sans text-2xl font-semibold transition-opacity lg:hover:opacity-90"
       href="/"
     >
       <svg

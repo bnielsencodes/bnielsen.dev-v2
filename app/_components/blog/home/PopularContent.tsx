@@ -24,7 +24,10 @@ export default function PopularContent() {
                 height="0"
                 sizes="100vw"
               />
-              <a className="lg:hover:opacity-80" href={term.link}>
+              <a
+                className="transition-opacity lg:hover:opacity-80"
+                href={term.link}
+              >
                 {term.title}
               </a>
             </li>

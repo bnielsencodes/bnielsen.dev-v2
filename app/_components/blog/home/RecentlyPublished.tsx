@@ -18,7 +18,7 @@ export default function RecentlyPublished() {
               {...{ post }}
             >
               <Link href="/blog/posts/web-development/web-related-terms">
-                <p className="text-neutral-100 dark:text-neutral-600 text-[22px] leading-[30px] font-extrabold lg:group-hover:text-accent-100 lg:dark:group-hover:text-accent-200">
+                <p className="text-neutral-100 dark:text-neutral-600 text-[22px] leading-[30px] font-extrabold transition-colors lg:group-hover:text-accent-100 lg:dark:group-hover:text-accent-200">
                   {post.title}
                 </p>
                 <p className="my-4 text-neutral-200 dark:text-neutral-500 font-sans text-[17px] leading-[28px] font-medium">
