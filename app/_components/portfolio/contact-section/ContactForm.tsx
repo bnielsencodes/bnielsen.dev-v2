@@ -24,7 +24,7 @@ export default function ContactForm() {
         <h2 className="m-0 text-neutral-200 dark:text-neutral-500 text-2xl font-bold text-center md:text-[1.65rem]">
           Let<span>&apos;</span>s connect!
         </h2>
-        <div className="pt-[6px] mb-2 text-neutral-300 dark:text-neutral-500 font-sans text-center dark:opacity-70 md:text-[0.95rem]">
+        <div className="pt-[6px] mb-2 text-neutral-300 dark:text-neutral-500 font-sans text-center dark:opacity-70">
           Email me at{" "}
           <Image
             className="inline w-[21px] h-[21px] mr-[3px] mb-[2px] ml-[1px]"
@@ -39,14 +39,12 @@ export default function ContactForm() {
             <ClipboardCopy />
           </div>
           {/* mobile/tablets */}
-          <strong className="lg:hidden">
-            <a
-              className="inline p-0 border-0 bg-neutral-500 dark:bg-neutral-200 text-accent-100 dark:text-accent-200"
-              href="mailto:bnielsencodes@gmail.com"
-            >
-              brandon@bnielsen.dev
-            </a>
-          </strong>
+          <a
+            className="inline lg:hidden p-0 border-0 bg-neutral-500 dark:bg-neutral-200 text-accent-100 dark:text-accent-200 font-bold"
+            href="mailto:bnielsencodes@gmail.com"
+          >
+            brandon@bnielsen.dev
+          </a>
           <br />
           or send me a quick message here:
         </div>

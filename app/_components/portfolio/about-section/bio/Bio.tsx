@@ -24,7 +24,7 @@ export default function Bio() {
           and creating a smooth seamless user experience. If you have an idea
           you think I could help bring to life,{" "}
           <a
-            className="outline-light-theme dark:outline-dark-theme opacity-transition rounded-sm text-accent-100 dark:text-accent-200 focus:opacity-80 lg:hover:opacity-80"
+            className="outline-light-theme dark:outline-dark-theme opacity-transition rounded-sm text-accent-100 dark:text-accent-200 font-medium focus:opacity-80 lg:hover:opacity-80"
             href="#contact-section"
           >
             feel free to reach out and let&apos;s talk
@@ -33,19 +33,19 @@ export default function Bio() {
           playing video games, spending time with family, enjoying the outdoors,
           or lurking on the{" "}
           <a
-            className="outline-light-theme dark:outline-dark-theme opacity-transition rounded-sm text-accent-100 dark:text-accent-200 focus:opacity-80 lg:hover:opacity-80"
+            className="outline-light-theme dark:outline-dark-theme opacity-transition rounded-sm text-accent-100 dark:text-accent-200 font-medium focus:opacity-80 lg:hover:opacity-80"
             href="https://reddit.com"
             target="_blank"
           >
             front page of the internet
           </a>
-          . I also recently started writing my own blog. Check it out{" "}
+          . I also recently started writing my own blog.{" "}
           <a
-            className="outline-light-theme dark:outline-dark-theme opacity-transition rounded-sm text-accent-100 dark:text-accent-200 focus:opacity-80 lg:hover:opacity-80"
+            className="outline-light-theme dark:outline-dark-theme opacity-transition rounded-sm text-accent-100 dark:text-accent-200 font-medium focus:opacity-80 lg:hover:opacity-80"
             href="/blog"
             target="_blank"
           >
-            here
+            Check it out here
           </a>
           .
         </p>
