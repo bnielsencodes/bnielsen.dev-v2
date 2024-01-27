@@ -51,7 +51,7 @@ export default function Blog() {
           height="0"
           sizes="100vw"
         />
-        <div className="flex w-full flex-col pt-[56px] px-5 pb-40 md:grid md:grid-cols-blogHome md:grid-rows-blogHome md:items-start md:gap-x-[96px] md:gap-y-[64px] md:max-w-[1100px] md:px-8 md:mx-auto">
+        <div className="home-grid flex w-full flex-col pt-[56px] px-5 pb-40 md:items-start md:max-w-[1100px] md:px-8 md:mx-auto">
           <RecentlyPublished />
           <TopCategories />
           <PopularContent />
@@ -74,7 +74,7 @@ export default function Blog() {
           height="0"
           sizes="100vw"
         />
-        <div className="flex w-full flex-col pt-[56px] px-4 pb-40 md:grid md:grid-cols-blogHome md:grid-rows-blogHome md:items-start md:gap-x-[96px] md:gap-y-[64px] md:max-w-[1100px] md:px-8 md:mx-auto">
+        <div className="home-grid flex w-full flex-col pt-[56px] px-4 pb-40 md:items-start md:max-w-[1100px] md:px-8 md:mx-auto">
           <RecentlyPublished />
           <TopCategories />
           <PopularContent />

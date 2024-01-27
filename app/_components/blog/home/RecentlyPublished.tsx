@@ -24,7 +24,7 @@ export default function RecentlyPublished() {
   });
 
   return (
-    <section className="w-full md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-[-1]">
+    <section className="recent w-full md:col-start-1 md:col-end-2 md:row-start-1 md:row-end-[-1]">
       <h2 className="pb-10 text-accent-100 dark:text-accent-200 text-[17px] font-bold uppercase tracking-widest">
         Recently Published
       </h2>
