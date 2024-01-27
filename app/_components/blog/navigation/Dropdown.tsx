@@ -44,18 +44,18 @@ export default function Dropdown() {
       >
         <g
           fill="#ededed"
-          fill-rule="nonzero"
+          fillRule="nonzero"
           stroke="none"
-          stroke-width="1"
-          stroke-linecap="butt"
-          stroke-linejoin="miter"
-          stroke-miterlimit="10"
-          stroke-dasharray=""
-          stroke-dashoffset="0"
-          font-family="none"
-          font-weight="none"
-          font-size="none"
-          text-anchor="none"
+          strokeWidth="1"
+          strokeLinecap="butt"
+          strokeLinejoin="miter"
+          strokeMiterlimit="10"
+          strokeDasharray=""
+          strokeDashoffset="0"
+          fontFamily="none"
+          fontWeight="none"
+          fontSize="none"
+          textAnchor="none"
         >
           <g transform="translate(256.00211,255.99644) rotate(180) scale(3.55556,3.55556)">
             <path d="M57.469,17.07c1.545,2.488 1.693,5.541 0.396,8.167l-14.323,28.98c-1.428,2.89 -4.317,4.685 -7.541,4.685c-3.224,0 -6.113,-1.795 -7.541,-4.686l-14.324,-28.979c-1.298,-2.626 -1.149,-5.679 0.396,-8.167c1.546,-2.487 4.217,-3.973 7.146,-3.973h28.646c2.928,0.001 5.599,1.486 7.145,3.973z"></path>

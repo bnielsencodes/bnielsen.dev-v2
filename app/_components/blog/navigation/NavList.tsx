@@ -14,9 +14,9 @@ export default function NavList() {
         </Link>
       </li>
 
-      <li className="nav-item outline-light-theme dark:outline-dark-theme group/posts relative flex items-center gap-2 rounded-sm -mr-3 cursor-pointer">
+      <li className="nav-item outline-light-theme dark:outline-dark-theme relative flex items-center gap-2 rounded-sm -mr-3 cursor-pointer">
         <Link
-          className="nav-link posts-link underline-light dark:underline-dark outline-light-theme dark:outline-dark-theme underlineAnimation all-transition rounded-sm text-neutral-200 dark:text-neutral-500 focus:opacity-80 group-hover/posts:text-opacity-80"
+          className="nav-link posts-link underline-light dark:underline-dark outline-light-theme dark:outline-dark-theme underlineAnimation all-transition rounded-sm text-neutral-200 dark:text-neutral-500 focus:opacity-80 hover:opacity-80"
           href="/blog/posts"
           aria-label="posts"
         >
