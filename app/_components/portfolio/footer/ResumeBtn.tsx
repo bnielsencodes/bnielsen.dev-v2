@@ -37,7 +37,7 @@ export default function ResumeBtn() {
         </g>
       </svg>
 
-      <p className="font-sans text-[1.125rem] tracking-wide text-neutral-200 group-focus:opacity-90 dark:text-neutral-500 lg:group-hover:opacity-90">
+      <p className="font-sans text-[1.125rem] tracking-wide text-neutral-200 group-focus:opacity-90 transition-opacity duration-300 dark:text-neutral-500 lg:group-hover:opacity-90">
         view my resume
       </p>
     </a>
