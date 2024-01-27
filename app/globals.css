@@ -162,6 +162,26 @@ skill tooltip label bg gradients (figma and vite)
   animation-direction: normal, alternate;
 }
 
+@media (min-width: 768px) {
+  .home-grid {
+    display: grid;
+    grid-template: "recent categories" "newest popular" 1fr / 2fr 1fr;
+    gap: 64px 96px;
+  }
+
+  .recent {
+    grid-area: recent;
+  }
+
+  .categories {
+    grid-area: categories;
+  }
+
+  .popular {
+    grid-area: popular;
+  }
+}
+
 @media (min-width: 1024px) {
   .btn-dark:hover {
     opacity: 0;
