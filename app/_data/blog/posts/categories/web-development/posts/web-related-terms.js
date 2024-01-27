@@ -69,13 +69,13 @@ const termsWithoutId = [
     seeAlso: [
       {
         id: 1,
-        name: "Asynchronous,",
-        link: "#asynchronous",
+        name: "Async/Await,",
+        link: "#async-await",
       },
       {
         id: 2,
-        name: "Async/Await,",
-        link: "#async-await",
+        name: "Asynchronous,",
+        link: "#asynchronous",
       },
       {
         id: 3,
