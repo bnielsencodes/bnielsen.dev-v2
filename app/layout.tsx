@@ -103,7 +103,7 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${roboto.variable} ${mosk.variable} font-mosk select-none antialiased`}
+        className={`${roboto.variable} ${mosk.variable} bg-neutral-600 dark:bg-neutral-100 font-mosk select-none antialiased`}
       >
         <Providers>{children}</Providers>
         <Analytics />
