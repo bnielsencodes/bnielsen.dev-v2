@@ -41,6 +41,7 @@
 - [Framer Motion](https://www.framer.com/motion/)
 - [CSS Animations](https://www.w3schools.com/css/css3_animations.asp)
 - [FormSpree React](https://help.formspree.io/hc/en-us/articles/360055613373-The-Formspree-React-library)
+- [next-themes](https://www.npmjs.com/package/next-themes?activeTab=readme)
 - [Customized SVG Icons - Icons8](https://icons8.com/icons)
 - [Mosk Typeface - Iulian Maftei via Behance](<https://www.behance.net/gallery/33966928/Mosk-Typeface-(Free)>)
 - [Roboto Typeface - Google Fonts](https://fonts.google.com/?query=roboto)
