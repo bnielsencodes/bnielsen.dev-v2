@@ -224,6 +224,11 @@ skill tooltip label bg gradients (figma and vite)
     pointer-events: none;
   }
 
+  .posts-link::before,
+  .posts-link::after {
+    top: 90%;
+  }
+
   .nav-link::before {
     content: "";
   }
