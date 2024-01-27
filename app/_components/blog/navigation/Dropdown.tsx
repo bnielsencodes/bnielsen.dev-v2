@@ -13,10 +13,13 @@ export default function Dropdown() {
     <>
       {/* dropdown toggle icon */}
       <svg
-        className={clsx("w-8 h-6 mt-[3px] hover:opacity-80", {
-          "rotate-180 pl-2": !dropdownOpen,
-          "pr-2 pl-0": dropdownOpen,
-        })}
+        className={clsx(
+          "w-8 h-6 mt-[3px] transition-opacity hover:opacity-80",
+          {
+            "rotate-180 pl-2": !dropdownOpen,
+            "pr-2 pl-0": dropdownOpen,
+          }
+        )}
         onClick={() => toggleDropdown()}
         xmlns="http://www.w3.org/2000/svg"
         x="0px"

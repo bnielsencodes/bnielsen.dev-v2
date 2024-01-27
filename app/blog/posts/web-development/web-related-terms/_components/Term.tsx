@@ -19,6 +19,7 @@ export default function Term({
     <li id={term.target} className="pt-16">
       <p className="text-3xl font-bold">{term.name}</p>
       <p className="pt-3">{term.definition}</p>
+
       {term.seeAlso && (
         <ul className="flex flex-wrap pt-6">
           <li className="min-w-[73.15px] pr-[6px] text-neutral-300 dark:text-neutral-500 text-base leading-[22px]">
@@ -27,7 +28,7 @@ export default function Term({
           {term.seeAlso.map((term) => {
             return (
               <li
-                className="pr-2 text-neutral-300 dark:text-neutral-400 text-base leading-[22px] text-opacity-80 hover:opacity-80"
+                className="pr-2 text-neutral-300 dark:text-neutral-400 text-base leading-[22px] transition-opacity text-opacity-80 hover:opacity-80"
                 key={term.id}
               >
                 <a href={term.link}>{term.name}</a>
