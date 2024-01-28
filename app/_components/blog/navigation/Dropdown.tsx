@@ -34,8 +34,8 @@ export default function Dropdown() {
 
       {/* caret svg */}
       <svg
-        className={clsx("absolute left-[3.775rem] w-6 h-6", {
-          "top-[27px] block": dropdownOpen,
+        className={clsx("absolute left-[3.7rem] z-10 w-6 h-6", {
+          "top-[24px] block": dropdownOpen,
           "top-0 hidden": !dropdownOpen,
         })}
         xmlns="http://www.w3.org/2000/svg"
@@ -46,7 +46,7 @@ export default function Dropdown() {
         viewBox="0,0,256,256"
       >
         <g
-          fill="#ededed"
+          className="fill-[#fff] dark:fill-neutral-600"
           fillRule="nonzero"
           stroke="none"
           strokeWidth="1"
@@ -69,9 +69,9 @@ export default function Dropdown() {
       {/* dropdown list */}
       <ul
         className={clsx(
-          "all-transition absolute left-9 p-6 rounded-lg bg-neutral-200 dark:bg-neutral-500 text-neutral-500 dark:text-neutral-200 text-[17px] font-semibold",
+          "all-transition absolute left-9 p-6 rounded-lg bg-[#fff] dark:bg-neutral-600 text-neutral-200 text-[17px] font-semibold shadow-2xl dark:shadow-none",
           {
-            "top-[43px] block": dropdownOpen,
+            "top-[40px] block": dropdownOpen,
             "top-0 hidden": !dropdownOpen,
           }
         )}
