@@ -22,7 +22,7 @@ export default function ResumeBtn() {
           d="M19.5,91C13.71,91,9,86.29,9,80.5v-61C9,13.71,13.71,9,19.5,9h61C86.29,9,91,13.71,91,19.5v61 C91,86.29,86.29,91,80.5,91H19.5z"
         />
         <path
-          className="relative flex h-48 items-start justify-between fill-[#005e98] pr-[27px] pt-8 dark:fill-[#1aa7ff]"
+          className="relative flex h-48 items-start justify-between fill-[#1aa7ff] pr-[27px] pt-8"
           d="M15.5,80.5v-61c0-2.209,1.791-4,4-4h61c2.209,0,4,1.791,4,4v61c0,2.209-1.791,4-4,4h-61 C17.291,84.5,15.5,82.709,15.5,80.5z"
         />
         <path
