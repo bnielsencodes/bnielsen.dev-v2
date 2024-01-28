@@ -8,7 +8,7 @@ export default function ReadMore() {
         Read more
       </p>
       <Image
-        className="absolute top-[2.5px] right-0 w-[19px] h-[19px] transition-all opacity-0 lg:group-hover:opacity-100 lg:group-hover/arrow:scale-110"
+        className="absolute top-[2.5px] right-0 w-[20px] h-[20px] transition-all opacity-0 lg:group-hover:opacity-100 lg:group-hover/arrow:scale-110"
         src={arrowRight}
         alt="arrow pointing right"
         width="0"
