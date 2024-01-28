@@ -1,4 +1,3 @@
-// is next line needed?
 "use client";
 import NavBar from "@/app/_components/blog/navigation/NavBar";
 import Header from "@/app/_components/blog/posts/header/Header";
