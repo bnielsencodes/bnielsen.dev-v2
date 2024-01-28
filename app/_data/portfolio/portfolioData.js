@@ -191,22 +191,4 @@ const skillsLg = [
   },
 ];
 
-const socials = [
-  {
-    id: 1,
-    name: "linkedIn",
-    link: "https://linkedin.com/in/bnielsencodes",
-  },
-  {
-    id: 2,
-    name: "github",
-    link: "https://github.com/bnielsencodes",
-  },
-  {
-    id: 3,
-    name: "email",
-    link: "mailto:brandon@bnielsen.dev",
-  },
-];
-
-export { projects, skills, skillsLg, socials };
+export { projects, skills, skillsLg };
