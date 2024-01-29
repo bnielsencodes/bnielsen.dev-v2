@@ -55,6 +55,7 @@ export default function TermAccordion({
           sizes="100vw"
         />
       </div>
+
       {isActive && (
         <>
           <p className="pt-3">{term.definition}</p>
