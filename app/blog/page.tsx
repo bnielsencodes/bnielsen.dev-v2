@@ -10,6 +10,7 @@ import RecentlyPublished from "../_components/blog/home/RecentlyPublished";
 import TopCategories from "../_components/blog/home/TopCategories";
 import PopularContent from "../_components/blog/home/PopularContent";
 import Footer from "../_components/blog/footer/Footer";
+import clsx from "clsx";
 
 export default function Blog() {
   const [mounted, setMounted] = useState(false);
@@ -25,8 +26,7 @@ export default function Blog() {
       <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
         <NavBar />
         <Header />
-        <div className="h-[200px] bg-neutral-600 dark:bg-neutral-100"></div>
-        <div className="home-grid flex w-full flex-col pt-[175px] px-5 pb-40 md:items-start md:max-w-[1100px] md:px-8 md:mx-auto">
+        <div className="home-grid flex flex-col w-full pt-[calc(22.223vw+55px)] px-4 pb-40 md:items-start md:max-w-[1100px] md:px-8 md:mx-auto">
           <RecentlyPublished />
           <TopCategories />
           <PopularContent />
