@@ -24,7 +24,7 @@ export default function TermAccordion({
   const [isActive, setIsActive] = useState(false);
 
   return (
-    <li className="py-5 md:py-7 px-4 md:px-7 mt-4 rounded-lg bg-neutral-200 transition-all duration-1000">
+    <li className="py-5 md:py-7 px-4 md:px-7 mt-4 rounded-lg bg-neutral-500 dark:bg-neutral-200 transition-all duration-1000">
       <div className="relative" onClick={() => setIsActive(!isActive)}>
         <p className="text-2xl font-bold lg:text-3xl">{term.name}</p>
 
