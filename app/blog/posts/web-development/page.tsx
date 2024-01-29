@@ -7,7 +7,7 @@ import Footer from "../../../_components/blog/footer/Footer";
 
 export default function WebDevelopment() {
   return (
-    <main className="bg-neutral-600 dark:bg-neutral-100">
+    <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
       <div className="pt-[192px] pb-[100px] lg:max-w-[1100px] lg:mx-auto">
         <CategoryHeading title="Web Development" length={posts.length} />

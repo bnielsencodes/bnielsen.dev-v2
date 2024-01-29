@@ -2,7 +2,7 @@ export default function Header() {
   return (
     <header
       id="header"
-      className="flex items-center h-screen pt-[56px] px-5 bg-neutral-600 dark:bg-neutral-100 md:px-8 lg:px-0"
+      className="flex items-center h-screen pt-[56px] px-5 bg-neutral-500 dark:bg-neutral-200 md:px-8 lg:px-0"
     >
       <div className="flex flex-col justify-center w-full max-w-[1100px] mx-auto lg:items-center">
         <h1 className="mt-8 mb-[0.7rem] text-neutral-100 dark:text-neutral-600 text-[13vw] leading-[1.2] font-extrabold text-center md:mb-6 lg:text-8xl lg:leading-[1.15]">

@@ -22,7 +22,7 @@ export default function Blog() {
 
   if (!mounted) {
     return (
-      <main className="bg-neutral-500 dark:bg-neutral-200">
+      <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
         <NavBar />
         <Header />
         <div className="h-[200px] bg-neutral-600 dark:bg-neutral-100"></div>
@@ -38,11 +38,11 @@ export default function Blog() {
 
   if (resolvedTheme === "light") {
     return (
-      <main className="bg-neutral-500">
+      <main className="blog bg-neutral-600">
         <NavBar />
         <Header />
         <Image
-          className="w-full mb-[-1px] bg-neutral-600"
+          className="w-full mb-[-1px] bg-neutral-500"
           src={waveLight}
           alt="wave section divider"
           width="0"
@@ -61,11 +61,11 @@ export default function Blog() {
 
   if (resolvedTheme === "dark") {
     return (
-      <main className="bg-neutral-200">
+      <main className="blog dark bg-neutral-100">
         <NavBar />
         <Header />
         <Image
-          className="w-full mb-[-1px] bg-neutral-100"
+          className="w-full mb-[-1px] bg-neutral-200"
           src={waveDark}
           alt="wave section divider"
           width="0"

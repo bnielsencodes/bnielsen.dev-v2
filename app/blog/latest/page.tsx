@@ -11,7 +11,7 @@ export default function Latest() {
   });
 
   return (
-    <main className="bg-neutral-600 dark:bg-neutral-100">
+    <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
       <div className="pt-[192px] pb-[100px] lg:max-w-[1100px] lg:mx-auto">
         <CategoryHeading title="Latest Posts" length={latestPosts.length} />

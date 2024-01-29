@@ -28,7 +28,7 @@ export default function Posts() {
   });
 
   return (
-    <main className="bg-neutral-600 dark:bg-neutral-100">
+    <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
       <div className="pt-[192px] pb-[160px] lg:max-w-[1100px] lg:mx-auto">
         {categories}

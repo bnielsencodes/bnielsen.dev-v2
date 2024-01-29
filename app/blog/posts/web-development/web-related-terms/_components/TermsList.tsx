@@ -13,6 +13,7 @@ export default function TermsList() {
           return <Term key={term.id} {...{ term }} />;
         })}
       </ul>
+
       <ul className="lg:hidden pb-48">
         {terms.map((term) => {
           return <TermAccordion key={term.id} {...{ term }} />;

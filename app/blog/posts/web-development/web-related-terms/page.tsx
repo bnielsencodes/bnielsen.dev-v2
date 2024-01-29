@@ -12,7 +12,7 @@ export default function WebRelatedTerms() {
   };
 
   return (
-    <main className="bg-neutral-600 dark:bg-neutral-100">
+    <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
       <Header {...{ name, slug }} />
       <div className="flex w-full gap-4 pt-[56px] px-4 pb-4 mx-auto md:max-w-[704px] md:px-0 xl:max-w-[1100px] xl:px-8">

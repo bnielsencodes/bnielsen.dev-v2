@@ -7,6 +7,15 @@ body::-webkit-scrollbar {
   width: 0 !important;
 }
 
+/* sets website bg color on blog pages */
+body:has(main.blog) {
+  background: #ededed;
+}
+
+body:has(main.blog.dark) {
+  background: #272727;
+}
+
 /* HIDE SCROLLBAR BUT STILL ALLOW SCROLL (FIREFOX) */
 @-moz-document url-prefix() {
   html {

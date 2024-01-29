@@ -4,6 +4,7 @@ import { SpeedInsights } from "@vercel/speed-insights/next";
 import Providers from "./providers";
 import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
+import clsx from "clsx";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -96,6 +97,8 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const portfolio = true;
+
   return (
     <html
       lang="en"
@@ -103,7 +106,10 @@ export default function RootLayout({
       suppressHydrationWarning
     >
       <body
-        className={`${roboto.variable} ${mosk.variable} bg-neutral-600 dark:bg-neutral-100 font-mosk select-none antialiased`}
+        className={clsx(
+          `${roboto.variable} ${mosk.variable} font-mosk select-none antialiased`,
+          { "bg-[#fafafa] dark:bg-[#1a1a1a]": portfolio }
+        )}
       >
         <Providers>{children}</Providers>
         <Analytics />
