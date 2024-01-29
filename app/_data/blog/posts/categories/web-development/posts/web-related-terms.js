@@ -6873,7 +6873,7 @@ export const post = {
   subtitle: "A collection of web related terminology and their definitions",
   description:
     "A collection of common web related terminology and their definitions. Whether you're just starting out or a senior developer, this list will help ensure that you sound like an industry pro. Covering CSS, databases, HTML, JavaScript, Next.js, React, Tailwind CSS, the web in general, and more.",
-  date: "January 27th, 2023",
+  date: "January 28th, 2023",
   link: "/blog/posts/web-development/web-related-terms",
   tags: ["career", "css", "javascript", "next.js", "react", "web-development"],
   content: {
