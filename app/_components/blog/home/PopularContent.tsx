@@ -4,7 +4,7 @@ import arrowRight from "@/public/assets/icons/arrow-right.svg";
 
 export default function PopularContent() {
   return (
-    <section className="popular sticky top-[90px] hidden text-[17px] font-bold tracking-wider text-neutral-200 md:col-start-2 md:col-end-[-1] md:row-start-2 md:row-end-[-1] md:block">
+    <section className="popular sticky top-[90px] text-[17px] font-bold tracking-wider text-neutral-200 md:col-start-2 md:col-end-[-1] md:row-start-2 md:row-end-[-1] md:block">
       <p className="uppercase text-accent-100 dark:text-accent-200">
         Popular Content
       </p>
