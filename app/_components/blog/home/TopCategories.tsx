@@ -11,7 +11,7 @@ export default function TopCategories() {
         {postsData.categories.map((category) => {
           return (
             <li
-              className="py-[6px] px-[12px] rounded-lg bg-neutral-400 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-500 text-sm tracking-[-0.0125em] transition-opacity lg:hover:opacity-80 lg:hover:cursor-pointer"
+              className="py-[7px] px-3 rounded-lg bg-neutral-400 dark:bg-neutral-300 text-neutral-200 dark:text-neutral-500 text-sm tracking-[-0.0125em] transition-opacity lg:hover:opacity-80 lg:hover:cursor-pointer"
               key={category.id}
             >
               <a href={category.link}>{category.title}</a>
