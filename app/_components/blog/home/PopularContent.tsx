@@ -9,7 +9,7 @@ export default function PopularContent() {
         Popular Content
       </p>
 
-      <ul className="flex flex-col gap-[6px] -ml-8 mt-8 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px]">
+      <ul className="flex flex-col gap-[6px] mt-8 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] lg:-ml-8">
         {popularContentData.map((term) => {
           return (
             <li
