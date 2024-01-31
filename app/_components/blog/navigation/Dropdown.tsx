@@ -69,7 +69,7 @@ export default function Dropdown() {
       {/* dropdown list */}
       <ul
         className={clsx(
-          "all-transition absolute left-9 p-6 rounded-lg bg-[#fff] dark:bg-neutral-600 text-neutral-200 text-[17px] font-semibold shadow-2xl dark:shadow-none",
+          "all-transition absolute left-9 p-6 rounded-lg bg-neutral-600 text-neutral-200 text-[17px] font-semibold shadow-2xl dark:shadow-none",
           {
             "top-[40px] block": dropdownOpen,
             "top-0 hidden": !dropdownOpen,
