@@ -9,11 +9,11 @@ export default function RecentlyPublished() {
         Recently Published
       </h2>
 
-      <ul>
+      <ul className="flex flex-col row-gap-[52px]">
         {latestPostsData.slice(0, 20).map((post) => {
           return (
             <li
-              className="group pr-4 mb-[52px] lg:hover:cursor"
+              className="group pr-4 lg:hover:cursor"
               key={post.id}
               {...{ post }}
             >
