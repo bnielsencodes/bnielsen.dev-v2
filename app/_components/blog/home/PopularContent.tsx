@@ -5,9 +5,9 @@ import arrowRight from "@/public/assets/icons/arrow-right.svg";
 export default function PopularContent() {
   return (
     <section className="popular sticky top-[90px] text-[17px] font-bold tracking-wider text-neutral-200 md:col-start-2 md:col-end-[-1] md:row-start-2 md:row-end-[-1] md:block">
-      <p className="uppercase text-accent-100 dark:text-accent-200">
+      <h2 className="uppercase text-accent-100 dark:text-accent-200">
         Popular Content
-      </p>
+      </h2>
 
       <ul className="flex flex-col gap-[6px] mt-8 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] lg:-ml-8">
         {popularContentData.map((term) => {

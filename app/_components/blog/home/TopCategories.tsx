@@ -3,9 +3,9 @@ import { postsData } from "@/app/_data/blog/posts/postsData";
 export default function TopCategories() {
   return (
     <section className="categories text-neutral-200 text-[17px] font-bold tracking-wider md:grid md:col-start-2 md:col-end-[-1] md:row-start-1 md:row-end-2">
-      <p className="uppercase text-accent-100 dark:text-accent-200">
+      <h2 className="uppercase text-accent-100 dark:text-accent-200">
         Top Categories
-      </p>
+      </h2>
 
       <ul className="flex flex-wrap gap-2 mt-8 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px] ">
         {postsData.categories.map((category) => {
