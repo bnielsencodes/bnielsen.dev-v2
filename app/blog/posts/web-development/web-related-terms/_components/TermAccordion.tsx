@@ -1,7 +1,7 @@
 import { useState } from "react";
 import Image from "next/image";
-import plusIcon from "@/public/assets/images/plusIcon.svg";
-import minusIcon from "@/public/assets/images/minusIcon.svg";
+import plusIcon from "@/public/assets/icons/plusIcon.svg";
+import minusIcon from "@/public/assets/icons/minusIcon.svg";
 import clsx from "clsx";
 
 export default function TermAccordion({
