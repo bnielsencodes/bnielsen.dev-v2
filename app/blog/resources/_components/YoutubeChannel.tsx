@@ -1,8 +1,6 @@
 import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
-import YTvideos from "@/app/_lib/ytvideos";
-
 export default function YoutubeChannel({
   channel,
 }: {
