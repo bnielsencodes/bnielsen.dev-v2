@@ -11,8 +11,8 @@ export default function YTvideos() {
       const results = await axios(
         `https://youtube.googleapis.com/youtube/v3/channels?part=statistics&forHandle=TraversyMedia&key=${youtubeApiKey}`
       );
-      setData(results.data);
-      console.log(results.data);
+      setData(results.data.subscriberCount);
+      console.log(results.data.subscriberCount);
     };
     fetchData();
   });
