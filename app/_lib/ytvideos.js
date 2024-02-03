@@ -9,7 +9,7 @@ export default function YTvideos() {
   useEffect(() => {
     const fetchData = async () => {
       const results = await axios(
-        `https://youtube.googleapis.com/youtube/v3/playlists?part=snippet&channelId=traversymedia&key=${youtubeApiKey}`
+        `https://youtube.googleapis.com/youtube/v3/statistics/subscriberCount&channelId=traversymedia&key=${youtubeApiKey}`
       );
       setData(results.data);
       console.log(results.data);
