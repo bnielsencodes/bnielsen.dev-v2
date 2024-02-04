@@ -1,7 +1,6 @@
 "use client";
-import { resources as resourcesData } from "@/app/_data/blog/resourcesData";
 import NavBar from "@/app/_components/blog/navigation/NavBar";
-import YoutubeChannel from "./_components/YoutubeChannel";
+import YTSection from "./_components/youtube/YTSection";
 import Footer from "@/app/_components/blog/footer/Footer";
 
 export default function Resources() {
@@ -21,21 +20,8 @@ export default function Resources() {
           a web developer
         </p>
 
-        {/* content container */}
-        <div className="mt-40">
-          <p id="youtube" className="mb-12 text-3xl font">
-            YouTube Channels
-          </p>
-
-          <ul
-            className="grid grid-cols-2 gap-x-3 gap-y-16"
-            role="list"
-            aria-labelledby="youtube"
-          >
-            {resourcesData.youtube.map((channel) => (
-              <YoutubeChannel key={channel.id} {...{ channel }} />
-            ))}
-          </ul>
+        <div className="flex justify-between w-full mt-40 mx-auto xl:max-w-[1100px]">
+          <YTSection />
         </div>
       </div>
 
