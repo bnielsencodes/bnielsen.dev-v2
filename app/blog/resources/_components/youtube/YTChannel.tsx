@@ -15,7 +15,7 @@ export default function YTChannel({
   return (
     <li>
       <Link
-        className="group flex items-center gap-3 px-3 py-4 bg-neutral-500 dark:bg-neutral-200 rounded-xl lg:gap-4 lg:px-4 lg:py-5"
+        className="group flex items-center gap-3 px-3 py-4 rounded-xl bg-neutral-500 dark:bg-neutral-200 shadow-xl dark:shadow-none lg:gap-4 lg:px-4 lg:py-5"
         href={channel.link}
         target="_blank"
       >
