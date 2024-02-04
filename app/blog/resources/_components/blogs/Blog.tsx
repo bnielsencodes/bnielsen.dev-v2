@@ -21,7 +21,7 @@ export default function YTChannel({
         target="_blank"
       >
         <Image
-          className="dark:hidden w-full md:w-1/2 lg:w-2/3 xl:w-3/5 rounded-lg lg:transition-opacity lg:group-hover:opacity-90"
+          className="dark:hidden w-full rounded-lg shadow-lg dark:shadow-none md:w-1/2 lg:w-2/3 lg:transition-opacity lg:group-hover:opacity-90 xl:w-3/5"
           src={blog.imgLight}
           alt={`${blog.title} YouTube Channel avatar image`}
           width="0"
@@ -29,7 +29,7 @@ export default function YTChannel({
           sizes="100vw"
         />
         <Image
-          className="hidden dark:block w-full md:w-1/2 lg:w-2/3 xl:w-3/5 rounded-lg lg:transition-opacity lg:group-hover:opacity-90"
+          className="hidden dark:block w-full rounded-lg shadow-lg dark:shadow-none md:w-1/2 lg:w-2/3 lg:transition-opacity lg:group-hover:opacity-90 xl:w-3/5"
           src={blog.imgDark}
           alt={`${blog.title} YouTube Channel avatar image`}
           width="0"
