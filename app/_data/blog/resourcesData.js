@@ -1,3 +1,4 @@
+// youtube channel images
 import imgFutur from "@/public/assets/images/resources/youtube/the-futur.jpg";
 import imgTheo from "@/public/assets/images/resources/youtube/theo3gg.jpg";
 import imgFireship from "@/public/assets/images/resources/youtube/fireship.jpg";
@@ -42,7 +43,7 @@ export const resources = {
     {
       id: 1,
       title: "The Futur",
-      link: "https://www.youtube.com/@thefutur",
+      link: "https://youtube.com/@thefutur",
       img: imgFutur,
       tags: [
         { id: 1, name: "career" },
@@ -52,7 +53,7 @@ export const resources = {
     {
       id: 2,
       title: "Theo - t3.gg",
-      link: "https://www.youtube.com/@t3dotgg",
+      link: "https://youtube.com/@t3dotgg",
       img: imgTheo,
       tags: [
         { id: 1, name: "career" },
@@ -63,7 +64,7 @@ export const resources = {
     {
       id: 3,
       title: "Fireship",
-      link: "https://www.youtube.com/@fireship",
+      link: "https://youtube.com/@fireship",
       img: imgFireship,
       tags: [
         { id: 1, name: "career" },
@@ -74,7 +75,7 @@ export const resources = {
     {
       id: 4,
       title: "Traversy Media",
-      link: "https://www.youtube.com/@TraversyMedia",
+      link: "https://youtube.com/@TraversyMedia",
       img: imgTraversy,
       tags: [
         { id: 1, name: "web development" },
@@ -85,7 +86,7 @@ export const resources = {
     {
       id: 5,
       title: "Kevin Powell",
-      link: "https://www.youtube.com/@KevinPowell",
+      link: "https://youtube.com/@KevinPowell",
       img: imgKevinPowell,
       tags: [
         { id: 1, name: "web development" },
@@ -96,7 +97,7 @@ export const resources = {
     {
       id: 6,
       title: "Web Dev Simplified",
-      link: "https://www.youtube.com/@WebDevSimplified",
+      link: "https://youtube.com/@WebDevSimplified",
       img: imgWebDevSimplified,
       tags: [
         { id: 1, name: "web development" },
@@ -107,7 +108,7 @@ export const resources = {
     {
       id: 7,
       title: "DesignCourse",
-      link: "https://www.youtube.com/@DesignCourse",
+      link: "https://youtube.com/@DesignCourse",
       img: imgDesignCourse,
       tags: [
         { id: 1, name: "web design" },
@@ -119,7 +120,7 @@ export const resources = {
     {
       id: 8,
       title: "Flux Academy",
-      link: "https://www.youtube.com/@FluxAcademy",
+      link: "https://youtube.com/@FluxAcademy",
       img: imgFluxAcademy,
       tags: [
         { id: 1, name: "web design" },
@@ -130,7 +131,7 @@ export const resources = {
     {
       id: 9,
       title: "Programming with Mosh",
-      link: "https://www.youtube.com/@programmingwithmosh",
+      link: "https://youtube.com/@programmingwithmosh",
       img: imgMosh,
       tags: [
         { id: 1, name: "web development" },
@@ -141,7 +142,7 @@ export const resources = {
     {
       id: 10,
       title: "Academind",
-      link: "https://www.youtube.com/@academind",
+      link: "https://youtube.com/@academind",
       img: imgAcademind,
       tags: [
         { id: 1, name: "web development" },
@@ -153,7 +154,7 @@ export const resources = {
     {
       id: 11,
       title: "Scrimba",
-      link: "https://www.youtube.com/@Scrimba",
+      link: "https://youtube.com/@Scrimba",
       img: imgScrimba,
       tags: [
         { id: 1, name: "web development" },
@@ -165,7 +166,7 @@ export const resources = {
     {
       id: 12,
       title: "Self Made Millennial",
-      link: "https://www.youtube.com/@SelfMadeMillennial",
+      link: "https://youtube.com/@SelfMadeMillennial",
       img: imgSelfMadeMillennial,
       tags: [
         { id: 1, name: "interviewing" },
