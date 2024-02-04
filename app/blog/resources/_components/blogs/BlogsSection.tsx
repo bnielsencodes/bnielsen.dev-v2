@@ -1,3 +1,6 @@
+import { resources as resourcesData } from "@/app/_data/blog/resourcesData";
+import Blog from "./Blog";
+
 export default function BlogsSection() {
   return (
     <section className="relative w-full border-t-2 border-neutral-200 dark:border-neutral-500 xl:max-w-[760px]">
@@ -13,6 +16,9 @@ export default function BlogsSection() {
         role="list"
         aria-labelledby="blogs"
       >
+        {resourcesData.blogs.map((blog) => (
+          <Blog key={blog.id} {...{ blog }} />
+        ))}
       </ul>
     </section>
   );
