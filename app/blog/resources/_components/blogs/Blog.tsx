@@ -2,6 +2,16 @@ import Link from "next/link";
 import Image, { StaticImageData } from "next/image";
 
 export default function YTChannel({
+  blog,
+}: {
+  blog: {
+    id: number;
+    title: string;
+    link: string;
+    imgLight: StaticImageData;
+    imgDark: StaticImageData;
+    tags: { id: number; name: string }[];
+  };
 }) {
   return (
     <li>
