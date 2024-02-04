@@ -10,10 +10,30 @@ import imgMosh from "@/public/assets/images/resources/youtube/programming-with-m
 import imgAcademind from "@/public/assets/images/resources/youtube/academind.jpg";
 import imgScrimba from "@/public/assets/images/resources/youtube/scrimba.jpg";
 import imgSelfMadeMillennial from "@/public/assets/images/resources/youtube/self-made-millennial.jpg";
+// blog website screenshots
+import imgJoshComeauLight from "@/public/assets/images/resources/blog/josh-comeau-light.png";
+import imgJoshComeauDark from "@/public/assets/images/resources/blog/josh-comeau-dark.png";
+import imgKentCDoddsLight from "@/public/assets/images/resources/blog/kent-c-dodds-light.png";
+import imgKentCDoddsDark from "@/public/assets/images/resources/blog/kent-c-dodds-dark.png";
+import imgOverreactedLight from "@/public/assets/images/resources/blog/overreacted-light.png";
+import imgOverreactedDark from "@/public/assets/images/resources/blog/overreacted-dark.png";
+import imgLeeRobLight from "@/public/assets/images/resources/blog/lee-robinson-light.png";
+import imgLeeRobDark from "@/public/assets/images/resources/blog/lee-robinson-dark.png";
+import imgFlavioCopesLight from "@/public/assets/images/resources/blog/flavio-copes-light.png";
+import imgFlavioCopesDark from "@/public/assets/images/resources/blog/flavio-copes-dark.png";
+import imgAndreiCalazansLight from "@/public/assets/images/resources/blog/andrei-calazans-light.png";
+import imgAndreiCalazansDark from "@/public/assets/images/resources/blog/andrei-calazans-dark.png";
+import imgStefanJudis from "@/public/assets/images/resources/blog/stefan-judis.png";
+import imgSamuelKraftLight from "@/public/assets/images/resources/blog/samuel-kraft-light.png";
+import imgSamuelKraftDark from "@/public/assets/images/resources/blog/samuel-kraft-dark.png";
+import imgCodrops from "@/public/assets/images/resources/blog/codrops.png";
+import imgModernCSS from "@/public/assets/images/resources/blog/modern-css.png";
+import imgSmashingMag from "@/public/assets/images/resources/blog/smashing-mag.png";
 
 // eslint-disable-next-line
 export const tableOfContents = [
   { id: 1, name: "YouTube Channels", link: "#youtube" },
+  { id: 2, name: "Blogs", link: "#blogs" },
 ];
 
 // eslint-disable-next-line
@@ -151,6 +171,130 @@ export const resources = {
         { id: 1, name: "interviewing" },
         { id: 2, name: "career" },
         { id: 3, name: "resume/cv" },
+      ],
+    },
+  ],
+  blogs: [
+    {
+      id: 1,
+      title: "Josh Comeau",
+      link: "https://joshwcomeau.com",
+      imgLight: imgJoshComeauLight,
+      imgDark: imgJoshComeauDark,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "css" },
+        { id: 3, name: "animations" },
+      ],
+    },
+    {
+      id: 2,
+      title: "Kent C. Dodds",
+      link: "https://kentcdodds.com/blog",
+      imgLight: imgKentCDoddsLight,
+      imgDark: imgKentCDoddsDark,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 3,
+      title: "Overreacted - by Dan Abramov",
+      link: "https://overreacted.io",
+      imgLight: imgOverreactedLight,
+      imgDark: imgOverreactedDark,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 4,
+      title: "Lee Robinson",
+      link: "https://leerob.io/blog",
+      imgLight: imgLeeRobLight,
+      imgDark: imgLeeRobDark,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 5,
+      title: "Flavio Copes",
+      link: "https://flaviocopes.com",
+      imgLight: imgFlavioCopesLight,
+      imgDark: imgFlavioCopesDark,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 6,
+      title: "Andrei Calazans",
+      link: "https://andrei-calazans.com/posts",
+      imgLight: imgAndreiCalazansLight,
+      imgDark: imgAndreiCalazansDark,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 7,
+      title: "Stefan Judis",
+      link: "https://stefanjudis.com/blog",
+      imgLight: imgStefanJudis,
+      imgDark: imgStefanJudis,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 8,
+      title: "Samuel Kraft",
+      link: "https://samuelkraft.com/blog",
+      imgLight: imgSamuelKraftLight,
+      imgDark: imgSamuelKraftDark,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 9,
+      title: "Codrops",
+      link: "https://tympanus.net/codrops",
+      imgLight: imgCodrops,
+      imgDark: imgCodrops,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 10,
+      title: "Modern CSS Solutions",
+      link: "https://moderncss.dev",
+      imgLight: imgModernCSS,
+      imgDark: imgModernCSS,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
+      ],
+    },
+    {
+      id: 11,
+      title: "Smashing Magazine",
+      link: "https://smashingmagazine.com/",
+      imgLight: imgSmashingMag,
+      imgDark: imgSmashingMag,
+      tags: [
+        { id: 1, name: "web development" },
+        { id: 2, name: "courses" },
       ],
     },
   ],
