@@ -1,6 +1,7 @@
 "use client";
 import NavBar from "@/app/_components/blog/navigation/NavBar";
 import YTSection from "./_components/youtube/YTSection";
+import BlogsSection from "./_components/blogs/BlogsSection";
 import TableOfContents from "./_components/TableOfContents";
 import Footer from "@/app/_components/blog/footer/Footer";
 
@@ -9,7 +10,7 @@ export default function Resources() {
     <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
       <NavBar />
 
-      <div className="min-h-screen pt-[130px] px-4 pb-[160px] md:px-8 lg:max-w-[1100px] lg:px-8 lg:mx-auto">
+      <div className="min-h-screen pt-[130px] px-4 pb-[160px] md:px-8 lg:px-8 lg:mx-auto xl:max-w-[1100px]">
         {/* heading */}
         <h1 className="mt-[200px] mb-3 text-neutral-100 dark:text-neutral-600 font-monk text-5xl font-bold">
           Resources
@@ -22,7 +23,10 @@ export default function Resources() {
         </h2>
 
         <div className="flex justify-between w-full mt-40 mx-auto xl:max-w-[1100px]">
-          <YTSection />
+          <div className="flex flex-col gap-40 w-full">
+            <YTSection />
+            <BlogsSection />
+          </div>
           <TableOfContents />
         </div>
       </div>
