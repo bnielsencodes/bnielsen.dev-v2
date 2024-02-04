@@ -3,10 +3,10 @@ import YTChannel from "./YTChannel";
 
 export default function YTSection() {
   return (
-    <section className="relative w-full border-t-2 border-neutral-500 xl:max-w-[760px]">
+    <section className="relative w-full border-t-2 border-neutral-200 dark:border-neutral-500 xl:max-w-[760px]">
       <p
         id="youtube"
-        className="absolute top-[-85px] left-[10px] px-[6px] bg-neutral-100 text-3xl font-semibold xl:pt-[62px]"
+        className="absolute top-[-22px] left-[10px] px-[6px] bg-neutral-600 dark:bg-neutral-100 text-3xl font-bold xl:top-[-97px] xl:pt-[74px]"
       >
         YouTube Channels
       </p>
