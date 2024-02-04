@@ -11,15 +11,15 @@ export default function Resources() {
 
       <div className="min-h-screen pt-[130px] px-4 pb-[160px] md:px-8 lg:max-w-[1100px] lg:px-8 lg:mx-auto">
         {/* heading */}
-        <h1 className="mt-[200px] mb-3 font-monk text-5xl font-bold">
+        <h1 className="mt-[200px] mb-3 text-neutral-100 dark:text-neutral-600 font-monk text-5xl font-bold">
           Resources
         </h1>
 
         {/* subheading */}
-        <p className="text-neutral-500 font-sans text-xl">
+        <h2 className="text-neutral-200 dark:text-neutral-500 font-sans text-xl">
           A curated list of resources to help unlock your greatest potential as
           a web developer
-        </p>
+        </h2>
 
         <div className="flex justify-between w-full mt-40 mx-auto xl:max-w-[1100px]">
           <YTSection />
