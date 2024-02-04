@@ -21,7 +21,7 @@ export default function NavBar() {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-30 flex items-center h-14 border-b border-neutral-400 dark:border-neutral-300 shadow-navbar dark:shadow-none bg-neutral-600 dark:bg-neutral-100 bg-opacity-80 dark:bg-opacity-80 backdrop-blur-sm">
-      <div className="relative flex items-center justify-start w-full pl-4 md:pl-8 lg:justify-between lg:max-w-[1100px] lg:px-8 lg:mx-auto">
+      <div className="relative flex items-center justify-start w-full pl-4 md:pl-8 lg:justify-between lg:max-w-[1100px] lg:pl-8 lg:pr-7 lg:mx-auto">
         {/* logo and name */}
         <div className="flex items-center">
           <ThemedLogo />
