@@ -39,7 +39,7 @@ export default function YTChannel({
           />
           {/* link icon on hover */}
           <svg
-            className="absolute top-2 right-2 transition-opacity opacity-0 lg:group-hover:opacity-100"
+            className="absolute top-2 right-2 transition-opacity opacity-0 lg:group-hover:opacity-60 dark:lg:group-hover:opacity-50"
             xmlns="http://www.w3.org/2000/svg"
             x="0px"
             y="0px"
