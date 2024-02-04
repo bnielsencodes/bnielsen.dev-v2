@@ -12,7 +12,7 @@ export default function Resources() {
 
       <div className="min-h-screen pt-[130px] px-4 pb-[160px] md:px-8 lg:px-8 lg:mx-auto xl:max-w-[1100px]">
         {/* heading */}
-        <h1 className="mt-[200px] mb-3 text-neutral-100 dark:text-neutral-600 font-monk text-5xl font-bold">
+        <h1 className="mt-[100px] mb-3 text-neutral-100 dark:text-neutral-600 font-monk text-5xl font-bold">
           Resources
         </h1>
 
