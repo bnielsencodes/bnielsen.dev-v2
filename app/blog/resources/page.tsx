@@ -1,6 +1,7 @@
 "use client";
 import NavBar from "@/app/_components/blog/navigation/NavBar";
 import YTSection from "./_components/youtube/YTSection";
+import TableOfContents from "./_components/TableOfContents";
 import Footer from "@/app/_components/blog/footer/Footer";
 
 export default function Resources() {
@@ -22,6 +23,7 @@ export default function Resources() {
 
         <div className="flex justify-between w-full mt-40 mx-auto xl:max-w-[1100px]">
           <YTSection />
+          <TableOfContents />
         </div>
       </div>
 

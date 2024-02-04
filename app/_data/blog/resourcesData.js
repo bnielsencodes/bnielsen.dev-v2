@@ -12,6 +12,11 @@ import imgScrimba from "@/public/assets/images/resources/youtube/scrimba.jpg";
 import imgSelfMadeMillennial from "@/public/assets/images/resources/youtube/self-made-millennial.jpg";
 
 // eslint-disable-next-line
+export const tableOfContents = [
+  { id: 1, name: "YouTube Channels", link: "#youtube" },
+];
+
+// eslint-disable-next-line
 export const resources = {
   youtube: [
     {
