@@ -12,7 +12,7 @@ export default function BlogsSection() {
       </p>
 
       <ul
-        className="flex flex-col gap-y-16 max-w-[400px] mt-[50px] mx-auto md:grid-cols-2 md:gap-x-3 md:max-w-[785px] md:mt-[80px] lg:gap-x-5 lg:gap-y-16 lg:mt-20"
+        className="flex flex-col gap-y-20 max-w-[400px] mt-[50px] mx-auto md:grid-cols-2 md:gap-x-3 md:gap-y-16 md:max-w-[785px] md:mt-[80px] lg:gap-x-5 lg:gap-y-16 lg:mt-20"
         role="list"
         aria-labelledby="blogs"
       >

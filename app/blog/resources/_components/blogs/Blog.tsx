@@ -16,7 +16,7 @@ export default function YTChannel({
   return (
     <li>
       <Link
-        className="group flex flex-col md:flex-row md:items-center gap-[0.85rem] lg:gap-4"
+        className="group flex flex-col gap-[0.85rem] md:flex-row md:items-center md:gap-4 lg:gap-4"
         href={blog.link}
         target="_blank"
       >
@@ -37,8 +37,8 @@ export default function YTChannel({
           sizes="100vw"
         />
 
-        <div className="flex flex-col gap-[0.65rem] pl-1">
-          <p className="text-[1.75rem] leading-[2.125rem] font-semibold lg:max-w-[250px] lg:transition-opacity lg:group-hover:opacity-80">
+        <div className="flex flex-col gap-[0.65rem] pl-1 md:pl-0">
+          <p className="text-[1.75rem] leading-[2.125rem] font-semibold md:max-w-[250px] lg:transition-opacity lg:group-hover:opacity-80">
             {blog.title}
           </p>
 
