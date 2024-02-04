@@ -15,7 +15,7 @@ export default function YTChannel({
   return (
     <li>
       <Link
-        className="group flex items-center gap-3 px-3 py-4 bg-neutral-200 rounded-xl lg:gap-4 lg:px-4 lg:py-5"
+        className="group flex items-center gap-3 px-3 py-4 bg-neutral-500 dark:bg-neutral-200 rounded-xl lg:gap-4 lg:px-4 lg:py-5"
         href={channel.link}
         target="_blank"
       >
@@ -36,7 +36,7 @@ export default function YTChannel({
           <div className="flex flex-wrap gap-1">
             {channel.tags.map((tag) => (
               <span
-                className="py-1 px-2 rounded-md bg-neutral-300 text-neutral-500 font-sans text-xs tracking-wide bg-opacity-40 lg:transition-opacity lg:group-hover:opacity-80"
+                className="py-1 px-2 rounded-md bg-neutral-300 text-neutral-200 dark:text-neutral-500 font-sans text-xs tracking-wide bg-opacity-10 dark:bg-opacity-30 lg:transition-opacity lg:group-hover:opacity-80"
                 key={tag.id}
               >
                 {tag.name}
