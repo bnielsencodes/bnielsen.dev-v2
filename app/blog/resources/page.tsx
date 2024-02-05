@@ -5,6 +5,7 @@ import BlogsSection from "./_components/blogs/BlogsSection";
 import NewslettersSection from "./_components/newsletters/NewslettersSection";
 import LearningPlatformsSection from "./_components/learning-platforms/LearningPlatformsSection";
 import DesignInspirationSection from "./_components/design-inspiration/DesignInspirationSection";
+import ToolsSection from "./_components/tools/ToolsSection";
 import TableOfContents from "./_components/TableOfContents";
 import Footer from "@/app/_components/blog/footer/Footer";
 
@@ -32,6 +33,7 @@ export default function Resources() {
             <NewslettersSection />
             <LearningPlatformsSection />
             <DesignInspirationSection />
+            <ToolsSection />
           </div>
           <TableOfContents />
         </div>
