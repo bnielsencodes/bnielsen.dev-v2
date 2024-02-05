@@ -27,7 +27,7 @@ export default function SubmitButton(props) {
           errors={props.state.errors}
         />
         <button
-          className="btn btn-primary btn-light shadow-xl text-neutral-200 font-semibold"
+          className="btn btn-primary btn-light outline-dark-theme shadow-xl text-neutral-200 font-semibold"
           type="submit"
           disabled={props.state.submitting}
           onClick={() => {
@@ -64,7 +64,7 @@ export default function SubmitButton(props) {
           errors={props.state.errors}
         />
         <button
-          className="btn btn-primary btn-dark text-neutral-500 shadow-xl font-semibold"
+          className="btn btn-primary btn-dark outline-light-theme text-neutral-500 shadow-xl font-semibold"
           type="submit"
           disabled={props.state.submitting}
           onClick={() => {
