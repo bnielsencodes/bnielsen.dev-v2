@@ -7,6 +7,7 @@ export default function DesignInspiration({
   inspiration: {
     id: number;
     title: string;
+    subtitle: string;
     link: string;
     imgLight: StaticImageData;
     imgDark: StaticImageData;
@@ -52,9 +53,15 @@ export default function DesignInspiration({
         </svg>
       </Link>
 
-      <p className="pl-1 text-[1.75rem] leading-[2.125rem] font-semibold md:max-w-[250px] md:pl-0">
-        {inspiration.title}
-      </p>
+      <div className="flex flex-col gap-[0.65rem] pl-1 md:pl-0">
+        <p className="text-[1.75rem] leading-[2.125rem] font-semibold md:max-w-[250px]">
+          {inspiration.title}
+        </p>
+
+        <p className="text-neutral-500 font-sans md:max-w-[284px]">
+          {inspiration.subtitle}
+        </p>
+      </div>
     </li>
   );
 }
