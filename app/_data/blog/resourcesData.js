@@ -637,4 +637,109 @@ export const resources = {
       imgDark: imgStackSorted,
     },
   ],
+  tools: [
+    {
+      id: 1,
+      title: "Gradient Generator",
+      subtitle: "Create beaufiful, lush gradients.",
+      link: "https://joshwcomeau.com/gradient-generator",
+      imgLight: imgGradientGenerator,
+      imgDark: imgGradientGenerator,
+    },
+    {
+      id: 2,
+      title: "Shadow Palette Generator",
+      subtitle: "Create a set of lush, realistic CSS shadows.",
+      link: "https://joshwcomeau.com/shadow-palette",
+      imgLight: imgShadowPaletteGenerator,
+      imgDark: imgShadowPaletteGenerator,
+    },
+    {
+      id: 3,
+      title: "Operator Lookup",
+      subtitle: "A quick-and-easy search engine for JavaScript operators.",
+      link: "https://joshwcomeau.com/operator-lookup",
+      imgLight: imgOperatorLookupLight,
+      imgDark: imgOperatorLookupDark,
+    },
+    {
+      id: 4,
+      title: "Laws of UX",
+      subtitle:
+        "A collection of best practices that designers can consider when building user interfaces.",
+      link: "https://lawsofux.com",
+      imgLight: imgLawsOfUx,
+      imgDark: imgLawsOfUx,
+    },
+    {
+      id: 5,
+      title: "ProfileMe.dev",
+      subtitle: "Create an amazing GitHub profile in minutes.",
+      link: "https://profileme.dev",
+      imgLight: imgProfileMeLight,
+      imgDark: imgProfileMeDark,
+    },
+    {
+      id: 6,
+      title: "Can I Use",
+      subtitle:
+        "Provides up-to-date browser support tables for support of front-end web technologies on desktop and mobile web browsers.",
+      link: "https://caniuse.com",
+      imgLight: imgCanIUseLight,
+      imgDark: imgCanIUseDark,
+    },
+    {
+      id: 7,
+      title: "WhoCanUse",
+      subtitle:
+        "Check contrast and experience color palettes at multiple levels of color vision deficiencies and other visual issues.",
+      link: "https://whocanuse.com",
+      imgLight: imgWhoCanIUse,
+      imgDark: imgWhoCanIUse,
+    },
+    {
+      id: 8,
+      title: "The Ally Project Accessibility Checklist",
+      subtitle:
+        "Check your website to make help ensure it meets WCAG guidelines.",
+      link: "https://a11yproject.com/checklist",
+      imgLight: imgA11yLight,
+      imgDark: imgA11yDark,
+    },
+    {
+      id: 9,
+      title: "JavaScript Array Explorer",
+      subtitle:
+        "Find the array method you need without digging through the docs.",
+      link: "https://arrayexplorer.netlify.app",
+      imgLight: imgArrayExplorer,
+      imgDark: imgArrayExplorer,
+    },
+    {
+      id: 10,
+      title: "Shots",
+      subtitle: "Pixel perfect browser mockups.",
+      link: "https://shots.so",
+      imgLight: imgShotsLight,
+      imgDark: imgShotsDark,
+    },
+    {
+      id: 11,
+      title: "Coolors",
+      subtitle:
+        "Create the perfect palette or get inspired by thousands of beautiful color schemes.",
+      link: "https://coolors.co",
+      imgLight: imgCoolors,
+      imgDark: imgCoolors,
+    },
+    {
+      id: 12,
+      title: "Notion",
+      subtitle:
+        "Notion is the connected workspace where better, faster work happens.",
+      link: "https://notion.so",
+      imgLight: imgNotion,
+      imgDark: imgNotion,
+    },
+  ],
 };
