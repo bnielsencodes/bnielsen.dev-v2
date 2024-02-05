@@ -530,7 +530,7 @@ export const resources = {
     },
     {
       id: 8,
-      title: "The Ally Project Accessibility Checklist",
+      title: "The Ally Project - Accessibility Checklist",
       subtitle:
         "Check your website to make help ensure it meets WCAG guidelines.",
       link: "https://a11yproject.com/checklist",
