@@ -337,4 +337,86 @@ export const resources = {
       ],
     },
   ],
+  newsletters: [
+    {
+      id: 1,
+      title: "TLDR",
+      link: "https://tldr.tech/newsletters",
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "tech" },
+        { id: 3, name: "web design" },
+        { id: 4, name: "mobile dev" },
+      ],
+    },
+    {
+      id: 2,
+      title: "Bytes",
+      link: "https://bytes.dev",
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "javascript" },
+      ],
+    },
+    {
+      id: 3,
+      title: "React Newsletter",
+      link: "https://reactnewsletter.com",
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "react" },
+      ],
+    },
+    {
+      id: 4,
+      title: "Tailwind Weekly",
+      link: "https://tailwindweekly.com",
+      tags: [{ id: 1, name: "tailwind css" }],
+    },
+    {
+      id: 5,
+      title: "Web Weekly",
+      link: "https://webweekly.email",
+      tags: [{ id: 1, name: "web dev" }],
+    },
+    {
+      id: 6,
+      title: "Frontend Focus",
+      link: "https://frontendfoc.us",
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "frontend" },
+        { id: 3, name: "browser tech" },
+      ],
+    },
+    {
+      id: 7,
+      title: "Friday Frontend",
+      link: "https://fridayfrontend.curated.co",
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "frontend" },
+      ],
+    },
+    {
+      id: 8,
+      title: "Smashing Magazine Newsletter",
+      link: "https://smashingmagazine.com/the-smashing-newsletter",
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "frontend" },
+        { id: 3, name: "ux" },
+      ],
+    },
+    {
+      id: 9,
+      title: "Growth.Design",
+      link: "https://growth.design",
+      tags: [
+        { id: 1, name: "product design" },
+        { id: 2, name: "ux" },
+        { id: 3, name: "web design" },
+      ],
+    },
+  ],
 };
