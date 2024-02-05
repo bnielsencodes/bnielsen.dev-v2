@@ -241,8 +241,12 @@ export const resources = {
       imgDark: imgJoshComeauDark,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "css" },
-        { id: 3, name: "animations" },
+        { id: 2, name: "javascript" },
+        { id: 3, name: "react" },
+        { id: 4, name: "gatsby" },
+        { id: 5, name: "css" },
+        { id: 6, name: "animations" },
+        { id: 7, name: "courses" },
       ],
     },
     {
@@ -253,7 +257,9 @@ export const resources = {
       imgDark: imgKentCDoddsDark,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "javascript" },
+        { id: 3, name: "react" },
+        { id: 4, name: "courses" },
       ],
     },
     {
@@ -264,7 +270,8 @@ export const resources = {
       imgDark: imgOverreactedDark,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "javascript" },
+        { id: 3, name: "react" },
       ],
     },
     {
@@ -275,7 +282,11 @@ export const resources = {
       imgDark: imgLeeRobDark,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "javascript" },
+        { id: 3, name: "react" },
+        { id: 4, name: "next.js" },
+        { id: 5, name: "vercel" },
+        { id: 6, name: "css" },
       ],
     },
     {
@@ -286,7 +297,10 @@ export const resources = {
       imgDark: imgFlavioCopesDark,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "javascript" },
+        { id: 3, name: "react" },
+        { id: 4, name: "next.js" },
+        { id: 5, name: "databases" },
       ],
     },
     {
@@ -297,7 +311,10 @@ export const resources = {
       imgDark: imgAndreiCalazansDark,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "javascript" },
+        { id: 3, name: "react" },
+        { id: 4, name: "react native" },
+        { id: 5, name: "css" },
       ],
     },
     {
@@ -308,7 +325,10 @@ export const resources = {
       imgDark: imgStefanJudis,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "javascript" },
+        { id: 3, name: "css" },
+        { id: 4, name: "accessibility" },
+        { id: 5, name: "seo" },
       ],
     },
     {
@@ -319,7 +339,9 @@ export const resources = {
       imgDark: imgSamuelKraftDark,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "web design" },
+        { id: 3, name: "css" },
+        { id: 4, name: "animations" },
       ],
     },
     {
@@ -330,7 +352,11 @@ export const resources = {
       imgDark: imgCodrops,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "frontend" },
+        { id: 3, name: "css" },
+        { id: 4, name: "animations" },
+        { id: 5, name: "three.js" },
+        { id: 6, name: "webGL" },
       ],
     },
     {
@@ -340,8 +366,9 @@ export const resources = {
       imgLight: imgModernCSS,
       imgDark: imgModernCSS,
       tags: [
-        { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 1, name: "css" },
+        { id: 2, name: "grid" },
+        { id: 3, name: "flexbox" },
       ],
     },
     {
@@ -352,7 +379,12 @@ export const resources = {
       imgDark: imgSmashingMag,
       tags: [
         { id: 1, name: "web dev" },
-        { id: 2, name: "courses" },
+        { id: 2, name: "web design" },
+        { id: 3, name: "frontend" },
+        { id: 4, name: "javascript" },
+        { id: 5, name: "css" },
+        { id: 6, name: "accessibility" },
+        { id: 7, name: "ux" },
       ],
     },
   ],
