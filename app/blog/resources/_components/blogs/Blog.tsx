@@ -58,7 +58,7 @@ export default function Blog({
           {blog.title}
         </p>
 
-        <div className="flex flex-wrap gap-1">
+        <div className="flex flex-wrap gap-1 md:max-w-[284px]">
           {blog.tags.map((tag) => (
             <span
               className="py-1 px-2 rounded-md bg-neutral-300 text-neutral-200 dark:text-neutral-500 font-sans text-xs tracking-wide bg-opacity-10 dark:bg-opacity-30"

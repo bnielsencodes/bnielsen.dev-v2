@@ -58,7 +58,7 @@ export default function Blog({
           {tool.title}
         </p>
 
-        <p className="max-w-[284px] text-neutral-500 font-sans">
+        <p className="text-neutral-500 font-sans md:max-w-[284px]">
           {tool.subtitle}
         </p>
       </div>
