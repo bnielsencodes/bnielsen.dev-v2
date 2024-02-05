@@ -1,11 +1,7 @@
-import { projects } from "@/app/_data/portfolio/portfolioData";
+import { projects as projectsData } from "@/app/_data/portfolio/portfolioData";
 import Project from "./Project";
 
 export default function ProjectsSection() {
-  const projectElements = projects.map((project) => {
-    return <Project key={project.id} {...{ project }} />;
-  });
-
   return (
     <section
       id="projects-section"
@@ -18,8 +14,11 @@ export default function ProjectsSection() {
       >
         Work
       </h2>
+
       <div className="flex flex-col justify-center pb-[25px] mt-[165px] text-[0.9rem] lg:pb-0 lg:mt-[260px]">
-        {projectElements}
+        {projectsData.map((project) => {
+          return <Project key={project.id} {...{ project }} />;
+        })}
       </div>
     </section>
   );
