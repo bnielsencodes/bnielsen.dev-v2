@@ -58,7 +58,7 @@ export default function DesignInspiration({
           {inspiration.title}
         </p>
 
-        <p className="text-neutral-500 font-sans md:max-w-[284px]">
+        <p className="text-neutral-200 dark:text-neutral-500 font-sans md:max-w-[284px]">
           {inspiration.subtitle}
         </p>
       </div>
