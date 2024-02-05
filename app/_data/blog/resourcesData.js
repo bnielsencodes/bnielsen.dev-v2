@@ -191,6 +191,27 @@ export const resources = {
         { id: 3, name: "resume/cv" },
       ],
     },
+    {
+      id: 13,
+      title: "Coding Phase",
+      link: "https://youtube.com/@CodingPhase",
+      img: imgCodingPhase,
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "career" },
+        { id: 3, name: "courses" },
+      ],
+    },
+    {
+      id: 14,
+      title: "Jack Herrington",
+      link: "https://youtube.com/@jherr",
+      img: imgJackHerrington,
+      tags: [
+        { id: 1, name: "web dev" },
+        { id: 2, name: "tutorials" },
+      ],
+    },
   ],
   blogs: [
     {
