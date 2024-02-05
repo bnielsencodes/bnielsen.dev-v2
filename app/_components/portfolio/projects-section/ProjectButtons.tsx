@@ -30,7 +30,7 @@ export default function ProjectButtons({
       <div className="relative flex gap-4 w-[261px]">
         {/* live site button */}
         <a
-          className="btn btn-primary btn-light shadow-xl text-neutral-200 focus:opacity-90"
+          className="btn btn-primary btn-light outline-dark-theme shadow-xl text-neutral-200 focus:opacity-90"
           href={liveSite}
           target="_blank"
         >
@@ -57,7 +57,7 @@ export default function ProjectButtons({
         </a>
         {/* source code HOVER button */}
         <a
-          className="btn btn-secondary btn-dark-alt outline-dark-theme absolute top-0 right-[0.5px] text-neutral-500"
+          className="btn btn-secondary btn-dark-alt absolute top-0 right-[0.5px] text-neutral-500"
           href={sourceCode}
           target="_blank"
           tabIndex={-1}
@@ -74,7 +74,7 @@ export default function ProjectButtons({
       <div className="relative flex w-[261px] gap-4">
         {/* live site button */}
         <a
-          className="btn btn-primary btn-dark shadow-xl text-neutral-500 focus:opacity-90"
+          className="btn btn-primary btn-dark outline-light-theme shadow-xl text-neutral-500 focus:opacity-90"
           href={liveSite}
           target="_blank"
         >
@@ -101,7 +101,7 @@ export default function ProjectButtons({
         </a>
         {/* source code HOVER button */}
         <a
-          className="btn btn-secondary btn-light-alt outline-light-theme absolute top-0 right-[0.5px] text-neutral-200"
+          className="btn btn-secondary btn-light-alt absolute top-0 right-[0.5px] text-neutral-200"
           href={sourceCode}
           target="_blank"
           tabIndex={-1}
