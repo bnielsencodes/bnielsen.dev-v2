@@ -49,6 +49,9 @@ import imgStackSorted from "@/public/assets/images/resources/design-inspiration/
 export const tableOfContents = [
   { id: 1, name: "YouTube Channels", link: "#youtube" },
   { id: 2, name: "Blogs", link: "#blogs" },
+  { id: 3, name: "Newsletters", link: "#newsletters" },
+  { id: 4, name: "Learning Platforms", link: "#learning-platforms" },
+  { id: 5, name: "Design Inspiration", link: "#design-inspiration" },
 ];
 
 // eslint-disable-next-line
