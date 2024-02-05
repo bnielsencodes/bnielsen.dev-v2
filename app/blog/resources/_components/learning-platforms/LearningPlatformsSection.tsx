@@ -1,4 +1,5 @@
 import { resources as resourcesData } from "@/app/_data/blog/resourcesData";
+import LearningPlatform from "./LearningPlatform";
 
 export default function LearningPlatformsSection() {
   return (
@@ -15,6 +16,12 @@ export default function LearningPlatformsSection() {
         role="list"
         aria-labelledby="learning-platforms"
       >
+        {resourcesData.learningPlatforms.map((learningPlatform) => (
+          <LearningPlatform
+            key={learningPlatform.id}
+            {...{ learningPlatform }}
+          />
+        ))}
       </ul>
     </section>
   );
