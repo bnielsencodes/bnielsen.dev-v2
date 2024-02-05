@@ -44,6 +44,24 @@ import imgMinimalGallery from "@/public/assets/images/resources/design-inspirati
 import imgReferoLight from "@/public/assets/images/resources/design-inspiration/refero-light.png";
 import imgReferoDark from "@/public/assets/images/resources/design-inspiration/refero-dark.png";
 import imgStackSorted from "@/public/assets/images/resources/design-inspiration/stack-sorted.png";
+// design inspiration website screenshots
+import imgGradientGenerator from "@/public/assets/images/resources/tools/gradient-generator.png";
+import imgShadowPaletteGenerator from "@/public/assets/images/resources/tools/shadow-palette-generator.png";
+import imgOperatorLookupLight from "@/public/assets/images/resources/tools/operator-lookup-light.png";
+import imgOperatorLookupDark from "@/public/assets/images/resources/tools/operator-lookup-dark.png";
+import imgLawsOfUx from "@/public/assets/images/resources/tools/laws-of-ux.png";
+import imgProfileMeLight from "@/public/assets/images/resources/tools/profile-me-light.png";
+import imgProfileMeDark from "@/public/assets/images/resources/tools/profile-me-dark.png";
+import imgCanIUseLight from "@/public/assets/images/resources/tools/can-i-use-light.png";
+import imgCanIUseDark from "@/public/assets/images/resources/tools/can-i-use-dark.png";
+import imgWhoCanIUse from "@/public/assets/images/resources/tools/who-can-use.png";
+import imgA11yLight from "@/public/assets/images/resources/tools/a11y-project-light.png";
+import imgA11yDark from "@/public/assets/images/resources/tools/a11y-project-dark.png";
+import imgArrayExplorer from "@/public/assets/images/resources/tools/js-array-explorer.png";
+import imgShotsLight from "@/public/assets/images/resources/tools/shots-light.png";
+import imgShotsDark from "@/public/assets/images/resources/tools/shots-dark.png";
+import imgCoolors from "@/public/assets/images/resources/tools/coolors.png";
+import imgNotion from "@/public/assets/images/resources/tools/notion.png";
 
 // eslint-disable-next-line
 export const tableOfContents = [
