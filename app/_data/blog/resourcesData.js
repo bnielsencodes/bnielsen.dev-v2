@@ -419,4 +419,138 @@ export const resources = {
       ],
     },
   ],
+  learningPlatforms: [
+    {
+      id: 1,
+      title: "Scrimba",
+      link: "https://scrimba.com",
+      tags: [
+        { id: 1, name: "free courses" },
+        { id: 2, name: "paid courses" },
+      ],
+    },
+    {
+      id: 2,
+      title: "FreeCodeCamp",
+      link: "https://freecodecamp.org",
+      tags: [{ id: 1, name: "free courses" }],
+    },
+    {
+      id: 3,
+      title: "Codecademy",
+      link: "https://codecademy.com",
+      tags: [
+        { id: 1, name: "free courses" },
+        { id: 2, name: "paid courses" },
+      ],
+    },
+    {
+      id: 4,
+      title: "Frontend Mentor",
+      link: "https://frontendmentor.io",
+      tags: [
+        { id: 1, name: "free content" },
+        { id: 2, name: "paid content" },
+      ],
+    },
+    {
+      id: 5,
+      title: "DesignCourse",
+      link: "https://designcourse.com",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+    {
+      id: 6,
+      title: "The Odin Project",
+      link: "https://theodinproject.com",
+      tags: [{ id: 1, name: "free courses" }],
+    },
+    {
+      id: 7,
+      title: "Udemy",
+      link: "https://udemy.com",
+      tags: [
+        { id: 1, name: "free courses" },
+        { id: 2, name: "paid courses" },
+      ],
+    },
+    {
+      id: 8,
+      title: "Team Treehouse",
+      link: "https://teamtreehouse.com",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+    {
+      id: 9,
+      title: "Wes Bos",
+      link: "https://wesbos.com",
+      tags: [
+        { id: 1, name: "free courses" },
+        { id: 2, name: "paid courses" },
+      ],
+    },
+    {
+      id: 10,
+      title: "The Joy of React",
+      link: "https://thejoyofreact.com",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+    {
+      id: 11,
+      title: "ui.dev",
+      link: "https://ui.dev",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+    {
+      id: 12,
+      title: "React.gg",
+      link: "https://react.gg",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+    {
+      id: 13,
+      title: "Frontend Masters",
+      link: "https://frontendmaster.com",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+    {
+      id: 14,
+      title: "Academind",
+      link: "https://academind.com",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+    {
+      id: 15,
+      title: "CSS-Tricks",
+      link: "https://css-tricks.com",
+      tags: [{ id: 1, name: "free content" }],
+    },
+    {
+      id: 16,
+      title: "Khan Academy",
+      link: "https://khanacademy.org",
+      tags: [{ id: 1, name: "free courses" }],
+    },
+    {
+      id: 17,
+      title: "iCodeThis",
+      link: "https://icodethis.com",
+      tags: [
+        { id: 1, name: "free courses" },
+        { id: 2, name: "paid courses" },
+      ],
+    },
+    {
+      id: 18,
+      title: "Frontend Practice",
+      link: "https://frontendpractice.com",
+      tags: [{ id: 1, name: "free content" }],
+    },
+    {
+      id: 19,
+      title: "Coursera",
+      link: "https://coursera.org",
+      tags: [{ id: 1, name: "paid courses" }],
+    },
+  ],
 };
