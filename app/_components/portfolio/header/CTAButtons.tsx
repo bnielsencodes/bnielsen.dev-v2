@@ -24,7 +24,7 @@ export default function CTAButtons() {
       <div className="relative flex gap-4 ml-[3px] md:ml-[5px] lg:ml-[2px] xl:ml-0">
         {/* view work button */}
         <a
-          className="btn btn-primary btn-light text-neutral-200 shadow-xl focus:opacity-90"
+          className="btn btn-primary btn-light outline-dark-theme text-neutral-200 shadow-xl focus:opacity-90"
           href="#projects-section"
         >
           View Work
@@ -64,7 +64,7 @@ export default function CTAButtons() {
       <div className="relative flex gap-4 ml-[3px] md:ml-[5px] lg:ml-[2px] xl:ml-0">
         {/* view work button */}
         <a
-          className="btn btn-primary btn-dark text-neutral-500 shadow-xl focus:opacity-90"
+          className="btn btn-primary btn-dark outline-light-theme text-neutral-500 shadow-xl focus:opacity-90"
           href="#projects-section"
         >
           View Work
