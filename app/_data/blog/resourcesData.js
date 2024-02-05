@@ -392,6 +392,7 @@ export const resources = {
     {
       id: 1,
       title: "Awwwards",
+      subtitle: "Follow what's brand new in digital design.",
       link: "https://awwwards.com",
       imgLight: imgAwwwards,
       imgDark: imgAwwwards,
@@ -399,6 +400,8 @@ export const resources = {
     {
       id: 2,
       title: "Dribbble",
+      subtitle:
+        "Get inspired by the work of millions of top-rated designers & agencies around the world.",
       link: "https://dribbble.com",
       imgLight: imgDribbble,
       imgDark: imgDribbble,
@@ -406,6 +409,8 @@ export const resources = {
     {
       id: 3,
       title: "Dark Mode Design",
+      subtitle:
+        "A showcase of beautifully designed and inspiring dark mode websites.",
       link: "https://darkmodedesign.com",
       imgLight: imgDarkModeDesign,
       imgDark: imgDarkModeDesign,
@@ -413,6 +418,8 @@ export const resources = {
     {
       id: 4,
       title: "DoingCoolStuff",
+      subtitle:
+        "A directory of brand, motion and digital product design studios doing cool stuff.",
       link: "https://doingcoolstuff.xyz",
       imgLight: imgDoingCoolStuff,
       imgDark: imgDoingCoolStuff,
@@ -420,6 +427,8 @@ export const resources = {
     {
       id: 5,
       title: "Footer",
+      subtitle:
+        "A curated gallery of the top website footer inspiration on earth.",
       link: "https://footer.design",
       imgLight: imgFooterLight,
       imgDark: imgFooterDark,
@@ -427,6 +436,8 @@ export const resources = {
     {
       id: 6,
       title: "Godly",
+      subtitle:
+        "Astronomically good web design inspiration from all over the internet.",
       link: "https://godly.website",
       imgLight: imgGodly,
       imgDark: imgGodly,
@@ -434,6 +445,8 @@ export const resources = {
     {
       id: 7,
       title: "Minimal Gallery",
+      subtitle:
+        "A curated source of website design inspiration aiming to support people in their creative process.",
       link: "https://minimal.gallery",
       imgLight: imgMinimalGallery,
       imgDark: imgMinimalGallery,
@@ -441,6 +454,7 @@ export const resources = {
     {
       id: 8,
       title: "Refero",
+      subtitle: "Explore real-world designs from the best products.",
       link: "https://refero.design",
       imgLight: imgReferoLight,
       imgDark: imgReferoDark,
@@ -448,6 +462,7 @@ export const resources = {
     {
       id: 9,
       title: "Stack Sorted.",
+      subtitle: "A collection of the web's best designs sorted by elements.",
       link: "https://stacksorted.com",
       imgLight: imgStackSorted,
       imgDark: imgStackSorted,
