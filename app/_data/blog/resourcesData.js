@@ -74,7 +74,7 @@ export const resources = {
       img: imgTheo,
       tags: [
         { id: 1, name: "career" },
-        { id: 2, name: "web development" },
+        { id: 2, name: "web dev" },
         { id: 3, name: "programming" },
       ],
     },
@@ -85,7 +85,7 @@ export const resources = {
       img: imgFireship,
       tags: [
         { id: 1, name: "career" },
-        { id: 2, name: "web development" },
+        { id: 2, name: "web dev" },
         { id: 3, name: "programming" },
       ],
     },
@@ -95,7 +95,7 @@ export const resources = {
       link: "https://youtube.com/@TraversyMedia",
       img: imgTraversy,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "programming" },
         { id: 3, name: "tutorials" },
       ],
@@ -106,7 +106,7 @@ export const resources = {
       link: "https://youtube.com/@KevinPowell",
       img: imgKevinPowell,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "css" },
         { id: 3, name: "tutorials" },
       ],
@@ -117,7 +117,7 @@ export const resources = {
       link: "https://youtube.com/@WebDevSimplified",
       img: imgWebDevSimplified,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "programming" },
         { id: 3, name: "tutorials" },
       ],
@@ -151,7 +151,7 @@ export const resources = {
       link: "https://youtube.com/@programmingwithmosh",
       img: imgMosh,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "programming" },
         { id: 3, name: "tutorials" },
       ],
@@ -162,7 +162,7 @@ export const resources = {
       link: "https://youtube.com/@academind",
       img: imgAcademind,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "programming" },
         { id: 3, name: "tutorials" },
         { id: 4, name: "courses" },
@@ -174,7 +174,7 @@ export const resources = {
       link: "https://youtube.com/@Scrimba",
       img: imgScrimba,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "tutorials" },
         { id: 3, name: "courses" },
         { id: 4, name: "career" },
@@ -221,7 +221,7 @@ export const resources = {
       imgLight: imgJoshComeauLight,
       imgDark: imgJoshComeauDark,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "css" },
         { id: 3, name: "animations" },
       ],
@@ -233,7 +233,7 @@ export const resources = {
       imgLight: imgKentCDoddsLight,
       imgDark: imgKentCDoddsDark,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -244,7 +244,7 @@ export const resources = {
       imgLight: imgOverreactedLight,
       imgDark: imgOverreactedDark,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -255,7 +255,7 @@ export const resources = {
       imgLight: imgLeeRobLight,
       imgDark: imgLeeRobDark,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -266,7 +266,7 @@ export const resources = {
       imgLight: imgFlavioCopesLight,
       imgDark: imgFlavioCopesDark,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -277,7 +277,7 @@ export const resources = {
       imgLight: imgAndreiCalazansLight,
       imgDark: imgAndreiCalazansDark,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -288,7 +288,7 @@ export const resources = {
       imgLight: imgStefanJudis,
       imgDark: imgStefanJudis,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -299,7 +299,7 @@ export const resources = {
       imgLight: imgSamuelKraftLight,
       imgDark: imgSamuelKraftDark,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -310,7 +310,7 @@ export const resources = {
       imgLight: imgCodrops,
       imgDark: imgCodrops,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
@@ -321,18 +321,18 @@ export const resources = {
       imgLight: imgModernCSS,
       imgDark: imgModernCSS,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
     {
       id: 11,
       title: "Smashing Magazine",
-      link: "https://smashingmagazine.com/",
+      link: "https://smashingmagazine.com",
       imgLight: imgSmashingMag,
       imgDark: imgSmashingMag,
       tags: [
-        { id: 1, name: "web development" },
+        { id: 1, name: "web dev" },
         { id: 2, name: "courses" },
       ],
     },
