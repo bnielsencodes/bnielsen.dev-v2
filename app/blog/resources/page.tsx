@@ -2,10 +2,10 @@
 import NavBar from "@/app/_components/blog/navigation/NavBar";
 import YTSection from "./_components/youtube/YTSection";
 import BlogsSection from "./_components/blogs/BlogsSection";
-import NewslettersSection from "./_components/newsletters/NewslettersSection";
-import LearningPlatformsSection from "./_components/learning-platforms/LearningPlatformsSection";
 import DesignInspirationSection from "./_components/design-inspiration/DesignInspirationSection";
 import ToolsSection from "./_components/tools/ToolsSection";
+import NewslettersSection from "./_components/newsletters/NewslettersSection";
+import LearningPlatformsSection from "./_components/learning-platforms/LearningPlatformsSection";
 import TableOfContents from "./_components/TableOfContents";
 import Footer from "@/app/_components/blog/footer/Footer";
 
@@ -30,10 +30,10 @@ export default function Resources() {
           <div className="flex flex-col gap-40 w-full">
             <YTSection />
             <BlogsSection />
-            <NewslettersSection />
-            <LearningPlatformsSection />
             <DesignInspirationSection />
             <ToolsSection />
+            <NewslettersSection />
+            <LearningPlatformsSection />
           </div>
           <TableOfContents />
         </div>
