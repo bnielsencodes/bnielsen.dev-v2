@@ -48,7 +48,7 @@ export default function CTAButtons() {
         </a>
         {/* contact HOVER button */}
         <a
-          className="btn btn-secondary btn-dark-alt outline-dark-theme absolute top-0 right-0 text-neutral-500"
+          className="btn btn-secondary btn-dark-alt absolute top-0 right-0 text-neutral-500"
           href="#contact-section"
           tabIndex={-1}
           aria-hidden={true}
@@ -88,7 +88,7 @@ export default function CTAButtons() {
         </a>
         {/* contact HOVER button */}
         <a
-          className="btn btn-secondary btn-light-alt outline-light-theme absolute top-0 right-0 text-neutral-200"
+          className="btn btn-secondary btn-light-alt absolute top-0 right-0 text-neutral-200"
           href="#contact-section"
           tabIndex={-1}
           aria-hidden={true}
