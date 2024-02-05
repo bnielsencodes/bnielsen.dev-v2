@@ -1,4 +1,5 @@
 import { resources as resourcesData } from "@/app/_data/blog/resourcesData";
+import Tool from "./Tool";
 
 export default function ToolsSection() {
   return (
@@ -15,6 +16,9 @@ export default function ToolsSection() {
         role="list"
         aria-labelledby="tools"
       >
+        {resourcesData.tools.map((tool) => (
+          <Tool key={tool.id} {...{ tool }} />
+        ))}
       </ul>
     </section>
   );
