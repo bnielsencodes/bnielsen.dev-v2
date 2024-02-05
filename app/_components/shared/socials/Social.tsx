@@ -18,7 +18,7 @@ export default function Social({
   return (
     <li className="h-auto">
       <a
-        className="opacity-transition focus:outine-2 focus:outline-accent-100 dark:focus:outline-accent-200 focus:opacity-90 lg:hover:opacity-90 dark:lg:hover:opacity-80"
+        className="opacity-transition outline-light-theme dark:outline-dark-theme lg:hover:opacity-90 dark:lg:hover:opacity-80"
         href={social.link}
         aria-label={label}
       >
