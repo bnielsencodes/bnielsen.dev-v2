@@ -1,4 +1,5 @@
 import { resources as resourcesData } from "@/app/_data/blog/resourcesData";
+import Newsletter from "./Newsletter";
 
 export default function NewslettersSection() {
   return (
@@ -15,6 +16,9 @@ export default function NewslettersSection() {
         role="list"
         aria-labelledby="newsletters"
       >
+        {resourcesData.newsletters.map((newsletter) => (
+          <Newsletter key={newsletter.id} {...{ newsletter }} />
+        ))}
       </ul>
     </section>
   );
