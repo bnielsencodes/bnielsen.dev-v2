@@ -7,7 +7,7 @@ export default function TableOfContents() {
         Table of Contents
       </p>
 
-      <ul className="flex flex-col gap-[6px] mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px]">
+      <ul className="flex flex-col gap-[6px] pl-2 mt-4 text-neutral-300 dark:text-neutral-400 font-sans text-[14.5px]">
         {tableOfContentsData.map((section) => {
           return (
             <li className="pb-[3px]" key={section.id}>
