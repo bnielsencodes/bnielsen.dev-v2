@@ -1,4 +1,5 @@
 import { resources as resourcesData } from "@/app/_data/blog/resourcesData";
+import DesignInspiration from "./DesignInspiration";
 
 export default function DesignInspirationSection() {
   return (
@@ -15,6 +16,9 @@ export default function DesignInspirationSection() {
         role="list"
         aria-labelledby="design-inspiration"
       >
+        {resourcesData.designInspiration.map((inspiration) => (
+          <DesignInspiration key={inspiration.id} {...{ inspiration }} />
+        ))}
       </ul>
     </section>
   );
