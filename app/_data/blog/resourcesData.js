@@ -70,6 +70,7 @@ export const tableOfContents = [
   { id: 3, name: "Newsletters", link: "#newsletters" },
   { id: 4, name: "Learning Platforms", link: "#learning-platforms" },
   { id: 5, name: "Design Inspiration", link: "#design-inspiration" },
+  { id: 5, name: "Tools", link: "#tools" },
 ];
 
 // eslint-disable-next-line
