@@ -2,7 +2,7 @@ import { tableOfContents as tableOfContentsData } from "@/app/_data/blog/resourc
 
 export default function TableOfContents() {
   return (
-    <aside className="sticky top-[28px] hidden w-full max-w-[195px] h-fit pt-[66px] text-neutral-200 text-[17px] font-bold tracking-wider xl:block">
+    <aside className="sticky top-[95px] hidden w-full max-w-[195px] h-fit text-neutral-200 text-[17px] font-bold tracking-wider xl:block">
       <p className="text-neutral-200 dark:text-neutral-500 uppercase">
         Table of Contents
       </p>
