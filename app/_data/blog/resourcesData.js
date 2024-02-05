@@ -11,6 +11,8 @@ import imgMosh from "@/public/assets/images/resources/youtube/programming-with-m
 import imgAcademind from "@/public/assets/images/resources/youtube/academind.jpg";
 import imgScrimba from "@/public/assets/images/resources/youtube/scrimba.jpg";
 import imgSelfMadeMillennial from "@/public/assets/images/resources/youtube/self-made-millennial.jpg";
+import imgCodingPhase from "@/public/assets/images/resources/youtube/coding-phase.jpg";
+import imgJackHerrington from "@/public/assets/images/resources/youtube/jack-herrington.jpg";
 // blog website screenshots
 import imgJoshComeauLight from "@/public/assets/images/resources/blog/josh-comeau-light.png";
 import imgJoshComeauDark from "@/public/assets/images/resources/blog/josh-comeau-dark.png";
@@ -30,6 +32,18 @@ import imgSamuelKraftDark from "@/public/assets/images/resources/blog/samuel-kra
 import imgCodrops from "@/public/assets/images/resources/blog/codrops.png";
 import imgModernCSS from "@/public/assets/images/resources/blog/modern-css.png";
 import imgSmashingMag from "@/public/assets/images/resources/blog/smashing-mag.png";
+// design inspiration website screenshots
+import imgAwwwards from "@/public/assets/images/resources/design-inspiration/awwwards.png";
+import imgDribbble from "@/public/assets/images/resources/design-inspiration/dribbble.png";
+import imgDarkModeDesign from "@/public/assets/images/resources/design-inspiration/dark-mode-design.png";
+import imgDoingCoolStuff from "@/public/assets/images/resources/design-inspiration/doing-cool-stuff.png";
+import imgFooterLight from "@/public/assets/images/resources/design-inspiration/footer-light.png";
+import imgFooterDark from "@/public/assets/images/resources/design-inspiration/footer-dark.png";
+import imgGodly from "@/public/assets/images/resources/design-inspiration/godly.png";
+import imgMinimalGallery from "@/public/assets/images/resources/design-inspiration/minimal-gallery.png";
+import imgReferoLight from "@/public/assets/images/resources/design-inspiration/refero-light.png";
+import imgReferoDark from "@/public/assets/images/resources/design-inspiration/refero-dark.png";
+import imgStackSorted from "@/public/assets/images/resources/design-inspiration/stack-sorted.png";
 
 // eslint-disable-next-line
 export const tableOfContents = [
