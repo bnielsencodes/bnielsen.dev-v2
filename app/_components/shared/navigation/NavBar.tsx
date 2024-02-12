@@ -1,3 +1,5 @@
+"use client";
+
 import { useEffect, useState } from "react";
 import ThemedLogo from "../../shared/navigation/ThemedLogo";
 import NavList from "./NavList";
