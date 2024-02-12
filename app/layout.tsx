@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-import Providers from "./providers";
 import { Roboto } from "next/font/google";
 import localFont from "next/font/local";
+import Providers from "./providers";
+import NavBar from "@/app/_components/shared/navigation/NavBar";
+import Footer from "@/app/_components/shared/footer/Footer";
 import clsx from "clsx";
 import "./globals.css";
 
@@ -111,7 +113,11 @@ export default function RootLayout({
           { "bg-[#fafafa] dark:bg-[#1a1a1a]": portfolio }
         )}
       >
-        <Providers>{children}</Providers>
+        <Providers>
+          <NavBar />
+          {children}
+          <Footer />
+        </Providers>
         <Analytics />
         <SpeedInsights />
       </body>
