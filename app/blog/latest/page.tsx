@@ -1,14 +1,11 @@
 "use client";
 import { latestPosts as latestPostsData } from "@/app/_data/blog/posts/latest";
-import NavBar from "../../_components/blog/navigation/NavBar";
 import CategoryHeading from "@/app/_components/blog/posts/CategoryHeading";
 import PostTile from "@/app/_components/blog/posts/PostTile";
-import Footer from "../../_components/blog/footer/Footer";
 
 export default function Latest() {
   return (
     <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
-      <NavBar />
       <div className="pt-[192px] pb-[100px] lg:max-w-[1100px] lg:mx-auto">
         <CategoryHeading title="Latest Posts" length={latestPostsData.length} />
 
@@ -18,7 +15,6 @@ export default function Latest() {
           })}
         </ul>
       </div>
-      <Footer />
     </main>
   );
 }
