@@ -1,14 +1,11 @@
 "use client";
 import { categoryData as posts } from "@/app/_data/blog/posts/categories/web-development/categoryData";
-import NavBar from "../../../_components/blog/navigation/NavBar";
 import CategoryHeading from "@/app/_components/blog/posts/CategoryHeading";
 import PostTile from "@/app/_components/blog/posts/PostTile";
-import Footer from "../../../_components/blog/footer/Footer";
 
 export default function WebDevelopment() {
   return (
     <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
-      <NavBar />
       <div className="pt-[192px] pb-[100px] lg:max-w-[1100px] lg:mx-auto">
         <CategoryHeading title="Web Development" length={posts.length} />
 
@@ -18,7 +15,6 @@ export default function WebDevelopment() {
           })}
         </ul>
       </div>
-      <Footer />
     </main>
   );
 }
