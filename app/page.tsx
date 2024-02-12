@@ -4,10 +4,12 @@ import { useTheme } from "next-themes";
 import Image from "next/image";
 import waveDark from "@/public/assets/images/portfolio-section-divider/wave-dark.svg";
 import waveLight from "@/public/assets/images/portfolio-section-divider/wave-light.svg";
+import NavBar from "./_components/portfolio/navigation/NavBar";
 import Header from "./_components/portfolio/header/Header";
 import AboutSection from "./_components/portfolio/about-section/AboutSection";
 import ProjectsSection from "./_components/portfolio/projects-section/ProjectsSection";
 import ContactSection from "./_components/portfolio/contact-section/ContactSection";
+import Footer from "./_components/portfolio/footer/Footer";
 
 export default function Home() {
   const [mounted, setMounted] = useState(false);
@@ -23,10 +25,12 @@ export default function Home() {
 
     return (
       <main className="bg-neutral-600 dark:bg-neutral-100">
+        <NavBar />
         <Header />
         <AboutSection {...{ loading }} />
         <ProjectsSection />
         <ContactSection />
+        <Footer />
       </main>
     );
   }
@@ -36,6 +40,7 @@ export default function Home() {
 
     return (
       <main className="dark:bg-neutral-100">
+        <NavBar />
         <Header />
         <Image
           className="w-full mb-[-1px]"
@@ -48,6 +53,7 @@ export default function Home() {
         <AboutSection {...{ loading }} />
         <ProjectsSection />
         <ContactSection />
+        <Footer />
       </main>
     );
   }
@@ -57,6 +63,7 @@ export default function Home() {
 
     return (
       <main className="bg-neutral-600">
+        <NavBar />
         <Header />
         <Image
           className="w-full"
@@ -69,6 +76,7 @@ export default function Home() {
         <AboutSection {...{ loading }} />
         <ProjectsSection />
         <ContactSection />
+        <Footer />
       </main>
     );
   }
