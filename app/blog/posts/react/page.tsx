@@ -1,11 +1,14 @@
 "use client";
 import { categoryData as posts } from "@/app/_data/blog/posts/categories/react/categoryData";
+import NavBar from "../../../_components/blog/navigation/NavBar";
 import CategoryHeading from "@/app/_components/blog/posts/CategoryHeading";
 import PostTile from "@/app/_components/blog/posts/PostTile";
+import Footer from "../../../_components/blog/footer/Footer";
 
 export default function React() {
   return (
     <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
+      <NavBar />
       {/* 
         can remove min-h-screen below once there
         are posts in this category
@@ -31,6 +34,7 @@ export default function React() {
           </p>
         )}
       </div>
+      <Footer />
     </main>
   );
 }

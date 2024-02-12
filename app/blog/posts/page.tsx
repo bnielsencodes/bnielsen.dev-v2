@@ -1,7 +1,9 @@
 "use client";
 import { postsData } from "@/app/_data/blog/posts/postsData";
+import NavBar from "@/app/_components/blog/navigation/NavBar";
 import CategoryHeading from "@/app/_components/blog/posts/CategoryHeading";
 import PostTile from "@/app/_components/blog/posts/PostTile";
+import Footer from "@/app/_components/blog/footer/Footer";
 
 export default function Posts() {
   // create category group elements
@@ -27,9 +29,11 @@ export default function Posts() {
 
   return (
     <main className="blog dark:dark bg-neutral-600 dark:bg-neutral-100">
+      <NavBar />
       <div className="pt-[192px] pb-[160px] lg:max-w-[1100px] lg:mx-auto">
         {categories}
       </div>
+      <Footer />
     </main>
   );
 }
