@@ -84,7 +84,7 @@ export default function ContactForm() {
 
           {/* message input */}
           <textarea
-            className="focus:outline-2 focus:outline-accent-100 dark:focus:outline-accent-200 w-full pt-[10px] pl-[10px] border-[1px] border-neutral-300 rounded-lg shadow-xl dark:shadow-none mb-[6px] bg-neutral-600 dark:bg-neutral-100 text-neutral-200 dark:text-neutral-500 font-sans caret-accent select-text appearance-none placeholder:text-neutral-400"
+            className="focus:outline-2 focus:outline-accent-100 dark:focus:outline-accent-200 w-full pt-[10px] pl-[10px] border-[1px] border-neutral-300 rounded-lg shadow-xl dark:shadow-none mb-[6px] bg-neutral-600 dark:bg-neutral-100 text-neutral-200 dark:text-neutral-500 font-sans caret-accent resize-none select-text appearance-none placeholder:text-neutral-400"
             name="message"
             placeholder="Message"
             aria-label="Enter a message"
