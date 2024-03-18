@@ -22,7 +22,7 @@ export default function Socials({
     {
       id: 3,
       name: "email",
-      link: "mailto:brandon@bnielsen.dev",
+      link: "mailto:bnielsencodes@gmail.com",
     },
   ];
 
