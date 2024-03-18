@@ -43,7 +43,7 @@ export default function ContactForm() {
             className="inline lg:hidden p-0 border-0 bg-neutral-500 dark:bg-neutral-200 text-accent-100 dark:text-accent-200 font-bold"
             href="mailto:bnielsencodes@gmail.com"
           >
-            brandon@bnielsen.dev
+            bnielsencodes@gmail.com
           </a>
           <br />
           or send me a quick message here:
