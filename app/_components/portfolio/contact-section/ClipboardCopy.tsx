@@ -16,7 +16,7 @@ export default function ClipboardCopy() {
   const handleCopyClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     e.preventDefault();
     // Asynchronously call copyTextToClipboard
-    copyTextToClipboard("bnielsencodes@gmail.com")
+    copyTextToClipboard("brandon@bnielsen.dev")
       .then(() => {
         // If successful, update the isCopied state value
         setIsCopied(true);
@@ -36,7 +36,7 @@ export default function ClipboardCopy() {
         onClick={handleCopyClick}
         title="Copy to clipboard"
       >
-        bnielsencodes@gmail.com
+        brandon@bnielsen.dev
       </button>
 
       <span className="absolute -top-[10px] -right-[70px] p-[0.5rem] rounded-[0.2rem] ml-4 bg-none text-[0.813rem] tracking-[0.4px] uppercase">
